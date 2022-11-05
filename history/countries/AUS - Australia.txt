@@ -1,0 +1,132 @@
+﻿
+capital = 285
+
+##oob = "AUS_1936"
+
+### Country Leader ###
+recruit_character = AUS_Alexander_Hore_Ruthven
+recruit_character = AUS_Brudenell_White
+recruit_character = AUS_John_Lavarack
+recruit_character = AUS_Sydney_Rowell
+recruit_character = AUS_Thomas_Blamey
+recruit_character = AUS_George_Alan_Vasey
+recruit_character = AUS_Ragnar_Colvin
+
+set_stability = 0.8
+set_war_support = 0.3
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_recon = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	trench_warfare = 1
+	fuel_silos = 1
+	fleet_in_being = 1
+}
+set_popularities = {
+	conservatism = 78
+	authoritarianism = 0
+	social_democratism = 10
+	patriotic_socialism = 0
+	corporatism = 0
+	democratic_socialism = 0
+	populism = 0
+	social_liberalism = 12
+}
+
+set_politics = {
+	ruling_party = conservatism
+	last_election = "1935.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+create_country_leader = {
+	name = "Eric Campbell"
+	desc = "POLITICS_ERIC_CAMPBELL_DESC"
+	picture = "GFX_AST_eric_campbell"
+	expire = "1965.1.1"
+	ideology = corporatism_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Eric Campbell"
+	desc = "POLITICS_ERIC_CAMPBELL_DESC"
+	picture = "GFX_AST_eric_campbell"
+	expire = "1965.1.1"
+	ideology = demagogism_subtype
+	traits = {
+		#
+	}
+}
+
+create_corps_commander = {
+	name = "Leslie Morshead"
+	gfx = "GFX_AST_leslie_morshead"
+	traits = { }
+	skill = 4
+    attack_skill = 4
+    defense_skill = 2
+    planning_skill = 5
+    logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Henry Wynter"
+	gfx = "GFX_AST_henry_wynter"
+	traits = { }
+	skill = 4
+    attack_skill = 3
+    defense_skill = 4
+    planning_skill = 3
+    logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Horace Robertson"
+	gfx = "GFX_AST_horace_robertson"
+	traits = { desert_fox }
+	skill = 3
+    attack_skill = 3
+    defense_skill = 1
+    planning_skill = 3
+    logistics_skill = 3
+}
+create_corps_commander = {
+	name = "John Northcott"
+	gfx = "GFX_AST_john_northcott"
+	traits = { armor_officer}
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_navy_leader = {
+	name = "Harold Farncomb"
+	gfx = "GFX_AST_harold_farncomb"
+	traits = { aviation_enthusiast naval_lineage }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	maneuvering_skill = 3
+	coordination_skill = 4
+}
+
+create_navy_leader = {
+	name = "Victor Crutchley"
+	gfx = "GFX_AST_victor_crutchley"
+	traits = { bold }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 2
+}

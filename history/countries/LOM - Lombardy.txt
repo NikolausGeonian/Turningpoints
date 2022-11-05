@@ -1,0 +1,60 @@
+﻿capital = 159# Lombardi
+
+oob = "LOM_1936"
+
+### Country Leader ###
+recruit_character = LOM_Maximilian_Eugen
+
+### Corps Commander ###
+recruit_character = LOM_Arnaldo_Azzi
+recruit_character = LOM_Attilio_Teruzzi
+recruit_character = LOM_Alfredo_Guzzoni
+recruit_character = LOM_Gabriele_Nasci
+
+#General#
+set_research_slots = 3
+set_stability = 0.50
+set_war_support = 0.8
+set_fuel_ratio = 1.0
+set_convoys = 100
+# National Idea #
+add_ideas = {
+	generic_treaty_of_santa_sofia
+}
+
+# Starting tech #
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_engineers = 1
+	tech_support = 1		
+	tech_mountaineers = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	interwar_antitank = 1
+	basic_train = 1
+}
+
+# Starting Import #
+
+# Politics #
+set_popularities = {
+	conservatism = 40
+	authoritarianism = 0
+	social_democratism = 18
+	patriotic_socialism = 0
+	corporatism = 8
+	democratic_socialism = 0
+	populism = 9
+	social_liberalism = 25
+}
+set_politics = {
+	ruling_party = conservatism
+	last_election = "1935.1.3"
+	election_frequency = 60
+	elections_allowed = yes
+}
+
+#Commander

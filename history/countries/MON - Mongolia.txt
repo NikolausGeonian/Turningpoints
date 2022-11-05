@@ -1,0 +1,48 @@
+﻿capital = 330
+
+#oob = "MON_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+add_ideas = {
+	limited_conscription
+}
+set_popularities = {
+	conservatism = 0
+	authoritarianism = 100
+	social_democratism = 0
+	patriotic_socialism = 0
+	corporatism = 0
+	democratic_socialism = 0
+	populism = 0
+	social_liberalism = 0
+}
+set_politics = {
+	ruling_party = authoritarianism
+	last_election = "1918.12.7"
+	election_frequency = 48
+	elections_allowed = no
+}
+create_country_leader = {
+	name = "Tögs-Ochiryn Namnansüren"
+	desc = "POLITICS_NAMNANSÜREN_DESC"
+	picture = "gfx/leaders/MON/Portrait_Namnansuren.dds"
+	expire = "1965.1.1"
+	ideology = despotism_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Anandyn Amar"
+	desc = "POLITICS_ANANDYN_AMAR_DESC"
+	picture = GFX_portrait_mon_anandyn_amar
+	expire = "1965.1.1"
+	ideology = patriotic_socialism_subtype
+	traits = {
+		#
+	}
+}

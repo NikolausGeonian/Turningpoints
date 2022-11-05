@@ -1,0 +1,39 @@
+
+state={
+	id=104
+	name="STATE_104"
+	manpower = 1457400
+	
+	
+	state_category = large_town
+	
+	resources={
+		aluminium=10 
+	}
+
+	history={
+		owner = HAB
+		victory_points = {
+			11899 10
+		}
+		victory_points = {
+			6983 3
+		}
+		victory_points = {
+			9586 1
+		}
+		victory_points = {
+			606 1
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			air_base = 2
+		}
+		add_core_of = HAB
+	}
+
+	provinces={
+		606 982 3985 6614 6619 6799 6957 6983 9586 9588 9591 9922 11572 11574 11741 11899 
+	}
+}

@@ -1,0 +1,38 @@
+characters = {
+	
+	### Country Leader ###
+	
+	SGR_Sulaiman_of_Selangor = {
+		name = SGR_Sulaiman_of_Selangor
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SGR/Portrait_Sulaiman_of_Selangor.dds"
+			}
+		}
+		country_leader = {
+			desc = "POLITICS_SGR_SULAIMAN_OF_SELANGOR_DESC"
+			ideology = semi_constitutional_monarchy_subtype
+			id = -1
+		}
+		
+		country_leader = {
+			desc = "POLITICS_SGR_SULAIMAN_OF_SELANGOR_DESC"
+			ideology = autocratic_monarchy_subtype
+			id = -1
+		}
+	}
+	
+	### Ministers ###
+	### HEAD OF GOVERNMENT ###
+	
+	### FOREIGN MINISTER ###
+	
+	###	ECONOMY MINISTER ###
+	
+	### FIELD MARSHAL ###
+	
+	### CORPS COMMANDER ###
+	
+	### ADMIRAL ###
+	
+}

@@ -1,0 +1,17 @@
+state = {
+	id=842
+	name="STATE_842"
+	manpower = 1244743
+	state_category = pastoral
+	history = {
+		owner = DOA
+		buildings = {
+		infrastructure = 1
+		}
+		add_core_of = DOA
+	}
+	provinces={
+		1181 4941 7161 10858 4201 12783 10766 8048
+		
+	}
+}

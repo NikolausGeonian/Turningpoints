@@ -1,0 +1,27 @@
+state = {
+	id=859
+	name="STATE_859" #Sembilian
+	manpower = 481563	 
+	state_category = rural
+	
+	history = {
+		owner = NSN
+		add_core_of = NSN
+		victory_points = {
+			7427 3 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			7427 = {
+				naval_base = 1
+			}
+		}
+		
+	}
+	
+	provinces={
+		4412 7427
+		
+	}
+}

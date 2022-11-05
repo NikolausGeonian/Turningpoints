@@ -1,0 +1,159 @@
+﻿division_template = {
+	name = "Divisione di Fanteria"
+
+	division_names_group = ITA_INF_01
+
+	regiments = { 
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = { 
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+
+division_template = { 
+	name = "Reggimento di Cavalleria" 
+	division_names_group = ITA_CAV_01 
+
+	regiments = { 
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+}
+
+division_template = { 
+	name = "Landesschützentruppendivision" 
+	division_names_group = ITA_MNT_02 
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 } 
+	}
+
+	priority = 0 
+}
+
+units = {
+
+	division = { # "9a Divisione di Fanteria 'Verona'" 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		} 
+		location = 3780 
+		division_template = "Divisione di Fanteria"	
+		start_experience_factor = 0.3 
+	}
+	
+	division = { # "7° Reggimento 'Lancieri di Milano'" 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		} 
+		location = 3780 
+		division_template = "Reggimento di Cavalleria"	
+		start_experience_factor = 0.3 
+	}
+	
+	division = { # "10a Divisione di Fanteria 'Piave'" 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 10
+		} 
+		location = 3780 
+		division_template = "Divisione di Fanteria"	
+		start_experience_factor = 0.3 
+	}
+	
+	division = { # "14a Divisione di Fanteria 'Isonzo'" 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 14
+		} 
+		location = 11568 
+		division_template = "Divisione di Fanteria"	
+		start_experience_factor = 0.3 
+	}
+	
+	division = { # "27a Divisione di Fanteria 'Brescia'" 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 27
+		} 
+		location = 11568 
+		division_template = "Divisione di Fanteria"	
+		start_experience_factor = 0.3 
+	}
+	
+	division = { # "32a Divisione di Fanteria 'Marche'" 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 32
+		} 
+		location = 3776 
+		division_template = "Divisione di Fanteria"	
+		start_experience_factor = 0.3 
+	}
+	
+	division = { # "57a Divisione di Fanteria 'Granatieri di Lombardia'" 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 57
+		} 
+		location = 3780 
+		division_template = "Divisione di Fanteria"	
+		start_experience_factor = 0.3 
+		force_equipment_variants = { artillery_equipment_1 = { owner = "HAB" } } 
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		} 
+		location = 6661 
+		division_template = "Landesschützentruppendivision"	
+		start_experience_factor = 0.3 
+		force_equipment_variants = { artillery_equipment_1 = { owner = "HAB" } } 
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		} 
+		location = 3780 
+		division_template = "Landesschützentruppendivision"	
+		start_experience_factor = 0.3 
+		force_equipment_variants = { artillery_equipment_1 = { owner = "HAB" } } 
+	}
+}
+
+instant_effect = {
+
+add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "HAB"
+		}
+		requested_factories = 2
+		progress = 0.28
+		efficiency = 100
+	}
+	
+}

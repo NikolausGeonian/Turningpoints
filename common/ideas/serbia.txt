@@ -1,0 +1,196 @@
+ideas = {
+	#General
+	country = {
+	
+		SER_OSMK = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = 1.5
+				conscription_factor = -0.5
+				stability_factor = 0.3
+				max_command_power = -50
+			}
+		}
+	
+	}
+	# POLITICAL
+	head_of_government = {
+		
+		SER_Konstantin_Musicki = {
+			allowed = {
+				original_tag = JAP
+				
+			}
+			available = {
+				has_government = authoritarianism
+			}
+			traits = {
+			
+			}
+			ai_will_do = {
+				factor = 0
+			}
+			removal_cost = -1
+		}
+		
+		}
+	# TECHNOLOGY
+	naval_manufacturer = {
+		designer = yes
+	}
+	materiel_manufacturer = {
+		designer = yes
+		
+		SER_zastava_arms = {
+			
+			allowed = {
+				original_tag = SER
+			}
+			
+			available = {
+				NOT = {
+					has_idea = SER_OSMK	
+				}
+			}
+			
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+			
+			traits = {
+				infantry_equipment_manufacturer
+			}
+			
+			equipment_bonus = {
+				
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+	}
+	
+	tank_manufacturer = {
+	
+		designer = yes
+		
+		SER_imr = {
+			
+			allowed = {
+				original_tag = SER
+			}
+			
+			available = {
+				NOT = {
+					has_idea = SER_OSMK	
+				}
+			}
+			
+			traits = {
+				medium_tank_manufacturer
+			}
+			
+			research_bonus = {
+				armor = 0.05
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	aircraft_manufacturer = { 
+		
+		designer = yes
+		
+		SER_ikarus = {
+
+			allowed = {
+				original_tag = SER
+			}
+			
+			available = {
+				NOT = {
+					has_idea = SER_OSMK	
+				}
+			}
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = {
+				light_aircraft_manufacturer
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		SER_rogozarski = {
+			
+			allowed = {
+				original_tag = SER
+			}
+			
+			available = {
+				NOT = {
+					has_idea = SER_OSMK	
+				}
+			}
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { 
+				medium_aircraft_manufacturer
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		SER_zmaj = {
+
+			allowed = {
+				original_tag = SER
+			}
+			
+			available = {
+				NOT = {
+					has_idea = SER_OSMK	
+				}
+			}
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = {
+				heavy_aircraft_manufacturer
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+	}
+}
+		

@@ -1,0 +1,135 @@
+ideas = {
+
+	country = {
+		RAJ_lions_of_the_great_war = {
+			allowed = {
+				original_tag = RAJ
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				conscription_factor = 0.02
+			}
+		}
+		RAJ_indian_gurkhas = {
+			allowed = {
+				original_tag = RAJ
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				conscription_factor = 0.02
+			}
+		}
+		RAJ_princely_states = {
+			allowed = {
+				original_tag = RAJ
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				autonomy_gain = -0.1
+				consumer_goods_factor = 0.02
+				conscription_factor = 0.03
+				political_power_cost = 0.1
+				stability_factor = -0.1
+			}
+		}
+	}
+	
+	naval_manufacturer = {
+		
+		designer = yes
+		
+		RAJ_mazagon_dock_limited = {
+			
+			allowed = {
+				original_TAG = RAJ
+			}
+						
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { convoy_escort_naval_manufacturer }
+
+		}
+		
+		RAJ_garden_reach_shipbuilders = {
+			
+			allowed = {
+				original_TAG = RAJ
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { pacific_fleet_naval_manufacturer }
+		}
+		
+	}
+
+	materiel_manufacturer = {
+			
+		designer = yes
+		
+		RAJ_Ishapore_Arsenal = {
+			
+			allowed = {
+				original_TAG = RAJ
+			}
+			
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		RAJ_Indian_Ordnance_Factories = {
+			
+			allowed = {
+				original_TAG = RAJ
+			}
+			
+			research_bonus = {
+				artillery = 0.15
+			}
+			
+			traits = { artillery_manufacturer }
+			
+			modifier = {
+			}
+		}
+	}
+	
+	industrial_concern = {
+		RAJ_Balmer_Lawrie = {
+			allowed = {
+				original_TAG = RAJ
+			}
+			research_bonus = {
+				industry = 0.02
+				synth_resources = 0.05
+			}
+			traits = { 
+			refinery_concern
+			}
+			modifier = {
+				production_speed_fuel_silo_factor = 0.05
+				production_speed_synthetic_refinery_factor = 0.05
+			}
+		}
+	}
+
+}

@@ -1,0 +1,26 @@
+state={
+	id=774
+	name="STATE_774"
+	history={
+		add_core_of = WAD
+		owner = WAD
+		
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			13268 3
+		}
+		victory_points = {
+			7919 1
+		}	
+
+	}
+
+	provinces={
+		1473 7919 13268 13281 13282 
+	}
+	manpower = 721166	
+	buildings_max_level_factor=1.000
+	state_category= rural
+	}

@@ -1,0 +1,23 @@
+state = {
+	id=879
+	name="STATE_879" #Baghermi
+	manpower = 705696
+	state_category = rural
+	
+	history = {
+		owner = BAG
+		add_core_of = BAG
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			2081 3
+		}
+		victory_points = {
+			3123 1
+		}		
+	}
+	provinces={
+		2081 3123 4897 13138 13269 13285
+	}
+}

@@ -1,0 +1,32 @@
+
+state={
+	id=49
+	name="STATE_49" # Ankara
+	manpower = 1070758
+	resources={
+		chromium = 16
+	}
+	
+	state_category = city
+
+	history={
+		owner = OTE
+		victory_points = {
+			11747 3 
+		}
+		victory_points = {
+			3951 5
+		}
+		buildings = {
+			infrastructure = 2
+			arms_factory = 2
+			industrial_complex = 2
+			air_base = 3
+		}
+		add_core_of = OTE
+	}
+
+	provinces={
+		804 909 3907 3951 6808 6908 6925 9806 9901 11747 11784 
+	}
+}

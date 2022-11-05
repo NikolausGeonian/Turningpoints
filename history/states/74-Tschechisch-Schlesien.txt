@@ -1,0 +1,30 @@
+state=
+{
+	id=74
+	name="STATE_74"
+	manpower = 3220000
+	
+	state_category = large_city
+	resources = {
+		steel = 27
+	}
+	
+	history = {
+		victory_points = {
+			3583 15
+		}
+		victory_points = {
+			9567 5
+		}
+		owner = HAB
+		buildings = {
+			infrastructure = 4
+			arms_factory = 3
+			industrial_complex = 3
+		}
+		add_core_of = HAB
+	}
+	provinces= {
+		421 3414 3583 6485 9551 9567
+ 	}
+}

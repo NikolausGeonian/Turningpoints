@@ -1,0 +1,17 @@
+state={
+	id=820
+	name="STATE_820"
+	manpower = 314964
+	state_category = pastoral
+	history={
+		buildings = {
+			infrastructure = 0
+		}
+		add_core_of = DAK
+		owner = DAK
+	}
+
+	provinces={
+		11108 1974 13258 13259 13260
+	}
+}

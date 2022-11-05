@@ -1,0 +1,33 @@
+
+state={
+	id=540
+	name="STATE_540"
+	manpower = 1225000
+	
+	state_category = rural
+	resources={
+		rubber=1 # was: 1
+		chromium=2
+	}
+	history={
+		owner = SPR
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			air_base = 2
+			industrial_complex = 1
+			8248 ={
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			8248 5
+		}
+
+		add_core_of = SPR
+	}
+
+	provinces={
+		7548 8219 8248 12981
+	}
+}

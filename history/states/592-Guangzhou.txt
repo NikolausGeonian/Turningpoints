@@ -1,0 +1,53 @@
+state={
+	id=592
+	name="STATE_592"#Guangzhou#
+	manpower = 18035200
+	state_category = metropolis
+	resources={
+		tungsten=8 
+		steel= 15 
+		chromium = 3
+	}
+
+	history={
+		owner = QNG			
+		add_core_of = QNG
+		
+		buildings = {
+			infrastructure = 4
+			arms_factory = 2
+			industrial_complex = 2
+			dockyard = 2
+			air_base = 7
+			1047 = {
+				naval_base = 7
+			}
+			4189 = {
+				naval_base = 2
+			}
+
+		}
+		victory_points = {
+			1047 20
+		}
+		
+		victory_points = {
+			4189 5 
+		}
+		victory_points = {
+			4092 3 
+		}
+		victory_points = {
+			10004 3 
+		}
+		victory_points = {
+			7039 2
+		}
+
+	}
+
+	provinces={
+		1018 1047 1087 1131 1187 4023 4092 4189 7039 7152 9963 10004 11938 11941 12077 11981
+	}
+}
+

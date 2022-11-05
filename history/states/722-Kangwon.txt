@@ -1,0 +1,28 @@
+state={
+	id=722
+	name="STATE_722"
+	manpower = 1536175
+
+	state_category = town
+	history={
+		owner = KOR
+		add_core_of = KOR
+		buildings = {
+			infrastructure = 2
+			dockyard = 1
+			12011 = {
+				naval_base = 2
+			}
+		}
+		victory_points = { 
+			12011 3 
+		}
+		victory_points = { 
+			10036 1 
+		}
+	}
+	
+	provinces={
+		1148 4004 7021 9936 9981 10036 11912 11958 12011
+	}
+}

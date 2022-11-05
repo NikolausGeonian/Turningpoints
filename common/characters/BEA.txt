@@ -1,0 +1,115 @@
+characters = {
+	
+	### Country Leader ###
+	
+	BEA_Robert_Brooke = {
+		name = BEA_Robert_Brooke
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/BEA/ministers/BEA_Robert_Brooke.dds"
+				large = "gfx/leaders/BEA/Portrait_Robert_Brooke.dds"
+			}
+		}
+		
+		country_leader = {
+			desc = "POLITICS_BEA_ROBERT_BROOKE_DESC"
+			ideology = colony_and_dominion_subtype
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+	
+	### Ministers ###
+	### HEAD OF GOVERNMENT ###
+	
+	### FOREIGN MINISTER ###
+	
+	###	ECONOMY MINISTER ###
+	
+	### FIELD MARSHAL ###
+	
+	### CORPS COMMANDER ###
+	
+	BEA_Frank_Messervy = {
+		name = BEA_Frank_Messervy
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/BEA/ministers/BEA_Frank_Messervy.dds"
+				large = "gfx/leaders/BEA/Portrait_Frank_Messervy.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_BEA_FRANK_MESSERVY_DESC"
+			traits = {  }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 1
+		}
+	}
+	
+	BEA_George_Giffard = {
+		name = BEA_George_Giffard
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/BEA/ministers/BEA_George_Giffard.dds"
+				large = "gfx/leaders/BEA/Portrait_George_Giffard.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_BEA_GEORGE_GIFFARD_DESC"
+			traits = {  }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 1
+		}
+	}
+	
+	BEA_Walter_Lentaigne = {
+		name = BEA_Walter_Lentaigne
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/BEA/ministers/BEA_Walter_Lentaigne.dds"
+				large = "gfx/leaders/BEA/Portrait_Walter_Lentaigne.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_BEA_WALTER_LENTAIGNE_DESC"
+			traits = {  }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 1
+		}
+	}
+	
+	BEA_Orde_Wingate = {
+		name = BEA_Orde_Wingate
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/BEA/ministers/BEA_Orde_Wingate.dds"
+				large = "gfx/leaders/BEA/Portrait_Orde_Wingate.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_BEA_ORDE_WINGATE_DESC"
+			traits = {  }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 1
+		}
+	}
+	
+	### ADMIRAL ###
+	
+}

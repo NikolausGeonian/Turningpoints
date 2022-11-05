@@ -1,0 +1,24 @@
+state = {
+	id=844
+	name="STATE_844" #Kars
+	manpower = 75291
+	state_category = rural
+	history = {
+		owner = OTE
+		buildings = {
+			infrastructure = 2
+		}
+		victory_points = {
+			10403 1 # Ardahan 
+		}
+		
+		victory_points = {
+			10472 2 # Kars 
+		}
+		add_core_of = OTE
+	}
+	provinces={
+		7454 789 6991 10472 10403
+		
+	}
+}

@@ -1,0 +1,21 @@
+state={
+	id=769
+	name="STATE_769" # Gaarisa
+	
+	state_category = pastoral
+
+	history={
+		owner = BEA
+		add_core_of = BEA
+		buildings = {
+			infrastructure = 1
+
+		}
+	}
+
+	provinces={
+		10976 10761 12927 11014 12941 8133
+	}
+	manpower=145731
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,128 @@
+﻿##### LAPENTINA NAME LISTS #####
+### REGULAR DESTROYER NAMES###
+LAP_DD_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_DESTROYERS
+
+	for_countries = { LAP }
+
+	type = ship
+	ship_types = { ship_hull_light destroyer }			
+
+	prefix = "BAU "
+	fallback_name = "Destructor %d"					
+
+	unique = {											
+		"Catamarca" "Jujuy" "Córdoba" "La Plata" "La Pampa" "Cervantes" "Juan de Garay" "Mendoza" "La Rioja" "Tucumán"
+		"Buenos Aires" "Entre Ríos" "Corrientes" "San Juan" "San Luis" "Misiones" "Neuquén" "Santa Cruz" "Río Negro" 
+		"Formosa" "Salta" "Chaco" "Santa Fe" "Santiago del Estero" "Tarapacá" "Antofagasta" "Atacama" "Coquimbo" 
+		"Valparaíso" "Maule" "Santiago" "Ñuble" "Biobío" "Araucanía" "Los Ríos" "Los Lagos" "Aysén" "Amambay" "Boquerón"
+		"Caaguazú" "Caazapá" "Canindeyú" "Concepción" "Guairá" "Cordillera" "Guairá" "Itapúa" "Ñeembucú" "Paraguarí"
+		"Tarija" "Potosi" "Oruro" "Chuquisaca" "Cochabamba" 
+	} 
+}
+
+### LIGHT CRUISER NAMES###
+LAP_CL_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CL
+
+	for_countries = { LAP }
+
+	type = ship
+	ship_types = { ship_hull_cruiser light_cruiser }
+	
+	prefix = "BAU "
+	fallback_name = "Crucero Ligero %d"
+
+	unique = {
+		"Libertad" "Independencia" "Guerrico" "Granville" "Rosales" "Spiro" "Parker" "Rosales" "Robinson" "Gómez Roca" 
+	}
+}
+
+### HEAVY CRUISER NAMES###
+LAP_CA_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CA
+
+	for_countries = { LAP }
+
+	type = ship
+	ship_types = { ship_hull_cruiser heavy_cruiser }
+	
+	prefix = "BAU "
+	fallback_name = "Crucero Pesado %d"
+
+	unique = {
+		"Almirante Brown" "Pueyrredon" "La ara Pentina" "Murature" "King" "Heroina" "Drummond" 
+		"Guerrico" "Granville" "Rosales" "Spiro" "Parker" "Rosales" "Robinson" "Gómez Roca" 
+	}
+}
+
+
+### BATTLESHIP NAMES ###
+LAP_BB_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_BB
+
+	for_countries = { LAP }
+
+	type = ship
+	ship_types = { ship_hull_heavy battleship }
+	
+	prefix = "BAU "
+	fallback_name = "Acorazado %d"		
+
+	unique = {
+		"Rivadavia" "Moreno" "Azopardo" "General Belgrano" "Rodríguez" "Derqui" 
+	}
+}
+
+### BATTLECRUISER NAMES ###
+LAP_BC_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_BC
+
+	for_countries = { LAP }
+
+	type = ship
+	ship_types = { ship_hull_heavy battle_cruiser }
+	
+	prefix = "BAU "
+	fallback_name = "Crucero de Batalla %d"		
+
+	unique = {
+		"Sinchi" "Cápac" "Túpac"
+	}
+}
+
+### AIRCRAFT CARRIER NAMES ###
+LAP_CV_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CARRIERS
+
+	for_countries = { LAP }
+
+	type = ship
+	ship_types = { ship_hull_carrier carrier }
+	
+	prefix = "BAU "
+	fallback_name = "Portaaviones %d"	
+
+	unique = {
+		"Independencia" "República" "General San Martín" "Veinticinco de Mayo" "Nueve de Julio" "Sindicato"
+		"General O'Higgins" "Huacchacuyac"
+	}
+}
+
+### SUBMARINES ###
+LAP_SS_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_SUBMARINES
+
+	for_countries = { LAP }
+
+	type = ship
+	ship_types = { ship_hull_submarine submarine }
+	
+	prefix = "BAU "
+	fallback_name = "Submarino %d"
+	
+	unique = {
+		"S-1" "S-2" "S-3" "S-4" "S-5" "S-6" "S-7" "S-8" "S-9" "S-10" "S-11" "S-12" "S-13" "S-14" "S-15" "S-16" "s-17"
+		"S-18"
+	}
+}

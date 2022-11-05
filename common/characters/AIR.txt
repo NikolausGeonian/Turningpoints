@@ -1,0 +1,36 @@
+characters = {
+	
+	### Country Leader ###
+	
+	AIR_Umaru_Agg_Ibrahim = {
+		name = AIR_Umaru_Agg_Ibrahim
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Africa/Portrait_Umaru_Agg_Ibrahim.dds"
+				#Spacing Modifier
+			}
+		}
+		
+		country_leader = {
+			desc = "POLITICS_AIR_UMARU_AGG_IBRAHIM_DESC"
+			ideology = autocratic_monarchy_subtype
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	
+	}
+	
+	### Ministers ###
+	### HEAD OF GOVERNMENT ###
+	
+	### FOREIGN MINISTER ###
+	
+	###	ECONOMY MINISTER ###
+	
+	### FIELD MARSHAL ###
+	
+	### CORPS COMMANDER ###
+	
+	### ADMIRAL ###
+	
+}

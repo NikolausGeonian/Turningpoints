@@ -1,0 +1,243 @@
+﻿# Division template historical names system. Is a new method of naming the divisions based on the names-group assigned to it's template.
+# If we run out of all historical names, the names will be assigned in the old way.
+#
+# Each group has a made up tag. Use it if you want to append more, or replace existing names with the extra txt files (modding).
+#
+# for_countries - lists all countries that can use it. If empty, or entire tag is missing, all countries in the world can use it.
+#
+# can_use - is a trigger that locks/unlocks the group under specific circumstances. The trigger is in a country scope.
+#
+# division_types - is a list of tokens to corresponding unit types. A player can in fact use any group of names for a div.template
+#                  however this tag is a helper for an automated choice (for AI, or if the group must switch on it's own, because
+#                  for example the current one is no longer available due to the can_use trigger saying so).
+#                  In automated choice, the division template must have at least 1 of the following types for it to be chosen.
+#
+# fallback_name - Is going to be used if we run out of the scripted historical names. If you want to use the old division naming
+#                 mechanics to be used for fallbacks, then just skip this option.
+#
+# unordered - It's a list of historical division names that did not have a number. Regardless if such names happened in history or not
+#             this option is available here mainly for a mods.
+#
+# ordered - Is a list of all historical names. 
+#           Numbers must start from 1 and up. 
+#           Numbers can't repeat in one scope.
+#           If you script the name for this group, at the same number (for example in a mod in another file), the name will be override.
+#           All arguments between the brackets must be separated by spaces. Each argument is wrapped in "quotas".
+#           1st argument = The name. It must contain either: 
+#                          %d (for decimal number placement)
+#                          %s (for string number placement - ROMAN numbers like XIV).
+#           2nd argument is optional = A localizable text describing this historical division. The text will be visible in the tooltip
+#                                      where you choose the historical division name.
+#           3rd argument is optional = An URL preferably pointing to the WIKI. It's a future feature that is not currently working in
+#                                      the current game version.
+
+# Kaiserlich und Königliche Armee
+
+HABAUS_INF_01 = {
+	name = "Infantry Division"
+	
+
+	for_countries = { HAB }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+
+	fallback_name = "%d. Infanterietruppendivision"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered = {
+	
+		1 = { "k.u.k. %d. Infanterietruppendivision" }
+		2 = { "k.u.k. %d. Infanterietruppendivision" }
+		3 = { "k.u.k. %d. Infanterietruppendivision" }
+		4 = { "k.u.k. %d. Infanterietruppendivision" }
+		5 = { "k.u.k. %d. Infanterietruppendivision" }
+		6 = { "k.u.k. %d. Infanterietruppendivision" }
+		7 = { "k.u.k. %d. Infanterietruppendivision" }
+		8 = { "k.u.k. %d. Infanterietruppendivision" }
+		9 = { "k.u.k. %d. Infanterietruppendivision" }
+		10 = { "k.u.k. %d. Infanterietruppendivision" }
+		11 = { "k.u.k. %d. Infanterietruppendivision" }
+		12 = { "k.u.k. %d. Infanterietruppendivision" }
+		13 = { "k.u.k. %d. Honvéd Infanterietruppendivision" }
+		14 = { "k.u.k. %d. Infanterietruppendivision" }
+		15 = { "k.u.k. %d. Infanterietruppendivision" }
+		16 = { "k.u.k. %d. Infanterietruppendivision" }
+		17 = { "k.u.k. %d. Infanterietruppendivision" }
+		18 = { "k.u.k. %d. Infanterietruppendivision" }
+		19 = { "k.u.k. %d. Zeměbrana Infanterietruppendivision" }
+		20 = { "k.u.k. %d. Infanterietruppendivision" }
+		21 = { "k.u.k. %d. Landwehr Infanterietruppendivision" }
+		22 = { "k.u.k. %d. Landver Infanterietruppendivision" }
+		23 = { "k.u.k. %d. Landver Infanterietruppendivision" }
+		24 = { "k.u.k. %d. Infanterietruppendivision" }
+		25 = { "k.u.k. %d. Infanterietruppendivision" }
+		26 = { "k.u.k. %d. Landwehra Infanterietruppendivision" }
+		27 = { "k.u.k. %d. Infanterietruppendivision" }
+		28 = { "k.u.k. %d. Infanterietruppendivision" }
+		29 = { "k.u.k. %d. Infanterietruppendivision" }
+		30 = { "k.u.k. %d. Infanterietruppendivision" }
+		31 = { "k.u.k. %d. Infanterietruppendivision" }
+		32 = { "k.u.k. %d. Infanterietruppendivision" }
+		33 = { "k.u.k. %d. Infanterietruppendivision" }
+		34 = { "k.u.k. %d. Infanterietruppendivision" }
+		35 = { "k.u.k. %d. Infanterietruppendivision" }
+		36 = { "k.u.k. %d. Infanterietruppendivision" }
+		44 = { "k.u.k. %d. Landwehr Infanterietruppendivision" }
+		45 = { "k.u.k. %d. Landwehr Infanterietruppendivision" }
+		46 = { "k.u.k. %d. Landwehr Infanterietruppendivision" }
+		47 = { "k.u.k. %d. Infanterietruppendivision" }
+		48 = { "k.u.k. %d. Infanterietruppendivision" }
+	
+		37 = { "k.u.k. %d. Infanterietruppendivision" }
+		38 = { "k.u.k. %d. Infanterietruppendivision" }
+		39 = { "k.u.k. %d. Infanterietruppendivision" }
+		40 = { "k.u.k. %d. Infanterietruppendivision" }
+		41 = { "k.u.k. %d. Infanterietruppendivision" }
+		42 = { "k.u.k. %d. Infanterietruppendivision" }
+		43 = { "k.u.k. %d. Infanterietruppendivision" }
+		49 = { "k.u.k. %d. Infanterietruppendivision" }
+		50 = { "k.u.k. %d. Infanterietruppendivision" }
+		51 = { "k.u.k. %d. Infanterietruppendivision" }
+		52 = { "k.u.k. %d. Infanterietruppendivision" }
+		53 = { "k.u.k. %d. Infanterietruppendivision" }
+		55 = { "k.u.k. %d. Infanterietruppendivision" }
+	}
+}
+
+HAB_CAV_01 =  {
+
+	name = "Cavalry Division"
+
+	for_countries = { HAB }
+
+	can_use = { always = yes }
+
+	division_types = { "cavalry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { AUS_INF_01 }
+
+	fallback_name = "k.u.k. %d. Kavallerietruppendivision "
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "k.u.k. %d. Kavallerietruppendivision" }
+		2 = { "k.u.k. %d. Kavallerietruppendivision" }
+		3 = { "k.u.k. %d. Kavallerietruppendivision" }
+		4 = { "k.u.k. %d. Kavallerietruppendivision" }
+		5 = { "k.u.k. %d. Kavallerietruppendivision" }
+		6 = { "k.u.k. %d. Kavallerietruppendivision" }
+		7 = { "k.u.k. %d. Kavallerietruppendivision" }
+		8 = { "k.u.k. %d. Kavallerietruppendivision" }
+		9 = { "k.u.k. %d. Kavallerietruppendivision" }
+		10 = { "k.u.k. %d. Kavallerietruppendivision" }
+		11 = { "k.u.k. %d. Honvéd Kavallerietruppendivision" }
+		12 = { "k.u.k. %d. Kavallerietruppendivision" }
+		13 = { "k.u.k. %d. Kavallerietruppendivision" }
+		14 = { "k.u.k. %d. Kavallerietruppendivision" }
+	}
+}
+
+HAB_MOT_01 = {
+	name = "Motorized Division"
+
+	for_countries = { HAB }
+
+	can_use = { always = yes }
+
+	division_types = { "motorized" }
+
+	# Number reservation system will tie to another group.
+
+	fallback_name = "k.u.k. %d. Kraftfahrjägerdivision"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "k.u.k. %d. Kraftfahrjägerdivision" }
+		2 = { "k.u.k. %d. Kraftfahrjägerdivision" }
+		3 = { "k.u.k. %d. Kraftfahrjägerdivision" }
+		4 = { "k.u.k. %d. Kraftfahrjägerdivision" }
+		5 = { "k.u.k. %d. Kraftfahrjägerdivision" }
+		6 = { "k.u.k. %d. Kraftfahrjägerdivision" }
+		7 = { "k.u.k. %d. Kraftfahrjägerdivision" }
+		8 = { "k.u.k. %d. Kraftfahrjägerdivision" }
+		9 = { "k.u.k. %d. Kraftfahrjägerdivision" }
+		10 = { "k.u.k. %d. Kraftfahrjägerdivision" }
+	}
+}
+
+HAB_ARM_01 = {
+	name = "Armored Division"
+
+	for_countries = { HAB }
+
+	can_use = { always = yes }
+
+	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
+
+	# Number reservation system will tie to another group.
+
+
+	fallback_name = "k.u.k. %d. Panzerwagen-Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "k.u.k. %d. Panzerwagen-Division" }
+		2 = { "k.u.k. %d. Panzerwagen-Division" }
+		3 = { "k.u.k. %d. Panzerwagen-Division" }
+		4 = { "k.u.k. %d. Panzerwagen-Division" }
+		5 = { "k.u.k. %d. Panzerwagen-Division" }
+		6 = { "k.u.k. %d. Panzerwagen-Division" }
+		7 = { "k.u.k. %d. Panzerwagen-Division" }
+		8 = { "k.u.k. %d. Panzerwagen-Division" }
+		9 = { "k.u.k. %d. Panzerwagen-Division" }
+		10 = { "k.u.k. %d. Panzerwagen-Division" }
+	}
+}
+
+HAB_MNT_01 = {
+
+	name = "Mountain Division"
+
+	for_countries = { HAB }
+
+	can_use = { always = yes }
+
+	division_types = { "mountaineers" }
+
+	# Number reservation system will tie to another group.
+
+	fallback_name = "k.k. Landesschützen-Division Nr.%d."
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "k.k. Landesschützen-Division 'Trient' Nr.%d." }
+		2 = { "k.k. Landesschützen-Division 'Bozen' Nr.%d." }
+		3 = { "k.k. Landesschützen-Division 'Innichen' Nr.%d." }
+		4 = { "k.k. Landesschützen-Division 'Klagenfurt' Nr.%d." }
+		27 = { "k.k. Landesschützen-Division 'Laibach' Nr.%d." }
+		5 = { "k.u.k. %d. Division" }
+		6 = { "k.u.k. %d. Division" }
+		7 = { "k.u.k. %d. Division" }
+		8 = { "k.u.k. %d. Division" }
+		9 = { "k.u.k. %d. Division" }
+		10 = { "k.u.k. %d. Division" }
+		
+		
+	}
+}
+
+

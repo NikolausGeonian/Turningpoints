@@ -1,0 +1,17 @@
+﻿l_english:
+#Romania#
+ #IDEA#
+ ROM_iron_guard:0 "Iron Guard"
+ ROM_iron_guard_desc:0 ""
+ #LEADER#
+ POLITICS_CORNELIU_ZELEA_CODREANU_DESC:0 "Conducătorul, Căpitanul of The Legion of the Archangel Michael.\n\n§YBiography:§!\n§YBorn: §!13th September, 1899\nHuși, Fălciu County, Kingdom of Romania\n--------------\n§YPolitical Carrer:§!\n"
+ #MARSHAL#
+ #EVENTS#
+ 
+ #MANUFACTURER#
+ ROM_Cugir:0 "Cugir"
+ ROM_Cugir_desc:0 "Cugir Arms Factory"
+ ROM_malaxa:0 "Malaxa"
+ ROM_malaxa_desc:0 ""
+ ROM_Industria_Aeronautica_Romana:0 "IAR"
+ ROM_Industria_Aeronautica_Romana_desc:0 "Industria Aeronautică Română"

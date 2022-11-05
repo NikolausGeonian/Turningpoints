@@ -1,0 +1,34 @@
+
+state={
+	id=614
+	name="STATE_614" # Hebei
+	manpower = 18434900
+	
+	state_category = city
+
+	history={
+		victory_points = {
+			7109 20
+		}
+		victory_points = {
+			4190 5
+		}
+		victory_points = {
+			11944 1
+		}
+		victory_points = {
+			1169 1
+		}
+		owner = QNG
+		add_core_of = QNG
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+		}
+
+	}
+
+	provinces={
+		1169 1188 4032 4058 4093 4137 4190 4208 7000 7092 7109 10003 10022 10053 10119 11933 11944 11980 11996 12062 
+	}
+}

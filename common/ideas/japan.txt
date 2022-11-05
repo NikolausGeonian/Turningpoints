@@ -1,0 +1,862 @@
+ideas = {
+
+	country = {
+	#POLITICAL#
+		JAP_Divined_Country = {
+			
+			allowed = {
+				OR = {
+					original_tag = JAP
+					original_tag = NJP
+				}
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.2
+				stability_factor = -0.3
+			}
+		}
+		
+		JAP_Disobedient_Zaibatsu = {
+			
+			allowed = {
+				original_tag = JAP
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.12
+				conversion_cost_civ_to_mil_factor = 0.5
+				conversion_cost_mil_to_civ_factor = -0.5
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_infrastructure_factor = 0.1
+				production_speed_arms_factory_factor = -0.3
+				production_speed_bunker_factor = -0.7
+				production_speed_coastal_bunker_factor = -0.7
+			}
+		}
+	
+		JAP_Genro_Oligarchy = {
+			
+			allowed = {
+				original_tag = JAP
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.5
+				mobilization_laws_cost_factor = 0.05
+				justify_war_goal_time = 0.1
+			}
+		}
+	
+		JAP_State_Shintoism = {
+			name = JAP_state_shintoism
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+					NOT = {
+					has_government = democratic_socialism
+					has_government = social_democratism
+					has_government = democratic_socialism
+					has_government = social_liberalism
+							}
+								}
+			removal_cost = -1
+	
+
+			modifier = {
+				planning_speed = 0.05
+				army_morale_factor = 0.1
+				conscription_factor = 0.02	
+						}
+		}
+
+		JAP_CHI_Military_Mission = {
+			name = JAP_chi_military_mission
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+					NOT = {
+					has_government = conservatism
+					has_government = social_democratism
+					has_government = social_liberalism
+							}
+								}
+			removal_cost = -1
+	
+
+			modifier = {
+				planning_speed = 0.05
+				army_morale_factor = 0.1
+						}
+		}	
+	
+		JAP_left_has_been_purged = {
+			name = JAP_left_has_been_purged
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+					always = yes
+								}
+			removal_cost = -1
+	
+
+			modifier = {
+				consumer_goods_factor = -0.2
+				production_speed_arms_factory_factor = 0.1
+						}
+		}
+	
+		JAP_left_has_been_legalized = {
+			name = JAP_left_has_been_legalized
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+					always = yes
+								}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.2
+				production_speed_arms_factory_factor = -0.05
+				production_speed_dockyard_factor = -0.05
+				production_speed_naval_base_factor = -0.05
+				production_speed_coastal_bunker_factor = -0.05
+				production_speed_bunker_factor = -0.05
+				production_speed_air_base_factor = -0.05
+				production_speed_anti_air_building_factor = -0.05
+				production_speed_radar_station_factor = -0.05
+				production_speed_fuel_silo_factor = -0.05
+				production_speed_synthetic_refinery_factor = -0.05
+						}
+		}
+	
+		JAP_zaibatsu_cooperated = {
+			name = JAP_zaibatsu_cooperated
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1	
+			modifier = {
+				political_power_cost = 0.25
+				economy_cost_factor = 0.15
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_infrastructure_factor = 0.1
+				consumer_goods_factor = 0.05
+			}
+		}
+	
+		JAP_zaibatsu_controlled = {
+	
+			name = JAP_zaibatsu_controlled
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1	
+			modifier = {
+				political_power_cost = 0.5
+				production_speed_industrial_complex_factor = -0.1
+				production_speed_infrastructure_factor = -0.1
+				production_speed_arms_factory_factor = 0.05
+				production_speed_dockyard_factor = 0.05
+				production_speed_air_base_factor = 0.05
+			}
+		}
+		
+		JAP_volunteer_engineering_corps = {
+			
+			allowed = {
+				original_tag = JAP
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+			}
+		}
+	}
+	
+	# MILITARY
+	air_chief = {
+		
+		torashiro_kawabe = {
+			
+			
+			allowed = {
+				original_tag = JAP
+			}
+			
+
+			
+			traits = { air_chief_night_operations_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		korechika_anami = {
+			
+			
+			allowed = {
+				original_tag = JAP
+			}
+			
+
+			
+			traits = { air_chief_ground_support_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		kenji_doihara = {
+			
+			
+			allowed = {
+				original_tag = JAP
+			}
+			
+
+			
+			traits = { air_chief_all_weather_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}	
+
+	theorist = {
+		
+		hisaichi_terauchi = {
+						
+			allowed = {
+				original_tag = JAP
+			}
+						
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+			
+			traits = { military_theorist }
+		}
+		
+		isoroku_yamamoto = {
+						
+			allowed = {
+				original_tag = JAP
+			}
+			
+			cost = 250
+						
+			research_bonus = {
+				cat_base_strike = 0.15
+			}
+			
+			traits = { naval_aviation_pioneer }
+		}
+		
+		minoru_genda = {
+						
+			allowed = {
+				original_tag = JAP
+			}
+						
+			research_bonus = {
+				naval_doctrine = 0.10
+			}
+			
+			traits = { naval_theorist }
+		}
+		
+		yoshitoshi_tokugawa = {
+						
+			allowed = {
+				original_tag = JAP
+			}
+			
+			cost = 250
+			
+			research_bonus = {
+				cat_operational_integrity = 0.15
+			}
+			
+			traits = { assault_avaition }
+		}
+		
+		hino_kumazo = {
+						
+			allowed = {
+				original_tag = JAP
+			}	
+			
+			research_bonus = {
+				air_doctrine = 0.10
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+		
+		yoshio_nishina = {
+			
+			
+			allowed = {
+				original_tag = JAP
+			}
+			
+
+			
+			research_bonus = {
+				nuclear = 0.15
+			}
+			
+			traits = { nuclear_scientist }
+		}
+		
+		hideo_itokawa = {
+			
+			
+			allowed = {
+				original_tag = JAP
+			}
+			
+
+			
+			research_bonus = {
+				rocketry = 0.15
+			}
+			
+			traits = { rocket_scientist }
+		}
+	}	
+	
+	high_command = {
+		
+		
+		mitsuo_fuchida = {
+			
+			
+			allowed = {
+				original_tag = JAP
+			}
+			
+
+			
+			traits = { air_tactical_bombing_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		nishizo_tsukahara = {
+			
+			
+			allowed = {
+				original_tag = JAP
+			}
+			
+
+			
+			traits = { air_naval_strike_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		tateo_kato = {
+			
+			
+			allowed = {
+				original_tag = JAP
+			}
+			
+
+			
+			traits = { air_air_combat_training_3 }
+			
+			ai_will_do = {
+				factor = 0.8
+			}
+		}	
+	}
+		
+	# TECHNOLOGY
+	naval_manufacturer = {
+		
+		designer = yes
+		
+		JAP_kure_naval_arsenal = {
+			allowed = {
+				original_tag = JAP
+			}
+			cost = 75
+						
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = {
+				battlefleet_designer
+				state_owned
+			} # built Yamato
+
+		}
+		
+		JAP_maizuru_naval_arsenal = {			
+			allowed = {
+				original_tag = JAP
+			}
+				
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			traits = {
+				convoy_escort_naval_manufacturer
+				state_owned
+			} #destroyer R&D
+			equipment_bonus = {
+				# 
+			}
+		}
+		
+		JAP_kawasaki = {
+			allowed = {
+				original_tag = JAP
+			}
+			research_bonus = {
+				naval_equipment = 0.05
+				air_equipment = 0.05
+				motorized_equipment = 0.05
+			}
+			traits = {
+				zaibatsu
+			}
+		}
+		
+		JAP_sasebo_naval_arsenal = {
+			allowed = {
+				original_tag = JAP
+			}			
+			research_bonus = {
+				naval_equipment = 0.15
+			}			
+			traits = {
+				state_owned
+				coastal_defence_naval_manufacturer
+				} #used for many repairs and conversions			
+			equipment_bonus = {
+				
+			}
+		}	
+	}
+	
+	aircraft_manufacturer = {
+		
+		designer = yes
+		
+		JAP_mitsubishi = {
+						
+			allowed = {
+				original_tag = JAP		
+			}
+			research_bonus = {
+				air_equipment = 0.1
+				industry = 0.1
+			}
+			
+			traits = {
+				light_aircraft_manufacturer
+				zaibatsu
+			}
+
+			modifier = {
+
+			}
+		}
+
+		JAP_aichi = {
+			
+			allowed = {
+				original_tag = JAP
+			}			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = {
+				fuel_efficient_aircraft_manufacturer
+			}
+		}
+		
+		JAP_nakajima = {		
+			allowed = {
+				original_tag = JAP
+			}
+			research_bonus = {
+				air_equipment = 0.15
+			}	
+			traits = {
+				heavy_aircraft_manufacturer
+				zaibatsu
+			}
+		}
+		
+		JAP_Kawanishi_Aircraft = {		
+			allowed = {
+				original_tag = JAP
+			}
+			research_bonus = {
+				air_equipment = 0.15
+			}	
+			traits = {
+				
+			}
+		}
+		
+}
+	
+	research_academy = {
+		
+		JAP_kyoto_university = {
+						
+			allowed = {
+				OR = {
+					original_tag = JAP
+					original_tag = NJP
+				}
+			}
+			visible = {}
+			available = {}
+			
+			research_bonus = {
+				industry = 0.15
+				rocketry = 0.15
+				synth_resources = 0.15
+			}
+			
+			traits = {research_academy}
+
+			modifier = {
+
+			}
+		}
+		
+		JAP_kyushu_university = {
+						
+			allowed = {
+				original_tag = JAP	
+			#	original_tag = NJP
+			}
+			
+			available = {
+			}
+			
+			research_bonus = {
+				electronics = 0.15
+				industry = 0.15
+				nuclear = 0.15
+			}
+			
+			traits = {research_academy}
+
+			modifier = {
+
+			}
+		}
+		
+		JAP_osaka_university = {
+						
+			allowed = {
+				original_tag = JAP	
+			#	original_tag = NJP
+			}
+			
+			available = {
+			}
+			
+			research_bonus = {
+				electronics = 0.15
+				industry = 0.15
+				nuclear = 0.15
+			}
+			
+			traits = {research_academy}
+
+			modifier = {
+
+			}
+		}
+	}
+	
+	industrial_concern = {
+		
+		JAP_Nichitsu = {	#日本窒素
+			allowed = {
+				original_tag = JAP
+			}
+			research_bonus = {
+				industry = 0.05
+				synth_resources = 0.1
+			}
+			traits = {
+				zaibatsu
+				refinery_concern
+			}
+		}
+		
+		JAP_Yasuda = {	#安田
+			allowed = {
+				original_tag = JAP
+			}
+			research_bonus = {
+				industry = 0.15
+			}
+			traits = {
+				zaibatsu
+			}
+		}
+		
+		JAP_great_consolidated = {	#大同
+			allowed = {
+				original_tag = JAP
+			}
+			research_bonus = {
+				electronics = 0.05
+				industry = 0.05
+			}
+			traits = {
+				electronics_concern
+			}
+		}
+		
+		JAP_wuhua_chartered = {	#中国物华
+			
+			allowed = {
+				original_tag = JAP
+			}
+			
+			available = {
+				is_in_faction_with = QNG
+			}
+			
+			research_bonus = {
+				electronics = 0.05
+				industry = 0.10
+			}
+			traits = {
+				industrial_concern
+				electronics_developer
+				chartered
+			}
+		}
+		
+		JAP_sumitomo = {	#住友	
+			allowed = {
+				original_tag = JAP
+			}		
+			research_bonus = {
+				electronics = 0.1
+			}
+			traits = {
+				electronics_concern
+				zaibatsu
+			}
+		}
+		
+		JAP_ujiden = {		#宇都电
+			allowed = {
+				original_tag = JAP
+			}
+			research_bonus = {
+				electronics = 0.15
+			}
+			traits = {
+				electronics_concern
+				state_owned
+			}
+		}
+	
+		JAP_mitsui = {		#三井
+			allowed = {
+				original_tag = JAP
+				#NOT = {
+				#	has_country_flag = nationalize_zaibatsu
+				#}
+			}
+			traits = {
+				zaibatsu
+			}
+			research_bonus = {
+				industry = 0.1
+			}
+		}
+		
+		#JAP_idemitsu_kosan = {
+		#	picture = generic_industrial_concern_2	
+		#	allowed = {
+		#		original_tag = JAP
+		#	}
+		#				
+		#	research_bonus = {
+		#		industry = 0.05
+		#		synth_resources = 0.1
+		#	}
+		#	
+		#	traits = { 
+		#	refinery_concern
+		#	}
+		#}
+	}
+	
+	materiel_manufacturer = {
+			
+		designer = yes
+		
+		JAP_Yawata_Iron = {
+			allowed = {
+				original_tag = JAP
+			#	original_tag = NJP
+			}
+			available = {
+				has_idea = JAP_sumitomo
+			}
+			research_bonus = {
+				artillery = 0.15
+			}
+			traits = { zaibatsu artillery_manufacturer }
+		}
+		
+		JAP_Toyo_Rayon = {
+			allowed = {
+				original_tag = JAP
+			#	original_tag = NJP
+			}
+			available = {
+				has_idea = JAP_mitsui
+			}
+			research_bonus = {
+				support_tech = 0.15
+			}
+			traits = { zaibatsu support_equipment_manufacturer  }
+		}
+		
+		JAP_osaka_army_arsenal = {
+			allowed = {
+				original_tag = JAP
+			#	original_tag = NJP
+			}
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+			traits = { infantry_equipment_manufacturer state_owned }
+		}
+		
+		JAP_nissan = {		                                                                                                                                                                                                                                                                                                                                                            
+			allowed = {
+				original_tag = JAP
+			}		
+			research_bonus = {
+				motorized_equipment = 0.15
+			}
+			traits = { zaibatsu motorized_equipment_manufacturer }
+		}
+	}
+		
+	tank_manufacturer = {
+		
+		designer = yes
+		
+		JAP_ishikawajima = {
+				allowed = {
+					original_tag = JAP
+				}
+				traits = { medium_tank_manufacturer }
+				research_bonus = {
+					armor = 0.05
+				}
+			}
+			
+		JAP_toyo_kogyo = {
+				allowed = {
+					original_tag = JAP
+				}
+				traits = { fast_tank_manufacturer }
+				research_bonus = {
+					armor = 0.05
+				}
+			}
+			
+		JAP_hitachi = {
+			allowed = {
+				original_tag = JAP
+			}
+			available = {
+				has_idea = JAP_nissan
+			}
+			traits = {
+				heavy_tank_manufacturer
+				zaibatsu
+			}
+			modifier = {
+				army_armor_attack_factor = 0.05
+			}
+			research_bonus = {
+				armor = 0.05
+			}
+		}
+			
+	}
+
+	# GOVERNMENT
+	
+	economy_minister = {	
+		
+		JAP_Aikawa_Yoshisuke = {	#鮎川 義介
+			allowed = {
+				original_tag = JAP
+
+			}
+			available = {
+				always = no
+			}
+			traits = { }
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	
+	}
+}

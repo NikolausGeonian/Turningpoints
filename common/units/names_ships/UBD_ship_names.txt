@@ -1,0 +1,103 @@
+﻿##### BALTIC NAME LISTS #####
+### REGULAR DESTROYER NAMES###
+UBD_DD_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_DESTROYERS
+
+	for_countries = { UBD }
+
+	type = ship
+	ship_types = { ship_hull_light destroyer }			
+
+	prefix = "HSHS"
+	fallback_name = "Destructor %d"					
+
+	unique = {											
+			}
+}
+
+### LIGHT CRUISER NAMES###
+UBD_CL_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CL
+
+	for_countries = { UBD }
+
+	type = ship
+	ship_types = { ship_hull_cruiser light_cruiser }
+	
+	prefix = "HSHS"
+	fallback_name = "Crucero Ligero %d"
+
+	unique = {
+	
+	}
+}
+
+### HEAVY CRUISER NAMES###
+UBD_CA_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CA
+
+	for_countries = { UBD }
+
+	type = ship
+	ship_types = { ship_hull_cruiser heavy_cruiser }
+	
+	prefix = "HSHS"
+	fallback_name = "Crucero Pesado %d"
+
+	unique = {
+	
+	}
+}
+
+
+### BATTLESHIP NAMES ###
+UBD_BB_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_BB
+
+	for_countries = { UBD }
+
+	type = ship
+	ship_types = { ship_hull_heavy battleship battle_cruiser }
+	
+	prefix = "HSHS"
+	fallback_name = "Schlachtschiff %d"		
+
+	unique = {
+		"Coronel Eduardo Blanco" "Almirante San Pablo" "Caracas" 
+	}
+}
+
+
+### AIRCRAFT CARRIER NAMES ###
+UBD_CV_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CARRIERS
+
+	for_countries = { UBD }
+
+	type = ship
+	ship_types = { ship_hull_carrier carrier }
+	
+	prefix = "HSHS"
+	fallback_name = "Portaaviones %d"	
+
+	unique = {
+	
+	}
+}
+
+### SUBMARINES ###
+UBD_SS_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_SUBMARINES
+
+	for_countries = { UBD }
+
+	type = ship
+	ship_types = { ship_hull_submarine submarine }
+	
+	prefix = "HSHS"
+	fallback_name = "Submarino %d"
+	
+	unique = {
+	
+	}
+}

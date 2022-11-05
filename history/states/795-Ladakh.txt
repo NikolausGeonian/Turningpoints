@@ -1,0 +1,26 @@
+
+state={
+	id=795
+	name="STATE_795"
+
+	history={
+		owner = QNG
+		add_core_of = RAJ
+		add_core_of = TIB
+		buildings = {
+			infrastructure = 1
+
+		}
+		victory_points = {
+			7273 1
+		}
+
+	}
+
+	provinces={
+		2041 5042 7273 7316 8005 10821 12884 13233 13235
+	}
+	manpower=3047700
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

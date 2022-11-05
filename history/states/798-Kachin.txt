@@ -1,0 +1,30 @@
+
+state={
+	id=798
+	name="STATE_798" #Kachin
+
+	history={
+		owner = BRM
+		add_core_of = BRM
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+		}
+		victory_points = {
+			4425 5 
+		}
+		
+		victory_points = {
+			10920 2 
+		}
+	}
+
+	provinces={
+		1082 1197 1934 4318 4425 8063 10920
+	}
+	manpower= 1252000
+	
+	buildings_max_level_factor=1.000
+	
+	state_category=rural
+}

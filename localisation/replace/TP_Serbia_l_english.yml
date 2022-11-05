@@ -1,0 +1,23 @@
+﻿l_english:
+#Serbia#
+ #IDEA#
+ SER_OSMK:0 "O.S.M.K"
+ SER_OSMK_desc:0 ""
+ #LEADER#
+ SER_Konstantin_Musicki:0 "Konstantin Mušicki"
+ SER_Konstantin_Musicki_desc:0 ""
+ MARSHAL_SER_MUSICKI_DESC:0 ""
+ 
+ #MANUFACTURER#
+ SER_zastava_arms:0 "Zastava Arms"
+ SER_zastava_arms_desc:0 ""
+ SER_imr:0 "IMR"
+ SER_imr_desc:0 "Industrija Motora Rakovica"
+ SER_ikarus:0 "Ikarus "
+ SER_ikarus_desc:0 ""
+ SER_rogozarski:0 "Rogožarski"
+ SER_rogozarski_desc:0 ""
+ SER_zmaj:0 "Zmaj"
+ SER_zmaj_desc:0 ""
+ 
+ #EVENTS#

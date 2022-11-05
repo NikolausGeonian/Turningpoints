@@ -1,0 +1,23 @@
+state = {
+	id=863
+	name="STATE_863" #Upper Brittany 
+	manpower = 1579979
+	state_category = large_town
+	
+	history = {
+		owner = NOM
+		add_core_of = FRA
+		add_core_of = NOM
+		victory_points = {
+			9495 1
+		}
+		buildings = {
+			infrastructure = 3
+			dockyard = 1
+			industrial_complex = 1
+		}		
+	}
+	provinces={
+		9495 9510 9525 11508 
+	}
+}

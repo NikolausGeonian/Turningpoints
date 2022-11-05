@@ -1,0 +1,36 @@
+characters = {
+	
+	### Country Leader ###
+	
+	YEM_Yahya_Muhammad_Hamid_ed_Din = {
+		name = YEM_Yahya_Muhammad_Hamid_ed_Din
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/YEM/Portrait_Yahya_Muhammad_Hamid_ed_Din.dds"
+				#Spacing Modifier
+			}
+		}
+		
+		country_leader = {
+			desc = "POLITICS_YEM_YAHYA_MUHAMMAD_HAMID_DESC"
+			ideology = autocratic_monarchy_subtype
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	
+	}
+	
+	### Ministers ###
+	### HEAD OF GOVERNMENT ###
+	
+	### FOREIGN MINISTER ###
+	
+	###	ECONOMY MINISTER ###
+	
+	### FIELD MARSHAL ###
+	
+	### CORPS COMMANDER ###
+	
+	### ADMIRAL ###
+	
+}

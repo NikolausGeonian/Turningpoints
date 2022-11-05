@@ -1,0 +1,69 @@
+﻿capital = 15 
+
+#oob = "NOM_1936"
+set_cosmetic_tag = NOM_GBR
+add_ideas = {
+	NOM_Royal_Norman_Constabulary
+}
+# Starting tech
+
+set_technology = {
+	tech_support = 1		
+	tech_engineers = 1
+	tech_mountaineers = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+}
+
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		early_destroyer = 1
+		early_light_cruiser = 1
+		early_submarine = 1
+		transport = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		early_ship_hull_submarine = 1
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_battery = 1
+		basic_torpedo = 1
+		mtg_transport = 1
+	}
+}
+
+set_popularities = {	conservatism = 43
+	authoritarianism = 10
+	social_democratism = 0
+	patriotic_socialism = 0
+	corporatism = 6
+	democratic_socialism = 0
+	populism = 30
+	social_liberalism = 11
+}
+set_politics = {
+	ruling_party = conservatism
+	last_election = "1935.12.7"
+	election_frequency = 48
+	elections_allowed = yes
+}
+create_country_leader = {
+	name = "Winston Churchill"
+	desc = "POLITICS_NOM_WINSTON_CHURHILL_DESC"
+	picture = "gfx/leaders/GBR/Portrait_Winston_Churchill.dds"
+	expire = "1953.3.1"
+	ideology = constitutional_monarchy_C_subtype
+	traits = {
+		
+	}
+}
+
+

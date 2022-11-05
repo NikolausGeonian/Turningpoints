@@ -1,0 +1,157 @@
+﻿capital = 158# Turin
+
+oob = "SAV_1936"
+
+### Country Leader ###
+
+recruit_character = SAV_Umberto_II
+
+### Ministers ###
+
+recruit_character = SAV_Gabriele_D_Annunzio
+recruit_character = SAV_Cesare_Maria_De_Vecchi
+
+### Military Officers ###
+
+recruit_character = SAV_Emilio_De_Bono
+recruit_character = SAV_Pietro_Badoglio
+recruit_character = SAV_Annibale_Bergonzoli
+recruit_character = SAV_Ugo_Cavallero
+recruit_character = SAV_Vittorio_Ambrosio
+recruit_character = SAV_Mario_Robotti
+
+# General #
+set_research_slots = 3
+set_stability = 0.50
+set_war_support = 0.8
+set_fuel_ratio = 1.0
+set_convoys = 100
+# National Idea #
+add_ideas = {
+	extensive_conscription
+	low_economic_mobilisation
+	generic_treaty_of_santa_sofia
+	SAV_Gabriele_D_Annunzio
+}
+
+# Starting tech #
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_engineers = 1
+	tech_support = 1		
+	tech_mountaineers = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	basic_train = 1
+	fuel_silos = 1
+}
+
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	set_technology = {
+		armored_car1 = 1
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+	}
+	
+	else = {
+		set_technology = {
+			gwtank = 1
+			basic_light_tank = 1
+		}
+	}
+}
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		basic_depth_charges = 1
+		basic_torpedo = 1
+		basic_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_battery = 1
+		basic_medium_battery = 1
+		basic_light_battery = 1
+		basic_heavy_armor_scheme = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		mtg_transport = 1
+		coastal_defense_ships = 1
+		improved_airplane_launcher = 1
+	}
+	
+	else = {
+		set_technology = {
+			early_submarine = 1
+			early_destroyer = 1
+			early_light_cruiser = 1
+			early_heavy_cruiser = 1
+			early_battleship = 1
+			transport = 1
+		}
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "By Blood Alone"
+	}
+		set_technology = {
+			aa_lmg = 1
+			early_bombs = 1
+			aircraft_construction = 1
+			engines_1 = 1
+			engines_2 = 1
+			iw_small_airframe = 1
+			basic_small_airframe = 1
+			iw_medium_airframe = 1
+			basic_medium_airframe = 1
+		}
+	else = {
+		set_technology = {
+			early_fighter = 1
+			early_bomber = 1
+			naval_bomber1 = 1
+			CAS1 = 1
+		}
+	}
+}
+
+# Starting Import #
+
+# Politics #
+set_popularities = {
+	conservatism = 23
+	authoritarianism = 36
+	social_democratism = 0
+	patriotic_socialism = 0
+	corporatism = 41
+	democratic_socialism = 0
+	populism = 0
+	social_liberalism = 0
+}
+set_politics = {
+	ruling_party = corporatism
+	last_election = "1919.1.3"
+	election_frequency = 48
+	elections_allowed = no
+}

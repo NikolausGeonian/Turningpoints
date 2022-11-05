@@ -1,0 +1,442 @@
+focus_tree = {
+	id = SAV_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = SAV 
+		}
+	}
+	continuous_focus_position = { x = 0 y = 2000 }
+	default = no
+	
+	##########################
+	## the 2nd Risorgimento ##开始决议
+	##########################
+	
+	focus = {
+		id = SAV_Risorgimento
+		icon = GFX_goal_generic_italian_risorgimento
+		x = 0
+		y = 0
+		cost = 1
+		available = {		
+		}
+		completion_reward = {
+		}
+	}
+	
+	###########################
+	## be friend with France ##
+	###########################
+	
+	focus = {
+		id = SAV_be_friend_with_France
+		icon = GFX_goal_SAV_be_friend_with_France
+		x = -2
+		y = 1
+		cost = 1
+		available = {		
+		}
+		prerequisite = { 
+		}
+		mutually_exclusive = {
+			focus = SAV_fight_alone
+		}
+		relative_position_id = SAV_Risorgimento
+		completion_reward = {
+		}
+	}
+	
+	#########################
+	## Treaty of Swissland ##
+	#########################
+	
+	focus = {
+		id = SAV_treaty_of_swissland
+		icon = GFX_goal_SAV_treaty_of_swissland
+		x = -1
+		y = 1
+		cost = 1
+		available = {		
+		}
+		prerequisite = { 
+			focus = SAV_be_friend_with_France
+		}
+		relative_position_id = SAV_be_friend_with_France
+		completion_reward = {
+		}
+	}
+	
+	
+	
+	#################
+	## Fight alone ##
+	#################
+	
+	focus = {
+		id = SAV_fight_alone
+		icon = GFX_goal_SAV_fight_alone
+		x = 2
+		y = 1
+		cost = 1
+		available = {		
+		}
+		prerequisite = {  
+		}
+		mutually_exclusive = {
+			focus = SAV_be_friend_with_France
+		}
+		relative_position_id = SAV_Risorgimento
+		completion_reward = {
+		}
+	}
+	
+	####################
+	## Delfinato Line ##
+	####################
+	
+	focus = {
+		id = SAV_Delfinato_line
+		icon = GFX_goal_SAV_Delfinato_line
+		x = 1
+		y = 1
+		cost = 1
+		available = {		
+		}
+		prerequisite = { 
+			focus = SAV_fight_alone
+		}
+		relative_position_id = SAV_fight_alone
+		completion_reward = {
+		}
+	}
+	
+	################################################
+	## Challenge the authority of the Confederacy ##
+	################################################
+	
+	focus = {
+		id = SAV_challenge_the_authority_of_the_confederacy
+		icon = GFX_goal_SAV_challenge_the_authority_of_the_confederacy
+		x = 0
+		y = 2
+		cost = 1
+		available = {		
+		}
+		prerequisite = { 
+			focus = SAV_Risorgimento
+		}
+		prerequisite = { 
+			focus = SAV_be_friend_with_France
+			focus = SAV_fight_alone
+			
+		}
+		relative_position_id = SAV_Risorgimento
+		completion_reward = {
+		}
+	}
+	
+	##################
+	## invade Parma ##
+	##################
+	
+	focus = {
+		id = SAV_invade_parma
+		icon = GFX_goal_SAV_invade_parma
+		x = -2
+		y = 1
+		cost = 1
+		available = {		
+		}
+		prerequisite = { 
+			focus = SAV_challenge_the_authority_of_the_confederacy
+		}
+		relative_position_id = SAV_challenge_the_authority_of_the_confederacy
+		completion_reward = {
+		}
+	}
+	
+	##################
+	## invade malta ##
+	##################
+	
+	focus = {
+		id = SAV_invade_malta
+		icon = GFX_goal_SAV_invade_malta
+		x = 0
+		y = 1
+		cost = 1
+		available = {		
+		}
+		prerequisite = { 
+			focus = SAV_challenge_the_authority_of_the_confederacy
+		}
+		relative_position_id = SAV_challenge_the_authority_of_the_confederacy
+		completion_reward = {
+		}
+	}
+	
+	
+	####################
+	## invade Tuscany ##
+	####################
+	
+	focus = {
+		id = SAV_invade_tuscany
+		icon = GFX_goal_SAV_invade_tuscany
+		x = 2
+		y = 1
+		cost = 1
+		available = {		
+		}
+		prerequisite = { 
+			focus = SAV_challenge_the_authority_of_the_confederacy
+		}
+		relative_position_id = SAV_challenge_the_authority_of_the_confederacy
+		completion_reward = {
+		}
+	}
+	
+	#########################
+	## integrate of north ##
+	#########################
+	
+	focus = {
+		id = SAV_integrate_of_north 
+		icon = GFX_goal_SAV_integrate_of_north
+		x = 2
+		y = 1
+		cost = 1
+		available = {		
+		}
+		prerequisite = { 
+			focus = SAV_invade_tuscany
+		}
+		prerequisite = { 
+			focus = SAV_invade_parma
+		}
+		relative_position_id = SAV_invade_parma
+		completion_reward = {
+		}
+	}
+	
+	########################
+	## invade Papal State ##
+	########################
+	
+	focus = {
+		id = SAV_invade_papal_state
+		icon = GFX_goal_SAV_invade_papal_state
+		x = 0
+		y = 1
+		cost = 1
+		available = {		
+		}
+		prerequisite = { 
+			focus = SAV_invade_tuscany
+		}
+		prerequisite = { 
+			focus = SAV_invade_parma
+		}
+		relative_position_id = SAV_invade_parma
+		completion_reward = {
+		}
+	}
+	
+	#####################
+	## invade sicilies ##
+	#####################
+	
+	focus = {
+		id = SAV_invade_sicilies
+		icon = GFX_goal_SAV_invade_sicilies
+		x = 0
+		y = 1
+		cost = 1
+		available = {		
+		}
+		prerequisite = { 
+			focus = SAV_invade_tuscany
+		}
+		prerequisite = { 
+			focus = SAV_invade_parma
+		}
+		relative_position_id = SAV_invade_tuscany
+		completion_reward = {
+		}
+	}
+	
+	################################
+	## claim the rebirth of Italy ##
+	################################
+	
+	focus = {
+		id = SAV_claim_the_rebirth_of_italy
+		icon = GFX_goal_SAV_claim_the_rebirth_of_italy
+		x = 2
+		y = 1
+		cost = 1
+		available = {		
+		}
+		prerequisite = { 
+			focus = SAV_invade_sicilies
+		}
+		prerequisite = { 
+			focus = SAV_invade_papal_state
+		}
+		relative_position_id = SAV_invade_papal_state
+		completion_reward = {
+		}
+	}
+	
+	####################################
+	## Challenging Habsburg hegemony  ##
+	####################################
+	
+	focus = {
+		id = SAV_challenging_habsburg_hegemony
+		icon = GFX_goal_SAV_challenging_habsburg_hegemony
+		x = 0
+		y = 1
+		cost = 1
+		available = {		
+		}
+		prerequisite = { 
+			focus = SAV_claim_the_rebirth_of_italy
+		}
+		relative_position_id = SAV_claim_the_rebirth_of_italy
+		completion_reward = {
+		}
+	}
+	
+	########################
+	## cross the po river ##
+	########################
+	
+	focus = {
+		id = SAV_cross_the_po
+		icon = GFX_goal_SAV_cross_the_po
+		x = 2
+		y = 1
+		cost = 1
+		available = {		
+		}
+		prerequisite = { 
+			focus = SAV_challenging_habsburg_hegemony
+		}
+		relative_position_id = SAV_challenging_habsburg_hegemony
+		completion_reward = {
+		}
+	}
+	
+	#####################
+	## Fate of Corsica ##
+	#####################
+	
+	focus = {
+		id = SAV_fate_of_corsica
+		icon = GFX_goal_generic_attack_corsica
+		x = 0
+		y = 6
+		cost = 1
+		available = {		
+		}
+		prerequisite = { 
+			focus = SAV_cross_the_po
+		}
+		prerequisite = { 
+			focus = SAV_Delfinato_line
+		}
+		relative_position_id = SAV_Delfinato_line
+		completion_reward = {
+		}
+	}
+	
+	###################
+	## Balkan League ##
+	###################
+	
+	focus = {
+		id = SAV_balkan_league
+		icon = GFX_goal_generic_balkan_league
+		x = 0
+		y = 1
+		cost = 1
+		available = {		
+		}
+		prerequisite = { 
+			focus = SAV_challenging_habsburg_hegemony
+		}
+		relative_position_id = SAV_challenging_habsburg_hegemony
+		completion_reward = {
+		}
+	}
+	
+	####################
+	## invade Albania ##
+	####################
+	
+	focus = {
+		id = SAV_invade_albania
+		icon = GFX_goal_SAV_invade_albania
+		x = -2
+		y = 1
+		cost = 1
+		available = {		
+		}
+		prerequisite = { 
+			focus = SAV_challenging_habsburg_hegemony
+		}
+		relative_position_id = SAV_challenging_habsburg_hegemony
+		completion_reward = {
+		}
+	}
+	
+	##############
+	## Dalmatia ##
+	##############
+	
+	focus = {
+		id = SAV_Dalmatia
+		icon = GFX_goal_SAV_Dalmatia
+		x = 0
+		y = 6
+		cost = 1
+		available = {		
+		}
+		prerequisite = { 
+			focus = SAV_invade_albania
+		}
+		prerequisite = { 
+			focus = SAV_treaty_of_swissland
+		}
+		relative_position_id = SAV_treaty_of_swissland
+		completion_reward = {
+		}
+	}
+	
+	
+	### After the death of Gabriele d'Annunzio ###
+	
+	
+	####################
+	## Mantle of Duce ##
+	####################
+	
+	focus = {
+		id = SAV_Mantle_of_Duce
+		icon = GFX_goal_SAV_Mantle_of_Duce
+		x = 15
+		y = 0
+		cost = 1
+		available = {		
+		}
+		completion_reward = {
+		}
+	}
+	
+	
+}

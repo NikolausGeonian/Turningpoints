@@ -1,0 +1,96 @@
+
+tp_factions_windows_clean_up = {	
+	clear_array =  tp_faction_array
+	clr_country_flag = tp_factions_windows_opened
+	clr_country_flag = tp_factions_windows_specific_faction_tab_opened
+	clr_country_flag = tp_faction_global_faction_list_opened
+	#clr_country_flag = cm_fl_faction_list_opened_pol
+	#clr_country_flag = cm_fl_faction_list_opened_diplo
+}
+
+tp_factions_windows_set_up_root_page = {
+	#leader
+	random_country = {
+		limit = {
+			AND = {
+				exists = yes
+				is_in_faction_with = ROOT
+				is_faction_leader = yes 
+			}
+		}
+		add_to_array = { ROOT.tp_faction_array = THIS }
+	}
+	#root if not leader
+	if = { 
+		limit = { ROOT = { is_faction_leader = no } }
+		ROOT = {
+			add_to_array = { ROOT.tp_faction_array = ROOT }
+		}
+	}
+	#other dudes
+	every_other_country = { 
+		limit = {
+			exists = yes
+			is_in_faction_with = ROOT
+			is_faction_leader = no
+		}
+		add_to_array = { ROOT.tp_faction_array = THIS }
+	}
+	
+	ROOT = {
+		set_country_flag = tp_factions_windows_opened
+		set_country_flag = tp_factions_windows_specific_faction_tab_opened
+		
+	}	
+}
+
+tp_faction_set_up_targer_page = {
+	#leader
+	random_country = {
+		limit = {
+			AND = {
+				exists = yes
+				is_in_faction_with = PREV
+				is_faction_leader = yes 
+			}
+		}
+		add_to_array = { ROOT.tp_faction_array = THIS }
+	}
+	#root if not leader
+	if = { 
+		limit = { PREV = { is_faction_leader = no } }
+		add_to_array = { ROOT.tp_faction_array = THIS }
+	}
+	#other dudes
+	every_other_country = { 
+		limit = {
+			exists = yes
+			is_in_faction_with = PREV
+			is_faction_leader = no
+		}
+		add_to_array = { ROOT.tp_faction_array = THIS }
+	}
+	ROOT = {
+		set_country_flag = tp_factions_windows_opened
+		set_country_flag = tp_factions_windows_specific_faction_tab_opened
+		
+	}
+
+}
+
+tp_factions_windows_set_up = {
+	
+	every_country = { 
+		limit = {
+			exists = yes
+			is_faction_leader = yes 
+		}
+		add_to_array = { ROOT.tp_faction_array = THIS }
+	}
+	
+	ROOT = { 
+		set_country_flag = tp_faction_global_faction_list_opened 
+		set_country_flag = tp_factions_windows_opened
+	} 
+}
+

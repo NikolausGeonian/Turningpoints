@@ -1,0 +1,77 @@
+﻿capital = 206 #Minsk
+
+##oob = "BLR_1936"
+
+set_research_slots = 2
+set_stability = 0.2
+set_war_support = 0.05
+
+
+add_ideas = {
+	BLR_white_russia
+}
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_military_police = 1
+	gw_artillery = 1
+}
+
+
+set_popularities = {
+	conservatism = 11
+	authoritarianism = 54
+	social_democratism = 0
+	patriotic_socialism = 24
+	corporatism = 0
+	democratic_socialism = 0
+	populism = 11
+	social_liberalism = 0
+}
+
+set_politics = {
+	ruling_party = authoritarianism
+	last_election = "1935.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Regency Rada of Belarusian"
+	desc = "POLITICS_PHILIPPE_PÉTAIN_DESC"
+	picture = "gfx/leaders/BLR/Portrait_Regency_Rada.dds"
+	expire = "1965.1.1"
+	ideology = despotism_subtype
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Regency Rada of Belarusian"
+	desc = "POLITICS_PHILIPPE_PÉTAIN_DESC"
+	picture = "gfx/leaders/BLR/Portrait_Regency_Rada.dds"
+	expire = "1965.1.1"
+	ideology = semi_constitutional_monarchy_subtype
+	traits = {
+		
+	}
+}
+
+create_field_marshal = {
+	name = "Anton Denikin"
+	picture = "gfx/leaders/BLR/Portrait_Anton_Denikin.dds"
+	desc = "MARSHAL_BLR_ANTON_DENIKIN_DESC"
+	traits = {
+		old_guard
+		inflexible_strategist
+		}
+	skill = 4
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+

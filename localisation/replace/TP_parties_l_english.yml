@@ -1,0 +1,1124 @@
+﻿l_english:
+
+ ####TurningPoints' Parties##############
+ ### Afghanistan ###
+ AFG_social_democratism_party:0 "ASDP"
+ AFG_social_democratism_party_long:0 "Afğān Millat Gund" # Afghan Social Democratic Party
+ AFG_social_liberalism_party:0 "SPA"
+ AFG_social_liberalism_party_long:0 "Solidarity Party of Afghanistan"
+ AFG_democratic_socialism_party:0 "Feda'ian"
+ AFG_democratic_socialism_party_long:0 "Progressive Democratic Party of Afghanistan"
+ AFG_patriotic_socialism_party:0 "PDPA"
+ AFG_patriotic_socialism_party_long:0 "People's Democratic Party of Afghanistan"
+ AFG_conservatism_party:0 "AIS"
+ AFG_conservatism_party_long:0 "Jamiat-e Islami" # Afghan Islamic Society
+ AFG_corporatism_party:0 "PL"
+ AFG_corporatism_party_long:0 "Hizb ut-Tahrir" # Party of Liberation
+ AFG_populism_party:0 "IMA"
+ AFG_populism_party_long:0 "Harakat-e Islami-yi" # Islamic Movement of Afghanistan
+ AFG_authoritarianism_party:0 "Barakzai"
+ AFG_authoritarianism_party_long:0 "Barakzai royal family"
+ ### Albania ###
+ ALB_social_democratism_party:0 "PPSh"
+ ALB_social_democratism_party_long:0 "Partia Popullore Shqiptare" # Albanian People's Party
+ ALB_social_liberalism_party:0 "PLSh"
+ ALB_social_liberalism_party_long:0 "Partia Liberale e Shqipërisë" # Liberal Party of Albania
+ ALB_democratic_socialism_party:0 "PPSH"
+ ALB_democratic_socialism_party_long:0 "Partia e Punës e Shqipërisë" # Albanian Labor Party
+ ALB_patriotic_socialism_party:0 "PKSH"
+ ALB_patriotic_socialism_party_long:0 "Partia Komuniste e Shqipërisë" # Communist Party of Albania
+ ALB_conservatism_party:0 "PPS"
+ ALB_conservatism_party_long:0 "Partia e Prosperitetit e Shqipërisë" # Prosperity Party of Albania
+ ALB_corporatism_party:0 "PFSh"
+ ALB_corporatism_party_long:0 "Partia Fashiste e Shqipërisë" # The Fascist Party of Albania
+ ALB_populism_party:0 "PNSSh"
+ ALB_populism_party_long:0 "Partia Nacionalsocialiste e Shqipërisë" # National Front
+ ALB_authoritarianism_party:0 "Monarkist"
+ ALB_authoritarianism_party_long:0 "Monarkist"
+ ### Arabia ###
+ ARB_social_democratism_party:0 "Ba'ath"
+ ARB_social_democratism_party_long:0 "Ḥizb al-Ba‘th al-‘Arabī al-Ishtirākī" # Arab Socialist Baʽath Party
+ ARB_social_liberalism_party:0 "APP"
+ ARB_social_liberalism_party_long:0 "al-Ḥizb al-Taqadumiu al-‘Arabī" # Arab Progressive Party
+ ARB_democratic_socialism_party:0 "NSP"
+ ARB_democratic_socialism_party_long:0 "al-Ḥizb al-Watani al-Ishtirākī" # National Socialist Party
+ ARB_patriotic_socialism_party:0 "ACP"
+ ARB_patriotic_socialism_party_long:0 "al-Ḥizb al-Shuyu'i al-'Arabī" # Arab Communist Party
+ ARB_conservatism_party:0 "NCP"
+ ARB_conservatism_party_long:0 "Ḥizb Aal-Tayar al-Watani" # National Current Party
+ ARB_corporatism_party:0 "Hizb ut-Tahrir"
+ ARB_corporatism_party_long:0 "Hizb ut-Tahrir"
+ ARB_populism_party:0 "Muslim Brotherhood"
+ ARB_populism_party_long:0 "Jamāʿat al-Ikhwān al-Muslimīn" # Society of the Muslim Brothers
+ ARB_authoritarianism_party:0 "al-Malakīwn"
+ ARB_authoritarianism_party_long:0 "al-Malakīwn" #Royalist
+ ### Armenia ###
+ ARM_social_democratism_party:0 "SDHK"
+ ARM_social_democratism_party_long:0 "Sotsial Demokrat Hnchakyan Kusaktsutyun" # Social Democrat Hunchakian Party
+ ARM_social_liberalism_party:0 "Ramgavar"
+ ARM_social_liberalism_party_long:0 "Rramkavar Azatakan Kusaktsutiwn" # Armenian Democratic Liberal Party
+ ARM_democratic_socialism_party:0 "Dashnaktsutyun"
+ ARM_democratic_socialism_party_long:0 "Hay Yeghapvokhakan Dashnaktsutiwn" # Armenian Revolutionary Federation
+ ARM_patriotic_socialism_party:0 "HGK"
+ ARM_patriotic_socialism_party_long:0 "Hayastani Gomunistakan Kusaktsutyun" # Communist Party of Armenia
+ ARM_conservatism_party:0 "GAM"
+ ARM_conservatism_party_long:0 "Gyughatsineri Ankakh Miutyun" # Independent Union of Peasants
+ ARM_corporatism_party:0 "TM"
+ ARM_corporatism_party_long:0 "Tseghakronutyun Miutyun" # Tseghakronism Union
+ ARM_populism_party:0 "HZK"
+ ARM_populism_party_long:0 "Hay Zhoghovrdakan Kusaktsutyun" # Armenian Populist Party
+ ARM_authoritarianism_party:0 "Armenakan"
+ ARM_authoritarianism_party_long:0 "Armenakan Kusaktsutiwn" # Armenakan Party
+ ### Australia ###
+ AUS_social_democratism_party:0 "ALP"
+ AUS_social_democratism_party_long:0 "Australian Labor Party"
+ AUS_social_liberalism_party:0 "LCL"
+ AUS_social_liberalism_party_long:0 "Liberal and Country League"
+ AUS_democratic_socialism_party:0 "SLP"
+ AUS_democratic_socialism_party_long:0 "Socialist Labor Party"
+ AUS_patriotic_socialism_party:0 "CPA"
+ AUS_patriotic_socialism_party_long:0 "Communist Party of Australia"
+ AUS_conservatism_party:0 "UAP"
+ AUS_conservatism_party_long:0 "United Australia Party"
+ AUS_corporatism_party:0 "CP"
+ AUS_corporatism_party_long:0 "Centre Party"
+ AUS_populism_party:0 "AFM"
+ AUS_populism_party_long:0 "Australia First Movement"
+ AUS_authoritarianism_party:0 "ACP"
+ AUS_authoritarianism_party_long:0 "Australian Country Party"
+ ### Azerbaijan ###
+ 
+ AZE_patriotic_socialism_party:0 "AKP"
+ AZE_patriotic_socialism_party_long:0 "Azərbaycan Kommunist Partiyası" # Communist Party of Azerbaijan
+ AZR_fascism_party:0 "Fire Horse Clique"
+ AZR_democratic_party:0 "Müsavat"
+ AZR_communism_party:0 "Communist Party of Azerbaijan"
+ AZR_neutrality_party:0 "Ittihad"
+ ### British East Africa ###
+ BEA_social_democratism_party:0 "-"
+ BEA_social_democratism_party_long:0 "-"
+ BEA_social_liberalism_party:0 "-"
+ BEA_social_liberalism_party_long:0 "-"
+ BEA_democratic_socialism_party:0 "-"
+ BEA_democratic_socialism_party_long:0 "-" 
+ BEA_patriotic_socialism_party:0 ""
+ BEA_patriotic_socialism_party_long:0 ""
+ BEA_conservatism_party:0 "Kung-min Tang"
+ BEA_conservatism_party_long:0 "Citizens' Party of China" 
+ BEA_authoritarianism_party:0 "Tsung-she Tang"
+ BEA_authoritarianism_party_long:0 "Society for Monarchical Constitutionalism"
+ BEA_corporatism_party:0 "Ko-ming Tang"
+ BEA_corporatism_party_long:0 "Chinese Revolutionary Party"
+ BEA_populism_party:0 "Kuo-min Tang"
+ BEA_populism_party_long:0 "Nationalist Party"
+ ### British Gold Coast ###
+ BGC_social_democratism_party:0 "-"
+ BGC_social_democratism_party_long:0 "-"
+ BGC_social_liberalism_party:0 "-"
+ BGC_social_liberalism_party_long:0 "-"
+ BGC_democratic_socialism_party:0 "-"
+ BGC_democratic_socialism_party_long:0 "-" 
+ BGC_patriotic_socialism_party:0 ""
+ BGC_patriotic_socialism_party_long:0 ""
+ BGC_conservatism_party:0 "Kung-min Tang"
+ BGC_conservatism_party_long:0 "Citizens' Party of China" 
+ BGC_authoritarianism_party:0 "Tsung-she Tang"
+ BGC_authoritarianism_party_long:0 "Society for Monarchical Constitutionalism"
+ BGC_corporatism_party:0 "Ko-ming Tang"
+ BGC_corporatism_party_long:0 "Chinese Revolutionary Party"
+ BGC_populism_party:0 "Kuo-min Tang"
+ BGC_populism_party_long:0 "Nationalist Party"
+ ### Belarus ###
+ ### Botswana ###
+ ### Brazil ###
+ ### Burma ###
+ ### Bhutan ###
+ ### Bukhara ###
+ BUK_social_democratism_party:0 "Young Bukharans"
+ BUK_social_democratism_party_long:0 "Young Bukharans"
+ BUK_social_liberalism_party:0 "Young Bukharans"
+ BUK_social_liberalism_party_long:0 "Young Bukharans"
+ BUK_democratic_socialism_party:0 "RSDRP/Mensheviks"
+ BUK_democratic_socialism_party_long:0 "Rossiyskaya Sotsial-demokraticheskaya Rabochaya Partiya/Mensheviks"
+ BUK_patriotic_socialism_party:0 "RKP/Bolsheviks"
+ BUK_patriotic_socialism_party_long:0 "Rossiyskaya Kommunisticheskaya Partiya/Bolsheviks" 
+ BUK_conservatism_party:0 "Shura-i-Islam"
+ BUK_conservatism_party_long:0 "Shura-i-Islam"    
+ BUK_authoritarianism_party:0 "Shura-i-Ulema"   #Turkiston istiqlol harakati
+ BUK_authoritarianism_party_long:0 "Shura-i-Ulema"
+ BUK_corporatism_party:0 "Kadimists"
+ BUK_corporatism_party_long:0 "Kadimists"
+ BUK_populism_party:0 "Kadimists"
+ BUK_populism_party_long:0 "Kadimists"
+ ### British Trucial States ###
+ ### Central African Federation ###
+ ### Cambodia ###
+ ### Canada ###
+ ### Ceylon ###
+ ### Colombia ###
+ ### Corsica ###
+ ### Costa Rica ###
+ ### Chinese Soviet Republic ###
+ CSR_social_democratism_party:0 "Shehui Tang"
+ CSR_social_democratism_party_long:0 "Socialist Party of China"
+ CSR_social_liberalism_party:0 "Tung-i Chin-pu Tang"
+ CSR_social_liberalism_party_long:0 "Unity and Progressive Party of China"
+ CSR_democratic_socialism_party:0 "Lien-ho Kung-Tang"
+ CSR_democratic_socialism_party_long:0 "The United Labor Party of China" 
+ CSR_patriotic_socialism_party:0 "Kung-chan Tang"
+ CSR_patriotic_socialism_party_long:0 "Communist Party of China"
+ CSR_conservatism_party:0 "Kung-min Tang"
+ CSR_conservatism_party_long:0 "Citizens' Party of China" 
+ CSR_authoritarianism_party:0 "Tsung-she Tang"
+ CSR_authoritarianism_party_long:0 "Society for Monarchical Constitutionalism"
+ CSR_corporatism_party:0 "Ko-ming Tang"
+ CSR_corporatism_party_long:0 "Chinese Revolutionary Party"
+ CSR_populism_party:0 "Kuo-min Tang"
+ CSR_populism_party_long:0 "Nationalist Party"
+ ### Cuba ###
+ ### Cyprus ###
+ ### Dutch Congo ###
+ ### Dutch East Indies ###
+ ### Denmark ###
+ ### Deutsch-Neuguinea ###
+ ### Deutsch-Ostafrika ###
+ ### Ecuador ###
+ ### Egypt ###
+ ### El Salvador ###
+ ### Estonia ###
+ 
+ EST_neutrality_party:0 "Isamaaliit"
+ EST_democratic_party:0 "RKE"
+ EST_democratic_party_long:0 "Rahvuslik Keskerakond"
+ EST_fascism_party:0 "Vapsid"
+ EST_fascism_party_long:0 "Eesti Vabadussõjalaste Liit"
+ ### Ethiopia ###
+ 
+ ETH_neutrality_party:0 "Solomonic Dynasty"
+ ETH_democratic_party:0 "Woyane rebellion"
+ ### Finland ###
+ 
+ FIN_neutrality_party:0 "Kesk"
+ FIN_neutrality_party_long:0 "Suomen Keskusta"
+ FIN_democratic_party:0 "SDP"
+ FIN_democratic_party_long:0 "Suomen Sosialidemokraattinen Puolue"
+ FIN_fascism_party:0 "IKL"
+ FIN_fascism_party_long:0 "Isänmaallinen Kansanliike"
+ FIN_communism_party:0 "SKP"
+ FIN_communism_party_long:0 "Suomen Kommunistinen Puolue"
+ ### France ###
+ FRA_social_democratism_party:0 "PRRRS"
+ FRA_social_democratism_party_long:0 "Parti Radical"
+ FRA_social_liberalism_party:0 "RI"
+ FRA_social_liberalism_party_long:0 "Radicaux indépendants" # Independent Radicals
+ FRA_democratic_socialism_party:0 "SFIO"
+ FRA_democratic_socialism_party_long:0 "Section Française de l'Internationale Ouvrière" # French Section of the Workers' International
+ FRA_patriotic_socialism_party:0 "PSR"
+ FRA_patriotic_socialism_party_long:0 "Parti Socialiste Révolutionnaire" # Socialist Revolutionary Party 
+ FRA_conservatism_party:0 "ALP"
+ FRA_conservatism_party_long:0 "Action Libérale Populaire" 
+ FRA_authoritarianism_party:0 "CR"
+ FRA_authoritarianism_party_long:0 "Camelots du Roi"
+ FRA_corporatism_party:0 "MF-AF"
+ FRA_corporatism_party_long:0 "Mouvement Franciste-Action Française" 
+ FRA_populism_party:0 "SF"
+ FRA_populism_party_long:0 "Solidarité Française" # French Solidarity # will trans into Rassemblement national populaire RNP
+ ### United Kingdom ###
+ GBR_social_democratism_party:0 "Labour Party"
+ GBR_social_democratism_party_long:0 "Labour Party"
+ GBR_social_liberalism_party:0 "Liberal Party"
+ GBR_social_liberalism_party_long:0 "Liberal Party"
+ GBR_democratic_socialism_party:0 "Independent Labour Party"
+ GBR_democratic_socialism_party_long:0 "Independent Labour Party"
+ GBR_patriotic_socialism_party:0 "Socialist Labour Party"
+ GBR_patriotic_socialism_party_long:0 "Socialist Labour Party" 
+ GBR_conservatism_party:0 "Conservative Party"
+ GBR_conservatism_party_long:0 "Conservative and Unionist Party"
+ GBR_authoritarianism_party:0 "King's Party"
+ GBR_authoritarianism_party_long:0 "King's Party"
+ GBR_corporatism_party:0 "British Union of Fascists"
+ GBR_corporatism_party_long:0 "British Union of Fascists"
+ GBR_populism_party:0 "British Fascists"
+ GBR_populism_party_long:0 "British Fascists"
+ ### Georgia ###
+ ### German Empire ###
+ GER_social_democratism_party:0 "SPD"
+ GER_social_democratism_party_long:0 "Sozialdemokratische Partei Deutschlands"
+ GER_social_liberalism_party:0 "DtVP"
+ GER_social_liberalism_party_long:0 "Deutsche Volkspartei"
+ GER_democratic_socialism_party:0 "KKP"
+ GER_democratic_socialism_party_long:0 "Kaiserreiche Kommunistesche Partei"
+ GER_patriotic_socialism_party:0 "KPD/M"
+ GER_patriotic_socialism_party_long:0 "Kommunistische Partei Deutschlands/Marxisten" 
+ GER_conservatism_party:0 "DkP"
+ GER_conservatism_party_long:0 "Deutschkonservative Partei"
+ GER_authoritarianism_party:0 "DVLP"
+ GER_authoritarianism_party_long:0 "Deutsche Vaterlandspartei"
+ GER_corporatism_party:0 "NSDAP/DAP"
+ GER_corporatism_party_long:0 "Nationalsozialistische Deutsche Arbeiterpartei"
+ GER_populism_party:0 "DVFP"
+ GER_populism_party_long:0 "Deutschvölkische Freiheitspartei"
+ ### Greece ###
+ GRE_social_democratism_party:0 "DSKE"
+ GRE_social_democratism_party_long:0 "Dimokratikó Sosialistikó Kómma Elládos" #Democratic Socialist Party of Greece
+ GRE_social_liberalism_party:0 "KF"
+ GRE_social_liberalism_party_long:0 "Kómma Filelefthéron" # Liberal Party
+ GRE_democratic_socialism_party:0 "SKE"
+ GRE_democratic_socialism_party_long:0 "Sosialistikó Kómma Elládas" #Socialist Party of Greece
+ GRE_patriotic_socialism_party:0 "KKE"
+ GRE_patriotic_socialism_party_long:0 "Kommounistikó Kómma Elládas" #Communist Party of Greece
+ GRE_conservatism_party:0 "LK"
+ GRE_conservatism_party_long:0 "Laïkòn Kómma" #People's Party
+ GRE_authoritarianism_party:0 "KE/EV"
+ GRE_authoritarianism_party_long:0 "Kómma ton Eleftherofrónon/Énosis Vasilofrónon" #Freethinkers' Party/Union of Royalists
+ GRE_corporatism_party:0 "EEE"
+ GRE_corporatism_party_long:0 "Ethnikí Énosis Elládos" #National Union of Greece
+ GRE_populism_party:0 "EESK"
+ GRE_populism_party_long:0 "Ellinikó Ethnikó Sosialistikó Kómma" #Greek National Socialist Party
+ ### Habsburg Monarchy###
+ HAB_social_democratism_party:0 "SDAP"
+ HAB_social_democratism_party_long:0 "Sozialdemokratische Arbeiterpartei"
+ HAB_social_liberalism_party:0 "VPÖ"
+ HAB_social_liberalism_party_long:0 "Verfassungspartei Österreichs"
+ HAB_democratic_socialism_party:0 "SDAP"
+ HAB_democratic_socialism_party_long:0 "Sozialdemokratische Partei Österreichs"
+ HAB_patriotic_socialism_party:0 "KPDÖ"
+ HAB_patriotic_socialism_party_long:0 "Kommunistische Partei Deutsch-Österreichs" 
+ HAB_conservatism_party:0 "CS"
+ HAB_conservatism_party_long:0 "Christlichsoziale Partei"
+ HAB_authoritarianism_party:0 "FPÖ"
+ HAB_authoritarianism_party_long:0 "Föderalistische Partei"
+ HAB_corporatism_party:0 "DVP"
+ HAB_corporatism_party_long:0 "Deutsche Nationalverband"
+ HAB_populism_party:0 "HB"
+ HAB_populism_party_long:0 "Heimatblock"
+ ### Japan ###
+ JAP_social_democratism_party:0 "Kokutaikenkyūkai"
+ JAP_social_democratism_party_long:0 "Kokutai Shisō Kenkyūkai" # 国体思想研究会 Sovereignty Study Group
+ JAP_social_liberalism_party:0 "Minseitō"
+ JAP_social_liberalism_party_long:0 "Rikken Minseitō/Riberaru" # Constitutional Democratic Party/Liberal
+ JAP_democratic_socialism_party:0 "Minshūtō"
+ JAP_democratic_socialism_party_long:0 "Shakai Minshūtō" # Social Democratic Party
+ JAP_patriotic_socialism_party:0 "Kyōsantō"
+ JAP_patriotic_socialism_party_long:0 "Nihon Kyōsantō" # Japanese Communist Party
+ JAP_conservatism_party:0 "Seiyūkai/Seitōha"
+ JAP_conservatism_party_long:0 "Rikken Seiyūkai/Seitōha" # Constitutional Association of Political Friendship/Conservatism
+ JAP_authoritarianism_party:0 "Shōwakai"
+ JAP_authoritarianism_party_long:0 "Shōwakai" # Shōwakai 昭和会
+ JAP_corporatism_party:0 "Teikokutō"
+ JAP_corporatism_party_long:0 "Teikokutō" # Teikokutō 帝国党
+ JAP_populism_party:0 "Kōdō Kiseikai"
+ JAP_populism_party_long:0 "Kōdō Kiseikai" # Kokumin Kyōkai 皇道归正会
+ ### Kuril ###
+ KIL_social_democratism_party:0 "Shehui Ta"
+ KIL_social_democratism_party_long:0 "Socialist Party of China"
+ KIL_social_liberalism_party:0 "Tung-i Chin-pu Ta(PVV)"
+ KIL_social_liberalism_party_long:0 "Unity and Progressive Party of China"
+ KIL_democratic_socialism_party:0 "Shakaitō/Minshuha"
+ KIL_democratic_socialism_party_long:0 "Tōitsu Shakaitō/Minshuha" 
+ KIL_patriotic_socialism_party:0 "Shakaitō/Kyōsanha"
+ KIL_patriotic_socialism_party_long:0 "Tōitsu Shakaitō/Kyōsanha"
+ KIL_conservatism_party:0 ""
+ KIL_conservatism_party_long:0 ""
+ KIL_authoritarianism_party:0 "Kuril i Jiyanggiyūn"
+ KIL_authoritarianism_party_long:0 "General of Kurli"
+ ### Korea ###
+ KOR_social_democratism_party:0 "KSDP"
+ KOR_social_democratism_party_long:0 "Chosŏn Sahoe Minjudang" # Korean Social Democratic Party 
+ KOR_social_liberalism_party:0 "KDP"
+ KOR_social_liberalism_party_long:0 "Hanguk Minjudang" # Korea Democratic Party/Hanguk Minjudang
+ KOR_democratic_socialism_party:0 "KPP"
+ KOR_democratic_socialism_party_long:0 "Chosŏn Chinbodang" # Progressive Party 进步党
+ KOR_patriotic_socialism_party:0 "WPK"
+ KOR_patriotic_socialism_party_long:0 "Chosŏn Rodongdang" # Workers' Party of Korea
+ KOR_conservatism_party:0 "DGH"
+ KOR_conservatism_party_long:0 "Daehan Gungminhoe" # 大韓國民會 Daehan Gungminhoe
+ KOR_authoritarianism_party:0 "KNP"
+ KOR_authoritarianism_party_long:0 "Chosŏn Gukmindang" # Korea Nationalist Party
+ KOR_corporatism_party:0 "NRP"
+ KOR_corporatism_party_long:0 "Gugga Hyeogmyeongdang" # National Revolutionary Party 民族革命党
+ KOR_populism_party:0 "CCP" 
+ KOR_populism_party_long:0 "Ch'ŏndogyo Ch'ŏngudang" # Chondoist Chongu Party
+ ### Kuwait ###
+ ### La Plata ###
+ ### Latvia ###
+ ### Libya ###
+ ### Liberia ###
+ ### Lithuania ###
+ LIT_neutrality_party:0 "LTS"
+ LIT_neutrality_party_long:0 "Lietuviu Tautininku Sajunga"
+ LIT_fascism_party:0 "Geležinis Vilkas"
+ LIT_democratic_party:0 "LKDP"
+ LIT_democratic_party_long:0 "Lietuvos krikščionių demokratų partijas"
+ LIT_communism_party:0 "LKP"
+ LIT_communism_party_long:0 "Lietuvos komunistų partija"
+ ### Lombardy ###
+ ### Malaysia ###
+ ### Manchuria ###
+ ### Mexico ###
+ MEX_social_democratism_party:0 "PLC"
+ MEX_social_democratism_party_long:0 "Partido Liberal Constitucionalista"
+ MEX_social_liberalism_party:0 "PLM"
+ MEX_social_liberalism_party_long:0 "Partido Liberal Mexicano"
+ MEX_democratic_socialism_party:0 "CROM"
+ MEX_democratic_socialism_party_long:0 "Confederación Regional Obrera Mexicana"
+ MEX_patriotic_socialism_party:0 "PSO"
+ MEX_patriotic_socialism_party_long:0 "Partido Socialista Obrero" 
+ MEX_conservatism_party:0 "PRUN"
+ MEX_conservatism_party_long:0 "Partito Rivoluzionario di Unificazione Nazionale"
+ MEX_authoritarianism_party:0 "Junta Militar"
+ MEX_authoritarianism_party_long:0 "Junta Militar"
+ MEX_corporatism_party:0 "PNR"
+ MEX_corporatism_party_long:0 "Partido Nacional Revolucionario"
+ MEX_populism_party:0 "FNM"
+ MEX_populism_party_long:0 "Frente Nacionalista de México"
+ ### Mali ###
+ ### Malta ###
+ ### Montenegro ###
+ ### Mongolia ###
+ ### Morocco ###
+ ### Nepel ###
+ ### Netherland ###
+ ### Nigeria ###
+ ### Nicaragua ###
+ ### Northern Japan ###
+ NJP_social_democratism_party:0 "Shakaitō/Shakaitō"
+ NJP_social_democratism_party_long:0 "Tōitsu Shakaitō/Shakaiha"
+ NJP_social_liberalism_party:0 "Jiyu Dōmei"
+ NJP_social_liberalism_party_long:0 "Jiyū Rōdōsha Dōmei"
+ NJP_democratic_socialism_party:0 "Shakaitō/Minshuha"
+ NJP_democratic_socialism_party_long:0 "Tōitsu Shakaitō/Minshuha"
+ NJP_patriotic_socialism_party:0 "Shakaitō/Kyōsanha"
+ NJP_patriotic_socialism_party_long:0 "Tōitsu Shakaitō/Kyōsanha" 
+ NJP_conservatism_party:0 "Kokutaikenkyūkai"
+ NJP_conservatism_party_long:0 "Kokutai shisō kenkyūkai"
+ NJP_authoritarianism_party:0 "Seiyūkai"
+ NJP_authoritarianism_party_long:0 "Rikken Seiyūkai"
+ NJP_corporatism_party:0 "Royalist"
+ NJP_corporatism_party_long:0 "Kin'nōha"
+ NJP_populism_party:0 "Kokumin Kyōkai"
+ NJP_populism_party_long:0 "Kokumin Kyōkai"
+ ### British Normandy ###
+ ### Norway ###
+ ### New Zealand ###
+ ### Ottoman Empire ###
+ OTE_social_democratism_party:0 "SDF"
+ OTE_social_democratism_party_long:0 "Sosyal Demokrat Fırkası" # Social Democrat Party
+ OTE_social_liberalism_party:0 "OAF"
+ OTE_social_liberalism_party_long:0 "Osmanlı Ahrar Fırkası" # Ottoman Liberty Party
+ OTE_democratic_socialism_party:0 "SSİF"
+ OTE_democratic_socialism_party_long:0 "Selanik Sosyalist İşçi Federasyonu" # Socialist Workers' Federation
+ OTE_patriotic_socialism_party:0 "TİÇSF"
+ OTE_patriotic_socialism_party_long:0 "Türkiye İşçi ve Çiftçi Sosyalist Fırkası" # Turkish Workers and Peasants Socialist Party
+ OTE_conservatism_party:0 "HİF"
+ OTE_conservatism_party_long:0 "Hürriyet ve İtilâf Fırkası"  # Freedom and Accord Party
+ OTE_authoritarianism_party:0 "TF"
+ OTE_authoritarianism_party_long:0 "Teceddüt Fırkası" # Renewal Party
+ OTE_corporatism_party:0 "HMO"
+ OTE_corporatism_party_long:0 "Heyet-i Müttefika-i Osmaniye" # Ottoman Committee of Alliance
+ OTE_populism_party:0 "MHF"
+ OTE_populism_party_long:0 "Milliyetçi Hareket Fırkası" # Nationalist Movement Party
+ ### Parma ###
+ ### Panama ###
+ ### Papal State ###
+ ### Persia ###
+ PER_social_democratism_party:0 "Democrat"
+ PER_social_democratism_party_long:0 "Ḥezb-e Demokrāthā" # Democrat Party
+ PER_social_liberalism_party:0 "Liberals"
+ PER_social_liberalism_party_long:0 "Jamʿīyat-e Taraqqi‎ḵāhān-e Irān" # Society for the Progress of Iran
+ PER_democratic_socialism_party:0 "USP"
+ PER_democratic_socialism_party_long:0 "Ejtemāʿīyūn-e Etteḥādīyūn" # Unified Socialist Party
+ PER_patriotic_socialism_party:0 "JP"
+ PER_patriotic_socialism_party_long:0 "Ferqa'ye ʿEdālat" # Justice Party Communist Party of Persia
+ PER_conservatism_party:0 "Reformists"
+ PER_conservatism_party_long:0 "Ḥezb-e Eṣlāḥṭalabān"  # Reformists Party
+ PER_authoritarianism_party:0 "NUP"
+ PER_authoritarianism_party_long:0 "Ḥezb-e Ettehād-e Mellī" # National Union Party
+ PER_corporatism_party:0 "PP"
+ PER_corporatism_party_long:0 "Ḥezb-e taraqqi" # Progress Party
+ PER_populism_party:0 "SUMKA"
+ PER_populism_party_long:0 "Ḥezb-e Sosīālīst-e Mellī-e Kārgarān-e Īrān" # National Socialist Workers Party of Iran
+ ### Philippines ###
+ ### Poland ###
+ ### Portugal ###
+ ### Peru ###
+ PRU_social_democratism_party:0 "PSD"
+ PRU_social_democratism_party_long:0 "Partido Social Demócrata"
+ PRU_social_liberalism_party:0 "-"
+ PRU_social_liberalism_party_long:0 "-"
+ PRU_democratic_socialism_party:0 "APRA"
+ PRU_democratic_socialism_party_long:0 "Alianza Popular Revolucionaria Americana"
+ PRU_patriotic_socialism_party:0 "APRA"
+ PRU_patriotic_socialism_party_long:0 "Alianza Popular Revolucionaria Americana"
+ PRU_conservatism_party:0 "CC"
+ PRU_conservatism_party_long:0 "Coalición Conservadora"
+ PRU_authoritarianism_party:0 "-"
+ PRU_authoritarianism_party_long:0 "-"
+ PRU_corporatism_party:0 "UR"
+ PRU_corporatism_party_long:0 "Unión Revolucionaria"
+ PRU_populism_party:0 "FP"
+ PRU_populism_party_long:0 "Frente Patriótico" 
+ ### Chinese Empire ###
+ QNG_social_democratism_party:0 "Shehui Tang(SPC)"
+ QNG_social_democratism_party_long:0 "Socialist Party of China"
+ QNG_social_liberalism_party:0 "Tung-i Chin-pu Tang(UPPC)"
+ QNG_social_liberalism_party_long:0 "Unity and Progressive Party of China"
+ QNG_democratic_socialism_party:0 "Lien-ho Kung-Tang(ULPC)"
+ QNG_democratic_socialism_party_long:0 "The United Labor Party of China" 
+ QNG_patriotic_socialism_party:0 "Kung-chan Tang(CCP)"
+ QNG_patriotic_socialism_party_long:0 "Communist Party of China"
+ QNG_conservatism_party:0 "Kung-min Tang(JDPC/CC)"
+ QNG_conservatism_party_long:0 "Justice Democratic Party of China/Communications Clique" 
+ QNG_authoritarianism_party:0 "Hsien-cheng Tang(ECA)"
+ QNG_authoritarianism_party_long:0 "Empire Constitutionalist Association"
+ QNG_corporatism_party:0 "Ko-ming Tang(CPP)"
+ QNG_corporatism_party_long:0 "Chinese Revolutionary Party"
+ QNG_populism_party:0 "Kuo-min Tang(KMT)"
+ QNG_populism_party_long:0 "Nationalist Party"
+ ### British Raj ###
+ RAJ_social_democratism_party:0 "LIP"
+ RAJ_social_democratism_party_long:0 "Independent Labour Party"
+ RAJ_social_liberalism_party:0 "INC-ILP"
+ RAJ_social_liberalism_party_long:0 "Indian National Congress-Indian Liberal Party"
+ RAJ_democratic_socialism_party:0 "ILF"
+ RAJ_democratic_socialism_party_long:0 "Indian Liberal Federation" #Justice Party
+ RAJ_patriotic_socialism_party:0 "CPI"
+ RAJ_patriotic_socialism_party_long:0 "Communist Party of India"
+ RAJ_conservatism_party:0 "INC-SAD"
+ RAJ_conservatism_party_long:0 "Indian National Congress-Shiromani Akali Dal" 
+ RAJ_authoritarianism_party:0 "HMUA"
+ RAJ_authoritarianism_party_long:0 "Hindu–Muslim Unity Association"
+ RAJ_corporatism_party:0 "ABHM"
+ RAJ_corporatism_party_long:0 "Akhil Bhārat Hindū Mahāsabhā" #All-India Hindu Grand-Assembly
+ RAJ_populism_party:0 "CNP"
+ RAJ_populism_party_long:0 "Congress Nationalist Party"
+ ### Republic of China ###
+ ### Romania ###
+ ROM_social_democratism_party:0 "PSDR"
+ ROM_social_democratism_party_long:0 "Partidul Social Democrat Român"
+ ROM_social_liberalism_party:0 "PNL"
+ ROM_social_liberalism_party_long:0 "Partidul Național Liberal"
+ ROM_democratic_socialism_party:0 "PSIR"
+ ROM_democratic_socialism_party_long:0 "Partidul Socialist Independent din România"
+ ROM_patriotic_socialism_party:0 "PCdR"
+ ROM_patriotic_socialism_party_long:0 "Partidul Comunitar din România" 
+ ROM_conservatism_party:0 "PNT"
+ ROM_conservatism_party_long:0 "Partidul Național-Țărănist"
+ ROM_authoritarianism_party:0 "FRN-CM"
+ ROM_authoritarianism_party_long:0 "Comisia Militară"
+ ROM_corporatism_party:0 "FRN-LANC"
+ ROM_corporatism_party_long:0 "Garda de Fier"
+ ROM_populism_party:0 "FRN-PNSR"
+ ROM_populism_party_long:0 "Partidul Național-Socialist din România"
+ ### Soviet Russia ###
+ RUS_social_democratism_party:0 "Esers"
+ RUS_social_democratism_party_long:0 "Partiya Sotsialistov-Revolyutsionerov"
+ RUS_social_liberalism_party:0 "K-D"
+ RUS_social_liberalism_party_long:0 "Konstitutsionno-Demokraticheskaya Partiya"
+ RUS_democratic_socialism_party:0 "RSDRP/Mensheviks"
+ RUS_democratic_socialism_party_long:0 "Rossiyskaya Sotsial-demokraticheskaya Rabochaya Partiya/Mensheviks"
+ RUS_patriotic_socialism_party:0 "RKP/Bolsheviks"
+ RUS_patriotic_socialism_party_long:0 "Rossiyskaya Kommunisticheskaya Partiya/Bolsheviks" 
+ RUS_conservatism_party:0 "Octobrist Party"
+ RUS_conservatism_party_long:0 "Soyuz 17 Oktyabrya"
+ RUS_authoritarianism_party:0 "Royalist"
+ RUS_authoritarianism_party_long:0 "The Royalist"
+ RUS_corporatism_party:0 "RFP"
+ RUS_corporatism_party_long:0 "Rossiyskaya Fashistskaya Partiya"
+ RUS_populism_party:0 "СРН"
+ RUS_populism_party_long:0 "Soyuz Russkogo Naroda"
+ ### Ryukyu ###
+ ### South Africa ###
+ SAF_social_democratism_party:0 "SALP"
+ SAF_social_democratism_party_long:0 "Suid-Afrikaanse Arbeidersparty" # South African Labour Party
+ SAF_social_liberalism_party:0 "UP"
+ SAF_social_liberalism_party_long:0 "Unionisteparty" # Unionist Party
+ SAF_democratic_socialism_party:0 "WPSA"
+ SAF_democratic_socialism_party_long:0 "Werkersparty van Suid-Afrika" # Workers Party of South Africa
+ SAF_patriotic_socialism_party:0 "SAKP"
+ SAF_patriotic_socialism_party_long:0 "Suid-Afrikaanse Kommunistiese Party" # South African Communist Party
+ SAF_conservatism_party:0 "VP"
+ SAF_conservatism_party_long:0 "Verenigde Party" # United Party
+ SAF_authoritarianism_party:0 "Dominion"
+ SAF_authoritarianism_party_long:0 "Dominiumparty" # Dominion Party
+ SAF_corporatism_party:0 "GNP"
+ SAF_corporatism_party_long:0 "Gesuiwerde Nasionale Party" # Purified National Party
+ SAF_populism_party:0 "SANNC"
+ SAF_populism_party_long:0 "South African Native National Congress"
+ ### Savoy ###
+ SAV_social_democratism_party:0 "PDR"
+ SAV_social_democratism_party_long:0 "Partito Democratico Riformista" # Reformist Democratic Party
+ SAV_social_liberalism_party:0 "PLI"
+ SAV_social_liberalism_party_long:0 "Partito Liberale Italiano" # Italian Liberal Party
+ SAV_conservatism_party:0 "PPI"
+ SAV_conservatism_party_long:0 "Partito Popolare Italiano" # Italian People's Party 
+ SAV_authoritarianism_party:0 "ANI"
+ SAV_authoritarianism_party_long:0 "Associazione Nazionalista Italiana" # Italian Nationalist Association
+ SAV_democratic_socialism_party:0 "PSI"
+ SAV_democratic_socialism_party_long:0 "Partito Socialista Italiano" # Italian Socialist Party
+ SAV_patriotic_socialism_party:0 "PCI"
+ SAV_patriotic_socialism_party_long:0 "Partito Comunista Italiano" # Italian Communist Party
+ SAV_corporatism_party:0 "ANI"
+ SAV_corporatism_party_long:0 "Associazione Nazionalista Italiana" # Italian Nationalist Association
+ SAV_populism_party:0 "PdC"
+ SAV_populism_party_long:0 "Partito dei Combattenti" # Combatants' Party
+ ### Scandinavia ###
+ SCA_social_democratism_party:0 "SAP"
+ SCA_social_democratism_party_long:0 "Socildemokratiska Arbetareparti" # Social Democratic Party
+ SCA_social_liberalism_party:0 "Venstre"
+ SCA_social_liberalism_party_long:0 "Venstre, Liberale Parti" # Venstre, Liberal Party
+ SCA_democratic_socialism_party:0 "RVP"
+ SCA_democratic_socialism_party_long:0 "Radikal Vänsterparti" # Radical Left Party
+ SCA_patriotic_socialism_party:0 "NPU"
+ SCA_patriotic_socialism_party_long:0 "Nationell Proletär Union" # National Proletarian Union
+ SCA_conservatism_party:0 "Højre"
+ SCA_conservatism_party_long:0 "Højre"
+ SCA_authoritarianism_party:0 "FLV"
+ SCA_authoritarianism_party_long:0 "Fosterlandsvänner" # Friends of the Fatherland
+ SCA_corporatism_party:0 "HRO"
+ SCA_corporatism_party_long:0 "Högerns Riksorganisation" # The right-wing national organization
+ SCA_populism_party:0 "NSP"
+ SCA_populism_party_long:0 "Nationella Samlingsparti" # National Coalition Party
+ ### Scotland ###
+ ### Senegambia ###
+ ### Serbia ###
+ SER_social_democratism_party:0 "SSDP"
+ SER_social_democratism_party_long:0 "Srpska Socijaldemokratska Partija" # Serbian Social Democratic Party
+ SER_social_liberalism_party:0 "NRS"
+ SER_social_liberalism_party_long:0 "Narodna Radikalna Stranka" # People's Radical Party
+ SER_democratic_socialism_party:0 "NSS"
+ SER_democratic_socialism_party_long:0 "Narodno-Socijalistička Stranka" # People's Socialist Party
+ SER_patriotic_socialism_party:0 "SKS"
+ SER_patriotic_socialism_party_long:0 "Savez Komunista Srbije" # League of Communists of Serbia
+ SER_conservatism_party:0 "SNS"
+ SER_conservatism_party_long:0 "Srpska Napredna Stranka" # Serbian Progressive Party 
+ SER_authoritarianism_party:0 "OSMK"
+ SER_authoritarianism_party_long:0 "Obavezni Odbor za Vojnu Kontrolu Srbije" # Mandatory Board for Military Control of Serbia/Obligatorisches serbisches Militärisches Kontrollkomitee
+ SER_corporatism_party:0 "SRZ"
+ SER_corporatism_party_long:0 "Srpska Radikalna Zajednica" # Serbian Radical Union
+ SER_populism_party:0 "Zbor"
+ SER_populism_party_long:0 "Narodni Pokret" # National Movement
+ ### Siam ###
+ SIA_social_democratism_party:0 "Khana Ratsadon(DF)"
+ SIA_social_democratism_party_long:0 "Khana Ratsadon(Democratic Faction)"
+ SIA_social_liberalism_party:0 "Khana Ratsadon(LF)"
+ SIA_social_liberalism_party_long:0 "Khana Ratsadon(Liberal Faction)"
+ SIA_democratic_socialism_party:0 "SSCP"
+ SIA_democratic_socialism_party_long:0 "Nanyang Communist Party" 
+ SIA_patriotic_socialism_party:0 "CPT"
+ SIA_patriotic_socialism_party_long:0 "Communist Party of Siam"
+ SIA_conservatism_party:0 "Khana Ratsadon"
+ SIA_conservatism_party_long:0 "Khana Ratsadon(Military Faction)"
+ SIA_authoritarianism_party:0 "Aphirattamontri Sapha"
+ SIA_authoritarianism_party_long:0 "Supreme Council of State of Siam"
+ SIA_corporatism_party:0 "KGG"
+ SIA_corporatism_party_long:0 "Khana Gubarn Gumueang(National Salvation Front)"
+ SIA_populism_party:0 "PCT"
+ SIA_populism_party_long:0 "Phak Chat Thai(Thai Nation Party)" 
+ ### Siberia ###
+ ### Kingdom of Two Sicilies ###
+ SIC_social_democratism_party:0 "PSS"
+ SIC_social_democratism_party_long:0 "Partitu Sucialista Sicilianu" # Sicilian Socialist Party
+ SIC_social_liberalism_party:0 "PRS"
+ SIC_social_liberalism_party_long:0 "Partitu Radicale Sicilianu" # Sicilian Radical Party
+ SIC_democratic_socialism_party:0 "PSI"
+ SIC_democratic_socialism_party_long:0 "Partito Socialista Italiano" # Italian Socialist Party 
+ SIC_patriotic_socialism_party:0 "PCI"
+ SIC_patriotic_socialism_party_long:0 "Partito Comunista Italiano" # Italian Communist Party
+ SIC_conservatism_party:0 "PDC"
+ SIC_conservatism_party_long:0 "Partitu Demucraticu Cristianu" # Christian Democratic Party
+ SIC_authoritarianism_party:0 "PP"
+ SIC_authoritarianism_party_long:0 "Partitu Pupulare" # People's Party
+ SIC_corporatism_party:0 "ANI"
+ SIC_corporatism_party_long:0 "Associazione Nazionalista Italiana" # Italian Nationalist Association
+ SIC_populism_party:0 "PNS"
+ SIC_populism_party_long:0 "Partitu Naziunalista Sicilianu" # Sicilian Nationalist Party 
+ ### Sierra Leone ###
+ ### Somalia ###
+ ### Switzerland ###
+ SWI_social_democratism_party:0 "SP"
+ SWI_social_democratism_party_long:0 "Sozialdemokratische Partei der Schweiz" #
+ SWI_social_liberalism_party:0 "FDP"
+ SWI_social_liberalism_party_long:0 "Freisinnig-Demokratische Partei" # 
+ SWI_democratic_socialism_party:0 "LSP"
+ SWI_democratic_socialism_party_long:0 "Liberalsozialistische Partei" # 
+ SWI_patriotic_socialism_party:0 "KPS"
+ SWI_patriotic_socialism_party_long:0 "Kommunistische Partei der Schweiz"
+ SWI_conservatism_party:0 "CVP"
+ SWI_conservatism_party_long:0 "Christlichdemokratische Volkspartei der Schweiz" # 
+ SWI_authoritarianism_party:0 "BGB"
+ SWI_authoritarianism_party_long:0 "Bauern-, Gewerbe- und Bürgerpartei" # 
+ SWI_corporatism_party:0 "Fröntler"
+ SWI_corporatism_party_long:0 "Frontenbewegung" # 
+ SWI_populism_party:0 "NF"
+ SWI_populism_party_long:0 "Nationale Front" # 
+ ### Kingdom of Spain ###
+ SPA_social_democratism_party:0 "PSOE"
+ SPA_social_democratism_party_long:0 "Partido Socialista Obrero Españo" # Spanish Socialist Workers' Party
+ SPA_social_liberalism_party:0 "PRR"
+ SPA_social_liberalism_party_long:0 "Partido Republicano Radical" # Radical Republican Party
+ SPA_democratic_socialism_party:0 "CNT-FAI"
+ SPA_democratic_socialism_party_long:0 "Confederación Nacional del Trabajo-Federación Anarquista Ibérica" # National Confederation of Labour-Iberian Anarchist Federation
+ SPA_patriotic_socialism_party:0 "PCE"
+ SPA_patriotic_socialism_party_long:0 "Partido Comunista de España" # Communist Party of Spain  
+ SPA_conservatism_party:0 "CEDA"
+ SPA_conservatism_party_long:0 "Confederación Española de Derechas Autónomas" # Spanish Confederation of Autonomous Rights
+ SPA_authoritarianism_party:0 "AN"
+ SPA_authoritarianism_party_long:0 "Acción Nacional" # National Action
+ SPA_corporatism_party:0 "JONS"
+ SPA_corporatism_party_long:0 "Juntas de Ofensiva Nacional-Sindicalista" # Councils of National-Syndicalist Offensive
+ SPA_populism_party:0 "CT"
+ SPA_populism_party_long:0 "Comunión Tradicionalista" # Traditionalist Communion
+ ### Spanish Republic ###
+ SPR_social_democratism_party:0 "PSOE"
+ SPR_social_democratism_party_long:0 "Partido Socialista Obrero Españo" # Spanish Socialist Workers' Party
+ SPR_social_liberalism_party:0 "PRR"
+ SPR_social_liberalism_party_long:0 "Partido Republicano Radical" # Radical Republican Party
+ SPR_democratic_socialism_party:0 "CNT-FAI"
+ SPR_democratic_socialism_party_long:0 "Confederación Nacional del Trabajo-Federación Anarquista Ibérica" # National Confederation of Labour-Iberian Anarchist Federation
+ SPR_patriotic_socialism_party:0 "PCE"
+ SPR_patriotic_socialism_party_long:0 "Partido Comunista de España" # Communist Party of Spain  
+ SPR_conservatism_party:0 "CEDA"
+ SPR_conservatism_party_long:0 "Confederación Española de Derechas Autónomas" # Spanish Confederation of Autonomous Rights
+ SPR_authoritarianism_party:0 "AN"
+ SPR_authoritarianism_party_long:0 "Acción Nacional" # National Action
+ SPR_corporatism_party:0 "JONS"
+ SPR_corporatism_party_long:0 "Juntas de Ofensiva Nacional-Sindicalista" # Councils of National-Syndicalist Offensive
+ SPR_populism_party:0 "CT"
+ SPR_populism_party_long:0 "Comunión Tradicionalista" # Traditionalist Communion
+ ### Spanish Union ###
+ SPU_social_democratism_party:0 "PSOE"
+ SPU_social_democratism_party_long:0 "Partido Socialista Obrero Españo" # Spanish Socialist Workers' Party
+ SPU_social_liberalism_party:0 "PRR"
+ SPU_social_liberalism_party_long:0 "Partido Republicano Radical" # Radical Republican Party
+ SPU_democratic_socialism_party:0 "CNT-FAI"
+ SPU_democratic_socialism_party_long:0 "Confederación Nacional del Trabajo-Federación Anarquista Ibérica" # National Confederation of Labour-Iberian Anarchist Federation
+ SPU_patriotic_socialism_party:0 "PCE"
+ SPU_patriotic_socialism_party_long:0 "Partido Comunista de España" # Communist Party of Spain  
+ SPU_conservatism_party:0 "CEDA"
+ SPU_conservatism_party_long:0 "Confederación Española de Derechas Autónomas" # Spanish Confederation of Autonomous Rights
+ SPU_authoritarianism_party:0 "AN"
+ SPU_authoritarianism_party_long:0 "Acción Nacional" # National Action
+ SPU_corporatism_party:0 "JONS"
+ SPU_corporatism_party_long:0 "Juntas de Ofensiva Nacional-Sindicalista" # Councils of National-Syndicalist Offensive
+ SPU_populism_party:0 "CT"
+ SPU_populism_party_long:0 "Comunión Tradicionalista" # Traditionalist Communion
+ ### Ukraine ###
+ UKR_social_democratism_party:0 "USDP"
+ UKR_social_democratism_party_long:0 "Ukrajinśka Social-Demokratyčna Partija" #Ukrainian Social Democratic Party
+ UKR_social_liberalism_party:0 "URDP"
+ UKR_social_liberalism_party_long:0 "Ukrajinśka Demokratyčno Radykaľna Partija" #Ukrainian Radical Democratic Party
+ UKR_democratic_socialism_party:0 "USDRP"
+ UKR_democratic_socialism_party_long:0 "Ukrajinśka Social-Demokratyčna Robitnjcha Partija" #Ukrainian Social Democratic Labour Party
+ UKR_patriotic_socialism_party:0 "KPU"
+ UKR_patriotic_socialism_party_long:0 "Komunistychna Partiya Ukrayiny" #Communist Party of Ukraine
+ UKR_conservatism_party:0 "UDKhP"
+ UKR_conservatism_party_long:0 "Ukrajinśka Demokratychno-Khliborobśka Partiya" # Ukrainian Democratic-Agricultural Party
+ UKR_authoritarianism_party:0 "UNP"
+ UKR_authoritarianism_party_long:0 "Ukrajinśka Narodna Partija" #Ukrainian People's Party
+ UKR_corporatism_party:0 "UNS"
+ UKR_corporatism_party_long:0 "Ukrajinśkyy Natsionaľnyy Sojuz" #Ukrainian National Union
+ UKR_populism_party:0 "OUN"
+ UKR_populism_party_long:0 "Orhanizatsiya Ukrajinśkyh Natsionaľistiv" #Organization of Ukrainian Nationalists
+ ### Poland and Lithuania Union ###
+ UPL_social_democratism_party:0 "PSKPiL"
+ UPL_social_democratism_party_long:0 "Partia Socjalistyczna Królestwa Polskiego i Litwy" #Socialist Party of the Kingdom of Poland and Lithuania
+ UPL_social_liberalism_party:0 "VLS"
+ UPL_social_liberalism_party_long:0 "Valstiečių Liaudininkų Sajunga" #Popular Peasants' Union
+ UPL_democratic_socialism_party:0 "SDKPiL"
+ UPL_democratic_socialism_party_long:0 "Socjaldemokracja Królestwa Polskiego i Litwy" #Social Democracy of the Kingdom of Poland and Lithuania
+ UPL_patriotic_socialism_party:0 "KP/SP"
+ UPL_patriotic_socialism_party_long:0 "Komunistyczna Partia/Socialdemokratų Partija" #Communist Party/Social Democratic Party
+ UPL_conservatism_party:0 "KDPLiLK"
+ UPL_conservatism_party_long:0 "Krikščionių Demokratų Partija Lenkijos ir Lietuvos Karalystė" #Christian Democratic Party of the Kingdom of Poland and Lithuania
+ UPL_authoritarianism_party:0 "SN"
+ UPL_authoritarianism_party_long:0 "Stronnictwo Narodowe" #National Party
+ UPL_corporatism_party:0 "NPR"
+ UPL_corporatism_party_long:0 "Narodowa Partia Robotnicza" #National Workers' Party
+ UPL_populism_party:0 "Endecja/Tautininkai"
+ UPL_populism_party_long:0 "Narodowa Demokracja/Lietuvių Tautininkų Sąjunga" #Nationalist Union
+ ### USA ###
+ USA_social_democratism_party:0 "Republican Party(SD)"
+ USA_social_democratism_party_long:0 "Republican Party(Socialdemocratism Faction)"
+ USA_social_liberalism_party:0 "Republican Party"
+ USA_social_liberalism_party_long:0 "Republican Party"
+ USA_democratic_socialism_party:0 "Socialist Workers Party"
+ USA_democratic_socialism_party_long:0 "Socialist Workers Party"
+ USA_patriotic_socialism_party:0 "CPUSA"
+ USA_patriotic_socialism_party_long:0 "Communist Party of the United States of America" 
+ USA_conservatism_party:0 "Democratic Party(Con)"
+ USA_conservatism_party_long:0 "Democratic Party(Conservatism Faction)"
+ USA_authoritarianism_party:0 "Military Government"
+ USA_authoritarianism_party_long:0 "Military Government"
+ USA_corporatism_party:0 "Democratic Party(Cor)"
+ USA_corporatism_party_long:0 "Democratic Party(Corporatism Faction)"
+ USA_populism_party:0 "Democratic Party(Pop)"
+ USA_populism_party_long:0 "Democratic Party(Populism Faction)"
+  
+  
+  
+ ########################################
+ 
+ POL_communism_party:1 "KPP"
+ POL_communism_party_long:1 "Communist Party of Poland"
+ POL_democratic_party:0 "PSL"
+ POL_democratic_party_long:0 "Polskie Stronnictwo Ludowe"
+ POL_neutrality_party:0 "BBWR"
+ 
+ 
+ ITA_communism_party:0 "Partito Comunista Italiano"
+ ITA_democratic_party:0 "Partito Popolare Italiano"
+ ITA_fascism_party:0 "Partito Nazionale Fascista"
+ ITA_neutrality_party:0 "Partito Nazionale Monarchico"
+
+ 
+
+ SPR_fascism_party:0 "Falange Española"
+ SPR_democratic_party:0 "IR"
+ SPR_democratic_party_long:0 "Izquierda Republicana"
+ SPR_communism_party:0 "PCE"
+ SPR_communism_party_long:0 "Partido Comunista de España"
+ SPR_neutrality_party:0 "PRR"
+ SPR_neutrality_party_long:0 "Partido Republicano Radical"
+ POR_neutrality_party:0 "Estado Novo"
+ POR_communism_party:0 "PCP"
+ POR_communism_party_long:0 "Partido Comunista Português"
+ POR_democratic_party:0 "PD"
+ POR_democratic_party_long:0 "Partido Democrático"
+ POR_fascism_party:0 "MNS"
+ POR_fascism_party_long:0 "Movimento Nacional-Sindicalista"
+
+
+ LAT_neutrality_party:0 "Tautas Padome"
+ LAT_fascism_party:0 "Pērkonkrusts"
+ LAT_democratic_party:0 "LSDSP"
+ LAT_democratic_party_long:0 "Latvijas Socialdemokratiska Stradnieku Partija"
+ LAT_communism_party:0 "LKP"
+ LAT_communism_party_long:0 "Latvijas Komunistiskā partija"
+
+ EST_communism_party:0 "EKP"
+ EST_communism_party_long:0 "Eestimaa Kommunistlik Partei"
+ IRQ_neutrality_party:0 "Monarchists"
+ IRQ_fascism_party:0 "Golden Square"
+ IRQ_communism_party:0 "Al-Hizb al-Shiu'iy"
+ SWE_fascism_party:0 "NSAP"
+ SWE_fascism_party_long:0 "Nationalsocialistiska arbetarepartiet"
+ SWE_communism_party:0 "SKP"
+ SWE_communism_party_long:0 "Sveriges kommunistiska parti"
+ SWE_democratic_party:0 "SAP"
+ SWE_democratic_party_long:0 "Sveriges socialdemokratiska arbetareparti"
+ SWE_neutrality_party:0 "Bondeförbundet"
+ SWE_neutrality_party_long:0 "Bondeförbundet"
+
+ DEN_democratic_party:0 "Socialdemokratiet"
+ DEN_democratic_party_long:0 "Socialdemokratiet"
+ DEN_fascism_party:0 "DNSAP"
+ DEN_fascism_party_long:0 "Danmarks Nationalsocialistiske Arbejderparti"
+ DEN_communism_party:0 "DKP"
+ DEN_communism_party_long:0 "Danmarks Kommunistiske Parti"
+ DEN_neutrality_party:0 "Radikale Venstre"
+ DEN_neutrality_party_long:0 "Det Radikale Venstre"
+ CAN_democratic_party:0 "Liberal Party"
+ CAN_democratic_party_long:0 "Liberal Party of Canada"
+ CAN_fascism_party:0 "National Unity Party"
+ CAN_fascism_party_long:0 "National Unity Party"
+ CAN_communism_party:0 "CPC"
+ CAN_communism_party_long:0 "Communist Party of Canada"
+ CAN_neutrality_party:0 "CCF"
+ CAN_neutrality_party_long:0 "Co-operative Commonwealth Federation"
+
+ MEX_democratic_party:1 "PLC"
+ MEX_democratic_party_long:1 "Partido Liberal Constitucionalista"
+ MEX_fascism_party:0 "UNS"
+ MEX_fascism_party_long:0 "Unión Nacional Sinarquista"
+ MEX_communism_party:0 "PCM"
+ MEX_communism_party_long:0 "Partido Comunista Mexicano"
+ MEX_neutrality_party:1 "PNR"
+ MEX_neutrality_party_long:1 "Partido Nacional Revolucionario"
+ ARG_democratic_party:0 "UCR"
+ ARG_democratic_party_long:0 "Unión Cívica Radical"
+ ARG_fascism_party:0 "UNF"
+ ARG_fascism_party_long:0 "Union Nacional Fascista"
+ ARG_communism_party:0 "PC"
+ ARG_communism_party_long:0 "Partido Comunista de la Argentina"
+ ARG_neutrality_party:0 "Concordancia"
+ ARG_neutrality_party_long:0 "Concordancia"
+ BRA_fascism_party:1 "AIB"
+ BRA_fascism_party_long:1 "Ação Integralista Brasileira"
+ BRA_communism_party:1 "PCB"
+ BRA_communism_party_long:1 "Partido Comunista Brasileiro"
+ BRA_democratic_party:1 "UDB"
+ BRA_democratic_party_long:1 "União Democrática Brasileira"
+ BRA_neutrality_party:0 "Estado Novo"
+ BRA_neutrality_party_long:0 "Estado Novo"
+ HUN_fascism_party:1 "Horthy Government"
+ HUN_arrow_cross_party:0 "NPHM"
+ HUN_arrow_cross_party_long:0 "Nyilaskeresztes Párt – Hungarista Mozgalom"
+ HUN_communism_party:0 "KMP"
+ HUN_communism_party_long:0 "Kommunisták Magyarországi Pártja"
+ HUN_democratic_party:0 "SZDP"
+ HUN_democratic_party_long:0 "Szociáldemokrata Párt"
+ HUN_neutrality_party:0 "F48P"
+ HUN_neutrality_party_long:0 "Függetlentségi és 48-as Párt"
+ HUN_legitimists_party:0 "Legitimists"
+ HUN_legitimists_party_long:0 "Legitimists"
+
+ BUL_neutrality_party:0 "Tsar Boris loyalists"
+ BUL_communism_party:0 "BCP"
+ BUL_communism_party_long:0 "Bulgarian Communist Party"
+ BUL_democratic_party:0 "UPPP"
+ BUL_democratic_party_long:0 "United People's Progressive Party"
+ BUL_fascism_party:0 "UBNL"
+ BUL_fascism_party_long:0 "The Union of Bulgarian National Legions"
+ SAF_neutrality_party:0 "ANC"
+ SAF_neutrality_party_long:0 "African National Congress"
+ SAF_communism_party:0 "SACP"
+ SAF_communism_party_long:0 "South African Communist Party"
+ SAF_democratic_party:0 "United"
+ SAF_democratic_party_long:0 "United National South African Party"
+ SAF_fascism_party:0 "GNP"
+ SAF_fascism_party_long:0 "Gesuiwerde Nasionale Party"
+ NZL_neutrality_party:0 "National"
+ NZL_neutrality_party_long:0 "New Zealand National Party"
+ NZL_democratic_party:0 "Labour"
+ NZL_democratic_party_long:0 "New Zealand Labour Party"
+ NZL_fascism_party:0 "Legion"
+ NZL_fascism_party_long:0 "New Zealand Legion"
+ NZL_communism_party:0 "CPNZ"
+ NZL_communism_party_long:0 "Communist Party of New Zealand"
+ NOR_neutrality_party:0 "Venstre"
+ NOR_neutrality_party_long:0 "Venstre"
+ NOR_communism_party:0 "NKP"
+ NOR_communism_party_long:0 "Norges Kommunistiske Parti"
+ NOR_democratic_party:0 "AP"
+ NOR_democratic_party_long:0 "Arbeiderpartiet"
+ NOR_fascism_party:0 "NS"
+ NOR_fascism_party_long:0 "Nasjonal Samling"
+ HOL_neutrality_party:1 "NVB"
+ HOL_neutrality_party_long:1 "Nederlandse Volksbeweging"
+ HOL_communism_party:0 "CPN"
+ HOL_communism_party_long:0 "Communistische Partij Nederland"
+ HOL_democratic_party:1 "ARP"
+ HOL_democratic_party_long:1 "Anti-Revolutionaire Partij"
+ HOL_fascism_party:0 "NSB"
+ HOL_fascism_party_long:1 "Nationaal-Socialistische Beweging"
+ HOL_CHU_party:0 "CHU"
+ HOL_CHU_party_long:0 "Christelijk-Historische Unie"
+ BEL_communism_party:0 "KPB"
+ BEL_communism_party_long:0 "Kommunistische Partij van België"
+ BEL_democratic_party:0 "Catholic Block"
+ BEL_democratic_party_long:0 "Catholic Block"
+ BEL_fascism_party:0 "Rex"
+ BEL_fascism_party_long:0 "Parti Rexiste"
+
+ PER_communism_party:0 "Tudeh Party"
+ PER_communism_party_long:0 "Tudeh Party"
+ PER_neutrality_party:0 "Pahlavi Dynasty"
+ COL_communism_party:0 "PCC"
+ COL_communism_party_long:0 "Partido Comunista Colombiano"
+ COL_democratic_party:0 "PLC"
+ COL_democratic_party_long:0 "Partido Liberal Colombiano"
+ COL_neutrality_party:0 "Conservador"
+ COL_neutrality_party_long:0 "Partido Conservador Colombiano"
+ CZE_communism_party:0 "KSC"
+ CZE_communism_party_long:0 "Komunistická strana Ceskoslovenska"
+ CZE_democratic_party:0 "CSNS"
+ CZE_democratic_party_long:0 "Ceská strana národne sociální"
+ CZE_fascism_party:0 "NOF"
+ CZE_fascism_party_long:0 "Národní obec fašistická"
+ CHL_fascism_party:0 "VPS"
+ CHL_fascism_party_long:0 "Vanguardia Popular Socialista"
+ CHL_democratic_party:0 "Partido Liberal"
+ CHL_communism_party:0 "PCCh"
+ CHL_communism_party_long:0 "Partido Comunista de Chile"
+
+
+ BOL_democratic_party:0 "PL"
+ BOL_democratic_party_long:0 "Partido Liberal"
+ BOL_fascism_party:0 "FSB"
+ BOL_fascism_party_long:0 "Falange Socialista Boliviana"
+ BOL_neutrality_party:0 "QG"
+ BOL_neutrality_party_long:0 "Quintanilla government"
+ NIC_democratic_party:0 "PLN"
+ NIC_democratic_party_long:0 "Partido Liberal Nacionalista"
+ COS_democratic_party:0 "PR"
+ COS_democratic_party_long:0 "Partido Republicano"
+ COS_communism_party:0 "PVP"
+ COS_communism_party_long:0 "Partido Vanguardia Popular"
+ ELS_fascism_party:0 "Pro-Patria"
+ ELS_fascism_party_long:0 "Partido Nacional 'Pro-Patria'"
+ GUA_democratic_party:0 "PLP"
+ GUA_democratic_party_long:0 "Progressive Liberal Party"
+ SIA_neutrality_party:0 "Khana Ratsadon"
+ SIA_neutrality_party_long:0 "Khana Ratsadon"
+ URG_democratic_party:0 "Colorado"
+ URG_democratic_party_long:0 "Partido Colorado"
+ URG_communism_party:0 "PCU"
+ URG_communism_party_long:0 "Partido Comunista del Uruguay"
+ VEN_fascism_party:0 "Consejo de Ministros"
+ VEN_fascism_party_long:0 "Consejo de Ministros"
+ VEN_neutrality_party:0 "AD"
+ VEN_neutrality_party_long:0 "Acción Democrática"
+ VEN_democratic_party:0 "Copei"
+ VEN_democratic_party_long:0 "Copei"
+ VEN_communism_party:0 "PCV"
+ VEN_communism_party_long:0 "Partido Comunista de Venezuela"
+ PRU_fascism_party:0 "Constituent Assembly"
+ PRU_fascism_party_long:0 "Constituent Assembly"
+ PRU_communism_party:0 "PCP"
+ PRU_communism_party_long:0 "Partido Comunista del Perú"
+ IRE_democratic_party:0 "Fianna Fáil"
+ IRE_democratic_party_long:0 "Fianna Fáil, The Republican Party"
+ IRE_fascism_party:0 "PNC"
+ IRE_fascism_party_long:0 "Páirtí Náisiúnta Corparáidíoch"
+ IRE_communism_party:0 "CPI"
+ IRE_communism_party_long:0 "Páirtí Cumannach na hÉireann"
+ IRE_neutrality_party:0 "Lucht Oibre"
+ IRE_neutrality_party_long:0 "Páirtí an Lucht Oibre"
+ 
+ LUX_democratic_party:0 "Rietspartei"
+ LUX_communism_party:0 "KPL"
+ LUX_communism_party_long:0 "Kommunistesch Partei Lëtzebuerg"
+ LUX_fascism_party:0 "PNI"
+ LUX_fascism_party_long:0 "Onofhängeg Nationalpartei"
+ BHU_neutrality_party:0 "Wangchuk Dynasty"
+ SLO_fascism_party:0 "HSLS"
+ SLO_fascism_party_long:0 "Hlinkova Slovenská Ludová Strana"
+ SLO_communism_party:0 "KSS"
+ SLO_communism_party_long:0 "Komunistická strana Slovenska"
+ ECU_democratic_party:0 "Ecuador"
+ ECU_democratic_party_long:0 "República del Ecuador"
+ ECU_communism_party:0 "PCE"
+ ECU_communism_party_long:0 "Partido Comunista del Ecuador"
+ HON_democratic_party:0 "PLH"
+ HON_communism_party:0 "PCH"
+ HON_communism_party_long:0 "Partido Comunista de Honduras"
+ NEP_neutrality_party:0 "Rana Dynasty"
+ PAN_democratic_party:0 "PLD"
+ PAN_democratic_party_long:0 "Partido Liberal Doctrinario"
+ PAN_communism_party:0 "PPP"
+ PAN_communism_party_long:0 "Partido del Pueblo de Panamá"
+ PHI_fascism_party:0 "Ganap"
+ PHI_fascism_party_long:0 "Ganap Party"
+ PHI_democratic_party:0 "NP"
+ PHI_democratic_party_long:0 "Partido Nacionalista"
+ PHI_communism_party:0 "PKP"
+ PHI_communism_party_long:0 "Partido Komunista ng Pilipinas"
+ SAU_neutrality_party:0 "House of Saud"
+ YEM_neutrality_party:0 "House of Rassid"
+ OMA_neutrality_party:0 "Al Said Dynasty"
+ SIK_communism_party:0 "CPSU"
+ SIK_communism_party_long:0 "Communist Party of the Soviet Union"
+ TIB_neutrality_party:0 "Retting Rinpoche"
+ YUN_neutrality_party:0 "Kuomintang"
+ MON_communism_party:0 "MAN"
+ MON_communism_party_long:0 "Mongol Ardiin Nam"
+ TAN_communism_party:0 "CPSU"
+ TAN_communism_party_long:0 "Communist Party of the Soviet Union"
+ PAR_communism_party:0 "PRF"
+ PAR_communism_party_long:0 "Partido Revolucionario Febrerista"
+ CUB_democratic_party:0 "Union"
+ CUB_democratic_party_long:0 "National Union"
+ CUB_communism_party:0 "PCC"
+ CUB_communism_party_long:0 "Partido Comunista Cubano"
+ DOM_fascism_party:0 "PD"
+ DOM_fascism_party_long:0 "Partido Dominicano"
+ HAI_democratic_party:0 "Vincent"
+ HAI_democratic_party_long:0 "President Sténio Vincent"
+ HAI_communism_party:0 "PKA"
+ HAI_communism_party_long:0 "Pati Kominis Ayisyen"
+ KOR_communism_party:0 "WPK"
+ KOR_communism_party_long:0 "Worker's Party of Korea"
+ KOR_democratic_party:0 "Liberal Party"
+ KOR_neutrality_party:0 "Yi Dynasty"
+ KOR_fascism_party:0 "NDPC"
+ KOR_fascism_party_long:0 "National Defense Policy Committee"
+ ICE_democratic_party:0 "Alþýðuflokkurinn"
+ ICE_communism_party:0 "Kommúnistaflokkur"
+ ICE_communism_party_long:0 "Kommúnistaflokkur Íslands"
+ ICE_fascism_party:0 "Þjóðernissinna"
+ ICE_fascism_party_long:0 "Flokkur Þjóðernissinna"
+ ICE_neutrality_party:0 "Heimastjórnarflokkurinn"
+ SYR_fascism_party:0 "SSNP"
+ SYR_fascism_party_long:0 "Syrian Social Nationalist Party"
+ SYR_communism_party:0 "Syrian Communist Party"
+ SYR_democratic_party:0 "National Bloc"
+ SYR_neutrality_party:0 "Royalists"
+ LEB_fascism_party:0 "Kataeb"
+ LEB_neutrality_party:0 "Yaradi"
+ LEB_communism_party:0 "League of Communists"
+ LEB_democratic_party:0 "Constitutional Bloc"
+ JOR_fascism_party:0 "Jordanian Phalange"
+ JOR_neutrality_party:0 "Hashemite"
+ JOR_democratic_party:0 "National Liberal Party"
+ JOR_communism_party:0 "Jordanian Workers Society"
+ EGY_communism_party:0 "Egyptian Communist Party"
+ EGY_fascism_party:0 "Misr El-Fatah"
+ EGY_democratic_party:0 "Liberation Rally"
+ EGY_neutrality_party:0 "Royalists"
+ PAL_fascism_party:0 "Al-Muqaddas"
+ PAL_communism_party:0 "NLL"
+ PAL_communism_party_long:0 "National Liberation League"
+ PAL_democratic_party:0 "SMC"
+ PAL_democratic_party_long:0 "Supreme Muslim Council"
+ PAL_neutrality_party:0 "Loyalists"
+ ISR_communism_party:0 "Maki"
+ ISR_democratic_party:0 "Mapai"
+ ISR_fascism_party:0 "Helpam"
+ ISR_neutrality_party:0 "Central Council"
+ VIN_fascism_party:0 "Vietnamese Restoration League" #or Reformation Society   
+ VIN_democratic_party:0 "Can Lao Party" #formed in early 50s
+ VIN_communism_party:0 "Communist Party of Vietnam" #Viet Minh was more important in early years
+ VIN_neutrality_party:0 "Viêt Nam Quoc Dân Đang"
+ CAM_fascism_party:0 "Khmerite Party"
+ CAM_democratic_party:0 "Democratic Party" #formed in 1946 
+ CAM_communism_party:0 "Communist Party of Kampuchea" # aka Khmer Communist Party or a different party Krom Pracheachon aka Krom
+ CAM_neutrality_party:0 "Sangkum Reastr Niyum" # or just Sangkum 1955, democratic but right leaning and anti communist
+ INS_fascism_party:0 "New Order" #inspired by right wingers from 1960s
+ INS_democratic_party:0 "PNI" #Indonesian National Party founded by Sukarno
+ INS_communism_party:0 "PKI" #Partai Komunis Indonesia
+ INS_neutrality_party:0 "Democrats" #made up, in reality this guy was a member of PNI 
+ MAL_fascism_party:0 "Panoceanic Unionists"
+ MAL_democratic_party:0 "United Malays National Organisation" #or UMNO or PEKEMBAR
+ MAL_communism_party:0 "Malayan Communist Party" #or MCP
+ MAL_neutrality_party:0 "Kesatuan Melayu Muda" #or KMM 
+ LAO_fascism_party:0 "Tribal Centralization Party"
+ LAO_democratic_party:0 "Democratic Party"
+ LAO_communism_party:0 "Pathet Lao"
+ LAO_neutrality_party:0 "Royalists"
+ MNT_fascism_party:0 "Greens"
+ MNT_democratic_party:0 "Democracy League"
+ MNT_communism_party:0 "Communist Party of Montenegro" #or KPCG
+ MNT_neutrality_party:0 "Federalist Party" # Montenegrin ultra nationalists, start democtratic right wing but went full fascist collaboration in 41'
+
+ GEO_fascism_party:0 "Tbilisi Council"
+ GEO_democratic_party:0 "Social Democratic Party of Georgia"
+ GEO_communism_party:0 "Communist Party of Georgia"
+ GEO_neutrality_party:0 "Gori Convention"
+ KAZ_fascism_party:0 "Zhuze Ultşildiq"
+ KAZ_democratic_party:0 "Alash Party"
+ KAZ_communism_party:0 "Communist Party of Kazakhstan"
+ KAZ_neutrality_party:0 "Royalists"
+
+ 
+ BLR_fascism_party:0 "Belarusian Central Council"
+ BLR_democratic_party:0 "Belarusian Christian Democracy"
+ BLR_communism_party:0 "Communist Party of Belarus"
+ BLR_neutrality_party:0 "Belarusian Socialist Assembly"
+ PAK_democratic_party:0 "Ganatantri Dal"
+ PAK_communism_party:0 "Pakistan Socialist Party"
+ PAK_neutrality_party:0 "Muslim League"
+ PRC_democratic_party:0 "KMT-RC"
+ PRC_democratic_party_long:0 "Kuomintang Revolutionary Committee"
+ PRC_communism_party:0 "CPC"
+ PRC_communism_party_long:0 "Communist Party of China"
+ SHX_neutrality_party:0 "KuominTa"
+ SHX_communism_party:0 "CPC"
+ SHX_communism_party_long:0 "Communist Party of China"
+ GXC_neutrality_party:0 "New Guangxi Clique"
+ GXC_communism_party:0 "CPC"
+ GXC_communism_party_long:0 "Communist Party of China"
+ YUN_communism_party:0 "CPC"
+ YUN_communism_party_long:0 "Communist Party of China"
+ MAN_fascism_party:0 "MX"
+ MAN_fascism_party_long:0 "Manzhōuguó Xiéhehuì"

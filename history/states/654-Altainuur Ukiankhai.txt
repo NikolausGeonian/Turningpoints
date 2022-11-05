@@ -1,0 +1,23 @@
+
+state={
+	id=654
+	name="STATE_654"
+
+	history={
+		owner = QNG
+		add_core_of = QNG
+		add_core_of = MON
+		buildings = {
+			infrastructure = 1
+
+		}
+
+	}
+
+	provinces={
+		1702 1749 1779 1818 4781 4800 7822 10531 10713 12427 12509 12528 13223 13224 13225 
+	}
+	manpower=153510
+	buildings_max_level_factor=1.000
+	state_category = pastoral
+}

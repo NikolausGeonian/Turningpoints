@@ -1,0 +1,20 @@
+state = {
+	id = 83
+	name="STATE_83" #Slavonia
+	manpower = 1169781
+	state_category = rural
+	
+	history = {
+		owner = HAB
+		add_core_of = HAB
+		
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+			arms_factory = 1
+		}		
+	}
+	provinces={
+		3627 6647 9595 11594 
+	}
+}

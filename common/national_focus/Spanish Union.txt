@@ -1,0 +1,592 @@
+focus_tree = {
+	id = SPU_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = SPU
+		}
+	}
+	
+	default = no
+	
+	### Industry ###
+	
+	############################################################
+	## Innovate Instituto Nacional de Recuperación Industrial ##
+	############################################################
+	
+	focus = {
+		id = SPU_Innovate_INRI
+		icon = GFX_goal_SPU_Innovate_INRI
+		x = 7
+		y = 0
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {		
+		}
+		completion_reward = {
+		}
+	}
+	
+	###########################################
+	## Reform the management of Public Works ##
+	###########################################
+	
+	focus = {
+		id = SPU_reform_public_works
+		icon = GFX_goal_SPU_reform_public_works
+		prerequisite = { 
+			focus = SPU_Innovate_INRI
+		}
+		relative_position_id = SPU_Innovate_INRI
+		x = -4
+		y = 1
+		cost = 5
+		available = {
+			is_puppet = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+	
+			}
+	}
+		
+		###############################
+		## National Public Education ##
+		###############################
+	
+		focus = {
+			id = SPU_national_public_education
+			icon = GFX_goal_SPU_national_public_education
+			prerequisite = { 
+				focus = SPU_reform_public_works
+			}
+			relative_position_id = SPU_reform_public_works
+			x = -2
+			y = 1
+			cost = 5
+			available = {
+				is_puppet = no
+			}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+	
+				}
+		}
+		
+		#################################
+		## Expand resource development ##
+		#################################
+	
+		focus = {
+			id = SPU_expand_resource
+			icon = GFX_goal_SPU_expand_resource
+			prerequisite = { 
+				focus = SPU_reform_public_works
+			}
+			relative_position_id = SPU_reform_public_works
+			x = 0
+			y = 1
+			cost = 5
+			available = {
+				is_puppet = no
+			}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+	
+				}
+		}
+	
+	####################################
+	## State-owned Factory Management ##
+	####################################
+	
+	focus = {
+		id = SPU_state_owned_factory_management
+		icon = GFX_goal_SPU_state_owned_factory_management
+		prerequisite = { 
+			focus = SPU_Innovate_INRI
+		}
+		relative_position_id = SPU_Innovate_INRI
+		x = 0
+		y = 1
+		cost = 5
+		available = {
+			is_puppet = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+	
+			}
+	}
+	
+		#################################
+		## Expand Federal Jurisdiction ##
+		#################################
+	
+		focus = {
+			id = SPU_Expand_Federal_Jurisdiction
+			icon = GFX_goal_SPU_Expand_Federal_Jurisdiction
+			prerequisite = { 
+				focus = SPU_state_owned_factory_management
+			}
+			mutually_exclusive = {
+				focus = SPU_reduce_control
+			}
+			relative_position_id = SPU_state_owned_factory_management
+			x = -2
+			y = 1
+			cost = 5
+			available = {
+				is_puppet = no
+			}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			ai_will_do = {
+				factor = 1000
+			}
+			completion_reward = {
+		
+				}
+		}
+		
+			#####################################
+			## Construction Guidance Committee ##
+			#####################################
+	
+			focus = {
+				id = SPU_Construction_Guidance_Committee
+				icon = GFX_goal_SPU_Construction_Guidance_Committee
+				prerequisite = { 
+					focus = SPU_Expand_Federal_Jurisdiction
+				}
+				relative_position_id = SPU_Expand_Federal_Jurisdiction
+				x = 0
+				y = 1
+				cost = 5
+				available = {
+					is_puppet = no
+				}
+				cancel_if_invalid = yes
+				continue_if_invalid = no
+				available_if_capitulated = no
+				ai_will_do = {
+					factor = 1000
+				}
+				completion_reward = {
+		
+					}
+			}
+		
+		####################
+		## Reduce Control ##
+		####################
+	
+		focus = {
+			id = SPU_reduce_control
+			icon = GFX_goal_SPU_reduce_control
+			prerequisite = { 
+				focus = SPU_state_owned_factory_management
+			}
+			mutually_exclusive = {
+				focus = SPU_Expand_Federal_Jurisdiction
+			}
+			relative_position_id = SPU_state_owned_factory_management
+			x = 0
+			y = 1
+			cost = 5
+			available = {
+				is_puppet = no
+			}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			ai_will_do = {
+				factor = 1000
+			}
+			completion_reward = {
+		
+				}
+		}
+		
+			#############################
+			## Construction Concession ##
+			#############################
+	
+			focus = {
+				id = SPU_Construction_Concession
+				icon = GFX_goal_SPU_Construction_Concession
+				prerequisite = { 
+					focus = SPU_reduce_control
+				}
+				relative_position_id = SPU_reduce_control
+				x = 0
+				y = 1
+				cost = 5
+				available = {
+					is_puppet = no
+				}
+				cancel_if_invalid = yes
+				continue_if_invalid = no
+				available_if_capitulated = no
+				ai_will_do = {
+					factor = 1000
+				}
+				completion_reward = {
+		
+					}
+			}
+		
+		########################
+		## Act of Agriculture ##
+		########################
+	
+		focus = {
+			id = SPU_Act_of_Agriculture
+			icon = GFX_goal_SPU_Act_of_Agriculture
+			prerequisite = { 
+				focus = SPU_state_owned_factory_management
+			}
+			relative_position_id = SPU_state_owned_factory_management
+			x = 2
+			y = 1
+			cost = 5
+			available = {
+				is_puppet = no
+			}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			ai_will_do = {
+				factor = 1000
+			}
+			completion_reward = {
+		
+				}
+		}
+		
+			###########################
+			## Rural Electrification ##
+			###########################
+	
+			focus = {
+				id = SPU_Rural_Electrification
+				icon = GFX_goal_SPU_Rural_Electrification
+				prerequisite = { 
+					focus = SPU_Act_of_Agriculture
+				}
+				relative_position_id = SPU_Act_of_Agriculture
+				x = 0
+				y = 1
+				cost = 5
+				available = {
+					is_puppet = no
+				}
+				cancel_if_invalid = yes
+				continue_if_invalid = no
+				available_if_capitulated = no
+				ai_will_do = {
+					factor = 1000
+				}
+				completion_reward = {
+		
+					}
+			}
+			
+			##############################
+			## Rural Credit Cooperative ##
+			##############################
+	
+			focus = {
+				id = SPU_Rural_Credit_Cooperative
+				icon = GFX_goal_SPU_Rural_Credit_Cooperative
+				prerequisite = { 
+					focus = SPU_Act_of_Agriculture
+				}
+				relative_position_id = SPU_Act_of_Agriculture
+				x = 2
+				y = 1
+				cost = 5
+				available = {
+					is_puppet = no
+				}
+				cancel_if_invalid = yes
+				continue_if_invalid = no
+				available_if_capitulated = no
+				ai_will_do = {
+					factor = 1000
+				}
+				completion_reward = {
+		
+					}
+			}
+	
+	#######################################
+	## Autogestión Enterprise Management ##
+	#######################################
+	
+	focus = {
+		id = SPU_autogestion_management
+		icon = GFX_goal_SPU_autogestion_management
+		prerequisite = { 
+			focus = SPU_Innovate_INRI
+		}
+		relative_position_id = SPU_Innovate_INRI
+		x = 7
+		y = 1
+		cost = 5
+		available = {
+			is_puppet = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+	
+			}
+	}
+	
+		##############################################
+		## Industry-University-Research Combination ##
+		##############################################
+	
+		focus = {
+			id = SPU_IUR_combination
+			icon = GFX_goal_SPU_IUR_combination
+			prerequisite = { 
+				focus = SPU_autogestion_management
+			}
+			relative_position_id = SPU_autogestion_management
+			x = 0
+			y = 2
+			cost = 5
+			available = {
+				is_puppet = no
+			}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			ai_will_do = {
+				factor = 1000
+			}
+			completion_reward = {
+		
+				}
+		}
+		
+		#######################
+		## Emediate Sabotage ##
+		#######################
+	
+		focus = {
+			id = SPU_Emediate_Sabotage
+			icon = GFX_goal_SPU_Emediate_Sabotage
+			prerequisite = { 
+				focus = SPU_autogestion_management
+			}
+			mutually_exclusive = {
+				focus = SPU_expand_industrial_democracy
+			}
+			relative_position_id = SPU_autogestion_management
+			x = -2
+			y = 1
+			cost = 5
+			available = {
+				is_puppet = no
+			}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			ai_will_do = {
+				factor = 1000
+			}
+			completion_reward = {
+		
+				}
+		}
+		
+		#################################
+		## Expand Industrial Democracy ##
+		#################################
+	
+		focus = {
+			id = SPU_expand_industrial_democracy
+			icon = GFX_goal_SPU_expand_industrial_democracy
+			prerequisite = { 
+				focus = SPU_autogestion_management
+			}
+			mutually_exclusive = {
+				focus = SPU_Emediate_Sabotage
+			}
+			relative_position_id = SPU_autogestion_management
+			x = 2
+			y = 1
+			cost = 5
+			available = {
+				is_puppet = no
+			}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			ai_will_do = {
+				factor = 1000
+			}
+			completion_reward = {
+		
+				}
+		}
+		
+		
+	### Military ###
+	
+	################################################
+	## Outcome of 3rd Federal Defense Commission  ##
+	################################################
+	
+	focus = {
+		id = SPU_outcome_of_FDC
+		icon = GFX_goal_SPU_outcome_of_FDC
+		x = 25
+		y = 0
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {		
+		}
+		completion_reward = {
+		}
+	}
+	
+	##########################
+	## Federal Armed Forces ##
+	##########################
+	
+	focus = {
+		id = SPU_Federal_armed_forces
+		icon = GFX_goal_SPU_Federal_armed_forces
+		x = -5
+		y = 1
+		cost = 10
+		prerequisite = { 
+			focus = SPU_outcome_of_FDC
+		}
+		mutually_exclusive = {
+			focus = SPU_Guardia_Roja_of_Frente_Popular
+		}
+		relative_position_id = SPU_outcome_of_FDC
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {		
+		}
+		completion_reward = {
+		}
+	}
+	
+		##########################
+		## Federal Armed Forces ##
+		##########################
+	
+		focus = {
+			id = SPU_Leadership_Collectives
+			icon = GFX_goal_SPU_Leadership_Collectives
+			x = -2
+			y = 1
+			cost = 10
+			prerequisite = { 
+				focus = SPU_Federal_armed_forces
+			}
+			relative_position_id = SPU_Federal_armed_forces
+
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			available = {		
+			}
+			completion_reward = {
+			}
+		}
+	
+	####################################
+	## Guardia Roja of Frente Popular ##
+	####################################
+	
+	focus = {
+		id = SPU_Guardia_Roja_of_Frente_Popular
+		icon = GFX_goal_SPU_Guardia_Roja_of_Frente_Popular
+		x = 5
+		y = 1
+		cost = 10
+		prerequisite = { 
+			focus = SPU_outcome_of_FDC
+		}
+		mutually_exclusive = {
+			focus = SPU_Federal_armed_forces
+		}
+		relative_position_id = SPU_outcome_of_FDC
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {		
+		}
+		completion_reward = {
+		}
+	}
+	
+		###################################
+		## Decentralized Command Systerm ##
+		###################################
+	
+		focus = {
+			id = SPU_decentralized_command_systerm
+			icon = GFX_goal_SPU_decentralized_command_systerm
+			x = 3
+			y = 1
+			cost = 10
+			prerequisite = { 
+				focus = SPU_Guardia_Roja_of_Frente_Popular
+			}
+			relative_position_id = SPU_Guardia_Roja_of_Frente_Popular
+
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			available = {		
+			}
+			completion_reward = {
+			}
+		}
+	
+}

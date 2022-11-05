@@ -1,0 +1,66 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_ACHIEVEMENT_DREAMS_COME_TRUE"
+		texturefile = "gfx/custom_achievements/achievement_dreams_come_true.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_ACHIEVEMENT_PAX_AETERNA"
+		texturefile = "gfx/custom_achievements/achievement_pax_aeterna.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_ACHIEVEMENT_ROSA_BIZARRE_ADVENTURE"
+		texturefile = "gfx/custom_achievements/achievement_rosa_bizarre_adventure.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ACHIEVEMENT_TRUE_CALIPHATE"
+		texturefile = "gfx/custom_achievements/achievement_true_caliphate.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ACHIEVEMENT_BID_CAN_CONQUER_CHAMAYI_ONCE_AGAIN"
+		texturefile = "gfx/custom_achievements/achievement_bid_can_conquer_chamayi_once_again.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ACHIEVEMENT_LES_CHINOIS_A_PARIS"
+		texturefile = "gfx/custom_achievements/achievement_Les_Chinois_a_Paris.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ACHIEVEMENT_THE_BIRTH_OF_A_NATION"
+		texturefile = "gfx/custom_achievements/achievement_The_Birth_of_a_Nation.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ACHIEVEMENT_GO_TO_THE_HELL"
+		texturefile = "gfx/custom_achievements/achievement_go_to_the_hell.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_Achievement_Completed"
+		texturefile = "gfx/custom_achievements/Achievement_Completed_Checkmark.dds"
+		legacy_lazy_load = no
+	}
+
+	corneredTileSpriteType = {
+		name = "GFX_tiled_window_thin_border"
+		size= { x=192 y=192 }
+		textureFile = "gfx//interface//tiles//tiled_window_thin_border.dds"
+		borderSize = { x=64 y=64 }
+		tilingCenter = yes
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+		}
+	}
+}

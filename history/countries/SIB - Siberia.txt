@@ -1,0 +1,28 @@
+﻿capital = 566
+
+##oob = ""
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+set_convoys = 5
+set_politics = {
+	ruling_party = authoritarianism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	conservatism = 0
+	authoritarianism = 68
+	social_democratism = 0
+	patriotic_socialism = 0
+	corporatism = 32
+	democratic_socialism = 0
+	populism = 0
+	social_liberalism = 0
+}
+
+

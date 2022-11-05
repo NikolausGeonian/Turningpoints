@@ -1,0 +1,20 @@
+state=
+{
+	id=838
+	name="STATE_838"
+	manpower = 849017
+	
+	state_category = rural
+	history=
+	{
+		owner = CAF
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = CAF
+
+	}
+	provinces={
+		1874 4851 2151
+	}
+}

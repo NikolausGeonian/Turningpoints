@@ -1,0 +1,29 @@
+
+state={
+	id=742
+	name="STATE_742"
+
+	history={
+		add_core_of = BUK
+		owner = BUK
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 2
+		}
+		victory_points = {
+			4629 20	
+		}
+		victory_points = {
+			12430 3	
+		}
+
+	}
+
+	provinces={
+		1919 12430 4629 7775
+	}
+	manpower = 4031324
+	buildings_max_level_factor=1.000
+	state_category = large_town
+}

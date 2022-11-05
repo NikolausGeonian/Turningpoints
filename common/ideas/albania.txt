@@ -1,0 +1,97 @@
+ideas = {
+	#General
+	country = {
+	}
+	# TECHNOLOGY
+	
+	naval_manufacturer = {
+	
+		designer = yes
+		
+		ALB_pasha_liman_kantjerin = {
+			
+			allowed = {
+				original_tag = ALB
+			}
+						
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = {
+				coastal_defence_naval_manufacturer
+			}
+		}
+		
+	}
+	
+	materiel_manufacturer = {
+		
+		designer = yes
+		
+		ALB_arsenal_mbreteror = {
+			
+			allowed = {
+				original_tag = ALB
+			}
+			
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+	}
+	
+	tank_manufacturer = {
+		
+		designer = yes
+		
+		ALB_Hekurudha_Shqiptare = {
+			
+			allowed = {
+				original_tag = ALB
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = {
+				fast_tank_manufacturer
+				state_owned
+			}
+			
+			modifier = {
+			}
+		}
+		
+	}
+	
+	industrial_concern = {
+		
+		ALB_Birra_Korca = {
+			
+			allowed = {
+				original_tag = ALB
+			}
+
+			research_bonus = {
+				electronics = 0.15
+			}
+			
+			traits = { 
+				construction_company
+			}
+			
+			modifier = {
+			}
+		}
+	
+	}
+}
+		

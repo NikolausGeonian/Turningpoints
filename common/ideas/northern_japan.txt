@@ -1,0 +1,338 @@
+ideas = {
+	#General
+	country = {
+	# POLITICAL
+		NJP_militia = {
+			allowed = {
+				original_tag = NJP
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.5
+				conscription_factor = 0.05
+				army_org_factor = -0.10
+				planning_speed = -0.1
+				training_time_army_factor = -0.2
+				mobilization_speed = 0.1
+				army_core_defence_factor = 0.1
+				army_core_attack_factor = 0.2
+			}
+		}	
+	}
+	# TECHNOLOGY
+	materiel_manufacturer = {
+		
+		designer = yes
+		
+		NJP_Tokyo_Arsenal = {
+			
+			allowed = {
+				original_tag = NJP
+			}
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+			traits = {
+				infantry_equipment_manufacturer
+				state_owned		
+			}
+		}
+		
+		NJP_Nihon_Jidosha = {	
+		
+			allowed = {
+				original_tag = NJP
+			}
+			
+			research_bonus = {
+				motorized_equipment = 0.15
+			}
+			
+			traits = { motorized_equipment_manufacturer state_owned }
+			
+			ai_will_do = {
+				factor = 2
+			}
+		}
+}
+	
+	naval_manufacturer = {
+		designer = yes
+		
+		NJP_Yokosuka_Naval_Arsenal = {
+			allowed = {
+				original_tag = NJP
+			}
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			traits = {
+				raiding_fleet_naval_manufacturer
+				state_owned
+				} 
+			equipment_bonus = {
+				# 
+			}
+		}
+		
+		NJP_Aomori_Naval_Arsenal = {
+			allowed = {
+				original_tag = NJP
+			}
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			traits = {
+				coastal_defence_naval_manufacturer
+				state_owned
+			} 
+			equipment_bonus = {
+				# 
+			}
+		}
+		
+	}
+	
+	industrial_concern = {
+		
+		NJP_Nippon_Hassoden = {
+			
+			allowed = {
+				original_tag = NJP
+			}
+			
+			research_bonus = {
+				electronics = 0.05
+				industry = 0.05
+			}
+			
+			traits = { 
+				electronics_concern
+				trust
+			}
+			
+			modifier = {
+				production_factory_max_efficiency_factor = 0.15
+				production_speed_radar_station_factor = 0.15
+			}
+		}
+		
+		NJP_Fujitsu = {
+			
+			allowed = {
+				original_tag = NJP
+			}
+			
+			research_bonus = {
+				electronics = 0.15
+			}
+			
+			traits = { 
+				electronics_concern
+			}
+			
+			modifier = {
+				production_factory_max_efficiency_factor = 0.15
+				production_speed_radar_station_factor = 0.15
+			}
+		}
+		
+		NJP_Kanto_Denka_Kogyo = {
+			
+			allowed = {
+				original_tag = NJP
+			}
+			
+			research_bonus = {
+				industry = 0.05
+				synth_resources = 0.15
+			}
+			
+			traits = { refinery_concern state_owned }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		NJP_Eiken_Chemical = {
+			
+			allowed = {
+				original_tag = NJP
+			}
+			
+			research_bonus = {
+				industry = 0.05
+				synth_resources = 0.15
+			}
+			
+			traits = { refinery_concern state_owned }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		NJP_Maeda_Kensetsu = {
+			
+			allowed = {
+				original_tag = NJP
+			}
+			
+			research_bonus = {
+				industry = 0.15
+				
+			}
+			ai_will_do = {
+				factor = 2
+			}
+			
+			traits = { industrial_concern }
+		}
+		
+	}
+	
+	aircraft_manufacturer = {
+		designer = yes
+		
+		NJP_Yokosuka = {	
+			allowed = {
+				original_tag = NJP
+			}			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			traits = {
+				naval_aircraft_manufacturer
+				state_owned
+				}
+			equipment_bonus = {
+				
+			}
+		}
+		
+		NJP_Fuji = {	
+			allowed = {
+				original_tag = NJP
+			}			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			traits = {
+				light_aircraft_manufacturer_2
+				state_owned
+			}
+			equipment_bonus = {
+				
+			}
+		}
+		
+	}
+	
+	tank_manufacturer = {
+		
+		designer = yes
+		
+		NJP_Isuzu = {
+			allowed = {
+				original_tag = NJP
+			}
+			traits = {
+				state_owned
+				fast_tank_manufacturer
+			}
+			research_bonus = {
+				motorized_equipment = 0.05
+			}
+		}
+			
+	}
+	
+	economy_minister = {
+		NJP_Uno_Kozo = {				#宇野 弘蔵
+			allowed = {
+				original_tag = "NJP"
+				
+			}
+				available = {
+					always = no
+			}
+			traits = {  }
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		NJP_Utsunomiya_Tokuma = {		#宇都宮 徳馬
+			allowed = {
+				original_tag = "NJP"
+				
+			}
+				available = {
+					always = no
+			}
+			traits = {  }
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		NJP_akamatsu_katsumaro = {		#赤松 克麿
+			allowed = {
+				original_tag = "NJP"
+				
+			}
+				available = {
+					always = no
+			}
+			traits = {  }
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		NJP_takabatake_motoyuki = {		#高畠 素之	
+		allowed = {
+				original_tag = "NJP"
+				
+			}
+				available = {
+					always = no
+			}
+			traits = {  }
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	
+	foreign_minister = {
+		NJP_Ozaki_Hotsumi = {			#尾崎 秀実
+			allowed = {
+				original_tag = "NJP"
+				
+			}
+				available = {
+					always = no
+			}
+			traits = {  }
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		NJP_Yamana_Yoshitsuru = {		#山名 義鶴
+			allowed = {
+				original_tag = "NJP"
+				
+			}
+				available = {
+					always = no
+			}
+			traits = {  }
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+}

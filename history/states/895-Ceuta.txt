@@ -1,0 +1,34 @@
+state = {
+	id=895
+	name="STATE_895"  #
+	manpower = 	1047952
+	state_category = city
+	
+	history = {
+		owner = MOR
+		add_core_of = MOR
+		victory_points = {
+			9945 20
+		}
+		victory_points = {
+			12018 5
+		}
+		buildings = {
+			infrastructure = 4
+			air_base = 3
+			industrial_complex = 3
+			
+			12018 = {
+				naval_base = 2
+				coastal_bunker = 3
+			}
+			9945 = {
+				naval_base = 5
+				coastal_bunker = 3
+			}
+		}		
+	}
+	provinces={
+		5077 9945 12018 
+	}
+}

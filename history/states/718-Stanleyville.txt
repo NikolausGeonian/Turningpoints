@@ -1,0 +1,24 @@
+state={
+	id=718
+	name="STATE_718"
+	
+	state_category = pastoral
+
+	resources={
+		rubber=5 # was: 6.000
+	}
+
+	history={
+		owner = DOA
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = DOA
+	}
+
+	provinces={
+		2034 2154 6027 11934 12808 1950 12847 2073
+	}
+	manpower=1266783
+}

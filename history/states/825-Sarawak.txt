@@ -1,0 +1,27 @@
+state={
+	id=825
+	name="STATE_825"
+	manpower = 624964
+	state_category = rural
+	resources={
+		rubber=14 
+		oil=1
+	}
+	history={
+		victory_points = {
+			1208 2
+		}
+		add_core_of = MAL
+		owner = MAL
+		buildings = {
+			infrastructure = 2
+			1208 = {
+				naval_base = 1
+			}
+		}
+	}
+
+	provinces={
+		1208 4216 4396 7443 8091 12283 10285 12905 2117 7387 10269
+	}
+}

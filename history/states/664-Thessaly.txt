@@ -1,0 +1,30 @@
+state={
+	id=664
+	name="STATE_664"
+	manpower = 1154300
+	resources={
+		steel=13 # was: 20
+		chromium = 4
+	}
+	
+	state_category = town
+	
+	history={
+		owner = GRE
+		victory_points = {
+			3973 3
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			3973 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = GRE
+	}
+	
+	provinces={
+		863 3864 3973 6930 11786
+	}
+}

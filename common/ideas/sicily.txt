@@ -1,0 +1,50 @@
+ideas = {
+	country = {
+		SIC_Anti_Risorgimento = {
+			allowed = {
+				original_tag = SIC
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+			}
+		}
+	}	
+	
+	
+	# TECHNOLOGY
+	naval_manufacturer = {
+		designer = yes
+	}
+	
+	materiel_manufacturer = {
+		designer = yes
+		
+	}
+	
+	tank_manufacturer = {
+		
+		designer = yes
+		
+		SIC_Officine_Ferroviarie_Meridionali = {
+			
+			allowed = {
+				original_TAG = SIC
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = {
+			fast_tank_manufacturer
+			}
+			
+			modifier = {
+			}
+		}
+		
+	}
+}

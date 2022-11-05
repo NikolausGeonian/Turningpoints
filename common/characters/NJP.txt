@@ -1,0 +1,414 @@
+characters = {
+	
+	### Country Leader ###
+	NJP_Kanson_Arahata = {
+		name = NJP_Kanson_Arahata
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NJP/Portrait_Kanson_Arahata.dds"
+			}
+		}
+		
+		country_leader = {
+			desc = "POLITICS_NJP_KANSON_ARAHATA_DESC"
+			ideology = democratic_socialism_subtype
+			traits={  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+	
+	NJP_Tetsu_Katayama = {
+		name = NJP_Tetsu_Katayama
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NJP/Portrait_Tetsu_Katayama.dds"
+			}
+		}
+		
+		country_leader = {
+			desc = "POLITICS_NJP_TETSU_KATAYAMA_DESC"
+			ideology = liberal_socialism_subtype
+			traits={  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+	
+	NJP_Kyuichi_Tokuda = {
+		name = NJP_Kyuichi_Tokuda
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NJP/Portrait_Kyuichi_Tokuda.dds"
+			}
+		}
+		
+		country_leader = {
+			desc = "POLITICS_NJP_KYUICHI_TOKUDA_DESC"
+			ideology = liberation_nationalism_subtype
+			traits={  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+	
+	### Ministers ###
+	### HEAD OF GOVERNMENT ###
+	
+	### FOREIGN MINISTER ###
+	
+	###	ECONOMY MINISTER ###
+	
+	### FIELD MARSHAL ###
+	
+	NJP_Jinzaburo_Masaki = {
+		name = NJP_Jinzaburo_Masaki
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/NJP/ministers/NJP_Jinzaburo_Masaki.dds"
+				large = "gfx/leaders/NJP/Portrait_Jinzaburo_Masaki.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "MARSHAL_NJP_JINZABURO_MASAKI_DESC"
+			slot = high_command
+			idea_token = NJP_Jinzaburo_Masaki
+			allowed = {
+				original_tag = NJP
+			}
+			traits = { army_concealment_2 }
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		field_marshal = {
+			desc = "MARSHAL_NJP_JINZABURO_MASAKI_DESC"
+			traits = { old_guard }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 1
+		}
+	}
+	
+	NJP_Osugi_Sakae = {
+		name = NJP_Osugi_Sakae
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/NJP/ministers/NJP_Osugi_Sakae.dds"
+				large = "gfx/leaders/NJP/Portrait_Osugi_Sakae.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "MARSHAL_NJP_OSUGI_SAKAE_DESC"
+			slot = high_command
+			idea_token = NJP_Osugi_Sakae
+			allowed = {
+				original_tag = NJP
+			}
+			traits = { army_infantry_3 }
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		field_marshal = {
+			desc = "MARSHAL_NJP_OSUGI_SAKAE_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 1
+		}
+	}
+	
+	### CORPS COMMANDER ###
+	
+	NJP_Iboshi_Hokuto = {
+		name = NJP_Iboshi_Hokuto
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/NJP/ministers/NJP_Iboshi_Hokuto.dds"
+				large = "gfx/leaders/NJP/Portrait_Iboshi_Hokuto.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "GENERAL_NJP_IBOSHI_HOKUTO_DESC"
+			slot = army_chief
+			idea_token = NJP_Iboshi_Hokuto
+			allowed = {
+				original_tag = NJP
+			}
+			traits = { army_chief_defensive_2 }
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_NJP_IBOSHI_HOKUTO_DESC"
+			traits = {  }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	
+	NJP_Hitoshi_Imamura = {
+		name = NJP_Hitoshi_Imamura
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/NJP/ministers/NJP_Hitoshi_Imamura.dds"
+				large = "gfx/leaders/NJP/Portrait_Hitoshi_Imamura.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "GENERAL_NJP_HITOSHI_IMAMURA_DESC"
+			slot = high_command
+			idea_token = NJP_Hitoshi_Imamura
+			ledger = army
+			allowed = {
+				original_tag = NJP
+			}
+			traits = { army_logistics_2 }
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_NJP_HITOSHI_IMAMURA_DESC"
+			traits = { infantry_officer commando }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	
+	NJP_Tadamichi_Kuribayashi = {
+		name = NJP_Tadamichi_Kuribayashi
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/NJP/ministers/NJP_Tadamichi_Kuribayashi.dds"
+				large = "gfx/leaders/NJP/Portrait_Tadamichi_Kuribayashi.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "GENERAL_NJP_TADAMICHI_KURIBAYASHI_DESC"
+			slot = army_chief
+			idea_token = NJP_Tadamichi_Kuribayashi
+			ledger = army
+			allowed = {
+				original_tag = NJP
+			}
+			traits = { army_chief_organizational_2 }
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_NJP_TADAMICHI_KURIBAYASHI_DESC"
+			traits = {   }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	
+	NJP_Takayoshi_Hamashima = {
+		name = NJP_Takayoshi_Hamashima
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/NJP/ministers/NJP_Takayoshi_Hamashima.dds"
+				large = "gfx/leaders/NJP/Portrait_Takayoshi_Hamashima.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_NJP_TAKAYOSHI_HAMASHIMA_DESC"
+			traits = {   }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	
+	NJP_Kozaburo_Tachibana = {
+		name = NJP_Kozaburo_Tachibana
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/NJP/ministers/NJP_Kozaburo_Tachibana.dds"
+				large = "gfx/leaders/NJP/Portrait_Kozaburo_Tachibana.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_NJP_KOZABURO_TACHIBANA_DESC"
+			traits = {   }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	
+	NJP_Saburo_Aizawa = {
+		name = NJP_Saburo_Aizawa
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/NJP/ministers/NJP_Saburo_Aizawa.dds"
+				large = "gfx/leaders/NJP/Portrait_Saburo_Aizawa.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_NJP_SABURO_AIZAWA_DESC"
+			traits = { trait_reckless infantry_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	
+	NJP_Toyohiko_Kagawa = {
+		name = NJP_Toyohiko_Kagawa
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/NJP/ministers/NJP_Toyohiko_Kagawa.dds"
+				large = "gfx/leaders/NJP/Portrait_Toyohiko_Kagawa.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_NJP_TOYOHIKO_KAGAWA_DESC"
+			traits = { trait_reckless }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	
+	### ADMIRAL ###
+	
+	NJP_Nozaki_Kojuro = {
+		name = NJP_Nozaki_Kojuro
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/NJP/ministers/NJP_Nozaki_Kojuro.dds"
+				large = "gfx/leaders/NJP/Portrait_Nozaki_Kojuro.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "ADMIRAL_NJP_NOZAKI_KOJURO_DESC"
+			slot = navy_chief
+			idea_token = NJP_Nozaki_Kojuro
+			allowed = {
+				original_tag = NJP
+			}
+			traits = { navy_chief_commerce_raiding_1 }
+			cost = 50
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		navy_leader = {
+			desc = "ADMIRAL_NJP_NOZAKI_KOJURO_DESC"
+			traits = { NJP_former_serviceman  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	NJP_Zenshiro_Hoshina = {
+		name = NJP_Zenshiro_Hoshina
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/NJP/ministers/NJP_Zenshiro_Hoshina.dds"
+				large = "gfx/leaders/NJP/Portrait_Zenshiro_Hoshina.dds"
+			}
+		}
+		
+		navy_leader = {
+			desc = "ADMIRAL_NJP_ZENSHIRO_HOSHINA_DESC"
+			traits = { NJP_former_serviceman  }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	
+	NJP_Mayuzumi_Haruo = {
+		name = NJP_Mayuzumi_Haruo
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/NJP/ministers/NJP_Mayuzumi_Haruo.dds"
+				large = "gfx/leaders/NJP/Portrait_Mayuzumi_Haruo.dds"
+			}
+		}
+		
+		navy_leader = {
+			desc = "ADMIRAL_NJP_MAYUZUMI_HARUO_DESC"
+			traits = {  }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	
+	NJP_Eiji_Kusakari = {
+		name = NJP_Eiji_Kusakari
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/NJP/ministers/NJP_Eiji_Kusakari.dds"
+				large = "gfx/leaders/NJP/Portrait_Eiji_Kusakari.dds"
+			}
+		}
+		
+		navy_leader = {
+			desc = "ADMIRAL_NJP_EIJI_KUSAKARI_DESC"
+			traits = {  }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	
+}

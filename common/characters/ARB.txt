@@ -1,0 +1,56 @@
+characters = {
+	
+	### Country Leader ###
+	
+	ARB_Abdullah_VI = {
+		name = ARB_Abdullah_VI
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ARB/Portrait_Abd_al_Ilah.dds"
+			}
+		}
+		
+		country_leader = {
+			desc = "POLITICS_ARB_ABDULLAH_VI_DESC"
+			ideology = semi_constitutional_monarchy_subtype
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		
+		country_leader = {
+			desc = "POLITICS_ARB_ABDULLAH_VI_DESC"
+			ideology = autocratic_monarchy_subtype
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		
+		country_leader = {
+			desc = "POLITICS_ARB_ABDULLAH_VI_DESC"
+			ideology = constitutional_monarchy_A_subtype
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		
+		country_leader = {
+			desc = "POLITICS_ARB_ABDULLAH_VI_DESC"
+			ideology = constitutional_monarchy_B_subtype
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	
+	}
+	
+	### Ministers ###
+	### HEAD OF GOVERNMENT ###
+	
+	### FOREIGN MINISTER ###
+	
+	###	ECONOMY MINISTER ###
+	
+	### FIELD MARSHAL ###
+	
+	### CORPS COMMANDER ###
+	
+	### ADMIRAL ###
+	
+}

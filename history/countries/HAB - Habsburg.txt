@@ -1,0 +1,270 @@
+﻿capital = 4 #Wien
+
+oob = "HAB_1936"
+#if = {
+#	limit = {
+#		has_dlc = "Man the Guns"
+#	}
+#	set_naval_#oob = "HAB_1936_naval"
+#	else = {
+#	}
+#}
+#General#
+set_research_slots = 4
+set_stability = 0.5
+set_war_support = 0.82
+set_fuel_ratio = 0.8
+set_convoys = 328
+
+
+## 	POLITICAL FIGURE
+
+### Country Leader ###
+
+recruit_character = HAB_Franz_Ferdinand
+
+### General ###
+
+recruit_character = HAB_Karl_I
+recruit_character = HAB_Joseph_Habsburg
+recruit_character = HAB_Kocsard_Janky
+recruit_character = HAB_Viktor_Hoppe
+recruit_character = HAB_Stanislaw_Szeptycki
+recruit_character = HAB_Wilhelm_Gebauer
+recruit_character = HAB_Alfred_Jansa
+recruit_character = HAB_Ludwig_von_Eimannsberger
+recruit_character = HAB_Josef_Bily
+recruit_character = HAB_Vilmos_Nagy
+recruit_character = HAB_Eduard_Horak
+recruit_character = HAB_Vladimir_Laxa
+recruit_character = HAB_Erhard_Raus
+recruit_character = HAB_Jany_Gusztav
+recruit_character = HAB_Friedrich_Materna
+recruit_character = HAB_Lothar_Rendulic
+recruit_character = HAB_Julius_Ringel
+recruit_character = HAB_Valentin_Feurstein
+recruit_character = HAB_Wilhelm_Zehner
+recruit_character = HAB_Sigismund_Schilhawsky
+recruit_character = HAB_Franz_Bohme
+recruit_character = HAB_Dezso_Laszlo
+recruit_character = HAB_Eduard_Barger
+recruit_character = HAB_Josef_Votruba
+recruit_character = HAB_Karl_Bornemann
+recruit_character = HAB_Mihajlo_Lukic
+recruit_character = HAB_Wladyslaw_Sikorski
+recruit_character = HAB_Fedor_Dragojlov
+recruit_character = HAB_Slavko_Kvaternik
+
+### Ministers ###
+
+recruit_character = HAB_Kurt_von_Schuschnigg
+recruit_character = HAB_Engelbert_Dollfuss
+recruit_character = HAB_Theodor_Koerner_Edler_von_Siegringen
+recruit_character = HAB_Arthur_Seyss_Inquart
+recruit_character = HAB_Pierre_Ramus
+recruit_character = HAB_Franz_Dinghofer
+recruit_character = HAB_Karl_Seitz
+recruit_character = HAB_Karl_Renner
+recruit_character = HAB_Stjepan_Radic
+recruit_character = HAB_Karl_Buresch
+recruit_character = HAB_Richard_von_Coudenhove_Kalergi
+recruit_character = HAB_Ivan_Subasic
+recruit_character = HAB_Odo_Neustadter_Sturmer
+recruit_character = HAB_Hugo_Breitner
+recruit_character = HAB_Karl_von_Skoda
+recruit_character = HAB_Julius_Deutsch
+recruit_character = HAB_Johann_Bohm
+recruit_character = HAB_Aleksandar_Ehrmann
+recruit_character = HAB_Eduard_Heinl
+recruit_character = HAB_Rudolf_Hilferding
+recruit_character = HAB_Archduchess_Elisabeth_Marie_of_Austria
+recruit_character = HAB_Jusztinian_Gyorgy_Seredi
+recruit_character = HAB_Hermann_Foppa
+recruit_character = HAB_Theodor_Innitzer
+recruit_character = HAB_Emmerich_Czermak
+recruit_character = HAB_Guido_Schmidt
+recruit_character = HAB_Wilhelm_Miklas
+recruit_character = HAB_Ivan_Rikard_Ivanovic
+recruit_character = HAB_Richard_Schmitz
+recruit_character = HAB_Walter_Breisky
+recruit_character = HAB_Ludwig_von_Mises
+
+### Admiral ###
+
+recruit_character = HAB_Miklos_Horthy
+recruit_character = HAB_Benno_von_Millenkovich
+recruit_character = HAB_Georg_von_Trapp
+recruit_character = HAB_Metod_Koch
+recruit_character = HAB_Viktor_Klobucar_Rukavina_von_Bunica
+recruit_character = HAB_Janko_Vukovic
+recruit_character = HAB_Heinrich_Pergler_von_Perglas
+recruit_character = HAB_Duro_Jakcin
+recruit_character = HAB_Friedrich_von_Tarbuk_Sensenhorst
+
+### Pilots ###
+
+recruit_character = HAB_Alexander_Lohr
+
+### Theorists ###
+
+recruit_character = HAB_Leo_Szilard
+recruit_character = HAB_John_von_Neumann
+
+# National Idea #
+add_ideas = {
+	generic_financial_crisis_1
+	HAB_unity_0
+	HAB_Engelbert_Dollfuss
+	HAB_Eduard_Heinl
+	HAB_Karl_Buresch
+}
+give_guarantee = BLR
+give_guarantee = UPL
+set_autonomy = {
+	target = UKR
+	autonomous_state = autonomy_dominion
+	freedom_level = 0.4
+}
+UKR = {
+	set_popularities = {
+	conservatism = 10
+	authoritarianism = 65
+	social_democratism = 25
+	patriotic_socialism = 0
+	corporatism = 0
+	democratic_socialism = 0
+	populism = 0
+	social_liberalism = 0
+}
+set_politics = {
+	ruling_party = authoritarianism
+	last_election = "1935.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+	}
+set_autonomy = {
+		target = MNT
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.4
+}
+	MNT = {
+	set_popularities = {
+		conservatism = 10
+		authoritarianism = 66
+		social_democratism = 0
+		patriotic_socialism = 0
+		corporatism = 6
+		democratic_socialism = 0
+		populism = 7
+		social_liberalism = 11
+			}
+	set_politics = {
+		ruling_party = authoritarianism
+		last_election = "1935.1.1"
+		election_frequency = 48
+		elections_allowed = no
+			}
+	}
+set_autonomy = {
+		target = ALB
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.4
+}
+ALB = {
+	set_popularities = {
+		conservatism = 64
+		authoritarianism = 11
+		social_democratism = 0
+		patriotic_socialism = 0
+		corporatism = 0
+		democratic_socialism = 0
+		populism = 7
+		social_liberalism = 18
+			}
+	set_politics = {
+		ruling_party = conservatism
+		last_election = "1935.1.1"
+		election_frequency = 48
+		elections_allowed = no
+			}
+	}
+# Starting tech #
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	bicycle_infantry = 1
+	tech_support = 1		
+	tech_recon = 1
+	tech_engineers = 1	
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	interwar_antitank = 1
+	fuel_silos = 1
+	fuel_refining = 1
+	basic_train = 1
+}
+
+if = {
+	limit = {
+		has_dlc = "By Blood Alone"
+	}
+	#set_air_oob = "HAB_air_bba"
+	set_technology = {
+		aa_lmg = 1
+		engines_1 = 1
+		aircraft_construction = 1
+		iw_small_airframe = 1
+		iw_medium_airframe = 1
+		early_bombs = 1
+	}
+	else = {
+		set_technology = {
+			early_fighter = 1
+			early_bomber = 1
+		}
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+		basic_medium_tank_chassis = 1 
+		basic_heavy_tank_chassis = 1
+		engine_tech_1 = 1
+	}
+	else = {
+		set_technology = {
+			gwtank = 1
+			basic_light_tank = 1
+			basic_medium_tank = 1
+			basic_heavy_tank = 1
+		}
+	}
+}
+
+# Starting Import #
+
+# Politics #
+set_popularities = {
+	conservatism = 50
+	authoritarianism = 11
+	social_democratism = 15
+	patriotic_socialism = 1
+	corporatism = 0
+	democratic_socialism = 0
+	populism = 2
+	social_liberalism = 21
+}
+set_politics = {
+	ruling_party = conservatism
+	last_election = "1913.11.9"
+	election_frequency = 48
+	elections_allowed = no
+}

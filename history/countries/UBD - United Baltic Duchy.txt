@@ -1,0 +1,111 @@
+﻿capital = 12# Riga
+
+#oob = "UBD_1936"
+
+
+
+## 	POLITICAL FIGURE
+
+### Country Leader ###
+recruit_character = UBD_Friedrich_zu_Mecklenburg
+
+### Ministers ###
+recruit_character = UBD_Andrievs_Niedra
+recruit_character = UBD_Hermann_von_Keyserling
+recruit_character = UBD_August_Winnig
+recruit_character = UBD_Heinrich_zu_Dohna_Schlobitten
+recruit_character = UBD_Max_Bock
+recruit_character = UBD_Hermann_Josef_Wehrle
+
+### Corps Commander ###
+recruit_character = UBD_Rudiger_von_der_Goltz
+recruit_character = UBD_Aleksander_Tonisson
+recruit_character = UBD_Ernst_Podder
+recruit_character = UBD_Peeter_Kann
+recruit_character = UBD_Johannes_Soodla
+recruit_character = UBD_Theodor_Rouk
+recruit_character = UBD_Eduard_Dietl
+recruit_character = UBD_Martins_Penikis
+recruit_character = UBD_Alfred_Fletcher
+recruit_character = UBD_Constantin_von_Weiss
+recruit_character = UBD_Janis_Balodis
+recruit_character = UBD_Zanis_Bahs
+recruit_character = UBD_Krisjanis_Berkis
+recruit_character = UBD_Josef_Bischoff
+recruit_character = UBD_Otto_Goldfeld
+
+### Admiral ###
+recruit_character = UBD_Johan_Pitka
+recruit_character = UBD_Teodors_Spade
+
+#General#
+set_research_slots = 3
+set_stability = 0.50
+set_war_support = 0.8
+set_fuel_ratio = 1.0
+set_convoys = 400
+# National Idea #
+add_ideas = {
+	UBD_ethnic_conflict
+	UBD_under_germany_control
+	UBD_Andrievs_Niedra
+}
+
+# Starting tech #
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_engineers = 1
+	tech_support = 1	
+	motorised_infantry = 1
+	gw_artillery = 1
+}
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		mtg_transport = 1
+	}
+	#set_naval_oob = "UBD_1936_Naval"
+	
+	else = {
+		set_technology = {
+			early_submarine = 1
+			early_destroyer = 1
+			basic_destroyer = 1
+			early_light_cruiser = 1
+			early_submarine = 1
+			early_light_cruiser = 1
+			transport = 1
+		}
+	}
+}
+
+# Starting Import #
+
+# Politics #
+
+set_popularities = {
+	conservatism = 35
+	authoritarianism = 15
+	social_democratism = 24
+	patriotic_socialism = 8
+	corporatism = 0
+	democratic_socialism = 0
+	populism = 0
+	social_liberalism = 18
+}
+set_politics = {
+	ruling_party = conservatism
+	last_election = "1934.10.3"
+	election_frequency = 48
+	elections_allowed = yes
+}

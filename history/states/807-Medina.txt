@@ -1,0 +1,22 @@
+state={
+	id=807
+	name="STATE_807"
+	manpower = 711000
+	
+	state_category = rural
+
+	history={
+		owner = OTE
+		buildings = {
+			infrastructure = 3
+		}
+		victory_points = {
+			2027 3
+		}
+		add_core_of = OTE
+	}
+
+	provinces={
+		12101 1033 2027 2095 8092
+	}
+}

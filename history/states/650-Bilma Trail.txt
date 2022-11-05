@@ -1,0 +1,21 @@
+state = {
+	id = 650
+	name = "STATE_650"
+	manpower = 1156356
+	state_category = pastoral
+	
+	history= {
+		owner = AIR
+		add_core_of = AIR
+		
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			13317 1
+		}
+	}
+	provinces={
+		1057 4191 4913  5136 7939 12082 13317
+ 	}
+}

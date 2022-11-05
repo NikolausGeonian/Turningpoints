@@ -1,0 +1,54 @@
+characters = {
+	
+	### Country Leader ###
+	
+	LAP_Alfredo_Palacios = {
+		name = LAP_Alfredo_Palacios
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/LAP/Portrait_Alfredo_Palacios.dds"
+				small = "gfx/interface/ideas/LAP/ministers/LAP_Alfredo_Palacios.dds"
+			}
+		}
+		
+		country_leader = {
+			desc = "POLITICS_LAP_ALFREDO_PALACIOS_DESC"
+			ideology = democratic_socialism_subtype
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	
+	}
+	
+	### Ministers ###
+	### HEAD OF GOVERNMENT ###
+	
+	### FOREIGN MINISTER ###
+	
+	###	ECONOMY MINISTER ###
+	
+	### FIELD MARSHAL ###
+	LAP_Basilio_Pertine = {
+		name = LAP_Basilio_Pertine
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/LAP/ministers/LAP_Basilio_Pertine.dds"
+				large = "gfx/leaders/LAP/Portrait_Basilio_Pertine.dds"
+			}
+		}
+		
+		field_marshal = {
+			desc = "MARSHAL_LAP_BASILIO_PERTINE_DESC"
+			traits = { war_hero old_guard }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+	### CORPS COMMANDER ###
+	
+	### ADMIRAL ###
+	
+}

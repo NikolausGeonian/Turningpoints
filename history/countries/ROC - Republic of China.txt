@@ -1,0 +1,165 @@
+﻿capital = 608 # Beijing
+
+set_stability = 0.7
+set_war_support = 0.7
+set_fuel_ratio = 0.5
+set_research_slots = 4
+
+# Starting tech
+# clone of France
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_recon = 1
+	tech_engineers = 1
+	motorised_infantry = 1
+	marines  = 1
+	gw_artillery = 1
+	mass_assault = 1
+	fleet_in_being = 1
+	}
+	
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		smoke_generator = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+		improved_secondary_battery = 1
+	}
+	else = {
+		set_technology = {
+			early_submarine = 1
+			early_destroyer = 1
+			basic_destroyer = 1
+			early_light_cruiser = 1
+			early_heavy_cruiser = 1
+			early_battleship = 1
+			early_battlecruiser = 1
+			early_carrier = 1
+			transport = 1
+		}
+	}
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+		basic_medium_tank_chassis = 1
+		engine_tech_1 = 1
+	}
+	
+	else = {
+		set_technology = {
+			gwtank = 1
+			basic_light_tank = 1
+			basic_medium_tank = 1
+		}
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "By Blood Alone"
+	}
+	set_technology = {
+		aa_lmg = 1
+		aa_cannon_1 = 1
+		engines_1 = 1
+		early_bombs = 1
+		aircraft_construction = 1
+		iw_small_airframe = 1
+		basic_small_airframe = 1
+		iw_medium_airframe = 1
+		basic_medium_airframe = 1
+		iw_large_airframe = 1
+	}
+	else = {
+		set_technology = {
+			early_fighter = 1
+			fighter1 = 1
+			early_bomber = 1
+			tactical_bomber1 = 1
+			strategic_bomber1 = 1
+			CAS1 = 1
+			naval_bomber1 = 1
+		}
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	set_technology = {
+		armored_car1 = 1
+	}
+}
+
+set_popularities = {
+	conservatism = 12
+	authoritarianism = 10
+	social_democratism = 0
+	patriotic_socialism = 0
+	corporatism = 67
+	democratic_socialism = 0
+	populism = 11
+	social_liberalism = 0
+}
+set_politics = {
+	ruling_party = corporatism
+	last_election = "1933.2.16"
+	election_frequency = 36
+	elections_allowed = no
+}
+
+
+create_country_leader = {
+	name = "Ch'en Ch'i-mei"
+	desc = "POLITICS_CHEN_CHIMEI_DESC"
+	picture = "gfx/leaders/CHI/Portrait_Tai_li.dds"
+	expire = "1965.1.1"
+	ideology = sorelianism_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Chen Tu-hsiu"
+	desc = "POLITICS_CHEN_TU_HSIU_DESC"
+	picture = "gfx/leaders/CHI/Portrait_Chen_tu_hsiu.dds"
+	expire = "1965.1.1"
+	ideology = democratic_socialism_subtype
+	traits = {
+		#
+	}
+}
+
+
+

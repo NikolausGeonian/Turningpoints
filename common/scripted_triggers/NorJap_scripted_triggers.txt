@@ -1,0 +1,20 @@
+
+### Japan Scripted Triggers ###
+
+NJP_line_struggle = {
+	has_country_flag = NJP_line_struggle
+}
+
+NJP_united_front = {
+	has_country_flag = NJP_united_front
+}
+
+NJP_kokusai = {
+	has_country_flag = NJP_kokusai
+}
+NJP_country_divided = {
+	 country_exists = JAP
+	 NOT = {
+		has_country_flag = NJP_unification
+	 }
+}

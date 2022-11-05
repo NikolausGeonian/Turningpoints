@@ -1,0 +1,1495 @@
+characters = {
+	
+	### Country Leader ###
+	
+	GBR_George_V = {
+		name = GBR_George_V
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GBR/Portrait_George_V.dds"
+			}
+		}
+		
+		country_leader = {
+			desc = "POLITICS_GBR_GEORGE_V_DESC"
+			ideology = constitutional_monarchy_A_subtype
+			traits={  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		
+		country_leader = {
+			desc = "POLITICS_GBR_GEORGE_V_DESC"
+			ideology = constitutional_monarchy_B_subtype
+			traits={  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		
+		country_leader = {
+			desc = "POLITICS_GBR_GEORGE_V_DESC"
+			ideology = constitutional_monarchy_C_subtype
+			traits={  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		
+		country_leader = {
+			desc = "POLITICS_GBR_GEORGE_V_DESC"
+			ideology = autocratic_monarchy_subtype
+			traits={  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+	
+	GBR_William_Joyce = {
+		name = GBR_William_Joyce
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/GBR/ministers/GBR_William_Joyce.dds"
+				large = "gfx/leaders/GBR/Portrait_William_Joyce.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_GBR_WILLIAM_JOYCE_MINISTER_DESC"
+			slot = head_of_government
+			idea_token = GBR_William_Joyce_minister
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = GBR
+			}
+			visible = {
+				NOT = {	
+					has_country_leader  = {
+						character  = GBR_William_Joyce
+						ruling_only  = yes
+					}
+				}
+				has_country_flag = monarchy_overthrown
+			}
+			available = {
+				has_government = populism
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}
+		
+		country_leader = {
+			desc = "POLITICS_GBR_WILLIAM_JOYCE_DESC"
+			ideology = populism_subtype
+			traits={  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+	
+	GBR_Oswald_Mosley = {
+		name = GBR_Oswald_Mosley
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/GBR/ministers/GBR_Oswald_Mosley.dds"
+				large = "gfx/leaders/GBR/Portrait_Oswald_Mosley.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_GBR_OSWALD_MOSLEY_MINISTER_DESC"
+			slot = head_of_government
+			idea_token = GBR_Oswald_Mosley_minister
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = GBR
+			}
+			visible = {
+				NOT = {	
+					has_country_leader  = {
+						character  = GBR_Oswald_Mosley
+						ruling_only  = yes
+					}
+				}
+				has_country_flag = monarchy_overthrown
+			}
+			available = {
+				has_government = corporatism
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}
+		
+		country_leader = {
+			desc = "POLITICS_GBR_OSWALD_MOSLEY_DESC"
+			ideology = corporatism_subtype
+			traits={  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+	
+	### Ministers ###
+	### HEAD OF GOVERNMENT ###
+	
+	GBR_Neville_Chamberlain = {
+		name = GBR_Neville_Chamberlain
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/GBR/ministers/GBR_Neville_Chamberlain.dds"
+				large = "gfx/leaders/GBR/Portrait_Neville_Chamberlain.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_GBR_NEVILLE_CHAMBERLAIN_DESC"
+			slot = head_of_government
+			idea_token = GBR_Neville_Chamberlain
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = GBR
+			}
+			available = {
+				NOT = {
+					has_idea = GBR_Neville_Chamberlain_minister
+				}
+				has_government = conservatism
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_GBR_NEVILLE_CHAMBERLAIN_DESC"
+			slot = economy_minister
+			idea_token = GBR_Neville_Chamberlain_minister
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = GBR
+			}
+			available = {
+				NOT = {
+					has_idea = GBR_Neville_Chamberlain
+				}
+				OR = {
+					has_government = conservatism
+					has_government = social_democratism
+					has_government = social_liberalism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	GBR_Stanley_Baldwin = {
+		name = GBR_Stanley_Baldwin
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/GBR/ministers/GBR_Stanley_Baldwin.dds"
+				large = "gfx/leaders/GBR/Portrait_Stanley_Baldwin.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_GBR_STANLEY_BALDWIN_DESC"
+			slot = head_of_government
+			idea_token = GBR_Stanley_Baldwin
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = GBR
+			}
+			available = {
+				has_government = conservatism
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	GBR_Clement_Attlee = {
+		name = GBR_Clement_Attlee
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/GBR/ministers/GBR_Clement_Attlee.dds"
+				large = "gfx/leaders/GBR/Portrait_Clement_Attlee.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_GBR_CLEMENT_ATTLEE_DESC"
+			slot = head_of_government
+			idea_token = GBR_Clement_Attlee
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = GBR
+			}
+			available = {
+				OR = {	
+					has_government = social_democratism
+					has_government = democratic_socialism	
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	GBR_Viscount_Halifax = {
+		name = GBR_Viscount_Halifax
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/GBR/ministers/GBR_Viscount_Halifax.dds"
+				large = "gfx/leaders/GBR/Portrait_Viscount_Halifax.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_GBR_VISCOUNT_HALIFAX_DESC"
+			slot = head_of_government
+			idea_token = GBR_Viscount_Halifax
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = GBR
+			}
+			available = {
+				NOT = {
+					has_idea = GBR_Viscount_Halifax_minister
+				}
+				has_government = conservatism
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_GBR_VISCOUNT_HALIFAX_DESC"
+			slot = foreign_minister
+			idea_token = GBR_Viscount_Halifax_minister
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = GBR
+			}
+			available = {
+				NOT = {
+					has_idea = GBR_Viscount_Halifax
+				}
+				OR = {
+					has_government = conservatism
+					has_government = corporatism
+					has_government = authoritarianism
+					has_government = social_democratism
+					has_government = social_liberalism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	### FOREIGN MINISTER ###
+	
+	GBR_Duff_Cooper = {
+		name = GBR_Duff_Cooper
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/GBR/ministers/GBR_Duff_Cooper.dds"
+				large = "gfx/leaders/GBR/Portrait_Duff_Cooper.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_GBR_DUFF_COOPER_DESC"
+			slot = foreign_minister
+			idea_token = GBR_Duff_Cooper
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = GBR
+			}
+			available = {
+				OR = {
+					has_government = conservatism
+					has_government = authoritarianism
+					has_government = social_democratism
+					has_government = social_liberalism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	GBR_Anthony_Eden = {
+		name = GBR_Anthony_Eden
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/GBR/ministers/GBR_Anthony_Eden.dds"
+				large = "gfx/leaders/GBR/Portrait_Anthony_Eden.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_GBR_ANTHONY_EDEN_DESC"
+			slot = foreign_minister
+			idea_token = GBR_Anthony_Eden
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = GBR
+			}
+			available = {
+				OR = {
+					has_government = conservatism
+					has_government = authoritarianism
+					has_government = social_democratism
+					has_government = social_liberalism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	GBR_Philip_Kerr = {
+		name = GBR_Philip_Kerr
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/GBR/ministers/GBR_Philip_Kerr.dds"
+				large = "gfx/leaders/GBR/Portrait_Philip_Kerr.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_GBR_PHILIP_KERR_DESC"
+			slot = foreign_minister
+			idea_token = GBR_Philip_Kerr
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = GBR
+			}
+			available = {
+				OR = {
+					has_government = conservatism
+					has_government = social_democratism
+					has_government = social_liberalism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	GBR_John_Simon = {
+		name = GBR_John_Simon
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/GBR/ministers/GBR_John_Simon.dds"
+				large = "gfx/leaders/GBR/Portrait_John_Simon.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_GBR_JOHN_SIMON_DESC"
+			slot = foreign_minister
+			idea_token = GBR_John_Simon
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = GBR
+			}
+			available = {
+				OR = {
+					has_government = conservatism
+					has_government = social_democratism
+					has_government = social_liberalism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	GBR_John_Tilley = {
+		name = GBR_John_Tilley
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/GBR/ministers/GBR_John_Tilley.dds"
+				large = "gfx/leaders/GBR/Portrait_John_Tilley.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_GBR_JOHN_TILLEY_DESC"
+			slot = foreign_minister
+			idea_token = GBR_John_Tilley
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = GBR
+			}
+			available = {
+				OR = {
+					has_government = conservatism
+					has_government = social_democratism
+					has_government = social_liberalism
+					has_government = authoritarianism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	GBR_Eustace_Percy = {
+		name = GBR_Eustace_Percy
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/GBR/ministers/GBR_Eustace_Percy.dds"
+				large = "gfx/leaders/GBR/Portrait_Eustace_Percy.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_GBR_EUSTACE_PERCY_DESC"
+			slot = foreign_minister
+			idea_token = GBR_Eustace_Percy
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = GBR
+			}
+			available = {
+				OR = {
+					has_government = conservatism
+					has_government = authoritarianism
+					has_government = social_democratism
+					has_government = social_liberalism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}	
+	
+	GBR_Harold_Nicolson = {
+		name = GBR_Harold_Nicolson
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/GBR/ministers/GBR_Harold_Nicolson.dds"
+				large = "gfx/leaders/GBR/Portrait_Harold_Nicolson.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_GBR_HAROLD_NICOLSON_DESC"
+			slot = foreign_minister
+			idea_token = GBR_Harold_Nicolson
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = GBR
+			}
+			available = {
+				OR = {
+					has_government = social_democratism
+					has_government = social_liberalism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	GBR_Samuel_Hoare = {
+		name = GBR_Samuel_Hoare
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/GBR/ministers/GBR_Samuel_Hoare.dds"
+				large = "gfx/leaders/GBR/Portrait_Samuel_Hoare.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_GBR_SAMUEL_HOARE_DESC"
+			slot = foreign_minister
+			idea_token = GBR_Samuel_Hoare
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = GBR
+			}
+			available = {
+				OR = {
+					has_government = authoritarianism
+					has_government = conservatism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	GBR_Lawrence_Dundas = {
+		name = GBR_Lawrence_Dundas
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/GBR/ministers/GBR_Lawrence_Dundas.dds"
+				large = "gfx/leaders/GBR/Portrait_Lawrence_Dundas.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_GBR_LAWRENCE_DUNDAS_DESC"
+			slot = foreign_minister
+			idea_token = GBR_Lawrence_Dundas
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = GBR
+			}
+			available = {
+				OR = {
+					has_government = social_democratism
+					has_government = conservatism
+					has_government = authoritarianism
+					has_government = social_liberalism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	GBR_Rajani_Palme_Dutt = {
+		name = GBR_Rajani_Palme_Dutt
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/GBR/ministers/GBR_Rajani_Palme_Dutt.dds"
+				large = "gfx/leaders/GBR/Portrait_Rajani_Palme_Dutt.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_GBR_RAJANI_PALME_DUTT_DESC"
+			slot = foreign_minister
+			idea_token = GBR_Rajani_Palme_Dutt
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = GBR
+			}
+			available = {
+				OR = {
+					has_government = democratic_socialism
+					has_government = patriotic_socialism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	###	ECONOMY MINISTER ###
+	
+	GBR_John_Colville = {
+		name = GBR_Lawrence_Dundas
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/GBR/ministers/GBR_John_Colville.dds"
+				large = "gfx/leaders/GBR/Portrait_John_Colville.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_GBR_JOHN_COLVILLE_DESC"
+			slot = economy_minister
+			idea_token = GBR_John_Colville
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = GBR
+			}
+			available = {
+				OR = {
+					has_government = conservatism
+					has_government = authoritarianism
+					has_government = social_liberalism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	GBR_Kingsley_Wood = {
+		name = GBR_Kingsley_Wood
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/GBR/ministers/GBR_Kingsley_Wood.dds"
+				large = "gfx/leaders/GBR/Portrait_Kingsley_Wood.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_GBR_KINGSLEY_WOOD_DESC"
+			slot = economy_minister
+			idea_token = GBR_Kingsley_Wood
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = GBR
+			}
+			available = {
+				OR = {
+					has_government = conservatism
+					has_government = authoritarianism
+					has_government = social_liberalism
+					has_government = social_democratism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	GBR_Margaret_Bondfield = {
+		name = GBR_Margaret_Bondfield
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/GBR/ministers/GBR_Margaret_Bondfield.dds"
+				large = "gfx/leaders/GBR/Portrait_Margaret_Bondfield.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_GBR_MARGARET_BONDFIELD_DESC"
+			slot = economy_minister
+			idea_token = GBR_Margaret_Bondfield
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = GBR
+			}
+			available = {
+				OR = {
+					has_government = social_liberalism
+					has_government = social_democratism
+					has_government = democratic_socialism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	GBR_G_D_H_Cole = {
+		name = GBR_G_D_H_Cole
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/GBR/ministers/GBR_G_D_H_Cole.dds"
+				large = "gfx/leaders/GBR/Portrait_G_D_H_Cole.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_GBR_G_D_H_COLE_DESC"
+			slot = economy_minister
+			idea_token = GBR_G_D_H_Cole
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = GBR
+			}
+			available = {
+				OR = {
+					has_government = social_democratism
+					has_government = democratic_socialism
+					has_government = patriotic_socialism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	### FIELD MARSHAL ###
+	
+	GBR_Philip_Chetwode = {
+		name = GBR_Philip_Chetwode
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/GBR/ministers/GBR_Philip_Chetwode.dds"
+				large = "gfx/leaders/GBR/Portrait_Philip_Chetwode.dds"
+			}
+		}
+		
+		field_marshal = {
+			desc = "MARSHAL_GBR_PHILIP_CHETWODE_DESC"
+			traits = { old_guard }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+	
+	GBR_Archibald_Montgomery_Massingberd = {
+		name = GBR_Archibald_Montgomery_Massingberd
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/GBR/ministers/GBR_Archibald_Montgomery_Massingberd.dds"
+				large = "gfx/leaders/GBR/Portrait_Archibald_Montgomery_Massingberd.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "MARSHAL_GBR_ARCHIBALD_MONTGOMERY_MASSINGBERD_DESC"
+			slot = army_chief
+			idea_token = GBR_Archibald_Montgomery_Massingberd
+			allowed = {
+				original_tag = GBR
+			}
+			traits = { army_chief_maneuver_3 }
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		field_marshal = {
+			desc = "MARSHAL_GBR_ARCHIBALD_MONTGOMERY_MASSINGBERD_DESC"
+			traits = { old_guard }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+	
+	### CORPS COMMANDER ###
+	
+	GBR_Alan_Brooke = {
+		name = GBR_Alan_Brooke
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/GBR/ministers/GBR_Alan_Brooke.dds"
+				large = "gfx/leaders/GBR/Portrait_Alan_Brooke.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "GENERAL_GBR_ALAN_BROOKE_DESC"
+			slot = army_chief
+			idea_token = GBR_Alan_Brooke
+			allowed = {
+				original_tag = GBR
+			}
+			traits = { army_chief_maneuver_3 }
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_GBR_ALAN_BROOKE_DESC"
+			traits = { trait_cautious }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	GBR_Harold_Alexander = {
+		name = GBR_Harold_Alexander
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/GBR/ministers/GBR_Harold_Alexander.dds"
+				large = "gfx/leaders/GBR/Portrait_Harold_Alexander.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_GBR_HAROLD_ALEXANDER_DESC"
+			traits = { politically_connected }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	GBR_William_Dobbie = {
+		name = GBR_William_Dobbie
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/GBR/ministers/GBR_William_Dobbie.dds"
+				large = "gfx/leaders/GBR/Portrait_William_Dobbie.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_GBR_WILLIAM_DOBBIE_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	GBR_Giffard_Le_Quesne_Martel = {
+		name = GBR_Giffard_Le_Quesne_Martel
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/GBR/ministers/GBR_Giffard_Le_Quesne_Martel.dds"
+				large = "gfx/leaders/GBR/Portrait_Giffard_Le_Quesne_Martel.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_GBR_GIFFARD_LE_QUESNE_MARTEL_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	GBR_Edward_Northey = {
+		name = GBR_Edward_Northey
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/GBR/ministers/GBR_Edward_Northey.dds"
+				large = "gfx/leaders/GBR/Portrait_Edward_Northey.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_GBR_EDWARD_NORTHEY_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	GBR_Raymond_Briggs = {
+		name = GBR_Raymond_Briggs
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/GBR/ministers/GBR_Raymond_Briggs.dds"
+				large = "gfx/leaders/GBR/Portrait_Raymond_Briggs.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_GBR_RAYMOND_BRIGGS_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	GBR_Bernard_Montgomery = {
+		name = GBR_Bernard_Montgomery
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/GBR/ministers/GBR_Bernard_Montgomery.dds"
+				large = "gfx/leaders/GBR/Portrait_Bernard_Montgomery.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_GBR_BERNARD_MONTGOMERY_DESC"
+			traits = { organizer logistics_wizard armor_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	GBR_Ronald_Forbes_Adam = {
+		name = GBR_Ronald_Forbes_Adam
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/GBR/ministers/GBR_Ronald_Forbes_Adam.dds"
+				large = "gfx/leaders/GBR/Portrait_Ronald_Forbes_Adam.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_GBR_RONALD_FORBES_ADAM_DESC"
+			traits = { urban_assault_specialist }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	GBR_Thomas_Jacomb_Hutton = {
+		name = GBR_Thomas_Jacomb_Hutton
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/GBR/ministers/GBR_Thomas_Jacomb_Hutton.dds"
+				large = "gfx/leaders/GBR/Portrait_Thomas_Jacomb_Hutton.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_GBR_THOMAS_JACOMB_HUTTON_DESC"
+			traits = { old_guard }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	GBR_Henry_Maitland_Wilson = {
+		name = GBR_Henry_Maitland_Wilson
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/GBR/ministers/GBR_Henry_Maitland_Wilson.dds"
+				large = "gfx/leaders/GBR/Portrait_Henry_Maitland_Wilson.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_GBR_HENRY_MAITLAND_WILSON_DESC"
+			traits = { old_guard }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	GBR_George_Jeffreys = {
+		name = GBR_George_Jeffreys
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/GBR/ministers/GBR_George_Jeffreys.dds"
+				large = "gfx/leaders/GBR/Portrait_George_Jeffreys.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_GBR_GEORGE_JEFFREYS_DESC"
+			traits = { old_guard }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	GBR_John_Vereker = {
+		name = GBR_John_Vereker
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/GBR/ministers/GBR_John_Vereker.dds"
+				large = "gfx/leaders/GBR/Portrait_John_Vereker.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "GENERAL_GBR_JOHN_VEREKER_DESC"
+			slot = army_chief
+			idea_token = GBR_John_Vereker
+			allowed = {
+				original_tag = GBR
+			}
+			traits = { army_chief_offensive_2 }
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_GBR_JOHN_VEREKER_DESC"
+			traits = { trait_cautious }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	GBR_Edmund_Ironside = {
+		name = GBR_Edmund_Ironside
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/GBR/ministers/GBR_Edmund_Ironside.dds"
+				large = "gfx/leaders/GBR/Portrait_Edmund_Ironside.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "GENERAL_GBR_EDMUND_IRONSIDE_DESC"
+			slot = army_chief
+			idea_token = GBR_Edmund_Ironside
+			allowed = {
+				original_tag = GBR
+			}
+			traits = { army_chief_defensive_2 }
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_GBR_EDMUND_IRONSIDE_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	GBR_Archibald_Wavell = {
+		name = GBR_Archibald_Wavell
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/GBR/ministers/GBR_Archibald_Wavell.dds"
+				large = "gfx/leaders/GBR/Portrait_Archibald_Wavell.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "GENERAL_GBR_ARCHIBALD_WAVELL_DESC"
+			slot = high_command
+			idea_token = GBR_Archibald_Wavell
+			allowed = {
+				original_tag = GBR
+			}
+			traits = { army_regrouping_2 }
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_GBR_ARCHIBALD_WAVELL_DESC"
+			traits = { trait_cautious }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	GBR_Claude_Auchinleck = {
+		name = GBR_Claude_Auchinleck
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/GBR/ministers/GBR_Claude_Auchinleck.dds"
+				large = "gfx/leaders/GBR/Portrait_Claude_Auchinleck.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "GENERAL_GBR_CLAUDE_AUCHINLECK_DESC"
+			slot = high_command
+			idea_token = GBR_Claude_Auchinleck
+			allowed = {
+				original_tag = GBR
+			}
+			traits = { army_logistics_2 }
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_GBR_CLAUDE_AUCHINLECK_DESC"
+			traits = { inflexible_strategist }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	### ADMIRAL ###
+	
+	GBR_Charles_Forbes = {
+		name = GBR_Charles_Forbes
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/GBR/ministers/GBR_Charles_Forbes.dds"
+				large = "gfx/leaders/GBR/Portrait_Charles_Forbes.dds"
+			}
+		}
+		
+		navy_leader = {
+			desc = "ADMIRAL_GBR_CHARLES_FORBES_DESC"
+			traits = { gunnery_expert fly_swatter }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			maneuvering_skill = 2
+			coordination_skill = 3
+		}
+	}
+	
+	GBR_William_Boyle = {
+		name = GBR_William_Boyle
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/GBR/ministers/GBR_William_Boyle.dds"
+				large = "gfx/leaders/GBR/Portrait_William_Boyle.dds"
+			}
+		}
+		
+		navy_leader = {
+			desc = "ADMIRAL_GBR_WILLIAM_BOYLE_DESC"
+			traits = { }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			maneuvering_skill = 2
+			coordination_skill = 3
+		}
+	}
+	
+	GBR_Percy_Noble = {
+		name = GBR_Percy_Noble
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/GBR/ministers/GBR_Percy_Noble.dds"
+				large = "gfx/leaders/GBR/Portrait_Percy_Noble.dds"
+			}
+		}
+		
+		navy_leader = {
+			desc = "ADMIRAL_GBR_PERCY_NOBLE_DESC"
+			traits = { }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			maneuvering_skill = 2
+			coordination_skill = 3
+		}
+	}
+	
+	GBR_Percy_Addison = {
+		name = GBR_Percy_Addison
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/GBR/ministers/GBR_Percy_Addison.dds"
+				large = "gfx/leaders/GBR/Portrait_Percy_Addison.dds"
+			}
+		}
+		
+		navy_leader = {
+			desc = "ADMIRAL_GBR_PERCY_ADDISON_DESC"
+			traits = { }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			maneuvering_skill = 2
+			coordination_skill = 3
+		}
+	}
+	
+	GBR_Robert_Burnett = {
+		name = GBR_Robert_Burnett
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/GBR/ministers/GBR_Robert_Burnett.dds"
+				large = "gfx/leaders/GBR/Portrait_Robert_Burnett.dds"
+			}
+		}
+		
+		navy_leader = {
+			desc = "ADMIRAL_GBR_ROBERT_BURNETT_DESC"
+			traits = { }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			maneuvering_skill = 2
+			coordination_skill = 3
+		}
+	}
+	
+	GBR_Bruce_Fraser = {
+		name = GBR_Bruce_Fraser
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/GBR/ministers/GBR_Bruce_Fraser.dds"
+				large = "gfx/leaders/GBR/Portrait_Bruce_Fraser.dds"
+			}
+		}
+		
+		navy_leader = {
+			desc = "ADMIRAL_GBR_BRUCE_FRASER_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			maneuvering_skill = 2
+			coordination_skill = 3
+		}
+	}
+	
+	GBR_Geoffrey_Arbuthnot = {
+		name = GBR_Geoffrey_Arbuthnot
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/GBR/ministers/GBR_Geoffrey_Arbuthnot.dds"
+				large = "gfx/leaders/GBR/Portrait_Geoffrey_Arbuthnot.dds"
+			}
+		}
+		
+		navy_leader = {
+			desc = "ADMIRAL_GBR_GEOFFREY_ARBUTHNOT_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			maneuvering_skill = 2
+			coordination_skill = 3
+		}
+	}
+	
+	GBR_Hugh_Binney = {
+		name = GBR_Hugh_Binney
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/GBR/ministers/GBR_Hugh_Binney.dds"
+				large = "gfx/leaders/GBR/Portrait_Hugh_Binney.dds"
+			}
+		}
+		
+		navy_leader = {
+			desc = "ADMIRAL_GBR_HUGH_BINNEY_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			maneuvering_skill = 2
+			coordination_skill = 3
+		}
+	}
+	
+	GBR_Arthur_Power = {
+		name = GBR_Arthur_Power
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/GBR/ministers/GBR_Arthur_Power.dds"
+				large = "gfx/leaders/GBR/Portrait_Arthur_Power.dds"
+			}
+		}
+		
+		navy_leader = {
+			desc = "ADMIRAL_GBR_ARTHUR_POWER_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			maneuvering_skill = 2
+			coordination_skill = 3
+		}
+	}
+	
+	GBR_Charles_Little = {
+		name = GBR_Charles_Little
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/GBR/ministers/GBR_Charles_Little.dds"
+				large = "gfx/leaders/GBR/Portrait_Charles_Little.dds"
+			}
+		}
+		
+		navy_leader = {
+			desc = "ADMIRAL_GBR_CHARLES_LITTLE_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			maneuvering_skill = 2
+			coordination_skill = 3
+		}
+	}
+	
+	### THEORIST ###
+	
+	GBR_Frederick_Lindemann = {
+		name = GBR_Frederick_Lindemann
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/GBR/ministers/GBR_Frederick_Lindemann.dds"
+				large = "gfx/leaders/GBR/Portrait_Frederick_Lindemann.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "THEORIST_GBR_Frederick_Lindemann_DESC"
+			cost = 150
+			slot = theorist
+			idea_token = GBR_Frederick_Lindemann
+			allowed = {
+				original_tag = GBR
+			}
+			research_bonus = {
+				
+			}
+			traits = {
+				
+			}
+		}
+	}
+	
+	GBR_James_Chadwick = {
+		name = GBR_James_Chadwick
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/GBR/ministers/GBR_James_Chadwick.dds"
+				large = "gfx/leaders/GBR/Portrait_James_Chadwick.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "THEORIST_GBR_JAMES_CHADWICK_DESC"
+			cost = 150
+			slot = theorist
+			idea_token = GBR_James_Chadwick
+			allowed = {
+				original_tag = GBR
+			}
+			research_bonus = {
+				nuclear = 0.15
+			}
+			traits = {
+				nuclear_scientist
+			}
+		}
+	}
+	
+}

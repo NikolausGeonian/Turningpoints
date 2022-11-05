@@ -1,0 +1,48 @@
+music_station = "tp_me_music"
+###############TURNINGPOINTS#################
+###Meddle East
+
+music = {
+	song = "ey_iran"
+	chance = {
+	modifier = {
+		factor = 1
+		}
+		modifier = {
+			is_islam_tag = yes
+		}		
+	}	
+}
+music = {
+	song = "ceddin_deden"
+	chance = {
+	modifier = {
+		factor = 1
+		}
+		modifier = {
+			is_islam_tag = yes
+		}		
+	}	
+}
+music = {
+	song = "cirpinirdi_karadeniz"
+	chance = {
+	modifier = {
+		factor = 1
+		}
+		modifier = {
+			is_islam_tag = yes
+		}		
+	}	
+}
+music = {
+	song = "devlet_marsi"
+	chance = {
+	modifier = {
+		factor = 1
+		}
+		modifier = {
+			is_islam_tag = yes
+		}		
+	}	
+} 

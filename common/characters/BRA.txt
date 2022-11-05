@@ -1,0 +1,554 @@
+characters = {
+	
+	### Country Leader ###
+	
+	BRA_Pedro_III = {
+		name = BRA_Pedro_III
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/BRA/ministers/BRA_Pedro_III.dds"
+				large = "gfx/leaders/BRA/Portrait_Pedro_III.dds"
+			}
+		}
+		
+		country_leader = {
+			desc = "POLITICS_BRA_PEDRO_III_DESC"
+			ideology = autocratic_monarchy_subtype
+			traits={   }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		
+		country_leader = {
+			desc = "POLITICS_BRA_PEDRO_III_DESC"
+			ideology = constitutional_monarchy_C_subtype
+			traits={   }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		
+		country_leader = {
+			desc = "POLITICS_BRA_PEDRO_III_DESC"
+			ideology = constitutional_monarchy_B_subtype
+			traits={   }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		
+		country_leader = {
+			desc = "POLITICS_BRA_PEDRO_III_DESC"
+			ideology = constitutional_monarchy_A_subtype
+			traits={   }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	
+	}
+	
+	### Ministers ###
+	### HEAD OF GOVERNMENT ###
+	
+	BRA_Washington_Luis = {
+		name = BRA_Washington_Luis
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/BRA/ministers/BRA_Washington_Luis.dds"
+				large = "gfx/leaders/BRA/Portrait_Washington_Luis.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_FRA_GASTON_DOUMERGUE_DESC"
+			slot = head_of_government
+			idea_token = BRA_Washington_Luis
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = BRA
+			}
+			available = {
+				has_government = conservatism
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	### FOREIGN MINISTER ###
+	
+	###	ECONOMY MINISTER ###
+	
+	### FIELD MARSHAL ###
+	
+	BRA_Candido_Rondon = {
+		name = BRA_Candido_Rondon
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/BRA/ministers/BRA_Candido_Rondon.dds"
+				large = "gfx/leaders/BRA/Portrait_Candido_Rondon.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "MARSHAL_BRA_CANDIDO_RONDON_DESC"
+			slot = army_chief
+			idea_token = BRA_Candido_Rondon
+			allowed = {
+				original_tag = BRA
+			}
+			traits = { army_chief_maneuver_1 }
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		field_marshal = {
+			desc = "MARSHAL_BRA_CANDIDO_RONDON_DESC"
+			traits = { organizer old_guard }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+	
+	BRA_Augusto_Tasso_Fragoso = {
+		name = BRA_Augusto_Tasso_Fragoso
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/BRA/ministers/BRA_Augusto_Tasso_Fragoso.dds"
+				large = "gfx/leaders/BRA/Portrait_Augusto_Tasso_Fragoso.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "MARSHAL_BRA_AUGUSTO_TASSO_FRAGOSO_DESC"
+			slot = army_chief
+			idea_token = BRA_Augusto_Tasso_Fragoso
+			allowed = {
+				original_tag = BRA
+			}
+			traits = { army_chief_maneuver_1 }
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	
+		field_marshal = {
+			desc = "MARSHAL_BRA_AUGUSTO_TASSO_FRAGOSO_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+	
+	### CORPS COMMANDER ###
+	
+	BRA_Eurico_Gaspar_Dutra = {
+		name = BRA_Eurico_Gaspar_Dutra
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/BRA/ministers/BRA_Eurico_Gaspar_Dutra.dds"
+				large = "gfx/leaders/BRA/Portrait_Eurico_Gaspar_Dutra.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_BRA_EURICO_GASPAR_DUTRA_DESC"
+			traits = { ranger }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	BRA_Mascarenhas_de_Morais = {
+		name = BRA_Mascarenhas_de_Morais
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/BRA/ministers/BRA_Mascarenhas_de_Morais.dds"
+				large = "gfx/leaders/BRA/Portrait_Mascarenhas_de_Morais.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_BRA_MASCARENHAS_DE_MORAIS_DESC"
+			traits = { jungle_rat }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+	
+	BRA_Milton_de_Freitas_Almeida = {
+		name = BRA_Milton_de_Freitas_Almeida
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/BRA/ministers/BRA_Milton_de_Freitas_Almeida.dds"
+				large = "gfx/leaders/BRA/Portrait_Milton_de_Freitas_Almeida.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_BRA_MILTON_DE_FREITAS_ALMEIDA_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	BRA_Salvador_Cesar_Obino = {
+		name = BRA_Salvador_Cesar_Obino
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/BRA/ministers/BRA_Salvador_Cesar_Obino.dds"
+				large = "gfx/leaders/BRA/Portrait_Salvador_Cesar_Obino.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_BRA_SALVADOR_CESAR_OBINO_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	BRA_Jose_Pessoa_Cavalcanti_de_Albuquerque = {
+		name = BRA_Jose_Pessoa_Cavalcanti_de_Albuquerque
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/BRA/ministers/BRA_Jose_Pessoa_Cavalcanti_de_Albuquerque.dds"
+				large = "gfx/leaders/BRA/Portrait_Jose_Pessoa_Cavalcanti_de_Albuquerque.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_BRA_JOSE_PESSOA_CAVALCANTI_DE_ALBUQUERQUE_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	BRA_Bertoldo_Klinger = {
+		name = BRA_Bertoldo_Klinger
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/BRA/ministers/BRA_Bertoldo_Klinger.dds"
+				large = "gfx/leaders/BRA/Portrait_Bertoldo_Klinger.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_BRA_BERTOLDO_KLINGER_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	BRA_Almerio_de_Moura = {
+		name = BRA_Almerio_de_Moura
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/BRA/ministers/BRA_Almerio_de_Moura.dds"
+				large = "gfx/leaders/BRA/Portrait_Almerio_de_Moura.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_BRA_ALMERIO_DE_MOURA_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	BRA_Candido_Caldas = {
+		name = BRA_Candido_Caldas
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/BRA/ministers/BRA_Candido_Caldas.dds"
+				large = "gfx/leaders/BRA/Portrait_Candido_Caldas.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_BRA_CANDIDO_CALDAS_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	BRA_Franklin_Emilio_Rodrigues = {
+		name = BRA_Franklin_Emilio_Rodrigues
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/BRA/ministers/BRA_Franklin_Emilio_Rodrigues.dds"
+				large = "gfx/leaders/BRA/Portrait_Franklin_Emilio_Rodrigues.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_BRA_FRANKLIN_EMILIO_RODRIGUES_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	BRA_Joao_de_Mendonca_Lima = {
+		name = BRA_Joao_de_Mendonca_Lima
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/BRA/ministers/BRA_Joao_de_Mendonca_Lima.dds"
+				large = "gfx/leaders/BRA/Portrait_Joao_de_Mendonca_Lima.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_BRA_JOAO_DE_MENDONCA_LIMA_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	BRA_Julio_Caetano_Horta_Barbosa = {
+		name = BRA_Julio_Caetano_Horta_Barbosa
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/BRA/ministers/BRA_Julio_Caetano_Horta_Barbosa.dds"
+				large = "gfx/leaders/BRA/Portrait_Julio_Caetano_Horta_Barbosa.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_BRA_JULIO_CAETANO_HORTA_BARBOSA_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	BRA_Manuel_Rabelo = {
+		name = BRA_Manuel_Rabelo
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/BRA/ministers/BRA_Manuel_Rabelo.dds"
+				large = "gfx/leaders/BRA/Portrait_Manuel_Rabelo.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_BRA_MANUEL_RABELO_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	BRA_Mario_Xavier = {
+		name = BRA_Mario_Xavier
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/BRA/ministers/BRA_Mario_Xavier.dds"
+				large = "gfx/leaders/BRA/Portrait_Mario_Xavier.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_BRA_MARIO_XAVIER_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	BRA_Constancio_Deschamps_Cavalcanti = {
+		name = BRA_Constancio_Deschamps_Cavalcanti
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/BRA/ministers/BRA_Constancio_Deschamps_Cavalcanti.dds"
+				large = "gfx/leaders/BRA/Portrait_Constancio_Deschamps_Cavalcanti.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_BRA_CONSTANCIO_DESCHAMPS_CAVALCANTI_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}	
+	
+	BRA_Valentim_Benicio_da_Silva = {
+		name = BRA_Valentim_Benicio_da_Silva
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/BRA/ministers/BRA_Valentim_Benicio_da_Silva.dds"
+				large = "gfx/leaders/BRA/Portrait_Valentim_Benicio_da_Silva.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_BRA_VALENTIM_BENICIO_DA_SILVA_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	
+	
+	### ADMIRAL ###
+	
+	BRA_Renato_de_Almeida_Guillobel = {
+		name = BRA_Renato_de_Almeida_Guillobel
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/BRA/ministers/BRA_Renato_de_Almeida_Guillobel.dds"
+				large = "gfx/leaders/BRA/Portrait_Renato_de_Almeida_Guillobel.dds"
+			}
+		}
+		
+		navy_leader = {
+			desc = "ADMIRAL_BRA_RENATO_DE_ALMEIDA_GUILLOBEL_DESC"
+			traits = { aviation_enthusiast }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+		
+		advisor = {
+			desc = "ADMIRAL_BRA_RENATO_DE_ALMEIDA_GUILLOBEL_DESC"
+			slot = high_command
+			idea_token = BRA_Renato_de_Almeida_Guillobel
+			allowed = {
+				original_tag = BRA
+			}
+			traits = { navy_chief_naval_aviation_2 }
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+		
+	BRA_Jorge_Dodsworth_Martins = {
+		name = BRA_Jorge_Dodsworth_Martins
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/BRA/ministers/BRA_Jorge_Dodsworth_Martins.dds"
+				large = "gfx/leaders/BRA/Portrait_Jorge_Dodsworth_Martins.dds"
+			}
+		}
+		
+		navy_leader = {
+			desc = "ADMIRAL_BRA_JORGE_DODSWORTH_MARTINS_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+		
+	BRA_Isaias_de_Noronha = {
+		name = BRA_Isaias_de_Noronha
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/BRA/ministers/BRA_Isaias_de_Noronha.dds"
+				large = "gfx/leaders/BRA/Portrait_Isaias_de_Noronha.dds"
+			}
+		}
+		
+		navy_leader = {
+			desc = "ADMIRAL_BRA_ISAIAS_DE_NORONHA_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	
+	BRA_Silvio_de_Noronha = {
+		name = BRA_Silvio_de_Noronha
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/BRA/ministers/BRA_Silvio_de_Noronha.dds"
+				large = "gfx/leaders/BRA/Portrait_Silvio_de_Noronha.dds"
+			}
+		}
+		
+		navy_leader = {
+			desc = "ADMIRAL_BRA_SILVIO_DE_NORONHA_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+}

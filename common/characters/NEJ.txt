@@ -1,0 +1,63 @@
+characters = {
+	
+	### Country Leader ###
+	
+	NEJ_Abdulaziz = {
+		name = NEJ_Abdulaziz
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NEJ/Portrait_Abdulaziz.dds"
+			}
+		}
+		
+		country_leader = {
+			desc = "POLITICS_NEJ_ABDULAZIZ_DESC"
+			ideology = semi_constitutional_monarchy_subtype
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		
+		country_leader = {
+			desc = "POLITICS_NEJ_ABDULAZIZ_DESC"
+			ideology = autocratic_monarchy_subtype
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		
+		country_leader = {
+			desc = "POLITICS_NEJ_ABDULAZIZ_DESC"
+			ideology = constitutional_monarchy_A_subtype
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		
+		country_leader = {
+			desc = "POLITICS_NEJ_ABDULAZIZ_DESC"
+			ideology = constitutional_monarchy_B_subtype
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		
+		country_leader = {
+			desc = "POLITICS_NEJ_ABDULAZIZ_DESC"
+			ideology = rexism_subtype
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	
+	}
+	
+	### Ministers ###
+	### HEAD OF GOVERNMENT ###
+	
+	### FOREIGN MINISTER ###
+	
+	###	ECONOMY MINISTER ###
+	
+	### FIELD MARSHAL ###
+	
+	### CORPS COMMANDER ###
+	
+	### ADMIRAL ###
+	
+}

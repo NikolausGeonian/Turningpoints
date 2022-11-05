@@ -1,0 +1,48 @@
+﻿capital = 78
+set_research_slots = 2
+set_stability = 0.8
+set_war_support = 1
+set_convoys = 11
+# Starting tech
+set_technology = {
+	tech_support = 1		
+	tech_engineers = 1
+	tech_mountaineers = 1
+	infantry_weapons = 1
+	tech_recon = 1
+}
+#Ideas
+add_ideas = {
+	
+}
+set_popularities = {
+	conservatism = 68
+	authoritarianism = 27
+	social_democratism = 3
+	patriotic_socialism = 0
+	corporatism = 0
+	democratic_socialism = 0
+	populism = 0
+	social_liberalism = 2
+}
+set_politics = {
+	ruling_party = conservatism
+	last_election = "1935.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+
+create_country_leader = {
+	name = "Ion G. Pelivan"
+	desc = "POLITICS_ION_PELIVAN_DESC"
+	picture = "gfx/leaders/MOL/Portrait_Ion_Pelivan.dds"
+	expire = "1965.1.1"
+	ideology = conservatism_subtype
+	traits = {
+		#
+	}
+}
+
+### VARIANTS ###
+# 1936 Start #

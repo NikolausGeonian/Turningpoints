@@ -1,0 +1,623 @@
+characters = {
+	
+	### Country Leader ###
+	
+	UBD_Friedrich_zu_Mecklenburg = {
+		name = UBD_Friedrich_zu_Mecklenburg
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/UBD/Portrait_Friedrich_zu_Mecklenburg.dds"
+				#Spacing Modifier
+			}
+		}
+		
+		country_leader = {
+			desc = "POLITICS_UBD_ADOLF_FRIEDRICH_ZU_MECKLENBURG_DESC"
+			ideology = autocratic_monarchy_subtype
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		
+		country_leader = {
+			desc = "POLITICS_UBD_ADOLF_FRIEDRICH_ZU_MECKLENBURG_DESC"
+			ideology = constitutional_monarchy_A_subtype
+			traits={  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		
+		country_leader = {
+			desc = "POLITICS_UBD_ADOLF_FRIEDRICH_ZU_MECKLENBURG_DESC"
+			ideology = constitutional_monarchy_B_subtype
+			traits={  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		
+		country_leader = {
+			desc = "POLITICS_UBD_ADOLF_FRIEDRICH_ZU_MECKLENBURG_DESC"
+			ideology = constitutional_monarchy_C_subtype
+			traits={  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	
+	}
+	
+	### Ministers ###
+	### HEAD OF GOVERNMENT ###
+	
+	UBD_Andrievs_Niedra = {
+		name = UBD_Andrievs_Niedra
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/UBD/ministers/UBD_Andrievs_Niedra.dds"
+				large = "gfx/leaders/UBD/Portrait_Andrievs_Niedra.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_UBD_ANDRIEVS_NIEDRA_DESC"
+			slot = head_of_government
+			idea_token = UBD_Andrievs_Niedra
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = UBD
+			}
+			available = {
+				has_government = conservatism
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	UBD_Hermann_von_Keyserling = {
+		name = UBD_Hermann_von_Keyserling
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/UBD/ministers/UBD_Hermann_von_Keyserling.dds"
+				large = "gfx/leaders/UBD/Portrait_Hermann_von_Keyserling.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_UBD_HERMANN_VON_KEYSERLING_DESC"
+			slot = head_of_government
+			idea_token = UBD_Hermann_von_Keyserling
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = UBD
+			}
+			available = {
+				has_government = social_liberalism
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	UBD_August_Winnig = {
+		name = UBD_August_Winnig
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/UBD/ministers/UBD_August_Winnig.dds"
+				large = "gfx/leaders/UBD/Portrait_August_Winnig.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_UBD_AUGUST_WINNIG_DESC"
+			slot = head_of_government
+			idea_token = UBD_August_Winnig
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = UBD
+			}
+			available = {
+				has_government = social_democratism
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	### FOREIGN MINISTER ###
+	
+	UBD_Heinrich_zu_Dohna_Schlobitten = {
+		name = UBD_Heinrich_zu_Dohna_Schlobitten
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/UBD/ministers/UBD_Heinrich_zu_Dohna_Schlobitten.dds"
+				large = "gfx/leaders/UBD/Portrait_Heinrich_zu_Dohna_Schlobitten.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_UBD_HEINRICH_ZU_DOHNA_SCHLOBITTEN_DESC"
+			slot = foreign_minister
+			idea_token = UBD_Heinrich_zu_Dohna_Schlobitten
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = UBD
+			}
+			available = {
+				OR = {
+					has_government = conservatism
+					has_government = social_liberalism
+					has_government = social_democratism
+					has_government = authoritarianism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	UBD_Max_Bock = {
+		name = UBD_Max_Bock
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/UBD/ministers/UBD_Max_Bock.dds"
+				large = "gfx/leaders/UBD/Portrait_Max_Bock.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_UBD_MAX_BOCK_DESC"
+			slot = foreign_minister
+			idea_token = UBD_Max_Bock
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = UBD
+			}
+			available = {
+				OR = {
+					has_government = conservatism
+					has_government = social_liberalism
+					has_government = social_democratism
+					has_government = authoritarianism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	UBD_Hermann_Josef_Wehrle = {
+		name = UBD_Hermann_Josef_Wehrle
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/UBD/ministers/UBD_Hermann_Josef_Wehrle.dds"
+				large = "gfx/leaders/UBD/Portrait_Hermann_Josef_Wehrle.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_UBD_HERMANN_JOSEF_WEHRLE_DESC"
+			slot = foreign_minister
+			idea_token = UBD_Hermann_Josef_Wehrle
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = UBD
+			}
+			available = {
+				OR = {
+					has_government = conservatism
+					has_government = social_liberalism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	###	ECONOMY MINISTER ###
+	
+	### FIELD MARSHAL ###
+	
+	UBD_Rudiger_von_der_Goltz = {
+		name = UBD_Rudiger_von_der_Goltz
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/UBD/ministers/UBD_Rudiger_von_der_Goltz.dds"
+				large = "gfx/leaders/UBD/Portrait_Rudiger_von_der_Goltz.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "MARSHAL_UBD_RUDIGER_VON_DER_GOLTZ_DESC"
+			slot = high_command
+			idea_token = UBD_Rudiger_von_der_Goltz
+			allowed = {
+				original_tag = UBD
+			}
+			traits = { }
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		field_marshal={
+			desc = "MARSHAL_UBD_RUDIGER_VON_DER_GOLTZ_DESC"
+			traits = { old_guard war_hero trait_cautious }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 5
+		}
+	}
+	
+	UBD_Aleksander_Tonisson = {
+		name = UBD_Aleksander_Tonisson
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/UBD/ministers/UBD_Aleksander_Tonisson.dds"
+				large = "gfx/leaders/UBD/Portrait_Aleksander_Tonisson.dds"
+			}
+		}
+		
+		field_marshal={
+			desc = "MARSHAL_UBD_ALEKSANDER_TONISSON_DESC"
+			traits = {  }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	
+	### CORPS COMMANDER ###
+	
+	UBD_Ernst_Podder = {
+		name = UBD_Ernst_Podder
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/UBD/ministers/UBD_Ernst_Podder.dds"
+				large = "gfx/leaders/UBD/Portrait_Ernst_Podder.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_UBD_ERNST_PODDER_DESC"
+			traits = { }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 4
+		}
+	}
+	
+	UBD_Peeter_Kann = {
+		name = UBD_Peeter_Kann
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/UBD/ministers/UBD_Peeter_Kann.dds"
+				large = "gfx/leaders/UBD/Portrait_Peeter_Kann.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_UBD_PEETER_KANN_DESC"
+			traits = { infantry_leader }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 4
+		}
+	}
+	
+	UBD_Theodor_Rouk = {
+		name = UBD_Theodor_Rouk
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/UBD/ministers/UBD_Theodor_Rouk.dds"
+				large = "gfx/leaders/UBD/Portrait_Theodor_Rouk.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_UBD_THEODOR_ROUK_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 4
+		}
+	}
+	
+	UBD_Johannes_Soodla = {
+		name = UBD_Johannes_Soodla
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/UBD/ministers/UBD_Johannes_Soodla.dds"
+				large = "gfx/leaders/UBD/Portrait_Johannes_Soodla.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_UBD_JOHANNES_SOODLA_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 4
+		}
+	}
+	
+	UBD_Eduard_Dietl = {
+		name = UBD_Eduard_Dietl
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/UBD/ministers/UBD_Eduard_Dietl.dds"
+				large = "gfx/leaders/UBD/Portrait_Eduard_Dietl.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_UBD_EDUARD_DIETL_DESC"
+			traits = { hill_fighter }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 4
+		}
+	}
+	
+	UBD_Martins_Penikis = {
+		name = UBD_Martins_Penikis
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/UBD/ministers/UBD_Martins_Penikis.dds"
+				large = "gfx/leaders/UBD/Portrait_Martins_Penikis.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_UBD_MARTINS_PENIKIS_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 4
+		}
+	}
+	
+	UBD_Alfred_Fletcher = {
+		name = UBD_Alfred_Fletcher
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/UBD/ministers/UBD_Alfred_Fletcher.dds"
+				large = "gfx/leaders/UBD/Portrait_Alfred_Fletcher.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_UBD_ALFRED_FLETCHER_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 4
+		}
+	}
+	
+	UBD_Constantin_von_Weiss = {
+		name = UBD_Constantin_von_Weiss
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/UBD/ministers/UBD_Constantin_von_Weiss.dds"
+				large = "gfx/leaders/UBD/Portrait_Constantin_von_Weiss.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_UBD_CONSTANTIN_VON_WEISS_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 4
+		}
+	}
+	
+	UBD_Janis_Balodis = {
+		name = UBD_Janis_Balodis
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/UBD/ministers/UBD_Janis_Balodis.dds"
+				large = "gfx/leaders/UBD/Portrait_Janis_Balodis.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_UBD_JANIS_BALODIS_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 4
+		}
+	}
+	
+	UBD_Zanis_Bahs = {
+		name = UBD_Zanis_Bahs
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/UBD/ministers/UBD_Zanis_Bahs.dds"
+				large = "gfx/leaders/UBD/Portrait_Zanis_Bahs.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_UBD_ZANIS_BAHS_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 4
+		}
+	}
+	
+	UBD_Krisjanis_Berkis = {
+		name = UBD_Krisjanis_Berkis
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/UBD/ministers/UBD_Krisjanis_Berkis.dds"
+				large = "gfx/leaders/UBD/Portrait_Krisjanis_Berkis.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_UBD_KRISJANIS_BERKIS_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 4
+		}
+	}
+	
+	UBD_Josef_Bischoff = {
+		name = UBD_Josef_Bischoff
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/UBD/ministers/UBD_Josef_Bischoff.dds"
+				large = "gfx/leaders/UBD/Portrait_Josef_Bischoff.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_UBD_JOSEF_BISCHOFF_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 4
+		}
+	}
+	
+	UBD_Otto_Goldfeld = {
+		name = UBD_Otto_Goldfeld
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/UBD/ministers/UBD_Otto_Goldfeld.dds"
+				large = "gfx/leaders/UBD/Portrait_Otto_Goldfeld.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_UBD_OTTO_GOLDFELD_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 4
+		}
+	}
+	
+	### ADMIRAL ###
+	
+	UBD_Johan_Pitka = {
+		name = UBD_Johan_Pitka
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/UBD/ministers/UBD_Johan_Pitka.dds"
+				large = "gfx/leaders/UBD/Portrait_Johan_Pitka.dds"
+			}
+		}
+		
+		navy_leader = {
+			desc = "ADMIRAL_UBD_JOHAN_PITKA_DESC"
+			traits = { }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			maneuvering_skill = 2
+			coordination_skill = 2
+		}
+	}
+	
+	UBD_Teodors_Spade = {
+		name = UBD_Teodors_Spade
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/UBD/ministers/UBD_Teodors_Spade.dds"
+				large = "gfx/leaders/UBD/Portrait_Teodors_Spade.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "ADMIRAL_UBD_TEODORS_SPADE_DESC"
+			slot = navy_chief
+			idea_token = UBD_Teodors_Spade
+			allowed = {
+				original_tag = UBD
+			}
+			traits = {
+				navy_chief_commerce_raiding_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 0.100
+			}
+		}
+		
+		navy_leader = {
+			desc = "ADMIRAL_UBD_TEODORS_SPADE_DESC"
+			traits = { seawolf  }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			maneuvering_skill = 2
+			coordination_skill = 2
+		}
+	}
+	
+}

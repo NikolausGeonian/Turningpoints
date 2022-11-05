@@ -1,0 +1,173 @@
+foreign_influence = {
+
+	# Decisions for masters to push their ideology onto puppets
+	# Note that subject status is not checked due to those only appearing in DLC
+	# (Subjects are puppets with high autonomy)
+
+	nation_building = {
+
+		#icon = eng_propaganda_campaigns
+
+		days_remove = 120
+		
+		available = {
+			FROM = {
+				is_puppet_of = ROOT
+			}
+			FROM = {
+				AND = {
+					social_liberalism < 0.4
+					conservatism < 0.4
+					social_democratism < 0.4
+				}
+			}
+			OR = {
+				political_power_daily > 0.5
+				has_political_power > 60
+			}
+		}
+
+		visible = {
+			OR = {
+				has_government = social_liberalism
+				has_government = conservatism
+				has_government = social_democratism
+			}
+			FROM = {
+				is_puppet_of = ROOT
+				AND = {
+					social_liberalism < 0.6
+					conservatism < 0.6
+					social_democratism < 0.6
+				}
+			}
+		}
+
+		target_array = subjects
+
+		target_trigger = {
+			FROM = {
+				is_puppet_of = ROOT
+			}
+		}
+
+		complete_effect = {
+			FROM = { add_timed_idea = { idea = nation_building days = 120 } }
+		}
+
+		modifier = {
+			political_power_cost = 0.5
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	socialist_education = {
+
+		icon = eng_propaganda_campaigns
+
+		days_remove = 120
+		
+		available = {
+			FROM = {
+				is_puppet_of = ROOT
+			}
+			AND = {
+				patriotic_socialism < 0.6
+				democratic_socialism < 0.6
+			}
+			OR = {
+				political_power_daily > 0.5
+				has_political_power > 60
+			}
+		}
+
+		visible = {
+			OR = {
+				has_government = democratic_socialism
+				has_government = patriotic_socialism
+			}
+			FROM = {
+				is_puppet_of = ROOT
+				AND = {
+					patriotic_socialism < 0.99
+					democratic_socialism < 0.99
+				}
+			}
+		}
+
+		target_array = subjects
+
+		target_trigger = {
+			FROM = {
+				is_puppet_of = ROOT
+			}
+		}
+
+		complete_effect = {
+			FROM = {
+				add_timed_idea = { idea = socialist_education days = 120 }
+			}
+		}
+		modifier = {
+			political_power_cost = 0.5
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	paramilitary_training = {
+
+		icon = eng_propaganda_campaigns
+
+		days_remove = 120
+		
+		available = {
+			FROM = {
+				is_puppet_of = ROOT
+			}
+			FROM = {
+				corporatism < 0.9
+			}
+			OR = {
+				political_power_daily > 0.5
+				has_political_power > 60
+			}
+		}
+
+		visible = {
+			has_government = corporatism
+			FROM = {
+				is_puppet_of = ROOT
+				corporatism < 0.99
+			}
+		}
+
+		target_array = subjects
+
+		target_trigger = {
+			FROM = {
+				is_puppet_of = ROOT
+			}
+		}
+
+		complete_effect = {
+			FROM = {
+				add_timed_idea = { idea = paramilitary_training days = 120 }
+			}
+		}
+
+		modifier = {
+			political_power_cost = 0.5
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+}

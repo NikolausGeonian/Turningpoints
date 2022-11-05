@@ -1,0 +1,25 @@
+
+state={
+	id=789
+	name="STATE_789" 
+
+	history={
+		owner = QNG
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = QNG
+		add_core_of = MON
+		victory_points = {
+			1774 2
+		}
+	}
+
+	provinces={
+		1774 4714 4751 4823 4849 7693 7737 7808 7843 7870 10539 12737
+	}
+	manpower=155000
+	buildings_max_level_factor=1.000
+	state_category = pastoral
+}

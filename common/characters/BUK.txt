@@ -1,0 +1,155 @@
+characters = {
+	
+	### Country Leader ###
+	
+	BUK_Mohammed_Alim_Khan = {
+		name = BUK_Mohammed_Alim_Khan
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BUK/Portrait_Mohammed_Alim_Khan.dds"
+				small = "gfx/interface/ideas/BUK/ministers/BUK_Mohammed_Alim_Khan.dds"
+			}
+		}
+		
+		country_leader = {
+			desc = "POLITICS_BUK_MOHAMMED_ALIM_KHAN_DESC"
+			ideology = semi_constitutional_monarchy_subtype
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		
+		country_leader = {
+			desc = "POLITICS_BUK_MOHAMMED_ALIM_KHAN_DESC"
+			ideology = autocratic_monarchy_subtype
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		
+		country_leader = {
+			desc = "POLITICS_BUK_MOHAMMED_ALIM_KHAN_DESC"
+			ideology = constitutional_monarchy_A_subtype
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		
+		country_leader = {
+			desc = "POLITICS_BUK_MOHAMMED_ALIM_KHAN_DESC"
+			ideology = constitutional_monarchy_B_subtype
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		
+	}
+	
+	### Ministers ###
+	### HEAD OF GOVERNMENT ###
+	
+	BUK_Usmon_Xoja = { 
+		name = BUK_Usmon_Xoja
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/BUK/ministers/BUK_Usmon_Xoja.dds"
+				large = "gfx/leaders/BUK/Portrait_Usmon_Xoja.dds"
+			}
+		}
+		# Independent #
+		advisor={
+			desc = "POLITICS_BUK_USMON_XOJA_DESC"
+			slot = head_of_government
+			idea_token = BUK_Usmon_Xoja
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = BUK
+			}
+			available = {
+				has_government = social_democratism
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	BUK_Zeki_Velidi_Togan = { 
+		name = BUK_Zeki_Velidi_Togan
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/BUK/ministers/BUK_Zeki_Velidi_Togan.dds"
+				large = "gfx/leaders/BUK/Portrait_Zeki_Velidi_Togan.dds"
+			}
+		}
+		# Independent #
+		advisor={
+			desc = "POLITICS_BUK_ZEKI_VELIDI_TOGAN_DESC"
+			slot = head_of_government
+			idea_token = BUK_Zeki_Velidi_Togan
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = BUK
+			}
+			available = {
+				has_government = social_liberalism
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	### FOREIGN MINISTER ###
+	
+	###	ECONOMY MINISTER ###
+	
+	### FIELD MARSHAL ###
+	
+	### CORPS COMMANDER ###
+	BUK_Ivan_Matveyevich_Zaitsev = {
+		name = BUK_Ivan_Matveyevich_Zaitsev
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/BUK/ministers/BUK_Ivan_Matveyevich_Zaitsev.dds"
+				large = "gfx/leaders/BUK/Portrait_Ivan_Matveyevich_Zaitsev.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_BUK_IVAN_MATVEYEVICH_ZAITSEV_DESC"
+			traits = {	}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	
+	BUK_Constantin_Ossipov = {
+		name = BUK_Constantin_Ossipov
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/BUK/ministers/BUK_Constantin_Ossipov.dds"
+				large = "gfx/leaders/BUK/Portrait_Constantin_Ossipov.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_BUK_CONSTANTIN_OSSIPOV_DESC"
+			traits = {	}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	### ADMIRAL ###
+	
+}

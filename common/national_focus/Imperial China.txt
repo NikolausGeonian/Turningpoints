@@ -1,0 +1,749 @@
+focus_tree = {
+	id = QNG_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = QNG
+		}
+	}
+	
+	default = no
+	#########################################
+	## The Imperial Edict of Luna New Year ##
+	#########################################
+	focus = {
+		id = QNG_edict_of_rat_year
+		icon = GFX_goal_QNG_edict_of_rat_year
+		x = 20
+		y = 0
+		cost = 1
+		available = {
+			date > 1936.1.24
+		}
+		available_if_capitulated = yes
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		bypass = {
+			date > 1936.1.24
+		}
+		completion_reward = {
+			QNG = {
+					country_event = { id = china.1 }
+				}
+			}
+		}
+	######################
+	## Election in 1936 ##
+	######################
+	focus = {
+		id = QNG_election_in_1936
+		icon = GFX_goal_QNG_election_in_1936
+		x = 0
+		y = 1
+		prerequisite = { 
+			focus = QNG_edict_of_rat_year
+		}
+		relative_position_id = QNG_edict_of_rat_year
+		cost = 10
+		available = {
+		}
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			QNG = {
+					country_event = { id = china.4 }
+				}
+			}
+		}
+		
+	#############
+	## JDPC/CC ##
+	#############
+	focus = {
+		id = QNG_JDPC_CC
+		icon = GFX_goal_QNG_JDPC_CC
+		x = 2
+		y = 1
+		prerequisite = { 
+			focus = QNG_election_in_1936
+		}
+		mutually_exclusive = {
+			focus = QNG_SPC
+			focus = QNG_UPPC
+			focus = QNG_ECA
+		}
+		relative_position_id = QNG_election_in_1936
+		cost = 10
+		available = {
+		}
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			}
+	}
+	
+	###########################################
+	## Support for Agricultural Associations ##
+	###########################################
+	
+	focus = {
+		id = QNG_agricultural_association
+		icon = GFX_goal_QNG_agricultural_association
+		x = -1
+		y = 1
+		prerequisite = { 
+			focus = QNG_JDPC_CC
+			focus = QNG_UPPC
+		}
+		mutually_exclusive = {
+			focus = QNG_encourage_farming_enterprises
+		}
+		relative_position_id = QNG_JDPC_CC
+		cost = 10
+		available = {
+		}
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			}
+	}
+	
+	#################################
+	## Public Works Administration ##
+	#################################
+	
+	focus = {
+		id = QNG_public_works_administration
+		icon = GFX_goal_generic_public_works
+		x = -1
+		y = 2
+		prerequisite = { 
+			focus = QNG_agricultural_association
+			focus = QNG_encourage_farming_enterprises
+		}
+		relative_position_id = QNG_agricultural_association
+		cost = 10
+		available = {
+		}
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+	
+	##############################
+	## Reciprocal Tariff Reform ##
+	##############################
+	
+	focus = {
+		id = QNG_reciprocal_tariff_reform
+		icon = GFX_goal_QNG_reciprocal_tariff_reform
+		x = 1
+		y = 1
+		prerequisite = { 
+			focus = QNG_JDPC_CC
+		}
+		mutually_exclusive = {
+			focus = QNG_repatriate_workers_from_tributary
+		}
+		relative_position_id = QNG_JDPC_CC
+		cost = 10
+		available = {
+		}
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+	
+	######################################
+	## Adherence to the Silver Standard ##
+	######################################
+	
+	focus = {
+		id = QNG_adherence_to_silver_standard
+		icon = GFX_goal_QNG_silver_standard
+		x = 0
+		y = 2
+		prerequisite = { 
+			focus = QNG_reciprocal_tariff_reform
+		}
+		relative_position_id = QNG_reciprocal_tariff_reform
+		cost = 10
+		available = {
+		}
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+	
+	############################
+	## Ensure Basic Education ##
+	############################
+	
+	focus = {
+		id = QNG_ensure_basic_education
+		icon = GFX_goal_generic_expand_the_university
+		x = 0
+		y = 2
+		prerequisite = { 
+			focus = QNG_JDPC_CC
+			focus = QNG_UPPC
+		}
+		mutually_exclusive = {
+			focus = QNG_encouraging_private_schooling
+		}
+		relative_position_id = QNG_JDPC_CC
+		cost = 10
+		available = {
+		}
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			}
+	}
+	
+	##########
+	## UPPC ##
+	##########
+	
+	focus = {
+		id = QNG_UPPC
+		icon = GFX_goal_QNG_UPPC
+		x = -2
+		y = 1
+		prerequisite = { 
+			focus = QNG_election_in_1936
+		}
+		mutually_exclusive = {
+			focus = QNG_SPC
+			focus = QNG_JDPC_CC
+			focus = QNG_ECA
+		}
+		relative_position_id = QNG_election_in_1936
+		cost = 10
+		available = {
+		}
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			}
+	}
+	
+	###################################
+	## Encourage Farming Enterprises ##
+	###################################
+	
+	focus = {
+		id = QNG_encourage_farming_enterprises
+		icon = GFX_goal_generic_modernized_agriculture
+		x = 1
+		y = 1
+		prerequisite = { 
+			focus = QNG_UPPC
+			focus = QNG_JDPC_CC
+		}
+		mutually_exclusive = {
+			focus = QNG_agricultural_association
+		}
+		relative_position_id = QNG_UPPC
+		cost = 10
+		available = {
+		}
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			}
+	}
+	
+	########################
+	##	Syndicated Loan   ##	National Credit Banking Group
+	########################
+	
+	focus = {
+		id = QNG_syndicated_loan
+		icon = GFX_goal_QNG_syndicated_loan
+		x = -1
+		y = 1
+		prerequisite = { 
+			focus = QNG_UPPC
+		}
+		mutually_exclusive = {
+			focus = QNG_consolidation_of_the_banking
+		}
+		relative_position_id = QNG_UPPC
+		cost = 10
+		available = {
+		}
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+	
+	###########################
+	## Reduction of Land Tax ##
+	###########################
+	
+	focus = {
+		id = QNG_reduction_of_land_tax
+		icon = GFX_goal_generic_tax_cuts_for_land_owners
+		x = 0
+		y = 2
+		prerequisite = { 
+			focus = QNG_syndicated_loan
+		}
+		relative_position_id = QNG_syndicated_loan
+		cost = 10
+		available = {
+		}
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+	
+	
+	
+	
+	
+	###################################
+	## Encouraging Private Schooling ##
+	###################################
+	
+	focus = {
+		id = QNG_encouraging_private_schooling
+		icon = GFX_goal_QNG_encouraging_private_schooling
+		x = 0
+		y = 2
+		prerequisite = { 
+			focus = QNG_UPPC
+			focus = QNG_JDPC_CC
+		}
+		mutually_exclusive = {
+			focus = QNG_ensure_basic_education
+		}
+		relative_position_id = QNG_UPPC
+		cost = 10
+		available = {
+		}
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			}
+	}
+	
+	#########
+	## ECA ##
+	#########
+	
+	focus = {
+		id = QNG_ECA
+		icon = GFX_goal_QNG_ECA
+		x = 6
+		y = 1
+		prerequisite = { 
+			focus = QNG_election_in_1936
+		}
+		mutually_exclusive = {
+			focus = QNG_SPC
+			focus = QNG_UPPC
+			focus = QNG_JDPC_CC
+		}
+		relative_position_id = QNG_election_in_1936
+		cost = 10
+		available = {
+		}
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			}
+	}
+	
+	############################################
+	## Repatriation of workers from tributary ##
+	############################################
+	
+	focus = {
+		id = QNG_repatriate_workers_from_tributary
+		icon = GFX_goal_QNG_repatriate_workers_from_tributary
+		x = -1
+		y = 1
+		prerequisite = { 
+			focus = QNG_ECA
+			focus = QNG_JDPC_CC
+		}
+		mutually_exclusive = {
+			focus = QNG_reciprocal_tariff_reform
+		}
+		relative_position_id = QNG_ECA
+		cost = 10
+		available = {
+		}
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			}
+	}
+	
+	#####################
+	## Product Dumping ##
+	#####################
+	
+	focus = {
+		id = QNG_product_dumping
+		icon = GFX_goal_QNG_reform_the_imperial_preference
+		x = 0
+		y = 2
+		prerequisite = { 
+			focus = QNG_repatriate_workers_from_tributary
+		}
+		relative_position_id = QNG_repatriate_workers_from_tributary
+		cost = 10
+		available = {
+		}
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			}
+	}
+	
+	########################
+	## Controlling Prices ##
+	########################
+	
+	focus = {
+		id = QNG_price_control
+		icon = GFX_goal_generic_price_control
+		x = 1
+		y = 1
+		prerequisite = { 
+			focus = QNG_ECA
+		}
+		relative_position_id = QNG_ECA
+		cost = 10
+		available = {
+		}
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+	
+	##############################
+	## War Production Committee ##
+	##############################
+	
+	focus = {
+		id = QNG_war_production_committee
+		icon = GFX_goal_QNG_war_production_committee
+		x = 0
+		y = 2
+		prerequisite = { 
+			focus = QNG_price_control
+		}
+		relative_position_id = QNG_price_control
+		cost = 10
+		available = {
+		}
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+	
+	
+	#########################
+	## Promoting Tradition ##
+	#########################
+	
+	focus = {
+		id = QNG_Promoting_Tradition
+		icon = GFX_goal_QNG_Promoting_Tradition
+		x = 0
+		y = 2
+		prerequisite = { 
+			focus = QNG_ECA
+		}
+		relative_position_id = QNG_ECA
+		cost = 10
+		available = {
+		}
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			}
+	}
+	
+	#########
+	## SPC ##
+	#########
+	focus = {
+		id = QNG_SPC
+		icon = GFX_goal_QNG_SPC
+		x = -6
+		y = 1
+		prerequisite = { 
+			focus = QNG_election_in_1936
+		}
+		mutually_exclusive = {
+			focus = QNG_ECA
+			focus = QNG_UPPC
+			focus = QNG_JDPC_CC
+		}
+		relative_position_id = QNG_election_in_1936
+		cost = 10
+		available = {
+		}
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			}
+	}
+	
+	#############################
+	## Organizing Cooperatives ##
+	#############################
+	
+	focus = {
+		id = QNG_organizing_cooperatives
+		icon = GFX_goal_organizing_cooperatives
+		x = -1
+		y = 1
+		prerequisite = { 
+			focus = QNG_SPC
+		}
+		relative_position_id = QNG_SPC
+		cost = 10
+		available = {
+		}
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+	
+	##################################
+	## Consolidation of the Banking ##
+	##################################
+	
+	focus = {
+		id = QNG_consolidation_of_the_banking
+		icon = GFX_goal_organizing_cooperatives
+		x = 1
+		y = 1
+		prerequisite = { 
+			focus = QNG_SPC
+			focus = QNG_UPPC
+		}
+		mutually_exclusive = {
+			focus = QNG_syndicated_loan
+		}
+		relative_position_id = QNG_SPC
+		cost = 10
+		available = {
+		}
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+	
+	##################
+	##	Farm Credit ##
+	###################
+	
+	focus = {
+		id = QNG_farm_credit
+		icon = GFX_goal_QNG_farm_credit
+		x = 0
+		y = 2
+		prerequisite = { 
+			focus = QNG_consolidation_of_the_banking
+		}
+		relative_position_id = QNG_consolidation_of_the_banking
+		cost = 10
+		available = {
+		}
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+	
+	################################
+	## Unemployed Workers' Relief ## 
+	################################
+	
+	focus = {
+		id = QNG_unemployed_workers_relief
+		icon = GFX_goal_organizing_cooperatives
+		x = 0
+		y = 2
+		prerequisite = { 
+			focus = QNG_organizing_cooperatives
+		}
+		relative_position_id = QNG_organizing_cooperatives
+		cost = 10
+		available = {
+		}
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+	
+	###########################
+	## Workers' Night School ##
+	###########################
+	
+	focus = {
+		id = QNG_workers_night_school
+		icon = GFX_goal_generic_education
+		x = 0
+		y = 2
+		prerequisite = { 
+			focus = QNG_SPC
+		}
+		relative_position_id = QNG_SPC
+		cost = 10
+		available = {
+		}
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+	
+	#在政策线到底后跟进
+	
+	#########################################
+	## Restart the Development of Western  ## 西部实业计划
+	#########################################
+	
+	focus = {
+		id = QNG_restart_the_development_of_western
+		icon = GFX_goal_QNG_restart_the_development_of_western
+		x = 0
+		y = 12
+		prerequisite = { 
+			
+		}
+		relative_position_id = QNG_ECA
+		cost = 10
+		available = {
+		}
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+	
+	#外交线
+	#改革阵营经济体系
+	
+	#Celestial_Empire
+	#######################
+	## Celestial_Empire  ##
+	#######################
+	
+	focus = {
+		id = QNG_celestial_empire
+		icon = GFX_goal_QNG_celestial_empire
+		x = 15
+		y = 0
+		prerequisite = { 
+			
+		}
+		relative_position_id = QNG_edict_of_rat_year
+		cost = 10
+		available = {
+		}
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+	
+	#############################
+	## Conducting with virtue  ## 以德怀人
+	#############################
+	
+	focus = {
+		id = QNG_conducting_with_virtue
+		icon = GFX_goal_QNG_conducting_with_virtue
+		x = -3
+		y = 1
+		prerequisite = { 
+			focus = QNG_celestial_empire
+		}
+		mutually_exclusive = {
+			focus = QNG_act_as_a_hegemon
+		}
+		relative_position_id = QNG_celestial_empire
+		cost = 10
+		available = {
+		}
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+	
+	#######################
+	## act as a hegemon  ## 奉行霸道
+	######################
+	
+	focus = {
+		id = QNG_act_as_a_hegemon
+		icon = GFX_goal_QNG_act_as_a_hegemon
+		x = 3
+		y = 1
+		prerequisite = { 
+			focus = QNG_celestial_empire
+		}
+		mutually_exclusive = {
+			focus = QNG_conducting_with_virtue
+		}
+		relative_position_id = QNG_celestial_empire
+		cost = 10
+		available = {
+		}
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+}

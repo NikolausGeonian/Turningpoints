@@ -1,0 +1,25 @@
+
+state={
+	id=791
+	name="STATE_791"
+
+	history={
+		owner = QNG
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		add_core_of = QNG
+		victory_points = {
+			10610 1
+		}
+	}
+
+	provinces={
+		1840 4674 4845 7784 10550 10610 10619 10680 12529 12564 12662 13149 13197 
+	}
+	manpower=272900
+	buildings_max_level_factor=1.000
+	state_category = rural
+}

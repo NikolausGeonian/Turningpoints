@@ -1,0 +1,57 @@
+#	Example:
+# 
+#	example_trigger = {
+#		tag = GER
+#		is_ai = no
+#	}
+#
+#
+#	In a script file:
+#
+#	trigger = {
+#		exampel_trigger = yes
+#	}
+#
+can_lose_unity = {
+	has_stability > 60
+	OR = {
+		has_war = no
+		AND = {
+			has_war = yes
+			surrender_progress < 0.1
+		}
+	}
+}
+
+can_lose_liberalism_support = {
+	democratic_socialism < 0.06
+	patriotic_socialism < 0.06
+	social_democratism < 0.06
+	conservatism < 0.06
+	authoritarianism < 0.06
+	corporatism < 0.06
+	populism < 0.06
+	social_liberalism > 0.58
+}
+
+can_lose_conservatism_support = {
+	democratic_socialism < 0.06
+	patriotic_socialism < 0.06
+	social_democratism < 0.06
+	social_liberalism < 0.06
+	authoritarianism < 0.06
+	corporatism < 0.06
+	populism < 0.06
+	conservatism > 0.58
+}
+
+can_lose_social_democratism_support = {
+	democratic_socialism < 0.06
+	patriotic_socialism < 0.06
+	conservatism < 0.06
+	social_liberalism < 0.06
+	authoritarianism < 0.06
+	corporatism < 0.06
+	populism < 0.06
+	social_democratism > 0.58
+}

@@ -1,0 +1,84 @@
+﻿capital = 202 #Kiev
+
+#oob = "UKR_1936"
+
+### Country Leader ###
+
+recruit_character = UKR_Vasyl_Vyshyvani
+
+### Corps Commander ###
+
+recruit_character = UKR_Myron_Tarnavsky
+recruit_character = UKR_Pavlo_Skoropadsky
+recruit_character = UKR_Mykhailo_Omelianovych_Pavlenko
+recruit_character = UKR_Oleksander_Hrekov
+recruit_character = UKR_Mykhailo_Sadovsky
+recruit_character = UKR_Yuriy_Tyutyunnyk
+recruit_character = UKR_Volodymyr_Sinclair
+recruit_character = UKR_Vsevolod_Petriv
+recruit_character = UKR_Pavel_Bermondt_Avalovk
+recruit_character = UKR_Petro_Franko
+recruit_character = UKR_Andrei_Shkuro
+recruit_character = UKR_Dmytro_Vitovsky
+recruit_character = UKR_Nikolay_Lavrentievich_Maksimov
+recruit_character = UKR_Hnat_Stefaniv
+recruit_character = UKR_Gadd_Alexander_Ottovich
+recruit_character = UKR_Mykhailo_Ivanovych_Bilynsky
+
+set_research_slots = 3
+set_stability = 0.5
+set_war_support = 0.3
+set_convoys = 30
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	motorised_infantry = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_military_police = 1
+	gw_artillery = 1
+	fuel_silos = 1
+	fuel_refining = 1
+}
+
+if = {
+	limit = {
+		has_dlc = "By Blood Alone"
+	}
+		#set_air_oob = "UKR_1936_air"
+	set_technology = {
+		aa_lmg = 1
+		engines_1 = 1
+		aircraft_construction = 1
+		iw_small_airframe = 1
+		iw_medium_airframe = 1
+	}
+	else = {
+		set_technology = {
+			early_fighter = 1
+			fighter1 = 1
+			early_bomber = 1
+			CAS1 = 1
+			naval_bomber1 = 1
+		}
+	}
+}
+
+set_popularities = {
+	conservatism = 10
+	authoritarianism = 65
+	social_democratism = 25
+	patriotic_socialism = 0
+	corporatism = 0
+	democratic_socialism = 0
+	populism = 0
+	social_liberalism = 0
+}
+set_politics = {
+	ruling_party = authoritarianism
+	last_election = "1935.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}

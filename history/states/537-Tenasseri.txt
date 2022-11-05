@@ -1,0 +1,32 @@
+
+state={
+	id=537
+	name="STATE_537"
+	manpower = 622400
+	
+	state_category = rural
+	
+	resources={
+		rubber=5 # was: 10
+		tungsten=4 # was: 2
+	}
+
+	history={
+		owner = BRM
+		add_core_of = BRM
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		victory_points = {
+			1403 1 
+		}
+		victory_points = {
+			1315 1 
+		}
+	}
+
+	provinces={
+		1296 1315 1385 1403 4408 7295 12125 12238 12292 4275 10217
+	}
+}

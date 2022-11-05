@@ -1,0 +1,38 @@
+state={
+	id=634
+	name="STATE_634"
+
+	history={
+		owner = DNG	
+		add_core_of = DNG
+		buildings = {
+			infrastructure = 1
+			1269 = {
+				naval_base = 2
+			}
+			
+			7390 = {
+				naval_base = 1
+			}
+			
+			4226 = {
+				naval_base = 1
+
+			}
+
+		}
+		victory_points = {
+			1269 3 
+		}
+		victory_points = {
+			4226 1 
+		}
+
+	}
+
+	provinces={
+		1042 1085 1269 4226 4252 7390 10319 12265 
+	}
+	manpower=150000
+	state_category= small_island
+}

@@ -1,0 +1,30 @@
+state=
+{
+	id=801
+	name="STATE_801" #Tianjin 
+	manpower = 1356000
+	state_category = metropolis
+	
+	
+	history=
+	{
+		owner = QNG
+		add_core_of = QNG
+		victory_points = {
+			10068 20 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 3
+			dockyard = 5
+			10068 = {
+				naval_base = 8
+				coastal_bunker = 3
+				bunker = 1
+			}
+		}
+	}
+	provinces={
+		10068
+	}
+}

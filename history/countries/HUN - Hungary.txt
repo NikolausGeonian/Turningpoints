@@ -1,0 +1,46 @@
+﻿capital = 43
+
+#oob = "HUN_1936"
+
+set_research_slots = 3
+set_stability = 0.7
+set_war_support = 0.6
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_recon = 1
+	gw_artillery = 1
+	fuel_silos = 1
+}
+
+set_popularities = {
+	conservatism = 4
+	authoritarianism = 44
+	social_democratism = 0
+	patriotic_socialism = 0
+	corporatism = 30
+	democratic_socialism = 0
+	populism = 22
+	social_liberalism = 0
+}
+
+set_politics = {
+	ruling_party = populism
+	last_election = "1935.1.1"
+	election_frequency = 60
+	elections_allowed = yes
+}
+create_country_leader = {
+	name = "Kocsárd Janky"
+	desc = "POLITICS_KOCSARD_JANKY_DESC"
+	picture = "gfx/leaders/HAB/Portrait_Kocsard_Janky.dds"
+	expire = "1967.10.17"
+	ideology = despotism_subtype
+	traits = {
+		#
+	}
+}
+
+

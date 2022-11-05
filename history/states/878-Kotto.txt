@@ -1,0 +1,17 @@
+state = {
+	id=878
+	name="STATE_878" #Kotto
+	manpower = 264009
+	state_category = pastoral
+	
+	history = {
+		owner = DAK
+		add_core_of = DAK
+		buildings = {
+			infrastructure = 0
+		}			
+	}
+	provinces={
+		3165 5084 13257 13279 13280
+	}
+}

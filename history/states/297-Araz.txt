@@ -1,0 +1,19 @@
+state = {
+	id=297
+	name="STATE_297" # Araz
+	manpower = 186696
+	
+	state_category = rural
+	
+	history = {
+		owner = ARM
+		add_core_of = ARM
+	
+		buildings = {
+			infrastructure = 2
+		}
+	}
+	provinces = {
+		4660 6642 6997  	
+	}
+}

@@ -1,0 +1,35 @@
+state = {
+	id=855
+	name="STATE_855" #Neuchâtel
+	manpower = 1455878
+	state_category = city
+	
+	history = {
+		owner = SWI
+		add_core_of = SWI
+		
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+			arms_factory = 2
+		}
+		
+			victory_points = {
+				6666 10
+			}
+			
+			victory_points = {
+				6683 5
+			}
+			
+			victory_points = {
+				11590 3
+			}
+		
+	}
+	
+	provinces={
+		3612 6666 6683 9622 11590 13124
+		
+	}
+}

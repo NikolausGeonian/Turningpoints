@@ -1,0 +1,73 @@
+﻿capital = 317
+
+#oob = "NIC_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	tech_support = 1	
+	tech_mountaineers = 1
+	early_fighter = 1
+}
+set_war_support = 0.1
+set_convoys = 10
+
+set_politics = {
+	ruling_party = patriotic_socialism
+	last_election = "1934.2.11"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	conservatism = 0
+	authoritarianism = 0
+	social_democratism = 0
+	patriotic_socialism = 100
+	corporatism = 0
+	democratic_socialism = 0
+	populism = 0
+	social_liberalism = 0
+}
+
+
+create_country_leader = {
+	name = "Juan Bautista Sacasa"
+	desc = "POLITICS_JUAN_BAUTISTA_SACASA_DESC"
+	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_4.dds"
+	expire = "1965.1.1"
+	ideology = social_liberalism_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Augusto César Sandino"
+	desc = "POLITICS_ANASTASIO_SOMOZA_GARCIA_DESC"
+	picture = "gfx/leaders/NIC/Portrait_Augusto_Cesar_Sandino.dds"
+	expire = "1965.1.1"
+	ideology = liberation_nationalism_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Anastasio Somoza"
+	desc = "POLITICS_ANASTASIO_SOMOZA_GARCIA_DESC"
+	picture = "gfx/leaders/NIC/Portrait_Anastasio_Somoza_Garcia.dds"
+	expire = "1965.1.1"
+	ideology = national_syndicalism_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Anastasio Somoza"
+	desc = "POLITICS_ANASTASIO_SOMOZA_GARCIA_DESC"
+	picture = "gfx/leaders/NIC/Portrait_Anastasio_Somoza_Garcia.dds"
+	expire = "1965.1.1"
+	ideology = despotism_subtype
+	traits = {
+		#
+	}
+}

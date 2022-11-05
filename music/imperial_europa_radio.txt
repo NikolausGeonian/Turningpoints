@@ -1,0 +1,115 @@
+music_station = "tp_ie_music"
+###############TURNINGPOINTS#################
+
+###German
+music = {
+	song = "Emperor1_Allegro"
+	chance = {
+	modifier = {
+		factor = 1
+		}
+		modifier = {
+			is_german_tag = yes
+		}		
+	}	
+}
+music = {
+	song = "Emperor2_poco_adagio_cantabile"
+	chance = {
+	modifier = {
+		factor = 1
+		}
+		modifier = {
+			is_german_tag = yes
+		}		
+	}	
+}
+music = {
+	song = "Emperor3_Minuet"
+	chance = {
+	modifier = {
+		factor = 1
+		}
+		modifier = {
+			is_german_tag = yes
+		}		
+	}	
+}
+music = {
+	song = "Emperor4_Finale_Presto"
+	chance = {
+	modifier = {
+		factor = 1
+		}
+		modifier = {
+			is_german_tag = yes
+		}		
+	}	
+}
+music = {
+	song = "heil_dir_im_siegerkranz_symphonie"
+	chance = {
+	modifier = {
+		factor = 1
+		}
+		modifier = {
+			is_german_tag = yes
+		}		
+	}	
+}
+music = {
+	song = "des_grossen_kurfursten_reitermarsch"
+	chance = {
+	modifier = {
+		factor = 1
+		}
+		modifier = {
+			is_german_tag = yes
+		}		
+	}	
+}
+music = {
+	song = "erzherzog_albrecht_marsch"
+	chance = {
+	modifier = {
+		factor = 1
+		}
+		modifier = {
+			is_german_tag = yes
+		}		
+	}	
+}
+music = {
+	song = "fehrbelliner_reitermarsch"
+	chance = {
+	modifier = {
+		factor = 1
+		}
+		modifier = {
+			is_german_tag = yes
+		}		
+	}	
+}
+music = {
+	song = "fridericus_rex_grenadiermarsch"
+	chance = {
+	modifier = {
+		factor = 1
+		}
+		modifier = {
+			is_german_tag = yes
+		}		
+	}	
+}
+###British
+music = {
+	song = "forged_from_the_love_of_liberty"
+	chance = {
+	modifier = {
+		factor = 1
+		}
+		modifier = {
+			is_english_tag = yes
+		}		
+	}	
+} 

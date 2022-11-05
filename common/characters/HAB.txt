@@ -1,0 +1,2304 @@
+characters = {
+	
+	### Country Leader ###
+	
+	HAB_Franz_Ferdinand = {
+		name = HAB_Franz_Ferdinand
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/HAB/Portrait_Franz_Ferdinand.dds"
+			}
+		}
+		
+		country_leader = {
+			desc = "POLITICS_HAB_FRANZ_FERDINAND_DESC"
+			ideology = semi_constitutional_monarchy_subtype
+			traits={  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		
+		country_leader = {
+			desc = "POLITICS_HAB_FRANZ_FERDINAND_DESC"
+			ideology = constitutional_monarchy_B_subtype
+			traits={  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		
+		country_leader = {
+			desc = "POLITICS_HAB_FRANZ_FERDINAND_DESC"
+			ideology = constitutional_monarchy_A_subtype
+			traits={  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		
+		country_leader = {
+			desc = "POLITICS_HAB_FRANZ_FERDINAND_DESC"
+			ideology = autocratic_monarchy_subtype
+			traits={  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+	
+	### Ministers ###
+	### HEAD OF GOVERNMENT ###
+	
+	HAB_Engelbert_Dollfuss = {
+		name = HAB_Engelbert_Dollfuss
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/HAB/ministers/HAB_Engelbert_Dollfuss.dds"
+				large = "gfx/leaders/HAB/Portrait_Engelbert_Dollfuss.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_HAB_ENGELBERT_DOLLFUSS_DESC"
+			slot = head_of_government
+			idea_token = HAB_Engelbert_Dollfuss
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = HAB
+			}
+			available = {
+				has_government = conservatism
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	HAB_Wilhelm_Miklas = {
+		name = HAB_Wilhelm_Miklas
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/HAB/ministers/HAB_Wilhelm_Miklas.dds"
+				large = "gfx/leaders/HAB/Portrait_Wilhelm_Miklas.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_HAB_WILHELM_MIKLAS_DESC"
+			slot = head_of_government
+			idea_token = HAB_Wilhelm_Miklas
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = HAB
+			}
+			available = {
+				has_government = social_liberalism
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	HAB_Richard_Schmitz = {
+		name = HAB_Richard_Schmitz
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/HAB/ministers/HAB_Richard_Schmitz.dds"
+				large = "gfx/leaders/HAB/Portrait_Richard_Schmitz.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_HAB_RICHARD_SCHMITZ_DESC"
+			slot = head_of_government
+			idea_token = HAB_Richard_Schmitz
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = HAB
+			}
+			available = {
+				has_government = conservatism
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	HAB_Pierre_Ramus = {
+		name = HAB_Pierre_Ramus
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/HAB/ministers/HAB_Pierre_Ramus.dds"
+				large = "gfx/leaders/HAB/Portrait_Pierre_Ramus.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_HAB_PIERRE_RAMUS_DESC"
+			slot = head_of_government
+			idea_token = HAB_Pierre_Ramus
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = HAB
+			}
+			available = {
+				NOT = {
+					has_idea = HAB_Pierre_Ramus_minister
+				}
+				has_government = social_democratism
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_HAB_PIERRE_RAMUS_DESC"
+			slot = foreign_minister
+			idea_token = HAB_Pierre_Ramus_minister
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = HAB
+			}
+			available = {
+				NOT = {
+					has_idea = HAB_Pierre_Ramus
+				}
+				OR = {
+					has_government = democratic_socialism
+					has_government = social_democratism
+					has_government = patriotic_socialism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	HAB_Theodor_Koerner_Edler_von_Siegringen = {
+		name = HAB_Theodor_Koerner_Edler_von_Siegringen
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/HAB/ministers/HAB_Theodor_Koerner_Edler_von_Siegringen.dds"
+				large = "gfx/leaders/HAB/Portrait_Theodor_Koerner_Edler_von_Siegringen.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_HAB_THEODOR_KOERNER_EDLER_VON_SIEGRINGEN_DESC"
+			slot = head_of_government
+			idea_token = HAB_Theodor_Koerner_Edler_von_Siegringen
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = HAB
+			}
+			visible = {	
+				NOT = { 
+					has_character = HAB_Theodor_Koerner_Edler_von_Siegringen_minister
+				}
+			}
+			available = {
+				has_government = social_democratism
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}
+
+		advisor={
+			desc = "POLITICS_HAB_THEODOR_KOERNER_EDLER_VON_SIEGRINGEN_DESC"
+			slot = foreign_minister
+			idea_token = HAB_Theodor_Koerner_Edler_von_Siegringen_minister
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = HAB
+			}
+			
+			visible = {	
+				NOT = { 
+					has_idea = HAB_Theodor_Koerner_Edler_von_Siegringen
+				}
+			}
+			
+			available = {
+				OR= {
+					has_government = conservatism
+					has_government = social_liberalism
+					has_government = social_democratism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	HAB_Arthur_Seyss_Inquart = {
+		name = HAB_Arthur_Seyss_Inquart
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/HAB/ministers/HAB_Arthur_Seyss_Inquart.dds"
+				large = "gfx/leaders/HAB/Portrait_Arthur_Seyss_Inquart.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_HAB_ARTHUR_SEYSS_INQUART_DESC"
+			slot = head_of_government
+			idea_token = HAB_Arthur_Seyss_Inquart
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = HAB
+			}
+			available = {
+				has_government = corporatism
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	HAB_Franz_Dinghofer = {
+		name = HAB_Franz_Dinghofer
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/HAB/ministers/HAB_Franz_Dinghofer.dds"
+				large = "gfx/leaders/HAB/Portrait_Franz_Dinghofer.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_HAB_FRANZ_DINGHOFER_DESC"
+			slot = head_of_government
+			idea_token = HAB_Franz_Dinghofer
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = HAB
+			}
+			available = {
+				OR = {
+					has_government = corporatism
+					has_government = populism
+					has_government = authoritarianism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	HAB_Karl_Renner = {
+		name = HAB_Karl_Renner
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/HAB/ministers/HAB_Karl_Renner.dds"
+				large = "gfx/leaders/HAB/Portrait_Karl_Renner.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_HAB_KARL_RENNER_DESC"
+			slot = head_of_government
+			idea_token = HAB_Karl_Renner
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = HAB
+			}
+			available = {
+				has_government = social_democratism
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	HAB_Karl_Seitz = {
+		name = HAB_Karl_Seitz
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/HAB/ministers/HAB_Karl_Seitz.dds"
+				large = "gfx/leaders/HAB/Portrait_Karl_Seitz.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_HAB_KARL_SEITZ_DESC"
+			slot = head_of_government
+			idea_token = HAB_Karl_Seitz
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = HAB
+			}
+			available = {
+				has_government = social_democratism
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	HAB_Stjepan_Radic = {
+		name = HAB_Stjepan_Radic
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/HAB/ministers/HAB_Stjepan_Radic.dds"
+				large = "gfx/leaders/HAB/Portrait_Stjepan_Radic.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_HAB_STJEPAN_RADIC_DESC"
+			slot = head_of_government
+			idea_token = HAB_Stjepan_Radic
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = HAB
+			}
+			visible = {
+				NOT = {
+					has_idea = HAB_Stjepan_Radic_minister
+				}
+			}
+			available = {
+				OR = {
+					has_government = social_liberalism
+					has_government = conservatism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_HAB_STJEPAN_RADIC_DESC"
+			slot = foreign_minister
+			idea_token = HAB_Stjepan_Radic_minister
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = HAB
+			}
+			visible = {
+				NOT = {
+					has_idea = HAB_Stjepan_Radic
+				}
+			}
+			available = {
+				OR = {
+					has_government = social_liberalism
+					has_government = conservatism
+					has_government = social_democratism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	### FOREIGN MINISTER ###
+	
+	HAB_Kurt_von_Schuschnigg = {
+		name = HAB_Kurt_von_Schuschnigg
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/HAB/ministers/HAB_Kurt_von_Schuschnigg.dds"
+				large = "gfx/leaders/HAB/Portrait_Kurt_von_Schuschnigg.dds"
+			}
+		}
+
+		advisor={
+			desc = "POLITICS_HAB_KURT_VON_SCHUSCHNIGG_DESC"
+			slot = foreign_minister
+			idea_token = HAB_Kurt_von_Schuschnigg
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = HAB
+			}
+			available = {
+				OR = {
+					has_government = conservatism
+					has_government = authoritarianism
+					has_government = corporatism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}			
+	}	
+	
+	
+	HAB_Karl_Buresch = {
+		name = HAB_Karl_Buresch
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/HAB/ministers/HAB_Karl_Buresch.dds"
+				large = "gfx/leaders/HAB/Portrait_Karl_Buresch.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_HAB_KARL_BURESCH_DESC"
+			slot = foreign_minister
+			idea_token = HAB_Karl_Buresch
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = HAB
+			}
+			available = {
+				OR= {
+					has_government = conservatism
+					has_government = social_liberalism
+					has_government = social_democratism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	HAB_Richard_von_Coudenhove_Kalergi = {
+		name = HAB_Richard_von_Coudenhove_Kalergi
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/HAB/ministers/HAB_Richard_von_Coudenhove_Kalergi.dds"
+				large = "gfx/leaders/HAB/Portrait_Richard_von_Coudenhove_Kalergi.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_HAB_RICHARD_VON_COUDENHOVE_KALERGI_DESC"
+			slot = foreign_minister
+			idea_token = HAB_Richard_von_Coudenhove_Kalergi
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = HAB
+			}
+			available = {
+				OR= {
+					has_government = conservatism
+					has_government = social_liberalism
+					has_government = social_democratism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}
+
+		advisor = {
+			desc = "THEORIST_HAB_LEO_SZILARD_DESC"
+			cost = 150
+			slot = theorist
+			idea_token = HAB_Richard_von_Coudenhove_Kalergi_theorist
+			allowed = {
+				original_tag = HAB
+			}
+			research_bonus = {
+			}
+			traits = {
+			}
+		}		
+	}
+	
+	HAB_Ivan_Subasic = {
+		name = HAB_Ivan_Subasic
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/HAB/ministers/HAB_Ivan_Subasic.dds"
+				large = "gfx/leaders/HAB/Portrait_Ivan_Subasic.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_HAB_IVAN_SUBASIC_DESC"
+			slot = foreign_minister
+			idea_token = HAB_Ivan_Subasic
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = HAB
+			}
+			available = {
+				OR= {
+					has_government = conservatism
+					has_government = social_liberalism
+					has_government = social_democratism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	HAB_Guido_Schmidt = {
+		name = HAB_Guido_Schmidt
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/HAB/ministers/HAB_Guido_Schmidt.dds"
+				large = "gfx/leaders/HAB/Portrait_Guido_Schmidt.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_HAB_GUIDO_SCHMIDT_DESC"
+			slot = foreign_minister
+			idea_token = HAB_Guido_Schmidt
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = HAB
+			}
+			available = {
+				OR = {
+					has_government = corporatism
+					has_government = conservatism
+					has_government = authoritarianism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	HAB_Emmerich_Czermak = {
+		name = HAB_Emmerich_Czermak
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/HAB/ministers/HAB_Emmerich_Czermak.dds"
+				large = "gfx/leaders/HAB/Portrait_Emmerich_Czermak.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_HAB_EMMERICH_CZERMAK_DESC"
+			slot = foreign_minister
+			idea_token = HAB_Emmerich_Czermak
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = HAB
+			}
+			available = {
+				OR= {
+					has_government = conservatism
+					has_government = social_liberalism
+					has_government = social_democratism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	HAB_Theodor_Innitzer = {
+		name = HAB_Theodor_Innitzer
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/HAB/ministers/HAB_Theodor_Innitzer.dds"
+				large = "gfx/leaders/HAB/Portrait_Theodor_Innitzer.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_HAB_THEODOR_INNITZER_DESC"
+			slot = foreign_minister
+			idea_token = HAB_Theodor_Innitzer
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = HAB
+			}
+			available = {
+				OR= {
+					has_government = social_liberalism
+					has_government = authoritarianism
+					has_government = conservatism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	HAB_Jusztinian_Gyorgy_Seredi = {
+		name = HAB_Jusztinian_Gyorgy_Seredi
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/HAB/ministers/HAB_Jusztinian_Gyorgy_Seredi.dds"
+				large = "gfx/leaders/HAB/Portrait_Jusztinian_Gyorgy_Seredi.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_HAB_JUSZTINIAN_GYORGY_SEREDI_DESC"
+			slot = foreign_minister
+			idea_token = HAB_Jusztinian_Gyorgy_Seredi
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = HAB
+			}
+			available = {
+				OR= {
+					has_government = social_liberalism
+					has_government = social_democratism
+					has_government = conservatism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	HAB_Hermann_Foppa = {
+		name = HAB_Hermann_Foppa
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/HAB/ministers/HAB_Hermann_Foppa.dds"
+				large = "gfx/leaders/HAB/Portrait_Hermann_Foppa.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_HAB_HERMANN_FOPPA_DESC"
+			slot = foreign_minister
+			idea_token = HAB_Hermann_Foppa
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = HAB
+			}
+			available = {
+				OR= {
+					has_government = authoritarianism
+					has_government = conservatism
+					has_government = populism
+					has_government = corporatism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	HAB_Archduchess_Elisabeth_Marie_of_Austria = {
+		name = HAB_Archduchess_Elisabeth_Marie_of_Austria
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/HAB/ministers/HAB_Archduchess_Elisabeth_Marie_of_Austria.dds"
+				large = "gfx/leaders/HAB/Portrait_Archduchess_Elisabeth_Marie_of_Austria.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_HAB_ARCHDUCHESS_ELISABETH_MARIE_OF_AUSTRIA_DESC"
+			slot = foreign_minister
+			idea_token = HAB_Archduchess_Elisabeth_Marie_of_Austria
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = HAB
+			}
+			available = {
+				OR= {
+					has_government = conservatism
+					has_government = authoritarianism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	###	ECONOMY MINISTER ###
+	
+	HAB_Rudolf_Hilferding = {
+		name = HAB_Rudolf_Hilferding
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/HAB/ministers/HAB_Rudolf_Hilferding.dds"
+				large = "gfx/leaders/HAB/Portrait_Rudolf_Hilferding.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_HAB_RUDOLF_HILFERDING_DESC"
+			slot = economy_minister
+			idea_token = HAB_Rudolf_Hilferding
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = HAB
+			}
+			available = {
+				OR= {
+					has_government = social_democratism
+					has_government = democratic_socialism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	HAB_Odo_Neustadter_Sturmer = {
+		name = HAB_Odo_Neustadter_Sturmer
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/HAB/ministers/HAB_Odo_Neustadter_Sturmer.dds"
+				large = "gfx/leaders/HAB/Portrait_Odo_Neustadter_Sturmer.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_HAB_ODO_NEUSTADTER_STURMER_DESC"
+			slot = economy_minister
+			idea_token = HAB_Odo_Neustadter_Sturmer
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = HAB
+			}
+			available = {
+				OR= {
+					has_government = social_liberalism
+					has_government = social_democratism
+					has_government = conservatism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	HAB_Karl_von_Skoda = {
+		name = HAB_Karl_von_Skoda
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/HAB/ministers/HAB_Karl_von_Skoda.dds"
+				large = "gfx/leaders/HAB/Portrait_Karl_von_Skoda.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_HAB_KARL_VON_SKODA_DESC"
+			slot = economy_minister
+			idea_token = HAB_Karl_von_Skoda
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = HAB
+			}
+			available = {
+				OR= {
+					has_government = social_liberalism
+					has_government = conservatism
+					has_government = authoritarianism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	HAB_Hugo_Breitner = {
+		name = HAB_Hugo_Breitner
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/HAB/ministers/HAB_Hugo_Breitner.dds"
+				large = "gfx/leaders/HAB/Portrait_Hugo_Breitner.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_HAB_HUGO_BREITNER_DESC"
+			slot = economy_minister
+			idea_token = HAB_Hugo_Breitner
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = HAB
+			}
+			available = {
+				has_government = social_democratism
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	HAB_Julius_Deutsch = {
+		name = HAB_Julius_Deutsch
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/HAB/ministers/HAB_Julius_Deutsch.dds"
+				large = "gfx/leaders/HAB/Portrait_Julius_Deutsch.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_HAB_JULIUS_DEUTSCH_DESC"
+			slot = economy_minister
+			idea_token = HAB_Julius_Deutsch
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = HAB
+			}
+			available = {
+				OR= {
+					has_government = social_liberalism
+					has_government = social_democratism
+					has_government = conservatism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	HAB_Johann_Bohm = {
+		name = HAB_Johann_Bohm
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/HAB/ministers/HAB_Johann_Bohm.dds"
+				large = "gfx/leaders/HAB/Portrait_Johann_Bohm.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_HAB_JOHANN_BOHM_DESC"
+			slot = economy_minister
+			idea_token = HAB_Johann_Bohm
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = HAB
+			}
+			available = {
+				OR= {
+					has_government = social_liberalism
+					has_government = social_democratism
+					has_government = conservatism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	HAB_Aleksandar_Ehrmann = {
+		name = HAB_Aleksandar_Ehrmann
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/HAB/ministers/HAB_Aleksandar_Ehrmann.dds"
+				large = "gfx/leaders/HAB/Portrait_Aleksandar_Ehrmann.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_HAB_ALEKSANDAR_EHRMANN_DESC"
+			slot = economy_minister
+			idea_token = HAB_Aleksandar_Ehrmann
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = HAB
+			}
+			available = {
+				OR= {
+					has_government = social_liberalism
+					has_government = social_democratism
+					has_government = conservatism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	HAB_Walter_Breisky = {
+		name = HAB_Walter_Breisky
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/HAB/ministers/HAB_Walter_Breisky.dds"
+				large = "gfx/leaders/HAB/Portrait_Walter_Breisky.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_HAB_WALTER_BREISKY_DESC"
+			slot = economy_minister
+			idea_token = HAB_Walter_Breisky
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = HAB
+			}
+			available = {
+				OR= {
+					has_government = social_liberalism
+					has_government = social_democratism
+					has_government = conservatism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	HAB_Ivan_Rikard_Ivanovic = {
+		name = HAB_Ivan_Rikard_Ivanovic
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/HAB/ministers/HAB_Ivan_Rikard_Ivanovic.dds"
+				large = "gfx/leaders/HAB/Portrait_Ivan_Rikard_Ivanovic.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_HAB_IVAN_RIKARD_IVANOVIC_DESC"
+			slot = economy_minister
+			idea_token = HAB_Ivan_Rikard_Ivanovic
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = HAB
+			}
+			available = {
+				OR= {
+					has_government = social_liberalism
+					has_government = social_democratism
+					has_government = conservatism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	HAB_Ludwig_von_Mises = {
+		name = HAB_Ludwig_von_Mises
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/HAB/ministers/HAB_Ludwig_von_Mises.dds"
+				large = "gfx/leaders/HAB/Portrait_Ludwig_von_Mises.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_HAB_LUDWIG_VON_MISES_DESC"
+			slot = economy_minister
+			idea_token = HAB_Ludwig_von_Mises
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = HAB
+			}
+			available = {
+				OR= {
+					has_government = social_liberalism
+					has_government = authoritarianism
+					has_government = conservatism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	HAB_Eduard_Heinl = {
+		name = HAB_Eduard_Heinl
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/HAB/ministers/HAB_Eduard_Heinl.dds"
+				large = "gfx/leaders/HAB/Portrait_Eduard_Heinl.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_HAB_EDUARD_HEINL_DESC"
+			slot = economy_minister
+			idea_token = HAB_Eduard_Heinl
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = HAB
+			}
+			available = {
+				OR= {
+					has_government = social_liberalism
+					has_government = social_democratism
+					has_government = conservatism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	HAB_Otto_Ender = {
+		name = HAB_Otto_Ender
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/HAB/ministers/HAB_Otto_Ender.dds"
+				large = "gfx/leaders/HAB/Portrait_Otto_Ender.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_HAB_OTTO_ENDER_DESC"
+			slot = economy_minister
+			idea_token = HAB_Otto_Ender
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = HAB
+			}
+			available = {
+				OR= {
+					has_government = social_liberalism
+					has_government = social_democratism
+					has_government = conservatism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	### FIELD MARSHAL ###
+	
+	HAB_Karl_I = {
+		name = HAB_Karl_I
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/HAB/ministers/HAB_Karl_I.dds"
+				large = "gfx/leaders/HAB/Portrait_Karl_I.dds"
+			}
+		}
+		
+		field_marshal = {
+			desc = "MARSHAL_HAB_KARL_I_MARSHAL_DESC"
+			traits = { media_personality }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	
+	HAB_Joseph_Habsburg = {
+		name = HAB_Joseph_Habsburg
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/HAB/ministers/HAB_Joseph_Habsburg.dds"
+				large = "gfx/leaders/HAB/Portrait_Joseph_Habsburg.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "MARSHAL_HAB_JOSEPH_HABSBURG_DESC"
+			slot = army_chief
+			idea_token = HAB_Joseph_Habsburg
+			allowed = {
+				original_tag = HAB
+			}
+			traits = { army_chief_offensive_2 }
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		field_marshal = {
+			desc = "MARSHAL_HAB_JOSEPH_HABSBURG_DESC"
+			traits = { war_hero old_guard logistics_wizard inspirational_leader }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	
+	HAB_Kocsard_Janky = {
+		name = HAB_Kocsard_Janky
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/HAB/ministers/HAB_Kocsard_Janky.dds"
+				large = "gfx/leaders/HAB/Portrait_Kocsard_Janky.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "MARSHAL_HAB_KOCSARD_JANKY_DESC"
+			slot = army_chief
+			idea_token = HAB_Kocsard_Janky
+			allowed = {
+				original_tag = HAB
+			}
+			traits = { army_chief_old_guard }
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		field_marshal = {
+			desc = "MARSHAL_HAB_KOCSARD_JANKY_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	
+	HAB_Viktor_Hoppe = {
+		name = HAB_Viktor_Hoppe
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/HAB/ministers/HAB_Viktor_Hoppe.dds"
+				large = "gfx/leaders/HAB/Portrait_Viktor_Hoppe.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "MARSHAL_HAB_VIKTOR_HOPPE_DESC"
+			slot = army_chief
+			idea_token = HAB_Viktor_Hoppe
+			allowed = {
+				original_tag = HAB
+			}
+			traits = { army_chief_drill_2 }
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		field_marshal = {
+			desc = "MARSHAL_HAB_VIKTOR_HOPPE_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	
+	HAB_Stanislaw_Szeptycki = {
+		name = HAB_Stanislaw_Szeptycki
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/HAB/ministers/HAB_Stanislaw_Szeptycki.dds"
+				large = "gfx/leaders/HAB/Portrait_Stanislaw_Szeptycki.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "MARSHAL_HAB_STANISLAW_SZEPTYCKI_DESC"
+			slot = army_chief
+			idea_token = HAB_Stanislaw_Szeptycki
+			allowed = {
+				original_tag = HAB
+			}
+			traits = { army_chief_organizational_2 } 
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		field_marshal = {
+			desc = "MARSHAL_HAB_STANISLAW_SZEPTYCKI_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	
+	### CORPS COMMANDER ###
+	
+	HAB_Wilhelm_Gebauer = {
+		name = HAB_Wilhelm_Gebauer
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/HAB/ministers/HAB_Wilhelm_Gebauer.dds"
+				large = "gfx/leaders/HAB/Portrait_Wilhelm_Gebauer.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "GENERAL_HAB_WILHELM_GEBAUER_DESC"
+			slot = high_command
+			idea_token = HAB_Wilhelm_Gebauer
+			allowed = {
+				original_tag = HAB
+			}
+			traits = { army_logistics_2 }
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_HAB_WILHELM_GEBAUER_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	
+	HAB_Alfred_Jansa = {
+		name = HAB_Alfred_Jansa
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/HAB/ministers/HAB_Alfred_Jansa.dds"
+				large = "gfx/leaders/HAB/Portrait_Alfred_Jansa.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "GENERAL_HAB_ALFRED_JANSA_DESC"
+			slot = army_chief
+			idea_token = HAB_Alfred_Jansa
+			allowed = {
+				original_tag = HAB
+			}
+			traits = { army_chief_maneuver_1 }
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_HAB_ALFRED_JANSA_DESC"
+			traits = { organizer trickster }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	
+	HAB_Ludwig_von_Eimannsberger = {
+		name = HAB_Ludwig_von_Eimannsberger
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/HAB/ministers/HAB_Ludwig_von_Eimannsberger.dds"
+				large = "gfx/leaders/HAB/Portrait_Ludwig_von_Eimannsberger.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "GENERAL_HAB_LUDWIG_VON_EIMANNSBERGER_DESC"
+			slot = army_chief
+			idea_token = HAB_Ludwig_von_Eimannsberger
+			allowed = {
+				original_tag = HAB
+			}
+			traits = { army_chief_morale_1 }
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_HAB_LUDWIG_VON_EIMANNSBERGER_DESC"
+			traits = { trait_engineer panzer_leader }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	
+	HAB_Josef_Bily = {
+		name = HAB_Josef_Bily
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/HAB/ministers/HAB_Josef_Bily.dds"
+				large = "gfx/leaders/HAB/Portrait_Josef_Bily.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "GENERAL_HAB_JOSEF_BILY_DESC"
+			slot = army_chief
+			idea_token = HAB_Josef_Bily
+			allowed = {
+				original_tag = HAB
+			}
+			traits = { army_chief_organizational_2 }
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_HAB_JOSEF_BILY_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	
+	HAB_Vilmos_Nagy = {
+		name = HAB_Vilmos_Nagy
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/HAB/ministers/HAB_Vilmos_Nagy.dds"
+				large = "gfx/leaders/HAB/Portrait_Vilmos_Nagy.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "GENERAL_HAB_VILMOS_NAGY_DESC"
+			slot = army_chief
+			idea_token = HAB_Josef_Bily
+			allowed = {
+				original_tag = HAB
+			}
+			traits = { army_chief_morale_2 }
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_HAB_VILMOS_NAGY_DESC"
+			traits = { brilliant_strategist }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	
+	HAB_Eduard_Horak = {
+		name = HAB_Eduard_Horak
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/HAB/ministers/HAB_Eduard_Horak.dds"
+				large = "gfx/leaders/HAB/Portrait_Eduard_Horak.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_HAB_EDUARD_HORAK_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	
+	HAB_Vladimir_Laxa = {
+		name = HAB_Vladimir_Laxa
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/HAB/ministers/HAB_Vladimir_Laxa.dds"
+				large = "gfx/leaders/HAB/Portrait_Vladimir_Laxa.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_HAB_VLADIMIR_LAXA_DESC"
+			traits = {  }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	
+	HAB_Erhard_Raus = {
+		name = HAB_Erhard_Raus
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/HAB/ministers/HAB_Erhard_Raus.dds"
+				large = "gfx/leaders/HAB/Portrait_Erhard_Raus.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_HAB_ERHARD_RAUS_DESC"
+			traits = { armor_officer panzer_leader trickster }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	
+	HAB_Jany_Gusztav = {
+		name = HAB_Jany_Gusztav
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/HAB/ministers/HAB_Jany_Gusztav.dds"
+				large = "gfx/leaders/HAB/Portrait_Jany_Gusztav.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_HAB_JANY_GUSZTAV_DESC"
+			traits = { old_guard }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	
+	HAB_Friedrich_Materna = {
+		name = HAB_Friedrich_Materna
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/HAB/ministers/HAB_Friedrich_Materna.dds"
+				large = "gfx/leaders/HAB/Portrait_Friedrich_Materna.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_HAB_FRIEDRICH_MATERNA_DESC"
+			traits = { infantry_leader ambusher skilled_staffer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	
+	HAB_Lothar_Rendulic = {
+		name = HAB_Lothar_Rendulic
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/HAB/ministers/HAB_Lothar_Rendulic.dds"
+				large = "gfx/leaders/HAB/Portrait_Lothar_Rendulic.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_HAB_LOTHAR_RENDULIC_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	
+	HAB_Julius_Ringel = {
+		name = HAB_Julius_Ringel
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/HAB/ministers/HAB_Julius_Ringel.dds"
+				large = "gfx/leaders/HAB/Portrait_Julius_Ringel.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_HAB_JULIUS_RINGEL_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	
+	HAB_Valentin_Feurstein = {
+		name = HAB_Valentin_Feurstein
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/HAB/ministers/HAB_Valentin_Feurstein.dds"
+				large = "gfx/leaders/HAB/Portrait_Valentin_Feurstein.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_HAB_VALENTIN_FEURSTEIN_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	
+	HAB_Wilhelm_Zehner = {
+		name = HAB_Wilhelm_Zehner
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/HAB/ministers/HAB_Wilhelm_Zehner.dds"
+				large = "gfx/leaders/HAB/Portrait_Wilhelm_Zehner.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_HAB_WILHELM_ZEHNER_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	
+	HAB_Sigismund_Schilhawsky = {
+		name = HAB_Sigismund_Schilhawsky
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/HAB/ministers/HAB_Sigismund_Schilhawsky.dds"
+				large = "gfx/leaders/HAB/Portrait_Sigismund_Schilhawsky.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_HAB_SIGISMUND_SCHILHAWSKY_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	
+	HAB_Franz_Bohme = {
+		name = HAB_Franz_Bohme
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/HAB/ministers/HAB_Franz_Bohme.dds"
+				large = "gfx/leaders/HAB/Portrait_Franz_Bohme.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_HAB_FRANZ_BOHME_DESC"
+			traits = { hill_fighter winter_specialist }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	
+	HAB_Dezso_Laszlo = {
+		name = HAB_Dezso_Laszlo
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/HAB/ministers/HAB_Dezso_Laszlo.dds"
+				large = "gfx/leaders/HAB/Portrait_Dezso_Laszlo.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_HAB_DEZSO_LASZLO_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	
+	HAB_Eduard_Barger = {
+		name = HAB_Eduard_Barger
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/HAB/ministers/HAB_Eduard_Barger.dds"
+				large = "gfx/leaders/HAB/Portrait_Eduard_Barger.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_HAB_EDUARD_BARGER_DESC"
+			traits = { trait_engineer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	
+	HAB_Josef_Votruba = {
+		name = HAB_Josef_Votruba
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/HAB/ministers/HAB_Josef_Votruba.dds"
+				large = "gfx/leaders/HAB/Portrait_Josef_Votruba.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "GENERAL_HAB_JOSEF_VOTRUBA_DESC"
+			slot = army_chief
+			idea_token = HAB_Josef_Votruba
+			allowed = {
+				original_tag = HAB
+			}
+			traits = { army_chief_planning_1 }
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_HAB_JOSEF_VOTRUBA_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	
+	HAB_Karl_Bornemann = {
+		name = HAB_Karl_Bornemann
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/HAB/ministers/HAB_Karl_Bornemann.dds"
+				large = "gfx/leaders/HAB/Portrait_Karl_Bornemann.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_HAB_KARL_BORNEMANN_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	
+	HAB_Mihajlo_Lukic = {
+		name = HAB_Mihajlo_Lukic
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/HAB/ministers/HAB_Mihajlo_Lukic.dds"
+				large = "gfx/leaders/HAB/Portrait_Mihajlo_Lukic.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_HAB_MIHAJLO_LUKIC_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	
+	HAB_Wladyslaw_Sikorski = {
+		name = HAB_Wladyslaw_Sikorski
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/HAB/ministers/HAB_Wladyslaw_Sikorski.dds"
+				large = "gfx/leaders/HAB/Portrait_Wladyslaw_Sikorski.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_HAB_WLADYSLAW_SIKORSKI_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	
+	HAB_Fedor_Dragojlov = {
+		name = HAB_Fedor_Dragojlov
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/HAB/ministers/HAB_Fedor_Dragojlov.dds"
+				large = "gfx/leaders/HAB/Portrait_Fedor_Dragojlov.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_HAB_FEDOR_DRAGOJLOV_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	
+	HAB_Slavko_Kvaternik = {
+		name = HAB_Slavko_Kvaternik
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/HAB/ministers/HAB_Slavko_Kvaternik.dds"
+				large = "gfx/leaders/HAB/Portrait_Slavko_Kvaternik.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_HAB_SLAVKO_KVATERNIK_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	
+	### ADMIRAL ###
+	
+	HAB_Miklos_Horthy = {
+		name = HAB_Miklos_Horthy
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/HAB/ministers/HAB_Miklos_Horthy.dds"
+				large = "gfx/leaders/HAB/Portrait_Miklos_Horthy.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "ADMIRAL_HAB_MIKLOS_HORTHY_DESC"
+			slot = high_command
+			idea_token = HAB_Miklos_Horthy
+			allowed = {
+				original_tag = HAB
+			}
+			traits = { navy_fleet_logistics_2 }
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		navy_leader = {
+			desc = "ADMIRAL_HAB_MIKLOS_HORTHY_DESC"
+			traits = { superior_tactician old_guard_navy }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	
+	HAB_Benno_von_Millenkovich = {
+		name = HAB_Benno_von_Millenkovich
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/HAB/ministers/HAB_Benno_von_Millenkovich.dds"
+				large = "gfx/leaders/HAB/Portrait_Benno_von_Millenkovich.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "ADMIRAL_HAB_BENNO_VON_MILLENKOVICH_DESC"
+			slot = high_command
+			idea_token = HAB_Benno_von_Millenkovich
+			allowed = {
+				original_tag = HAB
+			}
+			traits = { navy_naval_air_defense_3 }
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		navy_leader = {
+			desc = "ADMIRAL_HAB_BENNO_VON_MILLENKOVICH_DESC"
+			traits = { old_guard_navy }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	
+	HAB_Georg_von_Trapp = {
+		name = HAB_Georg_von_Trapp
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/HAB/ministers/HAB_Georg_von_Trapp.dds"
+				large = "gfx/leaders/HAB/Portrait_Georg_von_Trapp.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "ADMIRAL_HAB_GEORG_VON_TRAPP_DESC"
+			slot = navy_chief
+			idea_token = HAB_Georg_von_Trapp
+			allowed = {
+				original_tag = HAB
+			}
+			traits = { navy_screen_2 }
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		navy_leader = {
+			desc = "ADMIRAL_HAB_GEORG_VON_TRAPP_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	
+	HAB_Metod_Koch = {
+		name = HAB_Metod_Koch
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/HAB/ministers/HAB_Metod_Koch.dds"
+				large = "gfx/leaders/HAB/Portrait_Metod_Koch.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "ADMIRAL_HAB_METOD_KOCH_DESC"
+			slot = navy_chief
+			idea_token = HAB_Metod_Koch
+			allowed = {
+				original_tag = HAB
+			}
+			traits = { navy_chief_decisive_battle_2 }
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		navy_leader = {
+			desc = "ADMIRAL_HAB_METOD_KOCH_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	
+	HAB_Viktor_Klobucar_Rukavina_von_Bunica = {
+		name = HAB_Viktor_Klobucar_Rukavina_von_Bunica
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/HAB/ministers/HAB_Viktor_Klobucar_Rukavina_von_Bunica.dds"
+				large = "gfx/leaders/HAB/Portrait_Viktor_Klobucar_Rukavina_von_Bunica.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "ADMIRAL_HAB_VIKTOR_KLOBUCAR_RUKAVINA_VON_BUNICA_DESC"
+			slot = navy_chief
+			idea_token = HAB_Viktor_Klobucar_Rukavina_von_Bunica
+			allowed = {
+				original_tag = HAB
+			}
+			traits = { navy_chief_naval_aviation_2 }
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		navy_leader = {
+			desc = "ADMIRAL_HAB_VIKTOR_KLOBUCAR_RUKAVINA_VON_BUNICA_DESC"
+			traits = { aviation_enthusiast }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	
+	HAB_Janko_Vukovic = {
+		name = HAB_Janko_Vukovic
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/HAB/ministers/HAB_Janko_Vukovic.dds"
+				large = "gfx/leaders/HAB/Portrait_Janko_Vukovic.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "ADMIRAL_HAB_JANKO_VUKOVIC_DESC"
+			slot = navy_chief
+			idea_token = HAB_Janko_Vukovic
+			allowed = {
+				original_tag = HAB
+			}
+			traits = { navy_capital_ship_2 }
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		navy_leader = {
+			desc = "ADMIRAL_HAB_JANKO_VUKOVIC_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	
+	HAB_Heinrich_Pergler_von_Perglas = {
+		name = HAB_Heinrich_Pergler_von_Perglas
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/HAB/ministers/HAB_Heinrich_Pergler_von_Perglas.dds"
+				large = "gfx/leaders/HAB/Portrait_Heinrich_Pergler_von_Perglas.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "ADMIRAL_HAB_HEINRICH_PERGLER_VON_PERGLAS_DESC"
+			slot = navy_chief
+			idea_token = HAB_Heinrich_Pergler_von_Perglas
+			allowed = {
+				original_tag = HAB
+			}
+			traits = { navy_chief_maneuver_1 }
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		navy_leader = {
+			desc = "ADMIRAL_HAB_HEINRICH_PERGLER_VON_PERGLAS_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	
+	HAB_Duro_Jakcin = {
+		name = HAB_Duro_Jakcin
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/HAB/ministers/HAB_Duro_Jakcin.dds"
+				large = "gfx/leaders/HAB/Portrait_Duro_Jakcin.dds"
+			}
+		}
+		
+		navy_leader = {
+			desc = "ADMIRAL_HAB_DURO_JAKCIN_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	
+	HAB_Friedrich_von_Tarbuk_Sensenhorst = {
+		name = HAB_Friedrich_von_Tarbuk_Sensenhorst
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/HAB/ministers/HAB_Friedrich_von_Tarbuk_Sensenhorst.dds"
+				large = "gfx/leaders/HAB/Portrait_Friedrich_von_Tarbuk_Sensenhorst.dds"
+			}
+		}
+		
+		navy_leader = {
+			desc = "ADMIRAL_HAB_FRIEDRICH_VON_TARBUK_SENSENHORST_DESC"
+			traits = {  }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	
+	### THEORIST ###
+	
+	HAB_Leo_Szilard = {
+		name = HAB_Leo_Szilard
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/HAB/ministers/HAB_Leo_Szilard.dds"
+				large = "gfx/leaders/HAB/Portrait_Leo_Szilard.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "THEORIST_HAB_LEO_SZILARD_DESC"
+			cost = 150
+			slot = theorist
+			idea_token = HAB_Leo_Szilard
+			allowed = {
+				original_tag = HAB
+			}
+			research_bonus = {
+				nuclear = 0.15
+			}
+			traits = {
+				nuclear_scientist
+			}
+		}
+	}
+	
+	HAB_John_von_Neumann = {
+		name = HAB_John_von_Neumann
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/HAB/ministers/HAB_John_von_Neumann.dds"
+				large = "gfx/leaders/HAB/Portrait_John_von_Neumann.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "THEORIST_HAB_JOHN_VON_NEUMANN_DESC"
+			cost = 150
+			slot = theorist
+			idea_token = HAB_John_von_Neumann
+			allowed = {
+				original_tag = HAB
+			}
+			research_bonus = {
+				computing_tech = 0.1
+				decryption_tech = 0.1
+			}
+			traits = {
+				nuclear_scientist
+			}
+		}
+	}
+	
+	### AIRFORCE ###
+	
+	HAB_Alexander_Lohr = {
+		name = HAB_Alexander_Lohr
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/HAB/ministers/HAB_Alexander_Lohr.dds"
+				large = "gfx/leaders/HAB/Portrait_Alexander_Lohr.dds"
+			}
+		}
+		
+		advisor={
+			desc = "PIOLT_HAB_ALEXANDER_LOHR_DESC"
+			slot = high_command
+			idea_token = HAB_Alexander_Lohr
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = HAB
+			}
+			traits = { air_close_air_support_2 }
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+}

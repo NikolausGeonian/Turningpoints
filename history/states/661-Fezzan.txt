@@ -1,0 +1,23 @@
+state={
+	id=661
+	name="STATE_661"
+	manpower = 17617
+	
+	state_category = pastoral
+	
+	history={
+		owner = LBY
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = LBY
+		
+		victory_points = {
+			12022 1 
+		}
+	}
+	
+	provinces={
+		1994 4962 5004 5035 10104 10884 12022 10754
+	}
+}

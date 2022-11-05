@@ -1,0 +1,16 @@
+state = {
+	id=890
+	name="STATE_890" #Gao
+	manpower = 344120
+	state_category = pastoral
+	history = {
+		owner = AZA
+		add_core_of = AZA
+		buildings = {
+			infrastructure = 1
+		}		
+	}
+	provinces={
+		5101 7954 10788 13336
+	}
+}

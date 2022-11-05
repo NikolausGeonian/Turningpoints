@@ -1,0 +1,194 @@
+﻿###########################
+# News Events
+###########################
+
+add_namespace = worldnews
+###	George V's Death
+news_event = {
+	id = worldnews.1
+	title = worldnews.1.t
+	desc = worldnews.1.d
+	picture = GFX_GBR_kings_death
+	major = yes
+	mean_time_to_happen = {
+		days = 1
+	}
+	trigger = {
+		tag = GBR
+		date > 1936.1.20
+	}
+	fire_only_once = yes
+	option = {
+		name = worldnews.1.a
+		trigger = {
+			NOT = {
+				TAG = GBR
+				TAG = CAN
+				TAG = BEA
+				TAG = RAJ
+				TAG = AUS
+				TAG = NZL
+				TAG = SAF
+				TAG = CAF
+				TAG = BWI
+				TAG = NOM
+				TAG = BGC
+			}
+		}
+	}
+	option = {
+		name = worldnews.1.b
+		trigger = { 
+				TAG = CAN
+				TAG = BEA
+				TAG = RAJ
+				TAG = AUS
+				TAG = NZL
+				TAG = SAF
+				TAG = CAF
+				TAG = BWI
+				TAG = NOM
+				TAG = BGC
+		}
+	}
+	option = {
+		name = worldnews.1.c
+		trigger = { 
+				TAG = GBR
+		}
+		kill_country_leader = yes
+		set_global_flag = KING_GEORGE_V_DEATH
+		create_country_leader = {
+			name = "Edward VIII"
+			desc = "POLITICS_EDWARD_VIII_DESC"
+			picture = "gfx/leaders/GBR/Portrait_Edward_VIII.dds"
+			expire = "1972.5.28"
+			ideology = constitutional_monarchy_B_subtype
+			traits = {}
+		}
+		create_country_leader = {
+			name = "Edward VIII"
+			desc = "POLITICS_EDWARD_VIII_DESC"
+			picture = "gfx/leaders/GBR/Portrait_Edward_VIII.dds"
+			expire = "1972.5.28"
+			ideology = constitutional_monarchy_A_subtype
+			traits = {}
+		}
+		create_country_leader = {
+			name = "Edward VIII"
+			desc = "POLITICS_EDWARD_VIII_DESC"
+			picture = "gfx/leaders/GBR/Portrait_Edward_VIII.dds"
+			expire = "1972.5.28"
+			ideology = constitutional_monarchy_C_subtype
+			traits = {}
+		}
+		create_country_leader = {
+			name = "Edward VIII"
+			desc = "POLITICS_EDWARD_VIII_DESC"
+			picture = "gfx/leaders/GBR/Portrait_Edward_VIII.dds"
+			expire = "1972.5.28"
+			ideology = autocratic_monarchy_subtype
+			traits = {}
+		}
+	}
+}
+
+
+
+### Kaiser Franz's Death
+news_event = {
+	id = worldnews.7
+	title = worldnews.7.t
+	desc = worldnews.7.d
+	picture = GFX_HAB_kaisers_death
+	major = yes
+	mean_time_to_happen = {
+		days = 1
+	}
+	trigger = {
+		tag = HAB
+		date > 1937.2.17
+	}
+	fire_only_once = yes
+	option = {
+		name = worldnews.7.a
+		trigger = {
+			NOT = {
+				tag = HAB
+			}
+		}
+	}
+	option = {
+		name = worldnews.7.b
+		trigger = { 
+				tag = HAB
+		}
+		create_country_leader = {
+			name = "Karl I"
+			desc = "POLITICS_KARL_I_DESC"
+			picture = "gfx/leaders/HAB/Portrait_Karl_I_Kaiser.dds"
+			expire = "1972.5.28"
+			ideology = constitutional_monarchy_A_subtype
+			traits = {}
+		}
+		create_country_leader = {
+			name = "Karl I"
+			desc = "POLITICS_KARL_I_DESC"
+			picture = "gfx/leaders/HAB/Portrait_Karl_I_Kaiser.dds"
+			expire = "1972.5.28"
+			ideology = constitutional_monarchy_B_subtype
+			traits = {}
+		}
+		create_country_leader = {
+			name = "Karl I"
+			desc = "POLITICS_KARL_I_DESC"
+			picture = "gfx/leaders/HAB/Portrait_Karl_I_Kaiser.dds"
+			expire = "1972.5.28"
+			ideology = semi_constitutional_monarchy_subtype
+			traits = {}
+		}
+		create_country_leader = {
+			name = "Karl I"
+			desc = "POLITICS_KARL_I_DESC"
+			picture = "gfx/leaders/HAB/Portrait_Karl_I_Kaiser.dds"
+			expire = "1972.5.28"
+			ideology = autocratic_monarchy_subtype
+			traits = {}
+		}
+	}
+} 
+###	Great Japan War###
+news_event = {
+	id = worldnews.8
+	immediate = {log = "[GetDateText]: [Root.GetName]: event worldnews.8"}
+	title = worldnews.8.t
+	#picture = GFX_news_event_second_american_civil_war
+
+	desc = {
+		text = worldnews.1.d.jap
+		trigger = {
+			tag = JAP
+			tag = NJP
+		}
+	}
+	desc = {
+		text = worldnews.1.d.all
+		trigger = {
+			NOT = {
+				tag = JAP
+				tag = NJP
+				}
+		}
+	}
+	major = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		wants_world_news = yes
+	}
+	major = yes
+	option = {
+		name = worldnews.1.a
+	}
+}
+

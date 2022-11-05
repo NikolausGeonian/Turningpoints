@@ -1,0 +1,24 @@
+
+state={
+	id=783
+	name="STATE_783" #Latgales 
+	manpower = 720500
+	
+	state_category = rural	
+	history={
+		owner = RUS
+		add_claim_by = UBD
+		add_core_of = RUS
+		victory_points = {
+			310 5 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+	}
+
+	provinces={
+		222 310 319 341 3298 6459 7482 9275 11222
+	}
+}

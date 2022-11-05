@@ -1,0 +1,20 @@
+state={
+	id=662
+	name="STATE_662"
+	manpower = 13213
+	
+	state_category = wasteland
+	
+	impassable = yes
+	history={
+		owner = LBY
+		buildings = {
+			infrastructure = 0
+		}
+		add_core_of = LBY
+	}
+	
+	provinces={
+		1140 
+	}
+}

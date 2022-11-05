@@ -1,0 +1,3 @@
+provinces可以直接在psd里编辑保存
+
+terrain、river等需要拖回索引保存

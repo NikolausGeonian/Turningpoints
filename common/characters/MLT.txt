@@ -1,0 +1,29 @@
+characters={
+
+	### Country Leader ###
+
+	MLT_Ludovico_Chigi_Albani_della_Rovere = {
+		name = MLT_Ludovico_Chigi_Albani_della_Rovere
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MLT/Portrait_Ludovico_Chigi_Albani_della_Rovere.dds"
+			}
+		}
+		country_leader = {
+			desc = "POLITICS_LUDOVICO_CHIGI_DESC"
+			ideology = semi_constitutional_monarchy_subtype
+			id = -1
+		}
+		
+		country_leader = {
+			desc = "POLITICS_LUDOVICO_CHIGI_DESC"
+			ideology = autocratic_monarchy_subtype
+			id = -1
+		}
+	}
+	
+	### General ###
+	
+	### Ministers ###
+	
+}

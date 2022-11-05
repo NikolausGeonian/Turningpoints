@@ -1,0 +1,487 @@
+# Allows you to create your own dynamic keys
+# to be called in localization.
+# defined_text -> this is it, we're defining the text
+# text -> a discrete entry that can be picked to display in loc.
+# trigger -> determines if a text entry will be picked or not.
+# (The triggers need to be valid for the scope the key is called in
+# (eg Root or From.From).)
+# localization_key -> points to the localization key
+# that'll be used if trigger passes
+
+
+defined_text = {
+	name = GetNewsHeadline
+	
+	#### VANILA
+	#### FRA
+	text = {
+		trigger = {
+			original_tag = FRA
+			has_government = social_democratism
+		}
+		localization_key = news_headline_1
+	}
+	text = {
+		trigger = {
+			original_tag = FRA
+			has_government = corporatism
+		}
+		localization_key = news_headline_2
+	}
+	text = {
+		trigger = {
+			original_tag = FRA
+			has_government = populism
+		}
+		localization_key = news_headline_3
+	}
+	text = {
+		trigger = {
+			original_tag = FRA
+				has_government = democratic_socialism
+		}
+		localization_key = news_headline_4
+	}
+	text = {
+		trigger = {
+			original_tag = FRA
+				has_government = patriotic_socialism
+		}
+		localization_key = news_headline_5
+	}
+	text = {
+		trigger = {
+			original_tag = FRA
+				has_government = social_liberalism
+		}
+		localization_key = news_headline_6
+	}
+	text = {
+		trigger = {
+			original_tag = FRA
+				has_government = conservatism
+		}
+		localization_key = news_headline_7
+	}
+	text = {
+		trigger = {
+			original_tag = FRA
+				has_government = authoritarianism
+		}
+		localization_key = news_headline_8
+	}
+	
+	#### GBR
+	text = {
+		trigger = {
+			original_tag = GBR
+			has_government = democratic_socialism
+		}
+		localization_key = news_headline_9
+	}
+	text = {
+		trigger = {
+			original_tag = GBR
+			has_government = patriotic_socialism
+		}
+		localization_key = news_headline_10
+	}
+	text = {
+		trigger = {
+			original_tag = GBR
+			has_government = social_democratism
+		}
+		localization_key = news_headline_11
+	}
+	text = {
+		trigger = {
+			original_tag = GBR
+			has_government = social_liberalism
+		}
+		localization_key = news_headline_12
+	}
+	text = {
+		trigger = {
+			original_tag = GBR
+			has_government = conservatism
+		}
+		localization_key = news_headline_13
+	}
+	text = {
+		trigger = {
+			original_tag = GBR
+			has_government = authoritarianism
+		}
+		localization_key = news_headline_14
+	}
+	text = {
+		trigger = {
+			original_tag = GBR
+			has_government = populism
+		}
+		localization_key = news_headline_15
+	}
+	text = {
+		trigger = {
+			original_tag = GBR
+			has_government = corporatism
+		}
+		localization_key = news_headline_16
+	}
+	
+	
+	#### GER
+	text = {
+		trigger = {
+			original_tag = GER
+			has_government = democratic_socialism
+		}
+		localization_key = news_headline_17
+	}
+	text = {
+		trigger = {
+			original_tag = GER
+			has_government = patriotic_socialism
+		}
+		localization_key = news_headline_18
+	}
+	text = {
+		trigger = {
+			original_tag = GER
+			has_government = social_democratism
+		}
+		localization_key = news_headline_19
+	}
+	text = {
+		trigger = {
+			original_tag = GER
+			has_government = social_liberalism
+		}
+		localization_key = news_headline_20
+	}
+	text = {
+		trigger = {
+			original_tag = GER
+			has_government = conservatism
+		}
+		localization_key = news_headline_21
+	}
+	text = {
+		trigger = {
+			original_tag = GER
+			has_government = authoritarianism
+		}
+		localization_key = news_headline_22
+	}
+	text = {
+		trigger = {
+			original_tag = GER
+			has_government = populism
+		}
+		localization_key = news_headline_23
+	}
+	text = {
+		trigger = {
+			original_tag = GER
+			has_government = corporatism
+		}
+		localization_key = news_headline_24
+	}
+	
+	#### RUS
+	text = {
+		trigger = {
+			original_tag = RUS
+			has_government = democratic_socialism
+		}
+		localization_key = news_headline_25
+	}
+	text = {
+		trigger = {
+			original_tag = RUS
+			has_government = patriotic_socialism
+		}
+		localization_key = news_headline_26
+	}
+	text = {
+		trigger = {
+			original_tag = RUS
+			has_government = social_democratism
+		}
+		localization_key = news_headline_27
+	}
+	text = {
+		trigger = {
+			original_tag = RUS
+			has_government = social_liberalism
+		}
+		localization_key = news_headline_28
+	}
+	text = {
+		trigger = {
+			original_tag = RUS
+			has_government = conservatism
+		}
+		localization_key = news_headline_29
+	}
+	text = {
+		trigger = {
+			original_tag = RUS
+			has_government = authoritarianism
+		}
+		localization_key = news_headline_30
+	}
+	text = {
+		trigger = {
+			original_tag = RUS
+			has_government = populism
+		}
+		localization_key = news_headline_31
+	}
+	text = {
+		trigger = {
+			original_tag = RUS
+			has_government = corporatism
+		}
+		localization_key = news_headline_32
+	}
+	
+	#### OTE
+	text = {
+		trigger = {
+			original_tag = OTE
+			has_government = democratic_socialism
+		}
+		localization_key = news_headline_33
+	}
+	text = {
+		trigger = {
+			original_tag = OTE
+			has_government = patriotic_socialism
+		}
+		localization_key = news_headline_34
+	}
+	text = {
+		trigger = {
+			original_tag = OTE
+			has_government = social_democratism
+		}
+		localization_key = news_headline_35
+	}
+	text = {
+		trigger = {
+			original_tag = OTE
+			has_government = social_liberalism
+		}
+		localization_key = news_headline_36
+	}
+	text = {
+		trigger = {
+			original_tag = OTE
+			has_government = conservatism
+		}
+		localization_key = news_headline_37
+	}
+	text = {
+		trigger = {
+			original_tag = OTE
+			has_government = authoritarianism
+		}
+		localization_key = news_headline_38
+	}
+	text = {
+		trigger = {
+			original_tag = OTE
+			has_government = populism
+		}
+		localization_key = news_headline_39
+	}
+	text = {
+		trigger = {
+			original_tag = OTE
+			has_government = corporatism
+		}
+		localization_key = news_headline_40
+	}
+	
+	#### JAP
+	text = {
+		trigger = {
+			original_tag = JAP
+			has_government = democratic_socialism
+		}
+		localization_key = news_headline_41
+	}
+	text = {
+		trigger = {
+			original_tag = JAP
+			has_government = patriotic_socialism
+		}
+		localization_key = news_headline_42
+	}
+	text = {
+		trigger = {
+			original_tag = JAP
+			has_government = social_democratism
+		}
+		localization_key = news_headline_43
+	}
+	text = {
+		trigger = {
+			original_tag = JAP
+			has_government = social_liberalism
+		}
+		localization_key = news_headline_44
+	}
+	text = {
+		trigger = {
+			original_tag = JAP
+			has_government = conservatism
+		}
+		localization_key = news_headline_45
+	}
+	text = {
+		trigger = {
+			original_tag = JAP
+			has_government = authoritarianism
+		}
+		localization_key = news_headline_46
+	}
+	text = {
+		trigger = {
+			original_tag = JAP
+			has_government = populism
+		}
+		localization_key = news_headline_47
+	}
+	text = {
+		trigger = {
+			original_tag = JAP
+			has_government = corporatism
+		}
+		localization_key = news_headline_48
+	}
+	
+	#### NJP
+	text = {
+		trigger = {
+			original_tag = NJP
+			has_government = democratic_socialism
+		}
+		localization_key = news_headline_41
+	}
+	text = {
+		trigger = {
+			original_tag = NJP
+			has_government = patriotic_socialism
+		}
+		localization_key = news_headline_42
+	}
+	text = {
+		trigger = {
+			original_tag = NJP
+			has_government = social_democratism
+		}
+		localization_key = news_headline_49
+	}
+	text = {
+		trigger = {
+			original_tag = NJP
+			has_government = social_liberalism
+		}
+		localization_key = news_headline_50
+	}
+	text = {
+		trigger = {
+			original_tag = NJP
+			has_government = conservatism
+		}
+		localization_key = news_headline_51
+	}
+	text = {
+		trigger = {
+			original_tag = NJP
+			has_government = authoritarianism
+		}
+		localization_key = news_headline_46
+	}
+	text = {
+		trigger = {
+			original_tag = NJP
+			has_government = populism
+		}
+		localization_key = news_headline_47
+	}
+	text = {
+		trigger = {
+			original_tag = NJP
+			has_government = corporatism
+		}
+		localization_key = news_headline_48
+	}
+	
+	#### QNG
+	text = {
+		trigger = {
+			original_tag = QNG
+			has_government = democratic_socialism
+		}
+		localization_key = news_headline_52
+	}
+	text = {
+		trigger = {
+			original_tag = QNG
+			has_government = patriotic_socialism
+		}
+		localization_key = news_headline_53
+	}
+	text = {
+		trigger = {
+			original_tag = QNG
+			has_government = social_democratism
+		}
+		localization_key = news_headline_54
+	}
+	text = {
+		trigger = {
+			original_tag = QNG
+			has_government = social_liberalism
+		}
+		localization_key = news_headline_55
+	}
+	text = {
+		trigger = {
+			original_tag = QNG
+			has_government = conservatism
+		}
+		localization_key = news_headline_56
+	}
+	text = {
+		trigger = {
+			original_tag = QNG
+			has_government = authoritarianism
+		}
+		localization_key = news_headline_57
+	}
+	text = {
+		trigger = {
+			original_tag = QNG
+			has_government = populism
+		}
+		localization_key = news_headline_58
+	}
+	text = {
+		trigger = {
+			original_tag = QNG
+			has_government = corporatism
+		}
+		localization_key = news_headline_59
+	}
+	
+	
+	
+	##should be put at last
+	text = {  
+		localization_key = news_headline_0
+	}
+}

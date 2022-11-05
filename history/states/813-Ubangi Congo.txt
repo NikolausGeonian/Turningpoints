@@ -1,0 +1,21 @@
+state={
+	id=813
+	name="STATE_813" # Ubangi Congo
+	manpower = 1216783
+	resources={
+		rubber=7 
+	}
+	state_category = pastoral
+
+	history={
+		owner = KAM
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = KAM 
+	}
+
+	provinces={
+	 7931 12824 10883 12741
+	}
+}

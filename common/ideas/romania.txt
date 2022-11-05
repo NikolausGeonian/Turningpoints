@@ -1,0 +1,135 @@
+ideas = {
+	#General
+	country = {
+	
+		ROM_iron_guard = {
+
+			removal_cost = -1
+			
+			allowed = {
+				original_tag = ROM
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			modifier = {				
+				resistance_damage_to_garrison = -0.2 
+				foreign_subversive_activites = -0.2
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+			}
+		}
+		
+	}
+	# POLITICAL
+	
+	# TECHNOLOGY
+	naval_manufacturer = {
+		designer = yes
+	}
+	materiel_manufacturer = {
+		designer = yes
+		
+		ROM_Romloc = {
+
+			allowed = {
+				original_tag = ROM
+			}
+			
+			research_bonus = {
+				motorized_equipment = 0.15
+			}
+			
+			traits = { motorized_equipment_manufacturer }
+			
+		}
+		
+		ROM_cugir = {
+			
+			allowed = {
+				original_TAG = ROM
+			}
+			
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+			
+		}
+		
+	}
+	
+	tank_manufacturer = {
+
+		designer = yes
+	
+		ROM_malaxa = {
+
+			allowed = {
+				original_tag = ROM
+			}
+						
+			research_bonus = {
+				armor = 0.15
+			}
+			
+
+			traits = { fast_tank_manufacturer }
+		}
+	}
+	
+	aircraft_manufacturer = { 		
+			
+		designer = yes
+		
+		ROM_Industria_Aeronautica_Romana = {
+			
+			cost = 150
+
+			allowed = {
+				original_tag = ROM
+			}
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { light_aircraft_manufacturer }
+			
+			equipment_bonus = {
+				# produced the IAR-80 fighter/ground attack aircraft around 350 of them during 36-44
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	industrial_concern = {
+	
+		ROM_Steaua_Romana = {
+			
+			allowed = {
+				original_tag = ROM
+			}
+			
+			research_bonus = {
+				industry = 0.15
+				synth_resources = 0.15
+			}
+			
+			traits = { refinery_concern }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+	}
+	
+}
+		

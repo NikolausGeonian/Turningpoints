@@ -1,0 +1,51 @@
+#by CMCMC
+#texture for scripted gui properties
+
+defined_text = { 
+	name = GetFactionIcon
+		
+	text = {
+		trigger = { 
+			is_in_faction_with = GER
+		}
+		localization_key = GFX_faction_mitteleuropa
+	}
+	text = {
+		trigger = { 
+			is_in_faction_with = RUS
+		}
+		localization_key = GFX_faction_comintern
+	}
+	text = {
+		trigger = { 
+			is_in_faction_with = FRA
+		}
+		localization_key = GFX_faction_francaise
+	}
+	text = {
+		trigger = { 
+			is_in_faction_with = GBR
+		}
+		localization_key = GFX_faction_westminster
+	}
+	text = {
+		trigger = { 
+			is_in_faction_with = PAP
+		}
+		localization_key = GFX_faction_confoederatio
+	}
+	text = {
+		trigger = { 
+			is_in_faction_with = QNG
+		}
+		localization_key = GFX_faction_celestial
+	}
+	text = {
+		trigger = { 
+		#generic
+		 }
+		localization_key = GFX_generic_faction_button
+	}	
+}
+
+

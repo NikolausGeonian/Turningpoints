@@ -1,0 +1,38 @@
+state={
+	id=9
+	name="STATE_9"
+	manpower = 6592600
+	resources = {
+		steel = 8
+	}
+	
+	state_category = metropolis
+	
+	history={
+		owner = HAB
+		victory_points = { 
+			11542 20 
+		}
+		victory_points = { 
+			9569 1 
+		}
+		victory_points = { 
+			583 3 
+		}
+		victory_points = { 
+			9541 3 
+		}
+		buildings = {
+			infrastructure = 4
+			arms_factory = 6
+			industrial_complex = 1
+			anti_air_building = 5
+			air_base = 5
+		}
+		add_core_of = HAB
+	}
+
+	provinces={
+		445 494 543 583 3462 5283 6440 9414 9429 9541 9569 11525 11542 11556 
+	}
+}

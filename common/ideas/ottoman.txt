@@ -1,0 +1,354 @@
+ideas = {
+	#General
+	country = {
+		OTE_OPDA = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.3
+				war_support_factor = -0.3
+				industrial_capacity_factory = -0.3
+				industrial_capacity_dockyard = -0.3
+				production_speed_arms_factory_factor = -0.3
+				production_speed_dockyard_factor = -0.2
+				production_speed_naval_base_factor = -0.6
+				production_speed_coastal_bunker_factor = -0.6
+				production_speed_bunker_factor = -0.6
+				production_speed_air_base_factor = -0.2
+				production_speed_anti_air_building_factor = -0.6
+				production_speed_radar_station_factor = -0.6
+				consumer_goods_factor = 0.2
+				production_factory_efficiency_gain_factor = -0.2
+				
+			}
+		}
+	
+	}
+	# TECHNOLOGY
+	naval_manufacturer = {
+		designer = yes
+		
+		OTE_Anadolu_Shipyard = {
+
+			
+			allowed = {
+				original_tag = OTE
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { raiding_fleet_naval_manufacturer }
+			
+			equipment_bonus = {
+				
+			}
+			
+		}	
+		
+		OTE_Golcuk_Naval_Shipyard = {
+
+			
+			allowed = {
+				original_tag = OTE
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { naval_manufacturer }
+			
+			equipment_bonus = {
+				
+			}
+			
+		}	
+		
+		OTE_Pendik_Naval_Shipyard = {
+
+			
+			allowed = {
+				original_tag = OTE
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { naval_manufacturer }
+			
+			equipment_bonus = {
+				
+			}
+			
+		}	
+		
+	}
+	
+	tank_manufacturer = {
+		
+		designer = yes
+		
+		OTE_Basak_Traktor = {
+			
+			allowed = {
+				original_TAG = OTE
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { fast_tank_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		OTE_Uzel_Traktoer = {
+			
+			allowed = {
+				original_TAG = OTE
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { medium_tank_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		OTE_Koc_industry = {
+			
+			allowed = {
+				original_TAG = OTE
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { heavy_tank_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+	}
+	
+	materiel_manufacturer = {
+		
+		designer = yes
+		
+		OTE_ankara_tufek = {
+			
+			allowed = {
+				original_TAG = OTE
+			}
+			
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		OTE_Sarsilmaz_Arms = {
+			
+			allowed = {
+				original_TAG = OTE
+			}
+			
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		
+		
+	}
+	
+	industrial_concern = {
+				
+		OTE_Sabanci = {
+			
+			allowed = {
+				original_TAG = OTE
+			}
+			
+			research_bonus = {
+				industry = 0.15
+			}
+			
+			traits = {
+				refinery_concern
+				konzern
+				}
+			
+			modifier = {
+			}
+			
+		}
+		
+		OTE_Israeli_Teva = {
+			
+			allowed = {
+				original_TAG = OTE
+			}
+			
+			research_bonus = {
+				industry = 0.1
+				synth_resources = 0.15
+			}
+			
+			traits = {
+				refinery_concern
+				}
+			
+			modifier = {
+			}
+			
+		}
+		
+		OTE_Turkish_State_Railways = {
+			
+			allowed = {
+				original_TAG = OTE
+			}
+			
+			research_bonus = {
+				industry = 0.1
+			}
+			
+			traits = { construction_company state_owned }
+			
+			modifier = {
+			}
+			
+		}
+		
+		OTE_Kardemir = {
+			
+			allowed = {
+				original_TAG = OTE
+			}
+			
+			research_bonus = {
+				industry = 0.15
+			}
+			
+			traits = { electronics_concern }
+			
+			modifier = {
+			}
+			
+		}
+		
+		OTE_Anatolian_Railway = {
+			
+			allowed = {
+				original_TAG = OTE
+			}
+			
+			research_bonus = {
+				industry = 0.15
+			}
+			
+			traits = {
+				construction_company
+				}
+			
+			modifier = {
+			}
+			
+		}
+		
+		OTE_Turkish_Petroleum_Company = {
+			allowed = {
+				original_tag = OTE
+			}
+			traits = {
+				refinery_concern
+			}
+			modifier = {
+			}
+			research_bonus = {
+				industry = 0.05
+				synth_resources = 0.15
+			}
+		}
+		
+	}
+	
+	aircraft_manufacturer = { 
+			
+		designer = yes
+		
+		OTE_TamTAS = {
+			
+			allowed = {
+				original_tag = OTE
+			}
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = {
+				light_aircraft_manufacturer
+			}
+			
+			equipment_bonus = {
+				
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		OTE_Turkish_Aeronautical_Association = {
+			
+			allowed = {
+				original_tag = OTE
+			}
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = {
+				light_aircraft_manufacturer
+			}
+			
+			equipment_bonus = {
+				
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+}
+		

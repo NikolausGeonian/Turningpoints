@@ -1,0 +1,21 @@
+state = {
+	id=892
+	name="STATE_892" #Herzegovina
+	manpower = 437095	
+	state_category = rural
+	
+	history = {
+		owner = HAB
+		add_core_of = HAB
+		victory_points = {
+			9894 1
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}		
+	}
+	provinces={
+		953 6942 9894 11845 11872 
+	}
+}

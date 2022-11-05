@@ -1,0 +1,25 @@
+
+state={
+	id=228
+	name="STATE_228" # Luhansk
+	manpower = 2167411
+	
+	state_category = large_town
+
+	history={
+		owner = RUS
+		victory_points = {
+			9461 10
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		add_core_of = UKR
+		add_core_of = RUS
+	}
+
+	provinces={
+		523 547 570 3479 6505 6519 9461 11487 11513 
+	}
+}

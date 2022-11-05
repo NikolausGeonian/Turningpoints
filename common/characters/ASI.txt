@@ -1,0 +1,36 @@
+characters = {
+	
+	### Country Leader ###
+	
+	ASI_Al_Hasan_ibn_Ayad = {
+		name = ASI_Al_Hasan_ibn_Ayad
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/00_Generic/Middle_Asia/Portrait_Arabia_Generic_01.dds"
+				#Spacing Modifier
+			}
+		}
+		
+		country_leader = {
+			desc = "POLITICS_ASI_AL_HASAN_IBN_AYAD_DESC"
+			ideology = autocratic_monarchy_subtype
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	
+	}
+	
+	### Ministers ###
+	### HEAD OF GOVERNMENT ###
+	
+	### FOREIGN MINISTER ###
+	
+	###	ECONOMY MINISTER ###
+	
+	### FIELD MARSHAL ###
+	
+	### CORPS COMMANDER ###
+	
+	### ADMIRAL ###
+	
+}

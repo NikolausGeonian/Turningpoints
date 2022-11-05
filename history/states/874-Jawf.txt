@@ -1,0 +1,21 @@
+state = {
+	id=874
+	name="STATE_874" #Jawf
+	manpower = 508475
+	state_category = pastoral
+	
+	history = {
+		owner = NEJ
+		add_core_of = NEJ
+		
+		buildings = {
+			infrastructure = 1
+		}	
+		victory_points = {
+			8101 1 
+		}		
+	}
+	provinces={
+		4440 4562 7970 8101 10815 10901 12455
+	}
+}

@@ -1,0 +1,26 @@
+state = {
+	id=846
+	name="STATE_846" #Abkhazia
+	manpower = 475056
+	state_category = rural
+	history = {
+		owner = GEO
+		buildings = {
+			infrastructure = 2
+		}
+		victory_points = {
+			11599 1 # Sukhum 
+		}
+		
+		victory_points = {
+			9663 1
+		}
+		
+		add_claim_by = MRC
+		add_core_of = GEO
+	}
+	provinces={
+		11599 11617 11647 9663 3698 672 
+		
+	}
+}

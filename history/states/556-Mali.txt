@@ -1,0 +1,26 @@
+
+state={
+	id=556
+	name="STATE_556" # Mali
+	manpower = 1324782
+	
+	state_category = town
+
+	history={
+		owner = MLI
+		add_core_of = MLI
+		victory_points = {
+			4927 5
+		}
+		victory_points = {
+			13323 1
+		}
+		buildings = {
+			infrastructure = 2
+		}
+	}
+
+	provinces={
+	  4927 5045 8116 12794 13323 13324 13325
+	}
+}

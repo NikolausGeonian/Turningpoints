@@ -1,0 +1,172 @@
+﻿capital = 284
+
+#oob = "NZL_1936"
+
+# Starting tech
+set_stability = 0.8
+set_war_support = 0.3
+set_convoys = 70
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	gw_artillery = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_recon = 1
+	trench_warfare = 1
+	fleet_in_being = 1
+}
+
+set_popularities = {
+	conservatism = 65
+	authoritarianism = 0
+	social_democratism = 4
+	patriotic_socialism = 0
+	corporatism = 0
+	democratic_socialism = 0
+	populism = 0
+	social_liberalism = 31
+}
+
+set_politics = {
+	ruling_party = conservatism
+	last_election = "1935.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "George Monckton-Arundell"
+	desc = "POLITICS_MONCKTON_ARUNDELL_DESC"
+	picture = "gfx/leaders/NZL/Portrait_George_Monckton_Arundell.dds"
+	expire = "1967.10.17"
+	ideology = conservatism_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "George Monckton-Arundell"
+	desc = "POLITICS_MONCKTON_ARUNDELL_DESC"
+	picture = "gfx/leaders/NZL/Portrait_George_Monckton_Arundell.dds"
+	expire = "1967.10.17"
+	ideology = authoritarianism_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "George Monckton-Arundell"
+	desc = "POLITICS_MONCKTON_ARUNDELL_DESC"
+	picture = "gfx/leaders/NZL/Portrait_George_Monckton_Arundell.dds"
+	expire = "1967.10.17"
+	ideology = social_democratism_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "George Monckton-Arundell"
+	desc = "POLITICS_MONCKTON_ARUNDELL_DESC"
+	picture = "gfx/leaders/NZL/Portrait_George_Monckton_Arundell.dds"
+	expire = "1967.10.17"
+	ideology = social_liberalism_subtype
+	traits = {
+		#
+	}
+}
+create_corps_commander = {
+	name = "Bernard Freyberg"
+	gfx = "GFX_NZL_bernard_freyberg"
+	traits = {  }
+	skill = 4
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Robert Row"
+	gfx = "GFX_NZL_robert_row"
+	traits = { naval_invader }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "William Stevens"
+	gfx = "GFX_NZL_william_stevens"
+	traits = {  }
+	skill = 4
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_navy_leader = {
+	name = "Edmund Rupert Drummond"
+	gfx = "GFX_NZL_edmund_drummond"
+	traits = { }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 2
+}
+
+create_navy_leader = {
+	name = "Peter Phipps"
+	gfx = "GFX_NZL_peter_phipps"
+	traits = { navy_career_officer }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	maneuvering_skill = 2
+	coordination_skill = 3
+}
+
+
+### VARIANTS ###
+# 1936 Start #
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	### Ship Variants ###
+	create_equipment_variant = {
+		name = "Leander Class"
+		type = light_cruiser_1
+		upgrades = {
+			ship_reliability_upgrade = 2
+			ship_engine_upgrade = 2
+			ship_gun_upgrade = 2
+			ship_anti_air_upgrade = 2
+		}
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	# Light Cruisers #
+	create_equipment_variant = {
+		name = "Danae Class"
+		type = ship_hull_cruiser_1
+		name_group = NZL_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			mid_1_custom_slot = ship_torpedo_1
+			mid_2_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = empty
+		}
+	}
+}
+
+# 1939 Start #

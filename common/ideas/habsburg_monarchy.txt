@@ -1,0 +1,765 @@
+ideas = {
+	#General
+	country = {
+		
+		HAB_unity_0 = {
+			name = HAB_unity_0
+			picture = HAB_unity_0
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+			stability_factor = 0.05
+			political_power_cost = 0.1
+			army_org_Factor = 0.05
+			}
+		}
+		
+		HAB_unity_1 = {
+			name = HAB_unity_1
+			picture = HAB_unity_1
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+			stability_factor = 0.1
+			political_power_cost = 0.075
+			army_org_Factor = 0.025
+			}
+		}
+	}
+	# POLITICAL
+	
+	# TECHNOLOGY
+	naval_manufacturer = {	
+		
+		designer = yes	
+		
+		HAB_ganz_danubius = {
+			
+			allowed = {
+				original_tag = HAB
+			}	
+			cost = 150	
+			removal_cost = 10
+			research_bonus = {
+				
+				naval_equipment = 0.15
+				
+			}
+			traits = { naval_manufacturer }
+				
+		}
+		
+		HAB_Brodosplit = {
+			
+			allowed = {
+				
+				original_tag = HAB
+				
+			}
+			
+			cost = 150
+			
+			removal_cost = 10
+			
+			research_bonus = {
+				
+				naval_equipment = 0.15
+				
+			}
+			
+			traits = { convoy_escort_naval_manufacturer }
+				
+		}
+		
+		HAB_osterreichischer_lloyd = {
+			
+			allowed = {
+				
+				original_tag = HAB
+				
+			}
+			
+			cost = 150
+			
+			removal_cost = 10
+			
+			research_bonus = {
+				
+				naval_equipment = 0.15
+				
+			}
+			
+			traits = { atlantic_fleet_naval_manufacturer }
+				
+		}
+		
+		HAB_Donaudampfschiffahrtsgesellschaft = {
+			
+			allowed = {
+				
+				original_tag = HAB
+				
+			}
+			
+			cost = 150
+			
+			removal_cost = 10
+			
+			research_bonus = {
+				
+				naval_equipment = 0.15
+				
+			}
+			
+			traits = { raiding_fleet_naval_manufacturer }
+				
+		}
+		
+		
+	}
+	
+	materiel_manufacturer = {
+		
+		designer = yes
+		
+		HAB_steyr = {
+						
+			allowed = {
+				
+				original_tag = HAB
+				
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+			
+			research_bonus = {
+				
+				infantry_weapons = 0.15
+				
+			}
+			
+				ai_will_do = {
+					
+				factor = 2
+				
+			}
+			
+		}
+		
+		HAB_Zbrojovka_Brno = {
+	
+			allowed = {
+				
+				original_tag = HAB
+				
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+			
+			research_bonus = {
+				
+				infantry_weapons = 0.15
+				
+			}
+			
+				ai_will_do = {
+					
+				factor = 2
+				
+			}
+			
+		}
+	
+		HAB_austro_daimler = {
+			
+			allowed = {
+				
+				original_tag = HAB
+				
+			}
+			
+			research_bonus = {
+				
+				motorized_equipment = 0.15
+				
+			}
+			
+			traits = {
+				
+				motorized_equipment_manufacturer
+				
+				}
+		}
+		
+		HAB_mavag = {
+			
+			allowed = {
+				
+				original_tag = HAB
+				
+				}
+				
+			traits = {
+				
+				artillery_manufacturer
+				
+				}
+			research_bonus = {
+				
+				artillery = 0.05
+				
+			}
+			
+		}
+		
+		HAB_Wiener_Lokomotivfabrik_Floridsdorf = {
+			
+			allowed = {
+				
+				original_tag = HAB
+				
+				}
+				
+			traits = {
+				
+				artillery_manufacturer
+				
+				}
+			research_bonus = {
+				
+				artillery = 0.05
+				
+			}
+			
+		}
+		
+		HAB_Puch = {
+			
+			allowed = {
+				
+				original_tag = HAB
+				
+			}
+			
+			traits = {
+				
+				motorized_equipment_manufacturer
+				
+			}
+			
+			research_bonus = {
+				
+				motorized_equipment = 0.15
+				
+			}
+			
+		}
+		
+		HAB_Graf_and_Stift = {
+			
+			allowed = {
+				
+				original_tag = HAB
+				
+			}
+			
+			traits = {
+				
+				motorized_equipment_manufacturer
+			}
+			
+			research_bonus = {
+				
+				motorized_equipment = 0.15
+				
+			}
+			
+		}
+		
+		HAB_Osterreichische_Automobil_Fabrik = {
+			
+			allowed = {
+				
+				original_tag = HAB
+				
+			}
+			
+			traits = {
+				
+				motorized_equipment_manufacturer
+			}
+			
+			research_bonus = {
+				
+				motorized_equipment = 0.15
+				
+			}
+			
+		}
+		
+		
+	}
+	
+	tank_manufacturer = { 
+	
+		designer = yes
+		
+		HAB_skoda = {
+			
+			allowed = {
+				original_tag = HAB			
+			}			
+			
+			research_bonus = {	
+				armor = 0.05	
+			}
+			
+			modifier = {	
+				army_armor_attack_factor = 0.05	
+			}
+			
+			traits = { konzern fast_tank_manufacturer }
+				
+		}
+		
+		HAB_tatra = {
+			
+			allowed = {			
+				original_tag = HAB			
+			}			
+			
+			research_bonus = {				
+				armor = 0.05				
+			}
+			
+			modifier = {				
+				army_armor_attack_factor = 0.05				
+			}
+			
+			traits = { konzern fast_tank_manufacturer }
+				
+		}
+		
+		HAB_Duro_Dakovic = {
+			
+			allowed = {				
+				original_tag = HAB				
+			}			
+			
+			research_bonus = {				
+				armor = 0.05				
+			}
+			
+			traits = { medium_tank_manufacturer }
+				
+		}
+		
+		HAB_Laurin_and_Klement = {
+			
+			allowed = {				
+				original_tag = HAB				
+			}			
+			
+			research_bonus = {				
+				armor = 0.05		
+			}
+			
+			traits = { medium_tank_manufacturer }
+				
+		}
+		
+		HAB_Lohner = {
+			
+			allowed = {
+				original_tag = HAB	
+			}			
+			
+			research_bonus = {
+				armor = 0.05
+			}
+			
+			traits = { heavy_tank_manufacturer }
+				
+		}
+		
+		HAB_Csepel_Automobile_Factory = {
+			
+			allowed = {
+				
+				original_tag = HAB
+				
+			}			
+			
+			research_bonus = {
+				
+				armor = 0.05
+				
+			}
+			
+			traits = { medium_tank_manufacturer }
+				
+		}
+		
+		HAB_Raba = {
+			
+			allowed = {
+				
+				original_tag = HAB
+				
+			}			
+			
+			research_bonus = {
+				
+				armor = 0.05
+				
+			}
+			
+			traits = { fast_tank_manufacturer }
+				
+		}
+		
+		HAB_ceskomoravska_Kolben_danek = {
+			
+			allowed = {
+				
+				original_tag = HAB
+				
+			}			
+			
+			research_bonus = {
+				
+				armor = 0.05
+				
+			}
+			
+			traits = { fast_tank_manufacturer }
+				
+		}
+		
+		
+	}
+	
+	industrial_concern = {
+		
+		HAB_Alpine_Montangesellschaft = {
+			
+			allowed = {
+				original_tag = HAB
+			}
+			
+			research_bonus = {
+				industry = 0.15
+			}
+			
+			traits = {
+				industrial_concern
+				konzern
+				}
+			
+			ai_will_do = {
+				factor = 1
+			}
+			
+			modifier = {
+				industry_repair_factor = 0.10
+			}
+			
+		}
+		
+		HAB_Manfred_Weiss_Steel_Works = {
+			
+			allowed = {
+				original_tag = HAB
+			}
+			
+			research_bonus = {
+				industry = 0.15
+			}
+			
+			traits = {
+				industrial_concern
+				konzern
+				}
+			
+			ai_will_do = {
+				factor = 1
+			}
+			
+			modifier = {
+				industry_repair_factor = 0.10
+			}
+			
+		}
+		
+		HAB_Trinec_Iron_and_Steel_Works = {
+			
+			allowed = {
+				original_tag = HAB
+			}
+			
+			research_bonus = {
+				industry = 0.15
+			}
+			
+			traits = {
+				industrial_concern
+				}
+			
+			ai_will_do = {
+				factor = 1
+			}
+			
+			modifier = {
+				industry_repair_factor = 0.10
+			}
+			
+		}
+		
+		HAB_Semperit = {
+			
+			allowed = {
+				original_tag = HAB
+			}
+			
+			research_bonus = {
+				industry = 0.05
+				synth_resources = 0.15
+			}
+			
+			traits = {
+				industrial_concern
+				}
+			
+			ai_will_do = {
+				factor = 1
+			}
+			
+			modifier = {
+			}
+			
+		}
+		
+		HAB_Gedeon_Richter = {
+			
+			allowed = {
+				original_tag = HAB
+			}
+			
+			research_bonus = {
+				industry = 0.05
+				synth_resources = 0.15
+			}
+			
+			traits = { industrial_concern }
+			
+			ai_will_do = {
+				factor = 1
+			}
+			
+			modifier = {
+			}
+			
+		}
+		
+		HAB_Diosgyori_Gepgyar = {
+			
+			allowed = {
+				original_tag = HAB
+			}
+			
+			research_bonus = {
+				industry = 0.05
+			}
+			
+			traits = { refinery_concern }
+			
+			ai_will_do = {
+				factor = 1
+			}
+			
+			modifier = {
+				industry_repair_factor = 0.10
+			}
+			
+		}
+		
+		HAB_Kk_Staatsbahnen = {
+			
+			allowed = {
+				original_tag = HAB
+			}
+			
+			research_bonus = {
+				industry = 0.05
+			}
+			
+			traits = { construction_company }
+			
+			ai_will_do = {
+				factor = 1
+			}
+			
+			modifier = {
+				industry_repair_factor = 0.10
+			}
+			
+		}
+		
+	}
+	
+	aircraft_manufacturer = {
+	
+		designer = yes
+	
+		HAB_Phonix_Flugzeugwerke = {	
+		
+			allowed = {
+				original_tag = HAB		
+			}
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { heavy_aircraft_manufacturer }
+				
+			modifier = {
+
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+			
+		}
+		
+		HAB_Aero_Vodochody = {	
+		
+			allowed = {
+				original_tag = HAB		
+			}
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { CAS_manufacturer }
+				
+			modifier = {
+
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+			
+		}
+		
+		HAB_Jihostroj = {	
+		
+			allowed = {
+				original_tag = HAB		
+			}
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { medium_aircraft_manufacturer }
+				
+			modifier = {
+
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+			
+		}
+		
+		HAB_Lloyd_Flugzeug = {	
+		
+			allowed = {
+				
+				original_tag = HAB		
+				
+			}
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { light_aircraft_manufacturer_2 }
+				
+			modifier = {
+
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+			
+		}
+		
+	}
+	
+	research_academy = {
+		
+		HAB_kuk_technische_hochschule = {
+	
+			allowed = {
+				original_tag = HAB
+			}
+			
+			available = {
+			}
+			
+			research_bonus = {
+				research_speed_factor = 0.04
+				electronics = 0.05
+				industry_repair_factor = 0.05
+			}
+			
+			traits = {research_academy}
+
+			modifier = {
+
+			}
+		}
+		
+		HAB_Karls_Universitat = {
+	
+			allowed = {
+				original_tag = HAB
+			}
+			
+			available = {
+			}
+			
+			research_bonus = {
+				research_speed_factor = 0.04
+				nuclear = 0.10
+				synth_resources = 0.15
+			}
+			
+			traits = {research_academy}
+
+			modifier = {
+
+			}
+		}
+		
+		
+	}
+}
+		

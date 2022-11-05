@@ -1,0 +1,159 @@
+ideas = {
+	#General
+	country = {
+	}
+	
+	materiel_manufacturer = {
+			
+		designer = yes
+		
+		UPL_Huta_Ludwikow = {
+			
+			allowed = {
+				OR = {
+					original_tag = POL
+					original_tag = UPL
+				}
+			}
+			
+			research_bonus = {
+				motorized_equipment = 0.15
+			}
+			
+			traits = { motorized_equipment_manufacturer }
+			
+			modifier = {
+			}
+		}
+	}
+	
+	aircraft_manufacturer = {
+		
+		designer = yes
+		
+		UPL_PWS = {
+						
+			allowed = {
+				OR = {
+					original_tag = POL
+					original_tag = UPL	
+				}	
+			}
+			research_bonus = {
+				air_equipment = 0.1
+			}
+			
+			traits = {
+				light_aircraft_manufacturer
+			}
+
+			modifier = {
+
+			}
+		}
+	}
+	
+	naval_manufacturer = {
+		
+		designer = yes
+		
+		UPL_Baltija_Shipbuilding_Yard = {
+			
+			allowed = {
+				original_TAG = UPL
+			}
+						
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { convoy_escort_naval_manufacturer }
+
+		}
+		
+	}
+	
+	industrial_concern = {
+		
+		UPL_PKP = {
+			allowed = {
+				OR = {
+					original_tag = POL
+					original_tag = UPL
+				}
+			}
+			research_bonus = {
+				industry = 0.15
+			}
+			traits = {
+				industrial_concern
+			}
+		}
+	}
+	
+	research_academy = {
+		
+		UPL_Jagiellonian_University = {
+						
+			allowed = {
+				OR = {
+					original_tag = POL
+					original_tag = UPL
+				}
+			}
+			visible = {}
+			available = {}
+			
+			research_bonus = {
+			}
+			
+			traits = {research_academy}
+
+			modifier = {
+
+			}
+		}
+		
+		UPL_University_of_Warsaw = {
+						
+			allowed = {
+				OR = {
+					original_tag = POL
+					original_tag = UPL
+				}
+			}
+			visible = {}
+			available = {}
+			
+			research_bonus = {
+			}
+			
+			traits = {research_academy}
+
+			modifier = {
+
+			}
+		}
+		
+		UPL_Vilnius_University = {
+						
+			allowed = {
+				OR = {
+					original_tag = LIT
+					original_tag = UPL
+				}
+			}
+			visible = {}
+			available = {}
+			
+			research_bonus = {
+			}
+			
+			traits = {research_academy}
+
+			modifier = {
+
+			}
+		}
+	}
+}

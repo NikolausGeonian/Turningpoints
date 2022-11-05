@@ -1,0 +1,36 @@
+﻿capital = 879
+
+##oob = "TRI_1936"
+
+set_technology = {
+	infantry_weapons = 1
+}
+
+# Political Figure
+
+### Country Leader ###
+recruit_character = BAG_Abdul_Qadir_III
+
+### General ###
+
+
+add_ideas = {
+}
+
+set_popularities = {
+	conservatism = 5
+	authoritarianism = 90
+	social_democratism = 2
+	patriotic_socialism = 0
+	corporatism = 0
+	democratic_socialism = 0
+	populism = 0
+	social_liberalism = 3
+}
+set_politics = {
+	ruling_party = authoritarianism
+	last_election = "1935.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+

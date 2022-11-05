@@ -1,0 +1,22 @@
+state = {
+	id=848
+	name="STATE_848" #Shan
+	manpower = 2524432
+	state_category = rural
+	history = {
+		owner = BRM
+		buildings = {
+			infrastructure = 2
+		}
+		
+		add_core_of = BRM
+		
+		victory_points = {
+			1566 2 
+		}
+	}
+	provinces={
+		1170 1566 1607 2061 4585 7562 7603 12363 13220
+		
+	}
+}

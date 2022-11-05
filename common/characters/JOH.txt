@@ -1,0 +1,38 @@
+characters = {
+	
+	### Country Leader ###
+	
+	JOH_Ibrahim_Al_Masyhur = {
+		name = JOH_Ibrahim_Al_Masyhur
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/JOH/Portrait_Ibrahim_Al_Masyhur.dds"
+			}
+		}
+		country_leader = {
+			desc = "POLITICS_JOH_IBRAHIM_AL_MASYHUR_DESC"
+			ideology = semi_constitutional_monarchy_subtype
+			id = -1
+		}
+		
+		country_leader = {
+			desc = "POLITICS_JOH_IBRAHIM_AL_MASYHUR_DESC"
+			ideology = autocratic_monarchy_subtype
+			id = -1
+		}
+	}
+	
+	### Ministers ###
+	### HEAD OF GOVERNMENT ###
+	
+	### FOREIGN MINISTER ###
+	
+	###	ECONOMY MINISTER ###
+	
+	### FIELD MARSHAL ###
+	
+	### CORPS COMMANDER ###
+	
+	### ADMIRAL ###
+	
+}

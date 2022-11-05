@@ -1,0 +1,158 @@
+focus_tree = {
+	id = KIL_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = KIL
+		}
+	}
+	
+	default = no
+	
+	focus = {
+		id = KIL_I_shall_leave_this_backcountry
+		icon = GFX_goal_KIL_I_shall_leave_this_backcountry
+		x = 2
+		y = 0
+		cost = 10
+		
+		mutually_exclusive = {
+			focus = KIL_focus_on_industry
+		}
+		
+		available = {		
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = KIL_focus_on_industry
+		icon = GFX_goal_KIL_focus_on_industry
+		x = 6
+		y = 0
+		cost = 10
+		
+		mutually_exclusive = {
+			focus = KIL_I_shall_leave_this_backcountry
+		}
+		
+		available = {		
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = KIL_the_way_back_home
+		icon = GFX_goal_KIL_the_way_back_home
+		x = -1
+		y = 1
+		cost = 10	
+		relative_position_id = KIL_I_shall_leave_this_backcountry
+		prerequisite = {
+			focus = KIL_I_shall_leave_this_backcountry
+		}
+		mutually_exclusive = {
+			focus = KIL_cross_the_ocean
+		}
+		
+		available = {		
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = KIL_cross_the_ocean
+		icon = GFX_goal_KIL_cross_the_ocean
+		x = 1
+		y = 1
+		cost = 10	
+		relative_position_id = KIL_I_shall_leave_this_backcountry
+		prerequisite = {
+			focus = KIL_I_shall_leave_this_backcountry
+		}
+		mutually_exclusive = {
+			focus = KIL_the_way_back_home
+		}
+		
+		available = {		
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = KIL_construction_of_airport
+		icon = GFX_goal_KIL_construction_of_airport
+		x = -1
+		y = 2
+		cost = 10	
+		relative_position_id = KIL_the_way_back_home
+		prerequisite = {
+			focus = KIL_the_way_back_home
+		}
+		available = {		
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = KIL_construction_of_port
+		icon = GFX_goal_KIL_construction_of_port
+		x = 3
+		y = 2
+		cost = 10	
+		relative_position_id = KIL_the_way_back_home
+		prerequisite = {
+			focus = KIL_cross_the_ocean
+		}
+		available = {		
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = KIL_construction
+		icon = GFX_goal_KIL_construction
+		x = 1
+		y = 2
+		cost = 10	
+		relative_position_id = KIL_the_way_back_home
+		prerequisite = {
+			focus = KIL_cross_the_ocean
+			focus = KIL_the_way_back_home
+		}
+		available = {		
+		}
+		completion_reward = {
+		}
+	}
+	
+	
+	focus = {
+		id = KIL_the_ticket_to_USA
+		icon = GFX_goal_KIL_the_ticket_to_USA
+		x = 0
+		y = 1
+		cost = 10	
+		relative_position_id = KIL_construction_of_port
+		prerequisite = {
+			focus = KIL_construction_of_port
+		}
+		
+		available = {		
+		}
+		completion_reward = {
+		}
+	}
+	
+	
+	
+}

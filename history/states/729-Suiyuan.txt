@@ -1,0 +1,29 @@
+state={
+	id=729
+	name="STATE_729"#Suiyuan
+	manpower = 1657805
+	
+	
+	state_category = rural
+	
+	history={
+		owner = QNG
+		add_core_of = QNG
+		
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+		victory_points = {
+			7631 2
+		}
+		
+		victory_points = {
+			10424 2
+		}
+	}
+	
+	provinces={
+		7048 7158 7631 10424 12403
+	}
+}

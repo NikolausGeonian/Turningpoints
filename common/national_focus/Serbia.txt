@@ -1,0 +1,123 @@
+focus_tree = {
+	id = SER_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = SER
+		}
+	}
+	
+	default = no
+	focus = {
+		id = SER_assassinate_Musicki
+		icon = GFX_goal_SER_assassinate_Musicki
+		x = 1
+		y = 0
+		cost = 10
+		available = {		
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = SER_Alexander_I_reclaim_the_throne
+		icon = GFX_goal_SER_Alexander_I_reclaim_the_throne
+		prerequisite = {
+			focus = SER_assassinate_Musicki
+		}
+		relative_position_id = SER_assassinate_Musicki 
+		x = -5
+		y = 1
+		cost = 10
+		available = {		
+		}
+		completion_reward = {
+		}
+	}
+	
+	
+	
+	
+	
+	
+	focus = {
+		id = SER_smuggle_for_nation
+		#icon = 
+		x = 12
+		y = 0
+		cost = 10
+		available = {		
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = SER_armaments_improve
+		#icon = 
+		relative_position_id = SER_armaments_improve
+		x = 12
+		y = 0
+		cost = 10
+		prerequisite = { 
+			focus = SER_smuggle_for_nation
+		}
+		available = {		
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = SER_financial_fraud
+		#icon = 
+		x = 14
+		y = 0
+		cost = 10
+		available = {		
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = SER_industrial_credit
+		#icon = 
+		relative_position_id = SER_financial_fraud
+		x = 0
+		y = 1
+		cost = 10
+		
+		prerequisite = { 
+			focus = SER_financial_fraud
+		}
+		available = {		
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = SER_hydropower_station
+		#icon = 
+		relative_position_id = SER_industrial_credit
+		x = 0
+		y = 1
+		cost = 10
+		
+		prerequisite = { 
+			focus = SER_industrial_credit
+		}
+		available = {		
+		}
+		completion_reward = {
+		}
+	}
+	
+	
+	
+}

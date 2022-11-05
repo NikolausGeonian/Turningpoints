@@ -1,0 +1,109 @@
+﻿capital = 44
+
+oob = "ALB_1936"
+
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1
+	tech_recon = 1
+	gw_artillery = 1
+	support_weapons = 1
+}
+
+# 	POLITICAL FIGURE
+
+### Country Leader ###
+recruit_character = ALB_Skenderbeu_II
+
+### Ministers ###
+recruit_character = ALB_Abdi_Toptani
+recruit_character = ALB_Midhat_Frasheri_Bey
+recruit_character = ALB_Mehdi_Frasheri
+recruit_character = ALB_Mustafa_Merlika_Kruja
+recruit_character = ALB_Shefqet_Verlaci
+recruit_character = ALB_Vangjel_Turtulli
+recruit_character = ALB_Gjon_Markagjoni
+recruit_character = ALB_Bekir_Fikri_Bey
+recruit_character = ALB_Fan_Noli
+recruit_character = ALB_Ekrem_Libohova
+
+### General ###
+recruit_character = ALB_Prenk_Pervizi
+recruit_character = ALB_Muharrem_Bajraktari
+
+### Admiral ###
+recruit_character = ALB_Mustafa_Alibegu
+
+set_popularities = {
+	conservatism = 64
+	authoritarianism = 11
+	social_democratism = 0
+	patriotic_socialism = 0
+	corporatism = 0
+	democratic_socialism = 0
+	populism = 7
+	social_liberalism = 18
+}
+
+set_politics = {
+	ruling_party = conservatism
+	last_election = "1935.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_convoys = 17
+
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	### Variants ###
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	### Variants ###
+	create_equipment_variant = {
+		name = "Skenderbeg Class"
+		type = ship_hull_cruiser_1
+		name_group = ALB_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			mid_1_custom_slot = ship_torpedo_1
+			mid_2_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_light_medium_battery_1
+			
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			mid_1_custom_slot = ship_light_medium_battery_1
+			mid_2_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Tiranë Class"
+		type = ship_hull_light_1
+		name_group = ALB_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+				fixed_ship_battery_slot = ship_light_battery_2
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = ship_sonar_1
+				fixed_ship_engine_slot = light_ship_engine_2
+				fixed_ship_torpedo_slot = ship_torpedo_1
+				mid_1_custom_slot = ship_torpedo_1
+				rear_1_custom_slot = ship_depth_charge_1
+		}
+		obsolete = yes
+	}
+}

@@ -1,0 +1,17 @@
+state = {
+	id=884
+	name="STATE_884" #Manga
+	manpower = 293821
+	state_category = pastoral
+	
+	history = {
+		owner = NGA
+		add_core_of = NGA
+		buildings = {
+			infrastructure = 0
+		}		
+	}
+	provinces={
+		10805 10780 13289
+	}
+}

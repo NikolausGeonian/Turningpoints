@@ -1,0 +1,50 @@
+characters = {
+	
+	### Country Leader ###
+	
+	NSN_Abdul_Rahman = {
+		name = NSN_Abdul_Rahman
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NSN/Portrait_Abdul_Rahman.dds"
+			}
+		}
+		country_leader = {
+			desc = "POLITICS_NSN_ABDUL_RAHMAN_DESC"
+			ideology = constitutional_monarchy_C_subtype
+			id = -1
+		}
+		
+		country_leader = {
+			desc = "POLITICS_NSN_ABDUL_RAHMAN_DESC"
+			ideology = constitutional_monarchy_A_subtype
+			id = -1
+		}
+		
+		country_leader = {
+			desc = "POLITICS_NSN_ABDUL_RAHMAN_DESC"
+			ideology = constitutional_monarchy_B_subtype
+			id = -1
+		}
+		
+		country_leader = {
+			desc = "POLITICS_NSN_ABDUL_RAHMAN_DESC"
+			ideology = autocratic_monarchy_subtype
+			id = -1
+		}
+	}
+	
+	### Ministers ###
+	### HEAD OF GOVERNMENT ###
+	
+	### FOREIGN MINISTER ###
+	
+	###	ECONOMY MINISTER ###
+	
+	### FIELD MARSHAL ###
+	
+	### CORPS COMMANDER ###
+	
+	### ADMIRAL ###
+	
+}

@@ -1,0 +1,24 @@
+state={
+	id=803
+	name="STATE_803"
+	manpower = 1798856
+	
+	state_category = pastoral
+	history={
+		owner = SIA
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			air_base = 4
+		}
+		add_core_of = SIA
+		add_claim_by = VIN
+		victory_points = {
+				4529 1
+			}
+	}
+
+	provinces={
+			12075 10075 10103 4529 12319
+	}
+}

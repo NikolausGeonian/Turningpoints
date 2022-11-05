@@ -1,0 +1,23 @@
+
+state={
+	id=579
+	name="STATE_579" # Trentino
+	manpower = 541098
+	
+	state_category = rural
+
+	history={
+		owner = HAB
+		buildings = {
+			infrastructure = 3
+		}
+		victory_points = {
+			9598 3
+		}
+		add_core_of = HAB
+	}
+
+	provinces={
+		  6631 9598 11598      
+	}
+}

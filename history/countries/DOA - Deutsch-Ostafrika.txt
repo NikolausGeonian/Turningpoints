@@ -1,0 +1,90 @@
+﻿capital = 546 #Daressalam	
+
+#oob = "DOA_1936"
+
+# Starting tech
+set_technology = {
+	support_weapons = 1
+	tech_support = 1		
+	tech_engineers = 1
+	infantry_weapons = 1
+	marines  = 1
+	gw_artillery = 1
+	convoy_sailing = 1
+}
+set_research_slots = 2
+set_stability = 0.6
+set_war_support = 0.2
+set_convoys = 20
+give_military_access = GER
+
+add_ideas = {
+	RKA_Reichskolonialamt
+}
+
+set_popularities = {
+	conservatism = 15
+	authoritarianism = 63
+	social_democratism = 0
+	patriotic_socialism = 0
+	corporatism = 22
+	democratic_socialism = 0
+	populism = 0
+	social_liberalism = 0
+}
+set_politics = {
+	ruling_party = authoritarianism
+	last_election = "1935.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}	
+
+create_country_leader = {
+	name = "Heinrich Schnee"
+	desc = "POLITICS_HEINRICH_SCHNEE_DESC"
+	picture = "gfx/leaders/DOA/Portrait_Heinrich_Schnee.dds"
+	expire = "1949.6.23"
+	ideology = semi_constitutional_monarchy_subtype
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Heinrich Schnee"
+	desc = "POLITICS_HEINRICH_SCHNEE_DESC"
+	picture = "gfx/leaders/DOA/Portrait_Heinrich_Schnee.dds"
+	expire = "1949.6.23"
+	ideology = colony_and_dominion_subtype
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Heinrich Schnee"
+	desc = "POLITICS_HEINRICH_SCHNEE_DESC"
+	picture = "gfx/leaders/DOA/Portrait_Heinrich_Schnee.dds"
+	expire = "1949.6.23"
+	ideology = social_liberalism_subtype
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Heinrich Schnee"
+	desc = "POLITICS_HEINRICH_SCHNEE_DESC"
+	picture = "gfx/leaders/DOA/Portrait_Heinrich_Schnee.dds"
+	expire = "1949.6.23"
+	ideology = corporatism_subtype
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Heinrich Schnee"
+	desc = "POLITICS_HEINRICH_SCHNEE_DESC"
+	picture = "gfx/leaders/DOA/Portrait_Heinrich_Schnee.dds"
+	expire = "1949.6.23"
+	ideology = social_democratism_subtype
+	traits = {
+	}
+}

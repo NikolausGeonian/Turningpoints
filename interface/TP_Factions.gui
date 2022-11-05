@@ -1,0 +1,16 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "tp_factions_windows"
+		position = { x=  0 y = 0  }
+		
+		buttonType ={
+			name ="tp_factions_windows"
+			spriteType = "GFX_generic_faction_button"
+			position = { x=  19  y =   375  }
+			Orientation = "UPPER_LEFT"
+			frame = 1
+			pdx_tooltip = "[ROOT.GetFactionName]"
+		}
+	}
+}

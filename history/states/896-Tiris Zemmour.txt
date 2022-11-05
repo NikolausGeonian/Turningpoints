@@ -1,0 +1,14 @@
+state = {
+	id=896
+	name="STATE_896"  #
+	manpower = 153261
+	state_category = wasteland
+	
+	history = {
+		owner = MLI
+		add_core_of = MLI	
+	}
+	provinces={
+		1956 5011 5094 
+	}
+}

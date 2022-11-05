@@ -1,0 +1,28 @@
+state = {
+	id=850
+	name="STATE_850" #Khiva
+	manpower = 1288807
+	state_category = large_town
+	history = {
+		owner = BUK
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+		}
+		
+		add_core_of = BUK
+		
+		victory_points = {
+			12465 5 	
+		}
+		victory_points = {
+			12324 1	
+		}
+		
+	}
+	
+	provinces={
+		10395 10435 10485 12324 12465
+		
+	}
+}

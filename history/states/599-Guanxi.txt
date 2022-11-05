@@ -1,0 +1,37 @@
+state= {
+	id=599
+	name="STATE_599"
+	manpower = 12235200
+	state_category = city
+	resources={
+		tungsten=26
+		steel= 23 
+		chromium = 6 
+	}
+	history= {
+		owner = QNG
+		add_core_of = QNG
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 2
+		}
+		victory_points = { 
+			10404 15 
+		}
+		victory_points = { 
+			7137 20
+		}
+		victory_points = { 
+			4152 5
+		}
+		victory_points = { 
+			1597 10
+		}
+		
+	}
+	provinces={
+		1023 1469 1597 1625 4028 4077 4085 4121 4134 4152 4177 4628 4656 7044 7095 7128 7137 7168 7192 7210 7650 10039 10050 10105 10121 10404 10431 10459 11926 11983 12023 12407 12436 
+	}
+}

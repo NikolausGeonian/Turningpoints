@@ -1,0 +1,247 @@
+ideas = {
+	#General
+	country = {
+		UBD_ethnic_conflict = {
+		
+			allowed = {
+				original_tag = UBD
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				war_support_factor = -0.2
+				stability_factor = -0.1
+				conscription = -0.001
+			}
+		}
+		
+		UBD_under_germany_control = {
+		
+			allowed = {
+				original_tag = UBD
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+			}
+		}
+		
+	}
+	# POLITICAL
+	
+	# TECHNOLOGY
+	naval_manufacturer = {
+	
+		designer = yes
+		
+		UBD_riga_shipyard = {
+			
+			allowed = {
+				OR = {
+				original_TAG = LAT
+				original_TAG = UBD
+				}
+			}
+						
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = {
+				coastal_defence_naval_manufacturer
+			}
+		}
+		
+		UBD_Balti_Laevaremonditehas = {
+			
+			allowed = {
+				OR = {
+				original_TAG = EST
+				original_TAG = UBD
+				}
+			}
+						
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = {
+				raiding_fleet_naval_manufacturer
+			}
+		}
+		
+	}
+	
+	materiel_manufacturer = {
+		designer = yes
+		
+		UBD_arsenal_tallinn = {
+			
+			allowed = {
+				OR = {
+				original_TAG = UBD
+				original_TAG = EST
+				}
+			}
+			
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+	}
+	
+	industrial_concern = {
+		
+		UBD_Esimene_Eesti_Polevkivitoostus = {
+			
+			allowed = {
+				OR = {
+				original_TAG = UBD
+				original_TAG = EST
+				}
+			}
+			research_bonus = {
+				
+				industry = 0.02
+				synth_resources = 0.05
+				
+			}
+			traits = { 
+			
+			refinery_concern
+			
+			}
+			modifier = {
+				
+				production_speed_fuel_silo_factor = 0.05
+				production_speed_synthetic_refinery_factor = 0.05
+				
+			}
+		}
+		
+		UBD_Bellaccord_Electro = {
+			
+			allowed = {
+				original_tag = UBD
+			}
+			
+			research_bonus = {
+				electronics = 0.15
+			}
+			
+			traits = { electronics_concern }
+			
+			equipment_bonus = {
+				
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+	}
+	
+	tank_manufacturer = { 
+	
+		designer = yes	
+		
+		UBD_deu_Baltique = {
+			
+			allowed = {
+				
+				original_tag = UBD
+				
+			}
+			
+			research_bonus = {
+				
+				armor = 0.15
+				
+			}
+			
+			traits = { fast_tank_manufacturer }
+			
+			ai_will_do = {
+				
+				factor = 10
+				
+			}
+			
+		}
+	
+	}
+
+	aircraft_manufacturer = { 
+			
+		designer = yes
+		
+		UBD_Valsts_elektrotehniska_fabrika = {
+			
+			allowed = {
+				OR = {
+				original_TAG = UBD
+				original_TAG = LAT
+				}
+			}
+			research_bonus = {
+				
+				air_equipment = 0.15
+				
+			}
+			traits = { 
+			
+			light_aircraft_manufacturer
+			
+			}
+			modifier = {
+				
+			}
+		}
+		
+	}
+		
+	research_academy = {
+		
+		UBD_Tallinn_College_of_Engineering = {
+	
+			allowed = {
+				original_tag = UBD
+			}
+			
+			available = {
+			}
+			
+			research_bonus = {
+				research_speed_factor = 0.04
+				electronics = 0.05
+				industry_repair_factor = 0.05
+			}
+			
+			traits = {research_academy}
+
+			modifier = {
+
+			}
+		}
+		
+		}
+		
+}
+		

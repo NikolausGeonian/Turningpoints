@@ -1,0 +1,40 @@
+
+state={
+	id=30
+	name="STATE_30"
+	manpower = 1388400
+
+	state_category = city
+
+	history={
+		owner = NOM
+		victory_points = {
+			11465 20
+		}
+		victory_points = {
+			9478 3
+		}
+		
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			dockyard = 3
+			air_base = 2
+			11465 = {
+				bunker = 2
+			}
+			503 = {
+				bunker = 1
+			}
+			9478 = {
+				bunker = 1
+			}
+		}
+		add_core_of = FRA
+		add_core_of = NOM
+	}
+
+	provinces={
+		503 527 3495 3509 3523 9478 11463 11465
+	}
+}

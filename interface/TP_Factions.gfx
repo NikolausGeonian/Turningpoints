@@ -1,0 +1,44 @@
+spriteTypes = {
+
+	###faction icon 
+	spriteType = {
+		name = "GFX_generic_faction_button"
+		texturefile = "gfx/interface/faction/generic_faction_button.dds"  
+		legacy_lazy_load = no 
+	}
+	spriteType = {
+		name = "GFX_faction_westminster"
+		texturefile = "gfx/interface/faction/faction_westminster.dds"  
+		legacy_lazy_load = no 
+	}
+	spriteType = {
+		name = "GFX_faction_confoederatio"
+		texturefile = "gfx/interface/faction/faction_confoederatio.dds" 
+		legacy_lazy_load = no 
+	}
+	spriteType = {
+		name = "GFX_faction_francaise"
+		texturefile = "gfx/interface/faction/faction_francaise.dds" 
+		legacy_lazy_load = no 
+	}
+	spriteType = {
+		name = "GFX_faction_celestial"
+		texturefile = "gfx/interface/faction/faction_celestial.dds" 
+		legacy_lazy_load = no 
+	}
+	spriteType = {
+		name = "GFX_faction_comintern"
+		texturefile = "gfx/interface/faction/faction_comintern.dds" 
+		legacy_lazy_load = no 
+	}
+	spriteType = {
+		name = "GFX_faction_mitteleuropa"
+	texturefile = "gfx/interface/faction/faction_mitteleuropa.dds" 
+		legacy_lazy_load = no 
+	}
+
+
+
+
+
+}

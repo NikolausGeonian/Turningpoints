@@ -1,0 +1,20 @@
+state = {
+	id=877
+	name="STATE_877" #Mbomou
+	manpower = 264009
+	state_category = rural
+	
+	history = {
+		owner = RAF
+		add_core_of = RAF
+		buildings = {
+			infrastructure = 0
+		}			
+		victory_points = {
+			13274 1
+		}
+	}
+	provinces={
+		12719 13256 13273 13274 13275 13276 13277 13278
+	}
+}

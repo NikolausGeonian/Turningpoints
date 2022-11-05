@@ -1,0 +1,308 @@
+characters = {
+	
+	### Country Leader ###
+	
+	SAV_Umberto_II = {
+		name = SAV_Umberto_II
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SAV/Portrait_Umberto_II.dds"
+			}
+		}
+		
+		country_leader = {
+			desc = "POLITICS_UMBERTO_II_DESC"
+			ideology = semi_constitutional_monarchy_subtype
+			expire = "1965.1.1.1"
+		}
+		
+		country_leader = {
+			desc = "POLITICS_UMBERTO_II_DESC"
+			ideology = constitutional_monarchy_A_subtype
+			expire = "1965.1.1.1"
+		}
+		
+		country_leader = {
+			desc = "POLITICS_UMBERTO_II_DESC"
+			ideology = constitutional_monarchy_B_subtype
+			expire = "1965.1.1.1"
+		}
+		
+		country_leader = {
+			desc = "POLITICS_UMBERTO_II_DESC"
+			ideology = autocratic_monarchy_subtype
+			expire = "1965.1.1.1"
+		}
+		
+		country_leader = {
+			desc = "POLITICS_UMBERTO_II_DESC"
+			ideology = rexism_subtype
+			expire = "1965.1.1.1"
+		}
+			
+		country_leader = {
+			desc = "POLITICS_UMBERTO_II_DESC"
+			ideology = popular_monarchy_subtype
+			expire = "1965.1.1.1"
+		}
+	
+	}
+	
+	### Ministers ###
+	### HEAD OF GOVERNMENT ###
+	
+	SAV_Gabriele_D_Annunzio = {
+		name = SAV_Gabriele_D_Annunzio
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/SAV/ministers/SAV_Gabriele_D_Annunzio.dds"
+				large = "gfx/leaders/SAV/Portrait_Gabriele_D_Annunzio.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_SAV_GABRIELE_D_ANNUNZIO_DESC"
+			slot = head_of_government
+			idea_token = SAV_Gabriele_D_Annunzio
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = SAV
+			}
+			available = {
+				OR = {
+					has_government  = corporatism 
+					has_government  = populism 
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	
+	### FOREIGN MINISTER ###
+	
+	SAV_Cesare_Maria_De_Vecchi = {
+		name = SAV_Cesare_Maria_De_Vecchi
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/SAV/ministers/SAV_Cesare_Maria_De_Vecchi.dds"
+				large = "gfx/leaders/SAV/Portrait_Cesare_Maria_De_Vecchi.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_SAV_CESARE_MARIA_DE_VECCHI_DESC"
+			slot = foreign_minister
+			idea_token = SAV_Cesare_Maria_De_Vecchi
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = SAV
+			}
+			available = {
+				OR = {
+					has_government = populism
+					has_government = corporatism
+					has_government = authoritarianism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}
+	}
+	
+	###	ECONOMY MINISTER ###
+	
+	### FIELD MARSHAL ###
+	
+	SAV_Emilio_De_Bono = {
+		name = SAV_Emilio_De_Bono
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/SAV/ministers/SAV_Emilio_De_Bono.dds"
+				large = "gfx/leaders/SAV/Portrait_Emilio_De_Bono.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "MARSHAL_SAV_EMILIO_DE_BONO_DESC"
+			slot = army_chief
+			idea_token = SAV_Emilio_De_Bono
+			allowed = {
+				original_tag = SAV
+			}
+			traits = { army_chief_defensive_1 }
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		field_marshal={
+			desc = "MARSHAL_SAV_EMILIO_DE_BONO_DESC"
+			traits = { old_guard trait_cautious defensive_doctrine }
+			skill = 4
+			attack_skill = 5
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+	
+	SAV_Pietro_Badoglio = {
+		name = SAV_Pietro_Badoglio
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/SAV/ministers/SAV_Pietro_Badoglio.dds"
+				large = "gfx/leaders/SAV/Portrait_Pietro_Badoglio.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "MARSHAL_SAV_PIETRO_BADOGLIO_DESC"
+			slot = army_chief
+			idea_token = SAV_Pietro_Badoglio
+			allowed = {
+				original_tag = SAV
+			}
+			traits = { army_chief_morale_2 }
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		field_marshal={
+			desc = "MARSHAL_SAV_PIETRO_BADOGLIO_DESC"
+			traits = { inflexible_strategist organizer }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+	
+	### CORPS COMMANDER ###
+	
+	SAV_Annibale_Bergonzoli = {
+		name = SAV_Annibale_Bergonzoli
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/SAV/ministers/SAV_Annibale_Bergonzoli.dds"
+				large = "gfx/leaders/SAV/Portrait_Annibale_Bergonzoli.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_SAV_ANNIBALE_BERGONZOLI_DESC"
+			traits = { infantry_officer commando }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	
+	SAV_Mario_Robotti = {
+		name = SAV_Mario_Robotti
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/SAV/ministers/SAV_Mario_Robotti.dds"
+				large = "gfx/leaders/SAV/Portrait_Mario_Robotti.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_SAV_MARIO_ROBOTTI_DESC"
+			traits = { infantry_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	
+	SAV_Ugo_Cavallero = {
+		name = SAV_Ugo_Cavallero
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/SAV/ministers/SAV_Ugo_Cavallero.dds"
+				large = "gfx/leaders/SAV/Portrait_Ugo_Cavallero.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "GENERAL_SAV_UGO_CAVALLERO_DESC"
+			slot = army_chief
+			idea_token = SAV_Ugo_Cavallero
+			allowed = {
+				original_tag = SAV
+			}
+			traits = { army_chief_organizational_1 }
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_SAV_UGO_CAVALLERO_DESC"
+			traits = { trait_cautious organisational_leader }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	
+	SAV_Vittorio_Ambrosio = {
+		name = SAV_Vittorio_Ambrosio
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/SAV/ministers/SAV_Vittorio_Ambrosio.dds"
+				large = "gfx/leaders/SAV/Portrait_Vittorio_Ambrosio.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "GENERAL_SAV_VITTORIO_AMBROSIO_DESC"
+			slot = high_command
+			idea_token = SAV_Vittorio_Ambrosio
+			allowed = {
+				original_tag = SAV
+			}
+			traits = {  }
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_SAV_VITTORIO_AMBROSIO_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	
+	### ADMIRAL ###
+	
+}

@@ -1,0 +1,43 @@
+﻿capital = 459
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+# 	POLITICAL FIGURE
+
+### Country Leader ###
+recruit_character = ALG_Ferhat_Abbas
+
+
+set_convoys = 20
+
+set_politics = {
+	ruling_party = conservatism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+	conservatism = 100
+	authoritarianism = 0
+	social_democratism = 0
+	patriotic_socialism = 0
+	corporatism = 0
+	democratic_socialism = 0
+	populism = 0
+	social_liberalism = 0
+}
+
+
+create_country_leader = {
+	name = "Ferhat Abbas"
+	desc = "POLITICS_FERHAT_ABBAS_DESC"
+	picture = "gfx/leaders/ALG/Portrait_Ferhat_Abbas.dds"
+	ideology = conservatism_subtype
+	traits = {
+		#
+	}
+}

@@ -1,0 +1,262 @@
+characters = {
+	
+	### Country Leader ###
+	GRE_George_II = {
+		name = GRE_George_II
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GRE/Portrait_George_II.dds"
+			}
+		}
+		
+		country_leader = {
+			desc = "POLITICS_GRE_GEORGE_II_DESC"
+			ideology = semi_constitutional_monarchy_subtype
+			traits={  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		
+		country_leader = {
+			desc = "POLITICS_GRE_GEORGE_II_DESC"
+			ideology = constitutional_monarchy_B_subtype
+			traits={  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		
+		country_leader = {
+			desc = "POLITICS_GRE_GEORGE_II_DESC"
+			ideology = constitutional_monarchy_A_subtype
+			traits={  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		
+		country_leader = {
+			desc = "POLITICS_GRE_GEORGE_II_DESC"
+			ideology = autocratic_monarchy_subtype
+			traits={  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+	
+	### Ministers ###
+	### HEAD OF GOVERNMENT ###
+	
+	GRE_Ioannis_Metaxas = {
+		name = GRE_Ioannis_Metaxas
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/GRE/ministers/GRE_Ioannis_Metaxas.dds"
+				large = "gfx/leaders/GRE/Portrait_Ioannis_Metaxas.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_GRE_IOANNIS_METAXAS_DESC"
+			slot = head_of_government
+			idea_token = GRE_Ioannis_Metaxas
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = GER
+			}
+			available = {
+				has_government = authoritarianism
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	### FOREIGN MINISTER ###
+	
+	###	ECONOMY MINISTER ###
+	
+	### FIELD MARSHAL ###
+	
+	GRE_Theodoros_Pangalos = {
+		name = GRE_Theodoros_Pangalos
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/GRE/ministers/GRE_Theodoros_Pangalos.dds"
+				large = "gfx/leaders/GRE/Portrait_Theodoros_Pangalos.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "MARSHAL_GRE_THEODOROS_PANGALOS_DESC"
+			slot = high_command
+			idea_token = GRE_Theodoros_Pangalos
+			allowed = {
+				original_tag = GRE
+			}
+			traits = {  }
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		field_marshal={
+			desc = "MARSHAL_GRE_THEODOROS_PANGALOS_DESC"
+			traits = {  }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	
+	### CORPS COMMANDER ###
+	
+	GRE_Stylianos_Gonatas = {
+		name = GRE_Stylianos_Gonatas
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/GRE/ministers/GRE_Stylianos_Gonatas.dds"
+				large = "gfx/leaders/GRE/Portrait_Stylianos_Gonatas.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_GRE_STYLIANOS_GONATAS_DESC"
+			traits = {  }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	
+	GRE_Alexandros_Othonaios = {
+		name = GRE_Alexandros_Othonaios
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/GRE/ministers/GRE_Alexandros_Othonaios.dds"
+				large = "gfx/leaders/GRE/Portrait_Alexandros_Othonaios.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_GRE_ALEXANDROS_OTHONAIOS_DESC"
+			traits = {  }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	
+	GRE_Nikolaos_Plastiras = {
+		name = GRE_Nikolaos_Plastiras
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/GRE/ministers/GRE_Nikolaos_Plastiras.dds"
+				large = "gfx/leaders/GRE/Portrait_Nikolaos_Plastiras.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_GRE_NIKOLAOS_PLASTIRAS_DESC"
+			traits = {  }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	
+	GRE_Theodoros_Manetas = {
+		name = GRE_Theodoros_Manetas
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/GRE/ministers/GRE_Theodoros_Manetas.dds"
+				large = "gfx/leaders/GRE/Portrait_Theodoros_Manetas.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_GRE_THEODOROS_MANETAS_DESC"
+			traits = {  }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	
+	GRE_Alexandros_Papagos = {
+		name = GRE_Alexandros_Papagos
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/GRE/ministers/GRE_Alexandros_Papagos.dds"
+				large = "gfx/leaders/GRE/Portrait_Alexandros_Papagos.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_GRE_ALEXANDROS_PAPAGOS_DESC"
+			traits = {  }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	
+	GRE_Georgios_Tsolakoglou = {
+		name = GRE_Georgios_Tsolakoglou
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/GRE/ministers/GRE_Georgios_Tsolakoglou.dds"
+				large = "gfx/leaders/GRE/Portrait_Georgios_Tsolakoglou.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_GRE_GEORGIOS_TSOLAKOGLOU_DESC"
+			traits = {  }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	
+	GRE_Charalambos_Katsimitros = {
+		name = GRE_Charalambos_Katsimitros
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/GRE/ministers/GRE_Charalambos_Katsimitros.dds"
+				large = "gfx/leaders/GRE/Portrait_Charalambos_Katsimitros.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_GRE_CHARALAMBOS_KATSIMITROS_DESC"
+			traits = {  }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	
+	### ADMIRAL ###
+	
+}

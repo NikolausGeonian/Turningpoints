@@ -1,0 +1,553 @@
+﻿###########################
+# Chinese Events
+###########################
+
+add_namespace = chi
+add_namespace = chi_leader
+
+# Chinese Empire introduction Part I #
+country_event = {
+	id = chi.0
+	immediate = {log = "[GetDateText]: [Root.GetName]: event chi.0"}
+	title = chi.0.t
+	desc = chi.0.d
+	picture = GFX_report_event_chi_01
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = chi.0.a
+	}
+}
+
+# The Imperial Edict of Lunar New Year #
+country_event = {
+	id = chi.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event chi.2"}
+	title = chi.2.t
+	desc = chi.2.d
+	picture = GFX_report_event_chi_01
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = chi.2.a
+	}
+}
+
+# General Election I #
+
+country_event = {	#election started
+	id = china.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event china.4"}
+	title = china.4.t
+	desc = china.4.d
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = china.5
+				days = 3
+			}
+		}
+	}
+	option = {
+		name = china.4.a
+		add_stability = 0.05
+		add_political_power = 10
+		set_country_flag = china_general_election_started_0 
+		#the option of events shall decide who will be the primer.
+	}
+}
+
+country_event = {	#election started
+	id = china.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event china.5"}
+	title = china.5.t
+	desc = china.5.d
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = china.6
+				days = 3
+			}
+		}
+	}
+	option = {
+		name = china.5.a
+		add_stability = 0.05
+		add_political_power = 10
+	}
+}
+
+country_event = {	#Labor rights and Social security
+	id = china.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event china.6"}
+	title = china.6.t
+	desc = china.6.d
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = china.7
+				days = 10
+			}
+		}
+	}
+	option = {
+		name = china.6.a
+		add_stability = 0.05
+		add_political_power = 10
+		add_popularity = {
+				ideology = social_democratism
+				popularity = 0.1
+			}
+		set_country_flag = labor_rights_has_guarantee
+	}
+	option = {
+		name = china.6.b
+		add_stability = -0.05
+		add_political_power = 10
+		add_popularity = {
+				ideology = social_democratism
+				popularity = -0.1
+			}
+		add_popularity = {
+				ideology = conservatism
+				popularity = 0.02
+			}
+		add_popularity = {
+				ideology = social_liberalism
+				popularity = 0.02
+			}
+		add_popularity = {
+				ideology = authoritarianism
+				popularity = 0.02
+			}
+		set_country_flag = labor_rights_has_no_guarantee
+	}
+}
+
+country_event = {	#Military budget
+	id = china.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event china.7"}
+	title = china.7.t
+	desc = china.7.d
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = china.8
+				days = 10
+			}
+		}
+	}
+	option = {
+		name = china.7.a
+		add_stability = -0.05
+		add_political_power = -10
+		add_war_support = 0.1
+		add_popularity = {
+				ideology = authoritarianism
+				popularity = 0.2
+			}
+		set_country_flag = military_budget_has_guarantee
+	}
+	option = {
+		name = china.7.b
+		add_stability = 0.05
+		add_political_power = 10
+		add_popularity = {
+				ideology = authoritarianism
+				popularity = -0.1
+			}
+		add_popularity = {
+				ideology = conservatism
+				popularity = 0.02
+			}
+		add_popularity = {
+				ideology = social_liberalism
+				popularity = 0.02
+			}
+		add_popularity = {
+				ideology = social_democratism
+				popularity = 0.02
+			}
+		set_country_flag = military_budget_has_no_guarantee
+	}
+}
+
+country_event = {	#trade policy
+	id = china.8
+	immediate = {log = "[GetDateText]: [Root.GetName]: event china.8"}
+	title = china.8.t
+	desc = china.8.d
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = china.9
+				days = 10
+			}
+		}
+	}
+	option = {# Free Trade 
+		name = china.8.a
+		add_stability = -0.05
+		add_popularity = {
+				ideology = social_liberalism
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = social_democratism
+				popularity = 0.1
+			}
+		set_country_flag = chi_free_trade
+	}
+	option = {
+		name = china.8.b
+		add_stability = 0.05
+		add_political_power = -20
+		add_popularity = {
+				ideology = authoritarianism
+				popularity = 0.1
+			}
+		add_popularity = {
+				ideology = conservatism
+				popularity = 0.1
+			}
+		set_country_flag = chi_tariff_wall
+	}
+}
+
+country_event = {	#Recapitalisation
+	id = china.9
+	immediate = {log = "[GetDateText]: [Root.GetName]: event china.9"}
+	title = china.9.t
+	desc = china.9.d
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = china.10
+				days = 10
+			}
+		}
+	}
+	option = {	#	Nationalized bankrupt industries
+		name = china.9.a
+		add_stability = 0.05
+		add_political_power = -100
+		add_popularity = {
+				ideology = authoritarianism
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = social_democratism
+				popularity = 0.1
+			}
+		set_country_flag = chi_nationalized_industries
+	}
+	option = {	#	Liquidate Unprofitable Industries
+		name = china.9.b
+		add_stability = -0.05
+		add_political_power = 20
+		add_popularity = {
+				ideology = authoritarianism
+				popularity = 0.1
+			}
+		add_popularity = {
+				ideology = social_liberalism
+				popularity = 0.1
+			}
+		set_country_flag = chi_liquidate_unprofitable
+	}
+}
+
+country_event = {	#Puppet and Colony
+	id = china.10
+	immediate = {log = "[GetDateText]: [Root.GetName]: event china.10"}
+	title = china.10.t
+	desc = china.10.d
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = china.11
+				days = 10
+			}
+		}
+	}
+	option = {	#	Lend a hand 
+		name = china.10.a
+		add_stability = -0.05
+		add_political_power = -100
+		
+		set_country_flag = chi_lend_a_hand
+	}
+	option = {	#	run its own course
+		name = china.10.b
+		add_stability = 0.05
+		add_political_power = 100
+		
+		set_country_flag = chi_run_its_course
+	}
+}
+
+country_event = {	#Puppet and Colony
+	id = china.11
+	immediate = {log = "[GetDateText]: [Root.GetName]: event china.11"}
+	title = china.11.t
+	desc = china.11.d
+	is_triggered_only = yes
+	
+	option = {	
+		name = china.11.a
+		add_stability = -0.05
+		add_political_power = -100
+		set_country_flag = china_general_election_started_1
+	}
+	
+}
+################ 6 Results of Election ##############
+#Election finished (social_democratism)
+country_event = {	
+	id = china.12
+	immediate = {log = "[GetDateText]: [Root.GetName]: event china.12"}
+	title = china.12.t
+	desc = china.12.d
+	trigger = {
+			has_country_flag = china_general_election_started_1
+			has_country_flag = labor_rights_has_guarantee
+			has_country_flag = chi_free_trade
+			has_country_flag = chi_nationalized_industries
+			has_war = no
+		}
+	option = {
+		name = china.12.a
+		add_stability = 0.2
+		add_political_power = 20
+		remove_ideas = QNG_tang_shao_yi
+		add_ideas = QNG_chiang_kang_hu
+		add_popularity = {
+				ideology = social_democratism
+				popularity = 0.1
+			}
+		set_politics = {
+					ruling_party = social_democratism
+					elections_allowed = no
+				}
+		OR = {
+			clr_country_flag = military_budget_has_guarantee
+			clr_country_flag = military_budget_has_no_guarantee
+			}
+		clr_country_flag = labor_rights_has_guarantee
+		clr_country_flag = chi_free_trade
+		clr_country_flag = chi_nationalized_industries
+	}
+}
+
+#Election finished (social_liberalism)
+country_event = {	
+	id = china.13
+	immediate = {log = "[GetDateText]: [Root.GetName]: event china.13"}
+	title = china.13.t
+	desc = china.13.d
+	trigger = {
+		has_country_flag = china_general_election_started_1
+			has_country_flag = chi_free_trade
+			has_country_flag = labor_rights_has_no_guarantee
+			has_country_flag = chi_nationalized_industries
+			has_war = no
+		}
+	option = {
+		name = china.13.a
+		add_stability = 0.2
+		add_political_power = 20
+		remove_ideas = QNG_tang_shao_yi
+		add_ideas = QNG_koo_vi_kyuin
+		add_popularity = {
+				ideology = social_liberalism
+				popularity = 0.1
+			}
+		set_politics = {
+					ruling_party = social_liberalism
+					elections_allowed = no
+				}
+		OR = {
+			clr_country_flag = military_budget_has_guarantee
+			clr_country_flag = military_budget_has_no_guarantee
+			}
+		clr_country_flag = labor_rights_has_no_guarantee
+		clr_country_flag = chi_free_trade
+		clr_country_flag = chi_nationalized_industries
+	}
+}
+
+#Election finished (social_liberalism II)
+country_event = {	
+	id = china.14
+	immediate = {log = "[GetDateText]: [Root.GetName]: event china.14"}
+	title = china.14.t
+	desc = china.14.d
+	trigger = {
+			has_country_flag = china_general_election_started_1
+			has_country_flag = chi_free_trade
+			has_country_flag = labor_rights_has_guarantee
+			has_country_flag = chi_liquidate_unprofitable
+			has_war = no
+		}
+	option = {
+		name = china.14.a
+		add_stability = 0.2
+		add_political_power = 20
+		remove_ideas = QNG_tang_shao_yi
+		add_ideas = QNG_koo_vi_kyuin
+		add_popularity = {
+				ideology = social_liberalism
+				popularity = 0.1
+			}
+		set_politics = {
+					ruling_party = social_liberalism
+					elections_allowed = no
+				}
+		OR = {
+			clr_country_flag = military_budget_has_guarantee
+			clr_country_flag = military_budget_has_no_guarantee
+			}
+		clr_country_flag = labor_rights_has_guarantee
+		clr_country_flag = chi_free_trade
+		clr_country_flag = chi_liquidate_unprofitable
+	}
+}
+
+#Election finished (conservatism I)
+country_event = {	
+	id = china.15
+	immediate = {log = "[GetDateText]: [Root.GetName]: event china.15"}
+	title = china.15.t
+	desc = china.15.d
+	trigger = {
+			has_country_flag = china_general_election_started_1
+			has_country_flag = chi_tariff_wall
+			has_country_flag = chi_nationalized_industries
+			has_war = no
+		}
+	option = {
+		name = china.15.a
+		add_stability = 0.2
+		add_political_power = 20
+		remove_ideas = QNG_tang_shao_yi
+		add_ideas = QNG_chu_chi_chian
+		add_popularity = {
+				ideology = conservatism
+				popularity = 0.1
+			}
+		set_politics = {
+					ruling_party = conservatism
+					elections_allowed = no
+				}
+		OR = {
+			clr_country_flag = labor_rights_has_guarantee
+			clr_country_flag = labor_rights_has_no_guarantee
+			}
+			clr_country_flag = chi_tariff_wall
+			clr_country_flag = chi_nationalized_industries
+	}
+}
+
+#Election finished (conservatism II)
+country_event = {	
+	id = china.15
+	immediate = {log = "[GetDateText]: [Root.GetName]: event china.15"}
+	title = china.15.t
+	desc = china.15.d
+	trigger = {
+			has_country_flag = china_general_election_started_1
+			has_country_flag = military_budget_has_no_guarantee
+			has_country_flag = chi_tariff_wall
+			has_country_flag = chi_liquidate_unprofitable
+			has_war = no
+		}
+	option = {
+		name = china.15.a
+		add_stability = 0.2
+		add_political_power = 20
+		remove_ideas = QNG_tang_shao_yi
+		add_ideas = QNG_chu_chi_chian
+		add_popularity = {
+				ideology = conservatism
+				popularity = 0.1
+			}
+		set_politics = {
+					ruling_party = conservatism
+					elections_allowed = no
+				}
+		OR = {
+			clr_country_flag = labor_rights_has_guarantee
+			clr_country_flag = labor_rights_has_no_guarantee
+			}
+			clr_country_flag = military_budget_has_no_guarantee
+			clr_country_flag = chi_tariff_wall
+			clr_country_flag = chi_liquidate_unprofitable
+	}
+}
+
+#Election finished (authoritarianism)
+country_event = {	
+	id = china.16
+	immediate = {log = "[GetDateText]: [Root.GetName]: event china.16"}
+	title = china.16.t
+	desc = china.16.d
+	trigger = {
+			has_country_flag = china_general_election_started_1
+			has_country_flag = military_budget_has_guarantee
+			has_country_flag = chi_tariff_wall
+			has_country_flag = chi_liquidate_unprofitable
+			has_war = no
+		}
+	option = {
+		name = china.16.a
+		add_stability = 0.2
+		add_political_power = 20
+		remove_ideas = QNG_tang_shao_yi
+		add_ideas = QNG_chi_hsie_yuan
+		add_popularity = {
+				ideology = authoritarianism
+				popularity = 0.3
+			}
+		set_politics = {
+					ruling_party = authoritarianism
+					elections_allowed = no
+				}
+		OR = {
+			clr_country_flag = labor_rights_has_guarantee
+			clr_country_flag = labor_rights_has_no_guarantee
+			}
+			clr_country_flag = military_budget_has_guarantee
+			clr_country_flag = chi_tariff_wall
+			clr_country_flag = chi_liquidate_unprofitable
+	}
+}
+
+
+	unit_leader_event = {
+		id = chi_leader.1
+		title = chi_leader.1.t
+		desc = chi_leader.1.d
+	
+		picture = GFX_leader_chinese_leader_01
+
+		is_triggered_only = yes
+	
+		option = {
+			name = chi_leader.1.a
+		}	
+	}
+
+########

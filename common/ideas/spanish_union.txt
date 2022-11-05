@@ -1,0 +1,442 @@
+ideas = {
+	country = {
+	
+		SPU_developing_reconstruction_0 = {
+		
+			picture = generic_production_bonus
+			
+			allowed = {
+				always = no
+				OR = {
+					original_TAG = SPU
+				}
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				conscription_factor = -0.2
+				war_support_factor = -0.3
+				consumer_goods_factor = 0.1
+				stability_factor = 0.10
+				local_resources_factor = 0.1
+				industrial_capacity_factory = 0.15
+				
+			}
+		}
+		
+		SPU_right_wings_resistance = {
+			
+			allowed = {
+				always = no
+				OR = {
+					original_TAG = SPU
+				}
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				stability_factor = -0.05
+				local_resources_factor = -0.05
+				political_power_gain = -0.1
+			}
+		}
+		
+		SPU_church_support_0 = {
+			
+			allowed = {
+				always = no
+				OR = {
+					original_TAG = SPU
+					original_TAG = SPA
+					original_TAG = SPR
+				}
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				industrial_capacity_factory = -0.2
+				stability_factor = -0.1
+				conscription_factor = -0.05
+			}
+		}
+		
+		SPU_church_support_1 = {
+			
+			allowed = {
+				always = no
+				OR = {
+					original_TAG = SPU
+					original_TAG = SPA
+					original_TAG = SPR
+				}
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				industrial_capacity_factory = -0.1
+				stability_factor = -0.05
+				conscription_factor = -0.02
+			}
+		}
+		
+		SPU_church_support_2 = {
+			
+			allowed = {
+				always = no
+				OR = {
+					original_TAG = SPU
+					original_TAG = SPA
+					original_TAG = SPR
+				}
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				stability_factor = 0.05
+			}
+		}
+		
+		SPU_church_support_3 = {
+			
+			allowed = {
+				always = no
+				OR = {
+					original_TAG = SPU
+					original_TAG = SPA
+					original_TAG = SPR
+				}
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				stability_factor = 0.05
+				conscription_factor = 0.02
+				industrial_capacity_factory = 0.1
+			}
+		}		
+	}
+	
+	materiel_manufacturer = {
+			
+		designer = yes
+		
+		SPU_esperanza_y_cia = {
+
+			allowed = {
+				original_tag = SPU
+			}
+			
+			research_bonus = {
+				artillery = 0.15
+			}
+			
+			traits = { artillery_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		SPU_Instalaza = {
+
+			allowed = {
+				original_tag = SPU
+			}
+			
+			research_bonus = {
+				artillery = 0.15
+			}
+			
+			traits = { artillery_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		SPU_Industrias_de_Guerra_de_Cataluna = {
+
+			allowed = {
+				original_tag = SPU
+			}
+			
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		SPU_Llama_firearms = {
+
+			allowed = {
+				original_tag = SPU
+			}
+			
+			research_bonus = {
+				support_tech = 0.10
+			}
+			
+			traits = { support_equipment_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		SPU_Gimson = {
+
+			allowed = {
+				original_tag = SPU
+			}
+			
+			research_bonus = {
+				motorized_equipment = 0.10
+			}
+			
+			traits = { motorized_equipment_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+	}
+	
+	naval_manufacturer = { 			
+		
+		designer = yes
+
+		SPU_sociedad_espanola_de_construccion_naval = {
+		
+			allowed = {
+				original_tag = SPU
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			equipment_bonus = {
+				
+			}
+			
+			traits = { atlantic_fleet_naval_manufacturer }
+			
+			modifier = {
+			
+			}
+		}
+		
+		SPU_euskalduna = {
+
+			allowed = {
+				original_tag = SPU
+			}
+			
+			available = {
+			
+					# controls_state = 792
+				
+				}
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			equipment_bonus = {
+				
+			}
+			
+			traits = { raiding_fleet_naval_manufacturer }
+			
+			modifier = {
+			
+			}
+		}
+
+		
+	}
+	
+	tank_manufacturer = { 
+	
+		designer = yes	
+		
+		SPU_Abadal = {
+			
+			allowed = {				
+				original_tag = SPU				
+			}
+			
+			research_bonus = {
+				armor = 0.15	
+			}
+			
+			traits = { fast_tank_manufacturer }
+			
+			ai_will_do = {			
+				factor = 1				
+			}
+		}
+		
+		SPU_hispano_suiza = {
+			
+			allowed = {				
+				original_tag = SPU				
+			}
+			
+			research_bonus = {
+				armor = 0.15	
+			}
+			
+			traits = { medium_tank_manufacturer }
+			
+			ai_will_do = {
+				factor = 1			
+			}
+		}
+		
+	}
+	
+	aircraft_manufacturer = { 		
+			
+		designer = yes
+		
+		SPU_Aeronautica_Industrial_Sa = {
+			
+			allowed = {
+				original_tag = SPU
+			}
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { light_aircraft_manufacturer }
+			
+			equipment_bonus = {
+				
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		SPU_Construcciones_Aeronauticas_SA = {
+			
+			allowed = {
+				original_tag = SPU
+			}
+			
+			available = {
+			#	controls_state = 167
+			}
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { medium_aircraft_manufacturer }
+			
+			equipment_bonus = {
+				
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+	}
+	
+	industrial_concern = {
+				
+		SPU_Campsa = {
+			
+			allowed = {
+				original_TAG = SPU
+			}
+			
+			research_bonus = {
+				industry = 0.05
+				synth_resources = 0.1
+			}
+			
+			traits = {
+				refinery_concern
+			}
+			
+			modifier = {
+			}
+			
+		}	
+		
+		SPU_Altos_Hornos_de_Vizcaya = {
+			
+			allowed = {
+				original_TAG = SPU
+			}
+
+			research_bonus = {
+				industry = 0.15
+			}
+			
+			traits = { 
+				industrial_concern 
+			}
+			
+			modifier = {
+			}
+		}
+		
+		SPU_compania_telefonica_nacional = {
+			
+			allowed = {
+				original_TAG = SPU
+			}
+
+			research_bonus = {
+				electronics = 0.15
+			}
+			
+			traits = { 
+				electronics_concern 
+			}
+			
+			modifier = {
+			}
+		}
+		
+	}
+
+}

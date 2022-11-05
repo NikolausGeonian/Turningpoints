@@ -1,0 +1,20 @@
+state = {
+	id=886
+	name="STATE_886" #Kayes
+	manpower = 327891
+	state_category = pastoral
+	
+	history = {
+		owner = MLI
+		add_core_of = MLI
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			13333 1
+		}		
+	}
+	provinces={
+		2012 10812 10829 10915 12751 13333
+	}
+}

@@ -1,0 +1,17 @@
+state = {
+	id=894
+	name="STATE_894" #Badakhshan
+	manpower = 672785
+	state_category = wasteland
+	
+	history = {
+		owner = QNG
+		add_core_of = QNG
+		buildings = {
+		
+		}		
+	}
+	provinces={
+		8027 10417 12805 13229 13230 13231
+	}
+}

@@ -1,0 +1,1250 @@
+characters = {
+	
+	### Country Leader ###
+	
+	OTE_Abdulmejid_II = {
+		name = OTE_Abdulmejid_II
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/OTE/Portrait_Abdulmejid_II.dds"
+			}
+		}
+		
+		country_leader = {
+			desc = "POLITICS_OTE_ABDULMEJID_II_DESC"
+			ideology = autocratic_monarchy_subtype
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		
+		country_leader = {
+			desc = "POLITICS_OTE_ABDULMEJID_II_DESC"
+			ideology = semi_constitutional_monarchy_subtype
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		
+		country_leader = {
+			desc = "POLITICS_OTE_ABDULMEJID_II_DESC"
+			ideology = constitutional_monarchy_A_subtype
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		
+		country_leader = {
+			desc = "POLITICS_OTE_ABDULMEJID_II_DESC"
+			ideology = constitutional_monarchy_B_subtype
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	
+	}
+	
+	### Ministers ###
+	### HEAD OF GOVERNMENT ###
+	
+	OTE_Mustafa_Kemal = {
+		name = OTE_Mustafa_Kemal
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/OTE/ministers/OTE_Mustafa_Kemal_Pasha_suit.dds"
+				large = "gfx/leaders/OTE/Portrait_Mustafa_Kemal_Pasha.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_OTE_MUSTAFA_KEMAL_DESC"
+			slot = head_of_government
+			idea_token = OTE_Mustafa_Kemal
+			ledger = civilian
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = OTE
+			}
+			available = {
+				OR = {
+					has_government = conservatism
+					has_government = authoritarianism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}
+		
+		field_marshal = {
+			visible = {	
+				NOT = {
+					has_idea = OTE_Mustafa_Kemal
+				}
+			}
+			desc = "MARSHAL_OTE_MUSTAFA_KEMAL_DESC"
+			traits = { organizer war_hero }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 5
+			planning_skill = 4
+			logistics_skill = 4
+		}	
+	}
+	
+	OTE_Nuri_Pasha = {
+		name = OTE_Nuri_Pasha
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/OTE/ministers/OTE_Nuri_Pasha.dds"
+				large = "gfx/leaders/OTE/Portrait_Nuri_Pasha.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_OTE_NURI_PASHA_DESC"
+			slot = head_of_government
+			idea_token = OTE_Nuri_Pasha
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = OTE
+			}
+			available = {
+				OR = {
+					has_government = authoritarianism
+					has_government = corporatism
+					has_government = conservatism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	OTE_Sultanzade_Sabahaddin = {
+		name = OTE_Sultanzade_Sabahaddin
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/OTE/ministers/OTE_Sultanzade_Sabahaddin.dds"
+				large = "gfx/leaders/OTE/Portrait_Sultanzade_Sabahaddin.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_OTE_SULTANZADE_SABAHADDIN_DESC"
+			slot = head_of_government
+			idea_token = OTE_Sultanzade_Sabahaddin
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = OTE
+			}
+			available = {
+				OR = {
+					has_government = conservatism
+					has_government = social_liberalism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	OTE_Ahmet_Ferit_Tek = {
+		name = OTE_Ahmet_Ferit_Tek
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/OTE/ministers/OTE_Ahmet_Ferit_Tek.dds"
+				large = "gfx/leaders/OTE/Portrait_Ahmet_Ferit_Tek.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_OTE_AHMET_FERIT_TEK_DESC"
+			slot = head_of_government
+			idea_token = OTE_Ahmet_Ferit_Tek
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = OTE
+			}
+			available = {
+					has_government = corporatism
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_OTE_AHMET_FERIT_TEK_DESC"
+			slot = foreign_minister
+			idea_token = OTE_Ahmet_Ferit_Tek_minister
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = OTE
+			}
+			available = {
+				OR = {
+					has_government = social_liberalism
+					has_government = conservatism
+					has_government = corporatism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	OTE_Ismet_Bey = {
+		name = OTE_Ismet_Bey
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/OTE/ministers/OTE_Ismet_Bey.dds"
+				large = "gfx/leaders/OTE/Portrait_Ismet_Bey.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_OTE_ISMET_BEY_DESC"
+			slot = head_of_government
+			idea_token = OTE_Ismet_Bey
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = OTE
+			}
+			visible = {
+				NOT = {
+					has_idea = OTE_Mustafa_Kemal
+				}
+			}
+			available = {
+				OR = {
+					has_government = conservatism
+					has_government = authoritarianism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_OTE_ISMET_BEY_DESC"
+			slot = foreign_minister
+			idea_token = OTE_Ismet_Bey_minister
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = OTE
+			}
+			available = {
+				NOT = {
+					has_idea = OTE_Ismet_Bey
+				}
+				OR = {
+					has_government = social_liberalism
+					has_government = conservatism
+					has_government = authoritarianism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	
+	### FOREIGN MINISTER ###
+	
+	OTE_Abdulhalik_Renda = {
+		name = OTE_Abdulhalik_Renda
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/OTE/ministers/OTE_Abdulhalik_Renda.dds"
+				large = "gfx/leaders/OTE/Portrait_Abdulhalik_Renda.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_OTE_ABDULHALIK_RENDA_DESC"
+			slot = foreign_minister
+			idea_token = OTE_Abdulhalik_Renda
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = OTE
+			}
+			available = {
+				OR = {
+					has_government = conservatism
+					has_government = authoritarianism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	OTE_Fethi_Okyar = {
+		name = OTE_Fethi_Okyar
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/OTE/ministers/OTE_Fethi_Okyar.dds"
+				large = "gfx/leaders/OTE/Portrait_Fethi_Okyar.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_OTE_FETHI_OKYAR_DESC"
+			slot = foreign_minister
+			idea_token = OTE_Fethi_Okyar
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = OTE
+			}
+			available = {
+				OR = {
+					has_government = conservatism
+					has_government = authoritarianism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	
+	
+	###	ECONOMY MINISTER ###
+	
+	OTE_Hasan_Fehmi = {
+		name = OTE_Hasan_Fehmi
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/OTE/ministers/OTE_Hasan_Fehmi.dds"
+				large = "gfx/leaders/OTE/Portrait_Hasan_Fehmi.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_OTE_HASAN_FEHMI_DESC"
+			slot = economy_minister
+			idea_token = OTE_Hasan_Fehmi
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = OTE
+			}
+			available = {
+				OR = {
+					has_government = authoritarianism
+					has_government = conservatism
+					has_government = corporatism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+	
+	OTE_Ali_Fuat_Cebesoy = {
+		name = OTE_Ali_Fuat_Cebesoy
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/OTE/ministers/OTE_Ali_Fuat_Cebesoy.dds"
+				large = "gfx/leaders/OTE/Portrait_Ali_Fuat_Cebesoy.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_OTE_ALI_FUAT_CEBESOY_DESC"
+			slot = economy_minister
+			idea_token = OTE_Ali_Fuat_Cebesoy
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = OTE
+			}
+			available = {
+				OR = {
+					has_government = authoritarianism
+					has_government = conservatism
+					has_government = social_liberalism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+	
+	OTE_Celal_Bayar = {
+		name = OTE_Celal_Bayar
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/OTE/ministers/OTE_Celal_Bayar.dds"
+				large = "gfx/leaders/OTE/Portrait_Celal_Bayar.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_OTE_CELAL_BAYAR_DESC"
+			slot = economy_minister
+			idea_token = OTE_Celal_Bayar
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = OTE
+			}
+			available = {
+				OR = {
+					has_government = conservatism
+					has_government = social_liberalism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+	
+	OTE_Hafiz_Mehmet = {
+		name = OTE_Hafiz_Mehmet
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/OTE/ministers/OTE_Hafiz_Mehmet.dds"
+				large = "gfx/leaders/OTE/Portrait_Hafiz_Mehmet.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_OTE_HAFIZ_MEHMET_DESC"
+			slot = economy_minister
+			idea_token = OTE_Hafiz_Mehmet
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = OTE
+			}
+			available = {
+				OR = {
+					has_government = conservatism
+					has_government = social_liberalism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+	
+	OTE_Husrev_Gerede = {
+		name = OTE_Husrev_Gerede
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/OTE/ministers/OTE_Husrev_Gerede.dds"
+				large = "gfx/leaders/OTE/Portrait_Husrev_Gerede.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_OTE_HUSREV_GEREDE_DESC"
+			slot = economy_minister
+			idea_token = OTE_Husrev_Gerede
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = OTE
+			}
+			available = {
+				OR = {
+					has_government = conservatism
+					has_government = social_liberalism
+					has_government = authoritarianism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+	
+	### FIELD MARSHAL ###
+	
+	OTE_Wehib_Pasha = {
+		name = OTE_Wehib_Pasha
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/OTE/ministers/OTE_Wehib_Pasha.dds"
+				large = "gfx/leaders/OTE/Portrait_Wehib_Pasha.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "MARSHAL_OTE_WEHIB_PASHA_DESC"
+			slot = army_chief
+			idea_token = OTE_Wehib_Pasha
+			allowed = {
+				original_tag = OTE
+			}
+			traits = { army_chief_offensive_2 }
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		field_marshal = {
+			desc = "MARSHAL_OTE_WEHIB_PASHA_DESC"
+			traits = { old_guard war_hero offensive_doctrine brilliant_strategist aggressive_assaulter }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+	
+	OTE_Kavakli_Fevzi_Pasha = {
+		name = OTE_Kavakli_Fevzi_Pasha
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/OTE/ministers/OTE_Kavakli_Fevzi_Pasha.dds"
+				large = "gfx/leaders/OTE/Portrait_Kavakli_Fevzi_Pasha.dds"
+			}
+		}
+		
+		field_marshal = {
+			desc = "MARSHAL_OTE_KAVAKLI_FEVZI_PASHA_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+	
+	OTE_Fahreddin_Pasha = {
+		name = OTE_Fahreddin_Pasha
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/OTE/ministers/OTE_Fahreddin_Pasha.dds"
+				large = "gfx/leaders/OTE/Portrait_Fahreddin_Pasha.dds"
+			}
+		}
+		
+		field_marshal = {
+			desc = "MARSHAL_OTE_FAHREDDIN_PASHA_DESC"
+			traits = { war_hero }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+	
+	### CORPS COMMANDER ###
+	
+	
+	OTE_Halit_Pasha = {
+		name = OTE_Halit_Pasha
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/OTE/ministers/OTE_Halit_Pasha.dds"
+				large = "gfx/leaders/OTE/Portrait_Halit_Pasha.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_OTE_HALIT_PASHA_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	OTE_Ali_Sadullah_Pasha = {
+		name = OTE_Ali_Sadullah_Pasha
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/OTE/ministers/OTE_Ali_Sadullah_Pasha.dds"
+				large = "gfx/leaders/OTE/Portrait_Ali_Sadullah_Pasha.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_OTE_ALI_SADULLAH_PASHA_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	OTE_Rushdi_Pasha = {
+		name = OTE_Rushdi_Pasha
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/OTE/ministers/OTE_Rushdi_Pasha.dds"
+				large = "gfx/leaders/OTE/Portrait_Rushdi_Pasha.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_OTE_RUSHDI_PASHA_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	OTE_Selahattin_Adil_Pasha = {
+		name = OTE_Selahattin_Adil_Pasha
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/OTE/ministers/OTE_Selahattin_Adil_Pasha.dds"
+				large = "gfx/leaders/OTE/Portrait_Selahattin_Adil_Pasha.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_OTE_SELAHATTIN_ADIL_PASHA_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	OTE_Musa_Kazim_Karabekir = {
+		name = OTE_Musa_Kazim_Karabekir
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/OTE/ministers/OTE_Musa_Kazim_Karabekir.dds"
+				large = "gfx/leaders/OTE/Portrait_Musa_Kazim_Karabekir.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_OTE_MUSA_KAZIM_KARABEKIR_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	OTE_Cafer_Tayyar = {
+		name = OTE_Cafer_Tayyar
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/OTE/ministers/OTE_Cafer_Tayyar.dds"
+				large = "gfx/leaders/OTE/Portrait_Cafer_Tayyar.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_OTE_CAFER_TAYYAR_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	OTE_Dadayli_Halit_Bey = {
+		name = OTE_Dadayli_Halit_Bey
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/OTE/ministers/OTE_Dadayli_Halit_Bey.dds"
+				large = "gfx/leaders/OTE/Portrait_Dadayli_Halit_Bey.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_OTE_DADAYLI_HALIT_BEY_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	OTE_Hayrullah_Fisek = {
+		name = OTE_Hayrullah_Fisek
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/OTE/ministers/OTE_Hayrullah_Fisek.dds"
+				large = "gfx/leaders/OTE/Portrait_Hayrullah_Fisek.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_OTE_HAYRULLAH_FISEK_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	OTE_Jaafar_Al_Askari = {
+		name = OTE_Jaafar_Al_Askari
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/OTE/ministers/OTE_Jaafar_Al_Askari.dds"
+				large = "gfx/leaders/OTE/Portrait_Jaafar_Al_Askari.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_OTE_JAAFAR_AL_ASKARI_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	OTE_Kazim_Dirik = {
+		name = OTE_Kazim_Dirik
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/OTE/ministers/OTE_Kazim_Dirik.dds"
+				large = "gfx/leaders/OTE/Portrait_Kazim_Dirik.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_OTE_KAZIM_DIRIK_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	OTE_Kazim_Fikri_Pasha = {
+		name = OTE_Kazim_Fikri_Pasha
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/OTE/ministers/OTE_Kazim_Fikri_Pasha.dds"
+				large = "gfx/leaders/OTE/Portrait_Kazim_Fikri_Pasha.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_OTE_KAZIM_FIKRI_PASHA_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	OTE_Kazim_Orbay = {
+		name = OTE_Kazim_Orbay
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/OTE/ministers/OTE_Kazim_Orbay.dds"
+				large = "gfx/leaders/OTE/Portrait_Kazim_Orbay.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_OTE_KAZIM_ORBAY_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	OTE_Mustafa_Mumin_Aksoy = {
+		name = OTE_Mustafa_Mumin_Aksoy
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/OTE/ministers/OTE_Mustafa_Mumin_Aksoy.dds"
+				large = "gfx/leaders/OTE/Portrait_Mustafa_Mumin_Aksoy.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_OTE_MUSTAFA_MUMIN_AKSOY_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	OTE_Muhiddin_Pasha = {
+		name = OTE_Muhiddin_Pasha
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/OTE/ministers/OTE_Muhiddin_Pasha.dds"
+				large = "gfx/leaders/OTE/Portrait_Muhiddin_Pasha.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_OTE_MUSTAFA_MUMIN_AKSOY_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	OTE_Cevat_Abbas_Pasha = {
+		name = OTE_Cevat_Abbas_Pasha
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/OTE/ministers/OTE_Cevat_Abbas_Pasha.dds"
+				large = "gfx/leaders/OTE/Portrait_Cevat_Abbas_Pasha.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_OTE_CEVAT_ABBAS_PASHA_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	OTE_Fahrettin_Altay_Pasha = {
+		name = OTE_Fahrettin_Altay_Pasha
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/OTE/ministers/OTE_Fahrettin_Altay_Pasha.dds"
+				large = "gfx/leaders/OTE/Portrait_Fahrettin_Altay_Pasha.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_OTE_FAHRETTIN_ALTAY_PASHA_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	OTE_Ali_ihsan_Sabis = {
+		name = OTE_Ali_ihsan_Sabis
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/OTE/ministers/OTE_Ali_ihsan_Sabis.dds"
+				large = "gfx/leaders/OTE/Portrait_Ali_ihsan_Sabis.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_OTE_ALI_IHSAN_SABIS_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	OTE_Halil_Kut = {
+		name = OTE_Halil_Kut
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/OTE/ministers/OTE_Halil_Kut.dds"
+				large = "gfx/leaders/OTE/Portrait_Halil_Kut.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_OTE_HALIL_KUT_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	OTE_Sefik_Aker = {
+		name = OTE_Sefik_Aker
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/OTE/ministers/OTE_Sefik_Aker.dds"
+				large = "gfx/leaders/OTE/Portrait_Sefik_Aker.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_OTE_SEFIK_AKER_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+	OTE_Nihat_Anilmis = {
+		name = OTE_Nihat_Anilmis
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/OTE/ministers/OTE_Nihat_Anilmis.dds"
+				large = "gfx/leaders/OTE/Portrait_Nihat_Anilmis.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_OTE_NIHAT_ANILMIS_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	OTE_Yusuf_al_Azma = {
+		name = OTE_Yusuf_al_Azma
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/OTE/ministers/OTE_Yusuf_al_Azma.dds"
+				large = "gfx/leaders/OTE/Portrait_Yusuf_al_Azma.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_OTE_YUSUF_AL_AZMA_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	OTE_Asim_Gunduz = {
+		name = OTE_Asim_Gunduz
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/OTE/ministers/OTE_Asim_Gunduz.dds"
+				large = "gfx/leaders/OTE/Portrait_Asim_Gunduz.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_OTE_ASIM_GUNDUZ_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	OTE_Refet_Bey = {
+		name = OTE_Refet_Bey
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/OTE/ministers/OTE_Refet_Bey.dds"
+				large = "gfx/leaders/OTE/Portrait_Refet_Bey.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_OTE_REFET_BEY_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	OTE_Nafiz_Gurman = {
+		name = OTE_Nafiz_Gurman
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/OTE/ministers/OTE_Nafiz_Gurman.dds"
+				large = "gfx/leaders/OTE/Portrait_Nafiz_Gurman.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_OTE_NAFIZ_GURMAN_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	### ADMIRAL ###
+	
+	OTE_Mehmet_Fahri_Engin_pasha = {
+		name = OTE_Mehmet_Fahri_Engin_pasha
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/OTE/ministers/OTE_Mehmet_Fahri_Engin_pasha.dds"
+				large = "gfx/leaders/OTE/Portrait_Mehmet_Fahri_Engin_pasha.dds"
+			}
+		}
+		
+		navy_leader = {
+			desc = "ADMIRAL_OTE_MEHMET_FAHRI_ENGIN_PASHA_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	
+	OTE_Fuat_Husnu_Pasha = {
+		name = OTE_Fuat_Husnu_Pasha
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/OTE/ministers/OTE_Fuat_Husnu_Pasha.dds"
+				large = "gfx/leaders/OTE/Portrait_Fuat_Husnu_Pasha.dds"
+			}
+		}
+
+		navy_leader = {
+			desc = "ADMIRAL_OTE_FUAT_HUSNU_PASHA_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}	
+	
+	OTE_Mehmet_Ali_Ulgen = {
+		name = OTE_Mehmet_Ali_Ulgen
+		portraits = {	
+			navy = {
+				small = "gfx/interface/ideas/OTE/ministers/OTE_Mehmet_Ali_Ulgen.dds"
+				large = "gfx/leaders/OTE/Portrait_Mehmet_Ali_Ulgen.dds"
+			}
+		}
+		
+		navy_leader = {
+			desc = "ADMIRAL_OTE_MEHMET_ALI_ULGEN_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	
+	OTE_Huseyin_Rauf_Orbay = {
+		name = OTE_Huseyin_Rauf_Orbay
+		portraits = {	
+			navy = {
+				small = "gfx/interface/ideas/OTE/ministers/OTE_Huseyin_Rauf_Orbay.dds"
+				large = "gfx/leaders/OTE/Portrait_Huseyin_Rauf_Orbay.dds"
+			}
+		}
+		
+		navy_leader = {
+			desc = "ADMIRAL_OTE_HUSEYIN_RAUF_ORBAY_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	 
+	OTE_Sukur_Okan_Pasha = {
+		name = OTE_Sukur_Okan_Pasha
+		portraits = {	
+			navy = {
+				small = "gfx/interface/ideas/OTE/ministers/OTE_Sukur_Okan_Pasha.dds"
+				large = "gfx/leaders/OTE/Portrait_Sukur_Okan_Pasha.dds"
+			}
+		}
+		
+		navy_leader = {
+			desc = "ADMIRAL_OTE_SUKUR_OKAN_PASHA_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	
+	OTE_Muzaffer_Adil_Bey = {
+		name = OTE_Muzaffer_Adil_Bey
+		portraits = {	
+			navy = {
+				small = "gfx/interface/ideas/OTE/ministers/OTE_Muzaffer_Adil_Bey.dds"
+				large = "gfx/leaders/OTE/Portrait_Muzaffer_Adil_Bey.dds"
+			}
+		}
+		
+		navy_leader = {
+			desc = "ADMIRAL_OTE_MUZAFFER_ADIL_BEY_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	
+	OTE_Samipasazade_Necip_Enver = {
+		name = OTE_Samipasazade_Necip_Enver
+		portraits = {	
+			navy = {
+				small = "gfx/interface/ideas/OTE/ministers/OTE_Samipasazade_Necip_Enver.dds"
+				large = "gfx/leaders/OTE/Portrait_Samipasazade_Necip_Enver.dds"
+			}
+		}
+		
+		navy_leader = {
+			desc = "ADMIRAL_OTE_SAMIPASAZADE_NECIP_ENVER_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	
+	### AIRFORCE ###
+	
+	OTE_Izmirli_Ahmet_Ali = {
+		name = OTE_Izmirli_Ahmet_Ali
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/OTE/ministers/OTE_Izmirli_Ahmet_Ali.dds"
+				large = "gfx/leaders/OTE/Portrait_Izmirli_Ahmet_Ali.dds"
+			}
+		}
+		
+		advisor={
+			desc = "PIOLT_OTE_IZMIRLI_AHMET_ALI_DESC"
+			slot = high_command
+			idea_token = OTE_Izmirli_Ahmet_Ali
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = OTE
+			}
+			traits = { air_close_air_support_2 }
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+}

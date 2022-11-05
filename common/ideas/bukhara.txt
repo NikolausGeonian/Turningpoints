@@ -1,0 +1,41 @@
+ideas = {
+	#General
+	country = {
+		BUK_white_russia = {
+			picture = generic_white_russian_army
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.15
+				conscription_factor = 0.04
+				weekly_manpower = 1000
+				
+			}
+		}
+		
+		BUK_Basmachi_movement_Legacy = {
+			picture = generic_white_russian_army
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			
+			modifier = {
+				war_support_factor = 0.2
+				army_core_defence_factor = 0.2
+				army_core_attack_factor = 0.1
+			}
+		}
+	
+	}
+	
+}

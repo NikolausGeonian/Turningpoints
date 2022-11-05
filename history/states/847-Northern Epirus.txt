@@ -1,0 +1,21 @@
+state = {
+	id=847
+	name="STATE_847" #Northern Epirus
+	manpower = 489875
+	state_category = rural
+	history = {
+		owner = ALB
+		buildings = {
+			infrastructure = 2
+		}
+		victory_points = {
+			3448 1  #Gjirokastër
+		}
+		add_core_of = ALB
+		add_core_of = GRE
+	}
+	provinces={
+		914 3448 6900
+		
+	}
+}

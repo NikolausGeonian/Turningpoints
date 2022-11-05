@@ -1,0 +1,140 @@
+﻿capital = 275
+
+#oob = "SAF_1936"
+
+
+
+set_stability = 0.6
+set_war_support = 0.1
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_mountaineers = 1
+	tech_engineers = 1
+	tech_recon = 1
+	gw_artillery = 1
+	trench_warfare = 1
+	fleet_in_being = 1
+	fuel_silos = 1
+}
+
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		early_destroyer = 1
+		transport = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		early_ship_hull_light = 1
+		basic_battery = 1
+		basic_torpedo = 1
+		mtg_transport = 1
+	}
+	else = {
+		set_technology = {
+			early_destroyer = 1
+			transport = 1
+		}
+	}
+}
+
+set_convoys = 97
+set_popularities = {
+	conservatism = 59
+	authoritarianism = 0
+	social_democratism = 0
+	patriotic_socialism = 0
+	corporatism = 21
+	democratic_socialism = 0
+	populism = 0
+	social_liberalism = 20
+}
+set_politics = {
+	ruling_party = conservatism
+	last_election = "1934.2.11"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+create_country_leader = {
+	name = "George Villiers"
+	desc = "POLITICS_J_B_M_HERTZOG_DESC"
+	picture = "gfx/leaders/SAF/Portrait_George_Villiers.dds"
+	expire = "1965.1.1"
+	ideology = conservatism_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "George Villiers"
+	desc = "POLITICS_J_B_M_HERTZOG_DESC"
+	picture = "gfx/leaders/SAF/Portrait_George_Villiers.dds"
+	expire = "1965.1.1"
+	ideology = authoritarianism_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "George Villiers"
+	desc = "POLITICS_J_B_M_HERTZOG_DESC"
+	picture = "gfx/leaders/SAF/Portrait_George_Villiers.dds"
+	expire = "1965.1.1"
+	ideology = social_liberalism_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "D. F. Malan"
+	desc = "POLITICS_DF_MALAN_DESC"
+	picture = "GFX_SAF_daniel_malan"
+	expire = "1965.1.1"
+	ideology = populism_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Moses Kotane"
+	desc = "POLITICS_MOSES_KOTANE_DESC"
+	picture = "GFX_SAF_moses_kotane"
+	expire = "1965.1.1"
+	ideology = patriotic_socialism_subtype
+	traits = {
+		#
+	}
+}
+
+create_corps_commander = {
+	name = "George Edwin Brink"
+	gfx = "GFX_SAF_george_edwin_brink"
+	traits = { desert_fox  }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 1
+}
+
+create_navy_leader = {
+	name = "Guy Hallifax"
+	gfx = "GFX_SAF_guy_halifax"
+	traits = { battleship_adherent }
+	skill = 3
+	attack_skill = 4
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 2
+}

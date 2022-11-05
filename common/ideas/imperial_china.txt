@@ -1,0 +1,800 @@
+ideas = {
+	#General
+	country = {
+		
+		QNG_delicate_court_2 = {
+			name = QNG_delicate_court_2
+			picture = QNG_delicate_court_2
+			allowed = {
+				original_tag = QNG
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = 0.5
+				stability_factor = -0.10
+				army_org_Factor = -0.1
+				planning_speed = -0.05
+			}
+		}
+		QNG_delicate_court_3 = {
+			name = QNG_delicate_court_3
+			picture = QNG_delicate_court_3
+			allowed = {
+				original_tag = QNG
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = 0.25
+				planning_speed = -0.25
+			}
+		}
+		QNG_dominant_court = {
+			name = QNG_dominant_court
+			picture = QNG_dominant_court
+			allowed = {
+				original_tag = QNG
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.05
+				army_org_Factor = 0.02
+				planning_speed = 0.02
+			}
+		}
+		QNG_wu_tsu_ta_tung = {
+			name = QNG_wu_tsu_ta_tung
+			picture = QNG_wu_tsu_ta_tung
+			allowed = {
+				original_tag = QNG
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			stability_factor = 0.05
+			}
+		}
+	}
+	
+	
+	# TECHNOLOGY
+	naval_manufacturer = {
+
+		designer = yes
+		
+		QNG_mawei_shipyard = {
+
+			allowed = {
+				original_tag = QNG
+			}
+			
+			cost = 150		
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { 
+				state_owned
+				convoy_escort_naval_manufacturer
+			}
+			
+		}
+		
+		QNG_Taipei_shipyard = {
+			
+			allowed = {
+				original_tag = QNG
+			}
+			
+			cost = 150	
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { 
+				raiding_fleet_naval_manufacturer
+			}
+			
+		}
+		
+		QNG_minsheng_shipyard = {
+			
+			allowed = {
+				original_tag = QNG
+			}
+			
+			cost = 150	
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { 
+				coastal_defence_naval_manufacturer
+			}
+			
+		}
+		
+		QNG_kiangnan_works = {
+			
+			allowed = {
+				original_tag = QNG
+			}
+			
+			cost = 150	
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { 
+				battlefleet_designer 
+				state_owned
+			}
+			
+		}
+		
+		QNG_lyushun_shipyard = {
+		
+			allowed = {
+				original_tag = QNG
+			}
+			
+			cost = 150
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { 
+				pacific_fleet_naval_manufacturer 
+			}
+			
+			ai_will_do = {
+				factor = 2
+			}
+			
+		}
+		
+		QNG_huangpu = {
+			
+			allowed = {
+				original_tag = QNG
+			}
+			cost = 150			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			traits = { 
+				raiding_fleet_naval_manufacturer 
+			}
+			ai_will_do = {
+				factor = 2
+			}
+		}
+		
+	}
+	
+	tank_manufacturer = {
+		
+		designer = yes
+		
+		QNG_shaanhsi_locomotive = {			
+			
+			allowed = {
+				original_tag = QNG		
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { fast_tank_manufacturer }
+			
+			ai_will_do = {
+				factor = 5
+			}
+			
+		}
+		
+		QNG_chuchow_technical = {	
+		
+			allowed = {
+				original_tag = QNG		
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { heavy_tank_manufacturer }
+			
+			ai_will_do = {
+				factor = 10
+			}
+			
+		}
+		
+		QNG_lantong = {		
+		
+			allowed = {
+				original_tag = QNG		
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { medium_tank_manufacturer }
+			
+			ai_will_do = {
+				factor = 10
+			}
+			
+		}
+		
+		QNG_liuzhou_machinery_factory = {	
+		
+			allowed = {
+				original_tag = QNG		
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = {
+				medium_tank_manufacturer
+			}
+			
+			ai_will_do = {
+				factor = 9
+			}
+			
+		}
+		
+		QNG_Three_east_Arsenal = {	
+		
+			allowed = {
+				original_tag = QNG		
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = {
+				armored_car_manufacturer
+			}
+			
+			ai_will_do = {
+				factor = 9
+			}
+			
+		}
+		
+		QNG_Hip_Tungwo = {	
+		
+			allowed = {
+				original_tag = QNG		
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = {
+				infantry_tank_manufacturer
+			}
+			
+			ai_will_do = {
+				factor = 9
+			}
+			
+		}
+	
+	
+	}
+	
+	aircraft_manufacturer = {
+	
+		designer = yes
+	
+		QNG_southern_west_air = {	
+		
+			allowed = {
+				original_tag = QNG		
+			}
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = {
+				light_aircraft_manufacturer_2
+			}
+				
+			modifier = {
+
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+			
+		}
+		
+		QNG_CNAC = {
+			allowed = {
+				original_tag = QNG
+			}
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { 
+				CAS_manufacturer
+			}
+			
+			equipment_bonus = {
+				
+			}	
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		QNG_Nanyuan_Aviation = {
+			allowed = {
+				original_tag = QNG
+			}
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { 
+				fuel_efficient_aircraft_manufacturer
+				state_owned
+			}
+			
+			equipment_bonus = {
+				
+			}	
+			ai_will_do = {
+				factor = 1
+			}
+			
+		}
+		
+		QNG_Mawei_naval_aircraft = {
+			allowed = {
+				original_tag = QNG
+			}
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { 
+				naval_aircraft_manufacturer
+			}
+			
+			equipment_bonus = {
+				
+			}	
+			ai_will_do = {
+				factor = 1
+			}
+			
+		}
+		
+		QNG_Yangchen = {
+			allowed = {
+				original_tag = QNG
+			}
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { 
+				medium_aircraft_manufacturer
+			}
+			
+			equipment_bonus = {
+				
+			}	
+			ai_will_do = {
+				factor = 1
+			}
+			
+		}
+		
+		QNG_Kaiyuan = {
+			allowed = {
+				original_tag = QNG
+			}
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { 
+				heavy_aircraft_manufacturer
+			}
+			
+			equipment_bonus = {
+				
+			}	
+			ai_will_do = {
+				factor = 1
+			}
+			
+		}
+	
+	}
+	
+	materiel_manufacturer = {
+		
+		designer = yes
+		
+		QNG_kung_hsien_arsenal = {
+			
+			allowed = {
+				original_TAG = QNG
+			}
+			
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+			
+			cost = 150	
+			
+			traits = { 
+				infantry_equipment_manufacturer
+			}
+			
+			modifier = {
+			}
+		}
+		
+		QNG_ginling_arsenal = {
+			
+			allowed = {
+				original_TAG = QNG
+			}
+			
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+			
+			cost = 150	
+			
+			traits = { 
+				infantry_equipment_manufacturer
+			}
+			
+			modifier = {
+			}
+			
+		}
+	
+		QNG_kwangtung_arsenal = {
+			allowed = {
+				original_TAG = QNG
+			}
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+			cost = 150	
+			traits = { 
+				infantry_equipment_manufacturer
+			}
+			modifier = {
+			}
+		}
+		
+		QNG_jinan_arsenal = {
+			allowed = {
+				original_TAG = QNG
+			}
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+			cost = 150	
+			traits = { 
+				motorized_equipment_manufacturer
+			}
+			modifier = {
+			}
+		}
+	
+		QNG_pa_chiang_artillery = {
+			allowed = {
+				original_TAG = QNG
+			}
+			research_bonus = {
+				artillery = 0.15
+			}
+			cost = 150	
+			traits = { 
+				artillery_manufacturer
+			}
+			modifier = {
+			}
+		}
+		
+		QNG_jegiyang_iron_works = {
+			allowed = {
+				original_TAG = QNG
+			}
+			research_bonus = {
+				artillery = 0.15
+			}
+			cost = 150	
+			traits = { 
+				artillery_manufacturer
+			}
+			modifier = {
+			}
+		}
+	
+	}
+	
+	research_academy = {
+	
+		QNG_peking_university = {
+		
+			name = QNG_peking_university
+		
+			picture = QNG_peking_university 			
+			
+			allowed = {
+				original_tag = QNG
+			}
+			
+			available = {
+			}
+			
+			research_bonus = {
+				research_speed_factor = 0.04
+				electronics = 0.05
+				nuclear = 0.10
+				synth_resources = 0.15
+			}
+			
+			traits = {research_academy}
+
+			modifier = {
+
+			}
+		}
+		
+		QNG_chiao_tung_university = {
+			
+			name = QNG_chiao_tung_university
+			
+			picture = QNG_chiao_tung_university 			
+			
+			allowed = {
+				original_tag = QNG
+			}
+			
+			available = {
+			}
+			
+			research_bonus = {
+				research_speed_factor = 0.04
+				electronics = 0.15
+				rocketry = 0.15
+				jet_technology = 0.10
+			}
+			
+			traits = {
+				research_academy
+				}
+
+			modifier = {
+
+			}
+		}
+	
+	}	
+	
+	industrial_concern = {
+		
+		QNG_yungli_chemical = {
+		
+			allowed = {
+				original_TAG = QNG
+			}
+			
+			research_bonus = {
+				industry = 0.05
+				synth_resources = 0.05
+			}
+			
+			traits = { 
+				refinery_concern
+				cartel
+			}
+			
+			modifier = {
+				production_speed_fuel_silo_factor = 0.05
+				production_speed_synthetic_refinery_factor = 0.05
+			}
+		
+		}
+		
+		QNG_Chi_hsin = {
+		
+			allowed = {
+				original_TAG = QNG
+			}		
+			research_bonus = {
+				industry = 0.05
+			}
+			
+			traits = { 
+				construction_company
+			}
+			
+			modifier = {
+				industry_repair_factor = 0.10
+			}
+		
+		}
+		
+		QNG_Chinese_Petroleum = {
+		
+			allowed = {
+				original_TAG = QNG
+			}
+			
+			research_bonus = {
+				industry = 0.05
+				synth_resources = 0.05
+			}
+			
+			traits = { 
+				refinery_concern
+				state_owned
+			}
+			
+			modifier = {
+				production_speed_fuel_silo_factor = 0.05
+				production_speed_synthetic_refinery_factor = 0.05
+			}
+		
+		}
+		
+		QNG_kailuan = {
+			
+			allowed = {
+				original_TAG = QNG
+			}
+			
+			research_bonus = {
+				industry = 0.05
+			}
+			
+			traits = { 
+				konzern
+			}
+			
+			modifier = {
+				production_speed_arms_factory_factor = 0.15
+				production_speed_industrial_complex_factor = 0.1
+			}
+			
+		}
+	
+		QNG_wuhua = {
+			
+			allowed = {
+				original_TAG = QNG
+			}
+			
+			research_bonus = {
+				electronics = 0.05
+				industry = 0.15
+			}
+			
+			traits = { 
+				electronics_concern
+				cartel
+			}
+			
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+				production_speed_radar_station_factor = 0.15
+			}
+			
+		}
+		
+	}
+	
+	# GOVERNMENT
+	
+	foreign_minister = {
+		
+		QNG_lian_yu = {						#廉隅
+			
+			allowed = {
+				original_tag = "QNG"
+			}
+			
+			available = {
+				
+				OR = {
+					
+					has_government = social_liberalism
+					has_government = conservatism
+					has_government = social_democratism
+					has_government = authoritarianism
+					
+				}
+				
+			}
+			
+			traits = {  }
+			
+			ai_will_do = {
+				factor = 0
+			}
+		
+		}
+		
+		
+	}
+	
+	economy_minister = {
+		
+		QNG_nieh_chichieh = {				#聂其杰 
+			
+			allowed = {
+				original_tag = "QNG"
+
+			}
+			
+			available = {
+				OR = {
+					has_government = social_liberalism
+					has_government = conservatism
+					has_government = social_democratism
+				}
+			}
+			
+			traits = {  }
+			
+			ai_will_do = {
+				factor = 0
+			}
+		
+		}
+	
+	}
+}
+		

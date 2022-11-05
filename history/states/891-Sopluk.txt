@@ -1,0 +1,23 @@
+state = {
+	id=891
+	name="STATE_891" #Šopluk
+	manpower = 496043	
+	state_category = town
+	
+	history = {
+		owner = SER
+		add_core_of = SER
+		victory_points = {
+			9602 5
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+		}		
+		
+		set_demilitarized_zone = yes
+	}
+	provinces={
+		630 6634 9602 9756 11868 11887
+	}
+}

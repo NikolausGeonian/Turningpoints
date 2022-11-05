@@ -1,0 +1,30 @@
+state={
+	id=804
+	name="STATE_804"
+	manpower = 1120100
+	
+	state_category = town
+	history={
+		victory_points = {
+			9902 5
+		}
+		victory_points = {
+			6967 1
+		}
+		owner = OTE
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			air_base = 4
+			9902 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = OTE
+		add_core_of = BUL
+	}
+
+	provinces={
+		 9888 9902 9919 6967 
+	}
+}

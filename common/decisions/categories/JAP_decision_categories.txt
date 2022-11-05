@@ -1,0 +1,10 @@
+JAP_colonial_chomankaitakudan = {
+	icon = GFX_decision_category_JAP_colonial_chomankaitakudan
+	allowed = {
+		original_tag = JAP
+	}
+
+	visible = {
+		is_puppet = no
+	}
+}

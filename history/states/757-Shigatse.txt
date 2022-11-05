@@ -1,0 +1,27 @@
+state={
+	id=757
+	name="STATE_757"
+	provinces={
+		1991 2014 2093 2098 4900 4994 5033 7926 8121 12807   
+	}
+	manpower=1000000
+	buildings_max_level_factor=1.000
+	state_category = rural
+	history={
+		owner = QNG
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
+		}
+		victory_points = {
+			5033 10 
+		}
+		victory_points = {
+			2014 3 
+		}
+		add_core_of = TIB
+		add_core_of = QNG
+
+	}
+}

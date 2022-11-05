@@ -1,0 +1,23 @@
+state={
+	id=701
+	name="STATE_701"
+
+	history={
+		owner = AZA
+		add_core_of = AZA
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			1962 1
+		}
+
+	}
+
+	provinces={
+		1897 1962 7943 10771
+	}
+	manpower=199520
+	
+	state_category = pastoral
+}

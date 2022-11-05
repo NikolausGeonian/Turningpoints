@@ -1,0 +1,384 @@
+characters = {
+	
+	### Country Leader ###
+	
+	BRM_Taw_Phaya_Gyi = {
+		name = BRM_Taw_Phaya_Gyi
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/BRM/ministers/BRM_Taw_Phaya_Gyi.dds"
+				large = "gfx/leaders/BRM/Portrait_Taw_Phaya_Gyi.dds"
+			}
+		}
+		
+		country_leader = {
+			desc = "POLITICS_BRM_TAW_PHAYA_GYI_DESC"
+			ideology = semi_constitutional_monarchy_subtype
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		
+		country_leader = {
+			desc = "POLITICS_BRM_TAW_PHAYA_GYI_DESC"
+			ideology = autocratic_monarchy_subtype
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		
+		country_leader = {
+			desc = "POLITICS_BRM_TAW_PHAYA_GYI_DESC"
+			ideology = constitutional_monarchy_A_subtype
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		
+		country_leader = {
+			desc = "POLITICS_BRM_TAW_PHAYA_GYI_DESC"
+			ideology = constitutional_monarchy_B_subtype
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+	
+	BRM_Thakin_Kodaw_Hmaing = {
+		name = BRM_Thakin_Kodaw_Hmaing
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/BRM/ministers/BRM_Thakin_Kodaw_Hmaing.dds"
+				large = "gfx/leaders/BRM/Portrait_Thakin_Kodaw_Hmaing.dds"
+			}
+		}
+		
+		country_leader = {
+			desc = "POLITICS_BRM_THAKIN_KODAW_HMAING_DESC"
+			ideology = democratic_socialism_subtype
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		
+		advisor={
+			desc = "POLITICS_BRM_THAKIN_KODAW_HMAING_MINISTER_DESC"
+			slot = head_of_government
+			idea_token = BRM_Thakin_Kodaw_Hmaing
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = BRM
+			}
+			visible = {	
+				NOT = {	
+					has_country_leader = {
+						character = BRM_Thakin_Kodaw_Hmaing
+						ruling_only = yes
+					}
+				}
+			}
+			available = {
+				has_government = social_democratism
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}
+	}
+	
+	### Ministers ###
+	### HEAD OF GOVERNMENT ###
+	
+	BRM_Ba_U = {
+		name = BRM_Ba_U
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/BRM/ministers/BRM_Ba_U.dds"
+				large = "gfx/leaders/BRM/Portrait_Ba_U.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_BRM_BA_U_DESC"
+			slot = head_of_government
+			idea_token = BRM_Ba_U
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = BRM
+			}
+			available = {
+				has_government = authoritarianism
+				has_government = conservatism
+				has_government = social_liberalism
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	BRM_Sao_Shwe_Thaik = {
+		name = BRM_Sao_Shwe_Thaik
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/BRM/ministers/BRM_Sao_Shwe_Thaik.dds"
+				large = "gfx/leaders/BRM/Portrait_Sao_Shwe_Thaik.dds"
+			}
+			
+			army = {
+				small = "gfx/interface/ideas/BRM/ministers/BRM_Sao_Shwe_Thaik_General.dds"
+				large = "gfx/leaders/BRM/Portrait_Sao_Shwe_Thaik_General.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_BRM_SAO_SHWE_THAIK_MINISTER_DESC"
+			slot = head_of_government
+			idea_token = BRM_Sao_Shwe_Thaik
+			ledger = civilian
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = BRM
+			}
+			visible = {	
+				NOT = {	
+					has_country_leader = {
+						character = BRM_Taw_Phaya_Gyi
+						ruling_only = yes
+					}
+				}
+			}
+			available = {
+				NOT = {
+					has_idea = BRM_Sao_Shwe_Thaik_General
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}
+		
+		advisor = {
+			desc = "MARSHAL_BRM_SAO_SHWE_THAIK_GENERAL_DESC"
+			slot = high_command
+			ledger = army
+			idea_token = BRM_Sao_Shwe_Thaik_General
+			allowed = {
+				original_tag = BRM
+			}
+			available = {
+				NOT = {
+					has_idea = BRM_Sao_Shwe_Thaik
+				}
+			}
+			traits = {  }
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		field_marshal = {
+			visible = {	
+				NOT = {	
+					has_idea = BRM_Sao_Shwe_Thaik
+				}
+			}
+			desc = "MARSHAL_BRM_SAO_SHWE_THAIK_GENERAL_DESC"
+			traits = { }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+		
+	}
+	
+	### FOREIGN MINISTER ###
+	
+	BRM_Tin_Tut = {
+		name = BRM_Tin_Tut
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/BRM/ministers/BRM_Tin_Tut.dds"
+				large = "gfx/leaders/BRM/Portrait_Tin_Tut.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_BRM_TIN_TUT_DESC"
+			slot = foreign_minister
+			idea_token = BRM_Tin_Tut
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = BRM
+			}
+			available = {
+				OR = {
+					has_government = conservatism
+					has_government = social_democratism
+					has_government = social_liberalism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	
+	
+	###	ECONOMY MINISTER ###
+	
+	BRM_Liu_Wentsai = {
+		name = BRM_Liu_Wentsai
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/BRM/ministers/BRM_Liu_Wentsai.dds"
+				large = "gfx/leaders/BRM/Portrait_Liu_Wentsai.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_BRM_LIU_WENTSAI_DESC"
+			slot = economy_minister
+			idea_token = BRM_Liu_Wentsai
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = BRM
+			}
+			visible = {
+				is_puppet_of = QNG
+			}
+			available = {
+				has_idea = BRM_Opium_Plantation
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	### FIELD MARSHAL ###
+	
+	### CORPS COMMANDER ###
+	
+	BRM_Aung_San = {
+		name = BRM_Aung_San
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/BRM/ministers/BRM_Aung_San.dds"
+				large = "gfx/leaders/BRM/Portrait_Aung_San.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_BRM_AUNG_SAN_DESC"
+			traits = { infantry_officer commando }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+	
+	BRM_Li_Mi = {
+		name = BRM_Li_Mi
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/BRM/ministers/BRM_Li_Mi.dds"
+				large = "gfx/leaders/BRM/Portrait_Li_Mi.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_BRM_LI_MI_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+	
+	BRM_Ba_Maw = {
+		name = BRM_Ba_Maw
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/BRM/ministers/BRM_Ba_Maw.dds"
+				large = "gfx/leaders/BRM/Portrait_Ba_Maw.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_BRM_BA_MAW_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+	
+	BRM_Sao_Hom_Hpa = {
+		name = BRM_Sao_Hom_Hpa
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/BRM/ministers/BRM_Sao_Hom_Hpa.dds"
+				large = "gfx/leaders/BRM/Portrait_Sao_Hom_Hpa.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_BRM_SAO_HOM_HPA_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+	
+	BRM_Han_Futing = {
+		name = BRM_Han_Futing
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/BRM/ministers/BRM_Han_Futing.dds"
+				large = "gfx/leaders/BRM/Portrait_Han_Futing.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_BRM_HAN_FUTING_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+	
+	### ADMIRAL ###
+	
+}

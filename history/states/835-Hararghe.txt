@@ -1,0 +1,22 @@
+state={
+	id=835
+	name="STATE_835"
+	manpower = 1265530
+	state_category = rural
+	history={
+		add_core_of = ETH
+		owner = ETH
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			
+		}
+		victory_points = { 
+			7980 3 
+		}
+	}
+
+	provinces={
+	 7980 12714 12757 12812      
+	}
+}

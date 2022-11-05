@@ -1,0 +1,159 @@
+characters = {
+	
+	### Country Leader ###
+	
+	ROM_Corneliu_Zelea_Codreanu = {
+		name = ROM_Corneliu_Zelea_Codreanu
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ROM/Portrait_Corneliu_Zelea_Codreanu.dds"
+				#Spacing Modifier
+			}
+		}
+		
+		country_leader = {
+			desc = "POLITICS_ROM_CORNELIU_ZELEA_CODREANU_DESC"
+			ideology = sorelianism_subtype
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+	
+	ROM_Constantin_Prezan = {
+		name = ROM_Constantin_Prezan
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ROM/Portrait_Constantin_Prezan.dds"
+				#Spacing Modifier
+			}
+		}
+		
+		country_leader = {
+			desc = "POLITICS_ROM_CONSTANTIN_PREZAN_DESC"
+			ideology = despotism_subtype
+			expire = "1965.1.1.1"
+			id = -1
+		}	
+
+		field_marshal = {
+			desc = "MARSHAL_CONSTANTIN_PREZAN_DESC"
+			traits = { old_guard }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	ROM_Gheorghe_Tatarescu = {
+		name = ROM_Gheorghe_Tatarescu
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ROM/Portrait_Gheorghe_Tatarescu.dds"
+				#Spacing Modifier
+			}
+		}
+		
+		country_leader = {
+			desc = "POLITICS_ROM_GHEORGHE_TATARESCU_DESC"
+			ideology = conservatism_subtype
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+	
+	### Ministers ###
+	### HEAD OF GOVERNMENT ###
+	
+	### FOREIGN MINISTER ###
+	
+	###	ECONOMY MINISTER ###
+	
+	### FIELD MARSHAL ###
+	
+	### CORPS COMMANDER ###
+	
+	ROM_Ion_Antonescu = {
+		name = ROM_Ion_Antonescu
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/ROM/ministers/ROM_Ion_Antonescu.dds"
+				large = "gfx/leaders/ROM/Portrait_Ion_Antonescu.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_ROM_ION_ANTONESCU_DESC"
+			traits = {  }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 1
+		}
+	}
+	
+	ROM_Nicolae_Ciuperca = {
+		name = ROM_Nicolae_Ciuperca
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/ROM/ministers/ROM_Nicolae_Ciuperca.dds"
+				large = "gfx/leaders/ROM/Portrait_Nicolae_Ciuperca.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_ROM_NICOLAE_CIUPERCA_DESC"
+			traits = {  }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 1
+		}
+	}
+	
+	ROM_Emanoil_Barzotescu = {
+		name = ROM_Emanoil_Barzotescu
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/ROM/ministers/ROM_Emanoil_Barzotescu.dds"
+				large = "gfx/leaders/ROM/Portrait_Emanoil_Barzotescu.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_ROM_EMANOIL_BARZOTESCU_DESC"
+			traits = {  }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 1
+		}
+	}
+	
+	ROM_Grigore_Cornicioiu = {
+		name = ROM_Grigore_Cornicioiu
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/ROM/ministers/ROM_Grigore_Cornicioiu.dds"
+				large = "gfx/leaders/ROM/Portrait_Grigore_Cornicioiu.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_ROM_GRIGORE_CORNICIOIU_DESC"
+			traits = {  }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 1
+		}
+	}
+	
+	### ADMIRAL ###
+	
+}

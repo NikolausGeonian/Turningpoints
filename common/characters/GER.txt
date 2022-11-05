@@ -1,0 +1,2253 @@
+characters={
+
+	### Country Leader ###
+	
+	GER_Wilhelm_II = {
+		name = GER_Wilhelm_II
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GER/Portrait_Wilhelm_II.dds"
+			}
+		}
+		
+		country_leader = {
+			desc = "POLITICS_WILHELM_II_DESC"
+			ideology = semi_constitutional_monarchy_subtype
+			expire = "1965.1.1.1"
+		}
+				
+		country_leader = {
+			desc = "POLITICS_WILHELM_II_DESC"
+			ideology = constitutional_monarchy_A_subtype
+			expire = "1965.1.1.1"
+		}
+		
+		country_leader = {
+			desc = "POLITICS_WILHELM_II_DESC"
+			ideology = autocratic_monarchy_subtype
+			expire = "1965.1.1.1"
+		}
+		
+	}
+	
+	GER_Wilhelm_II_social_democratism = {
+		name = GER_Wilhelm_II
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GER/Portrait_Wilhelm_II_suit.dds"
+			}
+		}
+		
+		country_leader = {
+			desc = "POLITICS_WILHELM_II_DESC"
+			ideology = constitutional_monarchy_B_subtype
+			expire = "1965.1.1.1"
+		}
+		
+	}
+	
+	GER_Otto_Strasser = {
+		name = GER_Otto_Strasser
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/GER/ministers/GER_Otto_Strasser.dds"
+				large = "gfx/leaders/GER/Portrait_Otto_Strasser.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_GER_OTTO_STRASSER_DESC"
+			slot = head_of_government
+			idea_token = GER_Otto_Strasser
+			available  = {
+				OR = {
+					has_government  = corporatism 
+					has_government  = populism 
+				}
+			}
+			allowed  = {
+				original_tag  = GER
+			}
+			traits  = {
+				
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+		
+		country_leader = {
+			desc = "POLITICS_GER_OTTO_STRASSER_DESC"
+			ideology = sorelianism_subtype
+			expire = "1965.1.1.1"
+		}
+		
+	}
+	
+	### Ministers ###
+	### HEAD OF GOVERNMENT ###
+	
+	GER_Otto_Wels = {
+		name = GER_Otto_Wels
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/GER/ministers/GER_Otto_Wels.dds"
+				large = "gfx/leaders/GER/Portrait_Otto_Wels.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_GER_OTTO_WELS_DESC"
+			slot = head_of_government
+			idea_token = GER_Otto_Wels
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = GER
+			}
+			available = {
+				has_government = social_democratism
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	GER_Alfred_Hugenberg = {
+		name = GER_Alfred_Hugenberg
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/GER/ministers/GER_Alfred_Hugenberg.dds"
+				large = "gfx/leaders/GER/Portrait_Alfred_Hugenberg.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_GER_ALFRED_HUGENBERG_DESC"
+			slot = head_of_government
+			idea_token = GER_Alfred_Hugenberg
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = GER
+			}
+			available = {
+				OR = {
+					has_government = conservatism
+					has_government = authoritarianism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	GER_Franz_von_Papen = {
+		name = GER_Franz_von_Papen
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/GER/ministers/GER_Franz_von_Papen.dds"
+				large = "gfx/leaders/GER/Portrait_Franz_von_Papen.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_GER_FRANZ_VON_PAPEN_DESC"
+			slot = head_of_government
+			idea_token = GER_Franz_von_Papen
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = GER
+			}
+			available = {
+				has_government = conservatism
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	GER_Heinrich_Bruning = {
+		name = GER_Heinrich_Bruning
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/GER/ministers/GER_Heinrich_Bruning.dds"
+				large = "gfx/leaders/GER/PORTRAIT_HEINRICH_BRUNING.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_GER_HEINRICH_BRUNING_DESC"
+			slot = head_of_government
+			idea_token = GER_Heinrich_Bruning
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = GER
+			}
+			available = {
+				OR = {
+					has_government = conservatism
+					has_government = social_liberalism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	GER_Wilhelm_Marx = {
+		name = GER_Wilhelm_Marx
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Marx.dds"
+				large = "gfx/leaders/GER/Portrait_Wilhelm_Marx.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_GER_WILHELM_MARX_DESC"
+			slot = head_of_government
+			idea_token = GER_Wilhelm_Marx
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = GER
+			}
+			available = {
+				has_government = conservatism
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	GER_Gustav_Bauer = {
+		name = GER_Gustav_Bauer
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/GER/ministers/GER_Gustav_Bauer.dds"
+				large = "gfx/leaders/GER/Portrait_Gustav_Bauer.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_GER_GUSTAV_BAUER_DESC"
+			slot = head_of_government
+			idea_token = GER_Gustav_Bauer
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = GER
+			}
+			available = {
+				has_government = social_democratism
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	GER_Wilhelm_Kulz = {
+		name = GER_Wilhelm_Kulz
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Kulz.dds"
+				large = "gfx/leaders/GER/Portrait_Wilhelm_Kulz.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_GER_WILHELM_KULZ_DESC"
+			slot = head_of_government
+			idea_token = GER_Wilhelm_Kulz
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = GER
+			}
+			available = {
+				has_government = social_liberalism
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	GER_Kurt_von_Schleicher = {
+		name = GER_Kurt_von_Schleicher
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/GER/ministers/GER_Kurt_von_Schleicher.dds"
+				large = "gfx/leaders/GER/Portrait_Kurt_von_Schleicher.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_GER_KURT_VON_SCHLEICHER_DESC"
+			slot = head_of_government
+			idea_token = GER_Kurt_von_Schleicher
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = GER
+			}
+			available = {
+				has_government = authoritarianism
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	GER_Karl_liebknecht = {
+		name = GER_Karl_liebknecht
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/GER/ministers/GER_Karl_liebknecht.dds"
+				large = "gfx/leaders/GER/Portrait_Karl_liebknecht.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_GER_KARL_LIEBKNECHT_DESC"
+			slot = head_of_government
+			idea_token = GER_Karl_liebknecht
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = GER
+			}
+			available = {
+				OR = {
+					has_government = patriotic_socialism
+					has_government = democratic_socialism					
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	GER_Otto_Ruhle = {
+		name = GER_Otto_Ruhle
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/GER/ministers/GER_Otto_Ruhle.dds"
+				large = "gfx/leaders/GER/Portrait_Otto_Ruhle.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_GER_OTTO_RUHLE_DESC"
+			slot = head_of_government
+			idea_token = GER_Otto_Ruhle
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = GER
+			}
+			available = {
+				has_government = democratic_socialism					
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	### FOREIGN MINISTER ###
+	
+	GER_Ludwig_Kaas = {
+		name = GER_Ludwig_Kaas
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/GER/ministers/GER_Ludwig_Kaas.dds"
+				large = "gfx/leaders/GER/Portrait_Ludwig_Kaas.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_GER_LUDWIG_KAAS_DESC"
+			slot = foreign_minister
+			idea_token = GER_Ludwig_Kaas
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = GER
+			}
+			available = {
+				OR = {
+					has_government = conservatism
+					has_government = social_liberalism
+					has_government = social_democratism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	GER_Otto_Braun = {
+		name = GER_Otto_Braun
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/GER/ministers/GER_Otto_Braun.dds"
+				large = "gfx/leaders/GER/Portrait_Otto_Braun.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_GER_OTTO_BRAUN_DESC"
+			slot = foreign_minister
+			idea_token = GER_Otto_Braun
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = GER
+			}
+			available = {
+				has_government = social_democratism
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}
+	}		
+	
+	GER_Konrad_Adenauer = {
+		name = GER_Konrad_Adenauer
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/GER/ministers/GER_Konrad_Adenauer.dds"
+				large = "gfx/leaders/GER/Portrait_Konrad_Adenauer.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_GER_KONRAD_ADENAUER_DESC"
+			slot = foreign_minister
+			idea_token = GER_Konrad_Adenauer
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = GER
+			}
+			available = {
+				OR = {
+					has_government = social_liberalism
+					has_government = social_democratism
+					has_government = conservatism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}
+	}		
+	
+	GER_Friedrich_Wilhelm_von_Prittwitz_und_Gaffron = {
+		name = GER_Friedrich_Wilhelm_von_Prittwitz_und_Gaffron
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/GER/ministers/GER_Friedrich_Wilhelm_von_Prittwitz_und_Gaffron.dds"
+				large = "gfx/leaders/GER/Portrait_Friedrich_Wilhelm_von_Prittwitz_und_Gaffron.dds"
+			}
+		}
+		advisor={
+			desc = "POLITICS_GER_FRIEDRICH_WILHELM_VON_PRITTWITZ_UND_GAFFRON_DESC"
+			slot = foreign_minister
+			idea_token = GER_Friedrich_Wilhelm_von_Prittwitz_und_Gaffron
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = GER
+			}
+			available = {
+				has_government = social_democratism
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}
+	}
+
+	GER_Joachim_von_Ribbentrop = {
+		name = GER_Joachim_von_Ribbentrop
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/GER/ministers/GER_Joachim_von_Ribbentrop.dds"
+				large = "gfx/leaders/GER/Portrait_Joachim_von_Ribbentrop.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_GER_JOACHIM_VON_RIBBENTROP_DESC"
+			slot = foreign_minister
+			idea_token = GER_Joachim_von_Ribbentrop
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = GER
+			}
+			available = {
+				OR = {
+					has_government = conservatism
+					has_government = corporatism
+					has_government = authoritarianism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}
+	}	
+	
+	GER_Ernest_Augustus = {
+		name = GER_Ernest_Augustus
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/GER/ministers/GER_Ernest_Augustus.dds"
+				large = "gfx/leaders/GER/Portrait_Ernest_Augustus.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_GER_ERNEST_AUGUSTUS_DESC"
+			slot = foreign_minister
+			idea_token = GER_Ernest_Augustus
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = GER
+			}
+			available = {
+				OR = {
+					has_government = conservatism
+					has_government = authoritarianism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}
+	}	
+	
+	GER_Otto_Gessler = {
+		name = GER_Otto_Gessler
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/GER/ministers/GER_Otto_Gessler.dds"
+				large = "gfx/leaders/GER/Portrait_Otto_Gessler.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_GER_OTTO_GESSLER_DESC"
+			slot = foreign_minister
+			idea_token = GER_Otto_Gessler
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = GER
+			}
+			available = {
+				OR = {
+					has_government = conservatism
+					has_government = social_liberalism
+					has_government = social_democratism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}
+	}	
+	
+	GER_Karl_von_Lewinski = {
+		name = GER_Karl_von_Lewinski
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/GER/ministers/GER_Karl_von_Lewinski.dds"
+				large = "gfx/leaders/GER/Portrait_Karl_von_Lewinski.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_GER_KARL_VON_LEWINSKI_DESC"
+			slot = foreign_minister
+			idea_token = GER_Karl_von_Lewinski
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = GER
+			}
+			available = {
+				OR = {
+					has_government = conservatism
+					has_government = social_liberalism
+					has_government = social_democratism
+					has_government = authoritarianism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}
+	}
+	
+	GER_Friedrich_Werner_Graf_von_der_Schulenburg = {
+		name = GER_Friedrich_Werner_Graf_von_der_Schulenburg
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/GER/ministers/GER_Friedrich_Werner_Graf_von_der_Schulenburg.dds"
+				large = "gfx/leaders/GER/Portrait_Friedrich_Werner_Graf_von_der_Schulenburg.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_GER_FRIEDRICH_WERNER_GRAF_VON_DER_SCHULENBURG_DESC"
+			slot = foreign_minister
+			idea_token = GER_Friedrich_Werner_Graf_von_der_Schulenburg
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = GER
+			}
+			available = {
+				OR = {
+					has_government = conservatism
+					has_government = social_liberalism
+					has_government = social_democratism
+					has_government = authoritarianism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}
+	}
+	
+	### ECONOMY MINISTER ###
+	
+	GER_Hjalmar_Schacht = {
+		name = GER_Hjalmar_Schacht
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/GER/ministers/GER_Hjalmar_Schacht.dds"
+				large = "gfx/leaders/GER/Portrait_Hjalmar_Schacht.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_GER_HJALMAR_SCHACHT_DESC"
+			slot = economy_minister
+			idea_token = GER_Hjalmar_Schacht
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = GER
+			}
+			available = {
+				OR = {
+					has_government = conservatism
+					has_government = social_liberalism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	GER_Matthias_Erzberger = {
+		name = GER_Matthias_Erzberger
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/GER/ministers/GER_Matthias_Erzberger.dds"
+				large = "gfx/leaders/GER/Portrait_Matthias_Erzberger.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_GER_MATTHIAS_ERZBERGER_DESC"
+			slot = economy_minister
+			idea_token = GER_Matthias_Erzberger
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = GER
+			}
+			available = {
+				OR = {
+					has_government = conservatism
+					has_government = social_liberalism
+					has_government = social_democratism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+	
+	GER_Lutz_Graf_Schwerin_von_Krosigk = {
+		name = GER_Lutz_Graf_Schwerin_von_Krosigk
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/GER/ministers/GER_Lutz_Graf_Schwerin_von_Krosigk.dds"
+				large = "gfx/leaders/GER/Portrait_Lutz_Graf_Schwerin_von_Krosigk.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_GER_LUTZ_GRAF_SCHWERIN_VON_KROSIGK_DESC"
+			slot = economy_minister
+			idea_token = GER_Lutz_Graf_Schwerin_von_Krosigk
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = GER
+			}
+			available = {
+				OR = {
+					has_government = conservatism
+					has_government = authoritarianism
+					has_government = corporatism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+	
+	GER_Walther_Rathenau = {
+		name = GER_Walther_Rathenau
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/GER/ministers/GER_Walther_Rathenau.dds"
+				large = "gfx/leaders/GER/Portrait_Walther_Rathenau.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_GER_WALTHER_RATHENAU_DESC"
+			slot = economy_minister
+			idea_token = GER_Walther_Rathenau
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = GER
+			}
+			available = {
+				OR = {
+					has_government = social_liberalism
+					has_government = conservatism
+					has_government = social_democratism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+	
+	GER_Fritz_Schaffer = {
+		name = GER_Fritz_Schaffer
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/GER/ministers/GER_Fritz_Schaffer.dds"
+				large = "gfx/leaders/GER/Portrait_Fritz_Schaffer.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_GER_FRITZ_SCHAFFER_DESC"
+			slot = economy_minister
+			idea_token = GER_Fritz_Schaffer
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = GER
+			}
+			available = {
+				OR = {
+					has_government = social_liberalism
+					has_government = conservatism
+					has_government = social_democratism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+	
+	GER_Carl_Friedrich_Goerdeler = {
+		name = GER_Carl_Friedrich_Goerdeler
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/GER/ministers/GER_Carl_Friedrich_Goerdeler.dds"
+				large = "gfx/leaders/GER/Portrait_Carl_Friedrich_Goerdeler.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_GER_CARL_FRIEDRICH_GOERDELER_DESC"
+			slot = economy_minister
+			idea_token = GER_Carl_Friedrich_Goerdeler
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = GER
+			}
+			available = {
+				OR = {
+					has_government = social_liberalism
+					has_government = conservatism
+					has_government = authoritarianism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+	
+	GER_Ferdinand_Porsche = {
+		name = GER_Ferdinand_Porsche
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/GER/ministers/GER_Ferdinand_Porsche.dds"
+				large = "gfx/leaders/GER/Portrait_Ferdinand_Porsche.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_GER_FERDINAND_PORSCHE_DESC"
+			slot = economy_minister
+			idea_token = GER_Ferdinand_Porsche
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = GER
+			}
+			available = {
+				OR = {
+					has_government = social_liberalism
+					has_government = conservatism
+					has_government = authoritarianism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+	
+	GER_Waldemar_Koch = {
+		name = GER_Waldemar_Koch
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/GER/ministers/GER_Waldemar_Koch.dds"
+				large = "gfx/leaders/GER/Portrait_Waldemar_Koch.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_GER_WALDEMAR_KOCH_DESC"
+			slot = economy_minister
+			idea_token = GER_Waldemar_Koch
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = GER
+			}
+			available = {
+				has_government = social_liberalism
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+	
+	GER_Julius_Curtius = {
+		name = GER_Julius_Curtius
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/GER/ministers/GER_Julius_Curtius.dds"
+				large = "gfx/leaders/GER/Portrait_Julius_Curtius.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_GER_JULIUS_CURTIUS_DESC"
+			slot = economy_minister
+			idea_token = GER_Julius_Curtius
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = GER
+			}
+			available = {
+				OR = {
+					has_government = social_liberalism
+					has_government = conservatism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+	
+	GER_Hans_Luther = {
+		name = GER_Hans_Luther
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/GER/ministers/GER_Hans_Luther.dds"
+				large = "gfx/leaders/GER/Portrait_Hans_Luther.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_GER_HANS_LUTHER_DESC"
+			slot = economy_minister
+			idea_token = GER_Hans_Luther
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = GER
+			}
+			available = {
+				OR = {
+					has_government = conservatism
+					has_government = social_liberalism
+					has_government = social_democratism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+	
+	
+	### FIELD MARSHAL ###
+	
+	GER_Hans_von_Seeckt = {
+		name = GER_Hans_von_Seeckt
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/GER/ministers/GER_Hans_von_Seeckt.dds"
+				large = "gfx/leaders/GER/Portrait_Hans_von_Seeckt.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "MARSHAL_GER_HANS_VON_SEECKT_DESC"
+			slot = army_chief
+			idea_token = GER_Hans_von_Seeckt
+			allowed = {
+				original_tag = GER
+			}
+			traits = {
+			}
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+	}
+	
+	GER_Rupprecht_von_Bayern = {
+		name = GER_Rupprecht_von_Bayern
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/GER/ministers/GER_Rupprecht_von_Bayern.dds"
+				large = "gfx/leaders/GER/Portrait_Rupprecht_von_Bayern.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "MARSHAL_GER_RUPPRECHT_BAYERN_DESC"
+			slot = high_command
+			idea_token = GER_Rupprecht_von_Bayern
+			allowed = {
+				original_tag = GER
+			}
+			traits = { }
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		field_marshal={
+			desc = "MARSHAL_GER_RUPPRECHT_BAYERN_DESC"
+			traits = { old_guard war_hero organisational_leader brilliant_strategist }
+			skill = 4
+			attack_skill = 5
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+	
+	GER_Gerd_von_Rundstedt = {
+		name = GER_Gerd_von_Rundstedt
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/GER/ministers/GER_Gerd_von_Rundstedt.dds"
+				large = "gfx/leaders/GER/Portrait_Gerd_von_Rundstedt.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "MARSHAL_GER_GERD_VON_RUNDSTEDT_DESC"
+			slot = high_command
+			idea_token = GER_Gerd_von_Rundstedt
+			allowed = {
+				original_tag = GER
+			}
+			traits = { army_regrouping_2 }
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		field_marshal={
+			desc = "MARSHAL_GER_GERD_VON_RUNDSTEDT_DESC"
+			traits = { old_guard war_hero urban_assault_specialist defensive_doctrine }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+	
+	GER_Wilhelm_III = {
+		name = GER_Wilhelm_III
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_III.dds"
+				large = "gfx/leaders/GER/Portrait_Wilhelm_III.dds"
+			}
+		}
+		
+		field_marshal={
+			desc = "MARSHAL_GER_WILHELM_III_DESC"
+			traits = { politically_connected }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	
+	GER_Werner_von_Blomberg = {
+		name = GER_Werner_von_Blomberg
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/GER/ministers/GER_Werner_von_Blomberg.dds"
+				large = "gfx/leaders/GER/Portrait_Werner_von_Blomberg.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "MARSHAL_GER_WERNER_VON_BLOMBERG_DESC"
+			slot = army_chief
+			idea_token = GER_Werner_von_Blomberg
+			allowed = {
+				original_tag = GER
+			}
+			traits = {  }
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		field_marshal={
+			desc = "MARSHAL_GER_WERNER_VON_BLOMBERG_DESC"
+			traits = { war_hero }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+		
+	GER_Konrad_Krafft_von_Dellmensingen = {
+		name = GER_Konrad_Krafft_von_Dellmensingen
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/GER/ministers/GER_Konrad_Krafft_von_Dellmensingen.dds"
+				large = "gfx/leaders/GER/Portrait_Konrad_Krafft_von_Dellmensingen.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "MARSHAL_GER_KONRAD_VON_DELLMENSINGEN_DESC"
+			slot = high_command
+			idea_token = GER_Konrad_Krafft_von_Dellmensingen
+			allowed = {
+				original_tag = GER
+			}
+			traits = {
+			}
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		field_marshal={
+			desc = "MARSHAL_GER_KONRAD_VON_DELLMENSINGEN_DESC"
+			traits = { organisational_leader hill_fighter old_guard }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	
+	### CORPS COMMANDER ###
+	
+	GER_Werner_von_Fritsch = {
+		name = GER_Werner_von_Fritsch
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/GER/ministers/GER_Werner_von_Fritsch.dds"
+				large = "gfx/leaders/GER/Portrait_Werner_von_Fritsch.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "GENERAL_GER_WERNER_VON_FRITSCH_DESC"
+			slot = high_command
+			idea_token = GER_Werner_von_Fritsch
+			allowed = {
+				original_tag = GER
+			}
+			traits = { army_logistics_2 }
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_GER_WERNER_VON_FRITSCH_DESC"
+			traits = { organizer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	
+	GER_Walther_von_Brauchitsch = {
+		name = GER_Walther_von_Brauchitsch
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/GER/ministers/GER_Walther_von_Brauchitsch.dds"
+				large = "gfx/leaders/GER/Portrait_Walther_von_Brauchitsch.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "GENERAL_GER_WALTHER_VON_BRAUCHITSCH_DESC"
+			slot = high_command
+			idea_token = GER_Walther_von_Brauchitsch
+			allowed = {
+				original_tag = GER
+			}
+			traits = { army_chief_maneuver_2 }
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_GER_WALTHER_VON_BRAUCHITSCH_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	
+	GER_Erich_von_Manstein = {
+		name = GER_Erich_von_Manstein
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/GER/ministers/GER_Erich_von_Manstein.dds"
+				large = "gfx/leaders/GER/Portrait_Erich_von_Manstein.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_GER_ERICH_VON_MANSTEIN_DESC"
+			traits = { armor_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 4
+		}
+	}
+	
+	GER_Heinz_Guderian = {
+		name = GER_Heinz_Guderian
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/GER/ministers/GER_Heinz_Guderian.dds"
+				large = "gfx/leaders/GER/Portrait_Heinz_Guderian.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_GER_HEINZ_GUDERIAN_DESC"
+			traits = { armor_officer panzer_leader }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 4
+		}
+	}
+	
+	GER_Georg_von_Kuchler = {
+		name = GER_Georg_von_Kuchler
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/GER/ministers/GER_Georg_von_Kuchler.dds"
+				large = "gfx/leaders/GER/Portrait_Georg_von_Kuchler.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_GER_GEORG_VON_KUCHLER_DESC"
+			traits = { armor_officer panzer_leader }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 4
+		}
+	}
+	
+	GER_Eugen_Ritter_von_Schobert = {
+		name = GER_Eugen_Ritter_von_Schobert
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/GER/ministers/GER_Eugen_Ritter_von_Schobert.dds"
+				large = "gfx/leaders/GER/Portrait_Eugen_Ritter_von_Schobert.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_GER_EUGEN_RITTER_VON_SCHOBERT_DESC"
+			traits = { infantry_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 4
+		}
+	}
+	
+	GER_Wilhelm_List = {
+		name = GER_Wilhelm_List
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_List.dds"
+				large = "gfx/leaders/GER/Portrait_Wilhelm_List.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_GER_WILHELM_LIST_DESC"
+			traits = { inflexible_strategist }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+	
+	GER_Gunther_von_Kluge = {
+		name = GER_Gunther_von_Kluge
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/GER/ministers/GER_Gunther_von_Kluge.dds"
+				large = "gfx/leaders/GER/Portrait_Gunther_von_Kluge.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_GER_GUNTHER_VON_KLUGE_DESC"
+			traits = { trait_cautious }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	GER_Maximilian_von_Weichs = {
+		name = GER_Maximilian_von_Weichs
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/GER/ministers/GER_Maximilian_von_Weichs.dds"
+				large = "gfx/leaders/GER/Portrait_Maximilian_von_Weichs.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_GER_MAXIMILIAN_VON_WEICHS_DESC"
+			traits = { cavalry_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	GER_Johannes_Blaskowitz = {
+		name = GER_Johannes_Blaskowitz
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/GER/ministers/GER_Johannes_Blaskowitz.dds"
+				large = "gfx/leaders/GER/Portrait_Johannes_Blaskowitz.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_GER_JOHANNES_BLASKOWITZ_DESC"
+			traits = { infantry_officer trait_reckless }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	GER_Alexander_von_Falkenhausen = {
+		name = GER_Alexander_von_Falkenhausen
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/GER/ministers/GER_Alexander_von_Falkenhausen.dds"
+				large = "gfx/leaders/GER/Portrait_Alexander_von_Falkenhausen.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_GER_ALEXANDER_VON_FALKENHAUSEN_DESC"
+			traits = { infantry_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	
+	GER_Wilhelm_Ritter_von_Leeb = {
+		name = GER_Wilhelm_Ritter_von_Leeb
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Ritter_von_Leeb.dds"
+				large = "gfx/leaders/GER/Portrait_Wilhelm_Ritter_von_Leeb.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_GER_WILHELM_RITTER_VON_LEEB_DESC"
+			traits = { infantry_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	
+	GER_Franz_Halder = {
+		name = GER_Franz_Halder
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/GER/ministers/GER_Franz_Halder.dds"
+				large = "gfx/leaders/GER/Portrait_Franz_Halder.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_GER_FRANZ_HALDER_DESC"
+			traits = { organizer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	
+	GER_Walter_von_Reichenau = {
+		name = GER_Walter_von_Reichenau
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/GER/ministers/GER_Walter_von_Reichenau.dds"
+				large = "gfx/leaders/GER/Portrait_Walter_von_Reichenau.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_GER_WALTER_VON_REICHENAU_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	
+	GER_Wilhelm_Keitel = {
+		name = GER_Wilhelm_Keitel
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Keitel.dds"
+				large = "gfx/leaders/GER/Portrait_Wilhelm_Keitel.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_GER_WILHELM_KEITEL_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+		
+		advisor = {
+			desc = "GENERAL_GER_WILHELM_KEITEL_DESC"
+			slot = army_chief
+			idea_token = GER_Wilhelm_Keitel
+			allowed = {
+				original_tag = GER
+			}
+			traits = { army_chief_drill_2 }
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	GER_Rudolf_Schmidt = {
+		name = GER_Rudolf_Schmidt
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/GER/ministers/GER_Rudolf_Schmidt.dds"
+				large = "gfx/leaders/GER/Portrait_Rudolf_Schmidt.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_GER_RUDOLF_SCHMIDT_DESC"
+			traits = { armor_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	
+	GER_Fedor_von_Bock = {
+		name = GER_Fedor_von_Bock
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/GER/ministers/GER_Fedor_von_Bock.dds"
+				large = "gfx/leaders/GER/Portrait_Fedor_von_Bock.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_GER_FEDOR_VON_BOCK_DESC"
+			traits = { trait_cautious harsh_leader }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	
+	GER_Erwin_von_Witzleben = {
+		name = GER_Erwin_von_Witzleben
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/GER/ministers/GER_Erwin_von_Witzleben.dds"
+				large = "gfx/leaders/GER/Portrait_Erwin_von_Witzleben.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_GER_ERWIN_VON_WITZLEBEN_DESC"
+			traits = { infantry_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	
+	GER_Konrad_von_Bayern = {
+		name = GER_Konrad_von_Bayern
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/GER/ministers/GER_Konrad_von_Bayern.dds"
+				large = "gfx/leaders/GER/Portrait_Konrad_von_Bayern.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_GER_KONRAD_VON_BAYERN_DESC"
+			traits = { cavalry_leader }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	
+	GER_Ludwig_Beck = {
+		name = GER_Ludwig_Beck
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/GER/ministers/GER_Ludwig_Beck.dds"
+				large = "gfx/leaders/GER/Portrait_Ludwig_Beck.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "GENERAL_GER_Ludwig_Beck_DESC"
+			slot = army_chief
+			idea_token = GER_Ludwig_Beck
+			allowed = {
+				original_tag = GER
+			}
+			traits = {
+				army_chief_organizational_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 0.100
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_GER_Ludwig_Beck_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	
+	GER_Nikolaus_von_Falkenhorst = {
+		name = GER_Nikolaus_von_Falkenhorst
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/GER/ministers/GER_Nikolaus_von_Falkenhorst.dds"
+				large = "gfx/leaders/GER/Portrait_Nikolaus_von_Falkenhorst.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_GER_NIKOLAUS_VON_FALKENHORST_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	
+	GER_Heinrich_von_Vietinghoff = {
+		name = GER_Heinrich_von_Vietinghoff
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/GER/ministers/GER_Heinrich_von_Vietinghoff.dds"
+				large = "gfx/leaders/GER/Portrait_Heinrich_von_Vietinghoff.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_GER_HEINRICH_VON_VIETINGHOFF_DESC"
+			traits = { trait_engineer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	
+	GER_Friedrich_Christian_von_Sachsen = {
+		name = GER_Friedrich_Christian_von_Sachsen
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/GER/ministers/GER_Friedrich_Christian_von_Sachsen.dds"
+				large = "gfx/leaders/GER/Portrait_Friedrich_Christian_von_Sachsen.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_GER_FRIEDRICH_VON_SACHSEN_DESC"
+			traits = { infantry_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	
+	GER_Friedrich_Fromm = {
+		name = GER_Friedrich_Fromm
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/GER/ministers/GER_Friedrich_Fromm.dds"
+				large = "gfx/leaders/GER/Portrait_Friedrich_Fromm.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_GER_FRIEDRICH_FROMM_DESC"
+			traits = { infantry_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	
+	GER_Erich_Hoepner = {
+		name = GER_Erich_Hoepner
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/GER/ministers/GER_Erich_Hoepner.dds"
+				large = "gfx/leaders/GER/Portrait_Erich_Hoepner.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_GER_ERICH_HOEPNER_DESC"
+			traits = { }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	
+	GER_Adolf_Strauss = {
+		name = GER_Adolf_Strauss
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/GER/ministers/GER_Adolf_Strauss.dds"
+				large = "gfx/leaders/GER/Portrait_Adolf_Strauss.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_GER_ADOLF_STRAUSS_DESC"
+			traits = { }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	
+	GER_Ernst_Busch = {
+		name = GER_Ernst_Busch
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/GER/ministers/GER_Ernst_Busch.dds"
+				large = "gfx/leaders/GER/Portrait_Ernst_Busch.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_GER_ERNST_BUSCH_DESC"
+			traits = { }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	
+	GER_Prinz_Oskar = {
+		name = GER_Prinz_Oskar
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/GER/ministers/GER_Prinz_Oskar.dds"
+				large = "gfx/leaders/GER/Portrait_Prinz_Oskar.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_GER_PRINZ_OSKAR_DESC"
+			traits = { }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	
+	### Admiral ###
+	
+	GER_Ludwig_Reuter = {
+		name = GER_Ludwig_Reuter
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/GER/ministers/GER_Ludwig_Reuter.dds"
+				large = "gfx/leaders/GER/Portrait_Ludwig_Reuter.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "ADMIRAL_GER_LUDWIG_REUTER_DESC"
+			slot = high_command
+			idea_token = GER_Ludwig_Reuter
+			allowed = {
+				original_tag = GER
+			}
+			traits = {
+				navy_anti_submarine_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 0.100
+			}
+		}
+	}
+	
+	GER_Erich_Raeder = {
+		name = GER_Erich_Raeder
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/GER/ministers/GER_Erich_Raeder.dds"
+				large = "gfx/leaders/GER/Portrait_Erich_Raeder.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "ADMIRAL_GER_ERICH_RAEDER_DESC"
+			slot = navy_chief
+			idea_token = GER_Erich_Raeder
+			allowed = {
+				original_tag = GER
+			}
+			traits = {
+				navy_chief_decisive_battle_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 0.100
+			}
+		}
+		
+		navy_leader = {
+			desc = "ADMIRAL_GER_ERICH_RAEDER_DESC"
+			traits = { ironside battleship_adherent }
+			skill = 5
+			attack_skill = 5
+			defense_skill = 4
+			maneuvering_skill = 3
+			coordination_skill = 4
+		}
+	}
+	
+	GER_Alfred_Saalwachter = {
+		name = GER_Alfred_Saalwachter
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/GER/ministers/GER_Alfred_Saalwachter.dds"
+				large = "gfx/leaders/GER/Portrait_Alfred_Saalwachter.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "ADMIRAL_GER_ALFRED_SAALWACHTER_DESC"
+			slot = navy_chief
+			idea_token = GER_Alfred_Saalwachter
+			allowed = {
+				original_tag = GER
+			}
+			traits = {
+				submarine_specialist
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 0.100
+			}
+		}
+		
+		navy_leader = {
+			desc = "ADMIRAL_GER_ALFRED_SAALWACHTER_DESC"
+			traits = { bold old_guard_navy }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			maneuvering_skill = 3
+			coordination_skill = 4
+		}
+	}
+	
+	GER_Wilhelm_Canaris = {
+		name = GER_Wilhelm_Canaris
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/GER/ministers/GER_Wilhelm_Canaris.dds"
+				large = "gfx/leaders/GER/Portrait_Wilhelm_Canaris.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "ADMIRAL_GER_WILHELM_CANARIS_DESC"
+			slot = navy_chief
+			idea_token = GER_Wilhelm_Canaris
+			allowed = {
+				original_tag = GER
+			}
+			traits = {
+				navy_chief_commerce_raiding_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 0.100
+			}
+		}
+		
+		navy_leader = {
+			desc = "ADMIRAL_GER_WILHELM_CANARIS_DESC"
+			traits = { seawolf old_guard_navy }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			maneuvering_skill = 3
+			coordination_skill = 3
+		}
+	}
+	
+	GER_Karl_Donitz = {
+		name = GER_Karl_Donitz
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/GER/ministers/GER_Karl_Donitz.dds"
+				large = "gfx/leaders/GER/Portrait_Karl_Donitz.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "ADMIRAL_GER_KARL_DONITZ_DESC"
+			slot = navy_chief
+			idea_token = GER_Karl_Donitz
+			allowed = {
+				original_tag = GER
+			}
+			traits = {
+				navy_chief_commerce_raiding_3
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 0.100
+			}
+		}
+		
+		navy_leader = {
+			desc = "ADMIRAL_GER_KARL_DONITZ_DESC"
+			traits = { seawolf silent_hunter }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 2
+			maneuvering_skill = 3
+			coordination_skill = 4
+		}
+	}
+	
+	GER_Rolf_Carls = {
+		name = GER_Rolf_Carls
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/GER/ministers/GER_Rolf_Carls.dds"
+				large = "gfx/leaders/GER/Portrait_Rolf_Carls.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "ADMIRAL_GER_ROLF_CARLS_DESC"
+			slot = navy_chief
+			idea_token = GER_Rolf_Carls
+			allowed = {
+				original_tag = GER
+			}
+			traits = {
+				grand_fleet_proponent
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 0.100
+			}
+		}
+		
+		navy_leader = {
+			desc = "ADMIRAL_GER_ROLF_CARLS_DESC"
+			traits = { warhero blue_water_expert }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			maneuvering_skill = 3
+			coordination_skill = 2
+		}
+	}
+	
+	GER_Max_Valentiner = {
+		name = GER_Max_Valentiner
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/GER/ministers/GER_Max_Valentiner.dds"
+				large = "gfx/leaders/GER/Portrait_Max_Valentiner.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "ADMIRAL_GER_MAX_VALENTINER_DESC"
+			slot = navy_chief
+			idea_token = GER_Max_Valentiner
+			allowed = {
+				original_tag = GER
+			}
+			traits = {
+				navy_chief_commerce_raiding_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 0.100
+			}
+		}
+		
+		navy_leader = {
+			desc = "ADMIRAL_GER_MAX_VALENTINER_DESC"
+			traits = { seawolf lancer  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			maneuvering_skill = 3
+			coordination_skill = 2
+		}
+	}
+	
+	GER_Hubert_Schmundt = {
+		name = GER_Hubert_Schmundt
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/GER/ministers/GER_Hubert_Schmundt.dds"
+				large = "gfx/leaders/GER/Portrait_Hubert_Schmundt.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "ADMIRAL_GER_HUBERT_SCHMUNDT_DESC"
+			slot = navy_chief
+			idea_token = GER_Hubert_Schmundt
+			allowed = {
+				original_tag = GER
+			}
+			traits = {
+			
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 0.100
+			}
+		}
+		
+		navy_leader = {
+			desc = "ADMIRAL_GER_HUBERT_SCHMUNDT_DESC"
+			traits = { inshore_fighter  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			maneuvering_skill = 3
+			coordination_skill = 2
+		}
+	}
+	
+	GER_Ludwig_Bockholt = {
+		name = GER_Ludwig_Bockholt
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/GER/ministers/GER_Ludwig_Bockholt.dds"
+				large = "gfx/leaders/GER/Portrait_Ludwig_Bockholt.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "ADMIRAL_GER_LUDWIG_BOCKHOLT_DESC"
+			slot = navy_chief
+			idea_token = GER_Ludwig_Bockholt
+			allowed = {
+				original_tag = GER
+			}
+			traits = {
+				navy_carrier_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 0.100
+			}
+		}
+		
+		navy_leader = {
+			desc = "ADMIRAL_GER_LUDWIG_BOCKHOLT_DESC"
+			traits = { spotter air_controller  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			maneuvering_skill = 3
+			coordination_skill = 2
+		}
+	}
+	
+	GER_Oskar_Kummetz = {
+		name = GER_Oskar_Kummetz
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/GER/ministers/GER_Oskar_Kummetz.dds"
+				large = "gfx/leaders/GER/Portrait_Oskar_Kummetz.dds"
+			}
+		}
+		
+		navy_leader = {
+			desc = "ADMIRAL_GER_OSKAR_KUMMETZ_DESC"
+			traits = { }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			maneuvering_skill = 2
+			coordination_skill = 2
+		}
+	}
+	
+	GER_Conrad_Albrecht = {
+		name = GER_Conrad_Albrecht
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/GER/ministers/GER_Conrad_Albrecht.dds"
+				large = "gfx/leaders/GER/Portrait_Conrad_Albrecht.dds"
+			}
+		}
+		
+		navy_leader = {
+			desc = "ADMIRAL_GER_CONRAD_ALBRECHT_DESC"
+			traits = { }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			maneuvering_skill = 2
+			coordination_skill = 2
+		}
+	}
+	
+	GER_Gunther_Lutjens = {
+		name = GER_Gunther_Lutjens
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/GER/ministers/GER_Gunther_Lutjens.dds"
+				large = "gfx/leaders/GER/Portrait_Gunther_Lutjens.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "ADMIRAL_GER_GUNTHER_LUTJENS_DESC"
+			slot = high_command
+			idea_token = GER_Gunther_Lutjens
+			allowed = {
+				original_tag = GER
+			}
+			traits = {
+				navy_fleet_logistics_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 0.100
+			}
+		}
+		
+		navy_leader = {
+			desc = "ADMIRAL_GER_GUNTHER_LUTJENS_DESC"
+			traits = { superior_tactician }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			maneuvering_skill = 3
+			coordination_skill = 3
+		}
+	}
+	
+	GER_Hermann_Boehm = {
+		name = GER_Hermann_Boehm
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/GER/ministers/GER_Hermann_Boehm.dds"
+				large = "gfx/leaders/GER/Portrait_Hermann_Boehm.dds"
+			}
+		}
+		
+		navy_leader = {
+			desc = "ADMIRAL_GER_HERMANN_BOEHM_DESC"
+			traits = { craven superior_tactician }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 4
+			maneuvering_skill = 3
+			coordination_skill = 2
+		}
+	}
+	
+}

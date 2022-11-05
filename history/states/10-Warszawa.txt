@@ -1,0 +1,31 @@
+state={
+	id=10
+	name="STATE_10"
+	manpower = 3089000
+
+	state_category = large_city
+
+	history={
+		owner = UPL
+		victory_points = {
+			3544 30
+		}
+		victory_points = {
+			402 3
+		}
+		buildings = {
+			infrastructure = 3
+			arms_factory = 3
+			industrial_complex = 2
+			air_base = 5
+		}
+		add_core_of = POL
+		add_core_of = UPL
+	}
+
+	provinces={
+		402 467 524 3482 3544 6511 9400 11492 12562 
+	}
+	
+	local_supplies=0.0 
+}

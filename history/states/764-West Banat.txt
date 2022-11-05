@@ -1,0 +1,26 @@
+
+state={
+	id=764
+	name="STATE_764"
+	manpower = 585579
+	state_category = town
+
+	history={
+		owner = HAB
+
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+		victory_points = {
+			11787 5
+		}
+		add_core_of = HAB
+		add_core_of = BAN
+		add_core_of = VOJ
+	}
+
+	provinces={
+		614 3614 6643 11787
+	}
+}

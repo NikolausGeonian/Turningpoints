@@ -1,0 +1,24 @@
+
+state={
+	id=655
+	name="STATE_655"
+	manpower = 94759
+	resources={
+		oil=4
+}
+	state_category = pastoral
+	history={
+		owner = KIL
+		add_core_of = KIL
+		add_core_of = QNG
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			air_base = 1
+		}
+	}
+
+	provinces={
+		855 1742 1755 1820 1322 12446
+	}
+}

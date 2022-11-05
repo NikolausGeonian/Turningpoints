@@ -1,0 +1,384 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_news_headline_generic"
+		texturefile = "gfx/interface/news_headline/news_headline_generic.dds"
+		legacy_lazy_load = no
+	}
+		
+	### FRA ###
+	spriteType = {
+		name = "GFX_news_headline_FRA_social_democratism"
+		texturefile = "gfx/interface/news_headline/FRA/news_headline_le_petit_journal.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_news_headline_FRA_conservatism"
+		texturefile = "gfx/interface/news_headline/FRA/news_headline_le_petit_journal.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_news_headline_FRA_authoritarianism"
+		texturefile = "gfx/interface/news_headline/FRA/news_headline_le_petit_journal.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_news_headline_FRA_social_liberalism"
+		texturefile = "gfx/interface/news_headline/FRA/news_headline_le_petit_journal.dds"
+		legacy_lazy_load = no
+	}
+	
+	
+	spriteType = {
+		name = "GFX_news_headline_FRA_corporatism"
+		texturefile = "gfx/interface/news_headline/FRA/news_headline_le_figaro.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_news_headline_FRA_populism"
+		texturefile = "gfx/interface/news_headline/FRA/news_headline_l_action_francaise.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_news_headline_FRA_democratic_socialism"
+		texturefile = "gfx/interface/news_headline/FRA/news_headline_l_humanite.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_news_headline_FRA_patriotic_socialism"
+		texturefile = "gfx/interface/news_headline/FRA/news_headline_l_humanite.dds"
+		legacy_lazy_load = no
+	}
+		
+	### PER ###
+	spriteType = {
+		name = "GFX_news_headline_PER_generic"
+		texturefile = "gfx/interface/news_headline/PER/news_headline_ettela_at.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_news_headline_PER_farright"
+		texturefile = "gfx/interface/news_headline/PER/news_headline_iran.dds"
+		legacy_lazy_load = no
+	}
+	
+	### GBR ###
+	spriteType = {
+		name = "GFX_news_headline_GBR_democratic_socialism"
+		texturefile = "gfx/interface/news_headline/GBR/news_headline_daily_worker.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_news_headline_GBR_patriotic_socialism"
+		texturefile = "gfx/interface/news_headline/GBR/news_headline_daily_worker.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_news_headline_GBR_social_liberalism"
+		texturefile = "gfx/interface/news_headline/GBR/news_headline_financial_times.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_news_headline_GBR_social_democratism"
+		texturefile = "gfx/interface/news_headline/GBR/news_headline_daily_record.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_news_headline_GBR_conservatism"
+		texturefile = "gfx/interface/news_headline/GBR/news_headline_the_times.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_news_headline_GBR_authoritarianism"
+		texturefile = "gfx/interface/news_headline/GBR/news_headline_the_times.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_news_headline_GBR_populism"
+		texturefile = "gfx/interface/news_headline/GBR/news_headline_daily_mail.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_news_headline_GBR_corporatism"
+		texturefile = "gfx/interface/news_headline/GBR/news_headline_daily_mail.dds"
+		legacy_lazy_load = no
+	}
+	
+	### GER ###
+	spriteType = {
+		name = "GFX_news_headline_GER_democratic_socialism"
+		texturefile = "gfx/interface/news_headline/GER/news_headline_die_rote_fahne.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_news_headline_GER_patriotic_socialism"
+		texturefile = "gfx/interface/news_headline/GER/news_headline_die_rote_fahne.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_news_headline_GER_social_democratism"
+		texturefile = "gfx/interface/news_headline/GER/news_headline_frankfurter_zeitung.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_news_headline_GER_social_liberalism"
+		texturefile = "gfx/interface/news_headline/GER/news_headline_freisinnige_zeitung.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_news_headline_GER_conservatism"
+		texturefile = "gfx/interface/news_headline/GER/news_headline_frankfurter_zeitung.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_news_headline_GER_authoritarianism"
+		texturefile = "gfx/interface/news_headline/GER/news_headline_frankfurter_zeitung.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_news_headline_GER_populism"
+		texturefile = "gfx/interface/news_headline/GER/news_headline_volkischer_beobachter.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_news_headline_GER_corporatism"
+		texturefile = "gfx/interface/news_headline/GER/news_headline_volkischer_beobachter.dds"
+		legacy_lazy_load = no
+	}
+	
+	### RUS ###
+	spriteType = {
+		name = "GFX_news_headline_RUS_democratic_socialism"
+		texturefile = "gfx/interface/news_headline/RUS/news_headline_pravda.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_news_headline_RUS_patriotic_socialism"
+		texturefile = "gfx/interface/news_headline/RUS/news_headline_izvestia.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_news_headline_RUS_social_democratism"
+		texturefile = "gfx/interface/news_headline/RUS/news_headline_novaya_zhizn.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_news_headline_RUS_social_liberalism"
+		texturefile = "gfx/interface/news_headline/RUS/news_headline_russkiye_vedomosti.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_news_headline_RUS_conservatism"
+		texturefile = "gfx/interface/news_headline/RUS/news_headline_russian_gazette.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_news_headline_RUS_authoritarianism"
+		texturefile = "gfx/interface/news_headline/RUS/news_headline_russian_gazette.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_news_headline_RUS_populism"
+		texturefile = "gfx/interface/news_headline/RUS/news_headline_russkoye_znamya.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_news_headline_RUS_corporatism"
+		texturefile = "gfx/interface/news_headline/RUS/news_headline_russkoye_znamya.dds"
+		legacy_lazy_load = no
+	}
+	
+	### OTE ###
+	spriteType = {
+		name = "GFX_news_headline_OTE_democratic_socialism"
+		texturefile = "gfx/interface/news_headline/OTE/news_headline_aydinlik.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_news_headline_OTE_patriotic_socialism"
+		texturefile = "gfx/interface/news_headline/OTE/news_headline_aydinlik.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_news_headline_OTE_social_democratism"
+		texturefile = "gfx/interface/news_headline/OTE/news_headline_servetifunoun.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_news_headline_OTE_social_liberalism"
+		texturefile = "gfx/interface/news_headline/OTE/news_headline_serbesti.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_news_headline_OTE_conservatism"
+		texturefile = "gfx/interface/news_headline/OTE/news_headline_ikdam.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_news_headline_OTE_authoritarianism"
+		texturefile = "gfx/interface/news_headline/OTE/news_headline_takvim_i_vekayi.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_news_headline_OTE_populism"
+		texturefile = "gfx/interface/news_headline/OTE/news_headline_falastin.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_news_headline_OTE_corporatism"
+		texturefile = "gfx/interface/news_headline/OTE/news_headline_ortadogu.dds"
+		legacy_lazy_load = no
+	}
+	
+	### JAP ###
+	spriteType = {
+		name = "GFX_news_headline_JAP_democratic_socialism"
+		texturefile = "gfx/interface/news_headline/JAP/news_headline_shimbun_akahata.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_news_headline_JAP_patriotic_socialism"
+		texturefile = "gfx/interface/news_headline/JAP/news_headline_shimbun_akahata.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_news_headline_JAP_social_democratism"
+		texturefile = "gfx/interface/news_headline/JAP/news_headline_mainichi_shimbun.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_news_headline_JAP_social_liberalism"
+		texturefile = "gfx/interface/news_headline/JAP/news_headline_sankei_shimbun.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_news_headline_JAP_conservatism"
+		texturefile = "gfx/interface/news_headline/JAP/news_headline_yomiuri_shinbun.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_news_headline_JAP_authoritarianism"
+		texturefile = "gfx/interface/news_headline/JAP/news_headline_asahi.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_news_headline_JAP_populism"
+		texturefile = "gfx/interface/news_headline/JAP/news_headline_asahi.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_news_headline_JAP_corporatism"
+		texturefile = "gfx/interface/news_headline/JAP/news_headline_asahi.dds"
+		legacy_lazy_load = no
+	}
+	
+	### NJP ###
+	spriteType = {
+		name = "GFX_news_headline_NJP_social_democratism"
+		texturefile = "gfx/interface/news_headline/JAP/news_headline_nichi_nich_shimbun.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_news_headline_NJP_social_liberalism"
+		texturefile = "gfx/interface/news_headline/JAP/news_headline_tokyo_shimbun.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_news_headline_NJP_conservatism"
+		texturefile = "gfx/interface/news_headline/JAP/news_headline_nikkei.dds"
+		legacy_lazy_load = no
+	}
+	
+	### QNG ###
+	spriteType = {
+		name = "GFX_news_headline_QNG_democratic_socialism"
+		texturefile = "gfx/interface/news_headline/QNG/news_headline_la_jeunesse.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_news_headline_QNG_patriotic_socialism"
+		texturefile = "gfx/interface/news_headline/QNG/news_headline_la_jeunesse.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_news_headline_QNG_social_democratism"
+		texturefile = "gfx/interface/news_headline/QNG/news_headline_Shun_Pao.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_news_headline_QNG_social_liberalism"
+		texturefile = "gfx/interface/news_headline/QNG/news_headline_Shun_Pao.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_news_headline_QNG_conservatism"
+		texturefile = "gfx/interface/news_headline/QNG/news_headline_times.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_news_headline_QNG_authoritarianism"
+		texturefile = "gfx/interface/news_headline/QNG/news_headline_chinese_cabinet_gazette.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_news_headline_QNG_populism"
+		texturefile = "gfx/interface/news_headline/QNG/news_headline_people.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_news_headline_QNG_corporatism"
+		texturefile = "gfx/interface/news_headline/QNG/news_headline_central_daily_news.dds"
+		legacy_lazy_load = no
+	}
+}

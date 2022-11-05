@@ -1,0 +1,20 @@
+state = {
+	id=857
+	name="STATE_857" #Welega Oromia
+	manpower = 1471609
+	state_category = rural
+	
+	history = {
+		owner = ETH
+		add_core_of = ETH
+		
+		buildings = {
+			infrastructure = 1
+		}
+		
+	}
+	
+	provinces={
+		2009 7912 12856 
+	}
+}

@@ -1,0 +1,671 @@
+﻿division_template = {
+	name = "Infanterietruppendivison"					# Infantry Division
+	division_names_group = HABAUS_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }						# Infanterie-Brigade 
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }						# Infanterie-Brigade
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }						# Infanterie-Brigade
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }				# Feldkanonen-Regiment 
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }		     
+	}
+}
+
+division_template = {
+	name = "Gebirgstruppe"					# Mountain Division
+	division_names_group = HAB_MNT_01
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 } 
+	}
+}
+
+division_template = {
+	name = "Kavallerietruppendivision" 					# Kavallerietruppendivision
+	division_names_group = HAB_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 0 y = 3 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }  
+	}
+}
+
+division_template = {
+	name = "Kraftfahrjägerdivision" 					
+	division_names_group = HAB_MOT_01
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }  
+	}
+}
+
+division_template = {
+	name = "Panzer Division"
+	division_names_group = HAB_ARM_01
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+}
+
+
+units = {
+	
+	# I. Korps
+	
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 6562		#Olmütz
+		division_template = "Infanterietruppendivison"
+		start_experience_factor = 0.3
+
+	}
+	
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 12
+		}
+		location = 6562		#Olmütz
+		division_template = "Infanterietruppendivison"
+		start_experience_factor = 0.3
+
+	}
+	
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 6562		#Olmütz
+		division_template = "Kavallerietruppendivision"
+		start_experience_factor = 0.3
+	}
+
+	# II. Korps
+	
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 25
+		}
+		location = 11666  # Vienna
+		division_template = "Infanterietruppendivison"
+		start_experience_factor = 0.3
+
+	}
+	
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 11666  # Vienna
+		division_template = "Infanterietruppendivison"
+		start_experience_factor = 0.3
+
+	}
+	
+	division = {	 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 11666  # Vienna
+		division_template = "Kavallerietruppendivision"
+		start_experience_factor = 0.3
+
+	}
+	
+	# III. Korps
+	
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 28
+		}
+		location = 9627  # Laibach
+		division_template = "Infanterietruppendivison"
+		start_experience_factor = 0.3
+
+	}
+	
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 9627  # Laibach
+		division_template = "Infanterietruppendivison"
+		start_experience_factor = 0.3
+
+	}
+	
+	# IV. Korps
+	
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 31
+		}
+		location = 11610
+		division_template = "Infanterietruppendivison"
+		start_experience_factor = 0.3
+
+	}
+	
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 32
+		}
+		location = 11610
+		division_template = "Infanterietruppendivison"
+		start_experience_factor = 0.3
+
+	}
+
+	# V. Korps
+	
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 33
+		}
+		location = 9427
+		division_template = "Infanterietruppendivison"
+		start_experience_factor = 0.3
+
+	}
+	
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 9427
+		division_template = "Kavallerietruppendivision"
+		start_experience_factor = 0.3
+
+	}
+	
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 26
+		}
+		location = 9427
+		division_template = "Infanterietruppendivison"
+		start_experience_factor = 0.3
+
+	}
+	
+	# VI. Korps
+	
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 15
+		}
+		location = 3569
+		division_template = "Infanterietruppendivison"
+		start_experience_factor = 0.3
+
+	}
+	
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 27
+		}
+		location = 3569
+		division_template = "Infanterietruppendivison"
+		start_experience_factor = 0.3
+
+	}
+	
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3569
+		division_template = "Kavallerietruppendivision"
+		start_experience_factor = 0.3
+
+	}
+	
+	# VII. Korps
+	
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 17
+		}
+		location = 679
+		division_template = "Infanterietruppendivison"
+		start_experience_factor = 0.3
+
+	}
+	
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 34
+		}
+		location = 679
+		division_template = "Infanterietruppendivison"
+		start_experience_factor = 0.3
+
+	}
+	
+	# VIII. Korps 
+	
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 19
+		}
+		location = 6418
+		division_template = "Infanterietruppendivison"
+		start_experience_factor = 0.3
+	}
+	
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location = 6418
+		division_template = "Infanterietruppendivison"
+		start_experience_factor = 0.3
+	}
+	
+	# IX. Korps 
+	
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 29
+		}
+		location = 11659
+		division_template = "Infanterietruppendivison"
+		start_experience_factor = 0.3
+	}
+	
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 10
+		}
+		location = 11659
+		division_template = "Kavallerietruppendivision"
+		start_experience_factor = 0.3
+	}
+	
+	# X. Korps
+	
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 438
+		division_template = "Infanterietruppendivison"
+		start_experience_factor = 0.3
+	}
+	
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 24
+		}
+		location = 438
+		division_template = "Infanterietruppendivison"
+		start_experience_factor = 0.3
+	}
+	
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 438
+		division_template = "Kavallerietruppendivision"
+		start_experience_factor = 0.3
+	}
+	
+	# XI. Korps
+	
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 11
+		}
+		location = 11479
+		division_template = "Infanterietruppendivison"
+		start_experience_factor = 0.3
+	}
+	
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 30
+		}
+		location = 11479
+		division_template = "Infanterietruppendivison"
+		start_experience_factor = 0.3
+	}
+	
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 11479
+		division_template = "Kavallerietruppendivision"
+		start_experience_factor = 0.3
+	}
+	
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 11479
+		division_template = "Kavallerietruppendivision"
+		start_experience_factor = 0.3
+	}
+	
+	# XII. Korps
+	
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 11
+		}
+		location = 11581
+		division_template = "Infanterietruppendivison"
+		start_experience_factor = 0.3
+	}
+	
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 16
+		}
+		location = 11581
+		division_template = "Infanterietruppendivison"
+		start_experience_factor = 0.3
+	}
+	
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 35
+		}
+		location = 11581
+		division_template = "Infanterietruppendivison"
+		start_experience_factor = 0.3
+	}
+	
+	# XIII. Korps
+	
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 10
+		}
+		location = 9660
+		division_template = "Kavallerietruppendivision"
+		start_experience_factor = 0.3
+
+	}
+	
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 9660
+		division_template = "Infanterietruppendivison"
+		start_experience_factor = 0.3
+
+	}
+	
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 13
+		}
+		location = 9660
+		division_template = "Infanterietruppendivison"
+		start_experience_factor = 0.3
+
+	}
+	
+	
+	# XIV. Korps
+	
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 732
+		division_template = "Infanterietruppendivison"
+		start_experience_factor = 0.3
+
+	}
+	
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 36
+		}
+		location = 732
+		division_template = "Infanterietruppendivison"
+		start_experience_factor = 0.3
+
+	}
+	
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 732
+		division_template = "Infanterietruppendivison"
+		start_experience_factor = 0.3
+
+	}
+	
+	# XV. Korps
+	
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11899
+		division_template = "Infanterietruppendivison"
+		start_experience_factor = 0.3
+	}
+	
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 48
+		}
+		location = 11899
+		division_template = "Infanterietruppendivison"
+		start_experience_factor = 0.3
+	}
+	
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 22
+		}
+		location = 11899
+		division_template = "Infanterietruppendivison"
+		start_experience_factor = 0.3
+	}
+	
+	# XVI. Korps
+	
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 18
+		}
+		location = 9648
+		division_template = "Infanterietruppendivison"
+		start_experience_factor = 0.3
+	}
+	
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 47
+		}
+		location = 9648
+		division_template = "Infanterietruppendivison"
+		start_experience_factor = 0.3
+	}
+	
+	# XVII. Korps
+	
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 44
+		}
+		location = 673
+		division_template = "Infanterietruppendivison"
+		start_experience_factor = 0.3
+	}
+	
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 45
+		}
+		location = 673
+		division_template = "Infanterietruppendivison"
+		start_experience_factor = 0.3
+	}
+	
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 46
+		}
+		location = 673
+		division_template = "Infanterietruppendivison"
+		start_experience_factor = 0.3
+	}
+	
+	### k.u.k. Automobilabteilung ###
+	
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 673
+		division_template = "Kraftfahrjägerdivision"
+		start_experience_factor = 0.3
+	}
+	
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 688
+		division_template = "Kraftfahrjägerdivision"
+		start_experience_factor = 0.3
+	}
+	
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 11666
+		division_template = "Kraftfahrjägerdivision"
+		start_experience_factor = 0.3
+	}
+	
+
+}
+
+### Starting Production ###
+instant_effect = {
+	
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "HAB"
+		}
+		requested_factories = 7
+		progress = 0.18
+		efficiency = 100
+	}
+	
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "HAB"
+		}
+		requested_factories = 2
+		progress = 0.48
+		efficiency = 100
+	}
+	
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "HAB"
+		}
+		requested_factories = 3
+		progress = 0.12
+		efficiency = 100
+	}
+}

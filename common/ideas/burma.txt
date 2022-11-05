@@ -1,0 +1,94 @@
+ideas = {
+	country = {
+	
+		BRM_Opium_Plantation = {
+			allowed = {
+				original_tag = BRM
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.01
+				stability_factor = -0.2
+				production_speed_industrial_complex_factor = -0.05
+				production_speed_arms_factory_factor = -0.1
+				production_speed_dockyard_factor = -0.1
+				production_speed_infrastructure_factor = -0.15		
+			}
+		}
+	}	
+	
+	tank_manufacturer = {
+		
+		designer = yes
+		
+	}
+	
+	
+	materiel_manufacturer = {
+		
+		designer = yes
+		
+		BRM_Anren_Artillery = {
+			
+			allowed = {
+				original_tag = BRM
+			}
+			
+			research_bonus = {
+				artillery = 0.15
+			}
+			available = {
+				has_idea = BRM_Liu_Wentsai
+			}
+			traits = { artillery_manufacturer }
+			
+			modifier = {
+			}
+		}
+	}
+	
+	aircraft_manufacturer = {
+		
+		designer = yes
+		
+		BRM_Anren_Aircraft = {
+			
+			allowed = {
+				original_tag = BRM
+			}
+			
+			research_bonus = {
+				air_equipment = 0.1
+			}
+			available = {
+				has_idea = BRM_Liu_Wentsai
+			}
+			traits = { light_aircraft_manufacturer }
+			
+			modifier = {
+			}
+		}
+	}
+	
+	industrial_concern = {	
+		
+		BRM_Anren = {
+						
+			allowed = {
+				original_tag = BRM
+			}
+			available = {
+				has_idea = BRM_Liu_Wentsai
+			}
+			research_bonus = {
+				industry = 0.15
+			}
+			
+			traits = { industrial_concern }
+		}
+	}
+
+}

@@ -1,0 +1,29 @@
+
+state={
+	id=417
+	name="STATE_417" # Hamadan
+	manpower = 3796396
+	state_category = large_city
+
+	history={
+		owner = PER
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 4
+		}
+		add_core_of = PER
+		victory_points = {
+			10837 20 
+		}
+		victory_points = {
+			10922 3 
+		}
+		victory_points = {
+			8040 1 
+		}
+	}
+
+	provinces={
+		1982 2065 7969 8040 8125 10837 10922 
+	}
+}

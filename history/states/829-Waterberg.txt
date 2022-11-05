@@ -1,0 +1,17 @@
+state={
+	id=829
+	name="STATE_829"
+	manpower = 68496
+	state_category = wasteland
+	history={
+		add_core_of = SWA
+		owner = SWA
+		buildings = {
+			infrastructure = 1
+		}
+	}
+
+	provinces={
+		7770 12519 13217
+	}
+}

@@ -1,0 +1,150 @@
+characters = {
+	
+	### Country Leader ###
+	# Ferdinando V 
+	TUS_Pietro_Ferdinando = {
+		name = TUS_Pietro_Ferdinando
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TUS/Portrait_Pietro_Ferdinando.dds"
+				#Spacing Modifier
+			}
+		}
+		
+		country_leader = {
+			desc = "POLITICS_TUS_PIETRO_FERDINANDO_DESC"
+			ideology = autocratic_monarchy_subtype
+			id = -1
+		}
+		
+		country_leader = {
+			desc = "POLITICS_TUS_PIETRO_FERDINANDO_DESC"
+			ideology = constitutional_monarchy_C_subtype
+			id = -1
+		}
+		
+		country_leader = {
+			desc = "POLITICS_TUS_PIETRO_FERDINANDO_DESC"
+			ideology = constitutional_monarchy_B_subtype
+			id = -1
+		}
+		
+		country_leader = {
+			desc = "POLITICS_TUS_PIETRO_FERDINANDO_DESC"
+			ideology = constitutional_monarchy_A_subtype
+			id = -1
+		}
+	}
+	
+	TUS_Giacomo_Acerbo = {
+		name = TUS_Giacomo_Acerbo
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TUS/Portrait_Giacomo_Acerbo.dds"
+				small = "gfx/interface/ideas/TUS/ministers/TUS_Giacomo_Acerbo.dds"
+			}
+		}
+		
+		country_leader = {
+			desc = "POLITICS_TUS_GIACOMO_ACERBO_DESC"
+			ideology = sorelianism_subtype
+			id = -1
+		}
+		
+		advisor={
+			desc = "POLITICS_TUS_GIACOMO_ACERBO_MINISTER_DESC"
+			slot = head_of_government
+			idea_token = TUS_Giacomo_Acerbo
+			ledger = civilian
+			allowed = {
+				original_tag = TUS
+			}
+			available = {
+				OR = {
+					has_government = corporatism
+					has_government = authoritarianism
+				}
+			}
+			traits = {  }
+			cost = 100
+			ai_will_do = {
+				factor = 1.500
+			}
+		}
+	}
+	
+	
+	### Ministers ###
+	### HEAD OF GOVERNMENT ###
+	
+	### FOREIGN MINISTER ###
+	
+	###	ECONOMY MINISTER ###
+	
+	### FIELD MARSHAL ###
+
+	### CORPS COMMANDER ###
+	
+	TUS_Enrico_Tellini = {
+		name = TUS_Enrico_Tellini
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/TUS/ministers/TUS_Enrico_Tellini.dds"
+				large = "gfx/leaders/TUS/Portrait_Enrico_Tellini.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_TUS_ENRICO_TELLINI_DESC"
+			traits = { trait_cautious }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+	
+	TUS_Giuseppe_Castellano = {
+		name = TUS_Giuseppe_Castellano
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/TUS/ministers/TUS_Giuseppe_Castellano.dds"
+				large = "gfx/leaders/TUS/Portrait_Giuseppe_Castellano.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_TUS_GIUSEPPE_CASTELLANO_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 1
+		}
+	}
+	
+	TUS_Orlando_Lorenzini = {
+		name = TUS_Orlando_Lorenzini
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/TUS/ministers/TUS_Orlando_Lorenzini.dds"
+				large = "gfx/leaders/TUS/Portrait_Orlando_Lorenzini.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_TUS_ORLANDO_LORENZINI_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 1
+		}
+	}
+	
+	### ADMIRAL ###
+	
+}

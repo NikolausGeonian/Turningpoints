@@ -1,0 +1,26 @@
+state={
+	id=405
+	name="STATE_405"
+	manpower=6275820
+	buildings_max_level_factor=1.000
+	state_category= town
+	history={
+		owner = BUK
+		add_core_of = BUK
+		victory_points = {
+			1459 20
+		}
+		
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 3
+			air_base = 1
+		}
+
+		}
+
+	provinces={
+		1459 7682 10187 10408 10488 10530 10660 11687 12640 13227 
+	}
+
+}

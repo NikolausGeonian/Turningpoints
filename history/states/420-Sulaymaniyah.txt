@@ -1,0 +1,24 @@
+
+state={
+	id=420
+	name="STATE_420" #Sulaymaniyah
+	manpower = 1394000
+	
+	state_category = town
+
+	history={
+		owner = OTE
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = OTE
+		add_claim_by = KUR
+		victory_points = {
+			8123 5
+		}
+	}
+
+	provinces={
+		3916 5014 6826 8123 10793 10811 
+	}
+}

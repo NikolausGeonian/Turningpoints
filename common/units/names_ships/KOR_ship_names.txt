@@ -1,0 +1,160 @@
+﻿##### KOREA NAME LISTS #####
+### REGULAR DESTROYER NAMES###
+KOR_DD_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_DESTROYERS
+
+	for_countries = { KOR }
+
+	type = ship
+	ship_types = { ship_hull_light destroyer }			
+	prefix = "CIS"
+	fallback_name = "%d Chüchuchien"					
+
+	unique = {		
+		#Canton Class
+		"Kuangchia" "Kuangi" "Kuangping" "Kuangting" 
+		"Kuangwu" "Kuangchi" "Kuangkeng" "Kuanghsin"
+		"Kuangjen" "Kuangkuei"
+		#Leilung Class
+		"Leilung" "Leihu" "Leitui" "Leikan"
+		"Leik'un" "Leich'ien" "Leili" "Leigen"
+		"Leihsun" "Leichen" "Leichung"
+		#Chenhai Class
+		"Chenhai" "Chentung" "Chenpien" "Chenpei" "Chenchung" "Chenhsi" "Chennan"
+		#Kuangyuan Class
+		"Kuangyuan" "Kuangheng" "Kuangli" "Kuangchen"
+		"Kuangchin" "Kuangyu" "Kuangyin"
+		#Chinchiang Class
+		"Chinchiang" "Tanchiang" "Hsinchiang" "Fengchiang"
+		"Chienchiang" "Kaochiang" "Chinchiang" "Hsiangchiang" 
+		"Tsichiang" "Pochiang" "Ch'angchiang" "Chuchiang" "T'ochiang"
+		"Nenchiang" "Minchiang" "Wuchiang"
+		#
+	}
+}
+
+### LIGHT CRUISER NAMES###
+KOR_CL_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CL
+
+	for_countries = { KOR }
+
+	type = ship
+	ship_types = { ship_hull_cruiser light_cruiser }
+	prefix = "CIS"
+	fallback_name = "%d Guaipingchuan"
+
+	unique = {
+		#Nanjui Class
+		"Nanjui" "Paomin" "Huant'ai" "Yuank'ai"
+		#Ts'aochiang
+		"Ts'aochiang" "Hsihai" "Meiyun"
+		#Yingchou Class
+		"Yingchou" "Chinou" "Ch'engch'ing" "Chingch'ing" "Ch'enhang"
+		#Chaoho Class&Chiensheng Class
+		"Yingjui" "Chaoho" "Chiensheng" "Fusheng" "Fuhsing"
+		#Ch'ut'ai Class
+		"Ch'ut'ai" "Ch'ut'ung" "Ch'uyu" "Ch'uyou" "Ch'ukuan" "Ch'uchien"
+		#Chiyang Class
+		"Chiyang" "Fengyan" "Fenyang" "Lanyang" "Huaiyang" "Ningyang" "Iyang"
+		"Mienyang" "Chüyang" "Liaoyang" "Chienyang" "Tungyang" "Fuyang" "Hsinyang"
+		"Suyang" "Tanyang"
+		#Pinghai Class
+		"Pinghai" "Tinghai" "Ninghai" "Ch'inghai" "Lunghai" "T'anghai" "Wuhai"
+	}
+}
+
+### HEAVY CRUISER NAMES###
+KOR_CA_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CA
+
+	for_countries = { KOR }
+
+	type = ship
+	ship_types = { ship_hull_cruiser heavy_cruiser }
+	prefix = "CIS"
+	fallback_name = "%d Chunghsing Hsünyangchien"
+
+	unique = {
+	#Haichi Class
+	"Haichi" "Haian" "Haiching" "Haitien" "Haich'en" "Haich'ou" "Haich'iung" "Haiyen" "Haihsing" "Haishu" "Haich'eng" "Haichu" "Hailing" "Haits'ang"
+	#K'uaishun Class
+	"K'uaishun" "Yushun" "Lishun" "Chiehshun" "Shihshun" "Yingshun" "Ch'angshun"
+	#Hup'eng Class
+	"Hup'eng" "Huo" "Huying" "Husun"
+	#Yangwei Class
+	"Yangwei" "Chenwei" "Hsüanwei"
+	}
+}
+
+
+### BATTLESHIP NAMES ###
+KOR_BB_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_BB
+
+	for_countries = { KOR }
+
+	type = ship
+	ship_types = { ship_hull_heavy battleship }
+	prefix = "CIS"
+	fallback_name = "%d Chanliehchien"		
+
+	unique = {
+	#Tingyuen Class
+	"Tingyuen" "Ch'ingyuen" "Chiyuen" "Chihyuen" "Chingyuen" "Chenyuen" "Weiyuen" "P'ingyuen" "Laiyuen" "Huaiyuen" "Fuyuen" "Ssuyuen" "Anyuen" "Chüehyuen" “Yüanyuen” "Taoyuen"
+	#Lunghsiang Class
+	"Lunghsiang" "Huwei"
+	}
+}
+
+### BATTLECRUISER NAMES ###
+KOR_BC_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_BC
+
+	for_countries = { KOR }
+
+	type = ship
+	ship_types = { ship_hull_heavy battle_cruiser }
+	prefix = "CIS"
+	fallback_name = "%d Chanlieh Hsünyangchien"		
+
+	unique = {
+		
+	}
+}
+
+### AIRCRAFT CARRIER NAMES ###
+KOR_CV_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CARRIERS
+
+	for_countries = { KOR }
+
+	type = ship
+	ship_types = { ship_hull_carrier carrier }
+	prefix = "CIS"
+	fallback_name = "%d Tsaichi Hsünyangchien"	
+
+	unique = {
+		"Yangwu" "Chenwei" "Changpo"
+	}
+}
+
+### SUBMARINES ###
+KOR_SS_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_SUBMARINES
+
+	for_countries = { KOR }
+
+	type = ship
+	ship_types = { ship_hull_submarine submarine }
+	prefix = "CIS"
+	fallback_name = "%d Chienhangchuan"
+	
+	unique = {
+		"Chiao-1" "Chiao-2" "Chiao-3" "Chiao-4" "Chiao-5" "Chiao-6" "Chiao-7" "Chiao-8" "Chiao-9" "Chiao-10" "Chiao-11"
+		"Chiao-12" "Chiao-13" "Chiao-14" "Chiao-15" "Chiao-16" "Chiao-17" "Chiao-18" "Chiao-19" "Chiao-20" "Chiao-21"
+		"Chiao-22" "Chiao-23" "Chiao-24" "Chiao-25" "Chiao-26" "Ying-1" "Ying-2" "Ying-3" "Ying-4" "Ying-5" "Ying-6"
+		"Ying-7" "Ying-8" "Ying-9" "Ying-10" "Ying-11" "Ying-12" "Ying-13" "Ying-14" "Ying-15" "Ying-16" "Ying-17"
+		"Ying-18" "Ying-19" "Ying-20" "Ying-21" "Ying-22" "Ying-23" "Ying-24" "Ying-25"
+		}
+}

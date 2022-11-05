@@ -1,0 +1,25 @@
+
+state={
+	id=594
+	name="STATE_594"
+	manpower = 705780
+	state_category = pastoral
+
+	history={
+		owner = OTE
+		add_core_of = OTE
+		buildings = {
+			infrastructure = 1
+			12702 = {
+				naval_base = 2
+			}
+		}
+		victory_points = { 
+			12702 1
+		}
+	}
+
+	provinces={
+		1955 4932 10791 12702 
+	}
+}

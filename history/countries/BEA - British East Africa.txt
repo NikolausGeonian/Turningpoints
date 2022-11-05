@@ -1,0 +1,47 @@
+﻿capital = 547
+
+##oob = "KEN_1936"
+
+set_research_slots = 2
+set_stability = 0.5
+set_war_support = 0.2
+set_fuel_ratio = 0.5
+# 	POLITICAL FIGURE
+
+### Country Leader ###
+recruit_character = BEA_Robert_Brooke
+recruit_character = BEA_Frank_Messervy
+recruit_character = BEA_George_Giffard
+recruit_character = BEA_Walter_Lentaigne
+recruit_character = BEA_Orde_Wingate
+
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_mountaineers = 1
+	gw_artillery = 1
+	tech_support = 1
+	tech_recon = 1
+	support_weapons = 1
+}
+give_military_access = GBR
+give_military_access = RAJ
+
+set_convoys = 30
+set_popularities = {
+	conservatism = 25
+	authoritarianism = 75
+	social_democratism = 0
+	patriotic_socialism = 0
+	corporatism = 0
+	democratic_socialism = 0
+	populism = 0
+	social_liberalism = 0
+}
+set_politics = {
+	ruling_party = authoritarianism
+	last_election = "1935.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}

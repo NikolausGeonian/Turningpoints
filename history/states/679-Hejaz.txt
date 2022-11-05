@@ -1,0 +1,32 @@
+state={
+	id=679
+	name="STATE_679"
+	manpower = 2511000
+	
+	state_category = town
+
+	history={
+		owner = OTE
+		
+		victory_points = {
+			12883 3 
+		}
+		victory_points = {
+			7934 3 
+		}
+		victory_points = {
+			5037 5 
+		}
+		buildings = {
+			infrastructure = 2
+			12883 = {
+				naval_base = 2
+			}
+		}
+		add_core_of = OTE
+	}
+
+	provinces={
+		2033 4981 5037 5099 7934 10835 12883 
+	}
+}

@@ -1,0 +1,17 @@
+state = {
+	id=882
+	name="STATE_882" #Assaba
+	manpower = 325897
+	state_category = pastoral
+	
+	history = {
+		owner = MLI
+		add_core_of = MLI
+		buildings = {
+			infrastructure = 0
+		}		
+	}
+	provinces={
+		8058 13299 13303 13310 13313 
+	}
+}

@@ -1,0 +1,35 @@
+state=
+{
+	id=269
+	name="STATE_269"
+	manpower = 344700
+	
+	state_category = town
+	
+	history= {
+		victory_points = { 
+			10833 1
+		}
+		victory_points = { 
+			5068 1
+		}
+		victory_points = { 
+			10777 5
+		}
+		owner = ETH
+		add_core_of = SOM
+		add_core_of = ETH
+		buildings = {
+			infrastructure = 2
+			10833 = {
+				naval_base = 1
+			}
+			10777 = {
+				naval_base = 3
+			}
+		}
+	}
+	provinces={
+		1905 5068 8094 10777 10833 10921 12759 12814
+	}
+}

@@ -1,0 +1,322 @@
+characters = {
+	
+	### Country Leader ###
+	
+	KOR_King_Yunghui = {
+		name = KOR_King_Yunghui
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/KOR/Portrait_King_Yunghui.dds"
+			}
+		}
+		
+		country_leader = {
+			desc = "POLITICS_YUNGHUI_DESC"
+			ideology = semi_constitutional_monarchy_subtype
+			expire = "1965.1.1.1"
+		}
+				
+		country_leader = {
+			desc = "POLITICS_YUNGHUI_DESC"
+			ideology = constitutional_monarchy_A_subtype
+			expire = "1965.1.1.1"
+		}
+		
+		country_leader = {
+			desc = "POLITICS_YUNGHUI_DESC"
+			ideology = autocratic_monarchy_subtype
+			expire = "1965.1.1.1"
+		}
+		
+	}
+	
+	### Ministers ###
+	### HEAD OF GOVERNMENT ###
+	
+	KOR_Rhee_Syngman = {
+		name = KOR_Rhee_Syngman
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/KOR/ministers/KOR_Rhee_Syngman.dds"
+				large = "gfx/leaders/KOR/Portrait_Rhee_Syngman.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_KOR_RHEE_SYNGMAN_DESC"
+			slot = head_of_government
+			idea_token = KOR_Rhee_Syngman
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = KOR
+			}
+			available = {
+				OR = {
+					has_government = authoritarianism
+					has_government = conservatism
+					has_government = corporatism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+
+	KOR_Kim_Koo = {
+		name = KOR_Kim_Koo
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/KOR/ministers/KOR_Kim_Koo.dds"
+				large = "gfx/leaders/KOR/Portrait_Kim_Koo.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_KOR_KIM_KOO_DESC"
+			slot = head_of_government
+			idea_token = KOR_Kim_Koo
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = KOR
+			}
+			available = {
+				OR = {
+					has_government = social_democratism
+					has_government = democratic_socialism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	KOR_Soh_Jaipil = {
+		name = KOR_Soh_Jaipil
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/KOR/ministers/KOR_Soh_Jaipil.dds"
+				large = "gfx/leaders/KOR/Portrait_Soh_Jaipil.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_KOR_SOH_JAIPIL_DESC"
+			slot = head_of_government
+			idea_token = KOR_Soh_Jaipil
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = KOR
+			}
+			available = {
+				has_government = social_liberalism
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	KOR_Yi_Shiyeong = {
+		name = KOR_Yi_Shiyeong
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/KOR/ministers/KOR_Yi_Shiyeong.dds"
+				large = "gfx/leaders/KOR/Portrait_Yi_Shiyeong.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_KOR_YI_SHIYEONG_DESC"
+			slot = head_of_government
+			idea_token = KOR_Yi_Shiyeong
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = KOR
+			}
+			available = {
+				has_government = conservatism
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	### FOREIGN MINISTER ###
+	
+	KOR_Yi_Sangsul = {
+		name = KOR_Yi_Sangsul
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/KOR/ministers/KOR_Yi_Sangsul.dds"
+				large = "gfx/leaders/KOR/Portrait_Yi_Sangsul.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_KOR_YI_SANGSUL_DESC"
+			slot = foreign_minister
+			idea_token = KOR_Yi_Sangsul
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = KOR
+			}
+			available = {
+				OR = {
+					has_government = social_democratism
+					has_government = conservatism
+					has_government = social_liberalism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	###	ECONOMY MINISTER ###
+	
+	### FIELD MARSHAL ###
+	
+	KOR_Hong_Beomdo = {
+		name = KOR_Hong_Beomdo
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/KOR/ministers/KOR_Hong_Beomdo.dds"
+				large = "gfx/leaders/KOR/Portrait_Hong_Beomdo.dds"
+			}
+		}
+		
+		field_marshal = {
+			desc = "MARSHAL_KOR_HONG_BEOMDO_DESC"
+			traits = { offensive_doctrine }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	### CORPS COMMANDER ###
+	
+	KOR_Hong_Saik = {
+		name = KOR_Hong_Saik
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/KOR/ministers/KOR_Hong_Saik.dds"
+				large = "gfx/leaders/KOR/Portrait_Hong_Saik.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_KOR_HONG_SAIK_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	
+	KOR_Kim_Chwachin = {
+		name = KOR_Kim_Chwachin
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/KOR/ministers/KOR_Kim_Chwachin.dds"
+				large = "gfx/leaders/KOR/Portrait_Kim_Chwachin.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_KOR_KIM_CHWACHIN_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	
+	KOR_Lee_Beomseok = {
+		name = KOR_Lee_Beomseok
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/KOR/ministers/KOR_Lee_Beomseok.dds"
+				large = "gfx/leaders/KOR/Portrait_Lee_Beomseok.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_KOR_LEE_BEOMSEOK_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	
+	### ADMIRAL ###
+	
+	KOR_Sin_Sunseong = {
+		name = KOR_Sin_Sunseong
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/KOR/ministers/KOR_Sin_Sunseong.dds"
+				large = "gfx/leaders/KOR/Portrait_Sin_Sunseong.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "ADMIRAL_KOR_SIN_SUNSEONG_DESC"
+			slot = navy_chief
+			idea_token = KOR_Sin_Sunseong
+			allowed = {
+				original_tag = KOR
+			}
+			traits = {
+				navy_chief_commerce_raiding_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 0.100
+			}
+		}
+		
+		navy_leader = {
+			desc = "ADMIRAL_KOR_SIN_SUNSEONG_DESC"
+			traits = { lancer  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			maneuvering_skill = 3
+			coordination_skill = 2
+		}
+	}
+	
+}

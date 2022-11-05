@@ -1,0 +1,24 @@
+ideas = {
+	#General
+	country = {
+		BLR_white_russia = {
+			picture = generic_white_russian_army
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.3
+				conscription_factor = 0.15
+				
+				
+			}
+		}
+	
+	}
+	
+}

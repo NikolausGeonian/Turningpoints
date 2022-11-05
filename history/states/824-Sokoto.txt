@@ -1,0 +1,23 @@
+state={
+	id=824
+	name="STATE_824"
+	manpower = 3814964
+	state_category = rural
+	resources={
+		tungsten = 12
+	}
+	history={
+		victory_points = {
+			2025 3
+		}
+		add_core_of = NGA
+		owner = NGA
+		buildings = {
+			infrastructure = 2
+		}
+	}
+
+	provinces={
+		1891 1932 1969 2025 4938 4972 4997 5028 8021 8109 10820
+	}
+}

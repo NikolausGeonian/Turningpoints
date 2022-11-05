@@ -1,0 +1,22 @@
+state={
+	id=826
+	name="STATE_826"
+	manpower = 281496
+	state_category = town
+	history={
+		
+		add_core_of = MLI
+		owner = MLI
+		buildings = {
+			infrastructure = 3
+			
+		}
+		victory_points = {
+			13322 3
+		}
+	}
+
+	provinces={
+		7992 13322 
+	}
+}

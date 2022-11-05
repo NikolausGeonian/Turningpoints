@@ -1,0 +1,18 @@
+ideas = {
+	country = {
+		NOM_Royal_Norman_Constabulary = {
+			allowed = {
+				original_tag = NOM
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {	
+				production_speed_buildings_factor = -0.05
+				max_planning = 0.05
+			}
+		}
+	}	
+
+}

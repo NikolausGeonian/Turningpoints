@@ -1,0 +1,789 @@
+##########################
+##	 Japan Focus Tree	##
+##########################
+
+focus_tree = {
+
+	id = JAP_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 30
+			original_tag = JAP
+		}
+		
+	}
+	continuous_focus_position = { x = 50 y = 1100 }
+	default = no
+	
+	### Japan Civil War ###
+	
+	########################################
+	## Anniversary of the Mutiny 兵变纪念 ##
+	########################################
+	
+		focus = {			
+			id = JAP_anniversary_of_the_mutiny
+			icon = GFX_goal_JAP_anniversary_of_the_mutiny
+			
+			allow_branch = {
+				JAP_country_divided = yes
+			}
+			mutually_exclusive = {
+				focus = JAP_joraku
+			}			
+			x = 7
+			y = 0
+			cost = 10
+			
+			cancelable = no
+			ai_will_do = {
+				factor = 100
+			}	
+			completion_reward = {
+				add_political_power = 20
+				add_stability = 0.1
+				add_war_support = 0.1
+				JAP = {
+					country_event = { id = jap.1 }
+				}
+				set_country_flag = JAP_mutiny_anniversary
+				mark_focus_tree_layout_dirty = yes
+			}
+		}
+		
+	################################
+	## Gosho Conference 御所会議  ##
+	################################
+	
+		focus = {
+			id = JAP_goshou_conference
+			icon = GFX_goal_JAP_goshou_conference
+			allow_branch = {
+				JAP_genro_oligarchy = yes
+			}
+			
+			prerequisite = { 
+				focus = JAP_anniversary_of_the_mutiny
+			}
+			relative_position_id = JAP_anniversary_of_the_mutiny
+				x = 0
+				y = 1
+			cost = 10
+			available = {
+				is_puppet = no
+			}
+			cancel = {
+				has_country_flag = JAP_military_dictatorship
+			}
+			cancelable = no
+			available_if_capitulated = no
+			ai_will_do = {
+				factor = 2
+			}
+			select_effect = {
+				mark_focus_tree_layout_dirty = yes
+			}
+			completion_reward = {
+			}
+		}	
+	
+	##########################
+	##	Take over zaibatsu  ##
+	##########################
+		focus = {
+			id = JAP_zaibatsu_controlled
+			icon = GFX_goal_JAP_zaibatsu_controlled
+			prerequisite = { 
+				focus = JAP_goshou_conference
+			}
+			mutually_exclusive = {
+				focus = JAP_zaibatsu_cooperated
+			}
+			available = {
+				has_idea = JAP_Genro_Oligarchy
+			}
+			x = -1
+			y = 1
+			relative_position_id = JAP_goshou_conference
+			cost = 10
+			ai_will_do = {
+				factor = 1
+			}
+
+		completion_reward = {
+			add_stability = -0.15
+			random_owned_controlled_state = {
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = JAP_zaibatsus_factories
+			}
+			random_owned_controlled_state = {
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = JAP_zaibatsus_factories
+			}
+			swap_ideas = {				
+				remove_idea = JAP_Disobedient_Zaibatsu
+				add_idea = JAP_zaibatsu_controlled
+			}
+		}
+	}	
+			
+	###############################
+	##	Cooperate with zaibatsu  ##
+	###############################
+		focus = {
+			id = JAP_zaibatsu_cooperated
+			icon = GFX_goal_JAP_zaibatsu_cooperated
+			prerequisite = { 
+				focus = JAP_goshou_conference
+			}
+			mutually_exclusive = {
+				focus = JAP_zaibatsu_controlled
+			}
+			available = {
+			}
+			relative_position_id = JAP_goshou_conference
+			cancel = {
+				JAP = {
+					is_subject = no
+				}
+			}
+			x = 1
+			y = 1
+			
+			cost = 10
+			ai_will_do = {
+				factor = 1
+			}
+
+		completion_reward = {
+			add_stability = 0.1
+			random_owned_controlled_state = {
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = JAP_zaibatsus_factories
+			}
+			random_owned_controlled_state = {
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = JAP_zaibatsus_factories
+			}
+			swap_ideas = {
+				remove_idea = JAP_Disobedient_Zaibatsu
+				add_idea = JAP_zaibatsu_cooperated
+			}
+		}
+	}
+	
+	
+	################################
+	##	National Mobilization	  ##
+	################################	
+		focus = {
+			id = JAP_national_mobilization
+			icon = GFX_goal_JAP_national_mobilization
+			prerequisite = { 
+				focus = JAP_goshou_conference
+			}
+			relative_position_id = JAP_goshou_conference
+			x = -2
+			y = 2
+			cost = 2
+		
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+			
+			}
+		}
+		
+	###########################
+	##	Be Friend with China  #
+	###########################	
+		focus = {
+			id = JAP_peace_and_friendship
+			icon = GFX_goal_JAP_peace_and_friendship
+			prerequisite = { 
+				focus = JAP_goshou_conference
+			}
+			relative_position_id = JAP_goshou_conference
+				x = 3
+				y = 1
+			cost = 10
+			cancel = {
+				JAP = {
+					is_subject = yes
+				}
+			}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+			
+			}
+		}
+		
+	#############################
+	##	Chinese Investment	  ##
+	############################	
+		focus = {
+			id = JAP_chinese_investment
+			icon = GFX_goal_JAP_chinese_investment
+			prerequisite = { 
+				focus = JAP_peace_and_friendship
+			}
+			relative_position_id = JAP_peace_and_friendship
+			x = 0
+			y = 1
+			cost = 10
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+			}
+		}
+		
+	##############
+	##	Joraku  ##
+	##############
+	focus = {
+		id = JAP_joraku
+		icon = GFX_goal_JAP_joraku
+		mutually_exclusive = { 
+			focus = JAP_anniversary_of_the_mutiny
+		}
+		relative_position_id = JAP_anniversary_of_the_mutiny
+		
+		x = 5
+		y = 0
+		cost = 10
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_country_flag = JAP_joraku
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+	###########################
+	##	Yield to the Dragon  ##
+	###########################
+		focus = {
+			id = JAP_yield_to_the_dragon
+			icon = GFX_goal_JAP_yield_to_the_dragon
+			prerequisite = { 
+				focus = JAP_joraku
+			}
+			
+			relative_position_id = JAP_joraku
+			x = 0
+			y = 2
+			cost = 10
+			cancel = {
+				JAP = {
+					is_subject = yes
+				}
+			}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			ai_will_do = {
+				factor = 1
+			}
+		
+			select_effect = {
+				mark_focus_tree_layout_dirty = yes
+			}
+			completion_reward = {
+			
+			}
+		}
+		
+	###################################
+	##	Military Mission From China  ##
+	###################################
+		focus = {
+			id = JAP_military_mission_from_china
+			icon = GFX_goal_JAP_military_mission_from_china
+			prerequisite = { 
+				focus = JAP_yield_to_the_dragon
+			}
+			relative_position_id = JAP_yield_to_the_dragon
+			x = 0
+			y = 1
+			cost = 10
+		
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+				add_ideas = JAP_chi_military_mission
+			}
+		}
+			
+	
+	
+	############################
+	##	Unification of Japan  ##
+	############################
+		focus = {
+			id = JAP_unification_1
+			icon = GFX_goal_JAP_unification_1
+			will_lead_to_war_with = NJP
+			allow_branch = {
+				NOT = {
+					has_country_flag = JAP_joraku
+				}
+			}
+			prerequisite = { 
+				focus = JAP_zaibatsu_controlled
+				focus = JAP_zaibatsu_cooperated
+			}
+			prerequisite = { 
+				focus = JAP_national_mobilization
+			}	
+			prerequisite = { 
+				focus = JAP_chinese_investment
+			}
+			
+			relative_position_id = JAP_goshou_conference
+			x = 1
+			y = 3
+			cost = 3
+			available = {
+				has_army_manpower = { size > 449999 }
+			}
+			bypass = {
+				has_war_with = NJP
+				NOT = { 
+					country_exists = NJP
+				}	
+				JAP = {
+					owns_state = 533
+					owns_state = 532
+					owns_state = 535
+					owns_state = 534 
+					owns_state = 282
+				}
+			
+			}
+			available_if_capitulated = no
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+				add_named_threat = { 
+					threat = 5
+					name = JAP_unification 
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = NJP
+				}
+			}
+		}
+	############################
+	##	Unification of Japan  ##
+	############################
+		focus = {
+			id = JAP_unification_2
+			icon = GFX_goal_JAP_unification_1
+			will_lead_to_war_with = NJP
+			allow_branch = {
+				has_country_flag = JAP_joraku
+			}
+			prerequisite = { 
+				focus = JAP_military_mission_from_china
+			}	
+			
+			relative_position_id = JAP_military_mission_from_china
+			x = -4
+			y = 1
+			cost = 3
+			available = {
+				has_army_manpower = { size > 449999 }
+			}
+			bypass = {
+				has_war_with = NJP
+				NOT = { 
+					country_exists = NJP
+				}	
+				JAP = {
+					owns_state = 533
+					owns_state = 532
+					owns_state = 535
+					owns_state = 534 
+					owns_state = 282
+				}
+			
+			}
+			available_if_capitulated = no
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+				add_named_threat = { 
+					threat = 5
+					name = JAP_unification 
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = NJP
+				}
+			}
+		}
+		
+	#########################################
+	##	Relations between North and South  ##
+	#########################################
+		
+		focus = {
+			id = JAP_north_south_relation
+			icon = GFX_goal_JAP_north_south_relation
+			prerequisite = { 
+				focus = JAP_unification_1
+				focus = JAP_unification_2
+			}
+			relative_position_id = JAP_unification_1
+			x = 0
+			y = 1
+			cost = 3
+			available_if_capitulated = no
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+			}
+		}
+		
+	###################################
+	##	Volunteer engineering Corps  ##
+	###################################
+		
+		focus = {
+			id = JAP_volunteer_engineering_corps
+			icon = GFX_goal_JAP_volunteer_engineering_corps
+			prerequisite = { 
+				focus = JAP_unification_1
+				focus = JAP_unification_2
+			}
+			relative_position_id = JAP_unification_1
+			x = -3
+			y = 1
+			cost = 3
+			available_if_capitulated = no
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+			}
+		}
+		
+	####################
+	##	Showa's Boys  ##
+	####################
+		focus = {
+			id = JAP_showa_boys
+			icon = GFX_goal_JAP_showa_boys
+			prerequisite = { 
+				focus = JAP_unification_1
+				focus = JAP_unification_2
+			}
+			available = {
+				OR = {
+					has_war_with = NJP
+					has_war_with = QNG
+					has_war_with = KOR
+				}
+			}		
+			x = 3
+			y = 1
+			cost = 1
+			relative_position_id = JAP_unification_1
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+				add_war_support = 0.25
+				add_stability = -0.1
+				army_experience = -15
+				add_manpower = 200000			
+			}
+		}
+		
+	################################
+	##	Take over Infrastructure  ##
+	################################
+		
+		focus = {
+			id = JAP_take_over_northern_infrastructure
+			icon = GFX_goal_JAP_take_over_northern_infrastructure
+			prerequisite = { 
+				focus = JAP_volunteer_engineering_corps
+			}
+			prerequisite = { 
+				focus = JAP_north_south_relation
+			}
+			available = {
+			}		
+			x = -4
+			y = 1
+			cost = 1
+			relative_position_id = JAP_north_south_relation
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {		
+			}
+		}
+		
+	##############################
+	##	Plan of Reconstruction  ##
+	##############################
+		
+		focus = {
+			id = JAP_plan_of_reconstruction
+			icon = GFX_goal_JAP_plan_of_reconstruction
+			prerequisite = { 
+				focus = JAP_volunteer_engineering_corps
+			}
+			prerequisite = { 
+				focus = JAP_north_south_relation
+			}
+			available = {
+			}		
+			x = -2
+			y = 1
+			cost = 1
+			relative_position_id = JAP_north_south_relation
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {		
+			}
+		}
+		
+	############################
+	##	Northern Remediation  ##
+	############################
+		
+		
+		focus = {
+			id = JAP_northern_remediation
+			icon = GFX_goal_JAP_northern_remediation
+			prerequisite = { 
+				focus = JAP_showa_boys
+			}
+			prerequisite = { 
+				focus = JAP_north_south_relation
+			}
+			available = {
+			}		
+			x = 4
+			y = 1
+			cost = 1
+			relative_position_id = JAP_north_south_relation
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {		
+			}
+		}
+		
+	##########################
+	##	Awareness Campaign  ##
+	##########################
+		
+		focus = {
+			id = JAP_awareness_campaign
+			icon = GFX_goal_generic_education
+			prerequisite = { 
+				focus = JAP_showa_boys
+			}
+			prerequisite = { 
+				focus = JAP_north_south_relation
+			}
+			available = {
+			}		
+			x = 2
+			y = 1
+			cost = 1
+			relative_position_id = JAP_north_south_relation
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {		
+			}
+		}
+		
+	###############################
+	##	Reorganization of Japan  ##
+	###############################
+		
+		focus = {
+			id = JAP_reorganization_of_japan
+			icon = GFX_goal_JAP_reorganization_of_japan
+			prerequisite = { 
+				focus = JAP_showa_boys
+			}
+			prerequisite = { 
+				focus = JAP_north_south_relation
+			}
+			prerequisite = { 
+				focus = JAP_volunteer_engineering_corps
+			}
+			available = {
+			}		
+			x = 0
+			y = 1
+			cost = 1
+			relative_position_id = JAP_north_south_relation
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {		
+			}
+		}
+		
+	#####################
+	##	The New Japan  ##
+	#####################
+	
+		focus = {
+			id = JAP_the_new_japan
+			icon = GFX_goal_JAP_the_new_japan
+			prerequisite = { 
+				focus = JAP_reorganization_of_japan
+			}			
+			prerequisite = { 
+				focus = JAP_plan_of_reconstruction
+			}
+			prerequisite = { 
+				focus = JAP_awareness_campaign
+			}
+			prerequisite = { 
+				focus = JAP_northern_remediation
+			}
+			prerequisite = { 
+				focus = JAP_take_over_northern_infrastructure
+			}
+			available = {
+			}
+			x = 0
+			y = 1
+			relative_position_id = JAP_reorganization_of_japan
+			cost = 10
+			ai_will_do = {
+				factor = 9
+			}
+			completion_reward = {
+			}
+		}
+		
+		############################ Military Dictatorship #####################################
+		
+	###############################
+	## The Longest Day 最长一天  ##
+	###############################
+	
+		focus = {
+			id = JAP_the_longest_day
+			icon = GFX_goal_JAP_the_longest_day
+			allow_branch = {
+				JAP_military_coup = yes
+			}
+			
+			prerequisite = { 
+				focus = JAP_anniversary_of_the_mutiny
+			}
+			relative_position_id = JAP_anniversary_of_the_mutiny
+				x = 0
+				y = 1
+			cost = 10
+			available = {
+				is_puppet = no
+			}
+			cancelable = no
+			available_if_capitulated = no
+			ai_will_do = {
+				factor = 2
+			}
+			select_effect = {
+				mark_focus_tree_layout_dirty = yes
+			}
+			completion_reward = {
+			}
+		}	
+	
+	}

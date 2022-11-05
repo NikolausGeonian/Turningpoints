@@ -1,0 +1,23 @@
+
+### Japan Scripted Triggers ###
+
+JAP_country_divided = {
+	 country_exists = NJP
+	 NOT = {
+		has_country_flag = JAP_unification
+	 }
+}
+
+JAP_military_coup = {
+	 has_idea = JAP_military_dictatorship
+}
+
+JAP_genro_oligarchy = {
+	 has_idea = JAP_Genro_Oligarchy
+}
+
+JAP_joraku = {
+	 has_country_flag = JAP_joraku
+}
+
+

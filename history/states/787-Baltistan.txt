@@ -1,0 +1,26 @@
+
+state={
+	id=787
+	name="STATE_787"
+
+	history={
+		victory_points = {
+			2084 1 
+		}
+		owner = HUZ
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = HUZ
+		add_core_of = RAJ
+
+	}
+
+	provinces={
+		 2084 
+	}
+	manpower=515800
+	buildings_max_level_factor=1.000
+	state_category = rural
+}

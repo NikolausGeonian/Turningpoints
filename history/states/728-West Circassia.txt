@@ -1,0 +1,25 @@
+state={
+	id=728
+	name="STATE_728"
+	manpower = 365321
+	
+	resources={
+		chromium = 15
+	}
+	
+	state_category = pastoral
+	
+	history={
+		owner = RUS
+		add_core_of = RUS
+		add_claim_by = MRC
+		buildings = {
+			infrastructure = 1
+		}
+		
+	}
+	
+	provinces={
+	  6721 9674 6692 11664
+	}
+}

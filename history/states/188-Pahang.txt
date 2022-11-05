@@ -1,0 +1,24 @@
+state=
+{
+	id=188
+	name="STATE_188"
+	manpower = 504945	
+	
+	
+	state_category = town
+	
+	history = {
+		owner = SIA
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		add_core_of = SIA
+		victory_points = {
+			7399 1 
+		}
+	}
+	provinces={
+		1348 1392 7399 10227 12255 12271 	
+	}
+}

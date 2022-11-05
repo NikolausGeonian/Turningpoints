@@ -1,0 +1,87 @@
+ideas = {
+	#General
+	country = {
+	}
+	
+	
+	industrial_concern = {
+	
+		UKR_Zaporozhye_Steel_works = {
+			allowed = {
+				original_tag = UKR
+			}
+			research_bonus = {
+				industry = 0.15
+			}
+			traits = { industrial_concern }			
+			modifier = {
+			}
+		}
+		
+		UKR_Dnipro_Radio = {
+			allowed = {
+				original_tag = UKR
+			}
+			research_bonus = {
+				electronics = 0.15
+			}
+			traits = { electronics_concern }			
+			modifier = {
+			}
+		}
+		
+	}
+	
+	tank_manufacturer = { 
+	
+		designer = yes
+	
+		UKR_Kryukiv_Railway_Car_Building_Works = {
+		
+			allowed = {
+				original_tag = UKR
+			}			
+
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { heavy_tank_manufacturer }
+			
+			modifier = {
+			}
+		}
+	}
+	
+	naval_manufacturer = { 
+	
+		designer = yes
+		
+		UKR_Kherson_Shipyard = {
+			allowed = {
+				original_tag = UKR
+			}
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			traits = { coastal_defence_naval_manufacturer }
+			modifier = {
+			}
+		}
+		
+		UKR_Kuznya_na_Rybalskomu = {
+			allowed = {
+				original_tag = UKR
+			}
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { raiding_fleet_naval_manufacturer }
+			
+			modifier = {
+			}
+		}
+	}
+}

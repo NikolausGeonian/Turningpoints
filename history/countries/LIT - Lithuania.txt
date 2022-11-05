@@ -1,0 +1,82 @@
+﻿capital = 11
+
+#oob = "LIT_1936"
+
+set_research_slots = 3
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+}
+
+set_convoys = 10
+
+set_popularities = {
+	conservatism = 72
+	authoritarianism = 0
+	social_democratism = 0
+	patriotic_socialism = 0
+	corporatism = 0
+	democratic_socialism = 11
+	populism = 17
+	social_liberalism = 0
+}
+set_politics = {
+	
+	ruling_party = conservatism
+	last_election = "1919.1.3"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Antanas Smetona"
+	desc = "POLITICS_ANTANAS_SMETONA_DESC"
+	picture = "GFX_Portrait_lithuania_antanas_smetona"
+	expire = "1965.1.1"
+	ideology = populism_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Mindaugas III" 
+	desc = "POLITICS_KURT_SCHUSCHNIGG_DESC"
+	picture = "gfx/leaders/UPL/Portrait_Mendog_III.dds"
+	expire = "1981.8.15"
+	ideology = authoritarianism_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Mindaugas III" 
+	desc = "POLITICS_KURT_SCHUSCHNIGG_DESC"
+	picture = "gfx/leaders/UPL/Portrait_Mendog_III.dds"
+	expire = "1981.8.15"
+	ideology = conservatism_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Antanas Snieckus"
+	desc = "POLITICS_ANTANAS_SNIECKUS_DESC"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+	expire = "1965.1.1"
+	ideology = patriotic_socialism_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Augustinas Voldemaras"
+	desc = ""
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = sorelianism_subtype
+	traits = {
+		#
+	}
+}

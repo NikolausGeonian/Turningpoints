@@ -1,0 +1,328 @@
+﻿capital = 126#London
+
+#set_oob = "GBR_1936"
+
+
+
+# GENERAL #
+set_research_slots = 4
+set_stability = 0.6
+set_war_support = 0.1
+set_convoys = 724
+set_fuel_ratio = 0.8
+## 	POLITICAL FIGURE
+
+### Country Leader ###
+
+recruit_character = GBR_George_V
+recruit_character = GBR_William_Joyce
+recruit_character = GBR_Oswald_Mosley
+
+### Corps Commander ###
+
+recruit_character = GBR_Philip_Chetwode
+recruit_character = GBR_Archibald_Montgomery_Massingberd
+recruit_character = GBR_Alan_Brooke
+recruit_character = GBR_Harold_Alexander
+recruit_character = GBR_William_Dobbie
+recruit_character = GBR_Giffard_Le_Quesne_Martel
+recruit_character = GBR_Edward_Northey
+recruit_character = GBR_Raymond_Briggs
+recruit_character = GBR_Bernard_Montgomery
+recruit_character = GBR_Ronald_Forbes_Adam
+recruit_character = GBR_Thomas_Jacomb_Hutton
+recruit_character = GBR_Henry_Maitland_Wilson
+recruit_character = GBR_George_Jeffreys
+recruit_character = GBR_John_Vereker
+recruit_character = GBR_Edmund_Ironside
+recruit_character = GBR_Archibald_Wavell
+recruit_character = GBR_Claude_Auchinleck
+
+### Admiral ###
+
+recruit_character = GBR_Charles_Forbes
+recruit_character = GBR_Percy_Noble
+recruit_character = GBR_Geoffrey_Arbuthnot
+recruit_character = GBR_Arthur_Power
+recruit_character = GBR_Charles_Little
+recruit_character = GBR_William_Boyle
+recruit_character = GBR_Percy_Addison
+recruit_character = GBR_Robert_Burnett
+recruit_character = GBR_Bruce_Fraser
+recruit_character = GBR_Hugh_Binney
+
+### Ministers ###
+
+recruit_character = GBR_Neville_Chamberlain
+recruit_character = GBR_Stanley_Baldwin
+recruit_character = GBR_Clement_Attlee
+recruit_character = GBR_Viscount_Halifax
+recruit_character = GBR_Duff_Cooper
+recruit_character = GBR_Anthony_Eden
+recruit_character = GBR_Philip_Kerr
+recruit_character = GBR_John_Simon
+recruit_character = GBR_John_Tilley
+recruit_character = GBR_Eustace_Percy
+recruit_character = GBR_Harold_Nicolson
+recruit_character = GBR_Samuel_Hoare
+recruit_character = GBR_Lawrence_Dundas
+recruit_character = GBR_Rajani_Palme_Dutt
+recruit_character = GBR_John_Colville
+recruit_character = GBR_Kingsley_Wood
+recruit_character = GBR_Margaret_Bondfield
+recruit_character = GBR_G_D_H_Cole
+
+### THEORIST ###
+
+recruit_character = GBR_Frederick_Lindemann
+recruit_character = GBR_James_Chadwick
+
+# National Idea #
+add_ideas = {
+	#stiff_upper_lip
+	generic_financial_crisis_0
+	GBR_Archibald_Montgomery_Massingberd
+	GBR_Stanley_Baldwin
+	GBR_victors_of_greatwar
+	GBR_Anthony_Eden
+	GBR_Neville_Chamberlain_minister
+	
+}
+
+
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	support_weapons = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_recon = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	trench_warfare = 1
+	fleet_in_being = 1
+	electronic_mechanical_engineering = 1
+	radio = 1
+	radio_detection = 1
+	fuel_silos = 1
+	fuel_refining = 1
+}
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		early_submarine = 1
+		early_destroyer = 1
+		basic_destroyer = 1
+		early_light_cruiser = 1
+		early_heavy_cruiser = 1
+		early_battleship = 1
+		early_battlecruiser = 1
+		early_carrier = 1
+		transport = 1
+	}
+	
+	#set_naval_oob = "GBR_1936_Naval"
+	else = {
+		set_technology = {
+			basic_naval_mines = 1
+			submarine_mine_laying = 1
+			early_ship_hull_light = 1
+			basic_ship_hull_light = 1
+			early_ship_hull_submarine = 1
+			early_ship_hull_cruiser = 1
+			basic_ship_hull_cruiser = 1
+			early_ship_hull_heavy = 1
+			early_ship_hull_carrier = 1
+			basic_ship_hull_carrier = 1
+			basic_battery = 1
+			basic_light_battery = 1
+			basic_medium_battery = 1
+			basic_heavy_battery = 1
+			basic_torpedo = 1
+			sonar = 1
+			smoke_generator = 1
+			basic_depth_charges = 1
+			basic_secondary_battery = 1
+			basic_cruiser_armor_scheme = 1
+			basic_heavy_armor_scheme = 1
+			mtg_transport = 1
+			improved_secondary_battery = 1
+			basic_fire_control_system = 1
+		}
+		#set_naval_oob = "GBR_1936_Naval"
+	}
+}
+
+# Starting Import #
+create_import = {
+}
+
+##set_variable = { var = eng_gateway_to_europe_influence value = 0 }	##
+
+# DIPLOMACY
+	set_autonomy = {
+		target = CEY
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.2
+	}
+	set_autonomy = {
+		target = RAJ
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.35
+	}
+	set_autonomy = {
+		target = CAN
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.4
+	}
+	set_autonomy = {
+		target = NOM
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.4
+	}
+	set_autonomy = {
+		target = SAF
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.4
+	}
+	set_autonomy = {
+		target = AUS
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.2
+	}
+	set_autonomy = {
+		target = NZL
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.2
+	}
+	set_autonomy = {
+		target = BEA
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.2
+	}
+		set_autonomy = {
+		target = BGC
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.2
+	}
+		set_autonomy = {
+		target = BWI
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.2
+	}
+		set_autonomy = {
+		target = CAF
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.2
+	}
+	set_autonomy = {
+		target = BTS
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.2
+	}
+	set_autonomy = {
+		target = BOT
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.2
+	}
+	set_autonomy = {
+		target = SEN_GBR
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.2
+	}
+	set_autonomy = {
+		target = SIE_GBR
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.2
+	}
+add_to_tech_sharing_group = commonwealth_research
+# Faction
+create_faction = FACTION_NAME_GBR
+add_to_faction = GBR
+add_to_faction = CEY_GBR
+add_to_faction = CAN
+add_to_faction = NOM
+add_to_faction = AUS
+add_to_faction = NZL
+add_to_faction = SAF
+give_military_access = RAJ
+give_military_access = NOM
+give_military_access = CAN
+give_military_access = SAF
+give_military_access = AUS
+give_military_access = BTS
+give_military_access = BEA
+give_military_access = BGC
+give_military_access = BWI
+add_to_faction = RAJ	# Must be after puppet
+add_to_faction = BEA
+add_to_faction = BGC
+add_to_faction = BWI
+add_to_faction = BTS
+add_to_faction = BOT
+add_to_faction = SEN
+add_to_faction = SIE
+
+diplomatic_relation = {
+	country = CEY
+	relation = docking_rights
+	active = yes
+}
+
+diplomatic_relation = {
+	country = NOM
+	relation = docking_rights
+	active = yes
+}
+diplomatic_relation = {
+	country = RAJ
+	relation = docking_rights
+	active = yes
+}
+diplomatic_relation = {
+	country = BEA
+	relation = docking_rights
+	active = yes
+}
+diplomatic_relation = {
+	country = BTS
+	relation = docking_rights
+	active = yes
+}
+diplomatic_relation = {
+	country = CAN
+	relation = docking_rights
+	active = yes
+}
+diplomatic_relation = {
+	country = BWI
+	relation = docking_rights
+	active = yes
+}
+
+# Politics #
+set_popularities = {
+	conservatism = 48
+	authoritarianism = 0
+	social_democratism = 42
+	patriotic_socialism = 0
+	corporatism = 0
+	democratic_socialism = 0
+	populism = 0
+	social_liberalism = 10
+}
+set_politics = {
+	ruling_party = conservatism
+	last_election = "1935.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+
+### Ship Variants ###
+

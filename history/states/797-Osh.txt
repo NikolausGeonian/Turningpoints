@@ -1,0 +1,31 @@
+
+state={
+	id=797
+	name="STATE_797"
+
+	history={
+		owner = BUK
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		add_core_of = BUK
+		
+		victory_points = {
+			12581 1	
+		}
+		
+		victory_points = {
+			4923 2	
+		}
+
+	}
+
+	provinces={
+		1483 2058 4467 4923 12581 4542
+	}
+	manpower=1052000
+	buildings_max_level_factor=1.000
+	state_category= rural
+}

@@ -1,0 +1,1195 @@
+focus_tree = {
+	id = FRA_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = FRA
+		}
+	}
+	continuous_focus_position = { x = 0 y = 2000 }
+	default = no
+	
+	
+	
+	#########################
+	## Epiphany Revolution ##
+	#########################
+	
+	focus = {
+		id = FRA_epiphany_revolution
+		icon = GFX_goal_FRA_epiphany_revolution
+		x = 0
+		y = 0
+		cost = 1
+		available = {		
+		}
+		completion_reward = {
+		}
+	}
+	
+	############################
+	## Sorelianist Take Power ##
+	############################
+	
+	focus = {
+		id = FRA_victory_of_sorelianism
+		icon = GFX_goal_FRA_victory_of_sorelianism
+		prerequisite = { 
+			focus = FRA_epiphany_revolution
+		}
+		mutually_exclusive = {
+			focus = FRA_victory_of_socialism
+		}
+		relative_position_id = FRA_epiphany_revolution
+		x = -6
+		y = 1
+		cost = 5
+		available = {
+			is_puppet = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+	
+			}
+	}
+	
+	#####################
+	## Christ the King ##
+	#####################
+	
+	focus = {
+		id = FRA_christ_the_king
+		icon = GFX_goal_FRA_christ_the_king
+		prerequisite = { 
+			focus = FRA_victory_of_sorelianism
+		}
+		relative_position_id = FRA_victory_of_sorelianism
+		x = 2
+		y = 1
+		cost = 5
+		available = {
+			is_puppet = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+	
+			}
+	}
+	
+	################################
+	## Diarchy Reach a Settlement ##
+	################################
+	
+	focus = {
+		id = FRA_diarchy_reach_a_settlement
+		icon = GFX_goal_FRA_diarchy_reach_a_settlement
+		prerequisite = { 
+			focus = FRA_christ_the_king
+		}
+		mutually_exclusive = {
+			focus = FRA_georges_valois_won
+			focus = FRA_charles_maurras_won
+		}
+		relative_position_id = FRA_christ_the_king
+		x = 0
+		y = 1
+		cost = 5
+		available = {
+			is_puppet = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+	
+			}
+	}
+	
+	#################################
+	## Charles Maurras Gains Power ##
+	#################################
+	
+	focus = {
+		id = FRA_charles_maurras_won
+		icon = GFX_goal_FRA_charles_maurras_won
+		prerequisite = { 
+			focus = FRA_christ_the_king
+		}
+		mutually_exclusive = {
+			focus = FRA_georges_valois_won
+			focus = FRA_diarchy_reach_a_settlement
+		}
+		relative_position_id = FRA_christ_the_king
+		x = -2
+		y = 1
+		cost = 5
+		available = {
+			is_puppet = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+	
+			}
+	}
+	
+	################################
+	## Georges Valois Gains Power ##
+	################################
+	
+	focus = {
+		id = FRA_georges_valois_won
+		icon = GFX_goal_FRA_georges_valois_won
+		prerequisite = { 
+			focus = FRA_christ_the_king
+		}
+		mutually_exclusive = {
+			focus = FRA_charles_maurras_won
+			focus = FRA_diarchy_reach_a_settlement
+		}
+		relative_position_id = FRA_christ_the_king
+		x = 2
+		y = 1
+		cost = 5
+		available = {
+			is_puppet = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+	
+			}
+	}
+	
+	##########################
+	## Socialist Take Power ##
+	##########################
+	
+	focus = {
+		id = FRA_victory_of_socialism
+		icon = GFX_goal_FRA_victory_of_socialism
+		prerequisite = { 
+			focus = FRA_epiphany_revolution
+		}
+		mutually_exclusive = {
+			focus = FRA_victory_of_sorelianism
+		}
+		relative_position_id = FRA_victory_of_sorelianism
+		x = 12
+		y = 0
+		cost = 5
+		available = {
+			is_puppet = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 0
+		}
+		completion_reward = {
+	
+			}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	### diplomatic focus ###
+	
+	######################
+	## National Renewal ##
+	######################
+	
+	focus = {
+		id = FRA_national_renewal
+		icon = GFX_goal_FRA_national_renewal
+		
+		x = -5
+		y = 1
+		cost = 5
+		available = {
+			is_puppet = no
+		}
+		prerequisite = { 
+			focus = FRA_victory_of_sorelianism
+		}
+		relative_position_id = FRA_victory_of_sorelianism
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 0
+		}
+		completion_reward = {
+	
+			}
+	}
+	
+	############################
+	## Peace Annexed Normandy ##
+	############################
+	
+	focus = {
+		id = FRA_peace_annexed_normandy
+		icon = GFX_goal_FRA_peace_annexed_normandy
+		prerequisite = { 
+			focus = FRA_national_renewal
+		}
+		mutually_exclusive = {
+			focus = FRA_push_english_leave
+		}
+		relative_position_id = FRA_national_renewal
+		x = 0
+		y = 1
+		cost = 5
+		available = {
+			is_puppet = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 0
+		}
+		completion_reward = {
+	
+			}
+	}
+	
+	########################
+	## Push English Leave ##
+	########################
+	
+	focus = {
+		id = FRA_push_english_leave
+		icon = GFX_goal_FRA_push_english_leave
+		prerequisite = { 
+			focus = FRA_national_renewal
+		}
+		mutually_exclusive = {
+			focus = FRA_peace_annexed_normandy
+		}
+		relative_position_id = FRA_national_renewal
+		x = 2
+		y = 1
+		cost = 5
+		available = {
+			is_puppet = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 0
+		}
+		completion_reward = {
+	
+			}
+	}
+	
+	########################
+	## Reconquer Picardie ##
+	########################
+	
+	focus = {
+		id = FRA_reconquer_Picardie
+		icon = GFX_goal_FRA_reconquer_Picardie
+		prerequisite = { 
+			focus = FRA_national_renewal
+		}
+		relative_position_id = FRA_national_renewal
+		x = -2
+		y = 1
+		cost = 5
+		available = {
+			is_puppet = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 0
+		}
+		completion_reward = {
+	
+			}
+	}
+	
+	###############################
+	## Integration of Industries ##
+	###############################
+	
+	focus = {
+		id = FRA_integration_of_industries
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { 
+			focus = FRA_reconquer_Picardie
+		}
+		prerequisite = { 
+			focus = FRA_peace_annexed_normandy
+			focus = FRA_push_english_leave
+		}
+		relative_position_id = FRA_peace_annexed_normandy
+		x = 1
+		y = 1
+		cost = 5
+		available = {
+			is_puppet = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 0
+		}
+		completion_reward = {
+	
+			}
+	}
+	
+	######################
+	## France in Africa ##
+	######################
+	
+	focus = {
+		id = FRA_france_in_africa
+		icon = GFX_goal_FRA_france_in_africa
+		prerequisite = { 
+			focus = FRA_national_renewal
+		}
+		relative_position_id = FRA_national_renewal
+		x = -8
+		y = 1
+		cost = 5
+		available = {
+			is_puppet = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 0
+		}
+		completion_reward = {
+	
+			}
+	}
+	
+	######################
+	## Treaty of Uchda  ##deliver two options to spain
+	######################
+	
+	focus = {
+		id = FRA_treaty_of_uchda
+		icon = GFX_goal_FRA_treaty_of_uchda
+		prerequisite = { 
+			focus = FRA_france_in_africa
+		}
+		relative_position_id = FRA_france_in_africa
+		x = -2
+		y = 1
+		cost = 5
+		available = {
+			is_puppet = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 0
+		}
+		completion_reward = {
+	
+			}
+	}
+	
+	##########################
+	## Crossing the Sahara  ##
+	##########################
+	
+	focus = {
+		id = FRA_crossing_the_sahara
+		icon = GFX_goal_FRA_crossing_the_sahara
+		prerequisite = { 
+			focus = FRA_france_in_africa
+		}
+		relative_position_id = FRA_france_in_africa
+		x = 0
+		y = 1
+		cost = 5
+		available = {
+			is_puppet = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 0
+		}
+		completion_reward = {
+	
+			}
+	}
+	
+	########################
+	## Status of Algeria  ##
+	########################
+	
+	focus = {
+		id = FRA_status_of_algeria
+		icon = GFX_goal_FRA_status_of_algeria
+		prerequisite = { 
+			focus = FRA_france_in_africa
+		}
+		relative_position_id = FRA_france_in_africa
+		x = 2
+		y = 1
+		cost = 5
+		available = {
+			is_puppet = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 0
+		}
+		completion_reward = {
+	
+			}
+	}
+	
+	####################################
+	## Developing industry in Africa  ##
+	####################################
+	
+	focus = {
+		id = FRA_developing_industry_in_africa
+		icon = GFX_goal_FRA_developing_industry_in_africa
+		prerequisite = { 
+			focus = FRA_status_of_algeria
+		}
+		relative_position_id = FRA_status_of_algeria
+		x = -1
+		y = 1
+		cost = 5
+		available = {
+			is_puppet = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 0
+		}
+		completion_reward = {
+	
+			}
+	}
+	
+	###########################
+	## Investment in Africa  ##
+	###########################
+	
+	focus = {
+		id = FRA_investment_in_africa
+		icon = GFX_goal_FRA_investment_in_africa
+		prerequisite = { 
+			focus = FRA_treaty_of_uchda
+		}
+		relative_position_id = FRA_treaty_of_uchda
+		x = -1
+		y = 1
+		cost = 5
+		available = {
+			is_puppet = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 0
+		}
+		completion_reward = {
+	
+			}
+	}
+	
+	###################################
+	## Naval Construction in Africa  ##
+	###################################
+	
+	focus = {
+		id = FRA_naval_construction_in_africa
+		icon = GFX_goal_FRA_naval_construction_in_africa
+		prerequisite = { 
+			focus = FRA_treaty_of_uchda
+		}
+		prerequisite = { 
+			focus = FRA_status_of_algeria
+		}
+		relative_position_id = FRA_treaty_of_uchda
+		x = 1
+		y = 1
+		cost = 5
+		available = {
+			is_puppet = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 0
+		}
+		completion_reward = {
+	
+			}
+	}
+	
+	###################################
+	## Recruiting Troops in Africa  ##
+	###################################
+	
+	focus = {
+		id = FRA_recruiting_troops_in_africa
+		icon = GFX_goal_FRA_recruiting_troops_in_africa
+		prerequisite = { 
+			focus = FRA_treaty_of_uchda
+		}
+		prerequisite = { 
+			focus = FRA_status_of_algeria
+		}
+		relative_position_id = FRA_status_of_algeria
+		x = 1
+		y = 1
+		cost = 5
+		available = {
+			is_puppet = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 0
+		}
+		completion_reward = {
+	
+			}
+	}
+	
+	##########################
+	## Scramble for Africa  ##
+	##########################
+	
+	focus = {
+		id = FRA_scramble_for_africa
+		icon = GFX_goal_FRA_scramble_for_africa
+		prerequisite = { 
+			focus = FRA_treaty_of_uchda
+		}
+		prerequisite = { 
+			focus = FRA_status_of_algeria
+		}
+		mutually_exclusive = {
+			focus = FRA_french_africa
+		}
+		relative_position_id = FRA_crossing_the_sahara
+		x = -2
+		y = 2
+		cost = 5
+		available = {
+			is_puppet = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 0
+		}
+		completion_reward = {
+	
+			}
+	}
+	
+	####################
+	## French Africa  ##
+	####################
+	
+	focus = {
+		id = FRA_french_africa
+		icon = GFX_goal_FRA_scramble_for_africa
+		prerequisite = { 
+			focus = FRA_treaty_of_uchda
+		}
+		prerequisite = { 
+			focus = FRA_status_of_algeria
+		}
+		mutually_exclusive = {
+			focus = FRA_scramble_for_africa
+		}
+		relative_position_id = FRA_crossing_the_sahara
+		x = 2
+		y = 2
+		cost = 5
+		available = {
+			is_puppet = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 0
+		}
+		completion_reward = {
+	
+			}
+	}
+	
+	#####################################
+	## Rebuilding our Colonial Empire  ##
+	#####################################
+	
+	focus = {
+		id = FRA_rebuilding_our_colonial_empire
+		icon = GFX_goal_FRA_rebuilding_our_colonial_empire
+		prerequisite = { 
+			focus = FRA_scramble_for_africa
+			focus = FRA_french_africa
+		}
+		relative_position_id = FRA_scramble_for_africa
+		x = 2
+		y = 1
+		cost = 5
+		available = {
+			is_puppet = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 0
+		}
+		completion_reward = {
+	
+			}
+	}
+	
+	#######################
+	## Challenge Mandate ##
+	#######################
+	
+	focus = {
+		id = FRA_challenge_mandate
+		icon = GFX_goal_FRA_challenge_mandate
+		prerequisite = { 
+			focus = FRA_rebuilding_our_colonial_empire
+		}
+		relative_position_id = FRA_rebuilding_our_colonial_empire
+		x = 3
+		y = 1	
+		cost = 5
+		available = {
+			is_puppet = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 0
+		}
+		completion_reward = {
+	
+			}
+	}
+	
+	###########################
+	## Intervening in Saleh  ##
+	###########################
+	
+	focus = {
+		id = FRA_Intervening_in_saleh
+		icon = GFX_goal_FRA_Intervening_in_saleh
+		prerequisite = {
+			focus = FRA_rebuilding_our_colonial_empire
+		}
+		mutually_exclusive = {
+			focus = FRA_plot_a_rebellion
+		}
+		relative_position_id = FRA_rebuilding_our_colonial_empire
+		x = -1
+		y = 1	
+		cost = 5
+		available = {
+			is_puppet = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 0
+		}
+		completion_reward = {
+	
+			}
+	}
+	
+	#######################
+	## Plot a Rebellion  ## 法国策动萨勒赫地区的宗教起义来获利
+	#######################
+	
+	focus = {
+		id = FRA_plot_a_rebellion
+		icon = GFX_goal_FRA_plot_a_rebellion
+		prerequisite = {
+			focus = FRA_rebuilding_our_colonial_empire
+		}
+		mutually_exclusive = {
+			focus = FRA_Intervening_in_saleh
+		}
+		relative_position_id = FRA_rebuilding_our_colonial_empire
+		x = 1
+		y = 1	
+		cost = 5
+		available = {
+			is_puppet = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 0
+		}
+		completion_reward = {
+	
+			}
+	}
+	
+	#######################
+	## Towards the East  ##
+	#######################
+	
+	focus = {
+		id = FRA_towards_the_east
+		icon = GFX_goal_FRA_towards_the_east
+		prerequisite = {
+			focus = FRA_rebuilding_our_colonial_empire
+		}
+		relative_position_id = FRA_rebuilding_our_colonial_empire
+		x = -3
+		y = 1	
+		cost = 5
+		available = {
+			is_puppet = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 0
+		}
+		completion_reward = {
+	
+			}
+	}
+
+	#################################
+	## Claim Frontières Naturelles ##
+	#################################
+	
+	focus = {
+		id = FRA_claim_natural_borders
+		icon = GFX_goal_FRA_claim_natural_borders
+		prerequisite = {
+			focus = FRA_peace_annexed_normandy
+		}
+		relative_position_id = FRA_peace_annexed_normandy
+		x = -1
+		y = 1
+		cost = 5
+		available = {
+			is_puppet = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 0
+		}
+		completion_reward = {
+	
+			}
+	}
+	
+	#######################
+	## Neuchâtel Dispute ##
+	#######################
+	
+	focus = {
+		id = FRA_neuchatel_dispute
+		icon = GFX_goal_FRA_neuchatel_dispute
+		prerequisite = { 
+			focus = FRA_claim_natural_borders
+		}
+		relative_position_id = FRA_claim_natural_borders
+		x = 0
+		y = 2
+		cost = 5
+		available = {
+			is_puppet = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 0
+		}
+		completion_reward = {
+	
+			}
+	}
+	
+	##########################
+	## Destiny of Swissland ##
+	##########################
+	
+	focus = {
+		id = FRA_destiny_of_swissland
+		icon = GFX_goal_FRA_destiny_of_swissland
+		prerequisite = { 
+			focus = FRA_neuchatel_dispute
+		}
+		relative_position_id = FRA_neuchatel_dispute
+		x = 0
+		y = 1
+		cost = 5
+		available = {
+			is_puppet = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 0
+		}
+		completion_reward = {
+	
+			}
+	}
+	
+	########################
+	## Savoie Negotiation ##
+	########################
+	
+	focus = {
+		id = FRA_savoie_negotiation
+		icon = GFX_goal_FRA_savoie_negotiation
+		prerequisite = { 
+			focus = FRA_claim_natural_borders
+		}
+		mutually_exclusive = {
+			focus = FRA_seize_nice
+		}
+		relative_position_id = FRA_claim_natural_borders
+		x = -2
+		y = 1
+		cost = 5
+		available = {
+			is_puppet = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 0
+		}
+		completion_reward = {
+	
+			}
+	}
+	
+	################
+	## Seize Nice ##
+	################
+	
+	focus = {
+		id = FRA_seize_nice
+		icon = GFX_goal_FRA_seize_nice
+		prerequisite = { 
+			focus = FRA_claim_natural_borders
+		}
+		mutually_exclusive = {
+			focus = FRA_savoie_negotiation
+		}
+		relative_position_id = FRA_claim_natural_borders
+		
+		x = 2
+		y = 1
+		cost = 5
+		available = {
+			is_puppet = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 0
+		}
+		completion_reward = {
+	
+			}
+	}
+	
+	###################
+	## Claim Corsica ##
+	###################
+	
+	focus = {
+		id = FRA_claim_Corsica
+		icon = GFX_goal_generic_attack_corsica
+		prerequisite = { 
+			focus = FRA_savoie_negotiation
+		}
+		relative_position_id = FRA_savoie_negotiation
+		x = 0
+		y = 1
+		cost = 5
+		available = {
+			is_puppet = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 0
+		}
+		completion_reward = {
+	
+			}
+	}
+	
+	
+	#########################
+	## Enter into Wallonie ##
+	#########################
+	
+	focus = {
+		id = FRA_enter_into_Wallonie
+		icon = GFX_goal_FRA_enter_into_Wallonie
+		prerequisite = { 
+			focus = FRA_claim_natural_borders
+		}
+		relative_position_id = FRA_claim_natural_borders
+		x = 2
+		y = 1
+		cost = 5
+		available = {
+			is_puppet = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 0
+		}
+		completion_reward = {
+	
+			}
+	}
+	
+	################################
+	## Second Treaty of Amsterdam ##
+	################################
+	
+	focus = {
+		id = FRA_second_treaty_of_amsterdam
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { 
+			focus = FRA_enter_into_Wallonie
+		}
+		relative_position_id = FRA_enter_into_Wallonie
+		x = 0
+		y = 1
+		cost = 5
+		available = {
+			is_puppet = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 0
+		}
+		completion_reward = {
+	
+			}
+	}
+	
+	###############
+	## Lorraine  ##
+	###############
+	
+	focus = {
+		id = FRA_Lorraine
+		icon = GFX_goal_FRA_Lorraine
+		prerequisite = {
+			focus = FRA_destiny_of_swissland
+		}
+		prerequisite = {
+			focus = FRA_second_treaty_of_amsterdam
+		}
+		prerequisite = {
+			focus = FRA_claim_Corsica
+		}
+		relative_position_id = FRA_claim_natural_borders
+		x = 0
+		y = 4	
+		
+		cost = 5
+		available = {
+			is_puppet = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 0
+		}
+		completion_reward = {
+	
+			}
+	}
+	
+	########################
+	## Je suis le déluge  ##
+	########################
+	
+	focus = {
+		id = FRA_je_suis_le_deluge
+		icon = GFX_goal_FRA_je_suis_le_deluge
+		relative_position_id = FRA_rebuilding_our_colonial_empire
+		prerequisite = { 
+			focus = FRA_rebuilding_our_colonial_empire
+		}
+		prerequisite = { 
+			focus = FRA_Lorraine
+		}
+		x = 0
+		y = 2
+		cost = 5
+		available = {
+			is_puppet = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 0
+		}
+		completion_reward = {
+	
+			}
+	}
+	
+	########################
+	## Otariinae Project  ##
+	########################
+	
+	focus = {
+		id = FRA_otariinae_project
+		icon = GFX_goal_FRA_otariinae_project
+		relative_position_id = FRA_Lorraine
+		prerequisite = { 
+			focus = FRA_Lorraine
+		}
+		x = -1
+		y = 1
+		cost = 5
+		available = {
+			is_puppet = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 0
+		}
+		completion_reward = {
+	
+			}
+	}
+	
+	##########################
+	## Unfinished Business  ##
+	##########################
+	
+	focus = {
+		id = FRA_unfinished_business
+		icon = GFX_goal_FRA_unfinished_business
+		relative_position_id = FRA_Lorraine
+		prerequisite = { 
+			focus = FRA_Lorraine
+		}
+		x = 1
+		y = 1
+		cost = 5
+		available = {
+			is_puppet = no
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 0
+		}
+		completion_reward = {
+	
+			}
+	}
+	
+	################################
+	## Lessons from the Great War ##
+	################################
+	
+	focus = {
+		id = FRA_lessons_from_the_great_war
+		icon = GFX_goal_FRA_lessons_from_the_great_war
+		relative_position_id = FRA_epiphany_revolution
+		x = 18
+		y = 0
+		cost = 1
+		available = {		
+		}
+		completion_reward = {
+		}
+	}
+	
+}

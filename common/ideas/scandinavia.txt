@@ -1,0 +1,210 @@
+ideas = {
+	#General
+	country = {
+	
+		SCA_med_folket_for_fosterlandet = {
+			allowed = {
+				always = no
+				original_tag = SCA
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				conscription_factor = 0.05
+			}
+		}
+		
+		SCA_Mitteleuropa_Scandinavia_trade = {
+			allowed = {
+				always = no
+				original_tag = SCA
+				country_exists = SCA
+				OR = {
+					country_exists = GER
+					country_exists = HAB
+				}
+				NOT = {
+					has_war_with = GER
+					has_war_with = HAB
+				}
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.05
+			}
+		}
+		
+		SCA_separatism_in_Finland_2 = {
+			
+			allowed = {
+				always = no
+				original_tag = SCA
+				NOT = {
+					country_exists = FIN
+				}
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.3
+				conscription_factor = -0.21
+				war_support_factor = -0.3
+			}
+		}
+		
+		SCA_separatism_in_Finland_1 = {
+			
+			allowed = {
+				always = no
+				original_tag = SCA
+				NOT = {
+					country_exists = FIN
+				}
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.15
+			#	conscription_factor = -0.10
+				war_support_factor = -0.15
+			}
+		}
+		
+		SCA_separatism_in_Finland_0 = {
+			
+			allowed = {
+				always = no
+				original_tag = SCA
+				NOT = {
+					country_exists = FIN
+				}
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.05
+				conscription_factor = -0.05
+				war_support_factor = -0.07
+			}
+		}
+	}
+	# POLITICAL
+	
+	# TECHNOLOGY
+	naval_manufacturer = {
+		designer = yes
+		
+		SCA_Ab_Crichton = {
+			
+			allowed = {
+				original_tag = SCA
+			}	
+			cost = 150	
+			removal_cost = 10
+			research_bonus = {
+				
+				naval_equipment = 0.15
+				
+			}
+			traits = {	
+			
+				naval_manufacturer
+				
+				}
+		}
+		
+		SCA_A_P_Moeller = {
+			
+			allowed = {
+				original_tag = SCA
+			}	
+			cost = 150	
+			removal_cost = 10
+			research_bonus = {
+				
+				naval_equipment = 0.15
+				
+			}
+			traits = {	
+			
+				naval_manufacturer
+				
+				}
+		}
+		
+		
+	}
+
+	materiel_manufacturer = {
+		designer = yes
+		
+		SCA_Scania = {
+			
+			allowed = {
+				
+				original_tag = SCA
+				
+			}
+			
+			research_bonus = {
+				
+				motorized_equipment = 0.15
+				
+			}
+			
+			traits = {
+				
+				motorized_equipment_manufacturer
+				
+				}
+		}
+		
+	}
+	
+	tank_manufacturer = { 
+	
+		designer = yes
+	}
+	
+	industrial_concern = {
+		
+		SCA_AGA_AB = {
+			
+			allowed = {
+				original_tag = SCA
+			}
+			
+			research_bonus = {
+				industry = 0.15
+			}
+			
+			traits = {
+				refinery_concern
+				konzern
+				}
+			
+			ai_will_do = {
+				factor = 1
+			}
+			
+			modifier = {
+				industry_repair_factor = 0.10
+			}
+			
+		}
+	}
+	
+}
+		

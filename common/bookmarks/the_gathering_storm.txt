@@ -1,0 +1,205 @@
+bookmarks = {
+	bookmark = {
+		name = "TP_SCENARIO_1_NAME"
+		desc = "TP_SCENARIO_1_DESC"
+		date = 1936.1.1.12
+		picture = "gfx/interface/select_date_1936.dds"
+		default_country = "QNG"
+		default = yes
+		
+		"HAB"={
+			history = "TP_HAB_SCENARIO_DESC"
+			ideology = conservatism
+			ideas = {
+				HAB_unity_0
+			}
+			focuses = {
+			
+			}
+		}
+		
+		"USA"={
+			history = "TP_USA_SCENARIO_DESC"
+			ideology = populism
+			
+			ideas = {
+				USA_ingrained_slavery
+			}
+			
+			focuses = {
+			}
+		}
+		
+		"QNG"={
+			history = "TP_QNG_SCENARIO_DESC"
+			ideology = conservatism
+			
+			ideas = {
+				QNG_wu_tsu_ta_tung
+				QNG_delicate_court_2
+			}
+			
+			focuses = {
+				
+			}
+		}
+		
+		"NJP"={
+			history = "TP_NJP_SCENARIO_DESC"
+			ideology = democratic_socialism
+			
+			ideas = {
+				JAP_divined_country
+				NJP_militia
+			}
+			
+			focuses = {
+				NJP_Rono_faction
+				NJP_Gyomin_faction
+				NJP_Shokan_faction
+			}
+		}
+		
+		"JAP"={
+			history = "TP_JAP_SCENARIO_DESC"
+			ideology = corporatism
+			
+			ideas = {
+				JAP_Divined_Country
+				JAP_Genro_Oligarchy
+			}	
+			
+			focuses = {
+				
+			}		
+		}
+		
+		"GER"={
+			history = "TP_GER_SCENARIO_DESC"
+			ideology = social_democratism
+			
+			ideas = {
+				GER_general_staff
+				GER_victors_of_greatwar
+			}
+			
+			focuses = {
+			}
+		}
+		
+		"RUS"={
+			history = "TP_RUS_SCENARIO_DESC"
+			ideology = patriotic_socialism
+			
+			ideas = {
+				RUS_Development_Planning_Commission
+			}
+			
+			focuses = {
+				
+			}	
+		}
+		
+		"---"={
+			history = "OTHER_GATHERING_STORM_DESC"
+		}
+
+
+		# minors from DLC ####
+		
+		"KOR"={
+			minor = yes
+			history = "TP_KOR_GATHERING_STORM_DESC"
+			ideology = conservatism
+			
+			ideas = {
+				KOR_unsuccessful_uprising
+				KOR_yangban
+			}
+			
+			focuses = {
+				KOR_Rectify_yanban
+				KOR_Samil_Movement
+			}
+		}
+		
+		"FRA"={
+			minor = yes
+			history = "TP_FRA_SCENARIO_DESC"
+			ideology = conservatism
+			ideas = {
+				FRA_christ_the_king
+				FRA_sour_loser
+				FRA_unpopular_monarchy
+			}
+			focuses = {
+			
+			}
+		}
+		
+		"SCA"={
+			minor = yes
+			history = "TP_SCA_SCENARIO_DESC"
+			ideology = social_liberalism
+			
+			ideas = {
+				SCA_med_folket_for_fosterlandet
+				SCA_Mitteleuropa_Scandinavia_trade
+				SCA_separatism_in_Finland_1
+			}
+			
+			focuses = {
+			}
+		}
+		
+		"GBR"={
+			minor = yes
+			history = "TP_GBR_SCENARIO_DESC"
+			ideology = conservatism
+			ideas = {
+			
+			}	
+			focuses = {
+			}		
+		}
+		
+		"SAV"={
+			minor = yes
+			history = "TP_SAV_SCENARIO_DESC"
+			ideology = corporatism
+			ideas = {
+			}
+			focuses = {
+			
+			}
+		}
+		
+		"SPU"={
+			minor = yes
+			history = "TP_SPU_SCENARIO_DESC"
+			ideology = democratic_socialism
+			ideas = {
+			}
+			focuses = {
+			
+			}
+		}
+		
+		"ROM"={
+			minor = yes
+			history = "TP_ROM_SCENARIO_DESC"
+			ideology = corporatism
+			ideas = {
+				ROM_iron_guard
+			}
+			focuses = {
+			
+			}
+		}
+		
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

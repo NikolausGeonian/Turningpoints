@@ -1,0 +1,20 @@
+state = {
+	id=880
+	name="STATE_880" #Mandoul
+	manpower = 628065
+	state_category = rural
+	
+	history = {
+		owner = BAG
+		add_core_of = BAG
+		buildings = {
+			infrastructure = 1
+		}		
+		victory_points = {
+			1883 1
+		}
+	}
+	provinces={
+		1883 3181 13266 13265 13284
+	}
+}

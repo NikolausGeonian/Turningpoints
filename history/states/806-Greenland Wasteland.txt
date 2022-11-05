@@ -1,0 +1,19 @@
+state={
+	id=806
+	name="STATE_806"
+	manpower = 1280
+	
+	state_category = wasteland
+	impassable = yes
+	history={
+		owner = SCA
+		buildings = {
+			infrastructure = 0
+		}
+		add_core_of = SCA
+	}
+
+	provinces={
+			13058
+	}
+}

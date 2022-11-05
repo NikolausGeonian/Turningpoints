@@ -1,0 +1,167 @@
+ideas = {
+	#General
+	country = {
+		
+	}
+	# POLITICAL
+	# TECHNOLOGY
+	naval_manufacturer = {
+		designer = yes
+	}
+	
+	materiel_manufacturer = {
+		designer = yes
+		
+		LOM_beretta = {
+			
+			allowed = {
+				original_TAG = LOM
+			}
+			
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+			
+		}
+		
+		LOM_Frera = {	
+		
+			allowed = {
+				original_tag = LOM
+			}
+			
+			research_bonus = {
+				motorized_equipment = 0.15
+			}
+			
+			traits = { motorized_equipment_manufacturer }
+		}
+				
+	}
+	
+	tank_manufacturer = { 
+	
+		designer = yes	
+		
+		LOM_Zust = {
+			
+			allowed = {
+				original_tag = LOM	
+			}
+			
+			research_bonus = {		
+				armor = 0.15			
+			}
+			
+			traits = { fast_tank_manufacturer }
+			
+			ai_will_do = {	
+				factor = 10				
+			}
+			
+		}
+		
+		LOM_Alfa_Romeo = {
+				
+			allowed = {
+				original_tag = LOM
+				has_dlc = "La Resistance"
+			}
+						
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = {
+				armored_car_manufacturer
+			}
+		}
+	}
+	
+	aircraft_manufacturer = { 		
+			
+		designer = yes
+		
+		LOM_breda = { 
+
+			
+			allowed = {
+				original_tag = LOM
+			}
+			
+						
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { medium_aircraft_manufacturer }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		LOM_Isotta_Fraschini = { 
+
+			
+			allowed = {
+				original_tag = LOM
+			}
+			
+						
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { light_aircraft_manufacturer }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		LOM_caproni = {
+
+			
+			allowed = {
+				original_tag = LOM
+			}
+			
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { heavy_aircraft_manufacturer }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	industrial_concern = {
+		
+		LOM_Flack_iron_steel = {
+			
+			allowed = {
+				original_tag = LOM
+			}
+			
+			research_bonus = {
+				industry = 0.15
+			}
+			ai_will_do = {
+				factor = 2
+			}
+			traits = {
+				industrial_concern 
+				konzern
+			}
+		}
+	}
+		
+}
+		

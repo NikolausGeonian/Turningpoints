@@ -1,0 +1,24 @@
+state={
+	id=604
+	name="STATE_604"
+
+	history={
+		owner = QNG
+		add_core_of = QNG
+		add_core_of = TIB
+		victory_points = {
+			12899 5 
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+	}
+
+	provinces={
+		4914 4964 7940 8018 12899 
+	}
+	manpower=1196100
+	buildings_max_level_factor=1.000
+	state_category = pastoral
+}

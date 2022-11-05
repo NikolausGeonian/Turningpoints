@@ -1,0 +1,666 @@
+characters = {
+	
+	### Country Leader ###
+	
+	SCA_Axel_Pehrsson_Bramstorp = {
+		name = SCA_Axel_Pehrsson_Bramstorp
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/SCA/ministers/SCA_Axel_Pehrsson_Bramstorp.dds"
+				large = "gfx/leaders/SCA/Portrait_Axel_Pehrsson_Bramstorp.dds"
+			}
+		}
+		country_leader = {
+			desc = "POLITICS_SCA_AXEL_PEHRSSON_BRAMSTORP_DESC"
+			ideology = social_liberalism_subtype
+			id = -1
+		}
+	}
+	
+	SCA_Per_Albin_Hansson = {
+		name = SCA_Per_Albin_Hansson
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/SCA/ministers/SCA_Per_Albin_Hansson.dds"
+				large = "gfx/leaders/SCA/Portrait_Per_Albin_Hansson.dds"
+			}
+		}
+		country_leader = {
+			desc = "POLITICS_SCA_PER_ALBIN_HANSSON_DESC"
+			ideology = social_democratism_subtype
+			id = -1
+		}
+	}
+	
+	SCA_Vidkun_Quisling = {
+		name = SCA_Vidkun_Quisling
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/SCA/ministers/SCA_Vidkun_Quisling.dds"
+				large = "gfx/leaders/SCA/Portrait_Vidkun_Quisling.dds"
+			}
+		}
+		country_leader = {
+			desc = "POLITICS_SCA_VIDKUN_QUISLING_DESC"
+			ideology = sorelianism_subtype
+			id = -1
+		}
+	}
+	
+	### Ministers ###
+	### HEAD OF GOVERNMENT ###
+	
+	SCA_Juho_Kusti_Paasikivi = {
+		name = SCA_Juho_Kusti_Paasikivi
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/SCA/ministers/SCA_Juho_Kusti_Paasikivi.dds"
+				large = "gfx/leaders/SCA/Portrait_Juho_Kusti_Paasikivi.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_SCA_JUHO_KUSTI_PAASIKIVI_DESC"
+			slot = head_of_government
+			idea_token = SCA_Juho_Kusti_Paasikivi
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = SCA
+			}
+			available = {
+				has_government = conservatism					
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	### FOREIGN MINISTER ###
+	
+	###	ECONOMY MINISTER ###
+	
+	SCA_Jacob_Wallenberg = {
+		name = SCA_Jacob_Wallenberg
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/SCA/ministers/SCA_Jacob_Wallenberg.dds"
+				large = "gfx/leaders/SCA/Portrait_Jacob_Wallenberg.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_SCA_JACOB_WALLENBERG_DESC"
+			slot = economy_minister
+			idea_token = SCA_Jacob_Wallenberg
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = SCA
+			}
+			available = {
+				OR = {
+					has_government = conservatism
+					has_government = social_liberalism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	### FIELD MARSHAL ###
+	
+	SCA_Carl_Gustaf_Emil_Mannerheim = {
+		name = SCA_Carl_Gustaf_Emil_Mannerheim
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/SCA/ministers/SCA_Carl_Gustaf_Emil_Mannerheim.dds"
+				large = "gfx/leaders/SCA/Portrait_Carl_Gustaf_Emil_Mannerheim.dds"
+			}
+		}
+		
+		field_marshal={
+			desc = "MARSHAL_SCA_CARL_GUSTAF_EMIL_MANNERHEIM_DESC"
+			traits = { war_hero trait_cautious inflexible_strategist trickster }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	### CORPS COMMANDER ###
+	
+	SCA_Frode_Lund_Hvalkof = {
+		name = SCA_Frode_Lund_Hvalkof
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/SCA/ministers/SCA_Frode_Lund_Hvalkof.dds"
+				large = "gfx/leaders/SCA/Portrait_Frode_Lund_Hvalkof.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_SCA_FRODE_LUND_HVALKOF_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 4
+		}
+	}
+	
+	SCA_Aage_Falking = {
+		name = SCA_Aage_Falking
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/SCA/ministers/SCA_Aage_Falking.dds"
+				large = "gfx/leaders/SCA/Portrait_Aage_Falking.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_SCA_AGE_FALKING_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 4
+		}
+	}
+	
+	SCA_Carl_Gustav_Fleischer = {
+		name = SCA_Carl_Gustav_Fleischer
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/SCA/ministers/SCA_Carl_Gustav_Fleischer.dds"
+				large = "gfx/leaders/SCA/Portrait_Carl_Gustav_Fleischer.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_SCA_CARL_GUSTAV_FLEISCHER_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 4
+		}
+	}
+	
+	SCA_Charles_Henry_Rye = {
+		name = SCA_Charles_Henry_Rye
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/SCA/ministers/SCA_Charles_Henry_Rye.dds"
+				large = "gfx/leaders/SCA/Portrait_Charles_Henry_Rye.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_SCA_CHARLES_HENRY_RYE_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 4
+		}
+	}
+	
+	SCA_Karl_Fredrik_Wilkama = {
+		name = SCA_Karl_Fredrik_Wilkama
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/SCA/ministers/SCA_Karl_Fredrik_Wilkama.dds"
+				large = "gfx/leaders/SCA/Portrait_Karl_Fredrik_Wilkama.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_SCA_KARL_FREDRIK_WILKAMA_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 4
+		}
+	}
+	
+	SCA_Kristian_Laake = {
+		name = SCA_Kristian_Laake
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/SCA/ministers/SCA_Kristian_Laake.dds"
+				large = "gfx/leaders/SCA/Portrait_Kristian_Laake.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_SCA_KRISTIAN_LAAKE_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 4
+		}
+	}
+	
+	SCA_Otto_Ruge = {
+		name = SCA_Otto_Ruge
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/SCA/ministers/SCA_Otto_Ruge.dds"
+				large = "gfx/leaders/SCA/Portrait_Otto_Ruge.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_SCA_OTTO_RUGE_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 4
+		}
+	}
+	
+	SCA_Martin_Ekstrom = {
+		name = SCA_Martin_Ekstrom
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/SCA/ministers/SCA_Martin_Ekstrom.dds"
+				large = "gfx/leaders/SCA/Portrait_Martin_Ekstrom.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_SCA_MARTIN_EKSTROM_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 4
+		}
+	}
+	
+	SCA_Rudolf_Walden = {
+		name = SCA_Rudolf_Walden
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/SCA/ministers/SCA_Rudolf_Walden.dds"
+				large = "gfx/leaders/SCA/Portrait_Rudolf_Walden.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_SCA_RUDOLF_WALDEN_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 4
+		}
+	}
+	
+	SCA_Erik_Bille_Brahe = {
+		name = SCA_Erik_Bille_Brahe
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/SCA/ministers/SCA_Erik_Bille_Brahe.dds"
+				large = "gfx/leaders/SCA/Portrait_Erik_Bille_Brahe.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_SCA_ERIK_BILLE_BRAHE_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 4
+		}
+	}
+	
+	SCA_Erik_Leschly = {
+		name = SCA_Erik_Leschly
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/SCA/ministers/SCA_Erik_Leschly.dds"
+				large = "gfx/leaders/SCA/Portrait_Erik_Leschly.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_SCA_ERIK_LESCHLY_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 4
+		}
+	}
+	
+	SCA_Ernst_Klercker = {
+		name = SCA_Ernst_Klercker
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/SCA/ministers/SCA_Ernst_Klercker.dds"
+				large = "gfx/leaders/SCA/Portrait_Ernst_Klercker.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_SCA_ERIK_LESCHLY_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 4
+		}
+	}
+	
+	SCA_Harry_Alfthan = {
+		name = SCA_Harry_Alfthan
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/SCA/ministers/SCA_Harry_Alfthan.dds"
+				large = "gfx/leaders/SCA/Portrait_Harry_Alfthan.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_SCA_HARRY_ALFTHAN_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 4
+		}
+	}
+	
+	SCA_Erik_af_Edholm = {
+		name = SCA_Erik_af_Edholm
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/SCA/ministers/SCA_Erik_af_Edholm.dds"
+				large = "gfx/leaders/SCA/Portrait_Erik_af_Edholm.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_SCA_ERIK_AF_EDHOLM_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 4
+		}
+	}
+	
+	SCA_Ebbe_Gortz = {
+		name = SCA_Ebbe_Gortz
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/SCA/ministers/SCA_Ebbe_Gortz.dds"
+				large = "gfx/leaders/SCA/Portrait_Ebbe_Gortz.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_SCA_EBBE_GORTZ_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 4
+		}
+	}
+	
+	SCA_Hans_Rolsted = {
+		name = SCA_Hans_Rolsted
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/SCA/ministers/SCA_Hans_Rolsted.dds"
+				large = "gfx/leaders/SCA/Portrait_Hans_Rolsted.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_SCA_HANS_ROLSTED_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 4
+		}
+	}
+	
+	SCA_Ivar_Holmquist = {
+		name = SCA_Ivar_Holmquist
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/SCA/ministers/SCA_Ivar_Holmquist.dds"
+				large = "gfx/leaders/SCA/Portrait_Ivar_Holmquist.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_SCA_IVAR_HOLMQUIST_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 4
+		}
+	}
+	
+	SCA_Johan_Daniel_von_Stemann = {
+		name = SCA_Johan_Daniel_von_Stemann
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/SCA/ministers/SCA_Johan_Daniel_von_Stemann.dds"
+				large = "gfx/leaders/SCA/Portrait_Johan_Daniel_von_Stemann.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_SCA_JOHAN_DANIEL_VON_STEMANN_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 4
+		}
+	}
+	
+	SCA_Taavetti_Laatikainen = {
+		name = SCA_Taavetti_Laatikainen
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/SCA/ministers/SCA_Taavetti_Laatikainen.dds"
+				large = "gfx/leaders/SCA/Portrait_Taavetti_Laatikainen.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_SCA_TAAVETTI_LAATIKAINEN_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 4
+		}
+	}
+	
+	SCA_Vilho_Petter_Nenonen = {
+		name = SCA_Vilho_Petter_Nenonen
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/SCA/ministers/SCA_Vilho_Petter_Nenonen.dds"
+				large = "gfx/leaders/SCA/Portrait_Vilho_Petter_Nenonen.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_SCA_VILHO_PETTER_NENONEN_DESC"
+			traits = { winter_specialist commando }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 4
+		}
+	}
+	
+	SCA_Paul_Ramm = {
+		name = SCA_Paul_Ramm
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/SCA/ministers/SCA_Paul_Ramm.dds"
+				large = "gfx/leaders/SCA/Portrait_Paul_Ramm.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_SCA_PAUL_RAMM_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 4
+		}
+	}
+	
+	### ADMIRAL ###
+	
+	SCA_Otto_Lybeck = {
+		name = SCA_Otto_Lybeck
+		portraits = {	
+			navy = {
+				small = "gfx/interface/ideas/SCA/ministers/SCA_Otto_Lybeck.dds"
+				large = "gfx/leaders/SCA/Portrait_Otto_Lybeck.dds"
+			}
+		}
+		
+		navy_leader = {
+			desc = "ADMIRAL_SCA_OTTO_LYBECK_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	
+	SCA_Jakob_von_der_Lippe = {
+		name = SCA_Jakob_von_der_Lippe
+		portraits = {	
+			navy = {
+				small = "gfx/interface/ideas/SCA/ministers/SCA_Jakob_von_der_Lippe.dds"
+				large = "gfx/leaders/SCA/Portrait_Jakob_von_der_Lippe.dds"
+			}
+		}
+		
+		navy_leader = {
+			desc = "ADMIRAL_SCA_JAKOB_VON_DER_LIPPE_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	
+	SCA_Fabian_Tamm = {
+		name = SCA_Fabian_Tamm
+		portraits = {	
+			navy = {
+				small = "gfx/interface/ideas/SCA/ministers/SCA_Fabian_Tamm.dds"
+				large = "gfx/leaders/SCA/Portrait_Fabian_Tamm.dds"
+			}
+		}
+		
+		navy_leader = {
+			desc = "ADMIRAL_SCA_FABIAN_TAMM_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	
+	SCA_Claes_Lindsstrom = {
+		name = SCA_Claes_Lindsstrom
+		portraits = {	
+			navy = {
+				small = "gfx/interface/ideas/SCA/ministers/SCA_Claes_Lindsstrom.dds"
+				large = "gfx/leaders/SCA/Portrait_Claes_Lindsstrom.dds"
+			}
+		}
+		
+		navy_leader = {
+			desc = "ADMIRAL_SCA_CLAES_LINDSSTROM_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	
+	SCA_Henry_Diesen = {
+		name = SCA_Henry_Diesen
+		portraits = {	
+			navy = {
+				small = "gfx/interface/ideas/SCA/ministers/SCA_Henry_Diesen.dds"
+				large = "gfx/leaders/SCA/Portrait_Henry_Diesen.dds"
+			}
+		}
+		
+		navy_leader = {
+			desc = "ADMIRAL_SCA_HENRY_DIESEN_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	
+}

@@ -1,0 +1,27 @@
+state={
+	id=233
+	name="STATE_233"
+	resources={
+		chromium=20# was: 46.000
+	}
+
+	history={
+		owner = MRC
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = MRC
+		add_claim_by = RUS
+		victory_points = {
+			9628 3
+		}
+	}
+
+	provinces={
+		666 670 685 6674 9628 9647 9649 11614 
+	}
+	manpower=723970
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

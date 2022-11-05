@@ -1,0 +1,27 @@
+
+state={
+	id=157
+	name="STATE_157"
+	manpower = 1979335
+	
+	state_category = large_town
+
+	history={
+		owner = SIC
+		victory_points = {
+			6831  3
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			6831 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = SIC
+	}
+
+	provinces={
+		963 3923 3966 6831
+	}
+}

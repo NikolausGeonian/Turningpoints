@@ -1,0 +1,863 @@
+﻿
+capital = 608 # Beijing
+
+#oob = "CHI_1936"
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	#set_naval_oob = "CHI_1936_naval"
+	else = {
+	}
+}
+
+# GENERAL #
+set_stability = 0.5
+set_war_support = 0.1
+set_fuel_ratio = 0.5
+set_research_slots = 4
+set_convoys = 327
+
+### Country Leader ###
+
+recruit_character = QNG_Aisin_Gioro_Puyi
+recruit_character = QNG_Aisin_Gioro_Puyi_social_democratism
+recruit_character = QNG_Chen_Tuhsiu
+
+### Corps Commander ###
+recruit_character = QNG_Tien_Hsienchang
+recruit_character = QNG_Chang_Tsolin
+recruit_character = QNG_Li_Chun
+recruit_character = QNG_Wu_Luchen
+recruit_character = QNG_Gioro_Liangpi
+recruit_character = QNG_Aisin_Gioro_Dzaichen
+recruit_character = QNG_Chi_Hsiehyuan
+recruit_character = QNG_Chiang_Fangcheng
+recruit_character = QNG_Chang_Shaotseng
+recruit_character = QNG_Aisin_Gioro_Dzaitao
+recruit_character = QNG_Amurlingkui
+recruit_character = QNG_Lung_Yun
+recruit_character = QNG_Ma_Hongbin
+recruit_character = QNG_Yin_Changheng
+recruit_character = QNG_Li_Fangchen
+recruit_character = QNG_Tang_Chiyao
+recruit_character = QNG_Yen_Hsishan
+recruit_character = QNG_Feng_Yuhsiang
+recruit_character = QNG_Fuca_Lingkuang
+recruit_character = QNG_Shih_Yushan
+recruit_character = QNG_Teng_Hsihou
+recruit_character = QNG_Ha_Hanchang
+recruit_character = QNG_Chen_Tiaoyuan
+recruit_character = QNG_Li_Tsungjen
+recruit_character = QNG_Chiang_Tsopin
+recruit_character = QNG_Ko_Kuangding
+recruit_character = QNG_Wu_Chunghsin
+recruit_character = QNG_Chen_Chuchen
+recruit_character = QNG_Wu_Hsintien
+recruit_character = QNG_Song_Cheyuan
+recruit_character = QNG_Tang_Shengchih
+recruit_character = QNG_Hsiung_Pingchi
+recruit_character = QNG_Chou_Chun
+
+### Admiral	  ###
+recruit_character = QNG_Lin_Kuokeng
+recruit_character = QNG_Aisin_Gioro_Puwei
+recruit_character = QNG_Aisin_Gioro_Tsai_hsiun
+recruit_character = QNG_Yang_Shuchwang
+recruit_character = QNG_Chen_Shaokuan
+recruit_character = QNG_Tang_Hsiangming
+recruit_character = QNG_Wu_Chennan
+recruit_character = QNG_Tang_Tsaili
+recruit_character = QNG_Chu_Tungfeng
+recruit_character = QNG_Yin_Tsokan
+recruit_character = QNG_Shen_Hunglieh
+
+### Ministers ###
+recruit_character = QNG_Li_Kuochieh
+recruit_character = QNG_Chu_Chichien
+recruit_character = QNG_Tang_Shaoi
+recruit_character = QNG_Chiang_Kanghu
+recruit_character = QNG_Chang_Tungsun
+recruit_character = QNG_Koo_Vikyuin
+recruit_character = QNG_Cheng_Hsiaohsu
+recruit_character = QNG_Lou_Tsengtsiang
+recruit_character = QNG_Yen_Weiching
+recruit_character = QNG_Tsao_Julin
+recruit_character = QNG_Shih_Chaochi
+recruit_character = QNG_Wang_Chengting
+recruit_character = QNG_Gungsangnorbu
+recruit_character = QNG_Wang_Tingzhang
+recruit_character = QNG_Wu_Chaoshu
+recruit_character = QNG_Wang_Chunghui
+recruit_character = QNG_Liang_Sishun
+recruit_character = QNG_Carsun_Chang
+recruit_character = QNG_Lin_Pochu
+recruit_character = QNG_Hoo_Chitsai
+recruit_character = QNG_Sheng_Shihtsai
+recruit_character = QNG_Liu_Hungsheng
+recruit_character = QNG_Yang_Rumei
+recruit_character = QNG_Tao_Changshan
+recruit_character = QNG_Chang_Yinghua
+recruit_character = QNG_Li_Shihhou
+recruit_character = QNG_Chen_Lienpai
+recruit_character = QNG_Kung_Hsianghsi
+recruit_character = QNG_Sun_Toyu
+recruit_character = QNG_Hu_Aokung
+recruit_character = QNG_Huang_Yenpei
+recruit_character = QNG_Wu_Dingchang
+
+# National Idea #
+add_ideas = {
+	generic_financial_crisis_0
+	QNG_delicate_court_2
+	QNG_wu_tsu_ta_tung
+	QNG_Tang_Shaoi
+	QNG_Gungsangnorbu
+	QNG_Chu_Chichien_minister
+
+}
+
+# Starting tech #
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	support_weapons = 1
+	tech_support = 1		
+	tech_recon = 1
+	tech_engineers = 1
+	motorised_infantry = 1
+	marines  = 1
+	gw_artillery = 1
+	mass_assault = 1
+	fleet_in_being = 1
+}
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		smoke_generator = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+		improved_secondary_battery = 1
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+	}
+	else = {
+		set_technology = {
+			early_submarine = 1
+			early_destroyer = 1
+			basic_destroyer = 1
+			early_light_cruiser = 1
+			early_heavy_cruiser = 1
+			early_battleship = 1
+			early_battlecruiser = 1
+			early_carrier = 1
+			transport = 1
+		}
+	}
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+		basic_medium_tank_chassis = 1
+		engine_tech_1 = 1
+	}
+	
+	else = {
+		set_technology = {
+			gwtank = 1
+			basic_light_tank = 1
+			basic_medium_tank = 1
+		}
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "By Blood Alone"
+	}
+	set_technology = {
+		aa_lmg = 1
+		aa_cannon_1 = 1
+		engines_1 = 1
+		early_bombs = 1
+		aircraft_construction = 1
+		iw_small_airframe = 1
+		basic_small_airframe = 1
+		iw_medium_airframe = 1
+		basic_medium_airframe = 1
+		iw_large_airframe = 1
+	}
+	else = {
+		set_technology = {
+			early_fighter = 1
+			fighter1 = 1
+			early_bomber = 1
+			tactical_bomber1 = 1
+			strategic_bomber1 = 1
+			CAS1 = 1
+			naval_bomber1 = 1
+		}
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	set_technology = {
+		armored_car1 = 1
+	}
+}
+
+country_event = {
+	id = chi.2
+	days = 1
+}
+
+
+
+# Starting Import #
+
+# Diplomacy #
+create_faction = FACTION_NAME_QNG
+add_to_faction = QNG
+add_to_faction = JAP
+add_to_faction = MAL
+add_to_faction = BTN
+add_to_faction = HUZ
+set_autonomy = {
+		target = BRM
+		autonomous_state = TP_qng_tributary_states
+		freedom_level = 0.8
+	}
+set_autonomy = {
+		target = BTN
+		autonomous_state = TP_qng_tributary_states
+		freedom_level = 0.8
+	}
+set_autonomy = {
+		target = KOR
+		autonomous_state = TP_qng_tributary_states
+		freedom_level = 0.8
+	}
+set_autonomy = {
+		target = VIN
+		autonomous_state = TP_qng_tributary_states
+		freedom_level = 0.8
+	}
+set_autonomy = {
+		target = KIL
+		autonomous_state = TP_qng_amban_states
+		freedom_level = 0.3
+	}
+	give_military_access = BRM
+	give_military_access = KOR
+	give_military_access = KIL
+	give_military_access = BTN
+	give_military_access = VIN
+	
+VIN = {
+	set_popularities = {
+		conservatism = 10
+		authoritarianism = 46
+		social_democratism = 17
+		patriotic_socialism = 1
+		corporatism = 0
+		democratic_socialism = 0
+		populism = 8
+		social_liberalism = 18
+	}
+	set_politics = {
+		ruling_party = authoritarianism
+		last_election = "1933.2.16"
+		election_frequency = 36
+		elections_allowed = no
+	}
+}
+
+KIL = {
+	set_popularities = {
+		conservatism = 0
+		authoritarianism = 100
+		social_democratism = 0
+		patriotic_socialism = 0
+		corporatism = 0
+		democratic_socialism = 0
+		populism = 0
+		social_liberalism = 0
+	}
+	set_politics = {
+		ruling_party = authoritarianism
+		last_election = "1933.2.16"
+		election_frequency = 36
+		elections_allowed = no
+	}
+}
+
+BTN = {
+	set_popularities = {
+		conservatism = 0
+		authoritarianism = 100
+		social_democratism = 0
+		patriotic_socialism = 0
+		corporatism = 0
+		democratic_socialism = 0
+		populism = 0
+		social_liberalism = 0
+	}
+	set_politics = {
+		ruling_party = authoritarianism
+		last_election = "1933.2.16"
+		election_frequency = 36
+		elections_allowed = no
+	}
+}
+
+KOR = {
+	set_popularities = {
+		conservatism = 38
+		authoritarianism = 25
+		social_democratism = 11
+		patriotic_socialism = 0
+		corporatism = 2
+		democratic_socialism = 0
+		populism = 9
+		social_liberalism = 15
+	}
+	set_politics = {
+		ruling_party = conservatism
+		last_election = "1935.5.10"
+		election_frequency = 48
+		elections_allowed = no
+	}
+
+}
+
+# Politics #
+set_popularities = {
+	conservatism = 39
+	authoritarianism = 9
+	social_democratism = 21
+	patriotic_socialism = 0
+	corporatism = 0
+	democratic_socialism = 6
+	populism = 11
+	social_liberalism = 14
+}
+
+set_politics = {
+	ruling_party = conservatism
+	last_election = "1935.1.1"
+	election_frequency = 60
+	elections_allowed = yes
+}
+
+### Ship Variants ###
+
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	### Variants ###
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	### Variants ###
+	##Battleship
+	#定遠級
+	create_equipment_variant = {
+		name = "Tingyuen Class"
+		type = ship_hull_heavy_1
+		name_group = CHI_BB_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_bb_1
+			front_1_custom_slot = empty
+			mid_1_custom_slot = ship_airplane_launcher_1
+			mid_2_custom_slot = ship_secondaries_1
+			rear_1_custom_slot = ship_heavy_battery_1
+		}
+		obsolete = yes
+	}
+	#鎮遠級
+	create_equipment_variant = {
+		name = "Chenyuen Class"
+		type = ship_hull_heavy_1
+		name_group = CHI_BB_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_2
+			fixed_ship_secondaries_slot = ship_secondaries_2
+			fixed_ship_armor_slot = ship_armor_bb_2
+			front_1_custom_slot = ship_heavy_battery_2
+			mid_1_custom_slot = ship_airplane_launcher_1
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
+	}
+	#龍驤級
+	create_equipment_variant = {
+		name = "Lunghsiang Class"
+		type = ship_hull_heavy_1
+		name_group = CHI_BB_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_2
+			fixed_ship_secondaries_slot = ship_secondaries_2
+			fixed_ship_armor_slot = ship_armor_bb_2
+			front_1_custom_slot = ship_heavy_battery_2
+			mid_1_custom_slot = ship_airplane_launcher_1
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+	}
+	##Battlecruiser
+	#開濟级
+	create_equipment_variant = {
+		name = "K'aichi Class"
+		type = ship_hull_heavy_1
+		name_group = CHI_BC_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_2
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_bc_1
+			front_1_custom_slot = ship_anti_air_1
+			mid_1_custom_slot = ship_airplane_launcher_1
+			mid_2_custom_slot = ship_secondaries_1
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
+	}
+	#永翔級
+	create_equipment_variant = {
+		name = "Yunghsiang Class"
+		type = ship_hull_heavy_1
+		name_group = CHI_BC_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_2
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_bc_2
+			front_1_custom_slot = ship_anti_air_1
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = ship_secondaries_1
+			rear_1_custom_slot = ship_heavy_battery_1
+		}
+		obsolete = yes
+	}
+	##Heavy Cruiser
+	#海圻級
+	create_equipment_variant = {
+		name = "Haichi Class"
+		type = ship_hull_cruiser_1
+		name_group = CHI_CA_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			mid_2_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
+	}
+	#快順級
+	create_equipment_variant = {
+		name = "K'uaishun Class"
+		type = ship_hull_cruiser_1
+		name_group = CHI_CA_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			mid_1_custom_slot = ship_airplane_launcher_1
+			mid_2_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_medium_battery_2
+		}
+		obsolete = yes
+	}
+	#湖鹏級
+	create_equipment_variant = {
+		name = "Hup'eng Class"
+		type = ship_hull_cruiser_1
+		name_group = CHI_CA_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_airplane_launcher_1
+		}
+		obsolete = yes
+	}
+	#揚威
+	create_equipment_variant = {
+		name = "Yangwei Class"
+		type = ship_hull_cruiser_1
+		name_group = CHI_CA_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			mid_1_custom_slot = ship_airplane_launcher_1
+			mid_2_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_medium_battery_2
+		}
+	}
+	##Light Cruisers
+	#南瑞級
+	create_equipment_variant = {
+		name = "Nanjui Class"
+		type = ship_hull_cruiser_1
+		name_group = CHI_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			mid_1_custom_slot = ship_torpedo_1
+			mid_2_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
+	}
+	#操江級
+	create_equipment_variant = {
+		name = "Ts'aochiang Class"
+		type = ship_hull_cruiser_2
+		name_group = CHI_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_2
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_armor_slot = ship_armor_cruiser_2
+			front_1_custom_slot = ship_anti_air_2
+			mid_1_custom_slot = ship_torpedo_1
+			mid_2_custom_slot = ship_secondaries_2
+			rear_1_custom_slot = ship_light_medium_battery_2
+		}
+		obsolete = yes
+	}
+	#瀛洲級
+	create_equipment_variant = {
+		name = "Yingchou Class"
+		type = ship_hull_cruiser_1
+		name_group = CHI_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			mid_1_custom_slot = ship_torpedo_1
+			mid_2_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_light_medium_battery_1
+		}
+		obsolete = yes
+	}
+	#楚泰級
+	create_equipment_variant = {
+		name = "Ch'ut'ai Class"
+		type = ship_hull_cruiser_1
+		name_group = CHI_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_2
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			mid_1_custom_slot = ship_torpedo_1
+			mid_2_custom_slot = ship_airplane_launcher_1
+			rear_1_custom_slot = ship_light_medium_battery_2
+		}
+		obsolete = yes
+	}
+	#肇和級
+	create_equipment_variant = {
+		name = "Chaoho Class"
+		type = ship_hull_cruiser_2
+		name_group = CHI_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_2
+				fixed_ship_anti_air_slot = ship_anti_air_2
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = cruiser_ship_engine_2
+				fixed_ship_armor_slot = ship_armor_cruiser_2
+				front_1_custom_slot = ship_anti_air_2
+				mid_1_custom_slot = ship_torpedo_1
+				mid_2_custom_slot = ship_secondaries_2
+				rear_1_custom_slot = ship_light_medium_battery_2
+		}
+		obsolete = yes
+	}
+	#建勝級
+	create_equipment_variant = {
+		name = "Chiensheng Class"
+		type = ship_hull_cruiser_1
+		name_group = CHI_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+				fixed_ship_battery_slot = ship_light_medium_battery_1
+				fixed_ship_anti_air_slot = ship_anti_air_1
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = cruiser_ship_engine_1
+				fixed_ship_armor_slot = empty
+				mid_1_custom_slot = ship_mine_layer_1
+				mid_2_custom_slot = ship_mine_layer_1
+				rear_1_custom_slot = ship_mine_layer_1
+		}
+		obsolete = yes
+	}
+	#平海級
+	create_equipment_variant = {
+		name = "Pinghai Class"
+		type = ship_hull_cruiser_2
+		name_group = CHI_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+				fixed_ship_battery_slot = ship_light_medium_battery_2
+				fixed_ship_anti_air_slot = ship_anti_air_2
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = cruiser_ship_engine_2
+				fixed_ship_armor_slot = ship_armor_cruiser_2
+				front_1_custom_slot = ship_anti_air_2
+				mid_1_custom_slot = ship_torpedo_1
+				mid_2_custom_slot = ship_secondaries_2
+				rear_1_custom_slot = ship_light_medium_battery_2	
+		}
+	}
+	##Destroyers
+	#廣州級
+	create_equipment_variant = {
+		name = "Canton Class"
+		type = ship_hull_light_1
+		name_group = CHI_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+				fixed_ship_battery_slot = ship_light_battery_2
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = ship_sonar_1
+				fixed_ship_engine_slot = light_ship_engine_2
+				fixed_ship_torpedo_slot = ship_torpedo_1
+				mid_1_custom_slot = ship_torpedo_1
+				rear_1_custom_slot = ship_depth_charge_1
+		}
+		obsolete = yes
+	}
+	#雷龍級
+	create_equipment_variant = {
+		name = "Leilung Class"
+		type = ship_hull_light_1
+		name_group = CHI_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+				fixed_ship_battery_slot = ship_light_battery_2
+				fixed_ship_anti_air_slot = ship_anti_air_1
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = ship_sonar_1
+				fixed_ship_engine_slot = light_ship_engine_2
+				fixed_ship_torpedo_slot = ship_torpedo_1
+				mid_1_custom_slot = ship_torpedo_1
+				rear_1_custom_slot = ship_depth_charge_1
+		}
+		obsolete = yes
+	}
+	#鎮海級
+	create_equipment_variant = {
+		name = "Chenhai Class"
+		type = ship_hull_light_1
+		name_group = CHI_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+				fixed_ship_battery_slot = ship_light_battery_2
+				fixed_ship_anti_air_slot = ship_anti_air_1
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = ship_sonar_1
+				fixed_ship_engine_slot = light_ship_engine_2
+				fixed_ship_torpedo_slot = ship_torpedo_1
+				mid_1_custom_slot = ship_torpedo_1
+				rear_1_custom_slot = ship_depth_charge_1
+		}
+		obsolete = yes
+	}
+	#廣元
+	create_equipment_variant = {
+		name = "Kuangyuan Class"
+		type = ship_hull_light_1
+		name_group = CHI_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+				fixed_ship_battery_slot = ship_light_battery_1
+				fixed_ship_anti_air_slot = ship_anti_air_1
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = light_ship_engine_1
+				fixed_ship_torpedo_slot = ship_torpedo_1
+				mid_1_custom_slot = empty
+				rear_1_custom_slot = ship_depth_charge_1
+		}
+		obsolete = yes
+	}
+	#錦江
+	create_equipment_variant = {
+		name = "Chinchiang Class"
+		type = ship_hull_light_1
+		name_group = CHI_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+				fixed_ship_battery_slot = ship_light_battery_1
+				fixed_ship_anti_air_slot = ship_anti_air_1
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = light_ship_engine_1
+				fixed_ship_torpedo_slot = ship_torpedo_1
+				mid_1_custom_slot = empty
+				rear_1_custom_slot = ship_depth_charge_1
+		}
+	}
+	##Submarines
+	#蛟級
+	create_equipment_variant = {
+		name = "Chiao Class"
+		type = ship_hull_submarine_1
+		name_group = CHI_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+				fixed_ship_torpedo_slot = ship_torpedo_sub_1
+				fixed_ship_engine_slot = sub_ship_engine_1
+				rear_1_custom_slot = empty
+		}
+	}
+	#應級
+	create_equipment_variant = {
+		name = "Ying Class"
+		type = ship_hull_submarine_1
+		name_group = CHI_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+				fixed_ship_torpedo_slot = ship_torpedo_sub_1
+				fixed_ship_engine_slot = sub_ship_engine_1
+				rear_1_custom_slot = ship_torpedo_sub_1
+		}
+	}
+	##Carrier
+	#揚武
+	create_equipment_variant = {
+		name = "Yangwu Class"
+		type = ship_hull_carrier_conversion_bb
+		name_group = CHI_CV_HISTORICAL
+		parent_version = 0
+		modules = {
+				fixed_ship_deck_slot_1 = ship_deck_space
+				fixed_ship_deck_slot_2 = ship_deck_space
+				fixed_ship_anti_air_slot = ship_anti_air_1
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = heavy_ship_engine_1
+				fixed_ship_secondaries_slot = empty
+				mid_1_custom_slot = empty
+		}
+		obsolete = yes
+	}
+}
+
+### AIRCRAFT ###
+
+if = {
+	limit = {
+		has_dlc = "By Blood Alone"
+	}
+
+	create_equipment_variant = {
+		name = "NanY 17" # Nanyuan Xuantong-17
+		type = small_plane_airframe_0
+		modules = {
+			fixed_main_weapon_slot = light_mg_2x
+			engine_type_slot = engine_1_1x
+			special_type_slot_1 = empty
+		}
+		obsolete = yes
+	}
+	
+}

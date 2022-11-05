@@ -1,0 +1,32 @@
+state = {
+	id=867
+	name="STATE_867" #Aussig
+	manpower = 2420789
+	state_category = large_town
+	buildings_max_level_factor=1.000
+	resources = {
+		steel = 4
+		oil = 3
+	}
+	
+	history = {
+		owner = HAB
+		add_core_of = HAB
+		victory_points = {
+			11432 3
+		}
+		
+		victory_points = {
+			11401 5
+		}
+		
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 1
+		}		
+	}
+	provinces={
+		 469 3418 11401 11432 11414
+	}
+}

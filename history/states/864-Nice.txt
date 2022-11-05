@@ -1,0 +1,28 @@
+state = {
+	id=864
+	name="STATE_864" #Nice
+	manpower = 110017		
+	state_category = large_city
+	buildings_max_level_factor=1.000
+	
+	history = {
+		owner = SAV
+		add_core_of = SAV
+		add_core_of = FRA
+		victory_points = {
+			9909 20 
+		}
+		buildings = {
+			infrastructure = 3
+			dockyard = 1
+			industrial_complex = 2
+			arms_factory = 1
+			9909 = {
+				naval_base = 5
+			}	
+		}		
+	}
+	provinces={
+		3764 3959 3961 6975 9736 9909 
+	}
+}

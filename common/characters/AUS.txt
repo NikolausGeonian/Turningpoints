@@ -1,0 +1,211 @@
+characters = {
+	
+	### Country Leader ###
+	
+	AUS_Alexander_Hore_Ruthven = {
+		name = AUS_Alexander_Hore_Ruthven
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/AUS/ministers/AUS_Alexander_Hore_Ruthven.dds"
+				large = "gfx/leaders/AUS/Portrait_Alexander_Hore_Ruthven.dds"
+			}
+		}
+		
+		country_leader = {
+			desc = "POLITICS_AUS_ALEXANDER_HORE_RUTHVEN_DESC"
+			ideology = constitutional_monarchy_C_subtype
+			traits={  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+	
+	### Ministers ###
+	### HEAD OF GOVERNMENT ###
+	
+	### FOREIGN MINISTER ###
+	
+	###	ECONOMY MINISTER ###
+	
+	### FIELD MARSHAL ###
+	
+	AUS_Brudenell_White = {
+		name = AUS_Brudenell_White
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/AUS/ministers/AUS_Brudenell_White.dds"
+				large = "gfx/leaders/AUS/Portrait_Brudenell_White.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "MARSHAL_AUS_BRUDENELL_WHITE_DESC"
+			slot = high_command
+			idea_token = AUS_Brudenell_White
+			allowed = {
+				original_tag = AUS
+			}
+			traits = { army_infantry_3 }
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		field_marshal = {
+			desc = "MARSHAL_AUS_BRUDENELL_WHITE_DESC"
+			traits = { war_hero old_guard }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 1
+		}
+	}
+	
+	### CORPS COMMANDER ###
+	
+	AUS_John_Lavarack = {
+		name = AUS_John_Lavarack
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/AUS/ministers/AUS_John_Lavarack.dds"
+				large = "gfx/leaders/AUS/Portrait_John_Lavarack.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "GENERAL_AUS_JOHN_LAVARACK_DESC"
+			slot = army_chief
+			idea_token = AUS_John_Lavarack
+			allowed = {
+				original_tag = AUS
+			}
+			traits = { army_chief_defensive_2 }
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_AUS_JOHN_LAVARACK_DESC"
+			traits = {  }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+	
+	AUS_Sydney_Rowell = {
+		name = AUS_Sydney_Rowell
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/AUS/ministers/AUS_Sydney_Rowell.dds"
+				large = "gfx/leaders/AUS/Portrait_Sydney_Rowell.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "GENERAL_AUS_SYDNEY_ROWELL_DESC"
+			slot = army_chief
+			idea_token = AUS_Sydney_Rowell
+			allowed = {
+				original_tag = AUS
+			}
+			traits = { army_chief_organizational_2 }
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_AUS_SYDNEY_ROWELL_DESC"
+			traits = {  }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+	
+	AUS_Thomas_Blamey = {
+		name = AUS_Thomas_Blamey
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/AUS/ministers/AUS_Thomas_Blamey.dds"
+				large = "gfx/leaders/AUS/Portrait_Thomas_Blamey.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "GENERAL_AUS_THOMAS_BLAMEY_DESC"
+			slot = army_chief
+			idea_token = AUS_Thomas_Blamey
+			allowed = {
+				original_tag = AUS
+			}
+			traits = { army_chief_offensive_1 }
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_AUS_THOMAS_BLAMEY_DESC"
+			traits = {  }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+	
+	AUS_George_Alan_Vasey = {
+		name = AUS_George_Alan_Vasey
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/AUS/ministers/AUS_George_Alan_Vasey.dds"
+				large = "gfx/leaders/AUS/Portrait_George_Alan_Vasey.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_AUS_ALAN_VASEY_DESC"
+			traits = { hill_fighter }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 1
+		}
+	}
+	
+	### ADMIRAL ###
+	
+	AUS_Ragnar_Colvin = {
+		name = AUS_Ragnar_Colvin
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/AUS/ministers/AUS_Ragnar_Colvin.dds"
+				large = "gfx/leaders/AUS/Portrait_Ragnar_Colvin.dds"
+			}
+		}
+		
+		navy_leader = {
+			desc = "ADMIRAL_AUS_RAGNAR_COLVIN_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+}

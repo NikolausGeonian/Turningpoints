@@ -1,0 +1,260 @@
+﻿capital = 282 # Kanto
+
+#oob = "NJP_1936"
+#if = {
+#	limit = {
+#		has_dlc = "Man the Guns"
+#	}
+#	set_naval_#oob = "NJP_1936_naval"
+#	else = {
+#	}
+#}
+# General #
+set_stability = 0.7 #baseline
+set_war_support = 0.9
+set_convoys = 400
+set_research_slots = 4
+set_fuel_ratio = 0.7
+
+## 	POLITICAL FIGURE
+
+### Country Leader ###
+recruit_character = NJP_Kanson_Arahata
+recruit_character = NJP_Kyuichi_Tokuda
+
+### Corps Commander ###
+recruit_character = NJP_Jinzaburo_Masaki
+recruit_character = NJP_Osugi_Sakae
+recruit_character = NJP_Iboshi_Hokuto
+recruit_character = NJP_Hitoshi_Imamura
+recruit_character = NJP_Tadamichi_Kuribayashi
+recruit_character = NJP_Takayoshi_Hamashima
+recruit_character = NJP_Kozaburo_Tachibana
+recruit_character = NJP_Saburo_Aizawa
+recruit_character = NJP_Toyohiko_Kagawa
+
+### Admiral ###
+recruit_character = NJP_Nozaki_Kojuro
+recruit_character = NJP_Zenshiro_Hoshina
+recruit_character = NJP_Mayuzumi_Haruo
+recruit_character = NJP_Eiji_Kusakari
+### Ministers ###
+
+# National Idea #
+add_ideas = {
+	JAP_divined_country
+	low_economic_mobilisation
+	extensive_conscription
+	limited_exports
+	NJP_militia
+}
+# Starting tech #
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_recon = 1
+	tech_engineers = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	synth_oil_experiments = 1
+	fuel_refining = 1
+	fuel_silos = 1
+}
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		basic_torpedo = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_heavy_battery = 1
+		basic_medium_battery = 1
+		improved_ship_torpedo_launcher = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		mtg_transport = 1
+		coastal_defense_ships = 1
+		basic_secondary_battery = 1
+		basic_depth_charges = 1
+		basic_cruiser_armor_scheme = 1
+		basic_dp_light_battery = 1
+		sonar = 1
+	}
+	else = {
+		set_technology = {
+			early_submarine = 1
+			basic_submarine = 1
+			early_destroyer = 1
+			early_light_cruiser = 1
+			basic_light_cruiser = 1
+			early_heavy_cruiser = 1
+			basic_heavy_cruiser = 1
+			early_battlecruiser = 1
+			transport = 1
+		}
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+	}
+	else = {
+		set_technology = {
+			gwtank = 1
+			basic_light_tank = 1
+		}
+	}
+}
+
+
+if = {
+	limit = {
+		has_dlc = "By Blood Alone"
+	}
+		set_technology = {
+			aa_lmg = 1
+			engines_1 = 1
+			engines_2 = 1
+			early_bombs = 1
+			aircraft_construction = 1
+			iw_small_airframe = 1
+			iw_medium_airframe = 1
+			basic_small_airframe = 1
+		}
+	else = {
+		set_technology = {
+			cv_early_fighter = 1
+			cv_CAS1 = 1
+			cv_naval_bomber1 = 1
+			early_fighter = 1
+			naval_bomber1 = 1
+			early_bomber = 1
+			CAS1 = 1
+		}
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	set_technology = {
+		armored_car1 = 1
+	}
+}
+
+# Starting Import #
+create_import = {
+		resource = oil
+		factories = 2
+		exporter = RUS
+}
+
+# Politics #
+set_popularities = {
+	conservatism = 0
+	authoritarianism = 0
+	social_democratism = 7
+	patriotic_socialism = 37
+	corporatism = 3
+	democratic_socialism = 53
+	populism = 0
+	social_liberalism = 0
+}
+set_politics = {
+	ruling_party = democratic_socialism
+	last_election = "1918.12.7"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+
+### Ship Variants ###
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	### Variants ###
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	### Variants ###
+	##Battleship
+	#人民型
+	create_equipment_variant = {
+		name = "Jinmin Class"
+		type = ship_hull_heavy_1
+		name_group = JAP_BB_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_bb_1
+			front_1_custom_slot = empty
+			mid_1_custom_slot = ship_airplane_launcher_1
+			mid_2_custom_slot = ship_secondaries_1
+			rear_1_custom_slot = ship_heavy_battery_1
+		}
+		obsolete = yes
+	}
+	#金剛型
+	create_equipment_variant = {
+		name = "Kongō Class"
+		type = ship_hull_heavy_1
+		name_group = JAP_BC_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_2
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_bc_1
+			front_1_custom_slot = ship_anti_air_1
+			mid_1_custom_slot = ship_airplane_launcher_1
+			mid_2_custom_slot = ship_secondaries_1
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
+	}
+	#一揆型
+	create_equipment_variant = {
+		name = "Ikki Class"
+		type = ship_hull_heavy_1
+		name_group = JAP_BC_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_2
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_bc_1
+			front_1_custom_slot = ship_anti_air_1
+			mid_1_custom_slot = ship_airplane_launcher_1
+			mid_2_custom_slot = ship_secondaries_1
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
+	}
+	}

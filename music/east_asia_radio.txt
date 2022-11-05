@@ -1,0 +1,59 @@
+music_station = "tp_ea_music"
+###############TURNINGPOINTS#################
+
+##MAINTHEME##
+music = {
+	song = "maintheme"
+	chance = {
+		modifier = {
+			factor = 0.5
+		}		
+	}
+}
+##CHINA PEACE##
+music = {
+	song = "palace_memories"
+	chance = {
+	modifier = {
+			factor = 1
+		}
+	modifier = {
+			is_east_asia_tag = yes
+			has_war = no
+		}		
+	}	
+}
+music = {
+	song = "displaced_princess"
+	chance = {
+	modifier = {
+		factor = 1
+		}
+		modifier = {
+			is_east_asia_tag = yes
+			has_war = yes
+		}		
+	}	
+}
+music = {
+	song = "battoutai"
+	chance = {
+	modifier = {
+		factor = 1
+		}
+		modifier = {
+			is_east_asia_tag = yes
+		}		
+	}	
+}
+music = {
+	song = "training_song"
+	chance = {
+	modifier = {
+		factor = 1
+		}
+		modifier = {
+			is_east_asia_tag = yes
+		}		
+	}	
+}

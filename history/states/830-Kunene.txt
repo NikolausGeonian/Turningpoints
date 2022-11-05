@@ -1,0 +1,17 @@
+state={
+	id=830
+	name="STATE_830"
+	manpower = 168496
+	state_category = pastoral
+	history={
+		add_core_of = SWA
+		owner = SWA
+		buildings = {
+			infrastructure = 1
+		}
+	}
+
+	provinces={
+		12391 8202
+	}
+}

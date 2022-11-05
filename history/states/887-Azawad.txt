@@ -1,0 +1,20 @@
+state = {
+	id=887
+	name="STATE_887" #Azawad
+	manpower = 2037330
+	state_category = pastoral
+	
+	history = {
+		owner = AZA
+		add_core_of = AZA
+		buildings = {
+			infrastructure = 1
+		}	
+		victory_points = {
+			2044 3
+		}		
+	}
+	provinces={
+		2044 7930 10814 13330 13334 13337 13338
+	}
+}

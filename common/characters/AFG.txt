@@ -1,0 +1,118 @@
+characters={
+
+	### Country Leader ###
+
+	AFG_Amanullah_Khan = {
+		name = AFG_Amanullah_Khan
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/AFG/Portrait_Amanullah_Khan.dds"
+			}
+		}
+		country_leader = {
+			desc = "POLITICS_AMANULLAH_KHAN_DESC"
+			ideology = semi_constitutional_monarchy_subtype
+			id = -1
+		}
+		
+		country_leader = {
+			desc = "POLITICS_AMANULLAH_KHAN_DESC"
+			ideology = autocratic_monarchy_subtype
+			id = -1
+		}
+	}
+	
+	### General ###
+	
+	AFG_Karim_Khan = {
+		name = AFG_Karim_Khan
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/AFG/ministers/AFG_Karim_Khan.dds"
+				large = "gfx/leaders/AFG/Portrait_Karim_Khan.dds"
+			}
+		}
+		corps_commander = {
+			desc = "GENERAL_AFG_KARIM_KHAN_DESC"
+			traits = {	}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	
+	AFG_Inayatullah_Khan = {
+		name = AFG_Inayatullah_Khan
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/AFG/ministers/AFG_Inayatullah_Khan.dds"
+				large = "gfx/leaders/AFG/Portrait_Inayatullah_Khan.dds"
+			}
+		}
+		corps_commander = {
+			desc = "GENERAL_AFG_INAYATULLAH_KHAN_DESC"
+			traits = {	}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	
+	### Ministers ###
+	
+	AFG_Mahmud_Tarzi = {
+		name = AFG_Mahmud_Tarzi
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/AFG/ministers/AFG_Mahmud_Tarzi.dds"
+				large = "gfx/leaders/AFG/Portrait_Mahmud_Tarzi.dds"
+			}
+		}
+		advisor={
+			cost = 150
+			slot = head_of_government
+			idea_token = AFG_Mahmud_Tarzi
+			ledger = civilian
+			allowed = {
+				original_tag = AFG
+			}		
+			available = {
+				OR = {
+					has_government = conservatism
+					has_government = authoritarianism
+					has_government = social_liberalism
+				}
+			}
+			traits = {
+			
+			}
+		}
+	}
+	
+	AFG_Abdul_Hadi_Dawai = {
+		name = AFG_Abdul_Hadi_Dawai
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/AFG/ministers/AFG_Abdul_Hadi_Dawai.dds"
+				large = "gfx/leaders/AFG/Portrait_Abdul_Hadi_Dawai.dds"
+			}
+		}
+		advisor={
+			cost = 150
+			slot = foreign_minister
+			idea_token = AFG_Abdul_Hadi_Dawai
+			ledger = civilian
+			allowed = {
+				original_tag = AFG
+			}		
+			traits = {
+			
+			}
+		}
+	}
+	
+}

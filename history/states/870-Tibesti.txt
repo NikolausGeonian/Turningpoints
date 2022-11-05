@@ -1,0 +1,23 @@
+state = {
+	id=870
+	name="STATE_870" #Tibesti
+	manpower = 54232
+	state_category = pastoral
+	buildings_max_level_factor=1.000
+
+	
+	history = {
+		owner = TOB
+		add_core_of = TOB
+		victory_points = {
+			13242 1
+		}
+		
+		buildings = {
+			infrastructure = 1
+		}		
+	}
+	provinces={
+		13239 13241 13242 13243 13244 13245 13246
+	}
+}

@@ -1,0 +1,66 @@
+﻿capital = 232 # Dagestan
+
+##oob = "MNT_1936"
+
+# Starting tech
+
+set_technology = {
+	tech_support = 1		
+	tech_engineers = 1
+	tech_mountaineers = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+}
+
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		early_destroyer = 1
+		early_light_cruiser = 1
+		early_submarine = 1
+		transport = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		early_ship_hull_submarine = 1
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_battery = 1
+		basic_torpedo = 1
+		mtg_transport = 1
+	}
+}
+
+set_popularities = {	conservatism = 0
+	authoritarianism = 100
+	social_democratism = 0
+	patriotic_socialism = 0
+	corporatism = 0
+	democratic_socialism = 0
+	populism = 0
+	social_liberalism = 0
+}
+set_politics = {
+	ruling_party = authoritarianism
+	last_election = "1928.12.7"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+
+create_country_leader = {
+	name = "Abdulmajid Tapa Tchermoeff "
+	desc = ""
+	picture = "gfx/leaders/MRC/Portrait_Abdulmajid_Tapa_Tchermoeff.dds"
+	expire = "1953.3.1"
+	ideology = despotism_subtype
+	traits = {
+		
+	}
+}

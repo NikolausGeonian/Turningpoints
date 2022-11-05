@@ -1,0 +1,829 @@
+characters = {
+	
+	### Country Leader ###
+	
+	RAJ_Vallabhbhai_Patel = {
+		name = RAJ_Vallabhbhai_Patel
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/RAJ/ministers/RAJ_Vallabhbhai_Patel.dds"
+				large = "gfx/leaders/RAJ/Portrait_Vallabhbhai_Patel.dds"
+			}
+		}
+		
+		country_leader = {
+			desc = "POLITICS_RAJ_VALLABHBHAI_PATEL_DESC"
+			ideology = constitutional_monarchy_A_subtype
+			traits={  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		
+		advisor={
+			desc = "POLITICS_RAJ_VALLABHBHAI_PATEL_MINISTER_DESC"
+			slot = head_of_government
+			idea_token = RAJ_Vallabhbhai_Patel_minister
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = RAJ
+			}
+			visible = {
+				NOT = {	
+					has_country_leader  = {
+						character  = RAJ_Vallabhbhai_Patel
+						ruling_only  = yes 
+					}
+				}
+			}
+			available = {
+				has_government = social_liberalism
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}
+	}
+	
+	RAJ_Arcot_Ramasamy_Mudaliar = {
+		name = RAJ_Arcot_Ramasamy_Mudaliar
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/RAJ/ministers/RAJ_Arcot_Ramasamy_Mudaliar.dds"
+				large = "gfx/leaders/RAJ/Portrait_Arcot_Ramasamy_Mudaliar.dds"
+			}
+		}
+		
+		country_leader = {
+			desc = "POLITICS_RAJ_ARCOT_RAMASAMY_MUDALIAR_DESC"
+			ideology = constitutional_monarchy_B_subtype
+			traits={  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		
+		advisor={
+			desc = "POLITICS_RAJ_ARCOT_RAMASAMY_MUDALIAR_MINISTER_DESC"
+			slot = head_of_government
+			idea_token = RAJ_Arcot_Ramasamy_Mudaliar_minister
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = RAJ
+			}
+			visible = {
+				NOT = {	
+					has_country_leader  = {
+						character  = RAJ_Arcot_Ramasamy_Mudaliar
+						ruling_only  = yes 
+					}
+				}
+			}
+			available = {
+				has_government = social_democratism
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}
+	}
+	
+	RAJ_Muhammad_Ali_Jinnah = {
+		name = RAJ_Muhammad_Ali_Jinnah
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/RAJ/Portrait_Muhammad_Ali_Jinnah.dds"
+			}
+		}
+		
+		country_leader = {
+			desc = "POLITICS_RAJ_MUHAMMAD_ALI_JINNAH_DESC"
+			ideology = constitutional_monarchy_C_subtype
+			traits={  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+	
+	RAJ_Jiddu_Krishnamurti = {
+		name = RAJ_Jiddu_Krishnamurti
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/RAJ/Portrait_Jiddu_Krishnamurti.dds"
+			}
+		}
+		
+		country_leader = {
+			desc = "POLITICS_RAJ_JIDDU_KRISHNAMURTI_DESC"
+			ideology = national_syndicalism_subtype
+			traits={  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+	
+	### Ministers ###
+	### HEAD OF GOVERNMENT ###
+	
+	RAJ_Mirza_Ismail = {
+		name = RAJ_Mirza_Ismail
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/RAJ/ministers/RAJ_Mirza_Ismail.dds"
+				large = "gfx/leaders/RAJ/Portrait_Mirza_Ismail.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_RAJ_MIRZA_ISMAIL_DESC"
+			slot = head_of_government
+			idea_token = RAJ_Mirza_Ismail
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = RAJ
+			}
+			available = {
+				has_government = authoritarianism
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	RAJ_Rajendra_Prasad = {
+		name = RAJ_Rajendra_Prasad
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/RAJ/ministers/RAJ_Rajendra_Prasad.dds"
+				large = "gfx/leaders/RAJ/Portrait_Rajendra_Prasad.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_RAJ_RAJENDRA_PRASAD_DESC"
+			slot = head_of_government
+			idea_token = RAJ_Rajendra_Prasad
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = RAJ
+			}
+			available = {
+				OR = {
+					has_government = social_democratism
+					has_government = social_liberalism
+					has_government = conservatism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	RAJ_P_S_Sivaswami_Iyer = {
+		name = RAJ_P_S_Sivaswami_Iyer
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/RAJ/ministers/RAJ_P_S_Sivaswami_Iyer.dds"
+				large = "gfx/leaders/RAJ/Portrait_P_S_Sivaswami_Iyer.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_RAJ_P_S_SIVASWAMI_IYER_DESC"
+			slot = head_of_government
+			idea_token = RAJ_P_S_Sivaswami_Iyer
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = RAJ
+			}
+			available = {
+				OR = {
+					has_government = conservatism
+					has_government = authoritarianism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	RAJ_Srinivasa_Iyengar = {
+		name = RAJ_Srinivasa_Iyengar
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/RAJ/ministers/RAJ_Srinivasa_Iyengar.dds"
+				large = "gfx/leaders/RAJ/Portrait_Srinivasa_Iyengar.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_RAJ_SRINIVASA_IYENGAR_DESC"
+			slot = head_of_government
+			idea_token = RAJ_Srinivasa_Iyengar
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = RAJ
+			}
+			available = {
+					has_government = conservatism
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	RAJ_Madan_Mohan_Malaviya = {
+		name = RAJ_Madan_Mohan_Malaviya
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/RAJ/ministers/RAJ_Madan_Mohan_Malaviya.dds"
+				large = "gfx/leaders/RAJ/Portrait_Madan_Mohan_Malaviya.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_RAJ_MADAN_MOHAN_MALAVIYA_DESC"
+			slot = head_of_government
+			idea_token = RAJ_Madan_Mohan_Malaviya
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = RAJ
+			}
+			available = {
+				OR = {
+					has_government = populism
+					has_government = conservatism				
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	### FOREIGN MINISTER ###
+	
+	RAJ_Jawaharlal_Nehru = {
+		name = RAJ_Jawaharlal_Nehru
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/RAJ/ministers/RAJ_Jawaharlal_Nehru.dds"
+				large = "gfx/leaders/RAJ/Portrait_Jawaharlal_Nehru.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_RAJ_JAWAHARLAL_NEHRU_DESC"
+			slot = foreign_minister
+			idea_token = RAJ_Jawaharlal_Nehru
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = RAJ
+			}
+			available = {
+				OR = {
+					has_government = social_liberalism
+					has_government = social_democratism
+					has_government = conservatism				
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	RAJ_Charles_Alfred_Bell = {
+		name = RAJ_Charles_Alfred_Bell
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/RAJ/ministers/RAJ_Charles_Alfred_Bell.dds"
+				large = "gfx/leaders/RAJ/Portrait_Charles_Alfred_Bell.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_RAJ_CHARLES_ALFRED_BELL_DESC"
+			slot = foreign_minister
+			idea_token = RAJ_Charles_Alfred_Bell
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = RAJ
+			}
+			available = {
+				OR = {
+					has_government = authoritarianism
+					has_government = conservatism				
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	RAJ_V_S_Srinivasa_Sastri = {
+		name = RAJ_V_S_Srinivasa_Sastri
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/RAJ/ministers/RAJ_V_S_Srinivasa_Sastri.dds"
+				large = "gfx/leaders/RAJ/Portrait_V_S_Srinivasa_Sastri.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_RAJ_V_S_SRINIVASA_SASTRI_DESC"
+			slot = foreign_minister
+			idea_token = RAJ_V_S_Srinivasa_Sastri
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = RAJ
+			}
+			available = {
+				OR = {
+					has_government = social_liberalism
+					has_government = conservatism				
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	###	ECONOMY MINISTER ###
+	
+	RAJ_B_P_Wadia = {
+		name = RAJ_B_P_Wadia
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/RAJ/ministers/RAJ_B_P_Wadia.dds"
+				large = "gfx/leaders/RAJ/Portrait_B_P_Wadia.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_RAJ_B_P_WADIA_DESC"
+			slot = economy_minister
+			idea_token = RAJ_B_P_Wadia
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = RAJ
+			}
+			visible = {
+				OR = {
+					has_government = populism		
+					has_government = corporatism	
+				}
+			}	
+			available = {
+				OR = {
+					has_government = populism		
+					has_government = corporatism		
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	RAJ_B_R_Ambedkar = {
+		name = RAJ_B_R_Ambedkar
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/RAJ/ministers/RAJ_B_R_Ambedkar.dds"
+				large = "gfx/leaders/RAJ/Portrait_B_R_Ambedkar.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_RAJ_B_R_AMBEDKAR_DESC"
+			slot = economy_minister
+			idea_token = RAJ_B_R_Ambedkar
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = RAJ
+			}
+			available = {
+				OR = {
+					has_government = social_liberalism		
+					has_government = social_democratism		
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	RAJ_Ramaswami_Iyer = {
+		name = RAJ_Ramaswami_Iyer
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/RAJ/ministers/RAJ_Ramaswami_Iyer.dds"
+				large = "gfx/leaders/RAJ/Portrait_Ramaswami_Iyer.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_RAJ_RAMASWAMI_IYER_DESC"
+			slot = economy_minister
+			idea_token = RAJ_Ramaswami_Iyer
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = RAJ
+			}
+			available = {
+				OR = {
+					has_government = social_liberalism		
+					has_government = conservatism		
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	### FIELD MARSHAL ###
+	
+	RAJ_Osman_Ali_Khan = {
+		name = RAJ_Osman_Ali_Khan
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/RAJ/ministers/RAJ_Osman_Ali_Khan.dds"
+				large = "gfx/leaders/RAJ/Portrait_Osman_Ali_Khan.dds"
+			}
+		}
+		
+		field_marshal = {
+			desc = "MARSHAL_RAJ_OSMAN_ALI_KHAN_DESC"
+			traits = { RAJ_raja }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 1
+		}
+	}
+	
+	RAJ_Cyril_Deverell = {
+		name = RAJ_Cyril_Deverell
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/RAJ/ministers/RAJ_Cyril_Deverell.dds"
+				large = "gfx/leaders/RAJ/Portrait_Cyril_Deverell.dds"
+			}
+		}
+		
+		field_marshal = {
+			desc = "MARSHAL_RAJ_CYRIL_DEVERELL_DESC"
+			traits = { war_hero old_guard }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 1
+		}
+	}
+	
+	RAJ_Walter_Pitt_Taylor = {
+		name = RAJ_Walter_Pitt_Taylor
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/RAJ/ministers/RAJ_Walter_Pitt_Taylor.dds"
+				large = "gfx/leaders/RAJ/Portrait_Walter_Pitt_Taylor.dds"
+			}
+		}
+		
+		field_marshal = {
+			desc = "MARSHAL_RAJ_WALTER_PITT_TAYLOR_DESC"
+			traits = { war_hero old_guard }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 1
+		}
+	}
+	
+	### CORPS COMMANDER ###
+	
+	RAJ_Alec_Hardinge = {
+		name = RAJ_Alec_Hardinge
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/RAJ/ministers/RAJ_Alec_Hardinge.dds"
+				large = "gfx/leaders/RAJ/Portrait_Alec_Hardinge.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_RAJ_ALEC_HARDINGE_DESC"
+			traits = {   }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	RAJ_Edward_Quinan = {
+		name = RAJ_Edward_Quinan
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/RAJ/ministers/RAJ_Edward_Quinan.dds"
+				large = "gfx/leaders/RAJ/Portrait_Edward_Quinan.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_RAJ_EDWARD_QUINAN_DESC"
+			traits = {   }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	RAJ_Ganga_Singh = {
+		name = RAJ_Ganga_Singh
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/RAJ/ministers/RAJ_Ganga_Singh.dds"
+				large = "gfx/leaders/RAJ/Portrait_Ganga_Singh.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_RAJ_GANGA_SINGH_DESC"
+			traits = { RAJ_raja }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	RAJ_Kanteerava_Narasimharaja_Wadiyar = {
+		name = RAJ_Kanteerava_Narasimharaja_Wadiyar
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/RAJ/ministers/RAJ_Kanteerava_Narasimharaja_Wadiyar.dds"
+				large = "gfx/leaders/RAJ/Portrait_Kanteerava_Narasimharaja_Wadiyar.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_RAJ_KANTEERAVA_NARASIMHARAJA_WADIYAR_DESC"
+			traits = { RAJ_raja }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	RAJ_Hamidullah_Khan = {
+		name = RAJ_Hamidullah_Khan
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/RAJ/ministers/RAJ_Hamidullah_Khan.dds"
+				large = "gfx/leaders/RAJ/Portrait_Hamidullah_Khan.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_RAJ_HAMIDULLAH_KHAN_DESC"
+			traits = { RAJ_raja }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	RAJ_Wasif_Ali_Mirza = {
+		name = RAJ_Wasif_Ali_Mirza
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/RAJ/ministers/RAJ_Wasif_Ali_Mirza.dds"
+				large = "gfx/leaders/RAJ/Portrait_Wasif_Ali_Mirza.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_RAJ_WASIF_ALI_MIRZA_DESC"
+			traits = { RAJ_raja }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	RAJ_Khudadad_Khan = {
+		name = RAJ_Khudadad_Khan
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/RAJ/ministers/RAJ_Khudadad_Khan.dds"
+				large = "gfx/leaders/RAJ/Portrait_Khudadad_Khan.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_RAJ_KHUDADAD_KHAN_DESC"
+			traits = { war_hero }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	RAJ_Digvijaysinhji_Ranjitsinhji = {
+		name = RAJ_Digvijaysinhji_Ranjitsinhji
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/RAJ/ministers/RAJ_Digvijaysinhji_Ranjitsinhji.dds"
+				large = "gfx/leaders/RAJ/Portrait_Digvijaysinhji_Ranjitsinhji.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_RAJ_DIGVIJAYSINHJI_RANJITSINHJI_DESC"
+			traits = { RAJ_raja }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	RAJ_Hanut_Singh = {
+		name = RAJ_Hanut_Singh
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/RAJ/ministers/RAJ_Hanut_Singh.dds"
+				large = "gfx/leaders/RAJ/Portrait_Hanut_Singh.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_RAJ_HANUT_SINGH_DESC"
+			traits = { RAJ_raja }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	RAJ_Muhammad_Ahmad_Said_Khan_Chhatari = {
+		name = RAJ_Muhammad_Ahmad_Said_Khan_Chhatari
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/RAJ/ministers/RAJ_Muhammad_Ahmad_Said_Khan_Chhatari.dds"
+				large = "gfx/leaders/RAJ/Portrait_Muhammad_Ahmad_Said_Khan_Chhatari.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_RAJ_MUHAMMAD_AHMAD_SAID_KHAN_CHHATARI_DESC"
+			traits = { RAJ_raja }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	RAJ_Hari_Singh = {
+		name = RAJ_Hari_Singh
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/RAJ/ministers/RAJ_Hari_Singh.dds"
+				large = "gfx/leaders/RAJ/Portrait_Hari_Singh.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_RAJ_HARI_SINGH_DESC"
+			traits = { RAJ_raja }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	### ADMIRAL ###
+	
+	RAJ_Herbert_Fitzherbert = {
+		name = RAJ_Herbert_Fitzherbert
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/RAJ/ministers/RAJ_Herbert_Fitzherbert.dds"
+				large = "gfx/leaders/RAJ/Portrait_Herbert_Fitzherbert.dds"
+			}
+		}
+		
+		navy_leader = {
+			desc = "ADMIRAL_RAJ_HERBERT_FITZHERBERT_DESC"
+			traits = { old_guard_navy }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			maneuvering_skill = 1
+			coordination_skill = 2
+		}
+	}
+	
+	RAJ_John_Henry_Godfrey = {
+		name = RAJ_John_Henry_Godfrey
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/RAJ/ministers/RAJ_John_Henry_Godfrey.dds"
+				large = "gfx/leaders/RAJ/Portrait_John_Henry_Godfrey.dds"
+			}
+		}
+		
+		navy_leader = {
+			desc = "ADMIRAL_RAJ_JOHN_HENRY_GODFREY_DESC"
+			traits = {  }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			maneuvering_skill = 1
+			coordination_skill = 2
+		}
+	}
+	
+}

@@ -1,0 +1,1 @@
+dynamic_tags  = yes # any tags after this is used for temporary civil wars

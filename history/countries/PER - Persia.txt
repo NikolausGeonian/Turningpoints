@@ -1,0 +1,91 @@
+﻿capital = 417
+
+#oob = "PER_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	gw_artillery = 1
+}
+set_convoys = 10
+set_popularities = {
+	conservatism = 10
+	authoritarianism = 67
+	social_democratism = 0
+	patriotic_socialism = 12
+	corporatism = 11
+	democratic_socialism = 0
+	populism = 0
+	social_liberalism = 0
+}
+set_politics = {
+	ruling_party = authoritarianism
+	last_election = "1925.10.16"
+	election_frequency = 36
+	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Mohammad Hassan Shah Qajar"
+	desc = "POLITICS_MOHAMMAD_MIRZA_SHAH_DESC"
+	picture = "gfx/leaders/PER/Portrait_Mohammad_Hassan_Mirza.dds"
+	expire = "1965.1.1"
+	ideology = authoritarianism_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Mohammad Hassan Shah Qajar"
+	desc = "POLITICS_MOHAMMAD_MIRZA_SHAH_DESC"
+	picture = "gfx/leaders/PER/Portrait_Mohammad_Hassan_Mirza.dds"
+	expire = "1965.1.1"
+	ideology = conservatism_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Mohammad Hassan Shah Qajar"
+	desc = "POLITICS_SOLEYMAN_MIRZA_ESKANDARI_DESC"
+	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_1.dds"
+	expire = "1965.1.1"
+	ideology = patriotic_socialism_subtype
+	traits = {
+		#
+	}
+}
+
+create_corps_commander = {
+	name = "Hasan Arfa"
+	portrait_path = "gfx/leaders/PER/Portrait_Hasan_Arfa.dds"
+	traits = {  desert_fox }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Reza Khan"
+	portrait_path = "gfx/leaders/PER/Portrait_Reza_Khan.dds"
+	traits = {  }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Ghassem Khan Vali"
+	portrait_path = "gfx/leaders/PER/Portrait_Ghassem_Khan_Vali.dds"
+	traits = {  desert_fox }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}

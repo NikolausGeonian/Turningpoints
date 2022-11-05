@@ -1,0 +1,25 @@
+state=
+{
+	id=145
+	name="STATE_145"
+	manpower = 177400
+	
+	state_category = rural
+	
+	history=
+	{
+		owner = SCA
+		buildings = {
+			infrastructure = 3
+			9228 = {
+				naval_base = 6
+			}
+		}
+		add_core_of = FIN
+		add_core_of = SCA
+	}
+	
+	provinces=	{
+		9228
+	}
+}

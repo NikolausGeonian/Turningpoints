@@ -1,0 +1,42 @@
+state={
+	id=160
+	name="STATE_160" #Venezia
+	resources={
+		steel=20 
+		aluminium=11
+	}
+	
+	state_category = metropolis
+
+	history={
+		owner = HAB
+		victory_points = {
+			603 5
+		}
+		victory_points = {
+			9613 1
+		}
+		victory_points = {
+			11584 20
+		}
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 3
+			dockyard = 3
+			air_base = 3
+			11584 = {
+				naval_base = 6
+
+			}
+		}
+		add_core_of = HAB
+
+	}
+
+	provinces={
+		603 628 3604 3657 6656 9582 9613 11584
+	}
+	manpower=3963151
+	buildings_max_level_factor=1.000
+}

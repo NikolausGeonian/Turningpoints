@@ -1,0 +1,71 @@
+﻿capital = 422
+
+##oob = ""
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+set_convoys = 5
+set_cosmetic_tag = CEY_GBR
+set_popularities = {
+	conservatism = 54
+	authoritarianism = 7
+	social_democratism = 14
+	patriotic_socialism = 0
+	corporatism = 13
+	democratic_socialism = 0
+	populism = 0
+	social_liberalism = 12
+}
+set_politics = {
+	ruling_party = conservatism
+	last_election = "1935.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Reginald Edward Stubbs"
+	desc = "POLITICS_REGINALD_EDWARD_STUBBS_DESC"
+	picture = "gfx/leaders/RAJ/Portrait_Muhammad_Ali_Jinnah.dds"
+	expire = "1965.1.1"
+	ideology = constitutional_monarchy_A_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Reginald Edward Stubbs"
+	desc = "POLITICS_REGINALD_EDWARD_STUBBS_DESC"
+	picture = "gfx/leaders/RAJ/Portrait_Muhammad_Ali_Jinnah.dds"
+	expire = "1965.1.1"
+	ideology = constitutional_monarchy_B_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Cecil Clementi"
+	desc = "POLITICS_CECIL_CLEMENTI_DESC"
+	picture = "gfx/leaders/CEY/Portrait_Cecil_Clementi.dds"
+	expire = "1965.1.1"
+	ideology = constitutional_monarchy_C_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Reginald Edward Stubbs"
+	desc = "POLITICS_REGINALD_EDWARD_STUBBS_DESC"
+	picture = "gfx/leaders/RAJ/Portrait_Muhammad_Ali_Jinnah.dds"
+	expire = "1965.1.1"
+	ideology = colony_and_dominion_subtype
+	traits = {
+		#
+	}
+}

@@ -1,0 +1,31 @@
+state = {
+	id=852
+	name="STATE_852" #Shanghai
+	manpower = 8248807
+	state_category = megalopolis
+	history = {
+		owner = QNG
+		add_core_of = QNG
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2 
+			air_base = 6
+			dockyard = 3
+			7014 = {
+				naval_base = 6
+				coastal_bunker = 1
+				bunker = 1
+			}
+		}
+		
+			victory_points = {
+				7014 30
+			}
+		
+	}
+	
+	provinces={
+		7014 12076 13298
+		
+	}
+}

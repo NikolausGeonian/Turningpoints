@@ -1,0 +1,24 @@
+state = {
+	id=869
+	name="STATE_869" #Hadhramaut
+	manpower = 1029462
+	state_category = rural
+	buildings_max_level_factor=1.000
+
+	
+	history = {
+		owner = BTS
+		add_core_of = BTS
+		victory_points = {
+			2029 1
+		}
+		
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}		
+	}
+	provinces={
+		2029 4976 12894 13079
+	}
+}

@@ -1,0 +1,23 @@
+state = {
+	id=865
+	name="STATE_865" #Montana
+	manpower = 643431	
+	state_category = town
+	buildings_max_level_factor=1.000
+	
+	history = {
+		owner = BUL
+		add_core_of = BUL
+		victory_points = {
+			9771 1 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 1
+		}		
+	}
+	provinces={
+		793 965 9771 11754
+	}
+}

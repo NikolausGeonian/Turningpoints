@@ -1,0 +1,29 @@
+state={
+	id=539
+	name="STATE_539"
+
+	history={
+		owner = KAM
+		add_core_of = KAM
+		victory_points = {
+			5139 1 
+		}
+		buildings = {
+			infrastructure = 2
+			5139 = {
+				naval_base = 1
+			}
+			8244 = {
+				naval_base = 1
+			}
+
+		}
+
+	}
+
+	provinces={
+		5139 8207 8244 10948 13210 
+	}
+	manpower = 499752
+	state_category=pastoral
+}

@@ -1,0 +1,29 @@
+state=
+{
+	id=743
+	name="STATE_743"
+	manpower = 385000
+	state_category = large_city
+	
+	
+	history=
+	{
+		owner = QNG
+		add_core_of = QNG
+		victory_points = {
+			10000 20 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			dockyard = 3
+			10000 = {
+				naval_base = 8
+				coastal_bunker = 3
+			}
+		}
+	}
+	provinces={
+		10000
+	}
+}

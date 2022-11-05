@@ -1,0 +1,280 @@
+﻿################
+# JAPAN EVENTS #
+################
+
+add_namespace = jap
+add_namespace = japleader
+
+#	1936 Japan introduction 
+
+country_event = {
+	id = jap.0
+	title = jap.0.t
+	desc = jap.0.d
+	picture = 	GFX_report_event_jap_generic_01
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = jap.0.a
+	}
+}
+
+#	10th Anniversary of the Mutiny
+
+country_event = {
+	id = jap.1
+	title = jap.1.t
+	desc = jap.1.d
+	picture = GFX_report_event_jap_parade
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = jap.1.a
+	}
+}
+
+#	Mass Marches
+
+country_event = {
+	id = jap.2
+	title = jap.2.t
+	desc = jap.2.d
+	picture = GFX_report_event_jap_parade
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = jap.2.a
+	}
+}
+
+#	Concern from China is growing
+
+country_event = {
+	id = jap.3
+	title = jap.3.t
+	desc = jap.3.d
+	picture = 	GFX_report_event_generic_journalist_speech
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = jap.3.a
+	}
+	option = {
+		name = jap.3.b
+	}
+}
+
+#	Spinning out of control
+
+country_event = {
+	id = jap.4
+	title = jap.4.t
+	desc = jap.4.d
+	picture = GFX_report_event_generic_gathering_protest
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = jap.4.a
+		JAP = {
+			country_event = { days = 7 id = jap.5 }
+		}
+	}
+	option = {
+		name = jap.4.b
+		JAP = {
+			country_event = { days = 3 id = jap.6 }
+		}
+	}
+}
+
+#	Kazushige Ugaki delivered speech
+
+country_event = {
+	id = jap.5
+	title = jap.5.t
+	desc = jap.5.d
+	picture = GFX_report_event_jap_kazushige_ugaki
+	is_triggered_only = yes
+	fire_only_once = yes
+	# Purge
+	option = {
+		name = jap.5.a
+		JAP = {
+			country_event = { days = 4 id = jap.9 }
+		}
+		ai_chance = {
+			base = 1
+		}
+	}
+	# Not Purge
+	option = {
+		name = jap.5.b
+		JAP = {
+			country_event = { days = 27 id = jap.6 }
+		}
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+
+#	The Longest Day
+
+country_event = {
+	id = jap.6
+	title = jap.6.t
+	desc = jap.6.d
+	picture = GFX_report_event_jap_coup
+	is_triggered_only = yes
+	fire_only_once = yes
+	# coup failed
+	option = {
+		name = jap.6.a
+		ai_chance = {
+			base = 1
+		}
+	}
+	# coup succeed
+	option = {
+		name = jap.6.c
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+
+#	Assassination of Kazushige Ugaki#
+
+country_event = {
+	id = jap.7
+	title = jap.7.t
+	desc = jap.7.d
+	picture = GFX_report_event_jap_assassination
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = jap.7.a
+		remove_ideas = JAP_Kazushige_Ugaki
+		retire_character = JAP_Kazushige_Ugaki
+		set_country_flag = JAP_ugaki_assassinated
+		add_manpower = -17
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+
+#	Successed repression
+
+country_event = {
+	id = jap.8
+	title = jap.8.t
+	desc = jap.8.d
+	picture = GFX_report_event_generic_repression
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = jap.8.a
+	}
+}
+
+#	Purged in army
+
+country_event = {
+	id = jap.9
+	title = jap.9.t
+	desc = jap.9.d
+	picture = GFX_report_event_jap_purge_officers
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = jap.9.a
+	}
+}
+
+#New constitution#
+country_event = {
+	id = jap.21
+	title = jap.21.t
+	desc = jap.21.d
+	picture = GFX_report_event_jap_new_constitution
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = jap.21.a
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+#Joraku
+country_event = {
+	id = jap.99
+	title = jap.99.t
+	desc = jap.99.d
+	picture = GFX_report_event_jap_joraku_1
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = jap.99.a
+		ai_chance = {
+			base = 1
+		}
+		create_country_leader = {
+			name = "Kokuō Shōwa"
+			desc = "POLITICS_HIROHITO_2_DESC"
+			picture = "gfx/leaders/JAP/Portrait_Hirohito_Coronation_Costume.dds"
+			expire = "1972.5.28"
+			ideology = conservatism_subtype
+			traits = {}
+		}
+		create_country_leader = {
+			name = "Kokuō Shōwa"
+			desc = "POLITICS_HIROHITO_2_DESC"
+			picture = "gfx/leaders/JAP/Portrait_Hirohito_Coronation_Costume.dds"
+			expire = "1972.5.28"
+			ideology = tenno_subtype
+			traits = {}
+		}
+		create_country_leader = {
+			name = "Kokuō Shōwa"
+			desc = "POLITICS_HIROHITO_2_DESC"
+			picture = "gfx/leaders/JAP/Portrait_Hirohito_Coronation_Costume.dds"
+			expire = "1972.5.28"
+			ideology = authoritarianism_subtype
+			traits = {}
+		}
+		create_country_leader = {
+			name = "Kokuō Shōwa"
+			desc = "POLITICS_HIROHITO_2_DESC"
+			picture = "gfx/leaders/JAP/Portrait_Hirohito_Coronation_Costume.dds"
+			expire = "1972.5.28"
+			ideology = popular_monarchy_subtype
+			traits = {}
+		}
+	}
+}
+
+
+
+	#天皇主权说
+#country_event = {
+	#id = jap.2
+#	title = jap.2.t
+	#desc = jap.2.d
+	#picture = GFX_report_event_jap_longest_day
+	#is_triggered_only = yes
+	#fire_only_once = yes
+	#option = {
+	#	name = jap.2.a
+	#	remove_ideas = JAP_Ugaki_Kazushige
+	#	remove_ideas = JAP_Tadashige_Shimazu
+	#	remove_ideas = JAP_Aikawa_Yoshisuke
+	#	add_ideas = 
+	#	add_ideas = 
+	#	add_ideas = 
+	#	add_manpower = -12
+	#}
+#}
+	#天皇机关说
+#Kokutai Meicho国体明征# the Declaration to define Kokutai 

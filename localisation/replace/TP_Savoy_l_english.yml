@@ -1,0 +1,27 @@
+﻿l_english:
+#Savoy#
+ #IDEA#
+ #MANUFACTURER#
+ SAV_lancia:0 "Lancia"
+ SAV_lancia_desc:0 ""
+ SAV_fiat:0 "Fiat"
+ SAV_fiat_desc:0 ""
+ SAV_Alfa_Romeo:0 "Alfa Romeo"
+ SAV_Alfa_Romeo_desc:0 ""
+ SAV_Societa_Piemontese_Automobili:0 "S.P.A."
+ SAV_Societa_Piemontese_Automobili_desc:0 ""
+ SAV_Ansaldo:0 "Gio. Ansaldo & C."
+ SAV_Ansaldo_desc:0 ""
+ SAV_Savoia_Marchetti:0 "Savoia-Marchetti"
+ SAV_Savoia_Marchetti_desc:0 ""
+ SAV_Fabbrica_Aerei_Piaggio:0 "Piaggio"
+ SAV_Fabbrica_Aerei_Piaggio_desc:0 ""
+ #LEADER#
+ SAV_Gabriele_D_Annunzio:0 "Gabriele D'Annunzio"
+ SAV_Gabriele_D_Annunzio_desc:0 ""
+ SAV_Benito_Mussolini:0 "Benito Mussolini"
+ SAV_Benito_Mussolini_desc:0 ""
+ 
+ 
+ 
+ #EVENTS#

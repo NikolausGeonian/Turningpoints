@@ -1,0 +1,23 @@
+state={
+	id=827
+	name="STATE_827"
+	manpower = 181496
+	state_category = pastoral
+	resources={
+		aluminium=2
+	}
+	history={
+		victory_points = {
+			10957 1
+		}
+		add_core_of = SWA
+		owner = SWA
+		buildings = {
+			infrastructure = 1
+		}
+	}
+
+	provinces={
+		10957 10978 12921 8136 
+	}
+}

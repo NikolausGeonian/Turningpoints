@@ -1,0 +1,137 @@
+﻿capital = 439
+
+#oob = "RAJ_1936"
+
+set_convoys = 206
+set_stability = 0.4
+set_war_support = 0.1
+set_cosmetic_tag = RAJ_GBR
+
+## 	POLITICAL FIGURE
+
+### Country Leader ###
+recruit_character = RAJ_Vallabhbhai_Patel
+recruit_character = RAJ_Arcot_Ramasamy_Mudaliar
+recruit_character = RAJ_Muhammad_Ali_Jinnah
+recruit_character = RAJ_Jiddu_Krishnamurti
+### General ###
+recruit_character = RAJ_Osman_Ali_Khan
+recruit_character = RAJ_Cyril_Deverell
+recruit_character = RAJ_Walter_Pitt_Taylor
+recruit_character = RAJ_Alec_Hardinge
+recruit_character = RAJ_Edward_Quinan
+recruit_character = RAJ_Ganga_Singh
+recruit_character = RAJ_Kanteerava_Narasimharaja_Wadiyar
+recruit_character = RAJ_Hamidullah_Khan
+recruit_character = RAJ_Wasif_Ali_Mirza
+recruit_character = RAJ_Khudadad_Khan
+recruit_character = RAJ_Digvijaysinhji_Ranjitsinhji
+recruit_character = RAJ_Hanut_Singh
+recruit_character = RAJ_Muhammad_Ahmad_Said_Khan_Chhatari
+recruit_character = RAJ_Hari_Singh
+### Admiral ###
+recruit_character = RAJ_Herbert_Fitzherbert
+recruit_character = RAJ_John_Henry_Godfrey
+### Ministers ###
+recruit_character = RAJ_Madan_Mohan_Malaviya
+recruit_character = RAJ_Mirza_Ismail
+recruit_character = RAJ_P_S_Sivaswami_Iyer
+recruit_character = RAJ_Srinivasa_Iyengar
+recruit_character = RAJ_Rajendra_Prasad
+recruit_character = RAJ_B_P_Wadia
+recruit_character = RAJ_B_R_Ambedkar
+recruit_character = RAJ_Ramaswami_Iyer
+recruit_character = RAJ_Jawaharlal_Nehru
+recruit_character = RAJ_Charles_Alfred_Bell
+recruit_character = RAJ_V_S_Srinivasa_Sastri
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_recon = 1
+	transport = 1
+	trench_warfare = 1
+	fleet_in_being = 1
+	CAS1 = 1
+	early_fighter = 1
+	fuel_silos = 1
+	fuel_refining = 1
+}
+	add_ideas = {
+		RAJ_princely_states
+		RAJ_lions_of_the_great_war
+		RAJ_indian_gurkhas
+		RAJ_Charles_Alfred_Bell
+		RAJ_Ramaswami_Iyer
+		RAJ_Rajendra_Prasad
+	}
+
+set_popularities = {
+	conservatism = 54
+	authoritarianism = 7
+	social_democratism = 14
+	patriotic_socialism = 0
+	corporatism = 13
+	democratic_socialism = 0
+	populism = 0
+	social_liberalism = 12
+}
+set_politics = {
+	ruling_party = conservatism
+	last_election = "1935.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+
+create_country_leader = {
+	name = "Muhammad Ali Jinnah"
+	desc = "POLITICS_MUHAMUMMAD_JINNAH_DESC"
+	picture = "gfx/leaders/RAJ/Portrait_Muhammad_Ali_Jinnah.dds"
+	expire = "1965.1.1"
+	ideology = colony_and_dominion_subtype
+	traits = {
+		#
+	}
+}
+
+# REVISIT Unclear if appropriate for this ideology
+
+create_corps_commander = {
+	name = "Frank Messervy"
+	gfx = "GFX_RAJ_frank_messervy"
+	traits = { hill_fighter }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Krishnaraja Wadiyar IV"
+	desc = "GENERAL_RAJ_KRISHNARAJA_WADIYAR_IV_DESC"
+	portrait_path = "gfx/leaders/RAJ/Portrait_Krishnaraja_Wadiyar_IV.dds"
+	traits = {
+	RAJ_raja
+	}
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Douglas Gracey"
+	gfx = "GFX_RAJ_douglas_gracey"
+	traits = { desert_fox }
+	skill = 3
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}

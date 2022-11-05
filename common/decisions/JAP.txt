@@ -1,0 +1,741 @@
+#Category allowed for JAP
+
+JAP_colonial_chomankaitakudan = {
+	
+	JAP_korea = {
+	
+		highlight_states = {
+			
+			state = 525
+			state = 527
+			
+		}
+		allowed = {
+			
+			original_tag = JAP
+			
+		}
+		is_good = no
+		
+		available = {
+			
+			controls_state = 525
+			controls_state = 527
+			
+			OR = {
+				has_government = corporatism
+				has_government = populism
+				has_government = authoritarianism
+			}
+			
+		}
+		
+		visible = {
+			is_puppet = no
+			#has_completed_focus = JAP_chomankaitakudan
+		}
+		
+		fire_only_once = yes
+		cost = 120
+		days_remove = 2
+		ai_will_do = {
+			factor = 2
+		}
+		
+		remove_effect = {
+			if = {
+				limit = {
+					KOR = {
+					exists = no
+					}
+				}
+			KOR = { 
+					add_state_core = 525
+					add_state_core = 527
+					set_cosmetic_tag = KOR_JAP
+				}
+				release = KOR_JAP
+				puppet = KOR_JAP
+				#country_event = jap_colonial.2
+			QNG = {
+				#country_event = { id = wtt_japan.102 days = 1 }
+				} 
+			}
+			if = {
+				limit = {
+					KOR = {
+					exists = yes
+					is_puppet_of = QNG
+					}
+				}
+				KOR = { 
+					transfer_state = 525
+					transfer_state = 527
+					set_cosmetic_tag = KOR_JAP
+				}
+				#release = KOR
+				QNG = { end_puppet = KOR_JAP }
+				JAP = { puppet = KOR_JAP }
+				#country_event = jap_colonial.2
+				QNG = {
+				#country_event = { id = wtt_japan.102 days = 1 }
+				} 
+			}
+			if = {
+				limit = {
+					KOR = {
+					exists = yes
+					is_puppet = no
+					}
+				}
+				KOR = { 
+					transfer_state = 525
+					transfer_state = 527
+					set_cosmetic_tag = KOR_JAP
+					#create_country_leader = {
+					#	name = "Jacques Antoine Bernard"
+					#	desc = "POLITICS_JACQUES_ANTOINE_BERNARD_DESC"
+					#	picture = "Portrait_FOP_Jacques_Antoine_Bernard.tga"
+					#	expire = "1965.1.1"
+					#	ideology = tenno_subtype
+					#	traits = {}
+					}
+					set_politics = {
+						ruling_party = corporatism
+						elections_allowed = no
+					}
+					add_popularity = { ideology = corporatism popularity = 100 }
+				}
+				
+				#release = KOR
+				JAP = { puppet = KOR_JAP }
+				#country_event = jap_colonial.2
+				QNG = {
+				#country_event = { id = wtt_japan.102 days = 1 }
+				} 
+			}
+		}
+		
+	JAP_manchuria = {
+		
+		allowed = {
+			original_tag = JAP
+		}
+		
+		available = {
+			controls_state = 714
+			controls_state = 715
+			controls_state = 609
+			controls_state = 610
+			controls_state = 716
+			controls_state = 717 
+			controls_state = 328
+			controls_state = 761
+			controls_state = 745
+			controls_state = 612
+			controls_state = 611
+		}
+		
+		is_good = no
+		
+		visible = {
+			is_puppet = no
+			#has_completed_focus = JAP_chomankaitakudan
+		}
+		
+		fire_only_once = yes
+		cost = 120
+		days_remove = 90
+		ai_will_do = {
+			factor = 1
+		}
+		
+		remove_effect = {
+			
+			if = {
+				limit = {
+					MAN = {
+					exists = no
+					}
+				}
+		
+			MAN = { 
+					add_state_core = 609
+					add_state_core = 610
+					add_state_core = 716
+					add_state_core = 715
+					add_state_core = 328
+					add_state_core = 717
+					add_state_core = 714
+					add_state_core = 761
+					add_state_core = 745
+					add_state_core = 612
+					add_state_core = 611
+				}
+				
+				JAP = { puppet = MAN }
+				#country_event = jap_colonial.1
+			QNG = {
+				#country_event = { id = wtt_japan.101 days = 1 }
+				} 
+			}
+		}
+	}
+	}
+	
+#Category allowed for JAP
+#Not visible if puppet
+
+#Category allowed for JAP
+#Visible when has completed JAP_pacific_guardian focus.
+#Visible if independent
+prospect_for_resources = {
+
+#  #  ##  ###  ### #  # ### ###  #  #     ###  ###  ##  ##  #  # ###   ##  ###      ##  ###  ###  ##  
+## # #  # #  #  #  #  # #   #  # ## #     #  # #   #   #  # #  # #  # #  # #       #  # #  # #   #  # 
+# ## #  # ###   #  #### ##  ###  # ##     ###  ##   #  #  # #  # ###  #    ##      #### ###  ##  #### 
+#  # #  # #  #  #  #  # #   #  # #  #     #  # #     # #  # #  # #  # #  # #       #  # #  # #   #  # 
+#  #  ##  #  #  #  #  # ### #  # #  #     #  # ### ##   ##   ##  #  #  ##  ###     #  # #  # ### #  # 
+
+	#Below is visible when JAP_establish_the_northern_resource_area is completed
+	JAP_develop_north_sakhalin_oil_deposits = { #655
+		icon = oil
+ 
+		highlight_states = {
+			state = 655
+		}
+
+		allowed = {
+			original_tag = JAP
+		}
+
+		available = {
+			has_full_control_of_state = 655
+			has_tech = excavation2
+		}
+
+		visible = {
+			
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 60
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		complete_effect = {
+			655 = {
+				add_resource = {
+					type = oil
+					amount = 8
+				}
+			}
+		}
+	}
+
+
+ ##  ##  #  # ### #  # ### ###  #  #     ###  ###  ##  ##  #  # ###   ##  ###      ##  ###  ###  ##  
+#   #  # #  #  #  #  # #   #  # ## #     #  # #   #   #  # #  # #  # #  # #       #  # #  # #   #  # 
+ #  #  # #  #  #  #### ##  ###  # ##     ###  ##   #  #  # #  # ###  #    ##      #### ###  ##  #### 
+  # #  # #  #  #  #  # #   #  # #  #     #  # #     # #  # #  # #  # #  # #       #  # #  # #   #  # 
+##   ##   ##   #  #  # ### #  # #  #     #  # ### ##   ##   ##  #  #  ##  ###     #  # #  # ### #  # 
+
+#623:0 "Luzon"
+#627:0 "Mindanao"
+#625:0 "Samar"
+#725:0 "Nauru"
+
+	#Below is visible when JAP_exploit_the_southern_resource_area is completed
+	JAP_develop_luzon_chromium_deposits = { #623
+		icon = chromium
+
+		highlight_states = {
+			state = 623
+		}
+
+		allowed = {
+			original_tag = JAP
+		}
+
+		available = {
+			has_full_control_of_state = 623
+			has_tech = excavation3
+		}
+
+		visible = {
+			623 = {
+				NOT = {
+					has_state_flag = luzon_chromium_developed
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 60
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		complete_effect = {
+			623 = {
+				add_resource = {
+					type = chromium
+					amount = 12
+				}
+				set_state_flag = luzon_chromium_developed
+			}
+		}
+	}
+
+	JAP_develop_mindanao_steel_deposits = { #627
+		icon = steel
+
+		highlight_states = {
+			state = 627
+		}
+
+		allowed = {
+			original_tag = JAP
+		}
+
+		available = {
+			has_full_control_of_state = 627
+			has_tech = excavation4
+		}
+
+		visible = {
+			 
+			627 = {
+				NOT = {
+					has_state_flag = mindanao_steel_developed
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 60
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		complete_effect = {
+			627 = {
+				add_resource = {
+					type = steel
+					amount = 8
+				}
+				set_state_flag = mindanao_steel_developed
+			}
+		}
+	}
+
+	JAP_develop_samar_steel_deposits = { #625
+		icon = steel
+
+		highlight_states = {
+			state = 625
+		}
+
+		allowed = {
+			original_tag = JAP
+		}
+
+		available = {
+			has_full_control_of_state = 625
+			has_tech = excavation3
+		}
+
+		visible = {
+			 
+			625 = {
+				NOT = {
+					has_state_flag = samar_steel_developed
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 60
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		complete_effect = {
+			625 = {
+				add_resource = {
+					type = steel
+					amount = 6
+				}
+				set_state_flag = samar_steel_developed
+			}
+		}
+	}
+
+	JAP_develop_nauru_tungsten_deposits = { #725
+		icon = tungsten
+
+		allowed = {
+			original_tag = JAP
+		}
+
+		highlight_states = {
+			state = 725
+		}
+
+		available = {
+			has_full_control_of_state = 725
+			has_tech = excavation4
+		}
+
+		visible = {
+		 
+			725 = {
+				NOT = {
+					has_state_flag = nauru_tungsten_developed
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 60
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		complete_effect = {
+			725 = {
+				add_resource = {
+					type = tungsten
+					amount = 4
+				}
+				set_state_flag = nauru_tungsten_developed
+			}
+		}
+	}
+	JAP_develop_tonkin_aluminium_deposits = { #671
+		icon = aluminium
+		
+		allowed = {
+			original_tag = JAP
+		}
+
+		available = {
+			has_full_control_of_state = 671
+			has_tech = excavation4
+		}
+
+		visible = {
+			 
+			671 = {
+				NOT = {
+					has_state_flag = tonkin_aluminium_developed
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 60
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		complete_effect = {
+			671 = {
+				add_resource = {
+					type = aluminium
+					amount = 6
+				}
+				set_state_flag = tonkin_aluminium_developed
+			}
+		}
+	}
+	JAP_develop_singapore_aluminium_deposits = { #336
+		icon = aluminium
+		
+		allowed = {
+			original_tag = JAP
+		}
+
+		available = {
+			has_full_control_of_state = 336
+			has_tech = excavation2
+		}
+
+		visible = {
+		 
+			336 = {
+				NOT = {
+					has_state_flag = singapore_aluminium_developed
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 60
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		complete_effect = {
+			336 = {
+				add_resource = {
+					type = aluminium
+					amount = 12
+				}
+				set_state_flag = singapore_aluminium_developed
+			}
+		}
+	}
+
+ ##  #  # ### #  # ###  ## ###     ###  ###  ##  ##  #  # ###   ##  ###  ## 
+#  # #  #  #  ## # #   #   #       #  # #   #   #  # #  # #  # #  # #   #   
+#    ####  #  # ## ##   #  ##      ###  ##   #  #  # #  # ###  #    ##   #  
+#  # #  #  #  #  # #     # #       #  # #     # #  # #  # #  # #  # #     # 
+ ##  #  # ### #  # ### ##  ###     #  # ### ##   ##   ##  #  #  ##  ### ##  
+
+#597:0 "Shandong"
+#621:0 "Suiyuan"
+
+	#Below is visible when JAP_develop_chinese_resources is completed
+	JAP_develop_shandong_aluminium_deposits = { #597
+		
+		icon = aluminium
+
+		highlight_states = {
+			state = 597
+		}
+
+		allowed = {
+			original_tag = JAP
+		}
+
+		available = {
+			has_full_control_of_state = 597
+			has_tech = excavation3
+		}
+
+		visible = {
+			 
+			597 = {
+				NOT = {
+					has_state_flag = shandong_aluminium_developed
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 60
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		complete_effect = {
+			597 = {
+				add_resource = {
+					type = aluminium
+					amount = 12
+				}
+				set_state_flag = shandong_aluminium_developed
+			}
+		}
+	}
+
+	JAP_develop_suiyuan_steel_deposits = { #621
+		
+		icon = steel
+
+		highlight_states = {
+			state = 621
+		}
+
+		allowed = {
+			original_tag = JAP
+		}
+
+		available = {
+			has_full_control_of_state = 621
+			has_tech = excavation2
+		}
+
+		visible = {
+			 
+			621 = {
+				NOT = {
+					has_state_flag = suiyuan_steel_developed
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 60
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		complete_effect = {
+			621 = {
+				add_resource = {
+					type = steel
+					amount = 8
+				}
+				set_state_flag = suiyuan_steel_developed
+			}
+		}	
+	}
+
+	JAP_develop_yunnan_aluminium_deposits = { #325
+
+		icon = aluminium
+		
+		allowed = {
+			original_tag = JAP
+		}
+
+		available = {
+			has_full_control_of_state = 325
+			has_tech = excavation3
+		}
+
+		visible = {
+			 
+			325 = {
+				NOT = {
+					has_state_flag = yunnan_aluminium_developed
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 60
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		complete_effect = {
+			325 = {
+				add_resource = {
+					type = aluminium
+					amount = 12
+				}
+				set_state_flag = yunnan_aluminium_developed
+			}
+		}	
+	}
+	JAP_develop_sichuan_aluminium_deposits = { #605
+
+		icon = aluminium
+		
+		allowed = {
+			original_tag = JAP
+		}
+
+		available = {
+			has_full_control_of_state = 605
+			has_tech = excavation3
+		}
+
+		visible = {
+			 
+			605 = {
+				NOT = {
+					has_state_flag = sichuan_aluminium_developed
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 60
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		complete_effect = {
+			605 = {
+				add_resource = {
+					type = aluminium
+					amount = 12
+				}
+				set_state_flag = sichuan_aluminium_developed
+			}
+		}	
+	}
+
+}

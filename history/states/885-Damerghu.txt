@@ -1,0 +1,20 @@
+state = {
+	id=885
+	name="STATE_885" #Damerghu
+	manpower = 1539764
+	state_category = rural
+	
+	history = {
+		owner = NGA
+		add_core_of = NGA
+		buildings = {
+			infrastructure = 0
+		}		
+		victory_points = {
+			10758 1
+		}
+	}
+	provinces={
+		8028 10758 13290 13291 13294 13295 13297
+	}
+}

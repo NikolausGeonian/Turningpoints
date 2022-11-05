@@ -1,0 +1,33 @@
+state={
+	id=91
+	name="STATE_91" # Lemberg
+	manpower = 3527800
+	
+	state_category = large_city
+	
+	history={
+		owner = HAB
+		victory_points = {
+			11479 20
+		}
+		victory_points = {
+			3483 5
+		}
+		victory_points = {
+			438 10
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+			air_base = 5
+			438 = {
+			bunker = 3
+			}
+		}
+		add_core_of = HAB
+	}
+
+	provinces={
+		438 491 536 3483 3562 9454 9558 11427 11479 
+	}
+}

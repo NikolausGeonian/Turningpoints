@@ -1,0 +1,114 @@
+﻿capital = 526
+
+#General#
+set_stability = 0.4
+set_war_support = 0.3
+set_research_slots = 4
+set_fuel_ratio = 1.0
+set_convoys = 241
+
+# National Idea #
+add_ideas = {
+}
+
+# Starting tech #
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_recon = 1
+	tech_engineers = 1
+	motorised_infantry = 1
+	marines  = 1
+	gw_artillery = 1
+	trench_warfare = 1
+	fuel_silos = 1
+	synth_oil_experiments = 1
+	fuel_refining = 1
+}
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		early_ship_hull_submarine = 1
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		basic_torpedo = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_heavy_battery = 1
+		basic_medium_battery = 1
+		
+		mtg_transport = 1
+		coastal_defense_ships = 1
+		basic_secondary_battery = 1
+		basic_depth_charges = 1
+		basic_cruiser_armor_scheme = 1
+	}
+	
+	else = {
+		set_technology = {
+			early_submarine = 1
+			basic_submarine = 1
+			early_destroyer = 1
+			early_light_cruiser = 1
+			basic_light_cruiser = 1
+			early_heavy_cruiser = 1
+			basic_heavy_cruiser = 1
+			early_battleship = 1
+			early_battlecruiser = 1
+			early_carrier = 1
+			transport = 1
+		}
+	}
+}
+
+# Politics #
+
+set_popularities = {
+	conservatism = 3
+	authoritarianism = 0
+	social_democratism = 8
+	patriotic_socialism = 17
+	corporatism = 0
+	democratic_socialism = 67
+	populism = 0
+	social_liberalism = 5
+}
+set_politics = {
+	ruling_party = democratic_socialism
+	last_election = "1918.12.7"
+	election_frequency = 48
+	elections_allowed = no
+}
+create_country_leader = {
+	name = "Taira Tatsuo"
+	desc = "POLITICS_TAIRA_TATSUO_DESC"
+	picture = "gfx/leaders/JAP/Portrait_Hirohito.dds"
+	expire = "1989.1.1"
+	ideology = liberal_socialism_subtype
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Majikina Ankō"
+	desc = "POLITICS_MAJIKINA_ANKO_DESC"
+	picture = "gfx/leaders/RYU/Portrait_Majikina_Anko.dds"
+	expire = "1989.1.1"
+	ideology = reformism_subtype
+	traits = {
+	}
+}
+### Ship Variants ###
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	### Variants ###
+}

@@ -1,0 +1,35 @@
+characters = {
+	
+	### Country Leader ###
+	
+	TRI_Osman_Fuad = {
+		name = TRI_Osman_Fuad
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/OTE/Portrait_Osman_Fuad.dds"
+			}
+		}
+		
+		country_leader = {
+			desc = "POLITICS_TRI_OSMAN_FUAD_DESC"
+			ideology = despotism_subtype
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	
+	}
+	
+	### Ministers ###
+	### HEAD OF GOVERNMENT ###
+	
+	### FOREIGN MINISTER ###
+	
+	###	ECONOMY MINISTER ###
+	
+	### FIELD MARSHAL ###
+	
+	### CORPS COMMANDER ###
+	
+	### ADMIRAL ###
+	
+}

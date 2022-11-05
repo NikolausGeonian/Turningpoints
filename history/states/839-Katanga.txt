@@ -1,0 +1,26 @@
+state=
+{
+	id=839
+	name="STATE_839"
+	manpower = 2149017
+	resources={
+		tungsten=4
+		chromium=22
+
+	}
+	state_category = rural
+	history=
+	{
+		owner = DOA
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = DOA
+		victory_points = {
+			191 3 
+		}
+	}
+	provinces={
+		191 1817 4515 1968 12795 1516 12907 1929
+	}
+}

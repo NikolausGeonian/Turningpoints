@@ -1,0 +1,103 @@
+focus_tree = {
+	id = PAP_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = PAP
+		}
+	}
+	
+	default = no
+	
+	#########################
+	## 1936 Papal Conclave ##
+	#########################
+	
+	focus = {	
+		id = PAP_1936_Papal_conclave
+		icon = GFX_goal_PAP_1936_Papal_conclave
+		x = 12
+		y = 0
+		cost = 10
+		available = {		
+		}
+		completion_reward = {
+		}
+	}
+	
+	############################
+	## Elect Giovanni as Pope ##
+	############################
+	
+	focus = {	#Elect Giovanni as Pope
+		id = PAP_election_pope_Giovanni_Pacelli
+		icon = GFX_goal_PAP_election_pope_Giovanni_Pacelli
+		x = 0
+		y = 1
+		cost = 10
+		mutually_exclusive = {
+			focus = PAP_election_pope_Karl_Joseph_Schulte
+			focus = PAP_election_pope_Maurilio_Fossati
+		}
+		prerequisite = { 
+			focus = PAP_1936_Papal_conclave
+		}
+		relative_position_id = PAP_1936_Papal_conclave		
+		available = {		
+		}
+		completion_reward = {
+		}
+	}
+	
+	###########################
+	## Elect Fossati as Pope ##
+	###########################
+	
+	focus = {	
+		id = PAP_election_pope_Maurilio_Fossati
+		icon = GFX_goal_PAP_election_pope_Maurilio_Fossati	
+		x = -3
+		y = 1
+		cost = 10
+		mutually_exclusive = {
+			focus = PAP_election_pope_Giovanni_Pacelli
+			focus = PAP_election_pope_Karl_Joseph_Schulte
+		}
+		prerequisite = { 
+			focus = PAP_1936_Papal_conclave
+		}
+		relative_position_id = PAP_1936_Papal_conclave		
+		available = {		
+		}
+		completion_reward = {
+		}
+	}
+	
+	###########################
+	## Elect Schulte as Pope ##
+	###########################
+	
+	focus = {	
+		id = PAP_election_pope_Karl_Joseph_Schulte
+		icon = GFX_goal_PAP_election_pope_Karl_Joseph_Schulte
+		x = 3
+		y = 1
+		cost = 10
+		mutually_exclusive = {
+			focus = PAP_election_pope_Giovanni_Pacelli
+			focus = PAP_election_pope_Maurilio_Fossati
+		}
+		prerequisite = { 
+			focus = PAP_1936_Papal_conclave
+		}
+		relative_position_id = PAP_1936_Papal_conclave		
+		available = {		
+		}
+		completion_reward = {
+		}
+	}
+	
+}

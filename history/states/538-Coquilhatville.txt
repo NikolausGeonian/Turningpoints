@@ -1,0 +1,22 @@
+
+state={
+	id=538
+	name="STATE_538" # Wilemstad/Coquilhatville
+	manpower = 1693974
+	
+	state_category = pastoral
+	resources={
+		rubber=5 # was: 5
+	}
+	history={
+		owner = DCG
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = DCG
+	}
+
+	provinces={
+		988 7219 10071 10951
+	}
+}

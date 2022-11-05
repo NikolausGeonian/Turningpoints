@@ -1,0 +1,35 @@
+state={
+	id=817
+	name="STATE_817"
+	manpower = 1314964
+	state_category = town
+	resources={
+		rubber=120
+		steel=16
+		tungsten=152
+		aluminium = 10
+	}
+	history={
+		owner = SIA
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 3
+			7329 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			7329 1 
+		}
+		victory_points = {
+			7342 3 
+		}
+		add_core_of = SIA
+	}
+
+	provinces={
+		1291 1364 4310 4355 7329 7342 12144 12199 12215 
+	}
+}

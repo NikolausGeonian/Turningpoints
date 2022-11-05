@@ -1,0 +1,24 @@
+
+state={
+	id=611
+	name="STATE_611" # South Chahar
+	manpower = 1470000
+	
+	state_category = rural
+
+	history={
+		owner = QNG
+		add_core_of = QNG
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+		victory_points = {
+			1590 5
+		}
+	}
+
+	provinces={
+		828 952 1489 1590 4495 6904 7545 7674 9776 10397 
+	}
+}

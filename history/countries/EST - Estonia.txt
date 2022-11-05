@@ -1,0 +1,77 @@
+﻿capital = 13
+
+#oob = "EST_1936"
+
+set_research_slots = 3
+
+add_ideas = {
+}
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+}
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_battery = 1
+		basic_torpedo = 1
+	}
+	else = {
+		set_technology = {
+			early_submarine = 1
+		}
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "By Blood Alone"
+	}
+	set_technology = {
+		aa_lmg = 1
+		engines_1 = 1
+		iw_small_airframe = 1
+	}
+	else = {
+		set_technology = {
+			early_fighter = 1
+		}
+	}
+}
+
+set_convoys = 5
+set_popularities = {
+	conservatism = 11
+	authoritarianism = 40
+	social_democratism = 9
+	patriotic_socialism = 6
+	corporatism = 7
+	democratic_socialism = 9
+	populism = 8
+	social_liberalism = 10
+}
+
+set_politics = {
+	ruling_party = authoritarianism
+	last_election = "1935.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+create_country_leader = {
+	name = "Andres Larka"
+	desc = "POLITICS_KONSTANTIN_PATS_DESC"
+	picture = "GFX_Portrait_estonia_konstantin_pats"
+	expire = "1965.1.1"
+	ideology = despotism_subtype
+	traits = {
+		#
+	}
+}

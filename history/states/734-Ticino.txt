@@ -1,0 +1,26 @@
+state={
+	id=734
+	name="STATE_734"
+	manpower = 350491
+	state_category = town
+
+	history={
+		owner = SWI
+		add_core_of = SWI
+		add_claim_by = SAV
+		
+		victory_points = {
+			9600 2
+		}
+		
+		buildings = {
+			infrastructure = 2
+		}
+	}
+
+	buildings_max_level_factor=1.000
+
+	provinces={
+		 3641 9600
+	}
+}

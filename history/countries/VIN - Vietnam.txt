@@ -1,0 +1,89 @@
+﻿capital = 805 #Thuan Hue
+
+#oob = "VIN_1936"
+
+set_research_slots = 2
+
+# Starting tech
+
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1
+	tech_recon = 1
+	tech_mountaineers = 1
+	gw_artillery = 1
+}
+set_popularities = {
+	conservatism = 10
+	authoritarianism = 46
+	social_democratism = 17
+	patriotic_socialism = 1
+	corporatism = 0
+	democratic_socialism = 0
+	populism = 8
+	social_liberalism = 18
+}
+set_politics = {
+	ruling_party = authoritarianism
+	last_election = "1933.2.16"
+	election_frequency = 36
+	elections_allowed = no
+}
+
+
+
+create_country_leader = {
+	name = "King Duy Tan" 
+	desc = ""
+	picture = "gfx/leaders/VIN/Portrait_Duy_Tan_suit.dds"
+	expire = "1997.7.30"
+	ideology = autocratic_monarchy_subtype
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Ho Chí Minh" 
+	desc = ""
+	picture = "gfx/leaders/VIN/Portrait_Ho_Chí_Minh.dds"
+	expire = "1969.9.2"
+	ideology = liberation_nationalism_subtype
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "King Duy Tan" 
+	desc = ""
+	picture = "gfx/leaders/VIN/Portrait_Duy_Tan_suit.dds"
+	expire = "1997.7.30"
+	ideology = semi_constitutional_monarchy_subtype
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "King Duy Tan" 
+	desc = ""
+	picture = "gfx/leaders/VIN/Portrait_Duy_Tan_suit.dds"
+	expire = "1997.7.30"
+	ideology = constitutional_monarchy_B_subtype
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "King Duy Tan" 
+	desc = ""
+	picture = "gfx/leaders/VIN/Portrait_Duy_Tan_suit.dds"
+	expire = "1997.7.30"
+	ideology = constitutional_monarchy_A_subtype
+	traits = {
+		
+	}
+}
+

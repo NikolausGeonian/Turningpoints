@@ -1,0 +1,638 @@
+﻿# Division template historical names system. Is a new method of naming the divisions based on the names-group assigned to it's template.
+# If we run out of all historical names, the names will be assigned in the old way.
+#
+# Each group has a made up tag. Use it if you want to append more, or replace existing names with the extra txt files (modding).
+#
+# for_countries - lists all countries that can use it. If empty, or entire tag is missing, all countries in the world can use it.
+#
+# can_use - is a trigger that locks/unlocks the group under specific circumstances. The trigger is in a country scope.
+#
+# division_types - is a list of tokens to corresponding unit types. A player can in fact use any group of names for a div.template
+#                  however this tag is a helper for an automated choice (for AI, or if the group must switch on it's own, because
+#                  for example the current one is no longer available due to the can_use trigger saying so).
+#                  In automated choice, the division template must have at least 1 of the following types for it to be chosen.
+#
+# fallback_name - Is going to be used if we run out of the scripted historical names. If you want to use the old division naming
+#                 mechanics to be used for fallbacks, then just skip this option.
+#
+# unordered - It's a list of historical division names that did not have a number. Regardless if such names happened in history or not
+#             this option is available here mainly for a mods.
+#
+# ordered - Is a list of all historical names. 
+#           Numbers must start from 1 and up. 
+#           Numbers can't repeat in one scope.
+#           If you script the name for this group, at the same number (for example in a mod in another file), the name will be override.
+#           All arguments between the brackets must be separated by spaces. Each argument is wrapped in "quotas".
+#           1st argument = The name. It must contain either: 
+#                          %d (for decimal number placement)
+#                          %s (for string number placement - ROMAN numbers like XIV).
+#           2nd argument is optional = A localizable text describing this historical division. The text will be visible in the tooltip
+#                                      where you choose the historical division name.
+#           3rd argument is optional = An URL preferably pointing to the WIKI. It's a future feature that is not currently working in
+#                                      the current game version.
+CHI_INF_01 = 
+{
+	name = "Infantry Divisions"
+
+	for_countries = { QNG }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	fallback_name = "%d Chèn"
+	#1.Chinchi 2.Chihli 3.Kiangsu 4.Anhwei 5.Shansi 6.Shantung 7.Honan 8.Shensi 9.Kansu 10.Chekiang
+	#11.Kiangsi 12.Hupeh 13.Hunan 14.Szechwan 15.Fukien 16.Kwangtung 17.Kwangsi 18.Yünnan 19.Kweichow
+	#20.Girin 21.Fêngtien 22.Sahaliyanula 23.Icejecen 24.Khams 25.Ü 26.Tsang 27.Kokonur 28.Dorgi 29.Tülergi
+	ordered =
+	{
+		1 = { "Chinchi %d. Chèn" }		
+		2 = { "Chihli %d. Chèn" }
+		3 = { "Chinchi %d. Chèn" }
+		4 = { "Chihli %d. Chèn" }
+		5 = { "Chinchi %d. Chèn" }
+		6 = { "Chinchi %d. Chèn" }
+		7 = { "Honan %d. Chèn" }
+		8 = { "Hupeh %d. Chèn" }
+		9 = { "Nanyang %d. Chèn" }
+		10 = { "Fukien %d. Chèn" }
+		11 = { "Chihli %d. Chèn" }
+		12 = { "Sahaliyanula %d. Chèn" }
+		13 = { "Shantung %d. Chèn" }
+		14 = { "Kansu %d. Chèn" }
+		15 = { "Hupeh %d. Chèn" }
+		16 = { "Kweichow %d. Chèn" }
+		17 = { "Szechwan %d. Chèn" }
+		18 = { "Kiangsu %d. Chèn" }
+		19 = { "Yünnan %d. Chèn" }
+		20 = { "Fêngtien %d. Chèn" }
+		21 = { "Chekiang %d. Chèn" }
+		22 = { "Fêngtien %d. Chèn" }
+		23 = { "Girin %d. Chèn" }
+		24 = { "Hunan %d. Chèn" }
+		25 = { "Kwangsi %d. Chèn" }
+		26 = { "Kwangtung %d. Chèn" }
+		27 = { "Kiangsi %d. Chèn" }
+		28 = { "Hupeh %d. Chèn" }
+		29 = { "Honan %d. Chèn" }
+		30 = { "Fukien %d. Chèn" }
+		31 = { "Anhwei %d. Chèn" }
+		32 = { "Sahaliyanula %d. Chèn" }
+		33 = { "Szechwan %d. Chèn" }
+		34 = { "Yünnan %d. Chèn" }
+		35 = { "Icejecen %d. Chèn" }
+		36 = { "Chekiang %d. Chèn" }
+		37 = { "Girin %d. Chèn" }
+		38 = { "Hunan %d. Chèn" }
+		39 = { "Shansi %d. Chèn" }
+		40 = { "Kwangtung %d. Chèn" }
+		41 = { "Kiangsi %d. Chèn" }
+		42 = { "Sahaliyanula %d. Chèn" }
+		43 = { "Shensi %d. Chèn" }
+		44 = { "Chekiang %d. Chèn" }
+		45 = { "Anhwei %d. Chèn" }
+		46 = { "Fukien %d. Chèn" }
+		47 = { "Shantung %d. Chèn" }
+		48 = { "Hupeh %d. Chèn" }
+		49 = { "Nanyang %d. Chèn" }
+		50 = { "Hunan %d. Chèn" }
+		51 = { "Girin %d. Chèn" }
+		52 = { "Kwangsi %d. Chèn" }
+		53 = { "Honan %d. Chèn" }
+		54 = { "Fukien %d. Chèn" }
+		55 = { "Sahaliyanula %d. Chèn" }
+		56 = { "Kansu %d. Chèn" }
+		57 = { "Shantung %d. Chèn" }
+		58 = { "Anhwei %d. Chèn" }
+		59 = { "Kweichow %d. Chèn" }
+		60 = { "Szechwan %d. Chèn" }
+		61 = { "Kiangsu %d. Chèn" }
+		62 = { "Yünnan %d. Chèn" }
+		63 = { "Chekiang %d. Chèn" }
+		64 = { "Fêngtien %d. Chèn" }
+		65 = { "Girin %d. Chèn" }
+		66 = { "Shansi %d. Chèn" }
+		67 = { "Shensi %d. Chèn" }
+		68 = { "Hunan %d. Chèn" }
+		69 = { "Kwangtung %d. Chèn" }
+		70 = { "Anhwei %d. Chèn" }
+		71 = { "Kansu %d. Chèn" }
+		72 = { "Fukien %d. Chèn" }
+		72 = { "Icejecen %d. Chèn" }
+		73 = { "Kokonur %d. Chèn" }
+		74 = { "Khams %d. Chèn" }
+		75 = { "Tsang %d. Chèn" }
+		76 = { "Dorgi %d. Chèn" }
+		77 = { "Icejecen %d. Chèn" }
+		78 = { "Kokonur %d. Chèn" }
+		79 = { "Khams %d. Chèn" }
+		80 = { "Tsang %d. Chèn" }
+		81 = { "Dorgi %d. Chèn" }
+		82 = { "Icejecen %d. Chèn" }
+		83 = { "Kokonur %d. Chèn" }
+		84 = { "Khams %d. Chèn" }
+		85 = { "Tsang %d. Chèn" }
+		86 = { "Dorgi %d. Chèn" }
+		87 = { "Icejecen %d. Chèn" }
+		88 = { "Kokonur %d. Chèn" }
+		89 = { "Khams %d. Chèn" }
+		90 = { "Tsang %d. Chèn" }
+		91 = { "Dorgi %d. Chèn" }
+		92 = { "Tülergi %d. Chèn" }
+		93 = { "Chinchi %d. Chèn" }
+		94 = { "Chihli %d. Chèn" }
+		95 = { "Kiangsu %d. Chèn" }
+		
+	}
+}
+
+CHI_CAV_01 = 
+{
+	name = "Cavalry Unit"
+
+	for_countries = { QNG }
+
+	can_use = { always = yes }
+
+	division_types = { "cavalry" }
+
+	fallback_name = "%d Maping Hsiéh"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d Maping Hsiéh" }
+		2 = { "%d Maping Hsiéh" }
+		3 = { "%d Maping Hsiéh" }
+		4 = { "%d Maping Hsiéh" }
+		5 = { "%d Maping Hsiéh" }
+		6 = { "%d Maping Hsiéh" }
+		7 = { "%d Maping Hsiéh" }
+		8 = { "%d Maping Hsiéh" }
+		9 = { "%d Maping Hsiéh" }
+		10 = { "%d Maping Hsiéh" }
+		11 = { "%d Maping Hsiéh" }
+		12 = { "%d Maping Hsiéh" }
+		13 = { "%d Maping Hsiéh" }
+		14 = { "%d Maping Hsiéh" }
+		15 = { "%d Maping Hsiéh" }
+		16 = { "%d Maping Hsiéh" }
+		17 = { "%d Maping Hsiéh" }
+	}
+}
+
+CHI_MOT_01 = 
+{
+	name = "Motorized Unit"
+
+	for_countries = { QNG }
+
+	can_use = { always = yes }
+
+	division_types = { "motorized" }
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { CHI_INF_01 }
+
+	fallback_name = "%d Jidonghua Juntuán"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		500 = { "200 Jidonghua Bubing Shi" }		# only historical motorized division for NRA
+		430 = { "Xin 30 Jidonghua Bubing Shi" }		# American-trained (full) divisions of historical 'X Force'
+		438 = { "Xin 38 Jidonghua Bubing Shi" }		
+		422 = { "Xin 22 Jidonghua Bubing Shi" }		
+		414 = { "14 Jidonghua Bubing Shi" }		
+		450 = { "50 Jidonghua Bubing Shi" }		
+		403 = { "3 Jidonghua Bubing Shi" }			# German-trained divisions (traditional division strength)
+		406 = { "6 Jidonghua Bubing Shi" }		
+		409 = { "9 Jidonghua Bubing Shi" }		
+		436 = { "36 Jidonghua Bubing Shi" }		
+		487 = { "87 Jidonghua Bubing Shi" }		
+		488 = { "88 Jidonghua Bubing Shi" }		
+		402 = { "2 Jidonghua Bubing Shi" }		
+		404 = { "4 Jidonghua Bubing Shi" }		
+		410 = { "10 Jidonghua Bubing Shi" }		
+		411 = { "11 Jidonghua Bubing Shi" }		
+		425 = { "25 Jidonghua Bubing Shi" }		
+		427 = { "27 Jidonghua Bubing Shi" }		
+		457 = { "57 Jidonghua Bubing Shi" }		
+		467 = { "67 Jidonghua Bubing Shi" }		
+		480 = { "80 Jidonghua Bubing Shi" }		
+		483 = { "83 Jidonghua Bubing Shi" }		
+		489 = { "89 Jidonghua Bubing Shi" }		
+		5 = { "%d Jidonghua Juntuán" }						# fictional names for motorized corps
+		1 = { "%d Jidonghua Juntuán" }						
+		2 = { "%d Jidonghua Juntuán" }
+		3 = { "%d Jidonghua Juntuán" }
+		4 = { "%d Jidonghua Juntuán" }
+		9 = { "%d Jidonghua Juntuán" }
+		12 = { "%d Jidonghua Juntuán" }
+		13 = { "%d Jidonghua Juntuán" }
+		14 = { "%d Jidonghua Juntuán" }
+		17 = { "%d Jidonghua Juntuán" }
+		18 = { "%d Jidonghua Juntuán" }
+		6 = { "%d Jidonghua Juntuán" }
+		7 = { "%d Jidonghua Juntuán" }
+		8 = { "%d Jidonghua Juntuán" }
+		10 = { "%d Jidonghua Juntuán" }
+		15 = { "%d Jidonghua Juntuán" }
+		16 = { "%d Jidonghua Juntuán" }
+		19 = { "%d Jidonghua Juntuán" }
+		20 = { "%d Jidonghua Juntuán" }
+		11 = { "%d Jidonghua Juntuán" }
+	}
+}
+
+CHI_MEC_01 = 
+{
+	name = "Mechanized Unit"
+
+	for_countries = { QNG }
+
+	can_use = { always = yes }
+
+	division_types = { "mechanized" }
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { CHI_INF_01 }
+
+	fallback_name = "%d Jixiehua Juntuán"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		500 = { "200 Jixiehua Bubing Shi" }
+		430 = { "Xin 30 Jixiehua Bubing Shi" }		# American-trained (full) divisions of historical 'X Force'
+		438 = { "Xin 38 Jixiehua Bubing Shi" }		
+		422 = { "Xin 22 Jixiehua Bubing Shi" }		
+		414 = { "14 Jixiehua Bubing Shi" }		
+		450 = { "50 Jixiehua Bubing Shi" }		
+		403 = { "3 Jixiehua Bubing Shi" }			# German-trained divisions (traditional division strength)
+		406 = { "6 Jixiehua Bubing Shi" }		
+		409 = { "9 Jixiehua Bubing Shi" }		
+		436 = { "36 Jixiehua Bubing Shi" }		
+		487 = { "87 Jixiehua Bubing Shi" }		
+		488 = { "88 Jixiehua Bubing Shi" }		
+		402 = { "2 Jixiehua Bubing Shi" }		
+		404 = { "4 Jixiehua Bubing Shi" }		
+		410 = { "10 Jixiehua Bubing Shi" }		
+		411 = { "11 Jixiehua Bubing Shi" }		
+		425 = { "25 Jixiehua Bubing Shi" }		
+		427 = { "27 Jixiehua Bubing Shi" }		
+		457 = { "57 Jixiehua Bubing Shi" }		
+		467 = { "67 Jixiehua Bubing Shi" }		
+		480 = { "80 Jixiehua Bubing Shi" }		
+		483 = { "83 Jixiehua Bubing Shi" }		
+		489 = { "89 Jixiehua Bubing Shi" }		
+		5 = { "%d Jixiehua Juntuán" }				# fictional names for mechanized corps
+		1 = { "%d Jixiehua Juntuán" }						
+		2 = { "%d Jixiehua Juntuán" }
+		3 = { "%d Jixiehua Juntuán" }
+		4 = { "%d Jixiehua Juntuán" }
+		9 = { "%d Jixiehua Juntuán" }
+		12 = { "%d Jixiehua Juntuán" }
+		13 = { "%d Jixiehua Juntuán" }
+		14 = { "%d Jixiehua Juntuán" }
+		17 = { "%d Jixiehua Juntuán" }
+		18 = { "%d Jixiehua Juntuán" }
+		6 = { "%d Jixiehua Juntuán" }
+		7 = { "%d Jixiehua Juntuán" }
+		8 = { "%d Jixiehua Juntuán" }
+		10 = { "%d Jixiehua Juntuán" }
+		15 = { "%d Jixiehua Juntuán" }
+		16 = { "%d Jixiehua Juntuán" }
+		19 = { "%d Jixiehua Juntuán" }
+		20 = { "%d Jixiehua Juntuán" }
+		11 = { "%d Jixiehua Juntuán" }
+	}
+}
+
+CHI_ARM_01 = 
+{
+	name = "Armored Unit"
+
+	for_countries = { QNG }
+
+	can_use = { always = yes }
+
+	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { CHI_INF_01 }
+
+	fallback_name = "%d Zhuangjia Shi"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d Zhuangjia Shi" }
+		2 = { "%d Zhuangjia Shi" }
+		3 = { "%d Zhuangjia Shi" }
+		4 = { "%d Zhuangjia Shi" }
+		5 = { "%d Zhuangjia Shi" }
+		6 = { "%d Zhuangjia Shi" }
+		7 = { "%d Zhuangjia Shi" }
+		8 = { "%d Zhuangjia Shi" }
+		9 = { "%d Zhuangjia Shi" }
+		10 = { "%d Zhuangjia Shi" }
+		11 = { "%d Zhuangjia Shi" }
+		12 = { "%d Zhuangjia Shi" }
+		13 = { "%d Zhuangjia Shi" }
+		14 = { "%d Zhuangjia Shi" }
+		15 = { "%d Zhuangjia Shi" }
+	}
+}
+
+CHI_PAR_01 =  {
+	name = "Paratrooper Unit"
+
+	for_countries = { QNG }
+
+	can_use = { always = yes }
+
+	division_types = { "paratrooper" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { CHI_INF_01 }
+
+	fallback_name = "%d Sanbing Shi"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d Sanbing Shi" }
+		2 = { "%d Sanbing Shi" }
+		3 = { "%d Sanbing Shi" }
+		4 = { "%d Sanbing Shi" }
+		5 = { "%d Sanbing Shi" }
+		6 = { "%d Sanbing Shi" }
+		7 = { "%d Sanbing Shi" }
+		8 = { "%d Sanbing Shi" }
+		9 = { "%d Sanbing Shi" }
+		10 = { "%d Sanbing Shi" }
+	}
+}
+
+CHI_MAR_01 = 
+{
+	name = "Marine Unit"
+
+	for_countries = { QNG }
+
+	can_use = { always = yes }
+
+	division_types = { "marine" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { CHI_INF_01 }
+
+	fallback_name = "%d Luzhan Dui Shi"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d Luzhan Dui Shi" }
+		2 = { "%d Luzhan Dui Shi" }
+		3 = { "%d Luzhan Dui Shi" }
+		4 = { "%d Luzhan Dui Shi" }
+		5 = { "%d Luzhan Dui Shi" }
+		6 = { "%d Luzhan Dui Shi" }
+		7 = { "%d Luzhan Dui Shi" }
+		8 = { "%d Luzhan Dui Shi" }
+		9 = { "%d Luzhan Dui Shi" }
+		10 = { "%d Luzhan Dui Shi" }
+	}
+}
+
+CHI_MNT_01 = 
+{
+	name = "Mountain Unit"
+
+	for_countries = { CHI }
+
+	can_use = { always = yes }
+
+	division_types = { "mountaineers" }
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { CHI_INF_01 }
+
+	fallback_name = "%d Juntuán"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		430 = { "Xin 30 Bubing Shi" }		# American-trained (full) divisions of historical 'X Force'
+		438 = { "Xin 38 Bubing Shi" }		
+		422 = { "Xin 22 Bubing Shi" }		
+		414 = { "14 Bubing Shi" }		
+		450 = { "50 Bubing Shi" }		
+		403 = { "3 Bubing Shi" }		# German-trained divisions (traditional division strength)
+		406 = { "6 Bubing Shi" }		
+		409 = { "9 Bubing Shi" }		
+		436 = { "36 Bubing Shi" }		
+		487 = { "87 Bubing Shi" }		
+		488 = { "88 Bubing Shi" }		
+		498 = { "Peixun Shi" }		
+		402 = { "2 Bubing Shi" }		
+		404 = { "4 Bubing Shi" }		
+		410 = { "10 Bubing Shi" }		
+		411 = { "11 Bubing Shi" }		
+		425 = { "25 Bubing Shi" }		
+		427 = { "27 Bubing Shi" }		
+		457 = { "57 Bubing Shi" }		
+		467 = { "67 Bubing Shi" }		
+		480 = { "80 Bubing Shi" }		
+		483 = { "83 Bubing Shi" }		
+		489 = { "89 Bubing Shi" }		
+		499 = { "Shui Jing Tuan" }		
+		1 = { "%d Juntuán" }			# Chinese "corps" were division-strength units (2-3 Chinese "divisions" = 2-3 HOI4 regiments)
+		2 = { "%d Juntuán" }
+		3 = { "%d Juntuán" }
+		4 = { "%d Juntuán" }
+		9 = { "%d Juntuán" }
+		12 = { "%d Juntuán" }
+		13 = { "%d Juntuán" }
+		14 = { "%d Juntuán" }
+		17 = { "%d Juntuán" }
+		18 = { "%d Juntuán" }
+		25 = { "%d Juntuán" }
+		39 = { "%d Juntuán" }
+		40 = { "%d Juntuán" }
+		43 = { "%d Juntuán" }
+		52 = { "%d Juntuán" }
+		54 = { "%d Juntuán" }
+		73 = { "%d Juntuán" }
+		74 = { "%d Juntuán" }
+		6 = { "%d Juntuán" }
+		7 = { "%d Juntuán" }
+		8 = { "%d Juntuán" }
+		10 = { "%d Juntuán" }
+		15 = { "%d Juntuán" }
+		16 = { "%d Juntuán" }
+		19 = { "%d Juntuán" }
+		20 = { "%d Juntuán" }
+		21 = { "%d Juntuán" }
+		22 = { "%d Juntuán" }
+		23 = { "%d Juntuán" }
+		26 = { "%d Juntuán" }
+		28 = { "%d Juntuán" }
+		29 = { "%d Juntuán" }
+		30 = { "%d Juntuán" }
+		31 = { "%d Juntuán" }
+		32 = { "%d Juntuán" }
+		33 = { "%d Juntuán" }
+		34 = { "%d Juntuán" }
+		35 = { "%d Juntuán" }
+		37 = { "%d Juntuán" }
+		38 = { "%d Juntuán" }
+		41 = { "%d Juntuán" }
+		42 = { "%d Juntuán" }
+		44 = { "%d Juntuán" }
+		45 = { "%d Juntuán" }
+		46 = { "%d Juntuán" }
+		47 = { "%d Juntuán" }
+		48 = { "%d Juntuán" }
+		49 = { "%d Juntuán" }
+		51 = { "%d Juntuán" }
+		53 = { "%d Juntuán" }
+		55 = { "%d Juntuán" }
+		56 = { "%d Juntuán" }
+		57 = { "%d Juntuán" }
+		59 = { "%d Juntuán" }
+		60 = { "%d Juntuán" }
+		61 = { "%d Juntuán" }
+		62 = { "%d Juntuán" }
+		63 = { "%d Juntuán" }
+		64 = { "%d Juntuán" }
+		65 = { "%d Juntuán" }
+		66 = { "%d Juntuán" }
+		67 = { "%d Juntuán" }
+		68 = { "%d Juntuán" }
+		70 = { "%d Juntuán" }
+		71 = { "%d Juntuán" }
+		72 = { "%d Juntuán" }
+		75 = { "%d Juntuán" }
+		76 = { "%d Juntuán" }
+		77 = { "%d Juntuán" }
+		78 = { "%d Juntuán" }
+		79 = { "%d Juntuán" }
+		80 = { "%d Juntuán" }
+		81 = { "%d Juntuán" }
+		82 = { "%d Juntuán" }
+		83 = { "%d Juntuán" }
+		84 = { "%d Juntuán" }
+		85 = { "%d Juntuán" }
+		86 = { "%d Juntuán" }
+		87 = { "%d Juntuán" }
+		89 = { "%d Juntuán" }
+		92 = { "%d Juntuán" }
+		93 = { "%d Juntuán" }
+		94 = { "%d Juntuán" }
+		98 = { "%d Juntuán" }
+		201 = { "Xin 1 Juntuán" }
+		5 = { "%d Juntuán" }
+		27 = { "%d Juntuán" }
+		50 = { "%d Juntuán" }
+		58 = { "%d Juntuán" }
+		69 = { "%d Juntuán" }
+		90 = { "%d Juntuán" }
+		91 = { "%d Juntuán" }
+		96 = { "%d Juntuán" }
+		99 = { "%d Juntuán" }
+		100 = { "%d Juntuán" }
+		202 = { "Xin 2 Juntuán" }
+		203 = { "Xin 3 Juntuán" }
+		205 = { "Xin 5 Juntuán" }
+		206 = { "Xin 6 Juntuán" }
+		36 = { "%d Juntuán" }
+		88 = { "%d Juntuán" }
+		207 = { "Xin 7 Juntuán" }
+		11 = { "%d Juntuán" }
+		95 = { "%d Juntuán" }
+		208 = { "Xin 8 Juntuán" }
+		209 = { "Xin 9 Juntuán" }			# fictional additional corps here
+		210 = { "Xin 10 Juntuán" }
+		211 = { "Xin 11 Juntuán" }
+		212 = { "Xin 12 Juntuán" }
+		213 = { "Xin 13 Juntuán" }
+		214 = { "Xin 14 Juntuán" }
+		215 = { "Xin 15 Juntuán" }
+	}
+}
+
+CHI_MILINF_01 = 
+{
+	name = "Garrison Unit"
+
+	for_countries = { QNG }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	fallback_name = "%d Hsienping Hsiéh"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		101 = { "Shanghai Jingbei" }		# All fictional names for local militias
+		102 = { "1 Fujian Jingbei" }
+		103 = { "1 Nanking Jingbei" }
+		104 = { "Wuhan Jingbei" }
+		105 = { "Qingdao Jingbei" }
+		106 = { "Henan Sheng Jun" }
+		107 = { "Anhui Sheng Jun" }
+		108 = { "Gansu Sheng Jun" }
+		109 = { "Shandong Sheng Jun" }
+		110 = { "Jiangsu Sheng Jun" }
+		111 = { "Hubei Sheng Jun" }
+		112 = { "2 Nanking Jingbei" }
+		113 = { "2 Fujian Jingbei" }
+		114 = { "3 Fujian Jingbei" }
+		115 = { "Jiangxi Sheng Jun" }
+		116 = { "Zhejiang Sheng Jun" }
+		117 = { "Hunan Sheng Jun" }
+		118 = { "Fujian Sheng Jun" }
+		119 = { "2 Nanking Jingbei" }
+		126 = { "3 Nanking Jingbei" }
+		127 = { "4 Nanking Jingbei" }
+		120 = { "Tiennan Jingbei" }
+		121 = { "Hophei Jingbei" }
+		122 = { "Chahar Jingbei" }
+		123 = { "Chun-ai Jingbei" }
+		124 = { "Hunan Jingbei" }
+		125 = { "Hubei Jingbei" }
+		1 = { "%d Hsienping Hsiéh" }
+		2 = { "%d Hsienping Hsiéh" }
+		3 = { "%d Hsienping Hsiéh" }
+		4 = { "%d Hsienping Hsiéh" }
+		5 = { "%d Hsienping Hsiéh" }
+		6 = { "%d Hsienping Hsiéh" }
+		7 = { "%d Hsienping Hsiéh" }
+		8 = { "%d Hsienping Hsiéh" }
+		9 = { "%d Hsienping Hsiéh" }
+		10 = { "%d Hsienping Hsiéh" }
+		11 = { "%d Hsienping Hsiéh" }
+		12 = { "%d Hsienping Hsiéh" }
+		13 = { "%d Hsienping Hsiéh" }
+		14 = { "%d Hsienping Hsiéh" }
+		15 = { "%d Hsienping Hsiéh" }
+		16 = { "%d Hsienping Hsiéh" }
+		17 = { "%d Hsienping Hsiéh" }
+		18 = { "%d Hsienping Hsiéh" }
+		19 = { "%d Hsienping Hsiéh" }
+		20 = { "%d Hsienping Hsiéh" }
+	}
+}
+

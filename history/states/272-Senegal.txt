@@ -1,0 +1,35 @@
+
+state={
+	id=272
+	name="STATE_272"
+	manpower = 1837520
+	resources={
+		steel= 4
+	}
+	
+	state_category = rural
+
+	history={
+		owner = SEN
+		add_core_of = SEN
+		victory_points = {
+			4948 5 
+		}
+		victory_points = {
+			12710 1
+		}
+		buildings = {
+			infrastructure = 2
+			air_base = 2
+			4948 = {
+				naval_base = 3
+			}
+		}
+	}
+
+	provinces={
+		2100 4948 7972 8015 10917 12710 12866 13213 13240 13254 13255
+	}
+	
+	local_supplies=1.0 
+}

@@ -1,0 +1,48 @@
+﻿l_english:
+#United Baltic Duchy#
+ #IDEA#
+ UBD_ethnic_conflict:0 "Ethnic Conflict"
+ UBD_ethnic_conflict_desc:0 "Ethnic Conflict"
+ UBD_under_germany_control:0 "Under Germany Control"
+ UBD_under_germany_control_desc:0 "Not only the Russian Provisional Government but the Soviet Russia had relinquished all authority over former Russian Imperial Baltic governorates to Germany, Although United Baltic Duchy nominally played as a self-government, we do are a vassal of German Empire."
+ 
+ #LEADER#
+ UBD_Friedrich_zu_Mecklenburg:0 "Adolf Friedrich I"
+ POLITICS_UBD_ADOLF_FRIEDRICH_ZU_MECKLENBURG_DESC:0 "His Serene Highness, Adolf Friedrich I, By the Grace of God, the Elected Duke of United Baltic, Duke of Mecklenburg-Schwerin.\n\n§YBiography:§!\n§YBorn:§!\n10th October 1873\nSchwerin, Grand Duchy of Mecklenburg-Schwerin\n--------------\n§YPolitical Carrer:§!\nAdolf Friedrich once served as the governor of Togoland from 1912-1914. After Soviet Russia had formally relinquished all authority over its former imperial Baltic provinces to Germany in the Treaty of Brest-Litovsk a temporary regency council (Regentschaftsrat) for all the Baltic provinces led by Baron Adolf Pilar von Pilchau elected him as the first head of state of the United Baltic Duchy. However, he is facing increasing ethnic conflicts and local Estonian and Latvian urgently demand for independence."
+ UBD_Andrievs_Niedra:0 "Andrievs Niedra"
+ POLITICS_UBD_ANDRIEVS_NIEDRA_DESC:0 ""
+ UBD_Hermann_von_Keyserling:0 "Hermann von Keyserling"
+ POLITICS_UBD_HERMANN_VON_KEYSERLING_DESC:0 ""
+ UBD_August_Winnig:0 ""
+ POLITICS_UBD_AUGUST_WINNIG_DESC:0 ""
+ UBD_Heinrich_zu_Dohna_Schlobitten:0 ""
+ POLITICS_UBD_HEINRICH_ZU_DOHNA_SCHLOBITTEN_DESC:0 ""
+ UBD_Max_Bock:0 "Max Bock"
+ POLITICS_UBD_MAX_BOCK_DESC:0 ""
+ 
+ UBD_Rudiger_von_der_Goltz:0 "Rüdiger von der Goltz"
+ MARSHAL_UBD_RUDIGER_VON_DER_GOLTZ_DESC:0 ""
+ UBD_Aleksander_Tonisson:0 "Aleksander Tõnisson"
+ MARSHAL_UBD_ALEKSANDER_TONISSON_DESC:0 ""
+ UBD_Teodors_Spade:0 "Johan Pitka" 
+ ADMIRAL_UBD_JOHAN_PITKA_DESC:0 "" 
+ UBD_Teodors_Spade:0 "Teodors Spāde"
+ ADMIRAL_UBD_TEODORS_SPADE_DESC:0 " "
+ #EVENTS#
+ 
+ #MANUFACTURER#
+ UBD_riga_shipyard:0 "Riga Shipyard"
+ UBD_riga_shipyard_desc:0 ""
+ UBD_Balti_Laevaremonditehas:0 "Balti Laevaremonditehas"
+ UBD_Balti_Laevaremonditehas_desc:0 ""
+ UBD_arsenal_tallinn:0 "Tallinn Arsenal"
+ UBD_arsenal_tallinn_desc:0 ""
+ UBD_Esimene_Eesti_Polevkivitoostus:0 "Esimene Eesti Põlevkivitööstus"
+ UBD_Esimene_Eesti_Polevkivitoostus_desc:0 ""
+ UBD_Bellaccord_Electro:0 "Bellaccord Electro"
+ UBD_Bellaccord_Electro_desc:0 ""
+ UBD_deu_Baltique:0 "Deutschbalt"
+ UBD_deu_Baltique_desc:0 "This factory used to be called as Russobalt or Russo-Baltique, was one of the first Russian companies that produced vehicles before the Great War. but now it names Deutschbalt, sometimes called Germanobaltique. It is the Bolshevik Revolution brought an end to its Russian investors who were replaced by local Baltic German and those Germans from Central Europa subsequently."
+ UBD_Valsts_elektrotehniska_fabrika:0 "VEF"
+ UBD_Valsts_elektrotehniska_fabrika_desc:0 "Latvian acronym for Valsts elektrotehniskā fabrika(State Electrotechnical Factory), is a manufacturer founded in 1919 produces all electronics that had any market demand, and even airplanes in Baltic nation. "
+ 

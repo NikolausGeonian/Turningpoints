@@ -1,0 +1,104 @@
+﻿division_template = {
+	name = "Hkyaylyin Tautm"		# Infantry Division
+
+	division_names_group = BRM_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		artillery_brigade = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		artillery_brigade = { x = 1 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Pyishuhcait"		# militia
+
+	division_names_group = BRM_INF_02
+	
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+		
+	}
+}
+
+units = {
+
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 1330
+		division_template = "Hkyaylyin Tautm"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 1492
+		division_template = "Hkyaylyin Tautm"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 1566
+		division_template = "Pyishuhcait"
+		start_experience_factor = 0
+	}
+	
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 7254
+		division_template = "Pyishuhcait"
+		start_experience_factor = 0
+	}
+	
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 4425
+		division_template = "Pyishuhcait"
+		start_experience_factor = 0
+	}
+	
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "BRM"
+		}
+		requested_factories = 1
+		progress = 0.71
+		efficiency = 100
+	}
+	
+	add_equipment_production = {
+		equipment = {
+			type = 	artillery_equipment_1
+			creator = "QNG"
+		}
+		requested_factories = 1
+		progress = 0.55
+		efficiency = 25
+	}
+}

@@ -1,0 +1,18 @@
+state = {
+	id=873
+	name="STATE_873" #Anizzah
+	manpower = 375310
+	state_category = pastoral
+	
+	history = {
+		owner = NEJ
+		add_core_of = NEJ
+		
+		buildings = {
+			infrastructure = 1
+		}		
+	}
+	provinces={
+		1631 4951 5058 10744 12316 12879
+	}
+}

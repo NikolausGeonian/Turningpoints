@@ -1,0 +1,156 @@
+﻿capital = 231 #Tbilisi
+
+#oob = "GEO_1936"
+
+set_research_slots = 3
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_military_police = 1
+	tech_mountaineers = 1
+	paratroopers = 1
+	gw_artillery = 1
+}
+
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		early_heavy_cruiser = 1
+		early_battleship = 1
+		early_battlecruiser = 1
+		transport = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		mtg_transport = 1
+		basic_battery = 1
+		basic_torpedo = 1
+	}
+}
+
+set_popularities = {
+	conservatism = 66
+	authoritarianism = 0
+	social_democratism = 11
+	patriotic_socialism = 0
+	corporatism = 0
+	democratic_socialism = 0
+	populism = 0
+	social_liberalism = 23
+}
+set_politics = {
+	ruling_party = conservatism
+	last_election = "1935.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+create_country_leader = {
+	name = "George XII"
+	desc = "POLITICS_GEORGE_BAGRATION_DESC"
+	picture = "gfx/leaders/GEO/Portrait_George_Bagration.dds"
+	expire = "1955.1.20"
+	ideology = constitutional_monarchy_B_subtype
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "George XII"
+	desc = "POLITICS_GEORGE_BAGRATION_DESC"
+	picture = "gfx/leaders/GEO/Portrait_George_Bagration.dds"
+	expire = "1955.1.20"
+	ideology = constitutional_monarchy_A_subtype
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "George XII"
+	desc = "POLITICS_GEORGE_BAGRATION_DESC"
+	picture = "gfx/leaders/GEO/Portrait_George_Bagration_uniform.dds"
+	expire = "1955.1.20"
+	ideology = semi_constitutional_monarchy_subtype
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "George XII"
+	desc = "POLITICS_GEORGE_BAGRATION_DESC"
+	picture = "gfx/leaders/GEO/Portrait_George_Bagration_uniform.dds"
+	expire = "1955.1.20"
+	ideology = autocratic_monarchy_subtype
+	traits = {
+	}
+}
+
+create_field_marshal = {
+	name = "Giorgi Kvinitadze"
+	desc = "MARSHAL_GEO_GIORGI_KVINITADZE_DESC"
+	portrait_path = "gfx/leaders/GEO/Portrait_Giorgi_Kvinitadze.dds"
+	traits = {
+	}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Anatoly Gekker"
+	desc = "GENERAL_GEO_ANATOLIY_GEKKER_DESC"
+	portrait_path = "gfx/leaders/GEO/Portrait_Anatoliy_Gekker.dds"
+	traits = {
+	}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Giorgi Khimshiashvili"
+	desc = "GENERAL_GEO_GIORGI_KHIMSHIASHVILI_DESC"
+	portrait_path = "gfx/leaders/GEO/Portrait_Giorgi_Khimshiashvili.dds"
+	traits = {
+	}
+	skill = 1
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Shalva Eliava"
+	desc = "GENERAL_GEO_SHALVA_ELIAVA_DESC"
+	portrait_path = "gfx/leaders/GEO/Portrait_Shalva_Eliava.dds"
+	traits = {
+	}
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}

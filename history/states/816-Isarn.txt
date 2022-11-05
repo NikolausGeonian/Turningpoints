@@ -1,0 +1,27 @@
+state={
+	id=816
+	name="STATE_816"
+	manpower = 9128242
+	state_category = town
+
+	history={
+		owner = SIA
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 3
+		}
+		victory_points = {
+			10438 10 
+		}
+		victory_points = {
+			1592 3 
+		}
+		add_core_of = SIA
+	}
+
+	provinces={
+		1357 1535 1548 1592 4511 4582 7516 7601 10384 10425 10438 12195 12264 12360 12373 12388 12402 12417 12431
+	}
+}

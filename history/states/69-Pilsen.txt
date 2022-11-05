@@ -1,0 +1,31 @@
+state=
+{
+	id=69
+	name="STATE_69"
+	manpower = 1284939
+	
+	state_category = large_town
+	
+	resources = {
+		steel = 8
+	}
+	
+	history = {
+
+		victory_points = { 
+			6418 10
+		}
+		
+		owner = HAB
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			air_base = 1
+			arms_factory = 1
+		}
+		add_core_of = HAB
+	}
+	provinces = {
+		424 3585 6418 6470 6592 7857 9421 9555	
+	}
+}

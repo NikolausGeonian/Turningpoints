@@ -1,0 +1,23 @@
+state={
+	id=752
+	name="STATE_752" #ganzi
+	provinces={
+		1918 7988 8104 12724 12837 4999 1999 10726
+
+	}
+	manpower=300000
+	buildings_max_level_factor=1.000
+	state_category = pastoral
+	history={
+		owner = QNG
+		add_core_of = QNG
+		add_core_of = TIB
+		victory_points = {
+			4999 3
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+	}
+}

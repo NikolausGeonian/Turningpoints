@@ -1,0 +1,48 @@
+﻿l_english:
+#Russia#
+#IDEA#
+RUS_Development_Planning_Commission:0 "Gosplanira"
+RUS_Development_Planning_Commission_desc:0 "Gosudarstvennaya Komissiya po Planirovaniyu Razvitiya, also known as State Development Planning Commission, is the economic management agency under the Council of People's Commissars, which has broad administrative and planning control over the economy of All-Russia."
+#MANUFACTURER#
+RUS_Kronstadt_Marine_Plant:0 "Kronstadt Marine Plant"
+RUS_Kronstadt_Marine_Plant_desc:0 "the Kronstadt Marine Plant originally established in 1858 as a shipbuilding and repair center. It‘s the primary assurance centre for the Baltic Fleet at present."
+RUS_Tula_Arms_plant:0 "Tula Arms Plant"
+RUS_Tula_Arms_plant_desc:0 ""
+RUS_gaz:0 "GAZ"
+RUS_gaz_desc:0 ""
+RUS_Stalingrad_Tractor_Plant:0 "Stalingrad Tractor Plant"
+RUS_Stalingrad_Tractor_Plant_desc:0 ""
+RUS_Obukhov_State_Plant:0 "Bolshevik Plant No. 232"
+RUS_Obukhov_State_Plant_desc:0 ""
+RUS_MiG:0 "MiG"
+RUS_MiG_desc:0 ""
+RUS_Ilyushin_design_bureau:0 "Ilyushin"
+RUS_Ilyushin_design_bureau_desc:0 ""
+RUS_Volga_Ural_Oil_and_Gas:0 "Volga-Ural Petroleum and Gas"
+RUS_Volga_Ural_Oil_and_Gas_desc:0 ""
+RUS_SDPC:0 "Gosplanira"
+RUS_SDPC_desc:0 "Gosudarstvennaya Komissiya po Planirovaniyu Razvitiya, also known as State Development Planning Commission, is the economic management agency under the Council of People's Commissars, which has broad administrative and planning control over the economy of All-Russia."
+RUS_Krasny_Oktyabr:0 "Red October Factory"
+RUS_Krasny_Oktyabr_desc:0 ""
+#LEADER#
+RUS_Yakov_Sverdlov:0 "Yakov M. Sverdlov"
+POLITICS_RUS_YAKOV_SVERDLOV_DESC:0 "General Secretary of the Russian Communist Party (Bolsheviks)\nChairman of the Central Executive Committee of the Soviet Russia\nPeople's Commissar of Defense of the Soviet Russia\nFull member of the Politburo\n\n§YBiography:§!\n§YBorn: §!3rd June, 1885\nNizhny Novgorod, Russian Empire\n§W--------------§!\n§YPolitical Carrer:§!\n"
+RUS_Alexei_Rikov:0 "Alexei I. Rykov"
+POLITICS_RUS_ALEXEI_RIKOV_DESC:0 ""
+RUS_Mikhail_Kalinin:0 "Mikhail I. Kalinin"
+POLITICS_RUS_MIKHAIL_KALININ_DESC:0 ""
+RUS_Andrei_Zhdanov:0 "Andrei A. Zhdanov"
+POLITICS_RUS_ANDREI_ZHDANOV_DESC:0 ""
+RUS_Sergei_Kirov:0 "Sergei M. Kirov"
+POLITICS_RUS_SERGEI_KIROV_DESC:0 ""
+RUS_Nikolai_Yezhov:0 "Nikolai I. Yezhov"
+POLITICS_RUS_NIKOLAI_YEZHOV_DESC:0 ""
+RUS_Vyacheslav_Molotov:0 "Vyacheslav M. Molotov"
+POLITICS_RUS_VYACHESLAV_MOLOTOV_DESC:0 ""
+RUS_Maxim_Litvinov:0 "Maxim M. Litvinov"
+POLITICS_RUS_MAXIM_LITVINOV_DESC:0 ""
+RUS_Nikolay_Chkheidze:0 "Nikoloz Chkheidze"
+POLITICS_RUS_NIKOLAY_CHKHEIDZE_DESC:0 ""
+#EVENTS#
+
+#NATIONAL FOCUS#

@@ -1,0 +1,20 @@
+state={
+	id=832
+	name="STATE_832"
+	manpower = 468496
+	state_category = pastoral
+	resources={
+		steel=6
+	}
+	history={
+		add_core_of = SPR
+		owner = SPR
+		buildings = {
+			infrastructure = 1
+		}
+	}
+
+	provinces={
+		2126 1552 8054 10538 4735
+	}
+}

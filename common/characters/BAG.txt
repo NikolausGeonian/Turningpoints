@@ -1,0 +1,36 @@
+characters = {
+	
+	### Country Leader ###
+	
+	BAG_Abdul_Qadir_III = {
+		name = BAG_Abdul_Qadir_III
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Africa/Portrait_Abdul_Qadir_III.dds"
+				#Spacing Modifier
+			}
+		}
+		
+		country_leader = {
+			desc = "POLITICS_BAG_ABDUL_QADIR_III_DESC"
+			ideology = autocratic_monarchy_subtype
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	
+	}
+	
+	### Ministers ###
+	### HEAD OF GOVERNMENT ###
+	
+	### FOREIGN MINISTER ###
+	
+	###	ECONOMY MINISTER ###
+	
+	### FIELD MARSHAL ###
+	
+	### CORPS COMMANDER ###
+	
+	### ADMIRAL ###
+	
+}

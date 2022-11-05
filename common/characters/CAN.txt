@@ -1,0 +1,171 @@
+characters = {
+	
+	### Country Leader ###
+	CAN_John_Buchan = {
+		name = CAN_John_Buchan
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/CAN/ministers/CAN_John_Buchan.dds"
+				large = "gfx/leaders/CAN/Portrait_John_Buchan.dds"
+			}
+		}
+		
+		country_leader = {
+			desc = "POLITICS_CAN_JOHN_BUCHAN_DESC"
+			ideology = semi_constitutional_monarchy_subtype
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		
+		country_leader = {
+			desc = "POLITICS_CAN_JOHN_BUCHAN_DESC"
+			ideology = despotism_subtype
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		
+		country_leader = {
+			desc = "POLITICS_CAN_JOHN_BUCHAN_DESC"
+			ideology = constitutional_monarchy_A_subtype
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		
+		country_leader = {
+			desc = "POLITICS_CAN_JOHN_BUCHAN_DESC"
+			ideology = constitutional_monarchy_B_subtype
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}	
+	
+	CAN_Adrien_Arcand = {
+		name = CAN_Adrien_Arcand
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/00_Generic/TAG_idea_wip.dds"
+				large = "gfx/leaders/00_Generic/Portrait_Spacing_Modifier.dds"
+			}
+		}
+		
+		country_leader = {
+			desc = "POLITICS_CAN_ADRIEN_ARCAND_DESC"
+			ideology = corporatism_subtype
+			expire = "1965.1.1.1"
+			id = -1
+		}
+
+	}
+	### Ministers ###
+	### HEAD OF GOVERNMENT ###
+	
+	### FOREIGN MINISTER ###
+	
+	###	ECONOMY MINISTER ###
+	
+	### FIELD MARSHAL ###
+	
+	### CORPS COMMANDER ###
+	
+	CAN_Charles_Howard_Foulkes = {
+		name = CAN_Charles_Howard_Foulkes
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/CAN/ministers/CAN_Charles_Howard_Foulkes.dds"
+				large = "gfx/leaders/CAN/Portrait_Charles_Howard_Foulkes.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_CAN_CHARLES_HOWARD_FOULKES_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+	
+	CAN_Georges_Vanier = {
+		name = CAN_Georges_Vanier
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/CAN/ministers/CAN_Georges_Vanier.dds"
+				large = "gfx/leaders/CAN/Portrait_Georges_Vanier.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_CAN_GEORGES_VANIER_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+	
+	CAN_Andrew_McNaughton = {
+		name = CAN_Andrew_McNaughton
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/CAN/ministers/CAN_Andrew_McNaughton.dds"
+				large = "gfx/leaders/CAN/Portrait_Andrew_McNaughton.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_CAN_ANDREW_MCNAUGHTON_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+	
+	CAN_Harry_Crerar = {
+		name = CAN_Harry_Crerar
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/CAN/ministers/CAN_Harry_Crerar.dds"
+				large = "gfx/leaders/CAN/Portrait_Harry_Crerar.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_CAN_HARRY_CRERAR_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+	
+	CAN_Thomas_Victor_Anderson = {
+		name = CAN_Thomas_Victor_Anderson
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/CAN/ministers/CAN_Thomas_Victor_Anderson.dds"
+				large = "gfx/leaders/CAN/Portrait_Thomas_Victor_Anderson.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_CAN_THOMAS_VICTOR_ANDERSON_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+	### ADMIRAL ###
+	
+}

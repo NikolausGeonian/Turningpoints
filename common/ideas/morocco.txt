@@ -1,0 +1,35 @@
+ideas = {
+	country = {
+	
+		MOR_Shadow_Government = {
+			allowed = {
+				original_tag = MOR
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.3
+				conscription_factor = 0.25
+			}
+		}
+	}	
+	
+	
+	# TECHNOLOGY
+	naval_manufacturer = {
+		designer = yes
+	}
+	
+	materiel_manufacturer = {
+		designer = yes
+		
+	}
+	
+	tank_manufacturer = {
+		
+		designer = yes
+		
+	}
+}

@@ -1,0 +1,22 @@
+state = {
+	id=858
+	name="STATE_858" #Kaffa
+	manpower = 2117078 
+	state_category = rural
+	
+	history = {
+		owner = ETH
+		add_core_of = ETH
+		
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+		}
+		
+	}
+	
+	provinces={
+		1819 8019 8062 10734 
+		
+	}
+}

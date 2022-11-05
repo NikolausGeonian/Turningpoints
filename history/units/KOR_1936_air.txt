@@ -1,0 +1,13 @@
+﻿
+
+air_wings = {
+	
+	837 = {
+		small_plane_airframe_0 =  {
+			owner = "KOR" 
+			amount = 28
+			creator = "QNG"
+			version_name = "NanY 17"
+		}
+	}
+}

@@ -1,0 +1,1154 @@
+characters = {
+	
+	### Country Leader ###
+	
+	JAP_Emperor_Showa = {
+		name = JAP_Emperor_Showa
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/JAP/Portrait_Hirohito.dds"
+			}
+		}
+		
+		country_leader = {
+			desc = "POLITICS_JAP_HIROHITO_DESC"
+			ideology = popular_monarchy_subtype
+			traits={  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		
+		country_leader = {
+			desc = "POLITICS_JAP_HIROHITO_DESC"
+			ideology = tenno_subtype
+			traits={ emperor_showa }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		
+		country_leader = {
+			desc = "POLITICS_JAP_HIROHITO_DESC"
+			ideology = semi_constitutional_monarchy_subtype
+			traits={  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		
+		country_leader = {
+			desc = "POLITICS_JAP_HIROHITO_DESC"
+			ideology = constitutional_monarchy_B_subtype
+			traits={  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		
+		country_leader = {
+			desc = "POLITICS_JAP_HIROHITO_DESC"
+			ideology = autocratic_monarchy_subtype
+			traits={  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+	
+	### Ministers ###
+	### HEAD OF GOVERNMENT ###
+	JAP_Kazushige_Ugaki = {
+		name = JAP_Kazushige_Ugaki
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/JAP/ministers/JAP_Kazushige_Ugaki.dds"
+				large = "gfx/leaders/JAP/Portrait_Kazushige_Ugaki.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_JAP_KAZUSHIGE_UGAKI_DESC"
+			slot = head_of_government
+			idea_token = JAP_Kazushige_Ugaki
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = JAP
+			}
+			available = {
+				OR = {
+					has_government = corporatism
+					has_government = authoritarianism		
+				}
+			}
+			traits = { Genro }
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	JAP_Nobusuke_Kishi = {
+		name = JAP_Nobusuke_Kishi
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/JAP/ministers/JAP_Nobusuke_Kishi.dds"
+				large = "gfx/leaders/JAP/Portrait_Nobusuke_Kishi.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_JAP_NOBUSUKE_KISHI_DESC"
+			slot = head_of_government
+			idea_token = JAP_Nobusuke_Kishi
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = JAP
+			}
+			visible = {	
+				NOT = {
+					has_idea = JAP_Kazushige_Ugaki	
+				}	
+			}
+			available = {
+				OR = {
+					has_government = corporatism
+					has_government = authoritarianism		
+				}
+			}
+			traits = { }
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	JAP_Iemasa_Tokugawa = {
+		name = JAP_Iemasa_Tokugawa
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/JAP/ministers/JAP_Iemasa_Tokugawa.dds"
+				large = "gfx/leaders/JAP/Portrait_Iemasa_Tokugawa.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_JAP_IEMASA_TOKUGAWA_DESC"
+			slot = head_of_government
+			idea_token = JAP_Iemasa_Tokugawa
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = JAP
+			}
+			visible = {	
+				date > 1940.6.5		
+				#After the death of Iesato Tokugawa 
+			}
+			available = {
+				has_country_flag = Tenno_Kikansetsu	
+				OR = {
+					has_government = conservatism
+					has_government = social_liberalism
+								
+				}
+			}
+			traits = { Genro }
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	JAP_Koichi_Kido = {
+		name = JAP_Koichi_Kido
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/JAP/ministers/JAP_Koichi_Kido.dds"
+				large = "gfx/leaders/JAP/Portrait_Koichi_Kido.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_JAP_KOICHI_KIDO_DESC"
+			slot = head_of_government
+			idea_token = JAP_Koichi_Kido
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = JAP
+			}
+			available = {
+				has_country_flag = Tenno_Shukensetsu
+				OR = {
+					has_government = authoritarianism
+					has_government = conservatism
+					
+				}
+			}
+			traits = { }
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	### FOREIGN MINISTER ###
+	JAP_Shimazu_Tadashige = {
+		name = JAP_Shimazu_Tadashige
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/JAP/ministers/JAP_Shimazu_Tadashige.dds"
+				large = "gfx/leaders/JAP/Portrait_Shimazu_Tadashige.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_JAP_SHIMAZU_TADASHIGE_DESC"
+			slot = foreign_minister
+			idea_token = JAP_Shimazu_Tadashige
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = JAP
+			}
+			available = {
+				OR = {
+					has_government = corporatism
+					has_government = authoritarianism		
+					has_government = conservatism
+				}
+			}
+			traits = {
+				hambatsu
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	JAP_Tatsunosuke_Yamazaki = {
+		name = JAP_Tatsunosuke_Yamazaki
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/JAP/ministers/JAP_Tatsunosuke_Yamazaki.dds"
+				large = "gfx/leaders/JAP/Portrait_Tatsunosuke_Yamazaki.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_JAP_TATSUNOSUKE_YAMAZAKI_DESC"
+			slot = foreign_minister
+			idea_token = JAP_Tatsunosuke_Yamazaki
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = JAP
+			}
+				traits = {
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	JAP_Koki_Hirota = {
+		name = JAP_Koki_Hirota
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/JAP/ministers/JAP_Koki_Hirota.dds"
+				large = "gfx/leaders/JAP/Portrait_Koki_Hirota.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_JAP_KOKI_HIROTA_DESC"
+			slot = foreign_minister
+			idea_token = JAP_Koki_Hirota
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = JAP
+			}
+				traits = {
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	JAP_Hiroshi_Oshima = {
+		name = JAP_Hiroshi_Oshima
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/JAP/ministers/JAP_Hiroshi_Oshima.dds"
+				large = "gfx/leaders/JAP/Portrait_Hiroshi_Oshima.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_JAP_HIROSHI_OSHIMA_DESC"
+			slot = foreign_minister
+			idea_token = JAP_Hiroshi_Oshima
+			cost = 75.000
+			removal_cost = -1
+			available = {
+				OR = {
+					has_government = corporatism
+					has_government = authoritarianism
+					has_country_flag = JAP_military_dictatorship					
+				}
+			}
+			allowed = {
+				original_tag = JAP
+			}
+				traits = {
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	JAP_Kuniyuki_Tokugawa = {
+		name = JAP_Kuniyuki_Tokugawa
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/JAP/ministers/JAP_Kuniyuki_Tokugawa.dds"
+				large = "gfx/leaders/JAP/Portrait_Kuniyuki_Tokugawa.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_JAP_KUNIYUKI_TOKUGAWA_DESC"
+			slot = foreign_minister
+			idea_token = JAP_Kuniyuki_Tokugawa
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = JAP
+			}
+				traits = {
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	JAP_Eiji_Amo = {
+		name = JAP_Eiji_Amo
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/JAP/ministers/JAP_Eiji_Amo.dds"
+				large = "gfx/leaders/JAP/Portrait_Eiji_Amo.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_JAP_EIJI_AMO_DESC"
+			slot = foreign_minister
+			idea_token = JAP_Eiji_Amo
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = JAP
+			}
+				traits = {
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	###	ECONOMY MINISTER ###
+	JAP_Gotaro_Ogawa = {
+		name = JAP_Gotaro_Ogawa
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/JAP/ministers/JAP_Gotaro_Ogawa.dds"
+				large = "gfx/leaders/JAP/Portrait_Gotaro_Ogawa.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_JAP_GOTARO_OGAWA_DESC"
+			slot = economy_minister
+			idea_token = JAP_Gotaro_Ogawa
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = JAP
+			}
+			traits = {
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	JAP_Hiroya_Ino = {
+		name = JAP_Hiroya_Ino
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/JAP/ministers/JAP_Hiroya_Ino.dds"
+				large = "gfx/leaders/JAP/Portrait_Hiroya_Ino.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_JAP_HIROYA_INO_DESC"
+			slot = economy_minister
+			idea_token = JAP_Hiroya_Ino
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = JAP
+			}
+			traits = {
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	JAP_Yasui_Eiji = {
+		name = JAP_Yasui_Eiji
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/JAP/ministers/JAP_Yasui_Eiji.dds"
+				large = "gfx/leaders/JAP/Portrait_Yasui_Eiji.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_JAP_YASUI_EIJI_DESC"
+			slot = economy_minister
+			idea_token = JAP_Yasui_Eiji
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = JAP
+			}
+			traits = {
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	### FIELD MARSHAL ###
+	JAP_Prince_Kotohito = {
+		name = JAP_Prince_Kotohito
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/JAP/ministers/JAP_Prince_Kotohito.dds"
+				large = "gfx/leaders/JAP/Portrait_Prince_Kotohito.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "MARSHAL_JAP_PRINCE_KOTOHITO_DESC"
+			slot = army_chief
+			idea_token = JAP_Prince_Kotohito
+			allowed = {
+				original_tag = JAP
+			}
+			traits = { army_chief_offensive_1 }
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		field_marshal = {
+			desc = "MARSHAL_JAP_PRINCE_KOTOHITO_DESC"
+			traits = { old_guard }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+	
+	JAP_Prince_Morimasa = {
+		name = JAP_Prince_Morimasa
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/JAP/ministers/JAP_Prince_Morimasa.dds"
+				large = "gfx/leaders/JAP/Portrait_Prince_Morimasa.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "MARSHAL_JAP_PRINCE_MORIMASA_DESC"
+			slot = army_chief
+			idea_token = JAP_Prince_Morimasa
+			allowed = {
+				original_tag = JAP
+			}
+			traits = { army_chief_offensive_1 }
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		field_marshal = {
+			desc = "MARSHAL_JAP_PRINCE_MORIMASA_DESC"
+			traits = { old_guard }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+	
+	### CORPS COMMANDER ###
+	JAP_Tomoyuki_Yamashita = {
+		name = JAP_Tomoyuki_Yamashita
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/JAP/ministers/JAP_Tomoyuki_Yamashita.dds"
+				large = "gfx/leaders/JAP/Portrait_Tomoyuki_Yamashita.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "GENERAL_JAP_TOMOYUKI_YAMASHITA_DESC"
+			slot = high_command
+			idea_token = JAP_Tomoyuki_Yamashita
+			ledger = army
+			allowed = {
+				original_tag = JAP
+			}
+			traits = { grand_battle_plan_expert }
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_JAP_TOMOYUKI_YAMASHITA_DESC"
+			traits = { brilliant_strategist trickster trait_engineer }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	JAP_Seishiro_Itagaki = {
+		name = JAP_Seishiro_Itagaki
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/JAP/ministers/JAP_Seishiro_Itagaki.dds"
+				large = "gfx/leaders/JAP/Portrait_Seishiro_Itagaki.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_JAP_SEISHIRO_ITAGAKI_DESC"
+			traits = { inflexible_strategist trait_reckless JAP_samurai_lineage }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	
+	JAP_Kenkichi_Ueda = {
+		name = JAP_Kenkichi_Ueda
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/JAP/ministers/JAP_Kenkichi_Ueda.dds"
+				large = "gfx/leaders/JAP/Portrait_Kenkichi_Ueda.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_JAP_KENKICHI_UEDA_DESC"
+			traits = { old_guard trait_reckless }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	
+	JAP_Senjuro_Hayashi = {
+		name = JAP_Senjuro_Hayashi
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/JAP/ministers/JAP_Senjuro_Hayashi.dds"
+				large = "gfx/leaders/JAP/Portrait_Senjuro_Hayashi.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_JAP_SENJURO_HAYASHI_DESC"
+			traits = { old_guard }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	
+	JAP_Korechika_Anami = {
+		name = JAP_Korechika_Anami
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/JAP/ministers/JAP_Korechika_Anami.dds"
+				large = "gfx/leaders/JAP/Portrait_Korechika_Anami.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "GENERAL_JAP_KORECHIKA_ANAMI_DESC"
+			slot = army_chief
+			idea_token = JAP_Korechika_Anami
+			allowed = {
+				original_tag = JAP
+			}
+			traits = { air_chief_ground_support_1 }
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_JAP_KORECHIKA_ANAMI_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	
+	JAP_Hajime_Sugiyama = {
+		name = JAP_Hajime_Sugiyama
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/JAP/ministers/JAP_Hajime_Sugiyama.dds"
+				large = "gfx/leaders/JAP/Portrait_Hajime_Sugiyama.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "GENERAL_JAP_HAJIME_SUGIYAMA_DESC"
+			slot = army_chief
+			idea_token = JAP_Hajime_Sugiyama
+			allowed = {
+				original_tag = JAP
+			}
+			traits = { army_chief_drill_3 }
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_JAP_HAJIME_SUGIYAMA_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	
+	JAP_Akira_Muto = {
+		name = JAP_Akira_Muto
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/JAP/ministers/JAP_Akira_Muto.dds"
+				large = "gfx/leaders/JAP/Portrait_Akira_Muto.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_JAP_AKIRA_MUTO_DESC"
+			traits = { career_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	
+	JAP_Sadao_Araki = {
+		name = JAP_Sadao_Araki
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/JAP/ministers/JAP_Sadao_Araki.dds"
+				large = "gfx/leaders/JAP/Portrait_Sadao_Araki.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_JAP_SADAO_ARAKI_DESC"
+			traits = { JAP_samurai_lineage }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	
+	JAP_Kenji_Doihara = {
+		name = JAP_Kenji_Doihara
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/JAP/ministers/JAP_Kenji_Doihara.dds"
+				large = "gfx/leaders/JAP/Portrait_Kenji_Doihara.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "GENERAL_JAP_KENJI_DOIHARA_DESC"
+			slot = army_chief
+			idea_token = JAP_Kenji_Doihara
+			allowed = {
+				original_tag = JAP
+			}
+			traits = { air_chief_all_weather_1 }
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_JAP_KENJI_DOIHARA_DESC"
+			traits = { substance_abuser }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	
+	JAP_Iwane_Matsui = {
+		name = JAP_Iwane_Matsui
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/JAP/ministers/JAP_Iwane_Matsui.dds"
+				large = "gfx/leaders/JAP/Portrait_Iwane_Matsui.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_JAP_IWANE_MATSUI_DESC"
+			traits = { trait_reckless }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	
+	JAP_Toshinari_Maeda = {
+		name = JAP_Toshinari_Maeda
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/JAP/ministers/JAP_Toshinari_Maeda.dds"
+				large = "gfx/leaders/JAP/Portrait_Toshinari_Maeda.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_JAP_TOSHINARI_MAEDA_DESC"
+			traits = { JAP_samurai_lineage }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	
+	JAP_Kotaro_Nakamura = {
+		name = JAP_Kotaro_Nakamura
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/JAP/ministers/JAP_Kotaro_Nakamura.dds"
+				large = "gfx/leaders/JAP/Portrait_Kotaro_Nakamura.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_JAP_KOTARO_NAKAMURA_DESC"
+			traits = { JAP_samurai_lineage }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	
+	JAP_Rikichi_Ando = {
+		name = JAP_Rikichi_Ando
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/JAP/ministers/JAP_Rikichi_Ando.dds"
+				large = "gfx/leaders/JAP/Portrait_Rikichi_Ando.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_JAP_RIKICHI_ANDO_DESC"
+			traits = { career_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	
+	JAP_Rensuke_Isogai = {
+		name = JAP_Rensuke_Isogai
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/JAP/ministers/JAP_Rensuke_Isogai.dds"
+				large = "gfx/leaders/JAP/Portrait_Rensuke_Isogai.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_JAP_RENSUKE_ISOGAI_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	
+	JAP_Jun_Ushiroku = {
+		name = JAP_Jun_Ushiroku
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/JAP/ministers/JAP_Jun_Ushiroku.dds"
+				large = "gfx/leaders/JAP/Portrait_Jun_Ushiroku.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_JAP_JUN_USHIROKU_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	
+	JAP_Hisaichi_Terauchi = {
+		name = JAP_Hisaichi_Terauchi
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/JAP/ministers/JAP_Hisaichi_Terauchi.dds"
+				large = "gfx/leaders/JAP/Portrait_Hisaichi_Terauchi.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_JAP_HISAICHI_TERAUCHI_DESC"
+			traits = { JAP_samurai_lineage }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	
+	JAP_Yasuji_Okamura = {
+		name = JAP_Yasuji_Okamura
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/JAP/ministers/JAP_Yasuji_Okamura.dds"
+				large = "gfx/leaders/JAP/Portrait_Yasuji_Okamura.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "GENERAL_JAP_YASUJI_OKAMURA_DESC"
+			slot = high_command
+			idea_token = JAP_Yasuji_Okamura
+			ledger = army
+			allowed = {
+				original_tag = JAP
+			}
+			traits = { army_infantry_2 }
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_JAP_YASUJI_OKAMURA_DESC"
+			traits = { JAP_samurai_lineage }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	
+	JAP_Shunroku_Hata = {
+		name = JAP_Shunroku_Hata
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/JAP/ministers/JAP_Shunroku_Hata.dds"
+				large = "gfx/leaders/JAP/Portrait_Shunroku_Hata.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "GENERAL_JAP_SHUNROKU_HATA_DESC"
+			slot = high_command
+			idea_token = JAP_Shunroku_Hata
+			ledger = army
+			allowed = {
+				original_tag = JAP
+			}
+			traits = { army_concealment_2 }
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_JAP_SHUNROKU_HATA_DESC"
+			traits = { JAP_samurai_lineage commando }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	
+	### ADMIRAL ###
+	JAP_Mitsumasa_Yonai = {
+		name = JAP_Mitsumasa_Yonai
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/JAP/ministers/JAP_Mitsumasa_Yonai.dds"
+				large = "gfx/leaders/JAP/Portrait_Mitsumasa_Yonai.dds"
+			}
+		}
+		
+		navy_leader = {
+			desc = "ADMIRAL_JAP_MITSUMASA_YONAI_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 2
+		}
+	}
+	
+	JAP_Isoroku_Yamamoto = {
+		name = JAP_Isoroku_Yamamoto
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/JAP/ministers/JAP_Isoroku_Yamamoto.dds"
+				large = "gfx/leaders/JAP/Portrait_Isoroku_Yamamoto.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "ADMIRAL_JAP_ISOROKU_YAMAMOTO_DESC"
+			slot = high_command
+			idea_token = JAP_Isoroku_Yamamoto
+			ledger = navy
+			allowed = {
+				original_tag = JAP
+			}
+			traits = { navy_chief_naval_aviation_2 }
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		navy_leader = {
+			desc = "ADMIRAL_JAP_ISOROKU_YAMAMOTO_DESC"
+			traits = { bold aviation_enthusiast }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+	
+	JAP_Teijiro_Toyoda = {
+		name = JAP_Teijiro_Toyoda
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/JAP/ministers/JAP_Teijiro_Toyoda.dds"
+				large = "gfx/leaders/JAP/Portrait_Teijiro_Toyoda.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "ADMIRAL_JAP_TEIJIRO_TOYODA_DESC"
+			slot = high_command
+			idea_token = JAP_Teijiro_Toyoda
+			ledger = navy
+			allowed = {
+				original_tag = JAP
+			}
+			traits = { navy_capital_ship_1 }
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		navy_leader = {
+			desc = "ADMIRAL_JAP_TEIJIRO_TOYODA_DESC"
+			traits = { old_guard_navy bold ironside }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+	
+	JAP_Shigeyoshi_Inoue = {
+		name = JAP_Shigeyoshi_Inoue
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/JAP/ministers/JAP_Shigeyoshi_Inoue.dds"
+				large = "gfx/leaders/JAP/Portrait_Shigeyoshi_Inoue.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "ADMIRAL_JAP_SHIGEYOSHI_INOUE_DESC"
+			slot = navy_chief
+			idea_token = JAP_Shigeyoshi_Inoue
+			allowed = {
+				original_tag = JAP
+			}
+			traits = { navy_chief_decisive_battle_2 }
+			cost = 50
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		navy_leader = {
+			desc = "ADMIRAL_JAP_SHIGEYOSHI_INOUE_DESC"
+			traits = {  }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+	
+	JAP_Gengo_Hyakutake = {
+		name = JAP_Gengo_Hyakutake
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/JAP/ministers/JAP_Gengo_Hyakutake.dds"
+				large = "gfx/leaders/JAP/Portrait_Gengo_Hyakutake.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "ADMIRAL_JAP_GENGO_HYAKUTAKE_DESC"
+			slot = high_command
+			idea_token = JAP_Gengo_Hyakutake
+			ledger = navy
+			allowed = {
+				original_tag = JAP
+			}
+			traits = { air_naval_strike_1 }
+			cost = 50
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		navy_leader = {
+			desc = "ADMIRAL_JAP_GENGO_HYAKUTAKE_DESC"
+			traits = {  }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+	
+	JAP_Osami_Nagano = {
+		name = JAP_Osami_Nagano
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/JAP/ministers/JAP_Osami_Nagano.dds"
+				large = "gfx/leaders/JAP/Portrait_Osami_Nagano.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "ADMIRAL_JAP_OSAMI_NAGANO_DESC"
+			slot = navy_chief
+			idea_token = JAP_Osami_Nagano
+			allowed = {
+				original_tag = JAP
+			}
+			traits = { navy_chief_commerce_raiding_1 }
+			cost = 50
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		navy_leader = {
+			desc = "ADMIRAL_JAP_OSAMI_NAGANO_DESC"
+			traits = { old_guard_navy  }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+}

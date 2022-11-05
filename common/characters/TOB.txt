@@ -1,0 +1,36 @@
+characters = {
+	
+	### Country Leader ###
+	
+	TOB_Oueddei_Kichidemi = {
+		name = TOB_Oueddei_Kichidemi
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/00_Generic/Europe/Portrait_generic_BLR_Admiral_01.dds"
+				#Spacing Modifier
+			}
+		}
+		
+		country_leader = {
+			desc = "POLITICS_TOB_OUEDDEI_KICHIDEMI_DESC"
+			ideology = despotism_subtype
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	
+	}
+	
+	### Ministers ###
+	### HEAD OF GOVERNMENT ###
+	
+	### FOREIGN MINISTER ###
+	
+	###	ECONOMY MINISTER ###
+	
+	### FIELD MARSHAL ###
+	
+	### CORPS COMMANDER ###
+	
+	### ADMIRAL ###
+	
+}

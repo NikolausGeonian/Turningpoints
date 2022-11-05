@@ -1,0 +1,383 @@
+
+#ideologies of turningpoints####
+#Far-left: Luxemburgism, AKA Democratic_socialism; ##, AKA Patriotic_socialism.
+#left: social_democratism; social_liberalism.
+#Right: Conservatism; Authoritism.
+#Far-right: Corporatism; Populism.
+
+#		P = { 186 81 81 }			# patriotic_socialism
+#		S = { 207 81 133 }			# social_democratism
+#		U = { 167 120 94 }			# populism
+#		I = { 255 230 0 }			# social_liberalism
+#		A = { 80 120 100 }			# corporatism
+#		B = { 0 0 255 }				# conservatism
+#		R = { 255 50 50 }		 	# democratic_socialism
+#		g = { 176 176 176 }			# authoritarianism
+
+
+ideologies = {
+	
+	democratic_socialism = {
+		
+		
+		types = {
+			reformism_subtype = {}
+			#luxemburgism
+			democratic_socialism_subtype = {}
+			revolutionary_syndicalism_subtype = {}
+			
+		}
+		
+		dynamic_faction_names = {
+			"FACTION_NAME_DS_1"
+			"FACTION_NAME_DS_2"
+			"FACTION_NAME_DS_3"
+			"FACTION_NAME_DS_4"
+			"FACTION_NAME_DS_5"
+		}
+		
+		color = { 255 56 56 }
+		
+		war_impact_on_world_tension = 0.6
+		faction_impact_on_world_tension = 0.5
+		can_be_boosted = no
+		can_collaborate = no
+		ai_communist = yes 
+		
+		rules = {
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_guarantee_other_ideologies = yes
+		}
+		can_host_government_in_exile = yes
+		modifiers = {
+			puppet_cost_factor = -0.3
+			generate_wargoal_tension = 0.40
+			lend_lease_tension = 0.20
+			send_volunteers_tension = 0.20
+		}
+		
+		faction_modifiers = {
+			faction_trade_opinion_factor = 0.30 #plus 30% trade opinion
+		}
+
+	}
+	
+	patriotic_socialism = {
+		types = {
+			liberation_nationalism_subtype = {}
+			#Bukharinism#
+			patriotic_socialism_subtype = {}
+			blanquism_subtype = {}
+		}
+		
+		dynamic_faction_names = {
+			"FACTION_NAME_PS_1"
+			"FACTION_NAME_PS_2"
+			"FACTION_NAME_PS_3"
+			"FACTION_NAME_PS_4"
+			"FACTION_NAME_PS_5"
+		}
+		
+		color = { 151 17 17 }
+		
+		war_impact_on_world_tension = 0.8
+		faction_impact_on_world_tension = 0.5
+		rules = {
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_guarantee_other_ideologies = no
+		}
+		modifiers = {
+			puppet_cost_factor = -0.7
+			generate_wargoal_tension = 0
+			justify_war_goal_when_in_major_war_time = -0.5
+			annex_cost_factor = -0.5
+		}
+		
+		faction_modifiers = {
+		}
+		ai_communist = yes
+	}
+	
+	social_democratism = {
+		types = {
+			constitutional_monarchy_B_subtype = {}
+			#Bernsteinism#
+			social_democratism_subtype = {}
+			liberal_socialism_subtype = {}
+		}
+		
+		dynamic_faction_names = {
+			"FACTION_NAME_SD_1"
+			"FACTION_NAME_SD_2"
+			"FACTION_NAME_SD_3"
+			"FACTION_NAME_SD_4"
+			"FACTION_NAME_SD_5"
+			"FACTION_NAME_SD_6"
+		}
+		
+		color = { 205 0 87 }
+		
+		rules = {
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_guarantee_other_ideologies = yes
+			can_lower_tension = yes
+		}
+		
+		can_host_government_in_exile = yes
+		can_be_boosted = no
+		can_collaborate = no
+		war_impact_on_world_tension = 0.3		# no major danger, remember this this the 40s!
+		faction_impact_on_world_tension = 0.1
+		
+		modifiers = {
+			generate_wargoal_tension = 0.5
+			join_faction_tension = 0.30
+			lend_lease_tension = 0.20
+			send_volunteers_tension = 0.25
+			guarantee_tension = 0.25
+			annex_cost_factor = 0.2
+		}
+		
+		faction_modifiers = {
+			faction_trade_opinion_factor = 0.50 #plus 50% trade opinion
+		}
+		ai_neutral = yes # uses the neutrality AI behaviour
+	}
+	
+	social_liberalism = {
+		types = {
+			constitutional_monarchy_A_subtype = {}
+			social_liberalism_subtype = {}
+			individualist_anarchism_subtype = {}
+			classical_liberalism_subtype = {}
+		}
+		
+		dynamic_faction_names = {
+			"FACTION_NAME_SL_1"
+			"FACTION_NAME_SL_2"
+			"FACTION_NAME_SL_3"
+			"FACTION_NAME_SL_4"
+			"FACTION_NAME_SL_5"
+			"FACTION_NAME_SL_6"
+		}
+		
+		color = { 255 162 0 }
+		
+		rules = {
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_guarantee_other_ideologies = yes
+			can_only_justify_war_on_threat_country = no
+			can_lower_tension = no
+		}
+		
+		can_host_government_in_exile = yes
+		
+		war_impact_on_world_tension = 0.3		# 
+		faction_impact_on_world_tension = 0.1
+		can_be_boosted = no
+		can_collaborate = no
+		modifiers = {
+			generate_wargoal_tension = 0.5
+			join_faction_tension = 0.40
+			lend_lease_tension = 0.10
+			send_volunteers_tension = 0.20
+			guarantee_tension = 0.30
+			puppet_cost_factor = -0.5
+			annex_cost_factor = 0.5
+		}
+		
+		faction_modifiers = {
+			faction_trade_opinion_factor = 0.70 #plus 70% trade opinion
+		}
+		ai_neutral = yes # uses the neutrality AI behaviour
+	}
+	
+	conservatism = {
+	
+		types = {
+			conservatism_subtype = {}
+			constitutional_monarchy_C_subtype = {}
+			semi_constitutional_monarchy_subtype = {}
+			
+			
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_CONSERVATISM_1"
+			"FACTION_NAME_CONSERVATISM_2"
+			"FACTION_NAME_CONSERVATISM_3"
+			"FACTION_NAME_CONSERVATISM_4"
+			"FACTION_NAME_CONSERVATISM_5"
+		}
+		
+		color = { 25 75 130 }
+		
+		
+		war_impact_on_world_tension = 0.3		
+		faction_impact_on_world_tension = 0.2
+		can_be_boosted = no
+		can_collaborate = no
+		can_host_government_in_exile = yes
+		rules = {
+			can_force_government = yes
+			can_puppet = yes
+			can_guarantee_other_ideologies = yes
+			can_send_volunteers = yes
+		}
+		
+		modifiers = {
+			generate_wargoal_tension = 0.5
+			join_faction_tension = 0.2
+			lend_lease_tension = 0.4
+			send_volunteers_tension = 0.4
+			guarantee_tension = 0.4
+			annex_cost_factor = -0.1
+		}
+		
+		faction_modifiers = {
+			faction_trade_opinion_factor = 0.60 
+			#plus 60% trade opinion
+		}
+		ai_neutral = yes # 
+	}
+
+	authoritarianism = {
+	
+		types = {
+			#Authoritarian democracy
+			authoritarianism_subtype  = {}
+			despotism_subtype = {}
+			colony_and_dominion_subtype = {}
+			autocratic_monarchy_subtype = {}
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_AUTHORITARIANISM_1"
+			"FACTION_NAME_AUTHORITARIANISM_2"
+			"FACTION_NAME_AUTHORITARIANISM_3"
+			"FACTION_NAME_AUTHORITARIANISM_4"
+			"FACTION_NAME_AUTHORITARIANISM_5"
+		}
+		
+		color = { 104 104 104 }
+		
+		
+		war_impact_on_world_tension = 0.4		#no major danger
+		faction_impact_on_world_tension = 0.2
+		can_be_boosted = no
+		can_collaborate = no
+		can_host_government_in_exile = yes
+		rules = {
+			can_force_government = no
+			can_puppet = yes
+			can_send_volunteers = yes
+			can_guarantee_other_ideologies = yes
+		}
+		
+		modifiers = {
+			generate_wargoal_tension = 0.6
+			join_faction_tension = 0.3
+			lend_lease_tension = 0.4
+			send_volunteers_tension = 0.5
+			guarantee_tension = 0.6
+			annex_cost_factor = -0.2
+		}
+		
+		faction_modifiers = {
+			faction_trade_opinion_factor = 0.30 
+			#plus 30% trade opinion
+		}
+		ai_neutral = yes 
+		# 
+	}
+	
+	corporatism = {
+	
+		types = {
+			oligarchism_subtype = {}
+			#oligopolism_subtype
+			sorelianism_subtype = {}
+			#Integralism and Italian fascism
+			corporatism_subtype = {}
+			national_syndicalism_subtype = {}
+			rexism_subtype = {}
+			tenno_subtype = {}
+		}
+		
+		dynamic_faction_names = {
+			"FACTION_NAME_CORPORATISM_1"
+			"FACTION_NAME_CORPORATISM_2"
+			"FACTION_NAME_CORPORATISM_3"
+			"FACTION_NAME_CORPORATISM_4"
+			"FACTION_NAME_CORPORATISM_5"
+		}
+		
+		color = { 45 45 45 }
+		
+		war_impact_on_world_tension = 1.0			
+		faction_impact_on_world_tension = 1.0
+		can_be_boosted = no
+		can_collaborate = no
+		rules = {
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_guarantee_other_ideologies = no
+		}
+		
+		modifiers = {
+			justify_war_goal_when_in_major_war_time = -0.70
+			puppet_cost_factor = -0.5
+			generate_wargoal_tension = 0
+			annex_cost_factor = -0.5
+		}
+		ai_fascist = yes # uses the fascist AI behaviour
+	}
+		
+	populism = {
+	
+		types = {
+			popular_monarchy_subtype = {}
+			populism_subtype = {}
+			demagogism_subtype = {}#which will be adopted in America
+			ochlocracy_subtype = {}
+		}
+		
+		dynamic_faction_names = {
+			"FACTION_NAME_POPULISM_1"
+			"FACTION_NAME_POPULISM_2"
+			"FACTION_NAME_POPULISM_3"
+			"FACTION_NAME_POPULISM_4"
+			"FACTION_NAME_POPULISM_5"
+		}
+		
+		color = { 69 47 3 }
+		
+		war_impact_on_world_tension = 0.9			
+		faction_impact_on_world_tension = 0.5
+		can_be_boosted = no
+		can_collaborate = no
+		rules = {
+			can_force_government = yes
+			can_send_volunteers = no
+			can_puppet = yes
+			can_guarantee_other_ideologies = no
+		}
+		
+		modifiers = {
+			justify_war_goal_when_in_major_war_time = -0.9
+			puppet_cost_factor = -0.1
+			generate_wargoal_tension = 0.1
+		}
+		ai_fascist = yes # uses the fascist AI behaviour
+	}
+	
+	}

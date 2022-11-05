@@ -1,0 +1,202 @@
+﻿capital = 341 #
+
+#oob = "OTE_1936"
+#if = {
+#	limit = {
+#		has_dlc = "Man the Guns"
+#	}
+#	set_naval_#oob = "OTE_1936_naval"
+#	else = {
+#	}
+#}
+#General#
+set_research_slots = 3
+set_stability = 0.50
+set_war_support = 0.8
+set_fuel_ratio = 1.0
+set_convoys = 200
+
+### Country Leader ###
+
+recruit_character = OTE_Abdulmejid_II
+
+### Ministers ###
+
+recruit_character = OTE_Mustafa_Kemal
+recruit_character = OTE_Nuri_Pasha
+recruit_character = OTE_Sultanzade_Sabahaddin
+recruit_character = OTE_Hasan_Fehmi
+recruit_character = OTE_Ahmet_Ferit_Tek
+recruit_character = OTE_Abdulhalik_Renda
+recruit_character = OTE_Ali_Fuat_Cebesoy
+recruit_character = OTE_Celal_Bayar
+recruit_character = OTE_Fethi_Okyar
+recruit_character = OTE_Ismet_Bey
+recruit_character = OTE_Husrev_Gerede
+
+### General# ###
+
+recruit_character = OTE_Wehib_Pasha
+recruit_character = OTE_Fahreddin_Pasha
+recruit_character = OTE_Kavakli_Fevzi_Pasha
+recruit_character = OTE_Yusuf_al_Azma
+recruit_character = OTE_Nihat_Anilmis
+recruit_character = OTE_Asim_Gunduz
+recruit_character = OTE_Refet_Bey
+recruit_character = OTE_Nafiz_Gurman
+recruit_character = OTE_Sefik_Aker
+recruit_character = OTE_Halil_Kut
+recruit_character = OTE_Ali_ihsan_Sabis
+recruit_character = OTE_Fahrettin_Altay_Pasha
+recruit_character = OTE_Cevat_Abbas_Pasha
+recruit_character = OTE_Muhiddin_Pasha
+recruit_character = OTE_Mustafa_Mumin_Aksoy
+recruit_character = OTE_Kazim_Orbay
+recruit_character = OTE_Kazim_Fikri_Pasha
+recruit_character = OTE_Kazim_Dirik
+recruit_character = OTE_Jaafar_Al_Askari
+recruit_character = OTE_Hayrullah_Fisek
+recruit_character = OTE_Dadayli_Halit_Bey
+recruit_character = OTE_Cafer_Tayyar
+recruit_character = OTE_Musa_Kazim_Karabekir
+recruit_character = OTE_Selahattin_Adil_Pasha
+recruit_character = OTE_Rushdi_Pasha
+recruit_character = OTE_Ali_Sadullah_Pasha
+recruit_character = OTE_Halit_Pasha
+
+### Admirals ###
+
+recruit_character = OTE_Huseyin_Rauf_Orbay
+recruit_character = OTE_Muzaffer_Adil_Bey
+recruit_character = OTE_Fuat_Husnu_Pasha
+recruit_character = OTE_Mehmet_Ali_Ulgen
+recruit_character = OTE_Mehmet_Fahri_Engin_pasha
+recruit_character = OTE_Samipasazade_Necip_Enver
+recruit_character = OTE_Sukur_Okan_Pasha
+
+### Pilots ###
+
+recruit_character = OTE_Izmirli_Ahmet_Ali
+
+# National Idea #
+add_ideas = {
+	OTE_OPDA
+	OTE_Mustafa_Kemal
+	OTE_Ismet_Bey_minister
+}
+
+# Starting tech #
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	support_weapons = 1
+	tech_recon = 1
+	tech_engineers = 1
+	tech_support = 1		
+	tech_mountaineers = 1
+	gw_artillery = 1
+	basic_train = 1
+}
+
+if = {
+	limit = {
+		has_dlc = "Battle for the Bosporus"
+	}
+	set_technology = {
+		camelry = 1
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+	}
+	
+	else = {
+		set_technology = {
+			gwtank = 1
+			basic_light_tank = 1
+		}
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_battery = 1
+		basic_torpedo = 1
+		coastal_defense_ships = 1
+		mtg_transport = 1
+	}
+	#set_naval_oob = "TUR_1936_naval"
+	
+	else = {
+		set_technology = {
+			early_submarine = 1
+			early_destroyer = 1
+			early_light_cruiser = 1
+			early_battleship = 1
+			early_battlecruiser = 1
+			transport = 1
+		}
+	}
+}
+
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+		#set_air_oob = "TUR_1936_air_bba"
+		set_technology = {
+			aa_lmg = 1
+			engines_1 = 1
+			early_bombs = 1
+			aircraft_construction = 1
+			iw_small_airframe = 1
+			basic_small_airframe = 1
+			iw_medium_airframe = 1
+			iw_large_airframe = 1
+		}
+	else = {
+		#set_air_oob = "TUR_1936_air_legacy"
+		set_technology = {
+			early_fighter = 1
+			early_bomber = 1
+			CAS1 = 1
+		}
+	}
+}
+
+# Starting Import #
+
+# Politics #
+set_popularities = {
+	conservatism = 42
+	authoritarianism = 20
+	social_democratism = 3
+	patriotic_socialism = 0
+	corporatism = 0
+	democratic_socialism = 0
+	populism = 2
+	social_liberalism = 33
+}
+set_politics = {
+	ruling_party = conservatism
+	last_election = "1919.1.3"
+	election_frequency = 48
+	elections_allowed = no
+}

@@ -1,0 +1,781 @@
+ideas = {
+
+	country = {
+	
+		GER_general_staff = {
+			allowed = {
+				original_tag = GER
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				army_org_Factor = 0.05
+				planning_speed = 0.25
+			}
+		}
+		
+		GER_victors_of_greatwar = {
+			allowed = {
+				original_tag = GER
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				surrender_limit = -0.3
+				war_support_factor = -0.3
+				army_morale_factor = -0.2
+				conscription_factor = -0.25
+			}
+		}
+		
+		
+	}
+	
+	# TECHNOLOGY
+	tank_manufacturer = { 
+	
+		designer = yes	
+		
+		GER_porsche = {
+			
+			allowed = {
+				
+				original_tag = GER
+				
+			}
+			
+			research_bonus = {
+				
+				armor = 0.15
+				
+			}
+			
+			traits = { heavy_tank_manufacturer }
+			
+			ai_will_do = {
+				
+				factor = 10
+				
+			}
+			
+		}
+		
+		GER_henschel = {
+			
+			allowed = {				
+				original_tag = GER				
+			}
+			
+			research_bonus = {
+				
+				armor = 0.15
+				
+			}
+			
+			traits = { fast_tank_manufacturer }
+			
+			ai_will_do = {
+				
+				factor = 1
+				
+			}
+		}
+		
+		GER_man = {
+			
+			allowed = {
+				
+				original_tag = GER
+				
+			}
+			
+			research_bonus = {
+				
+				armor = 0.15
+				
+			}
+			
+			traits = { medium_tank_manufacturer }
+			
+			ai_will_do = {
+				
+				factor = 1
+				
+			}
+			
+		}
+		
+		GER_BMW = {
+			
+			allowed = {				
+				original_tag = GER				
+			}
+			
+			research_bonus = {		
+				armor = 0.15				
+			}
+			
+			traits = { heavy_tank_manufacturer }
+			
+			ai_will_do = {				
+				factor = 1				
+			}
+			
+		}
+		
+		GER_Benz = {
+			
+			allowed = {
+				
+				original_tag = GER
+				
+			}
+			
+			research_bonus = {
+				
+				armor = 0.15
+				
+			}
+			
+			traits = { medium_tank_manufacturer }
+			
+			ai_will_do = {
+				
+				factor = 1
+				
+			}
+			
+		}
+		
+	}
+	
+	naval_manufacturer = { 
+		
+		designer = yes
+		
+		GER_germaniawerft = {
+			allowed = {
+				original_tag = GER
+			}		
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			equipment_bonus = {
+				
+			}	
+			traits = { atlantic_fleet_naval_manufacturer }
+		}
+		
+		GER_blohm_und_voss = {
+
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { raiding_fleet_naval_manufacturer }
+			
+			equipment_bonus = {
+				
+			}
+			
+		}	
+		
+		GER_Norddeutscher_Lloyd = {
+			
+			allowed = {
+				original_tag = GER
+			}		
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			equipment_bonus = {
+				
+			}	
+			traits = { convoy_escort_naval_manufacturer }
+		}
+		
+		GER_Bremer_Vulkan = {
+			
+			allowed = {
+				original_tag = GER
+			}		
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			equipment_bonus = {
+				
+			}	
+			traits = { convoy_escort_naval_manufacturer }
+		}
+	
+		GER_lurssen = {
+			
+			allowed = {
+				original_tag = GER
+			}		
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			equipment_bonus = {
+				
+			}	
+			
+			traits = { atlantic_fleet_naval_manufacturer }
+			
+		}
+		
+		GER_Wilhelmshaven_Imperial_Shipyard = {
+			
+			allowed = {
+				original_tag = GER
+			}		
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			equipment_bonus = {
+				
+			}	
+			
+			traits = { atlantic_fleet_naval_manufacturer }
+			
+		}
+	}
+	
+	aircraft_manufacturer = { 
+			
+		designer = yes
+		
+		GER_messerschmitt = {
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { light_aircraft_manufacturer }
+			
+			equipment_bonus = {
+				
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		GER_Klemm_Leichtflugzeugbau = {
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { light_aircraft_manufacturer }
+			
+			equipment_bonus = {
+				
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		GER_junkers = { 
+			allowed = {
+				original_tag = GER
+			}
+						
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { CAS_manufacturer }
+			
+			equipment_bonus = {
+				
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+		
+		GER_focke_wulf = { 
+
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+						
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { medium_aircraft_manufacturer }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		GER_heinkel = {
+
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { heavy_aircraft_manufacturer }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		GER_dornier = {
+
+			allowed = {
+				original_tag = GER
+			}
+			
+						
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { naval_aircraft_manufacturer }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+
+
+	}
+	
+	industrial_concern = {
+		
+		GER_aeg = {
+			allowed = {
+				original_tag = GER
+				}
+			traits = { electronics_concern }
+			modifier = {
+				production_speed_radar_station_factor = 0.15
+			}
+			research_bonus = {
+				electronics = 0.1
+			}
+		}
+		
+		GER_Bayer = {
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			research_bonus = {
+				industry = 0.05
+				synth_resources = 0.15
+			}
+			
+			traits = { refinery_concern }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		GER_Wintershall = {
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			research_bonus = {
+				industry = 0.05
+				synth_resources = 0.15
+			}
+			
+			traits = { refinery_concern }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		GER_Linde = {
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			research_bonus = {
+				industry = 0.05
+				synth_resources = 0.15
+			}
+			
+			traits = { refinery_concern }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		GER_BASF = {
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			research_bonus = {
+				industry = 0.05
+				synth_resources = 0.15
+			}
+			
+			traits = { refinery_concern }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		GER_krupp = {
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			research_bonus = {
+				industry = 0.15
+				
+			}
+			ai_will_do = {
+				factor = 2
+			}
+			
+			traits = { industrial_concern  konzern }
+		}
+		
+		GER_Hoesch = {
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			research_bonus = {
+				industry = 0.15
+				
+			}
+			ai_will_do = {
+				factor = 2
+			}
+			
+			traits = { konzern industrial_concern }
+		}
+
+		GER_siemens = {
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			research_bonus = {
+				electronics = 0.15
+			}
+			
+			traits = { electronics_concern }
+		}	
+		
+		GER_DEMAG = {
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			research_bonus = {
+				electronics = 0.15
+			}
+			
+			traits = { electronics_concern }
+		}
+	
+	}
+	
+	materiel_manufacturer = {
+		
+		designer = yes
+		
+		GER_rheinmetall = {
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			research_bonus = {
+				artillery = 0.15
+			}
+			
+			traits = { artillery_manufacturer }
+			
+			modifier = {
+				# +10% arty/at/aa research speed
+			}
+		}
+		
+		GER_Sauer_und_Sohn = {
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			research_bonus = {
+				artillery = 0.15
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+				
+			modifier = {
+			}
+			
+		}
+		
+		GER_Carl_Walther = {
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			research_bonus = {
+				artillery = 0.15
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+				
+			modifier = {
+			}
+			
+		}
+		
+		GER_mauser = {
+
+			allowed = {
+				original_tag = GER
+			}
+			
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+			
+			ai_will_do = {
+				factor = 2
+			}
+		}
+		
+		GER_opel = {	
+			allowed = {
+				original_tag = GER
+			}
+			research_bonus = {
+				motorized_equipment = 0.15
+			}
+			traits = { motorized_equipment_manufacturer }
+		}
+	
+	}
+	
+	theorist = {
+		
+		GER_Abraham_Esau = {
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			modifier = {
+				production_speed_radar_station_factor = 0.15
+			}
+			
+			research_bonus = {
+				electronics = 0.15
+				nuclear = 0.1
+			}
+			
+			traits = { nuclear_scientist  }
+		}
+		
+		heisenberg = {
+
+			
+			allowed = {
+				original_tag = GER
+			}
+		
+			research_bonus = {
+				nuclear = 0.15
+			}
+			
+			traits = { nuclear_scientist }
+		}
+
+		wolfram_von_richthofen = {
+
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			cost = 250
+			
+			research_bonus = {
+				cat_battlefield_support = 0.15
+			}
+			
+			traits = { close_air_support_proponent }
+		}
+		
+		walther_wever = {
+
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			research_bonus = {
+				air_doctrine = 0.10
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+		
+		ernst_udet = {
+
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			research_bonus = {
+				air_doctrine = 0.10
+			}
+			
+			traits = { dive_bomber }
+		}
+		
+	}	
+		
+	# MILITARY
+	
+	air_chief = {
+		
+		ritter_von_greim = {
+
+			
+			allowed = {
+				original_tag = GER
+			}
+			available = {
+				has_completed_focus = GER_air_innovation
+			}
+						
+			traits = { air_chief_all_weather_2 }
+			
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+		
+		albert_kesselring = {
+
+			
+			allowed = {
+				original_tag = GER
+			}
+						
+			traits = { air_chief_reform_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	high_command = {
+		
+		erhard_milch = {
+
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			traits = { air_bomber_interception_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		kurt_student = {
+
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			traits = { air_airborne_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+		
+		erich_bey = {
+
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			traits = { navy_naval_air_defense_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		 
+	}
+}

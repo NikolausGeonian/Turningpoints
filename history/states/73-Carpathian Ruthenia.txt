@@ -1,0 +1,21 @@
+state={
+	id=73
+	name="STATE_73"
+	manpower = 854300
+	
+	state_category = rural
+	
+	history={
+		owner = HAB
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 1
+		}
+		add_core_of = HAB
+	}
+
+	provinces={
+		3548 6571 9563 11536 11691 
+	}
+}

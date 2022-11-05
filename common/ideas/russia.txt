@@ -1,0 +1,218 @@
+ideas = {
+	#General
+	country = {
+		
+		RUS_Development_Planning_Commission = {
+	
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.2
+				local_resources_factor = 0.2
+				political_power_cost = 1.2
+			}
+		}
+		
+	}
+
+	# TECHNOLOGY
+	naval_manufacturer = {
+		designer = yes
+		
+		RUS_Kronstadt_Marine_Plant = {
+			
+			allowed = {
+				original_tag = RUS
+			}		
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			equipment_bonus = {
+				
+			}	
+			traits = { atlantic_fleet_naval_manufacturer }
+		}
+		
+	}
+	
+	materiel_manufacturer = {
+		designer = yes
+		
+		RUS_Tula_Arms_plant = {
+						
+			allowed = {
+				original_tag = RUS
+			}
+			
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+			
+			traits = {
+				infantry_equipment_manufacturer
+			}
+			
+			modifier = {
+			}
+		}
+		
+		RUS_gaz = {
+			
+			allowed = {
+				original_tag = RUS
+			}
+			
+			research_bonus = {
+				motorized_equipment = 0.15
+				mot_rockets = 0.50
+			}
+			
+			traits = {
+				motorized_equipment_manufacturer
+			}
+			
+			modifier = {
+			}
+		}
+		
+	}
+	
+	tank_manufacturer = {
+		
+		designer = yes
+		
+		RUS_Stalingrad_Tractor_Plant = {
+			allowed = {
+				original_tag = RUS
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = {
+				fast_tank_manufacturer
+			}
+			modifier = {
+			}
+		}
+		
+		RUS_Obukhov_State_Plant = {
+			allowed = {
+				original_tag = RUS
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = {
+				fast_tank_manufacturer
+			}
+			modifier = {
+			}
+		}
+		
+	}
+	
+	aircraft_manufacturer = {
+		
+		designer = yes
+		
+		RUS_MiG = {
+			
+			allowed = {
+				original_tag = RUS
+			}
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = {
+				light_aircraft_manufacturer
+			}
+			
+			modifier = {
+			}
+		}
+		
+		RUS_Ilyushin_design_bureau = {
+		
+			allowed = {
+				original_tag = RUS
+			}
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = {
+				medium_aircraft_manufacturer
+			}
+			
+			modifier = {
+			}
+		}
+		
+		
+		
+	}
+
+	industrial_concern = {
+		
+		RUS_Volga_Ural_Oil_and_Gas = {
+			allowed = {
+				original_tag = RUS
+			}
+			traits = {
+				refinery_concern
+			}
+			modifier = {
+			}
+			research_bonus = {
+				industry = 0.05
+				synth_resources = 0.15
+			}
+		}
+		
+		RUS_SDPC = {
+			allowed = {
+				original_tag = RUS
+			}
+			traits = {
+				industrial_concern
+			}
+			modifier = {
+			}
+			research_bonus = {
+				industry = 0.15
+			}
+		}
+		
+		RUS_Krasny_Oktyabr = {
+			allowed = {
+				original_tag = RUS
+			}
+			traits = {
+				industrial_concern
+			}
+			modifier = {
+			}
+			research_bonus = {
+				industry = 0.15
+			}
+		}
+	}
+
+}
+		

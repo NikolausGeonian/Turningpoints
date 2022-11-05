@@ -1,0 +1,31 @@
+state={
+	id=818
+	name="STATE_818"
+	manpower = 2314964
+	state_category = large_town
+	resources={
+		rubber=77
+		steel=10
+		tungsten=120
+		aluminium = 11
+	}
+	history={
+		owner = SGR
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
+			10297 = {
+				naval_base = 5
+			}
+		}
+		victory_points = {
+			10297 5 
+		}
+		add_core_of = SGR
+	}
+
+	provinces={
+		1376 4384 10297
+	}
+}

@@ -1,0 +1,27 @@
+state={
+	id=71
+	name="STATE_71"
+	manpower = 1317800
+	
+	state_category = town
+	resources={
+		steel = 6
+		chromium = 2
+	}
+	
+	history={
+		victory_points = {
+			3581 5
+		}
+		owner = HAB
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+		}
+		add_core_of = HAB
+	}
+
+	provinces={
+		555 581 3550 3565 3581 6573 6586 6604 9537 11554 
+	}
+}

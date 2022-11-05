@@ -1,0 +1,100 @@
+
+is_enemy_ideology = {
+	OR = {
+		AND = {
+			OR = {
+			has_government = corporatism
+			has_government = populism
+			}
+			ROOT = {
+				OR = {
+					has_government = democratic_socialism
+					has_government = patriotic_socialism
+					has_government = social_democratism
+					has_government = social_liberalism
+					has_government = conservatism
+
+				}
+			}
+		}
+		AND = {
+			OR = {
+			has_government = democratic_socialism
+			has_government = patriotic_socialism
+			}
+			ROOT = {
+				OR = {
+					has_government = corporatism
+					has_government = populism
+					has_government = authoritarianism
+					has_government = social_liberalism
+					has_government = conservatism
+
+				}
+			}
+		}
+		AND = {
+			OR = {
+			has_government = conservatism
+			has_government = social_liberalism
+			}
+			ROOT = {
+				OR = {
+					has_government = populism
+					has_government = democratic_socialism
+					has_government = patriotic_socialism
+					has_government = corporatism
+				}
+			}
+		}
+		AND = {
+			has_government = authoritarianism
+			ROOT = {
+				OR = {
+					has_government = populism
+					has_government = democratic_socialism
+					has_government = patriotic_socialism
+				}
+			}
+		}
+		AND = {
+			has_government = social_democratism
+			ROOT = {
+				OR = {
+					has_government = populism
+					has_government = corporatism
+					has_government = patriotic_socialism
+				}
+			}
+		}
+	}
+}
+
+has_socialist_government = {
+	custom_trigger_tooltip = {
+		tooltip = TP_is_socialist
+		OR = {
+			has_government = democratic_socialism
+			has_government = patriotic_socialism
+			AND = {
+				has_government = social_democratism
+				has_country_flag = soc_dems_are_socialists
+			}
+		}
+	}
+}
+
+not_has_socialist_government = {
+	custom_trigger_tooltip = {
+		tooltip = TP_is_not_socialist
+		NOT = {
+			has_government = democratic_socialism
+			has_government = patriotic_socialism
+			AND = {
+				has_government = social_democratism
+				has_country_flag = soc_dems_are_socialists
+			}
+		}
+	}
+}
+

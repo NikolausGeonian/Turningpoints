@@ -1,0 +1,556 @@
+ideas = {
+	#General
+	country = {
+		
+		FRA_sour_loser = {
+			name = FRA_sour_loser
+			picture = FRA_sour_loser
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = 0.1
+				surrender_limit = 0.1
+			}
+		}
+		
+		FRA_christ_the_king = {
+			name = FRA_christ_the_king
+			picture = FRA_christ_the_king
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+			}
+		}
+		
+		FRA_unpopular_monarchy = {
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.7
+				war_support_factor = -0.5
+				surrender_limit = -0.7
+				political_power_cost = 0.5
+			}
+		}
+		
+		
+		
+		FRA_disjointed_government = {
+		picture = generic_disjointed_government
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_cost = 0.2
+				stability_factor = -0.20
+			}
+		}
+		
+		FRA_Aboriginal_Act_1 = {
+			picture = FRA_Aboriginal_Act
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.1
+				political_power_cost = -0.1
+				non_core_manpower = 0.25
+			}
+		}
+		
+		FRA_Troupes_Coloniales = {
+			
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = 0.05
+				army_core_defence_factor = 0.1
+			}
+		}
+	}
+	
+	# POLITICAL
+	
+	# TECHNOLOGY
+	naval_manufacturer = {
+		
+		designer = yes
+		
+		FRA_fcm = {
+			# Société Nouvelle des Forges et Chantiers de la Méditerranée
+			allowed = {
+				original_tag = FRA
+			}			
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			traits = { 
+				raiding_fleet_naval_manufacturer
+			}
+		}
+		
+		FRA_Ateliers_et_Chantiers_Penhoet = {
+			# Ateliers et Chantiers de Penhoët
+			allowed = {
+				original_tag = FRA
+			}			
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			traits = { 
+				convoy_escort_naval_manufacturer
+			}
+		}
+		
+		FRA_oran_construction_navale = {
+			visible = {
+				controls_state = 459
+			}
+			allowed = {
+				OR = {
+					original_tag = FRA
+					original_tag = ALG
+				}
+			}
+			available = {
+				controls_state = 459
+			}
+			traits = {
+				mediterranean_naval_manufacturer
+			}
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+		}
+		
+		FRA_ateliers_de_la_loire = {
+			# Ateliers et Chantiers de la Loire
+			visible = {
+				controls_state = 30
+			}
+			allowed = { 
+				OR = {
+					original_tag = FRA
+					original_tag = NOM
+				}
+			}
+			available = {
+				controls_state = 30
+			}
+			traits = { 
+				atlantic_fleet_naval_manufacturer
+			}
+			research_bonus = {
+				naval_equipment = 0.1
+			}
+		}
+		
+		FRA_Forges_et_Chantiers_de_la_Gironde = {
+			visible = {
+				controls_state = 31
+			}
+			allowed = { 
+					original_tag = FRA
+			}
+			available = {
+				controls_state = 31
+			}
+			traits = { 
+				atlantic_fleet_naval_manufacturer
+			}
+			research_bonus = {
+				naval_equipment = 0.1
+			}
+		}
+		
+		FRA_Ateliers_et_Chantiers_de_France = {
+			visible = {
+				controls_state = 29
+			}
+			allowed = { 
+				OR = {
+					original_tag = FRA
+					original_tag = NET
+				}
+			}
+			available = {
+				controls_state = 29
+			}
+			traits = { 
+				raiding_fleet_naval_manufacturer
+			}
+			research_bonus = {
+				naval_equipment = 0.1
+			}
+		}
+	}
+	
+	materiel_manufacturer = {
+		
+		designer = yes
+		
+		FRA_Delahaye = {
+			
+			allowed = {
+				original_tag = FRA
+			}
+			
+			research_bonus = {
+				motorized_equipment = 0.15
+			}
+			
+			traits = {
+				motorized_equipment_manufacturer
+			}
+			
+			modifier = {
+			}
+		}
+		
+		FRA_Somua = {
+		
+			allowed = {
+				original_tag = FRA
+			}
+
+			research_bonus = {
+				motorized_equipment = 0.15
+			}
+			
+			traits = {
+				motorized_equipment_manufacturer
+			}
+
+		}
+		
+		FRA_Schneider = {
+						
+			allowed = {
+				original_tag = FRA
+			}		
+			
+			research_bonus = {
+				artillery = 0.15
+			}
+			
+			traits = {
+				artillery_manufacturer
+			}
+		}
+		
+		FRA_mas = {
+						
+			allowed = {
+				original_tag = FRA
+			}
+						
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+			
+			traits = {
+				infantry_equipment_manufacturer
+			}
+		}
+	}
+	
+	aircraft_manufacturer = { 
+			
+		designer = yes
+		
+		FRA_Amiot = {
+						
+			allowed = {
+				original_tag = FRA
+			}
+						
+			research_bonus = {
+				air_equipment = 0.1
+			}
+			
+			traits = { heavy_aircraft_manufacturer }
+		}
+		
+		FRA_Nieuport_Delage = {
+						
+			allowed = {
+				original_tag = FRA
+			}
+						
+			research_bonus = {
+				air_equipment = 0.1
+			}
+			
+			traits = { medium_aircraft_manufacturer }
+		}
+		
+		FRA_Morane_Saulnier = {
+			
+			allowed = {
+				original_tag = FRA
+			}
+			
+			research_bonus = {
+				air_equipment = 0.1
+			}
+			
+			traits = { light_aircraft_manufacturer }
+		}
+		
+		FRA_Levasseur = {
+						
+			allowed = {
+				original_tag = FRA
+			}
+						
+			research_bonus = {
+				air_equipment = 0.1
+			}
+			
+			traits = { naval_aircraft_manufacturer }
+		}
+		
+	}
+	
+	tank_manufacturer = {
+
+		designer = yes
+	
+		FRA_renault = {
+
+			allowed = {
+				original_tag = FRA
+			}
+						
+			research_bonus = {
+				armor = 0.15
+			}
+			
+
+			traits = {
+				heavy_tank_manufacturer
+			}
+		}
+	
+		FRA_AMX = {
+				
+			allowed = {
+				original_tag = FRA
+			}
+						
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = {
+				fast_tank_manufacturer
+			}
+		}
+		
+		FRA_Hotchkiss = {
+				
+			allowed = {
+				original_tag = FRA
+			}
+						
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = {
+				infantry_tank_manufacturer
+			}
+		}
+		
+		FRA_panhard = {
+			
+			available = {
+				
+			}
+			
+			allowed = {
+				original_tag = FRA
+				has_dlc = "La Resistance"
+			}
+						
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = {
+				armored_car_manufacturer
+			}
+		}
+		
+		FRA_atelier_puteaux = {
+
+			available = {
+				
+			}
+						
+			allowed = {
+				original_tag = FRA
+			}
+						
+			research_bonus = {
+				armor = 0.15
+			}
+			
+
+			traits = { medium_tank_manufacturer }
+		}
+		
+		FRA_De_Dion_Bouton = {
+
+			available = {
+				
+			}
+						
+			allowed = {
+				original_tag = FRA
+			}
+						
+			research_bonus = {
+				armor = 0.15
+			}
+			
+
+			traits = { medium_tank_manufacturer }
+		}
+		
+	}
+	
+	industrial_concern = {	
+		
+		FRA_famh = {
+						
+			allowed = {
+				original_tag = FRA
+			}
+						
+			research_bonus = {
+				industry = 0.15
+			}
+			
+			traits = { industrial_concern }
+		}
+		
+		FRA_CAF = {
+						
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				has_completed_focus = FRA_france_in_africa
+			}
+						
+			research_bonus = {
+				industry = 0.15
+			}
+			modifier = {
+				fuel_gain_factor = 0.05
+				production_speed_rail_way_factor = 0.1
+				production_speed_infrastructure_factor = 0.1
+			}
+			
+			traits = { industrial_concern }			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		FRA_Air_liquide = {
+						
+			allowed = {
+				original_tag = FRA
+			}		
+			research_bonus = {
+				synth_resources = 0.1
+			}
+			traits = { refinery_concern }		
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		FRA_Motul = {
+						
+			allowed = {
+				original_tag = FRA
+			}		
+			research_bonus = {
+				synth_resources = 0.1
+			}
+			traits = { refinery_concern }		
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}	
+	
+	# GOVERNMENT
+	
+	economy_minister = {	
+		
+		
+		FRA_Francois_de_La_Rocque = {				
+			allowed = {
+				original_tag = "FRA"
+			}		
+			available = {
+				OR = {
+						has_government = social_democratism
+						has_government = democratic_socialism
+				}
+			}
+			traits = {  }	
+			ai_will_do = {
+				factor = 0		
+			}
+		}
+		
+	
+	}
+}

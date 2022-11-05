@@ -1,0 +1,108 @@
+ideas = {
+	#General
+	country = {
+		
+		RKA_Reichskolonialamt = {
+			allowed = {
+				original_tag = KAM
+				original_tag = DOA
+				original_tag = TOG
+				original_tag = SWA
+				original_tag = DNG
+				original_tag = TUN
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				ai_call_ally_desire_factor = -2000
+				conscription = 0.05
+				conscription_factor = -0.85
+			}
+		}
+		
+	}
+	# POLITICAL
+	head_of_government = {
+	
+		}
+	# TECHNOLOGY
+	
+	naval_manufacturer = {
+	
+		designer = yes
+	}
+	
+	materiel_manufacturer = {
+		
+		designer = yes
+	}
+	
+	tank_manufacturer = {
+		
+		designer = yes
+		
+	}
+	
+	industrial_concern = {
+		
+		RKA_Kamerun_Entwicklungsgesellschaft = {
+			
+			allowed = {
+				original_tag = KAM
+			}
+
+			research_bonus = {
+				industry = 0.1
+			}
+			
+			traits = { 
+				chartered
+			}
+			
+			modifier = {
+				industrial_capacity_factory = 0.05
+			}
+		}
+		
+		RKA_East_African_Railway = {
+			
+			allowed = {
+				original_tag = DOA
+			}
+
+			research_bonus = {
+				industry = 0.1
+			}
+			
+			traits = { 
+				chartered
+			}
+			
+			modifier = {
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		
+		RKA_Telefunken = {
+			
+			allowed = {
+				original_tag = TOG
+			}
+
+			research_bonus = {
+				electronics = 0.05
+			}
+			
+			traits = { 
+				electronics_concern
+			}
+			
+			modifier = {
+			}
+		}
+	
+	}
+}
+		

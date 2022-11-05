@@ -1,0 +1,137 @@
+﻿capital = 16
+
+#oob = "FRA_1936"
+
+set_research_slots = 4
+set_stability = 0.1
+set_war_support = 0.05
+set_convoys = 200
+
+## 	POLITICAL FIGURE
+
+### Country Leader ###
+recruit_character = FRA_Georges_Valois
+recruit_character = FRA_Jean_III
+recruit_character = FRA_Franchet_d_Esperey
+recruit_character = FRA_Marcel_Cachin
+### Corps Commander ###
+recruit_character = FRA_Maurice_Gamelin
+recruit_character = FRA_Maxime_Weygand
+recruit_character = FRA_Adolphe_Guillaumat
+recruit_character = FRA_Alphonse_Joseph_Georges
+recruit_character = FRA_Philippe_Petain
+recruit_character = FRA_Alphonse_Juin
+recruit_character = FRA_Jean_de_Lattre_de_Tassigny
+recruit_character = FRA_Henri_Giraud
+recruit_character = FRA_Charles_Huntziger
+recruit_character = FRA_Milan_Rastislav_Stefanik
+recruit_character = FRA_Paul_Legentilhomme
+recruit_character = FRA_Aubert_Frere
+recruit_character = FRA_Henri_Dentz
+recruit_character = FRA_Georges_Catroux
+recruit_character = FRA_Jean_Bouffet
+recruit_character = FRA_Gaston_Billotte
+recruit_character = FRA_Gabriel_Bougrain
+recruit_character = FRA_Rene_Prioux
+recruit_character = FRA_Andre_Corap
+recruit_character = FRA_Henri_Niessel
+recruit_character = FRA_Paul_Beynet
+recruit_character = FRA_Paul_Azan
+recruit_character = FRA_Louis_Koeltz
+recruit_character = FRA_Stanislas_Louis_de_Bessey_de_Contenson
+recruit_character = FRA_Jean_Barrau
+recruit_character = FRA_Yves_de_Boisboissel
+### Admiral ###
+recruit_character = FRA_Francois_Darlan
+recruit_character = FRA_Emile_Muselier
+recruit_character = FRA_Jean_Pierre_Esteva
+recruit_character = FRA_Jean_Marie_Charles_Abrial
+recruit_character = FRA_Jean_de_Laborde
+recruit_character = FRA_Gabriel_Auphan
+### Ministers ###
+recruit_character = FRA_Gaston_Doumergue
+recruit_character = FRA_Charles_Maurras
+recruit_character = FRA_Triumviratus
+recruit_character = FRA_Maurice_Pujo
+recruit_character = FRA_Pierre_Laval
+recruit_character = FRA_Abel_Bonnard
+recruit_character = FRA_Marcel_Peyrouton
+recruit_character = FRA_Georges_Bernanos
+recruit_character = FRA_Joseph_Darnand
+recruit_character = FRA_Paul_Vaillant_Couturier
+recruit_character = FRA_Edouard_Daladier
+recruit_character = FRA_Jean_Monnet
+recruit_character = FRA_Eugene_Schueller
+recruit_character = FRA_Edouard_Herriot
+recruit_character = FRA_Francois_de_La_Rocque
+recruit_character = FRA_Jean_Bichelonne
+recruit_character = FRA_Hubert_Lagardelle
+recruit_character = FRA_Jacques_Doriot
+
+## 	NATIONAL IDEA 
+
+add_ideas = {
+	generic_financial_crisis_1
+	FRA_unpopular_monarchy
+	FRA_disjointed_government
+	FRA_Marcel_Peyrouton
+	FRA_Gaston_Doumergue
+	FRA_Jean_Monnet
+	FRA_Franchet_d_Esperey
+}
+
+## STARTING TECH
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1
+	tech_recon = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	trench_warfare = 1
+	fleet_in_being = 1
+	fuel_silos = 1
+	fuel_refining = 1
+}
+
+set_popularities = {
+	conservatism = 5
+	authoritarianism = 0
+	social_democratism = 10
+	patriotic_socialism = 24
+	corporatism = 27
+	democratic_socialism = 18
+	populism = 10
+	social_liberalism = 6
+}
+
+set_politics = {
+	ruling_party = conservatism
+	last_election = "1935.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+
+country_event = {
+	id = fra.0
+	days = 1
+}
+
+#Order matters here Daladier will start as leaders because added last
+
+
+
+create_country_leader = {
+	name = "Jacques Duclos"
+	desc = "POLITICS_MAURICE_THOREZ_DESC"
+	picture = "gfx/leaders/FRA/Portrait_Jacques_Duclos.dds"
+	expire = "1965.1.1"
+	ideology = 	blanquism_subtype
+	traits = {
+		
+	}
+}
+

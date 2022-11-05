@@ -1,0 +1,15 @@
+focus_tree = {
+	id = NET_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = NET
+		}
+	}
+	
+	default = no
+	
+}

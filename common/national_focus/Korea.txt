@@ -1,0 +1,1548 @@
+focus_tree = {
+	id = KOR_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = KOR
+		}
+	}
+	continuous_focus_position = { x = 50 y = 1200 }
+	default = no
+	
+	####################################
+	## Responding to Financial Crisis ##
+	####################################
+	focus = {
+		id = KOR_Responding_to_Financial_Crisis
+		icon = GFX_goal_KOR_Responding_to_Financial_Crisis
+		x = 0
+		y = 0
+		cost = 1
+		available = {
+		}
+		available_if_capitulated = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		completion_reward = {
+		}
+	}
+	
+	########################
+	## Attract Investment ##
+	########################
+	
+	focus = {
+		id = KOR_Attract_Investment
+		icon = GFX_goal_KOR_Attract_Investment
+		x = -1
+		y = 1
+		prerequisite = { 
+			focus = KOR_Responding_to_Financial_Crisis
+		}
+		relative_position_id = KOR_Responding_to_Financial_Crisis
+		cost = 10
+		available = {
+		}
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+	############################
+	## Expand Mining Industry ##
+	############################
+	
+	focus = {
+		id = KOR_Expand_Mining_Industry
+		icon = GFX_goal_generic_steel
+		x = -2
+		y = 1
+		prerequisite = { 
+			focus = KOR_Attract_Investment
+		}
+		relative_position_id = KOR_Attract_Investment
+		cost = 10
+		available = {
+		}
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+	
+	############################
+	## Develop Heavy Industry ##
+	############################
+	
+	focus = {
+		id = KOR_Develop_Heavy_Industry
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 0
+		y = 1
+		prerequisite = { 
+			focus = KOR_Expand_Mining_Industry
+		}
+		relative_position_id = KOR_Expand_Mining_Industry
+		cost = 10
+		available = {
+		}
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+	
+	#################################
+	## Infrastructure Construction ##
+	#################################
+	
+	focus = {
+		id = KOR_Infrastructure_Construction
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 0
+		y = 2
+		prerequisite = { 
+			focus = KOR_Attract_Investment
+		}
+		relative_position_id = KOR_Attract_Investment
+		cost = 10
+		available = {
+		}
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+	
+	##############################
+	## from Chongjin to Kwangju ##
+	##############################
+	
+	focus = {
+		id = KOR_from_Chongjin_to_Kwangju
+		icon = GFX_goal_KOR_from_Chongjin_to_Kwangju
+		x = 0
+		y = 1
+		prerequisite = { 
+			focus = KOR_Infrastructure_Construction
+		}
+		relative_position_id = KOR_Infrastructure_Construction
+		cost = 10
+		available = {
+		}
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+	
+	#############################
+	## Towards Electrification ##
+	#############################
+	
+	focus = {
+		id = KOR_Towards_Electrification
+		icon = GFX_goal_generic_Electric_Grid
+		x = -2
+		y = 1
+		prerequisite = { 
+			focus = KOR_from_Chongjin_to_Kwangju
+		}
+		prerequisite = { 
+			focus = KOR_Develop_Heavy_Industry
+		}
+		relative_position_id = KOR_from_Chongjin_to_Kwangju
+		cost = 10
+		available = {
+		}
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+	
+	##########################
+	## Focus on Agriculture ##
+	##########################
+	
+	focus = {
+		id = KOR_Focus_on_Agriculture
+		icon = GFX_goal_generic_agriculture2
+		x = 1
+		y = 1
+		prerequisite = { 
+			focus = KOR_Responding_to_Financial_Crisis
+		}
+		relative_position_id = KOR_Responding_to_Financial_Crisis
+		cost = 10
+		available = {
+		}
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+	#################################
+	## Construct Water Conservancy ##
+	#################################
+	
+	focus = {
+		id = KOR_Construct_Water_Conservancy
+		icon = GFX_goal_generic_dam
+		x = -1
+		y = 1
+		prerequisite = { 
+			focus = KOR_Focus_on_Agriculture
+		}
+		relative_position_id = KOR_Focus_on_Agriculture
+		cost = 10
+		available = {
+		}
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+	###################################
+	## Modern Agricultural Education ##
+	###################################
+	
+	focus = {
+		id = KOR_Modern_Agricultural_Education
+		icon = GFX_goal_generic_expand_the_university
+		x = 0
+		y = 2
+		prerequisite = { 
+			focus = KOR_Focus_on_Agriculture
+		}
+		relative_position_id = KOR_Focus_on_Agriculture
+		cost = 10
+		available = {
+		}
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+	
+	#########################################
+	## Soil and Water Conservation Society ##
+	#########################################
+	
+	focus = {
+		id = KOR_soil_and_water_conservation_society
+		icon = GFX_goal_KOR_soil_and_water_conservation_society
+		x = 0
+		y = 1
+		prerequisite = { 
+			focus = KOR_Modern_Agricultural_Education
+		}
+		relative_position_id = KOR_Modern_Agricultural_Education
+		cost = 10
+		available = {
+		}
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+	
+	####################################
+	## Improve the Status of Peasants ##
+	####################################
+	
+	focus = {
+		id = KOR_Liberate_the_Peasants
+		icon = GFX_goal_generic_agrarian_reform
+		x = 1
+		y = 1
+		prerequisite = { 
+			focus = KOR_Focus_on_Agriculture
+		}
+		prerequisite = { 
+			focus = KOR_Nongji_Gaehyeogbeob
+		}
+		mutually_exclusive = {
+			focus = KOR_Modernize_Landlord
+		}
+		relative_position_id = KOR_Focus_on_Agriculture
+		cost = 10
+		available = {
+		}
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+	#########################
+	## Modernize Landlord  ##
+	#########################
+	
+	focus = {
+		id = KOR_Modernize_Landlord
+		icon = GFX_goal_generic_agricultural_landowners
+		x = 3
+		y = 1
+		prerequisite = { 
+			focus = KOR_Focus_on_Agriculture
+		}
+		prerequisite = { 
+			focus = KOR_Nongji_Gaehyeogbeob
+		}
+		mutually_exclusive = {
+			focus = KOR_Liberate_the_Peasants
+		}
+		relative_position_id = KOR_Focus_on_Agriculture
+		cost = 10
+		available = {
+		}
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+	##################################
+	## Modernize Farming Practices  ##
+	##################################
+	
+	focus = {
+		id = KOR_Modernize_Farming_Practices
+		icon = GFX_goal_generic_modernized_agriculture
+		x = 2
+		y = 2
+		prerequisite = { 
+			focus = KOR_Liberate_the_Peasants
+			focus = KOR_Modernize_Landlord	
+		}
+		prerequisite = { 
+			focus = KOR_Modern_Agricultural_Education
+		}
+		relative_position_id = KOR_Modern_Agricultural_Education
+		cost = 10
+		available = {
+		}
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+	#############################
+	## A Revitalizing Economy  ##
+	#############################
+	
+	focus = {
+		id = KOR_Economic_Revitalizing
+		icon = GFX_goal_KOR_Economic_Revitalizing
+		x = -3
+		y = 1
+		prerequisite = { 
+			focus = KOR_Modernize_Farming_Practices
+			}
+		prerequisite = { 
+			focus = KOR_Towards_Electrification
+		}
+		relative_position_id = KOR_Modernize_Farming_Practices
+		cost = 10
+		available = {
+		}
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+	
+	### POLITICAL ###
+	
+	#################################
+	## Rectify Yanban Aristocrats  ##
+	#################################
+	
+	focus = {
+		id = KOR_Rectify_yanban
+		icon = GFX_goal_KOR_Rectify_yanban
+		x = 5
+		y = 0
+		prerequisite = { 
+		}
+		relative_position_id = KOR_Responding_to_Financial_Crisis
+		cost = 10
+		available = {
+		}
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+	######################
+	## Land Reform Act  ##
+	######################
+	
+	focus = {
+		id = KOR_Nongji_Gaehyeogbeob
+		icon = GFX_goal_goal_generic_agrarian_reform
+		x = -2
+		y = 1
+		prerequisite = { 
+			focus = KOR_Rectify_yanban
+		}
+		relative_position_id = KOR_Rectify_yanban
+		cost = 10
+		available = {
+		}
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+	#########################
+	## Encourage Business  ##
+	#########################
+	
+	focus = {
+		id = KOR_Encourage_Business
+		icon = GFX_goal_generic_positive_trade_relations2
+		x = 0
+		y = 1
+		prerequisite = { 
+			focus = KOR_Rectify_yanban
+		}
+		relative_position_id = KOR_Rectify_yanban
+		cost = 10
+		available = {
+		}
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+	#####################################
+	## abolishment of four occupations ##
+	#####################################
+	
+	focus = {
+		id = KOR_abolish_four_occupations
+		icon = GFX_goal_KOR_abolish_four_occupations
+		x = 0
+		y = 2
+		prerequisite = { 
+			focus = KOR_Encourage_Business
+		}
+		relative_position_id = KOR_Encourage_Business
+		cost = 10
+		available = {
+		}
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			 
+		}
+	}
+	
+	###################
+	## women's power ##
+	###################
+	
+	focus = {
+		id = KOR_women_right
+		icon = GFX_goal_generic_female_rights
+		x = 1
+		y = 1
+		prerequisite = { 
+			focus = KOR_abolish_four_occupations
+		}
+		relative_position_id = KOR_abolish_four_occupations
+		cost = 10
+		available = {
+		}
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+	#########################
+	## Redeem JIDC asserts ##
+	#########################
+	
+	focus = {
+		id = KOR_redeem_JIDC
+		icon = GFX_goal_KOR_redeem_JIDC
+		x = -1
+		y = 1
+		prerequisite = { 
+			focus = KOR_abolish_four_occupations
+		}
+		relative_position_id = KOR_abolish_four_occupations
+		cost = 10
+		available = {
+		}
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+	#############################
+	## Process of Urbanization ##
+	#############################
+	
+	focus = {
+		id = KOR_process_of_urbanization
+		icon = GFX_goal_KOR_process_of_urbanization
+		x = 3
+		y = 1
+		prerequisite = { 
+			focus = KOR_abolish_four_occupations
+		}
+		relative_position_id = KOR_abolish_four_occupations
+		cost = 10
+		available = {
+		}
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+	############################
+	## The East Asian Miracle ##
+	############################
+	
+	focus = {
+		id = KOR_the_east_asian_miracle
+		icon = GFX_goal_KOR_the_east_asian_miracle
+		x = 0
+		y = 1
+		prerequisite = { 
+			focus = KOR_process_of_urbanization
+		}
+		prerequisite = { 
+			focus = KOR_sinmunhwa_undong
+		}
+		prerequisite = { 
+			focus = KOR_women_right
+		}
+		relative_position_id = KOR_process_of_urbanization
+		cost = 10
+		available = {
+		}
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+	#########################
+	## left wing in power  ##
+	#########################
+	
+	focus = {
+		id = KOR_left_wing_in_power
+		icon = GFX_goal_KOR_left_wing_in_power
+		x = 3
+		y = 0
+		prerequisite = { 
+		}
+		mutually_exclusive = {
+			focus = KOR_right_wing_in_power
+		}
+		relative_position_id = KOR_Rectify_yanban
+		cost = 10
+		available = {
+		}
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+	#########################
+	## The power of unions ##
+	#########################
+	
+	focus = {
+		id = KOR_power_of_union
+		icon = GFX_goal_generic_trade_union
+		x = -1
+		y = 1
+		prerequisite = { 
+			focus = KOR_left_wing_in_power
+		}
+		relative_position_id = KOR_left_wing_in_power
+		cost = 10
+		available = {
+		}
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+	#######################################
+	## Production Consultative Committee ##
+	#######################################
+	
+	focus = {
+		id = KOR_production_consultative_committee
+		icon = GFX_goal_KOR_production_consultative_committee
+		x = 0
+		y = 2
+		prerequisite = { 
+			focus = KOR_power_of_union
+		}
+		relative_position_id = KOR_power_of_union
+		cost = 10
+		available = {
+		}
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+	####################################
+	## Five-Year Plans of South Korea ##
+	####################################
+	
+	focus = {
+		id = KOR_five_year_plans_for_korea
+		icon = GFX_goal_KOR_five_year_plans_for_korea
+		x = 0
+		y = 2
+		prerequisite = { 
+			focus = KOR_left_wing_in_power
+		}
+		relative_position_id = KOR_left_wing_in_power
+		cost = 10
+		available = {
+		}
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+	##########################
+	## right wing in power  ##
+	##########################
+	
+	focus = {
+		id = KOR_right_wing_in_power
+		icon = GFX_goal_KOR_right_wing_in_power
+		x = 7
+		y = 0
+		prerequisite = { 
+		}
+		mutually_exclusive = {
+			focus = KOR_left_wing_in_power
+		}
+		relative_position_id = KOR_Rectify_yanban
+		cost = 10
+		available = {
+		}
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+	#################################
+	## Advocate industrious virtue ##
+	#################################
+	
+	focus = {
+		id = KOR_advocate_industrious_virtue
+		icon = GFX_goal_KOR_advocate_industrious_virtue
+		x = 1
+		y = 1
+		prerequisite = { 
+			focus = KOR_right_wing_in_power
+		}
+		relative_position_id = KOR_right_wing_in_power
+		cost = 10
+		available = {
+		}
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+	##########################
+	## Ensure a free market ##
+	##########################
+	
+	focus = {
+		id = KOR_ensure_a_free_market
+		icon = GFX_goal_KOR_ensure_a_free_market
+		x = 0
+		y = 2
+		prerequisite = { 
+			focus = KOR_advocate_industrious_virtue
+		}
+		relative_position_id = KOR_advocate_industrious_virtue
+		cost = 10
+		available = {
+		}
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+	###########################################
+	## Import substitution industrialization ##
+	###########################################
+	
+	focus = {
+		id = KOR_import_substitution_industrialization
+		icon = GFX_goal_KOR_import_substitution_industrialization
+		x = 0
+		y = 2
+		prerequisite = { 
+			focus = KOR_right_wing_in_power
+		}
+		relative_position_id = KOR_right_wing_in_power
+		cost = 10
+		available = {
+		}
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+
+	##########################
+	## Compulsory Education  ##
+	##########################
+	
+	focus = {
+		id = KOR_compulsory_education
+		icon = GFX_goal_KOR_Pragmatic_Education
+		x = -2
+		y = 1
+		prerequisite = { 
+			focus = KOR_right_wing_in_power
+			focus = KOR_left_wing_in_power
+		}
+		relative_position_id = KOR_right_wing_in_power
+		cost = 10
+		available = {
+		}
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+	#############################
+	## promote rural education ## 村镇教育运动
+	#############################
+	
+	focus = {
+		id = KOR_promote_rural_education
+		icon = GFX_goal_KOR_promote_rural_education
+		x = 0
+		y = 1
+		prerequisite = { 
+			focus = KOR_compulsory_education
+		}
+		relative_position_id = KOR_compulsory_education
+		cost = 10
+		available = {
+		}
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+	################################
+	## Hanseong Technical College ## 京城/汉城工业专门学校(경성공업전문학교)-平民教育
+	################################
+	
+	focus = {
+		id = KOR_HTC
+		icon = GFX_goal_KOR_HTC
+		x = 1
+		y = 2
+		prerequisite = { 
+			focus = KOR_compulsory_education
+		}
+		relative_position_id = KOR_compulsory_education
+		mutually_exclusive = {
+			focus = KOR_reformed_sungkyunkwan
+		}
+		cost = 10
+		available = {
+		}
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+	###########################
+	## Reformed Sungkyunkwan ## 偏向精英教育
+	###########################
+	
+	focus = {
+		id = KOR_reformed_sungkyunkwan 
+		icon = GFX_goal_KOR_reformed_sungkyunkwan
+		x = -1
+		y = 2
+		prerequisite = { 
+			focus = KOR_compulsory_education
+		}
+		relative_position_id = KOR_compulsory_education
+		mutually_exclusive = {
+			focus = KOR_HTC
+		}
+		cost = 10
+		available = {
+		}
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+	######################
+	## Sinmunhwa Undong ##
+	######################
+	
+	focus = {
+		id = KOR_sinmunhwa_undong
+		icon = GFX_goal_KOR_sinmunhwa_undong
+		x = 1
+		y = 1
+		prerequisite = { 
+			focus = KOR_reformed_sungkyunkwan
+			focus = KOR_HTC
+		}
+		relative_position_id = KOR_reformed_sungkyunkwan
+		cost = 10
+		available = {
+		}
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+	
+	
+	### DIPLOMATIC ###
+	
+	########################
+	## Long Live the King ##
+	########################
+	
+	focus = {
+		id = KOR_new_king
+		icon = GFX_goal_KOR_new_king
+		x = 13
+		y = 0
+		cost = 10
+		available = {
+			has_country_leader = {
+				character = KOR_Yi_Un_King
+			}				
+		}
+		relative_position_id = KOR_Economic_Revitalizing
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+	
+	#######################
+	## Independent Korea ##
+	#######################
+	
+	focus = {
+		id = KOR_Independent_Korea
+		icon = GFX_goal_KOR_Independent_Korea
+		x = 5
+		y = 1
+		cost = 10
+		available = {
+		}
+		prerequisite = { 
+			focus = KOR_new_king
+		}
+		relative_position_id = KOR_new_king
+		mutually_exclusive = {
+			focus = KOR_Sadaejuui
+		}
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+	############################
+	## Remember 31st Movement ##
+	############################
+	
+	focus = {
+		id = KOR_Samil_Movement
+		icon = GFX_goal_KOR_Samil_Movement
+		x = 0
+		y = 1
+		cost = 10
+		available = {
+		}
+		prerequisite = { 
+			focus = KOR_Independent_Korea
+		}
+		relative_position_id = KOR_Independent_Korea
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+	################
+	## Asiajuui ##
+	#################
+	
+	focus = {
+		id = KOR_Asiajuui
+		icon = GFX_goal_KOR_Asiajuui
+		x = 3
+		y = 1
+		cost = 10
+		available = {
+		}
+		prerequisite = { 
+			focus = KOR_Samil_Movement
+		}
+		mutually_exclusive = {
+			focus = KOR_sunhyeoljuui
+		}
+		relative_position_id = KOR_Samil_Movement
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+	##################################
+	## negotiating for independence ##
+	##################################
+	
+	focus = {
+		id = KOR_negotiating_for_independence
+		icon = GFX_goal_KOR_negotiating_for_independence
+		x = 0
+		y = 1
+		cost = 10
+		available = {
+		}
+		prerequisite = { 
+			focus = KOR_Asiajuui
+		}
+		relative_position_id = KOR_Asiajuui
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+	########################################
+	## Extend the railway to the East Sea ##
+	########################################
+	
+	focus = {
+		id = KOR_extend_the_railway_to_the_east_sea
+		icon = GFX_goal_KOR_extend_the_railway_to_the_east_sea
+		x = -2
+		y = 1
+		cost = 10
+		available = {
+		}
+		prerequisite = { 
+			focus = KOR_negotiating_for_independence
+		}
+		relative_position_id = KOR_negotiating_for_independence
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+	############################################
+	## Expanding the Confederation southwards ##
+	############################################
+	
+	focus = {
+		id = KOR_expanding_the_confederation_southwards
+		icon = GFX_goal_KOR_expanding_the_confederation_southwards
+		x = 0
+		y = 1
+		cost = 10
+		available = {
+		}
+		prerequisite = { 
+			focus = KOR_negotiating_for_independence
+		}
+		relative_position_id = KOR_negotiating_for_independence
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+	##################################
+	## The Heart of North East Asia ##
+	##################################
+	
+	focus = {
+		id = KOR_heart_of_north_east_asia
+		icon = GFX_goal_KOR_heart_of_north_east_asia
+		x = 2
+		y = 1
+		cost = 10
+		available = {
+		}
+		prerequisite = { 
+			focus = KOR_negotiating_for_independence
+		}
+		relative_position_id = KOR_negotiating_for_independence
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+	###################
+	## 	Sunhyeoljuui ##
+	###################
+	
+	focus = {
+		id = KOR_sunhyeoljuui
+		icon = GFX_goal_KOR_sunhyeoljuui
+		x = -3
+		y = 1
+		cost = 10
+		available = {
+		}
+		prerequisite = { 
+			focus = KOR_Samil_Movement
+		}
+		mutually_exclusive = {
+			focus = KOR_Asiajuui
+		}
+		relative_position_id = KOR_Samil_Movement
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+	###############################
+	## struggle for independence ##
+	###############################
+	
+	focus = {
+		id = KOR_struggle_for_independence
+		icon = GFX_goal_KOR_struggle_for_independence
+		x = 0
+		y = 1
+		cost = 10
+		available = {
+		}
+		prerequisite = { 
+			focus = KOR_sunhyeoljuui
+		}
+		relative_position_id = KOR_sunhyeoljuui
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+	
+	############################
+	## 	the Glory of Goguryeo ##
+	############################
+	
+	focus = {
+		id = KOR_glory_of_goguryeo
+		icon = GFX_goal_KOR_glory_of_goguryeo
+		x = 2
+		y = 1
+		cost = 10
+		available = {
+		}
+		prerequisite = { 
+			focus = KOR_struggle_for_independence
+		}
+		relative_position_id = KOR_struggle_for_independence
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+	#################################
+	## 	the last wish of Yi Sunsin ##
+	#################################
+	
+	focus = {
+		id = KOR_last_wish_of_yi_sunsin
+		icon = GFX_goal_KOR_last_wish_of_yi_sunsin
+		x = -2
+		y = 1
+		cost = 10
+		available = {
+		}
+		prerequisite = { 
+			focus = KOR_struggle_for_independence
+		}
+		relative_position_id = KOR_struggle_for_independence
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+	####################################################
+	## 	the front line in the fight against communism ##
+	####################################################
+	
+	focus = {
+		id = KOR_front_line_in_the_fight_against_communism
+		icon = GFX_goal_KOR_front_line_in_the_fight_against_communism
+		x = 0
+		y = 1
+		cost = 10
+		available = {
+		}
+		prerequisite = { 
+			focus = KOR_struggle_for_independence
+		}
+		relative_position_id = KOR_struggle_for_independence
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+	##############
+	## Sadaejuui##
+	##############
+	
+	focus = {
+		id = KOR_Sadaejuui
+		icon = GFX_goal_KOR_Sadaejuui
+		x = -5
+		y = 1
+		cost = 10
+		available = {
+		}
+		prerequisite = { 
+			focus = KOR_new_king
+		}
+		relative_position_id = KOR_new_king
+		mutually_exclusive = {
+			focus = KOR_Independent_Korea
+		}
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+	###########################
+	## Cooperate with Japan  ##
+	###########################
+	
+	focus = {
+		id = KOR_cooperate_with_japan
+		icon = GFX_goal_KOR_Cooperate_with_Japan
+		x = -2
+		y = 1
+		cost = 10
+		available = {
+		}
+		relative_position_id = KOR_Sadaejuui
+		prerequisite = { 
+			focus = KOR_Sadaejuui
+		}
+		mutually_exclusive = {
+			focus = KOR_submit_to_china
+			focus = KOR_friend_with_russia
+		}
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+	##################
+	## Naisen Ittai ##
+	##################
+	
+	focus = {
+		id = KOR_naisen_ittai
+		icon = GFX_goal_KOR_naisen_ittai
+		x = 0
+		y = 2
+		cost = 10
+		available = {
+		}
+		relative_position_id = KOR_cooperate_with_japan
+		prerequisite = { 
+			focus = KOR_cooperate_with_japan
+		}
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+	######################
+	## Submit to China  ##
+	######################
+	
+	focus = {
+		id = KOR_submit_to_china
+		icon = GFX_goal_KOR_Submit_to_China
+		x = 4
+		y = 1
+		cost = 10
+		available = {
+		}
+		prerequisite = { 
+			focus = KOR_Sadaejuui
+		}
+		relative_position_id = KOR_Sadaejuui
+		mutually_exclusive = {
+			focus = KOR_cooperate_with_japan
+			focus = KOR_friend_with_russia
+		}
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+	########################################
+	## Protector State of Centeral Empire ##
+	########################################
+	
+	focus = {
+		id = KOR_protector_state
+		icon = GFX_goal_KOR_protector_state
+		x = -1
+		y = 1
+		cost = 10
+		available = {
+		}
+		prerequisite = { 
+			focus = KOR_submit_to_china
+		}
+		mutually_exclusive = {
+			focus = KOR_fraternal_states
+		}
+		relative_position_id = KOR_submit_to_china
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+	########################
+	##  Fraternal states  ##
+	########################
+	
+	focus = {
+		id = KOR_fraternal_states
+		icon = GFX_goal_KOR_fraternal_states
+		x = 1
+		y = 1
+		cost = 10
+		available = {
+		}
+		prerequisite = { 
+			focus = KOR_submit_to_china
+		}
+		mutually_exclusive = {
+			focus = KOR_protector_state
+		}
+		relative_position_id = KOR_submit_to_china
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+	########################################
+	## New Position in the confederation  ##
+	########################################
+	
+	focus = {
+		id = KOR_new_position_in_the_confederation
+		icon = GFX_goal_KOR_new_position_in_the_confederation
+		x = -1
+		y = 1
+		cost = 10
+		available = {
+		}
+		prerequisite = { 
+			focus = KOR_fraternal_states
+			focus = KOR_protector_state
+		}
+		relative_position_id = KOR_fraternal_states
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+	#########################
+	## Comrade from North  ##
+	#########################
+	
+	focus = {
+		id = KOR_friend_with_russia
+		icon = GFX_goal_KOR_Friend_with_russia
+		x = 0
+		y = 1
+		cost = 10
+		available = {
+		}
+		prerequisite = { 
+			focus = KOR_Sadaejuui
+		}
+		relative_position_id = KOR_Sadaejuui
+		mutually_exclusive = {
+			focus = KOR_cooperate_with_japan
+			focus = KOR_submit_to_china
+		}
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+	#####################
+	## Seize Manchuria ##
+	#####################
+	
+	focus = {
+		id = KOR_seize_manchuria
+		icon = GFX_goal_KOR_seize_manchuria
+		x = 1
+		y = 1
+		cost = 10
+		available = {
+		}
+		prerequisite = { 
+			focus = KOR_friend_with_russia
+			focus = KOR_cooperate_with_japan
+		}
+		relative_position_id = KOR_cooperate_with_japan
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+	########################################
+	## Inviting Communists form a cabinet ##
+	########################################
+	
+	focus = {
+		id = KOR_inviting_communists_form_a_cabinet
+		icon = GFX_goal_generic_soviet_politics
+		x = 0
+		y = 2
+		cost = 10
+		available = {
+		}
+		prerequisite = { 
+			focus = KOR_friend_with_russia
+		}
+		relative_position_id = KOR_friend_with_russia
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+	############################
+	## Shadows of the Kingdom ##
+	############################
+	
+	focus = {
+		id = KOR_shadows_of_the_kingdom
+		icon = GFX_goal_KOR_shadows_of_the_kingdom
+		x = -1
+		y = 1
+		cost = 10
+		available = {
+		}
+		prerequisite = { 
+			focus = KOR_inviting_communists_form_a_cabinet
+			focus = KOR_naisen_ittai
+		}
+		relative_position_id = KOR_inviting_communists_form_a_cabinet
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+	#########################
+	## Partitions of Japan ##
+	#########################
+	
+	focus = {
+		id = KOR_partitions_of_japan
+		icon = GFX_goal_KOR_partitions_of_japan
+		x = 1
+		y = 1
+		cost = 10
+		available = {
+		}
+		prerequisite = { 
+			focus = KOR_friend_with_russia
+			focus = KOR_submit_to_china
+		}
+		relative_position_id = KOR_friend_with_russia
+		available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+}

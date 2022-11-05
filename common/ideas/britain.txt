@@ -1,0 +1,351 @@
+ideas = {
+
+	country = {
+		
+		GBR_victors_of_greatwar = {
+			
+			allowed = {
+				original_tag = GBR
+			}
+			
+			allowed_civil_war = {	
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				surrender_limit = -0.3
+				war_support_factor = -0.3
+				army_morale_factor = -0.2
+				conscription_factor = -0.25
+			}
+			
+		}
+		
+	}
+
+	naval_manufacturer = {
+		
+			designer = yes
+		
+		GBR_yarrow_shipbuilders = {
+			
+			allowed = {
+				original_TAG = GBR
+			}
+						
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = {
+				convoy_escort_naval_manufacturer
+			}
+
+		}
+		
+		GBR_harland_wolff = {
+			
+			allowed = {
+				original_TAG = GBR
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = {
+				pacific_fleet_naval_manufacturer
+				}
+		}
+		
+		GBR_cammell_laird = {
+			
+			allowed = {
+				original_TAG = GBR
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = {
+				atlantic_fleet_naval_manufacturer
+			}
+			
+			modifier = {
+			}
+		}
+		
+		GBR_john_brown_company = {
+			
+			allowed = {
+				original_TAG = GBR
+			}
+						
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = {
+				coastal_defence_naval_manufacturer
+			}
+		}
+		
+		GBR_Fairfield_Shipbuilding = {
+			
+			allowed = {
+				original_TAG = GBR
+			}
+						
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = {
+				coastal_defence_naval_manufacturer
+			}
+		}
+		
+	}
+	
+	aircraft_manufacturer = {
+			
+		designer = yes
+		
+		GBR_supermarine = {
+			
+			allowed = {
+				original_TAG = GBR
+			}
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { light_aircraft_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		GBR_de_havilland = {
+			
+			allowed = {
+				original_TAG = GBR
+			}
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { medium_aircraft_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		GBR_avro = {
+			
+			allowed = {
+				original_TAG = GBR
+			}
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { heavy_aircraft_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		GBR_fairey_aviation = {
+			
+			allowed = {
+				original_TAG = GBR
+			}
+		
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { naval_aircraft_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		GBR_vickers_armstrong = {
+			
+			allowed = {
+				original_TAG = GBR
+			}
+		
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { 
+			konzern
+			naval_aircraft_manufacturer 
+			}
+			
+			modifier = {
+			}
+		}
+		
+		GBR_hawker = {
+			
+			allowed = {
+				original_TAG = GBR
+			}
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+
+			traits = { CAS_manufacturer } 
+			
+			modifier = {
+			}
+		}	
+	}
+	
+	tank_manufacturer = {
+		
+		designer = yes
+		
+		GBR_wolseley_motor = {
+			
+			allowed = {
+				original_TAG = GBR
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { medium_tank_manufacturer }
+			
+			modifier = {
+			}
+		}
+	}
+	
+	materiel_manufacturer = {
+			
+		designer = yes
+		
+		GBR_rsaf_enfield = {
+			
+			allowed = {
+				original_TAG = GBR
+			}
+			
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		GBR_vauxhall = {
+			
+			allowed = {
+				original_TAG = GBR
+			}
+			
+			research_bonus = {
+				motorized_equipment = 0.15
+			}
+			
+			traits = { motorized_equipment_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		GBR_royal_arsenal = {
+			
+			allowed = {
+				original_TAG = GBR
+			}
+			
+			research_bonus = {
+				artillery = 0.15
+			}
+			
+			traits = { artillery_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+	}
+	
+	industrial_concern = {
+				
+		GBR_imperial_chemical_industries = {
+			
+			allowed = {
+				original_TAG = GBR
+			}
+			
+			research_bonus = {
+				industry = 0.1
+				synth_resources = 0.15
+			}
+			
+			traits = {
+				refinery_concern
+				chartered
+				}
+			
+			modifier = {
+			}
+			
+		}
+		
+		GBR_english_electric = {
+			
+			allowed = {
+				original_TAG = GBR
+			}
+			
+			research_bonus = {
+				electronics = 0.15
+			}
+			
+			traits = { electronics_concern }
+			
+			modifier = {
+			}
+		}
+		
+		GBR_stewarts_and_lloyds = {
+			
+			allowed = {
+				original_TAG = GBR
+			}
+
+			research_bonus = {
+				electronics = 0.15
+			}
+			
+			traits = { 
+			industrial_concern 
+			cartel
+			}
+			
+			modifier = {
+			}
+		}
+		
+	}
+}

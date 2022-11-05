@@ -1,0 +1,185 @@
+defined_text = { #CUSTOM ACHIEVEMENT TITLES	#名称
+    name = get_achievement_title
+    
+	# text = { 
+    #    trigger = {
+    #        check_variable = { v = 1 }	#location of Achievement
+	#     }
+    #    localization_key = "Achievement_Burgundian_Inheritance"#Name of Achievement
+    #}
+	
+	text = { 
+        trigger = {
+            check_variable = { v = 1 }	#location of Achievement
+        }
+        localization_key = "ACHIEVEMENT_DREAMS_COME_TRUE"#Name of Achievement
+    }
+    text = { 
+        trigger = {
+           check_variable = { v = 2 }
+        }
+        localization_key = "ACHIEVEMENT_PAX_AETERNA"
+    }
+
+    text = { 
+        trigger = {
+           check_variable = { v = 3 }
+        }
+        localization_key = "ACHIEVEMENT_ROSA_BIZARRE_ADVENTURE"
+    }
+
+    text = { 
+        trigger = {
+           check_variable = { v = 4 }
+        }
+        localization_key = "ACHIEVEMENT_TRUE_CALIPHATE"
+    }
+
+    text = { 
+        trigger = {
+           check_variable = { v = 5 }
+        }
+        localization_key = "ACHIEVEMENT_BID_CAN_CONQUER_CHAMAYI_ONCE_AGAIN"
+    }
+    text = { 
+        trigger = {
+           check_variable = { v = 6 }
+        }
+        localization_key = "ACHIEVEMENT_LES_CHINOIS_A_PARIS"
+    }
+
+    text = { 
+        trigger = {
+           check_variable = { v = 7 }
+        }
+        localization_key = "ACHIEVEMENT_THE_BIRTH_OF_A_NATION"
+    }
+
+    text = { 
+        trigger = {
+           check_variable = { v = 8 }
+        }
+        localization_key = "ACHIEVEMENT_GO_TO_THE_HELL"
+    }
+}
+
+defined_text = { #CUSTOM ACHIEVEMENT DESCRIPTIONS #描述
+    name = get_achievement_desc
+    
+    text = { 
+        trigger = {
+            check_variable = { v = 1 }
+        }
+        localization_key = "ACHIEVEMENT_DREAMS_COME_TRUE_DESC"
+    }
+
+    text = { 
+        trigger = {
+           check_variable = { v = 2 }
+        }
+        localization_key = "ACHIEVEMENT_PAX_AETERNA_DESC"
+    }
+
+    text = { 
+        trigger = {
+           check_variable = { v = 3 }
+        }
+        localization_key = "ACHIEVEMENT_ROSA_BIZARRE_ADVENTURE_DESC"
+    }
+
+    text = { 
+        trigger = {
+           check_variable = { v = 4 }
+        }
+        localization_key = "ACHIEVEMENT_TRUE_CALIPHATE_DESC"
+    }
+
+    text = { 
+        trigger = {
+           check_variable = { v = 5 }
+        }
+        localization_key = "ACHIEVEMENT_BID_CAN_CONQUER_CHAMAYI_ONCE_AGAIN_DESC"
+    }
+
+    text = { 
+        trigger = {
+           check_variable = { v = 6 }
+        }
+        localization_key = "ACHIEVEMENT_LES_CHINOIS_A_PARIS_DESC"
+    }
+
+    text = { 
+        trigger = {
+           check_variable = { v = 7 }
+        }
+        localization_key = "ACHIEVEMENT_THE_BIRTH_OF_A_NATION_DESC"
+    }
+
+    text = { 
+        trigger = {
+           check_variable = { v = 8 }
+        }
+        localization_key = "ACHIEVEMENT_GO_TO_THE_HELL_DESC"
+    }
+}
+
+defined_text = {  #CUSTOM ACHIEVEMENT IMAGE	#图片
+  
+	name = get_achievement_image
+    
+    text = { 
+        trigger = {
+            check_variable = { v = 1 }
+        }
+        localization_key = "GFX_ACHIEVEMENT_DREAMS_COME_TRUE"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { v = 2 }
+        }
+        localization_key = "GFX_ACHIEVEMENT_PAX_AETERNA"
+    }
+
+    text = { 
+        trigger = {
+           check_variable = { v = 3 }
+        }
+        localization_key = "GFX_ACHIEVEMENT_ROSA_BIZARRE_ADVENTURE"
+    }
+
+    text = { 
+        trigger = {
+           check_variable = { v = 4 }
+        }
+        localization_key = "GFX_ACHIEVEMENT_TRUE_CALIPHATE"
+    }
+
+    text = { 
+        trigger = {
+           check_variable = { v = 5 }
+        }
+        localization_key = "GFX_ACHIEVEMENT_BID_CAN_CONQUER_CHAMAYI_ONCE_AGAIN"
+    }
+
+    text = { 
+        trigger = {
+           check_variable = { v = 6 }
+        }
+        localization_key = "GFX_ACHIEVEMENT_LES_CHINOIS_A_PARIS"
+    }
+
+    text = { 
+        trigger = {
+           check_variable = { v = 7 }
+        }
+        localization_key = "GFX_ACHIEVEMENT_THE_BIRTH_OF_A_NATION"
+    }
+
+    text = { 
+        trigger = {
+           check_variable = { v = 8 }
+        }
+        localization_key = "GFX_ACHIEVEMENT_GO_TO_THE_HELL"
+    }
+}

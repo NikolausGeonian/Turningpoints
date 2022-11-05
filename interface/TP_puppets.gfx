@@ -1,0 +1,48 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_TP_qng_tributary_states_icon"
+		textureFile = "gfx/interface/autonomy/TP_qng_tributary_states.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_TP_qng_client_states_icon"
+		textureFile = "gfx/interface/autonomy/TP_qng_client_states.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_TP_qng_amban_states_icon"
+		textureFile = "gfx/interface/autonomy/TP_qng_amban_states.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_TP_ger_autonomous_colony_icon"
+		textureFile = "gfx/interface/autonomy/TP_ger_autonomous_colony.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_TP_ger_autonomous_puppet_icon"
+		textureFile = "gfx/interface/autonomy/TP_ger_autonomous_puppet.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_TP_ger_autonomous_dominion_icon"
+		textureFile = "gfx/interface/autonomy/TP_ger_autonomous_dominion.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_tp_generic_autonomy_satellite_icon"
+		textureFile = "gfx/interface/autonomy/tp_generic_autonomy_satellite.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_tp_generic_autonomy_puppet_icon"
+		textureFile = "gfx/interface/autonomy/tp_generic_autonomy_puppet.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_tp_generic_autonomy_integrated_puppet_icon"
+		textureFile = "gfx/interface/autonomy/tp_generic_autonomy_integrated_puppet.dds"
+	}
+
+}

@@ -1,0 +1,165 @@
+characters={
+
+	### Country Leader ###
+
+	LOM_Maximilian_Eugen = {
+		name = LOM_Maximilian_Eugen
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/LOM/Portrait_Maximilian_Eugen.dds"
+			}
+		}
+	
+		country_leader = {
+			desc = "POLITICS_LOM_MAXIMILIAN_EUGEN_DESC"
+			ideology = autocratic_monarchy_subtype
+			id = -1
+		}
+		
+		country_leader = {
+			desc = "POLITICS_LOM_MAXIMILIAN_EUGEN_DESC"
+			ideology = constitutional_monarchy_C_subtype
+			id = -1
+		}
+		
+		country_leader = {
+			desc = "POLITICS_LOM_MAXIMILIAN_EUGEN_DESC"
+			ideology = constitutional_monarchy_B_subtype
+			id = -1
+		}
+		
+		country_leader = {
+			desc = "POLITICS_LOM_MAXIMILIAN_EUGEN_DESC"
+			ideology = constitutional_monarchy_A_subtype
+			id = -1
+		}
+	}
+	
+	### General ###
+	
+	LOM_Arnaldo_Azzi = {
+		name = LOM_Arnaldo_Azzi
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/LOM/ministers/LOM_Arnaldo_Azzi.dds"
+				large = "gfx/leaders/LOM/Portrait_Arnaldo_Azzi.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "GENERAL_LOM_ARNALDO_AZZI_DESC"
+			slot = high_command
+			idea_token = LOM_Arnaldo_Azzi
+			allowed = {
+				original_tag = LOM
+			}
+			traits = { army_logistics_2 }
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_LOM_ARNALDO_AZZI_DESC"
+			traits = { organizer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	
+	LOM_Attilio_Teruzzi = {
+		name = LOM_Attilio_Teruzzi
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/LOM/ministers/LOM_Attilio_Teruzzi.dds"
+				large = "gfx/leaders/LOM/Portrait_Attilio_Teruzzi.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "GENERAL_LOM_ATTILIO_TERUZZI_DESC"
+			slot = army_chief
+			idea_token = LOM_Attilio_Teruzzi
+			allowed = {
+				original_tag = LOM
+			}
+			traits = { army_chief_drill_1 }
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_LOM_ATTILIO_TERUZZI_DESC"
+			traits = { trickster }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	
+	LOM_Alfredo_Guzzoni = {
+		name = LOM_Alfredo_Guzzoni
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/LOM/ministers/LOM_Alfredo_Guzzoni.dds"
+				large = "gfx/leaders/LOM/Portrait_Alfredo_Guzzoni.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_LOM_ALFREDO_GUZZONI_DESC"
+			traits = { infantry_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	
+	LOM_Gabriele_Nasci = {
+		name = LOM_Gabriele_Nasci
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/LOM/ministers/LOM_Gabriele_Nasci.dds"
+				large = "gfx/leaders/LOM/Portrait_Gabriele_Nasci.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "GENERAL_LOM_GABRIELE_NASCI_DESC"
+			slot = high_command
+			idea_token = LOM_Gabriele_Nasci
+			allowed = {
+				original_tag = LOM
+			}
+			traits = { army_commando_1 }
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_LOM_GABRIELE_NASCI_DESC"
+			traits = { trait_mountaineer hill_fighter }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	
+	
+	### Ministers ###
+	
+}

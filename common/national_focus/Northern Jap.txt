@@ -1,0 +1,865 @@
+focus_tree = {
+	id = NJP_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = NJP
+		}
+	}
+	continuous_focus_position = { x = 300 y = 2000 }
+	default = no
+	###########################
+	## 5th Congress of Japan ##
+	###########################
+	
+		focus = {
+			id = NJP_The_5th_Congress_of_Japan
+			icon = GFX_goal_NJP_The_5th_Congress_of_Japan
+			x = 13
+			y = 0
+			cost = 10
+		
+			available_if_capitulated = no
+			select_effect = {
+				country_event = { id = njp.1 }
+			}
+			completion_reward = {
+				add_political_power = 120
+				country_event = { id = njp.? }
+				mark_focus_tree_layout_dirty = yes
+			}
+		}
+	###########################  United Front Part  ##################################
+	
+	##################
+	## United Front ##
+	##################
+		focus = {
+			id = NJP_united_front
+			icon = GFX_goal_NJP_united_front
+			allow_branch = {
+				NJP_united_front = yes
+				NJP_country_divided = yes
+			}
+			
+			prerequisite = { 
+				focus = NJP_The_5th_Congress_of_Japan
+			}
+			relative_position_id = NJP_The_5th_Congress_of_Japan
+				x = 0
+				y = 1
+			cost = 10
+			available = {
+				is_puppet = no
+			}
+			cancel = {
+				has_country_flag = NJP_line_struggle
+			}
+			cancelable = no
+			available_if_capitulated = no
+			ai_will_do = {
+				factor = 2
+			}
+			select_effect = {
+				mark_focus_tree_layout_dirty = yes
+			}
+			completion_reward = {
+				swap_ideas = {				
+					add_idea = NJP_united_front
+				}
+			}
+		}
+		
+		
+		
+		###########################  Line Struggle Part  ##################################
+	
+	##################
+	## Rono Faction ##
+	##################
+		focus = {
+			id = NJP_Rono_faction
+			icon = GFX_goal_NJP_Rono_faction
+			allow_branch = {
+				NOT = {
+					NJP_united_front = yes
+				}
+			}
+			
+			mutually_exclusive = { 
+				focus = NJP_Shokan_faction
+				focus = NJP_Gyomin_faction
+				focus = NJP_Kokusai_faction
+			}
+			relative_position_id = NJP_The_5th_Congress_of_Japan
+				x = -1
+				y = 1
+			cost = 3
+			available = {
+			}
+			prerequisite = { 
+				focus = NJP_The_5th_Congress_of_Japan
+			}
+			available_if_capitulated = no
+			cancel_if_invalid = no
+			continue_if_invalid = yes
+			bypass = {
+			}
+			completion_reward = {
+			}	
+			
+		}	
+		
+	####################
+	## United Ronohei ##
+	####################
+	
+		focus = {
+			id = NJP_unite_ronohei
+			icon = GFX_goal_NJP_unite_ronohei
+			prerequisite = { 
+				focus = NJP_Rono_faction
+			}
+			allow_branch = {
+				NOT = {
+					NJP_united_front = yes
+				}
+			}
+			relative_position_id = NJP_Rono_faction
+				x = 0
+				y = 1
+			cost = 3
+			available = {
+			}
+			available_if_capitulated = no
+			cancel_if_invalid = no
+			continue_if_invalid = yes
+			bypass = {
+			}
+			completion_reward = {
+			}		
+		}	
+		
+	####################
+	## Gyomin Faction ##
+	####################
+		focus = {
+			id = NJP_Gyomin_faction
+			icon = GFX_goal_NJP_Gyomin_faction
+			allow_branch = {
+				NOT = {
+					NJP_united_front = yes
+				}
+			}
+			mutually_exclusive = { 
+				focus = NJP_Shokan_faction
+				focus = NJP_Rono_faction
+				focus = NJP_Kokusai_faction
+			}
+			relative_position_id = NJP_The_5th_Congress_of_Japan
+				x = -3
+				y = 1
+			cost = 3
+			available = {
+			}
+			prerequisite = { 
+				focus = NJP_The_5th_Congress_of_Japan
+			}
+			available_if_capitulated = no
+			cancel_if_invalid = no
+			continue_if_invalid = yes
+			bypass = {
+			}
+			completion_reward = {
+			}	
+		}	
+		
+	###################################
+	## Improving Socialist Democracy ##
+	###################################
+	
+		focus = {
+			id = NJP_improving_socialist_democracy
+			icon = GFX_goal_generic_socialist_democracy
+			prerequisite = { 
+				focus = NJP_Gyomin_faction
+			}
+			allow_branch = {
+				NOT = {
+					NJP_united_front = yes
+				}
+			}
+			relative_position_id = NJP_Gyomin_faction
+				x = 0
+				y = 1
+			cost = 3
+			available = {
+			}
+			available_if_capitulated = no
+			cancel_if_invalid = no
+			continue_if_invalid = yes
+			bypass = {
+			}
+			completion_reward = {
+			}		
+		}
+	
+	#################################
+	## Perfect Mobilisation System ##
+	#################################
+	
+		focus = {
+			id = NJP_perfect_mobilize_system
+			icon = GFX_goal_generic_national_mobilization
+			prerequisite = { 
+				focus = NJP_improving_socialist_democracy
+				focus = NJP_unite_ronohei
+			}
+			allow_branch = {
+				NOT = {
+					NJP_united_front = yes
+				}
+			}
+			relative_position_id = NJP_improving_socialist_democracy
+				x = 1
+				y = 1
+			cost = 3
+			available = {
+			}
+			available_if_capitulated = no
+			cancel_if_invalid = no
+			continue_if_invalid = yes
+			bypass = {
+			}
+			completion_reward = {
+			}		
+		}
+		
+	####################
+	## Shokan Faction ##
+	####################
+		focus = {
+			id = NJP_Shokan_faction
+			icon = GFX_goal_NJP_Shokan_faction
+			allow_branch = {
+				NOT = {
+					NJP_united_front = yes
+				}
+			}
+			mutually_exclusive = { 
+				focus = NJP_Rono_faction
+				focus = NJP_Gyomin_faction
+				focus = NJP_Kokusai_faction
+			}
+			relative_position_id = NJP_The_5th_Congress_of_Japan
+				x = 1
+				y = 1
+			cost = 3
+			available = {
+			}
+			prerequisite = { 
+				focus = NJP_The_5th_Congress_of_Japan
+			}
+			available_if_capitulated = no
+			cancel_if_invalid = no
+			continue_if_invalid = yes
+			bypass = {
+			}
+			completion_reward = {
+			}	
+		}
+		
+	####################################
+	## Strengthening Party Leadership ##
+	####################################
+	
+		focus = {
+			id = NJP_party_leadership
+			icon = GFX_goal_NJP_party_leadership
+			allow_branch = {
+				NOT = {
+					NJP_united_front = yes
+				}
+			}
+			relative_position_id = NJP_Shokan_faction
+				x = 0
+				y = 1
+			cost = 3
+			available = {
+			}
+			prerequisite = { 
+				focus = NJP_Shokan_faction
+			}
+			available_if_capitulated = no
+			cancel_if_invalid = no
+			continue_if_invalid = yes
+			bypass = {
+			}
+			completion_reward = {
+			}	
+		}
+		
+	#####################
+	## Kokusai Faction ##
+	#####################
+		focus = {
+			id = NJP_Kokusai_faction
+			icon = GFX_goal_NJP_Kokusai_faction
+			allow_branch = {
+				NOT = {
+					NJP_united_front = yes
+				}
+			}
+			mutually_exclusive = { 
+				focus = NJP_Rono_faction
+				focus = NJP_Gyomin_faction
+				focus = NJP_Shokan_faction
+			}
+			relative_position_id = NJP_The_5th_Congress_of_Japan
+				x = 3
+				y = 1
+			cost = 3
+			available = {
+			}
+			prerequisite = { 
+				focus = NJP_The_5th_Congress_of_Japan
+			}
+			available_if_capitulated = no
+			cancel_if_invalid = no
+			continue_if_invalid = yes
+			bypass = {
+			}
+			completion_reward = {
+			}	
+		}
+		
+	#######################
+	## Mission to Russia ##
+	#######################
+		focus = {
+			id = NJP_mission_to_russia
+			icon = GFX_goal_generic_cooperation_RUS
+			allow_branch = {
+				NOT = {
+					NJP_united_front = yes
+				}
+			}
+			relative_position_id = NJP_Kokusai_faction
+				x = 0
+				y = 1
+			cost = 3
+			available = {
+			}
+			prerequisite = { 
+				focus = NJP_Kokusai_faction
+			}
+			available_if_capitulated = no
+			cancel_if_invalid = no
+			continue_if_invalid = yes
+			bypass = {
+			}
+			completion_reward = {
+			}	
+		}
+	
+	########################
+	## Party Commands Gun ##
+	########################
+		focus = {
+			id = NJP_party_commands_gun
+			icon = GFX_goal_NJP_party_commands_gun
+			allow_branch = {
+				NOT = {
+					NJP_united_front = yes
+				}
+			}
+			relative_position_id = NJP_mission_to_russia
+				x = -1
+				y = 1
+			cost = 3
+			available = {
+			}
+			prerequisite = { 
+				focus = NJP_mission_to_russia
+				focus = NJP_party_leadership
+			}
+			available_if_capitulated = no
+			cancel_if_invalid = no
+			continue_if_invalid = yes
+			bypass = {
+			}
+			completion_reward = {
+			}	
+		}
+		
+	##################################################
+	## Emphasis on the role of political commissars ##
+	##################################################
+		focus = {
+			id = NJP_political_commissars
+			icon = GFX_goal_NJP_political_commissars
+			allow_branch = {
+				NOT = {
+					NJP_united_front = yes
+				}
+			}
+			relative_position_id = NJP_mission_to_russia
+				x = 0
+				y = 2
+			cost = 3
+			available = {
+			}
+			prerequisite = { 
+				focus = NJP_party_commands_gun
+			}
+			available_if_capitulated = no
+			cancel_if_invalid = no
+			continue_if_invalid = yes
+			bypass = {
+			}
+			completion_reward = {
+			}	
+		}
+		
+	##########################
+	## Not Inferior to Men  ##
+	##########################
+		focus = {
+			id = NJP_not_inferior
+			icon = GFX_goal_NJP_Not_inferior_to_men	
+			prerequisite = {
+				focus = NJP_perfect_mobilize_system
+			}
+			relative_position_id = NJP_improving_socialist_democracy
+			x = 0
+			y = 2
+			cost = 5
+			available = {
+			}
+			available_if_capitulated = no
+			cancel_if_invalid = no
+			continue_if_invalid = yes
+			bypass = {
+			}
+			completion_reward = {
+			}
+		}
+		
+		
+		
+		###########################  Military & Industry Part  ##################################
+
+	###############################################
+	## Discussion in Central Military Commission ##
+	###############################################
+		focus = {
+			id = NJP_Discussion_in_CMC
+			icon = GFX_goal_NJP_Discussion_in_CMC
+			
+			relative_position_id = NJP_The_5th_Congress_of_Japan
+				x = 0
+				y = 3
+			cost = 3
+			available = {
+			}
+			prerequisite = { 
+				focus = NJP_The_5th_Congress_of_Japan
+			}
+			available_if_capitulated = no
+			cancel_if_invalid = no
+			continue_if_invalid = yes
+			bypass = {
+			}
+			completion_reward = {
+			}	
+		}
+		
+	######################################
+	## Expand the militia organization  ##
+	######################################
+		
+		focus = {
+			id = NJP_expand_militia
+			icon = GFX_goal_NJP_expand_militia
+		
+			prerequisite = { 
+				focus = NJP_Discussion_in_CMC
+			}
+			prerequisite = { 
+				focus = NJP_perfect_mobilize_system
+			}
+			relative_position_id = NJP_Discussion_in_CMC
+			x = -1
+			y = 1
+			cost = 8
+			available = {
+			}
+			available_if_capitulated = no
+			cancel_if_invalid = no
+			continue_if_invalid = yes
+			bypass = {
+			}
+			completion_reward = {
+			}
+		}
+		
+	################
+	## Osugi Plan ##
+	################
+	
+		focus = {
+			id = NJP_osugi_plan
+			icon = GFX_goal_NJP_osugi_plan
+			
+			prerequisite = { 
+				focus = NJP_expand_militia
+			}
+			relative_position_id = NJP_expand_militia
+			x = -1
+			y = 1
+			cost = 8
+			available = {
+			}
+			available_if_capitulated = no
+			cancel_if_invalid = no
+			continue_if_invalid = yes
+			bypass = {
+			}
+			completion_reward = {
+			}
+		}
+		
+	#########################
+	## Drill the Red Army  ##
+	#########################
+		focus = {
+			id = NJP_drill_red_army
+			icon = GFX_goal_NJP_drill_red_army
+			
+			prerequisite = { 
+				focus = NJP_Discussion_in_CMC
+			}
+			prerequisite = { 
+				focus = NJP_party_commands_gun
+			}
+			relative_position_id = NJP_Discussion_in_CMC
+			x = 1
+			y = 1
+			cost = 8
+			available = {
+			}
+			available_if_capitulated = no
+			cancel_if_invalid = no
+			continue_if_invalid = yes
+			bypass = {
+			}
+			completion_reward = {
+			}
+		}
+		
+	#################
+	## Masaki Plan ##
+	#################
+	
+		focus = {
+			id = NJP_masaki_plan
+			icon = GFX_goal_NJP_masaki_plan
+			
+			prerequisite = { 
+				focus = NJP_drill_red_army
+			}
+			relative_position_id = NJP_drill_red_army
+			x = 1
+			y = 1
+			cost = 8
+			available = {
+			}
+			available_if_capitulated = no
+			cancel_if_invalid = no
+			continue_if_invalid = yes
+			bypass = {
+			}
+			completion_reward = {
+			}
+		}
+		
+	###########################
+	## New Chain of Command  ##
+	###########################
+	
+		focus = {
+			id = NJP_new_chain_of_command
+			icon = GFX_goal_NJP_new_chain_of_command
+			
+			prerequisite = { 
+				focus = NJP_drill_red_army
+				focus = NJP_expand_militia
+			}
+			
+			relative_position_id = NJP_expand_militia
+			x = 1
+			y = 1
+			cost = 8
+			available = {
+			}
+			available_if_capitulated = no
+			cancel_if_invalid = no
+			continue_if_invalid = yes
+			bypass = {
+			}
+			completion_reward = {
+			}
+		}
+		
+	################################
+	## People's War of Liberation ##
+	################################
+	
+		focus = {
+			id = NJP_war_of_liberation
+			icon = GFX_goal_NJP_war_of_liberation
+			
+			prerequisite = { 
+				focus = NJP_masaki_plan
+				focus = NJP_osugi_plan
+			}
+			prerequisite = { 
+				focus = NJP_new_chain_of_command
+			}
+			relative_position_id = NJP_new_chain_of_command
+			x = 0
+			y = 1
+			cost = 8
+			available = {
+			}
+			available_if_capitulated = no
+			cancel_if_invalid = no
+			continue_if_invalid = yes
+			bypass = {
+			}
+			completion_reward = {
+			}
+		}
+		
+
+		
+		#######################################
+		## Adjustment in Economic Commission ##
+		#######################################
+		
+		focus = {
+			id = NJP_Adjustment_in_ECJ
+			icon = GFX_goal_NJP_Adjustment_in_ECJ
+			
+			relative_position_id = NJP_The_5th_Congress_of_Japan
+				x = 15
+				y = 1
+			cost = 3
+			available = {
+			}
+			prerequisite = { 
+				focus = NJP_The_5th_Congress_of_Japan
+			}
+			available_if_capitulated = no
+			cancel_if_invalid = no
+			continue_if_invalid = yes
+			bypass = {
+			}
+			completion_reward = {
+			}	
+		}
+		
+		#################################
+		## Priority for Heavy Industry ##
+		#################################
+		
+		focus = {
+			id = NJP_priority_for_mil_industry
+			icon = GFX_goal_NJP_Adjustment_in_ECJ
+			
+			relative_position_id = NJP_Adjustment_in_ECJ
+				x = -1
+				y = 1
+			cost = 3
+			available = {
+			}
+			prerequisite = { 
+				focus = NJP_Adjustment_in_ECJ
+			}
+			mutually_exclusive = {
+				focus = NJP_priority_for_civ_industry
+			}
+			available_if_capitulated = no
+			cancel_if_invalid = no
+			continue_if_invalid = yes
+			bypass = {
+			}
+			completion_reward = {
+			}	
+		}
+		
+		
+		#################################
+		## priority for Light Industry ##
+		#################################
+		
+		focus = {
+			id = NJP_priority_for_civ_industry
+			icon = GFX_goal_NJP_Adjustment_in_ECJ
+			
+			relative_position_id = NJP_Adjustment_in_ECJ
+				x = 1
+				y = 1
+			cost = 3
+			available = {
+			}
+			prerequisite = { 
+				focus = NJP_Adjustment_in_ECJ
+			}
+			mutually_exclusive = {
+				focus = NJP_priority_for_mil_industry
+			}
+			available_if_capitulated = no
+			cancel_if_invalid = no
+			continue_if_invalid = yes
+			bypass = {
+			}
+			completion_reward = {
+			}	
+		}
+		
+		#########################################
+		## Promoting Agricultural Cooperatives ##
+		#########################################
+		
+		focus = {
+			id = NJP_promoting_agricultural_cooperatives
+			icon = GFX_goal_generic_Modernized_Agriculture
+			
+			relative_position_id = NJP_Adjustment_in_ECJ
+				x = 3
+				y = 1
+			cost = 3
+			available = {
+			}
+			prerequisite = { 
+				focus = NJP_Adjustment_in_ECJ
+			}
+			available_if_capitulated = no
+			cancel_if_invalid = no
+			continue_if_invalid = yes
+			bypass = {
+			}
+			completion_reward = {
+			}	
+		}
+		
+		############################################
+		## Addressing Shortages of Consumer Goods ##
+		############################################
+		
+		focus = {
+			id = NJP_addressing_shortages_of_consumer_goods
+			icon = GFX_goal_generic_positive_trade_relations
+			
+			relative_position_id = NJP_priority_for_civ_industry
+				x = 3
+				y = 1
+			cost = 3
+			available = {
+			}
+			prerequisite = { 
+				focus = NJP_priority_for_civ_industry
+			}
+			available_if_capitulated = no
+			cancel_if_invalid = no
+			continue_if_invalid = yes
+			bypass = {
+			}
+			completion_reward = {
+			}	
+		}
+		
+		################################################
+		## Expansion of the Railway in Northern Japan ##
+		################################################
+		
+		focus = {
+			id = NJP_expansion_of_the_railway_in_northern_japan
+			icon = GFX_goal_NJP_japan_raliway
+			
+			relative_position_id = NJP_priority_for_civ_industry
+				x = 1
+				y = 1
+			cost = 3
+			available = {
+			}
+			prerequisite = { 
+				focus = NJP_priority_for_civ_industry
+			}
+			available_if_capitulated = no
+			cancel_if_invalid = no
+			continue_if_invalid = yes
+			bypass = {
+			}
+			completion_reward = {
+			}	
+		}
+		
+		###############################
+		## Investing in Shipbuilding ##
+		###############################
+		
+		focus = {
+			id = NJP_investing_in_shipbuilding
+			icon = GFX_goal_generic_positive_trade_relations_shine
+			
+			relative_position_id = NJP_priority_for_mil_industry
+				x = -1
+				y = 1
+			cost = 3
+			available = {
+			}
+			prerequisite = { 
+				focus = NJP_priority_for_mil_industry
+			}
+			available_if_capitulated = no
+			cancel_if_invalid = no
+			continue_if_invalid = yes
+			bypass = {
+			}
+			completion_reward = {
+			}	
+		}
+		
+		##################################
+		## Improving production targets ##
+		##################################
+		
+		focus = {
+			id = NJP_improving_production_targets
+			icon = GFX_goal_generic_positive_trade_relations_shine
+			
+			relative_position_id = NJP_priority_for_mil_industry
+				x = -3
+				y = 1
+			cost = 3
+			available = {
+			}
+			prerequisite = { 
+				focus = NJP_priority_for_mil_industry
+			}
+			available_if_capitulated = no
+			cancel_if_invalid = no
+			continue_if_invalid = yes
+			bypass = {
+			}
+			completion_reward = {
+			}	
+		}
+		
+		
+	}

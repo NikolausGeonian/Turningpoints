@@ -1,0 +1,62 @@
+﻿capital = 658
+
+##oob = "BTS"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_recon = 1
+	tech_engineers = 1
+	tech_support = 1		
+	tech_mountaineers = 1
+}
+
+set_convoys = 12
+set_popularities = {
+	conservatism = 9
+	authoritarianism = 69
+	social_democratism = 1
+	patriotic_socialism = 0
+	corporatism = 6
+	democratic_socialism = 0
+	populism = 7
+	social_liberalism = 8
+}
+set_politics = {
+	ruling_party = authoritarianism
+	last_election = "1919.1.3"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "George Macartney"
+	desc = "POLITICS_GEORGE_MACARTNEY_DESC"
+	picture = "gfx/leaders/BTS/Portrait_George_Macartney.dds"
+	expire = "1952.8.23"
+	ideology = conservatism_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "George Macartney"
+	desc = "POLITICS_GEORGE_MACARTNEY_DESC"
+	picture = "gfx/leaders/BTS/Portrait_George_Macartney.dds"
+	expire = "1952.8.23"
+	ideology = authoritarianism_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Trucial States Council"
+	desc = "POLITICS_KURT_SCHUSCHNIGG_DESC"
+	picture = "gfx/leaders/BTS/Portrait_George_Macartney.dds"
+	expire = "1952.8.23"
+	ideology = social_democratism_subtype
+	traits = {
+		#
+	}
+}

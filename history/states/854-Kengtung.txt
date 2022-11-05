@@ -1,0 +1,26 @@
+state = {
+	id=854
+	name="STATE_854" #Chiangtung 
+	manpower = 1271620
+	state_category = pastoral
+	
+	history = {
+		owner = SIA
+		add_core_of = SIA
+		add_claim_by = BRM
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1 
+		}
+		
+			victory_points = {
+				7909 2
+			}
+		
+	}
+	
+	provinces={
+		7400 7909 4175 7974 7647 12317
+		
+	}
+}

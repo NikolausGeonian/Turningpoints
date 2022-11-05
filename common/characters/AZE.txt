@@ -1,0 +1,232 @@
+characters = {
+	
+	### Country Leader ###
+	
+	AZE_Ali_bey_Huseynzade = {
+		name = AZE_Ali_bey_Huseynzade
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/AZE/ministers/AZE_Ali_bey_Huseynzade.dds"
+				large = "gfx/leaders/AZE/Portrait_Ali_bey_Huseynzade.dds"
+			}
+		}
+		
+		country_leader = {
+			desc = "POLITICS_AZE_ALI_BEY_HUSEYNZADE_DESC"
+			ideology = despotism_subtype
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		
+		country_leader = {
+			desc = "POLITICS_AZE_ALI_BEY_HUSEYNZADE_DESC"
+			ideology = conservatism_subtype
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+	
+	AZE_Mammad_Amin_Rasulzadeh = {
+		name = AZE_Mammad_Amin_Rasulzadeh
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/AZE/ministers/AZE_Mammad_Amin_Rasulzadeh.dds"
+				large = "gfx/leaders/AZE/Portrait_Mammad_Amin_Rasulzadeh.dds"
+			}
+		}
+		
+		country_leader = {
+			desc = "POLITICS_AZE_MAMMAD_AMIN_RASULZADEH_DESC"
+			ideology = social_liberalism_subtype
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		
+		advisor={
+			desc = "POLITICS_AZE_MAMMAD_AMIN_RASULZADEH_MINISTER_DESC"
+			slot = head_of_government
+			idea_token = AZE_Mammad_Amin_Rasulzadeh
+			ledger = civilian
+			allowed = {
+				original_tag = AZE
+			}
+			visible = {
+				NOT = {	
+					NOT = {	
+					has_country_leader = {
+						character = AZE_Mammad_Amin_Rasulzadeh
+						ruling_only = yes
+					}
+				}
+				}
+			}
+			available = {
+				OR = {
+					has_government = conservatism
+					has_government = social_liberalism
+				}
+			}
+			traits = {  }
+			cost = 100
+			ai_will_do = {
+				factor = 1.500
+			}
+		}		
+	}
+	
+	### Ministers ###
+	### HEAD OF GOVERNMENT ###
+
+	AZE_Fatali_Khan_Khoyski = {
+		name = AZE_Fatali_Khan_Khoyski
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/AZE/ministers/AZE_Fatali_Khan_Khoyski.dds"
+				large = "gfx/leaders/AZE/Portrait_Fatali_Khan_Khoyski.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_AZE_FATALI_KHAN_KHOYSKI_DESC"
+			slot = foreign_minister
+			idea_token = AZE_Fatali_Khan_Khoyski_minister
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = AZE
+			}
+			visible = {
+				NOT = {
+					has_idea = AZE_Fatali_Khan_Khoyski
+				}
+			}
+			available = {
+				has_government = conservatism
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}
+
+		advisor={
+			desc = "POLITICS_AZE_FATALI_KHAN_KHOYSKI_DESC"
+			slot = head_of_government
+			idea_token = AZE_Fatali_Khan_Khoyski_minister
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = AZE
+			}
+			available = {
+				has_government = conservatism
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}	
+	}
+	### FOREIGN MINISTER ###
+	
+	###	ECONOMY MINISTER ###
+	
+	### FIELD MARSHAL ###
+	
+	### CORPS COMMANDER ###
+	
+	AZE_Jamshid_Nakhchivanski = {
+		name = AZE_Jamshid_Nakhchivanski
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/AZE/ministers/AZE_Jamshid_Nakhchivanski.dds"
+				large = "gfx/leaders/AZE/Portrait_Jamshid_Nakhchivanski.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_AZE_JAMSHID_NAKHCHIVANSKI_DESC"
+			traits = {  }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 1
+		}
+	}
+	
+	AZE_Abdulhamid_bey_Gaytabashi = {
+		name = AZE_Abdulhamid_bey_Gaytabashi
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/AZE/ministers/AZE_Abdulhamid_bey_Gaytabashi.dds"
+				large = "gfx/leaders/AZE/Portrait_Abdulhamid_bey_Gaytabashi.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "GENERAL_AZE_ABDULHAMID_BEY_GAYTABASHI_DESC"
+			slot = army_chief
+			idea_token = AZE_Abdulhamid_bey_Gaytabashi
+			allowed = {
+				original_tag = AZE
+			}
+			traits = { army_chief_offensive_1 }
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_AZE_ABDULHAMID_BEY_GAYTABASHI_DESC"
+			traits = {  }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 1
+		}
+	}
+	
+	AZE_Habib_Bey_Salimov = {
+		name = AZE_Habib_Bey_Salimov
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/AZE/ministers/AZE_Habib_Bey_Salimov.dds"
+				large = "gfx/leaders/AZE/Portrait_Habib_Bey_Salimov.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "GENERAL_AZE_ABDULHAMID_BEY_GAYTABASHI_DESC"
+			slot = army_chief
+			idea_token = AZE_Abdulhamid_bey_Gaytabashi
+			allowed = {
+				original_tag = AZE
+			}
+			traits = { army_chief_defensive_1 }
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_AZE_HABIB_BEY_SALIMOV_DESC"
+			traits = {  }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 1
+		}
+	}
+	
+	### ADMIRAL ###
+	
+}

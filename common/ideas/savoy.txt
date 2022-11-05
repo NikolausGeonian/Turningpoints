@@ -1,0 +1,186 @@
+ideas = {
+	country = {
+	}	
+	
+	
+	# TECHNOLOGY
+	naval_manufacturer = {
+		designer = yes
+		
+		SAV_Cantieri_navali_Odero = {
+			
+			
+			allowed = {
+				original_tag = SAV
+			}
+			
+			
+			research_bonus = {
+			}
+			
+			traits = {
+				submarine_manufacturer_2
+			}
+		}
+	}
+	
+	materiel_manufacturer = {
+		designer = yes
+		
+		SAV_lancia = {
+			
+			
+			allowed = {
+				original_tag = SAV
+			}
+			
+			
+			research_bonus = {
+				motorized_equipment = 0.15
+			}
+			
+			traits = {
+				motorized_equipment_manufacturer
+			}
+		}
+		
+	}
+	
+	tank_manufacturer = {
+		
+		designer = yes
+		
+		SAV_fiat = {
+			
+			allowed = {
+				original_TAG = SAV
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = {
+				fast_tank_manufacturer
+			}
+			
+			modifier = {
+			}
+		}
+		
+		SAV_Societa_Piemontese_Automobili = {
+			
+			
+			allowed = {
+				original_tag = SAV
+			}
+						
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = {
+				infantry_tank_manufacturer
+			}
+		}
+		
+		SAV_Ansaldo = {
+			
+			allowed = {
+				original_tag = SAV
+			}
+			
+			research_bonus = {			
+				armor = 0.15			
+			}
+			
+			traits = { medium_tank_manufacturer }
+			
+			ai_will_do = {
+				
+				factor = 1
+				
+			}
+			
+		}
+		
+	}
+
+	aircraft_manufacturer = {	
+		
+		designer = yes
+		
+		SAV_Savoia_Marchetti = {
+			
+			
+			allowed = {
+				original_tag = SAV
+			}
+
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = {
+				naval_aircraft_manufacturer
+			}
+		}
+		
+		SAV_Fabbrica_Aerei_Piaggio = {
+						
+			allowed = {
+				original_tag = SAV
+			}
+						
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = {
+				heavy_aircraft_manufacturer
+			}
+		}
+	}
+
+	head_of_government = {
+		
+		SAV_Gabriele_D_Annunzio = {			
+			allowed = {
+				original_tag = "SAV"
+				
+			}	
+			available = {
+					has_government = corporatism
+			}		
+			removal_cost = -1
+			traits = {  }	
+			ai_will_do = {
+				factor = 0
+			}
+			
+		}
+		
+		SAV_Benito_Mussolini = {			
+			allowed = {
+				original_tag = "SAV"
+			}	
+			
+			visible = {
+				NOT = {
+					has_idea = SAV_Gabriele_D_Annunzio
+				}
+			}	
+			
+			available = {
+					has_government = corporatism
+			}		
+			traits = {  }	
+			ai_will_do = {
+				factor = 0
+			}
+			
+		}
+	
+	}
+		
+}

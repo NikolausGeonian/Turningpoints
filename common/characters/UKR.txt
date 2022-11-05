@@ -1,0 +1,408 @@
+characters = {
+	
+	### Country Leader ###
+	
+	UKR_Vasyl_Vyshyvani = {
+		name = UKR_Vasyl_Vyshyvani
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/UKR/Portrait_Vasyl_Vyshyvani.dds"
+			}
+		}
+		
+		country_leader = {
+			desc = "POLITICS_VASYL_VYSHYVANI_DESC"
+			ideology = autocratic_monarchy_subtype
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		
+		country_leader = {
+			desc = "POLITICS_VASYL_VYSHYVANI_DESC"
+			ideology = semi_constitutional_monarchy_subtype
+			traits={  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		
+		country_leader = {
+			desc = "POLITICS_VASYL_VYSHYVANI_DESC"
+			ideology = constitutional_monarchy_B_subtype
+			traits={  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		
+		country_leader = {
+			desc = "POLITICS_VASYL_VYSHYVANI_DESC"
+			ideology = constitutional_monarchy_A_subtype
+			traits={  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		
+		country_leader = {
+			desc = "POLITICS_VASYL_VYSHYVANI_DESC"
+			ideology = rexism_subtype
+			traits={  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+	
+	### Ministers ###
+	### HEAD OF GOVERNMENT ###
+	
+	### FOREIGN MINISTER ###
+	
+	###	ECONOMY MINISTER ###
+	
+	### FIELD MARSHAL ###
+	
+	UKR_Myron_Tarnavsky = {
+		name = UKR_Myron_Tarnavsky
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/UKR/ministers/UKR_Myron_Tarnavsky.dds"
+				large = "gfx/leaders/UKR/Portrait_Myron_Tarnavsky.dds"
+			}
+		}
+		
+		field_marshal = {
+			desc = "MARSHAL_UKR_MYRON_TARNAVSKY_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+	
+	UKR_Pavlo_Skoropadsky = {
+		name = UKR_Pavlo_Skoropadsky
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/UKR/ministers/UKR_Pavlo_Skoropadsky.dds"
+				large = "gfx/leaders/UKR/Portrait_Pavlo_Skoropadsky.dds"
+			}
+		}
+		
+		field_marshal = {
+			desc = "MARSHAL_UKR_PAVLO_SKOROPADSKY_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+	
+	### CORPS COMMANDER ###
+	
+	
+	UKR_Mykhailo_Omelianovych_Pavlenko = {
+		name = UKR_Mykhailo_Omelianovych_Pavlenko
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/UKR/ministers/UKR_Mykhailo_Omelianovych_Pavlenko.dds"
+				large = "gfx/leaders/UKR/Portrait_Mykhailo_Omelianovych_Pavlenko.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_UKR_MYKHAILO_OMELIANOVYCH_PAVLENKO_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+	
+	
+	UKR_Oleksander_Hrekov = {
+		name = UKR_Oleksander_Hrekov
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/UKR/ministers/UKR_Oleksander_Hrekov.dds"
+				large = "gfx/leaders/UKR/Portrait_Oleksander_Hrekov.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_UKR_OLEKSANDER_HREKOV_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	UKR_Mykhailo_Sadovsky = {
+		name = UKR_Mykhailo_Sadovsky
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/UKR/ministers/UKR_Mykhailo_Sadovsky.dds"
+				large = "gfx/leaders/UKR/Portrait_Mykhailo_Sadovsky.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_UKR_MYKHAILO_SADOVSKY_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	UKR_Yuriy_Tyutyunnyk = {
+		name = UKR_Yuriy_Tyutyunnyk
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/UKR/ministers/UKR_Yuriy_Tyutyunnyk.dds"
+				large = "gfx/leaders/UKR/Portrait_Yuriy_Tyutyunnyk.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_UKR_YURIY_TYUTYUNNYK_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	UKR_Volodymyr_Sinclair = {
+		name = UKR_Volodymyr_Sinclair
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/UKR/ministers/UKR_Volodymyr_Sinclair.dds"
+				large = "gfx/leaders/UKR/Portrait_Volodymyr_Sinclair.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_UKR_VOLODYMYR_SINCLAIR_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	UKR_Vsevolod_Petriv = {
+		name = UKR_Vsevolod_Petriv
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/UKR/ministers/UKR_Vsevolod_Petriv.dds"
+				large = "gfx/leaders/UKR/Portrait_Vsevolod_Petriv.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_UKR_VSEVOLOD_PETRIV_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	UKR_Pavel_Bermondt_Avalovk = {
+		name = UKR_Pavel_Bermondt_Avalovk
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/UKR/ministers/UKR_Pavel_Bermondt_Avalovk.dds"
+				large = "gfx/leaders/UKR/Portrait_Pavel_Bermondt_Avalov.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_UKR_PAVEL_BERMONDT_AVALOV_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	UKR_Petro_Franko = {
+		name = UKR_Petro_Franko
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/UKR/ministers/UKR_Petro_Franko.dds"
+				large = "gfx/leaders/UKR/Portrait_Petro_Franko.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_UKR_PETRO_FRANKO_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	UKR_Andrei_Shkuro = {
+		name = UKR_Andrei_Shkuro
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/UKR/ministers/UKR_Andrei_Shkuro.dds"
+				large = "gfx/leaders/UKR/Portrait_Andrei_Shkuro.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_UKR_ANDREI_SHKURO_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	UKR_Dmytro_Vitovsky = {
+		name = UKR_Dmytro_Vitovsky
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/UKR/ministers/UKR_Dmytro_Vitovsky.dds"
+				large = "gfx/leaders/UKR/Portrait_Dmytro_Vitovsky.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_UKR_DMYTRO_VITOVSKY_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	UKR_Nikolay_Lavrentievich_Maksimov = {
+		name = UKR_Nikolay_Lavrentievich_Maksimov
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/UKR/ministers/UKR_Nikolay_Lavrentievich_Maksimov.dds"
+				large = "gfx/leaders/UKR/Portrait_Nikolay_Lavrentievich_Maksimov.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_UKR_NIKOLAY_LAVRENTIEVICH_MAKSIMOV_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	UKR_Hnat_Stefaniv = {
+		name = UKR_Hnat_Stefaniv
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/UKR/ministers/UKR_Hnat_Stefaniv.dds"
+				large = "gfx/leaders/UKR/Portrait_Hnat_Stefaniv.dds"
+			}
+		}
+
+		corps_commander = {
+			desc = "GENERAL_UKR_HNAT_STEFANIV_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	### ADMIRAL ###
+	
+	UKR_Gadd_Alexander_Ottovich = {
+		name = UKR_Gadd_Alexander_Ottovich
+		portraits = {	
+			navy = {
+				small = "gfx/interface/ideas/UKR/ministers/UKR_Gadd_Alexander_Ottovich.dds"
+				large = "gfx/leaders/UKR/Portrait_Gadd_Alexander_Ottovich.dds"
+			}
+		}
+		
+		navy_leader = {
+			desc = "ADMIRAL_UKR_GADD_ALEXANDER_OTTOVICH_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	
+	UKR_Mykhailo_Ivanovych_Bilynsky = {
+		name = UKR_Mykhailo_Ivanovych_Bilynsky
+		portraits = {	
+			navy = {
+				small = "gfx/interface/ideas/UKR/ministers/UKR_Mykhailo_Ivanovych_Bilynsky.dds"
+				large = "gfx/leaders/UKR/Portrait_Mykhailo_Ivanovych_Bilynsky.dds"
+			}
+		}
+		
+		navy_leader = {
+			desc = "ADMIRAL_UKR_MYKHAILO_IVANOVYCH_BILYNSKY_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	
+	UKR_Sviatoslav_Shramchenko = {
+		name = UKR_Sviatoslav_Shramchenko
+		portraits = {	
+			navy = {
+				small = "gfx/interface/ideas/UKR/ministers/UKR_Sviatoslav_Shramchenko.dds"
+				large = "gfx/leaders/UKR/Portrait_Sviatoslav_Shramchenko.dds"
+			}
+		}
+		
+		navy_leader = {
+			desc = "ADMIRAL_UKR_SVIATOSLAV_SHRAMCHENKO_BILYNSKY_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	
+}

@@ -1,0 +1,500 @@
+
+characters = {
+	
+	### Country Leader ###
+	
+	RUS_Yakov_Sverdlov = {
+		name = RUS_Yakov_Sverdlov
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/RUS/ministers/RUS_Yakov_Sverdlov.dds"
+				large = "gfx/leaders/RUS/Portrait_Yakov_Sverdlov.dds"
+			}
+		}
+		
+		country_leader = {
+			desc = "POLITICS_RUS_YAKOV_SVERDLOV_DESC"
+			ideology = patriotic_socialism_subtype
+			traits={  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		
+		country_leader = {
+			desc = "POLITICS_RUS_YAKOV_SVERDLOV_DESC"
+			ideology = democratic_socialism_subtype
+			traits={  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+	
+	RUS_Romanov_Dynasty = {
+		name = RUS_Romanov_Dynasty
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/RUS/Portrait_Romanov_Dynasty.dds"
+			}
+		}
+		
+		country_leader = {
+			desc = "POLITICS_RUS_ROMANOV_DYNASTY_DESC"
+			ideology = autocratic_monarchy_subtype
+			traits={  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+	
+	### Ministers ###
+	### HEAD OF GOVERNMENT ###
+	
+	RUS_Alexei_Rikov = {
+		name = RUS_Alexei_Rikov
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/RUS/ministers/RUS_Alexei_Rikov.dds"
+				large = "gfx/leaders/RUS/Portrait_Alexei_Rikov.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_RUS_ALEXEI_RIKOV_DESC"
+			slot = head_of_government
+			idea_token = RUS_Alexei_Rikov
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = RUS
+			}
+			available = {
+				OR = {
+					has_government = democratic_socialism
+					has_government = patriotic_socialism
+					has_government = social_democratism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	RUS_Mikhail_Kalinin = {
+		name = RUS_Mikhail_Kalinin
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/RUS/ministers/RUS_Mikhail_Kalinin.dds"
+				large = "gfx/leaders/RUS/Portrait_Mikhail_Kalinin.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_RUS_MIKHAIL_KALININ_DESC"
+			slot = head_of_government
+			idea_token = RUS_Mikhail_Kalinin
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = RUS
+			}
+			available = {
+				OR = {
+					has_government = democratic_socialism
+					has_government = patriotic_socialism
+					has_government = social_democratism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	RUS_Andrei_Zhdanov = {
+		name = RUS_Andrei_Zhdanov
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/RUS/ministers/RUS_Andrei_Zhdanov.dds"
+				large = "gfx/leaders/RUS/Portrait_Andrei_Zhdanov.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_RUS_ANDREI_ZHDANOV_DESC"
+			slot = head_of_government
+			idea_token = RUS_Andrei_Zhdanov
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = RUS
+			}
+			available = {
+				OR = {
+					has_government = democratic_socialism
+					has_government = patriotic_socialism
+					has_government = social_democratism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	RUS_Sergei_Kirov = {
+		name = RUS_Sergei_Kirov
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/RUS/ministers/RUS_Sergei_Kirov.dds"
+				large = "gfx/leaders/RUS/Portrait_Sergei_Kirov.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_RUS_SERGEI_KIROV_DESC"
+			slot = head_of_government
+			idea_token = RUS_Sergei_Kirov
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = RUS
+			}
+			available = {
+				OR = {
+					has_government = democratic_socialism
+					has_government = patriotic_socialism
+					has_government = social_democratism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	RUS_Nikolai_Yezhov = {
+		name = RUS_Nikolai_Yezhov
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/RUS/ministers/RUS_Nikolai_Yezhov.dds"
+				large = "gfx/leaders/RUS/Portrait_Nikolai_Yezhov.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_RUS_NIKOLAI_YEZHOV_DESC"
+			slot = head_of_government
+			idea_token = RUS_Nikolai_Yezhov
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = RUS
+			}
+			available = {
+				has_government = patriotic_socialism
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	### FOREIGN MINISTER ###
+	
+	RUS_Vyacheslav_Molotov = {
+		name = RUS_Vyacheslav_Molotov
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/RUS/ministers/RUS_Vyacheslav_Molotov.dds"
+				large = "gfx/leaders/RUS/Portrait_Vyacheslav_Molotov.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_RUS_VYACHESLAV_MOLOTOV_DESC"
+			slot = foreign_minister
+			idea_token = RUS_Vyacheslav_Molotov
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = RUS
+			}
+			available = {
+				OR = {
+					has_government = patriotic_socialism
+					has_government = social_democratism
+					has_government = democratic_socialism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	RUS_Maxim_Litvinov = {
+		name = RUS_Maxim_Litvinov
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/RUS/ministers/RUS_Maxim_Litvinov.dds"
+				large = "gfx/leaders/RUS/Portrait_Maxim_Litvinov.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_RUS_MAXIM_LITVINOV_DESC"
+			slot = foreign_minister
+			idea_token = RUS_Maxim_Litvinov
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = RUS
+			}
+			available = {
+				OR = {
+					has_government = patriotic_socialism
+					has_government = social_democratism
+					has_government = democratic_socialism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	RUS_Nikolay_Chkheidze = {
+		name = RUS_Nikolay_Chkheidze
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/RUS/ministers/RUS_Nikolay_Chkheidze.dds"
+				large = "gfx/leaders/RUS/Portrait_Nikolay_Chkheidze.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_RUS_NIKOLAY_CHKHEIDZE_DESC"
+			slot = foreign_minister
+			idea_token = RUS_Nikolay_Chkheidze
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = RUS
+			}
+			available = {
+				OR = {
+					has_government = patriotic_socialism
+					has_government = social_democratism
+					has_government = democratic_socialism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	###	ECONOMY MINISTER ###
+	
+	RUS_Nikolai_Bukharin = {
+		name = RUS_Nikolai_Bukharin
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/RUS/ministers/RUS_Nikolai_Bukharin.dds"
+				large = "gfx/leaders/RUS/Portrait_Nikolai_Bukharin.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_RUS_NIKOLAI_BUKHARIN_DESC"
+			slot = economy_minister
+			idea_token = RUS_Nikolai_Bukharin
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = RUS
+			}
+			available = {
+				OR = {
+					has_government = patriotic_socialism
+					has_government = social_democratism
+					has_government = democratic_socialism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	RUS_Nikolay_Krestinsky = {
+		name = RUS_Nikolay_Krestinsky
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/RUS/ministers/RUS_Nikolay_Krestinsky.dds"
+				large = "gfx/leaders/RUS/Portrait_Nikolay_Krestinsky.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_RUS_NIKOLAY_KRESTINSKY_DESC"
+			slot = economy_minister
+			idea_token = RUS_Nikolay_Krestinsky
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = RUS
+			}
+			available = {
+				OR = {
+					has_government = patriotic_socialism
+					has_government = social_democratism
+					has_government = democratic_socialism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	RUS_Lazar_Kaganovich = {
+		name = RUS_Lazar_Kaganovich
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/RUS/ministers/RUS_Lazar_Kaganovich.dds"
+				large = "gfx/leaders/RUS/Portrait_Lazar_Kaganovich.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_RUS_LAZAR_KAGANOVICH_DESC"
+			slot = economy_minister
+			idea_token = RUS_Lazar_Kaganovich
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = RUS
+			}
+			available = {
+				OR = {
+					has_government = patriotic_socialism
+					has_government = social_democratism
+					has_government = democratic_socialism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	RUS_Yevgeni_Preobrazhensky = {
+		name = RUS_Yevgeni_Preobrazhensky
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/RUS/ministers/RUS_Yevgeni_Preobrazhensky.dds"
+				large = "gfx/leaders/RUS/Portrait_Yevgeni_Preobrazhensky.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_RUS_YEVGENI_PREOBRAZHENSKY_DESC"
+			slot = economy_minister
+			idea_token = RUS_Yevgeni_Preobrazhensky
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = RUS
+			}
+			available = {
+				OR = {
+					has_government = patriotic_socialism
+					has_government = social_democratism
+					has_government = democratic_socialism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	RUS_Irakli_Tsereteli = {
+		name = RUS_Irakli_Tsereteli
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/RUS/ministers/RUS_Irakli_Tsereteli.dds"
+				large = "gfx/leaders/RUS/Portrait_Irakli_Tsereteli.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_RUS_IRAKLI_TSERETELI_DESC"
+			slot = economy_minister
+			idea_token = RUS_Irakli_Tsereteli
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = RUS
+			}
+			available = {
+				OR = {
+					has_government = patriotic_socialism
+					has_government = social_democratism
+					has_government = democratic_socialism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	### FIELD MARSHAL ###
+	
+	### CORPS COMMANDER ###
+	
+	### ADMIRAL ###
+	
+}

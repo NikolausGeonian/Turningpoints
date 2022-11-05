@@ -1,0 +1,109 @@
+
+# MAIN THEME
+music = {
+	name = "maintheme"
+	file = "audio/maintheme.ogg"
+	volume = 0.65
+}
+
+# CHINA PEACE
+music = {
+	name = "palace_memories"
+	file = "audio/palace_memories.ogg"
+	volume = 0.65
+}
+music = {
+	name = "displaced_princess"
+	file = "audio/displaced_princess.ogg"
+	volume = 0.65
+}
+music = {
+	name = "training_song"
+	file = "audio/training_song.ogg"
+	volume = 0.65
+}
+music = {
+	name = "battoutai"
+	file = "audio/battoutai.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "cup_of_solid_gold"
+	file = "audio/cup_of_solid_gold.ogg"
+	volume = 0.65
+}
+
+###MEDDLE EAST
+music = {
+	name = "ey_iran"
+	file = "audio/ey_iran.ogg"
+	volume = 0.65
+}
+music = {
+	name = "ceddin_deden"
+	file = "audio/ceddin_deden.ogg"
+	volume = 0.65
+}
+music = {
+	name = "cirpinirdi_karadeniz"
+	file = "audio/cirpinirdi_karadeniz.ogg"
+	volume = 0.65
+}
+music = {
+	name = "devlet_marsi"
+	file = "audio/devlet_marsi.ogg"
+	volume = 0.65
+}
+###GERMAN
+music = {
+	name = "Emperor1_Allegro"
+	file = "audio/Emperor1_Allegro.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Emperor4_Finale_Presto"
+	file = "audio/Emperor4_Finale_Presto.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Emperor3_Minuet"
+	file = "audio/Emperor3_Minuet.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Emperor2_poco_adagio_cantabile"
+	file = "audio/Emperor2_poco_adagio_cantabile.ogg"
+	volume = 0.65
+}
+music = {
+	name = "heil_dir_im_siegerkranz_symphonie"
+	file = "audio/heil_dir_im_siegerkranz_symphonie.ogg"
+	volume = 0.65
+}
+music = {
+	name = "des_grossen_kurfursten_reitermarsch"
+	file = "audio/des_grossen_kurfursten_reitermarsch.ogg"
+	volume = 0.65
+}
+music = {
+	name = "erzherzog_albrecht_marsch"
+	file = "audio/erzherzog_albrecht_marsch.ogg"
+	volume = 0.65
+}
+music = {
+	name = "fehrbelliner_reitermarsch"
+	file = "audio/fehrbelliner_reitermarsch.ogg"
+	volume = 0.65
+}
+music = {
+	name = "fridericus_rex_grenadiermarsch"
+	file = "audio/fridericus_rex_grenadiermarsch.ogg"
+	volume = 0.65
+}
+###British
+music = {
+	name = "forged_from_the_love_of_liberty"
+	file = "audio/forged_from_the_love_of_liberty.ogg"
+	volume = 0.65
+}

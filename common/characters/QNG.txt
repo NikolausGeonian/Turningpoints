@@ -1,0 +1,2378 @@
+characters = {
+	
+	### Country Leader ###
+	
+	QNG_Aisin_Gioro_Puyi = {
+		name = QNG_Aisin_Gioro_Puyi
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CHI/Portrait_Aisin_Gioro_Puyi.dds"
+			}
+		}
+		
+		country_leader = {
+			desc = "POLITICS_QNG_PU_YI_DESC"
+			ideology = constitutional_monarchy_A_subtype
+			traits={  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		
+		country_leader = {
+			desc = "POLITICS_QNG_PU_YI_DESC"
+			ideology = semi_constitutional_monarchy_subtype
+			traits={  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		
+		country_leader = {
+			desc = "POLITICS_QNG_PU_YI_DESC"
+			ideology = autocratic_monarchy_subtype
+			traits={  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+	
+	QNG_Aisin_Gioro_Puyi_social_democratism = {
+		name = QNG_Aisin_Gioro_Puyi
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CHI/Portrait_Aisin_Gioro_Puyi_suit.dds"
+			}
+		}
+		
+		country_leader = {
+			desc = "POLITICS_QNG_PU_YI_DESC"
+			ideology = constitutional_monarchy_B_subtype
+			traits={  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+	
+	#陈独秀 联合工党
+	QNG_Chen_Tuhsiu = {					
+		name = QNG_Chen_Tuhsiu
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_chen_tuhsiu.dds"
+				large = "gfx/leaders/CHI/Portrait_Chen_tu_hsiu.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_QNG_CHEN_TU_HSIU_MINISTER_DESC"
+			slot = head_of_government
+			idea_token = QNG_Chen_Tuhsiu_minister
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = QNG
+			}
+			visible = {
+				NOT = {	
+					has_country_leader  = {
+						character  = QNG_Chen_Tuhsiu
+						ruling_only  = yes
+					}
+				}
+			}
+			available = {
+				has_government = democratic_socialism
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}
+		
+		country_leader = {
+			desc = "POLITICS_QNG_CHEN_TU_HSIU_DESC"
+			ideology = democratic_socialism_subtype
+			traits={  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+	#陈其美 
+	QNG_Chen_Chimei = {
+		name = QNG_Chen_Chimei
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/ROC/ministers/ROC_Chen_chimei.dds"
+				large = "gfx/leaders/ROC/Portrait_Chen_chimei.dds"
+			}
+		}
+		
+		country_leader = {
+			desc = "POLITICS_QNG_CHEN_CHIMEI_DESC"
+			ideology = sorelianism_subtype
+			traits={  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+	
+	### Ministers ###
+	
+	### HEAD OF GOVERNMENT ###
+	
+	#李国杰 
+	QNG_Li_Kuochieh = {
+		name = QNG_Li_Kuochieh
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_Li_Kuochieh.dds"
+				large = "gfx/leaders/CHI/Portrait_Li_Kuochieh.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_QNG_LI_KUOCHIEH_DESC"
+			slot = head_of_government
+			idea_token = QNG_Li_Kuochieh
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = QNG
+			}
+			available = {
+				has_government = social_liberalism
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	# 褚辅成
+	QNG_Chu_Fucheng = {
+		name = QNG_Chu_Fucheng
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_Chu_Fucheng.dds"
+				large = "gfx/leaders/CHI/Portrait_Chu_Fucheng.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_QNG_CHU_FUCHENG_DESC"
+			slot = head_of_government
+			idea_token = QNG_Chu_Fucheng
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = QNG
+			}
+			available = {
+				has_government = social_liberalism
+			}
+			visible = {	
+				NOT = { 
+						has_idea = QNG_Chu_Fucheng_minister
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_QNG_CHU_FUCHENG_DESC"
+			slot = economy_minister
+			idea_token = QNG_Chu_Fucheng_minister
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = QNG
+			}
+			available = {
+				OR = {
+					has_government = social_liberalism
+					has_government = conservatism
+					has_government = social_democratism
+				}
+			}
+			visible = {	
+				NOT = { 
+						has_idea = QNG_Chu_Fucheng
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	#朱启钤 
+	QNG_Chu_Chichien = {
+		name = QNG_Chu_Chichien
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_Chu_Chichien.dds"
+				large = "gfx/leaders/CHI/Portrait_Chu_Chichien.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_QNG_CHU_CHICHIEN_DESC"
+			slot = head_of_government
+			idea_token = QNG_Chu_Chichien
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = QNG
+			}
+			visible = {	
+				NOT = { 
+						has_idea = QNG_Chu_Chichien_minister
+				}
+			}
+			available = {
+				has_government = conservatism
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+		
+		advisor={
+			desc = "POLITICS_QNG_CHU_CHICHIEN_DESC"
+			slot = economy_minister
+			idea_token = QNG_Chu_Chichien_minister
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = QNG
+			}
+			visible = {	
+				NOT = { 
+						has_idea = QNG_Chu_Chichien
+				}
+			}
+			available = {
+				OR = {
+					has_government = conservatism
+					has_government = authoritarianism
+					has_government = social_liberalism
+					has_government = social_democratism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}	
+	}
+	#唐绍仪 
+	QNG_Tang_Shaoi = {
+		name = QNG_Tang_Shaoi
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_Tang_Shaoi.dds"
+				large = "gfx/leaders/CHI/Portrait_Tang_Shaoi.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_QNG_TANG_SHAOI_DESC"
+			slot = head_of_government
+			idea_token = QNG_Tang_Shaoi
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = QNG
+			}
+			available = {
+				has_government = conservatism
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	#江亢虎 
+	QNG_Chiang_Kanghu = {
+		name = QNG_Chiang_Kanghu
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_Chiang_Kanghu.dds"
+				large = "gfx/leaders/CHI/Portrait_Chiang_Kanghu.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_QNG_CHIANG_KANGHU_DESC"
+			slot = head_of_government
+			idea_token = QNG_Chiang_Kanghu
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = QNG
+			}
+			available = {
+				has_government = social_democratism
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	#张东荪
+	QNG_Chang_Tungsun = {
+		name = QNG_Chang_Tungsun
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_Chang_Tungsun.dds"
+				large = "gfx/leaders/CHI/Portrait_Chang_Tungsun.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_QNG_CHANG_TUNGSUN_DESC"
+			slot = head_of_government
+			idea_token = QNG_Chang_Tungsun
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = QNG
+			}
+			available = {
+				has_government = social_democratism
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	#顾维钧 
+	QNG_Koo_Vikyuin = {
+		name = QNG_Koo_Vikyuin
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_Koo_Vikyuin.dds"
+				large = "gfx/leaders/CHI/Portrait_Koo_Vikyuin.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_QNG_KOO_VIKYUIN_DESC"
+			slot = foreign_minister
+			idea_token = QNG_Koo_Vikyuin_minister
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = QNG
+			}
+			visible = {	
+				NOT = { 
+						has_idea = QNG_Koo_Vikyuin
+				}
+			}
+			available = {
+				OR = {
+					has_government = conservatism
+					has_government = social_democratism
+					has_government = authoritarianism
+					has_government = social_liberalism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+		
+		advisor={
+			desc = "POLITICS_QNG_KOO_VIKYUIN_DESC"
+			slot = head_of_government
+			idea_token = QNG_Koo_Vikyuin
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = QNG
+			}
+			visible = {	
+				NOT = { 
+						has_idea = QNG_Koo_Vikyuin_minister
+				}
+			}
+			available = {
+				has_government = social_liberalism
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	#郑孝胥 
+	QNG_Cheng_Hsiaohsu = {
+		name = QNG_Cheng_Hsiaohsu
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_Cheng_Hsiaohsu.dds"
+				large = "gfx/leaders/CHI/Portrait_Cheng_Hsiaohsu.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_QNG_CHENG_HSIAOHSU_DESC"
+			slot = head_of_government
+			idea_token = QNG_Cheng_Hsiaohsu
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = QNG
+			}
+			available = {
+				has_government = authoritarianism
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	#陆征祥 
+	QNG_Lou_Tsengtsiang = {
+		name = QNG_Lou_Tsengtsiang
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_Lou_Tsengtsiang.dds"
+				large = "gfx/leaders/CHI/Portrait_Lou_Tsengtsiang.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_QNG_LOU_TSENGTSIANG_DESC"
+			slot = foreign_minister
+			idea_token = QNG_Lou_Tsengtsiang_minister
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = QNG
+			}
+			visible = {	
+				NOT = { 
+						has_idea = QNG_Lou_Tsengtsiang
+				}
+			}
+			available = {
+				OR = {
+					has_government = conservatism
+					has_government = social_democratism
+					has_government = authoritarianism
+					has_government = social_liberalism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+		
+		advisor={
+			desc = "POLITICS_QNG_LOU_TSENGTSIANG_DESC"
+			slot = head_of_government
+			idea_token = QNG_Lou_Tsengtsiang
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = QNG
+			}
+			visible = {	
+				NOT = { 
+						has_idea = QNG_Lou_Tsengtsiang_minister
+				}
+			}
+			available = {
+				has_government = social_liberalism
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	### FOREIGN MINISTER ###
+	
+	#颜惠庆
+	QNG_Yen_Weiching = {
+		name = QNG_Yen_Weiching
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_Yen_Weiching.dds"
+				large = "gfx/leaders/CHI/Portrait_Yen_Weiching.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_QNG_YEN_WEICHING_DESC"
+			slot = foreign_minister
+			idea_token = QNG_Yen_Weiching
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = QNG
+			}
+			available = {
+				OR = {
+					has_government = social_liberalism
+					has_government = conservatism
+					has_government = social_democratism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	#曹汝霖
+	QNG_Tsao_Julin = {
+		name = QNG_Tsao_Julin
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_Tsao_Julin.dds"
+				large = "gfx/leaders/CHI/Portrait_Tsao_Julin.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_QNG_TSAO_JULIN_DESC"
+			slot = foreign_minister
+			idea_token = QNG_Tsao_Julin
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = QNG
+			}
+			available = {
+				OR = {
+					has_government = social_liberalism
+					has_government = conservatism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	#王正廷
+	QNG_Wang_Chengting = {
+		name = QNG_Wang_Chengting
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_Wang_Chengting.dds"
+				large = "gfx/leaders/CHI/Portrait_Wang_Chengting.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_QNG_WANG_CHENGTING_DESC"
+			slot = foreign_minister
+			idea_token = QNG_Wang_Chengting
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = QNG
+			}
+			available = {
+				OR = {
+					has_government = social_liberalism
+					has_government = social_democratism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	#贡桑诺尔布
+	QNG_Gungsangnorbu = {
+		name = QNG_Gungsangnorbu
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_Gungsangnorbu.dds"
+				large = "gfx/leaders/CHI/Portrait_Gungsangnorbu.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_QNG_GUNGSANGNORBU_DESC"
+			slot = foreign_minister
+			idea_token = QNG_Gungsangnorbu
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = QNG
+			}
+			available = {
+				OR = {
+					has_government = authoritarianism
+					has_government = social_liberalism
+					has_government = conservatism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	#王廷璋
+	QNG_Wang_Tingzhang = {
+		name = QNG_Wang_Tingzhang
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_Wang_Tingzhang.dds"
+				large = "gfx/leaders/CHI/Portrait_Wang_Tingzhang.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_QNG_WANG_TINGZHANG_DESC"
+			slot = foreign_minister
+			idea_token = QNG_Wang_Tingzhang
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = QNG
+			}
+			available = {
+				OR = {
+					has_government = authoritarianism
+					has_government = social_liberalism
+					has_government = conservatism
+					has_government = social_democratism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	#施肇基
+	QNG_Shih_Chaochi = {
+		name = QNG_Shih_Chaochi
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_Shih_Chaochi.dds"
+				large = "gfx/leaders/CHI/Portrait_Shih_Chaochi.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_QNG_SHIH_CHAOCHI_DESC"
+			slot = foreign_minister
+			idea_token = QNG_Shih_Chaochi
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = QNG
+			}
+			available = {
+				OR = {
+					has_government = authoritarianism
+					has_government = social_liberalism
+					has_government = conservatism
+					has_government = social_democratism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	#伍朝枢
+	QNG_Wu_Chaoshu = {
+		name = QNG_Wu_Chaoshu
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_Wu_Chaoshu.dds"
+				large = "gfx/leaders/CHI/Portrait_Wu_Chaoshu.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_QNG_WU_CHAOSHU_DESC"
+			slot = foreign_minister
+			idea_token = QNG_Wu_Chaoshu
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = QNG
+			}
+			available = {
+				OR = {
+					has_government = social_liberalism
+					has_government = conservatism
+					has_government = social_democratism
+					has_government = authoritarianism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	#王宠惠
+	QNG_Wang_Chunghui = {
+		name = QNG_Wang_Chunghui
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_Wang_Chunghui.dds"
+				large = "gfx/leaders/CHI/Portrait_Wang_Chunghui.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_QNG_WANG_CHUNGHUI_DESC"
+			slot = foreign_minister
+			idea_token = QNG_Wang_Chunghui
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = QNG
+			}
+			available = {
+				OR = {
+					has_government = social_liberalism
+					has_government = conservatism
+					has_government = social_democratism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	#朱庆澜
+	QNG_Chu_Chinglan = {
+		name = QNG_Chu_Chinglan
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_Chu_Chinglan.dds"
+				large = "gfx/leaders/CHI/Portrait_Chu_Chinglan.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_QNG_CHU_CHINGLAN_DESC"
+			slot = foreign_minister
+			idea_token = Chu_Chinglan
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = QNG
+			}
+			available = {
+				OR = {
+					has_government = social_liberalism
+					has_government = conservatism
+					has_government = social_democratism
+					has_government = authoritarianism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	#梁思顺
+	QNG_Liang_Sishun = {
+		name = QNG_Liang_Sishun
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_Liang_Sishun.dds"
+				large = "gfx/leaders/CHI/Portrait_Liang_Sishun.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_QNG_LIANG_SISHUN_DESC"
+			slot = foreign_minister
+			idea_token = QNG_Liang_Sishun
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = QNG
+			}
+			available = {
+				has_country_flag = feminism_movement
+				OR = {
+					has_government = social_liberalism
+					has_government = conservatism
+					has_government = social_democratism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	#章宗祥
+	QNG_Chang_Tsunghsiang = {
+		name = QNG_Chang_Tsunghsiang
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_Chang_Tsunghsiang.dds"
+				large = "gfx/leaders/CHI/Portrait_Chang_Tsunghsiang.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_QNG_CHANG_TSUNGHSIANG_DESC"
+			slot = foreign_minister
+			idea_token = QNG_Chang_Tsunghsiang
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = QNG
+			}
+			available = {
+				OR = {
+					has_government = authoritarianism
+					has_government = conservatism
+					has_government = social_liberalism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	#张君劢
+	QNG_Carsun_Chang = {
+		name = QNG_Carsun_Chang
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_Carsun_Chang.dds"
+				large = "gfx/leaders/CHI/Portrait_Carsun_Chang.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_QNG_CARSUN_CHANG_DESC"
+			slot = foreign_minister
+			idea_token = QNG_Carsun_Chang
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = QNG
+			}
+			available = {
+				has_government = social_democratism
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	#林伯渠
+	QNG_Lin_Pochu = {
+		name = QNG_Lin_Pochu
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_Lin_Pochu.dds"
+				large = "gfx/leaders/CHI/Portrait_Lin_Pochu.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_QNG_LIN_POCHU_DESC"
+			slot = foreign_minister
+			idea_token = QNG_Lin_Pochu
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = QNG
+			}
+			available = {
+				OR = {
+					has_government = social_democratism
+					has_government = democratic_socialism
+					has_government = patriotic_socialism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	#胡世泽
+	QNG_Hoo_Chitsai = {
+		name = QNG_Hoo_Chitsai
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_Hoo_Chitsai.dds"
+				large = "gfx/leaders/CHI/Portrait_Hoo_Chitsai.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_QNG_HOO_CHITSAI_DESC"
+			slot = foreign_minister
+			idea_token = QNG_Hoo_Chitsai
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = QNG
+			}
+			available = {
+				OR = {
+					has_government = social_democratism
+					has_government = democratic_socialism
+					has_government = patriotic_socialism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	###	ECONOMY MINISTER ###
+	
+	#盛世才
+	QNG_Sheng_Shihtsai = {
+		name = QNG_Sheng_Shihtsai
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_Sheng_Shihtsai.dds"
+				large = "gfx/leaders/CHI/Portrait_Sheng_Shihtsai.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_QNG_SHENG_SHIHTSAI_DESC"
+			slot = economy_minister
+			idea_token = QNG_Sheng_Shihtsai
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = QNG
+			}
+			available = {
+				OR = {
+					has_government = authoritarianism
+					has_government = conservatism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	#陈廉伯
+	QNG_Chen_Lienpai = {
+		name = QNG_Sheng_Shihtsai
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_Chen_Lienpai.dds"
+				large = "gfx/leaders/CHI/Portrait_Chen_Lienpai.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_QNG_CHEN_LIENPAI_DESC"
+			slot = economy_minister
+			idea_token = QNG_Chen_Lienpai
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = QNG
+			}
+			available = {
+				OR = {
+					has_government = social_liberalism
+					has_government = conservatism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	#陶昌善
+	QNG_Tao_Changshan = {
+		name = QNG_Tao_Changshan
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_Tao_Changshan.dds"
+				large = "gfx/leaders/CHI/Portrait_Tao_changshan.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_QNG_TAO_CHANGSHAN_DESC"
+			slot = economy_minister
+			idea_token = QNG_Tao_Changshan
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = QNG
+			}
+			available = {
+				OR = {
+					has_government = authoritarianism
+					has_government = conservatism
+					has_government = social_liberalism
+					has_government = social_democratism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	#李思浩
+	QNG_Li_Shihhou = {
+		name = QNG_Li_Shihhou
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_Li_Shihhou.dds"
+				large = "gfx/leaders/CHI/Portrait_Li_Shihhou.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_QNG_LI_SHIHHOU_DESC"
+			slot = economy_minister
+			idea_token = QNG_Li_Shihhou
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = QNG
+			}
+			available = {
+				OR = {
+					has_government = authoritarianism
+					has_government = conservatism
+					has_government = social_liberalism
+					has_government = social_democratism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	#杨汝梅
+	QNG_Yang_Rumei = {
+		name = QNG_Yang_Rumei
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_Yang_Rumei.dds"
+				large = "gfx/leaders/CHI/Portrait_Yang_Rumei.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_QNG_YANG_RUMEI_DESC"
+			slot = economy_minister
+			idea_token = QNG_Yang_Rumei
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = QNG
+			}
+			available = {
+				OR = {
+					has_government = authoritarianism
+					has_government = conservatism
+					has_government = social_liberalism
+					has_government = social_democratism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	#张英华
+	QNG_Chang_Yinghua = {
+		name = QNG_Chang_Yinghua
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_Chang_Yinghua.dds"
+				large = "gfx/leaders/CHI/Portrait_Chang_Yinghua.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_QNG_CHANG_YINGHUA_DESC"
+			slot = economy_minister
+			idea_token = QNG_Chang_Yinghua
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = QNG
+			}
+			available = {
+				OR = {
+					has_government = authoritarianism
+					has_government = conservatism
+					has_government = social_liberalism
+					has_government = social_democratism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	#刘鸿生
+	QNG_Liu_Hungsheng = {
+		name = QNG_Liu_Hungsheng
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_Liu_Hungsheng.dds"
+				large = "gfx/leaders/CHI/Portrait_Liu_Hungsheng.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_QNG_LIU_HUNGSHENG_DESC"
+			slot = economy_minister
+			idea_token = QNG_Liu_Hungsheng
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = QNG
+			}
+			available = {
+				OR = {
+					has_government = social_liberalism
+					has_government = conservatism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	#孔祥熙
+	QNG_Kung_Hsianghsi = {
+		name = QNG_Kung_Hsianghsi
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_Kung_Hsianghsi.dds"
+				large = "gfx/leaders/CHI/Portrait_Kung_Hsianghsi.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_QNG_KUNG_HSIANGHSI_DESC"
+			slot = economy_minister
+			idea_token = QNG_Kung_Hsianghsi
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = QNG
+			}
+			available = {
+				OR = {
+					has_government = authoritarianism
+					has_government = conservatism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	#孙多钰
+	QNG_Sun_Toyu = {
+		name = QNG_Sun_Toyu
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_Sun_Toyu.dds"
+				large = "gfx/leaders/CHI/Portrait_Sun_Toyu.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_QNG_SUN_TOYU_DESC"
+			slot = economy_minister
+			idea_token = QNG_Sun_Toyu
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = QNG
+			}
+			available = {
+					has_government = conservatism
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	#胡鄂公
+	QNG_Hu_Aokung = {
+		name = QNG_Hu_Aokung
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_Hu_Aokung.dds"
+				large = "gfx/leaders/CHI/Portrait_Hu_Aokung.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_QNG_HU_AOKUNG_DESC"
+			slot = economy_minister
+			idea_token = QNG_Hu_Aokung
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = QNG
+			}
+			available = {
+				OR = {
+					has_government = conservatism
+					has_government = social_democratism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	#黄炎培
+	QNG_Huang_Yenpei = {
+		name = QNG_Huang_Yenpei
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_Huang_Yenpei.dds"
+				large = "gfx/leaders/CHI/Portrait_Huang_Yenpei.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_QNG_HUANG_YENPEI_DESC"
+			slot = economy_minister
+			idea_token = QNG_Huang_Yenpei
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = QNG
+			}
+			available = {
+				OR = {
+					has_government = social_liberalism
+					has_government = social_democratism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	#吴鼎昌
+	QNG_Wu_Dingchang = {
+		name = QNG_Wu_Dingchang
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_Wu_Dingchang.dds"
+				large = "gfx/leaders/CHI/Portrait_Wu_Dingchang.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_QNG_WU_DINGCHANG_DESC"
+			slot = economy_minister
+			idea_token = QNG_Wu_Dingchang
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = QNG
+			}
+			available = {
+				OR = {
+					has_government = authoritarianism
+					has_government = conservatism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	### FIELD MARSHAL ###
+	
+	QNG_Tien_Hsienchang = {
+		name = QNG_Tien_Hsienchang
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_Tien_Hsienchang.dds"
+				large = "gfx/leaders/CHI/Portrait_Tien_Hsienchang.dds"
+			}
+		}
+		
+		field_marshal = {
+			desc = "MARSHAL_QNG_TIEN_HSIENCHANG_DESC"
+			traits = { offensive_doctrine CHI_aristocracies }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+	
+	QNG_Chang_Tsolin = {
+		name = QNG_Chang_Tsolin
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_Chang_Tsolin.dds"
+				large = "gfx/leaders/CHI/Portrait_Chang_Tsolin.dds"
+			}
+		}
+		
+		field_marshal = {
+			desc = "MARSHAL_QNG_CHANG_TSOLIN_DESC"
+			traits = { old_guard organizer logistics_wizard CHI_aristocracies }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 5
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+	
+	QNG_Aisin_Gioro_Dzaichen = {
+		name = QNG_Aisin_Gioro_Dzaichen
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_Aisin_Gioro_Dzaichen.dds"
+				large = "gfx/leaders/CHI/Portrait_Aisin_Gioro_Dzaichen.dds"
+			}
+		}
+		
+		field_marshal = {
+			desc = "MARSHAL_QNG_DZAI_CHEN_DESC"
+			traits = { CHI_aristocracies }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 5
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+	
+	QNG_Gioro_Liangpi = {
+		name = QNG_Gioro_Liangpi
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_Gioro_Liangpi.dds"
+				large = "gfx/leaders/CHI/Portrait_Gioro_Liangpi.dds"
+			}
+		}
+		
+		field_marshal = {
+			desc = "MARSHAL_QNG_LIANG_PI_DESC"
+			traits = { war_hero CHI_aristocracies }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 5
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+	
+	QNG_Wu_Luchen = {
+		name = QNG_Wu_Luchen
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_Wu_Luchen.dds"
+				large = "gfx/leaders/CHI/Portrait_Wu_Luchen.dds"
+			}
+		}
+		
+		field_marshal = {
+			desc = "MARSHAL_QNG_WU_LUCHEN_DESC"
+			traits = { war_hero CHI_aristocracies }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 5
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+	
+	QNG_Li_Chun = {
+		name = QNG_Li_Chun
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_Li_Chun.dds"
+				large = "gfx/leaders/CHI/Portrait_Li_Chun.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "MARSHAL_CHI_LI_CHUN_DESC"
+			slot = high_command
+			idea_token = QNG_Li_Chun
+			allowed = {
+				original_tag = QNG
+			}
+			traits = { army_artillery_3 }
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	### CORPS COMMANDER ###
+	
+	QNG_Chi_Hsiehyuan = {
+		name = QNG_Chi_Hsiehyuan
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_Chi_Hsiehyuan.dds"
+				large = "gfx/leaders/CHI/Portrait_Chi_Hsiehyuan.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_QNG_CHI_HSIEHYUAN_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	
+	QNG_Chiang_Fangcheng = {
+		name = QNG_Chiang_Fangcheng
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_Chiang_Fangcheng.dds"
+				large = "gfx/leaders/CHI/Portrait_Chiang_Fangcheng.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_QNG_CHIANG_FANGCHENG_DESC"
+			traits = { organizer }
+			skill = 4
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+	
+	QNG_Chang_Shaotseng = {
+		name = QNG_Chang_Shaotseng
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_Chang_Shaotseng.dds"
+				large = "gfx/leaders/CHI/Portrait_Chang_Shaotseng.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_QNG_CHANG_SHAOTSENG_DESC"
+			traits = { old_guard war_hero  }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+	
+	QNG_Aisin_Gioro_Dzaitao = {
+		name = QNG_Aisin_Gioro_Dzaitao
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_Aisin_Gioro_Dzaitao.dds"
+				large = "gfx/leaders/CHI/Portrait_Aisin_Gioro_Dzaitao.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_QNG_AISIN_GIORO_DZAITAO_DESC"
+			traits = { CHI_aristocracies war_hero  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+	
+	QNG_Amurlingkui = {
+		name = QNG_Amurlingkui
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_Amurlingkui.dds"
+				large = "gfx/leaders/CHI/Portrait_Amurlingkui.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_QNG_AMURLINGKUI_DESC"
+			traits = { CHI_aristocracies }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	
+	QNG_Lung_Yun = {
+		name = QNG_Lung_Yun
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_Lung_Yun.dds"
+				large = "gfx/leaders/CHI/Portrait_Lung_Yun.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_QNG_LUNG_YUN_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+	
+	QNG_Ma_Hongbin = {
+		name = QNG_Ma_Hongbin
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_Ma_Hongbin.dds"
+				large = "gfx/leaders/CHI/Portrait_Ma_Hongbin.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_QNG_MA_HONGBIN_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+	
+	QNG_Yin_Changheng = {
+		name = QNG_Yin_Changheng
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_Yin_Changheng.dds"
+				large = "gfx/leaders/CHI/Portrait_Yin_Changheng.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_QNG_YIN_CHANGHENG_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+	
+	QNG_Li_Fangchen = {
+		name = QNG_Li_Fangchen
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_Li_Fangchen.dds"
+				large = "gfx/leaders/CHI/Portrait_Li_Fangchen.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_QNG_LI_FANGCHEN_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+	
+	QNG_Tang_Chiyao = {
+		name = QNG_Tang_Chiyao
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_Tang_Chiyao.dds"
+				large = "gfx/leaders/CHI/Portrait_Tang_Chiyao.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_QNG_TANG_CHIYAO_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+	
+	QNG_Yen_Hsishan = {
+		name = QNG_Yen_Hsishan
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_Yen_Hsishan.dds"
+				large = "gfx/leaders/CHI/Portrait_Yen_Hsishan.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_QNG_YEN_HSISHAN_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+	
+	QNG_Feng_Yuhsiang = {
+		name = QNG_Feng_Yuhsiang
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_Feng_Yuhsiang.dds"
+				large = "gfx/leaders/CHI/Portrait_Feng_Yuhsiang.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_QNG_FENG_YUHSIANG_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+	
+	QNG_Fuca_Lingkuang = {
+		name = QNG_Fuca_Lingkuang
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_Fuca_Lingkuang.dds"
+				large = "gfx/leaders/CHI/Portrait_Fuca_Lingkuang.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_QNG_FUCA_LINGKUANG_DESC"
+			traits = { CHI_aristocracies politically_connected }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+	
+	QNG_Shih_Yushan = {
+		name = QNG_Shih_Yushan
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_Shih_Yushan.dds"
+				large = "gfx/leaders/CHI/Portrait_Shih_Yushan.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_QNG_SHIH_YUSHAN_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+	
+	QNG_Teng_Hsihou = {
+		name = QNG_Teng_Hsihou
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_Teng_Hsihou.dds"
+				large = "gfx/leaders/CHI/Portrait_Teng_Hsihou.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_QNG_TENG_HSIHOU_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+	
+	QNG_Ha_Hanchang = {
+		name = QNG_Ha_Hanchang
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_Ha_Hanchang.dds"
+				large = "gfx/leaders/CHI/Portrait_Ha_Hanchang.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_QNG_HA_HANCHANG_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+	
+	QNG_Chen_Tiaoyuan = {
+		name = QNG_Chen_Tiaoyuan
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_Chen_Tiaoyuan.dds"
+				large = "gfx/leaders/CHI/Portrait_Chen_Tiaoyuan.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_QNG_CHEN_TIAOYUAN_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+	
+	QNG_Li_Tsungjen = {
+		name = QNG_Li_Tsungjen
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_Li_Tsungjen.dds"
+				large = "gfx/leaders/CHI/Portrait_Li_Tsungjen.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_QNG_LI_TSUNGJEN_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+	#蒋作宾
+	QNG_Chiang_Tsopin = {
+		name = QNG_Chiang_Tsopin
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_Chiang_Tsopin.dds"
+				large = "gfx/leaders/CHI/Portrait_Chiang_Tsopin.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_QNG_CHIANG_TSOPIN_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+	#葛光庭
+	QNG_Ko_Kuangding = {
+		name = QNG_Ko_Kuangding
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_Ko_Kuangding.dds"
+				large = "gfx/leaders/CHI/Portrait_Ko_Kuangding.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_QNG_KO_KUANGDING_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+	#吴忠信
+	QNG_Wu_Chunghsin = {
+		name = QNG_Wu_Chunghsin
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_Wu_Chunghsin.dds"
+				large = "gfx/leaders/CHI/Portrait_Wu_Chunghsin.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_QNG_WU_CHUNGHSIN_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+	#陈渠珍
+	QNG_Chen_Chuchen = {
+		name = QNG_Chen_Chuchen
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_Chen_Chuchen.dds"
+				large = "gfx/leaders/CHI/Portrait_Chen_Chuchen.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_QNG_CHEN_CHUCHEN_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+	#吴新田
+	QNG_Wu_Hsintien = {
+		name = QNG_Wu_Hsintien
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_Wu_Hsintien.dds"
+				large = "gfx/leaders/CHI/Portrait_Wu_Hsintien.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_QNG_WU_HSINTIEN_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+	
+	QNG_Song_Cheyuan = {
+		name = QNG_Song_Cheyuan
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_Song_Cheyuan.dds"
+				large = "gfx/leaders/CHI/Portrait_Song_Cheyuan.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_QNG_SONG_CHEYUAN_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+	
+	QNG_Tang_Shengchih = {
+		name = QNG_Tang_Shengchih
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_Tang_Shengchih.dds"
+				large = "gfx/leaders/CHI/Portrait_Tang_Shengchih.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_QNG_TANG_SHENGCHIH_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+	# 熊炳琦
+	QNG_Hsiung_Pingchi = {
+		name = QNG_Hsiung_Pingchi
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_Hsiung_Pingchi.dds"
+				large = "gfx/leaders/CHI/Portrait_Hsiung_Pingchi.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_QNG_HSIUNG_PINGCHI_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+	#周骏
+	QNG_Chou_Chun = {
+		name = QNG_Chou_Chun
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_Chou_Chun.dds"
+				large = "gfx/leaders/CHI/Portrait_Chou_Chun.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_QNG_CHOU_CHUN_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+	### ADMIRAL ###
+	QNG_Lin_Kuokeng = {
+		name = QNG_Lin_Kuokeng
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_Lin_Kuokeng.dds"
+				large = "gfx/leaders/CHI/Portrait_Lin_Kuokeng.dds"
+			}
+		}
+		
+		navy_leader = {
+			desc = "ADMIRAL_QNG_LIN_KUOKENG_DESC"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 4
+			maneuvering_skill = 3
+			coordination_skill = 2
+		}
+	}
+	
+	QNG_Aisin_Gioro_Puwei = {
+		name = QNG_Aisin_Gioro_Puwei
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_Aisin_Gioro_Puwei.dds"
+				large = "gfx/leaders/CHI/Portrait_Aisin_Gioro_Puwei.dds"
+			}
+		}
+		
+		navy_leader = {
+			desc = "ADMIRAL_QNG_AISIN_GIORO_PUWEI_DESC"
+			traits = { CHI_aristocracies }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 4
+			maneuvering_skill = 3
+			coordination_skill = 2
+		}
+	}
+	
+	QNG_Aisin_Gioro_Tsai_hsiun = {
+		name = QNG_Aisin_Gioro_Tsai_hsiun
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_Aisin_Gioro_Tsai_hsiun.dds"
+				large = "gfx/leaders/CHI/Portrait_Aisin_Gioro_Tsai_hsiun.dds"
+			}
+		}
+		
+		navy_leader = {
+			desc = "ADMIRAL_QNG_AISIN_GIORO_TSAI_HSIUN_DESC"
+			traits = { CHI_aristocracies }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 4
+			maneuvering_skill = 3
+			coordination_skill = 2
+		}
+	}
+	
+	QNG_Yang_Shuchwang = {
+		name = QNG_Yang_Shuchwang
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_Yang_Shuchwang.dds"
+				large = "gfx/leaders/CHI/Portrait_Yang_Shuchwang.dds"
+			}
+		}
+		
+		navy_leader = {
+			desc = "ADMIRAL_QNG_YANG_SHUCHWANG_DESC"
+			traits = { navy_career_officer superior_tactician }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 4
+			maneuvering_skill = 3
+			coordination_skill = 2
+		}
+	}
+	
+	QNG_Chen_Shaokuan = {
+		name = QNG_Chen_Shaokuan
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_Chen_Shaokuan.dds"
+				large = "gfx/leaders/CHI/Portrait_Chen_Shaokuan.dds"
+			}
+		}
+		
+		navy_leader = {
+			desc = "ADMIRAL_QNG_CHEN_SHAOKUAN_DESC"
+			traits = {   }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 4
+			maneuvering_skill = 3
+			coordination_skill = 2
+		}
+	}
+	#汤芗铭
+	QNG_Tang_Hsiangming = {
+		name = QNG_Tang_Hsiangming
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_Tang_Hsiangming.dds"
+				large = "gfx/leaders/CHI/Portrait_Tang_Hsiangming.dds"
+			}
+		}
+		
+		navy_leader = {
+			desc = "ADMIRAL_QNG_TANG_HSIANGMING_DESC"
+			traits = {   }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 4
+			maneuvering_skill = 3
+			coordination_skill = 2
+		}
+	}
+	#吴振南
+	QNG_Wu_Chennan = {
+		name = QNG_Wu_Chennan
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_Wu_Chennan.dds"
+				large = "gfx/leaders/CHI/Portrait_Wu_Chennan.dds"
+			}
+		}
+		
+		navy_leader = {
+			desc = "ADMIRAL_QNG_WU_CHENNAN_DESC"
+			traits = {   }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 4
+			maneuvering_skill = 3
+			coordination_skill = 2
+		}
+	}
+	#唐在礼
+	QNG_Tang_Tsaili = {
+		name = QNG_Tang_Tsaili
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_Tang_Tsaili.dds"
+				large = "gfx/leaders/CHI/Portrait_Tang_Tsaili.dds"
+			}
+		}
+		
+		navy_leader = {
+			desc = "ADMIRAL_QNG_TANG_TSAILI_DESC"
+			traits = {   }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 4
+			maneuvering_skill = 3
+			coordination_skill = 2
+		}
+	}
+	
+	QNG_Chu_Tungfeng = {
+		name = QNG_Chu_Tungfeng
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_Chu_Tungfeng.dds"
+				large = "gfx/leaders/CHI/Portrait_Chu_Tungfeng.dds"
+			}
+		}
+		
+		navy_leader = {
+			desc = "ADMIRAL_QNG_CHU_TUNGFENG_DESC"
+			traits = {   }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 4
+			maneuvering_skill = 3
+			coordination_skill = 2
+		}
+	}
+	
+	QNG_Yin_Tsokan = {
+		name = QNG_Yin_Tsokan
+		portraits = {	
+			navy = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_Yin_Tsokan.dds"
+				large = "gfx/leaders/CHI/Portrait_Yin_Tsokan.dds"
+			}
+		}
+		
+		navy_leader = {
+			desc = "ADMIRAL_QNG_YIN_TSOKAN_DESC"
+			traits = {   }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 4
+			maneuvering_skill = 3
+			coordination_skill = 2
+		}
+	}
+	
+	QNG_Shen_Hunglieh = {
+		name = QNG_Shen_Hunglieh
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_Shen_Hunglieh.dds"
+				large = "gfx/leaders/CHI/Portrait_Shen_Hunglieh.dds"
+			}
+		}
+		
+		navy_leader = {
+			desc = "ADMIRAL_QNG_SHEN_HUNGLIEH_DESC"
+			traits = {   }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 4
+			maneuvering_skill = 3
+			coordination_skill = 2
+		}
+	}
+	#陈季良
+	QNG_Chen_Chiliang = {
+		name = QNG_Chen_Chiliang
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_Chen_Chiliang.dds"
+				large = "gfx/leaders/CHI/Portrait_Chen_Chiliang.dds"
+			}
+		}
+		
+		navy_leader = {
+			desc = "ADMIRAL_QNG_CHEN_CHILIANG_DESC"
+			traits = {   }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 4
+			maneuvering_skill = 3
+			coordination_skill = 2
+		}
+	}
+	#吴纫礼
+	QNG_Wu_Jenli = {
+		name = QNG_Wu_Jenli
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_Wu_Jenli.dds"
+				large = "gfx/leaders/CHI/Portrait_Wu_Jenli.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "ADMIRAL_QNG_WU_JENLI_DESC"
+			slot = navy_chief
+			idea_token = QNG_Wu_Jenli
+			allowed = {
+				original_tag = QNG
+			}
+			traits = { navy_chief_decisive_battle_2 }
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		navy_leader = {
+			desc = "ADMIRAL_QNG_WU_JENLI_DESC"
+			traits = {   }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 4
+			maneuvering_skill = 3
+			coordination_skill = 2
+		}
+	}
+	
+	#高宪申
+	QNG_Kao_Hsienshen = {
+		name = QNG_Kao_Hsienshen
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/QNG/ministers/QNG_Kao_Hsienshen.dds"
+				large = "gfx/leaders/CHI/Portrait_Kao_Hsienshen.dds"
+			}
+		}
+		
+		navy_leader = {
+			desc = "ADMIRAL_QNG_KAO_HSIENSHEN_DESC"
+			traits = {   }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 4
+			maneuvering_skill = 3
+			coordination_skill = 2
+		}
+	}
+}

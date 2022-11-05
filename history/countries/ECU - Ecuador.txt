@@ -1,0 +1,45 @@
+﻿capital = 305
+
+#oob = "ECU_1936"
+#set_country_flag = monroe_doctrine
+
+set_stability = 0.6
+set_war_support = 0.5
+set_convoys = 5
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1		
+	tech_engineers = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	fuel_silos = 1
+}
+
+set_politics = {
+	ruling_party = authoritarianism
+	last_election = "1934.2.11"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	conservatism = 27
+	authoritarianism = 53
+	social_democratism = 0
+	patriotic_socialism = 0
+	corporatism = 8
+	democratic_socialism = 0
+	populism = 12
+	social_liberalism = 0
+}
+
+create_country_leader = {
+	name = "Alberto Enríquez Gallo"
+	desc = "POLITICS_ALBERTO_ENRIQUEZ_GALLO_DESC"
+	picture = "gfx/leaders/ECU/Portrait_Alberto_Enriquez_Gallo.dds"
+	expire = "1965.1.1"
+	ideology = despotism_subtype
+	traits = {
+		#
+	}
+}

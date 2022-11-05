@@ -1,0 +1,93 @@
+﻿capital = 117# Naples
+
+##oob = "PAP_1936"
+
+#General#
+set_research_slots = 3
+set_stability = 0.50
+set_war_support = 0.8
+set_fuel_ratio = 1.0
+set_convoys = 100
+# National Idea #
+add_ideas = {
+	generic_treaty_of_santa_sofia
+	SIC_Anti_Risorgimento
+}
+
+# Starting tech #
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_engineers = 1
+	tech_support = 1		
+	tech_mountaineers = 1
+}
+
+# Starting Import #
+
+# Politics #
+set_popularities = {
+	conservatism = 43
+	authoritarianism = 6
+	social_democratism = 9
+	patriotic_socialism = 0
+	corporatism = 30
+	democratic_socialism = 0
+	populism = 0
+	social_liberalism = 12
+}
+set_politics = {
+	ruling_party = conservatism
+	last_election = "1919.1.3"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+
+# Head of State #
+create_country_leader = {
+	name = "Ferdinando III" 
+		#Karl Mindaugas I#
+	desc = "POLITICS_KURT_SCHUSCHNIGG_DESC"
+	picture = "gfx/leaders/SIC/Portrait_Ferdinand_Pius.dds"
+	expire = "1960.1.7"
+	ideology = autocratic_monarchy_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Ferdinando III"
+	desc = "POLITICS_KURT_SCHUSCHNIGG_DESC"
+	picture = "gfx/leaders/SIC/Portrait_Ferdinand_Pius.dds"
+	expire = "1960.1.7"
+	ideology = semi_constitutional_monarchy_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Ferdinando III"
+	desc = "POLITICS_KURT_SCHUSCHNIGG_DESC"
+	picture = "gfx/leaders/SIC/Portrait_Ferdinand_Pius.dds"
+	expire = "1960.1.7"
+	ideology = constitutional_monarchy_B_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Ferdinando III"
+	desc = "POLITICS_KURT_SCHUSCHNIGG_DESC"
+	picture = "gfx/leaders/SIC/Portrait_Ferdinand_Pius.dds"
+	expire = "1960.1.7"
+	ideology = constitutional_monarchy_A_subtype
+	traits = {
+		#
+	}
+}
+#Commander

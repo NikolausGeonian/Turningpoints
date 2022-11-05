@@ -1,0 +1,36 @@
+characters = {
+	
+	### Country Leader ###
+	
+	AZA_Ag_Mohammed_Wau_Teguidda_Kaocen = {
+		name = AZA_Ag_Mohammed_Wau_Teguidda_Kaocen
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Africa/Portrait_Ag_Mohammed_Wau_Teguidda_Kaocen.dds"
+				#Spacing Modifier
+			}
+		}
+		
+		country_leader = {
+			desc = "POLITICS_AZA_AG_MOHAMMED_WAU_TEGUIDDA_KAOCEN_DESC"
+			ideology = autocratic_monarchy_subtype
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	
+	}
+	
+	### Ministers ###
+	### HEAD OF GOVERNMENT ###
+	
+	### FOREIGN MINISTER ###
+	
+	###	ECONOMY MINISTER ###
+	
+	### FIELD MARSHAL ###
+	
+	### CORPS COMMANDER ###
+	
+	### ADMIRAL ###
+	
+}

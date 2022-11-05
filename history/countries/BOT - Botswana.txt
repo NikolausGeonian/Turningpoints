@@ -1,0 +1,62 @@
+﻿capital = 542
+
+##oob = "BOT_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+set_popularities = {
+	conservatism = 11
+	authoritarianism = 70
+	social_democratism = 4
+	patriotic_socialism = 0
+	corporatism = 0
+	democratic_socialism = 0
+	populism = 0
+	social_liberalism = 15
+}
+set_cosmetic_tag = BOT_GBR
+set_politics = {
+	ruling_party = authoritarianism
+	last_election = "1932.11.8"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Charles Arden-Clarke"
+	picture = "gfx/leaders/BOT/Portrait_Charles_Arden_Clarke.dds"
+	expire = "1965.1.1"
+	ideology = colony_and_dominion_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Tshêkêdi a Khama"
+	picture = "gfx/leaders/BOT/Portrait_Tshekedi_a_Khama.dds"
+	expire = "1965.1.1"
+	ideology = constitutional_monarchy_C_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Tshêkêdi a Khama"
+	picture = "gfx/leaders/BOT/Portrait_Tshekedi_a_Khama.dds"
+	expire = "1965.1.1"
+	ideology = constitutional_monarchy_A_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Tshêkêdi a Khama"
+	picture = "gfx/leaders/BOT/Portrait_Tshekedi_a_Khama.dds"
+	expire = "1965.1.1"
+	ideology = constitutional_monarchy_B_subtype
+	traits = {
+		#
+	}
+}

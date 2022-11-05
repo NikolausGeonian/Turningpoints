@@ -1,0 +1,68 @@
+characters = {
+	
+	### Country Leader ###
+	
+	ALG_Ferhat_Abbas = {
+		name = ALG_Ferhat_Abbas
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ALG/Portrait_Ferhat_Abbas.dds"
+			}
+		}
+		
+		country_leader = {
+			desc = "POLITICS_ALG_FERHAT_ABBAS_DESC"
+			ideology = despotism_subtype
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		
+		country_leader = {
+			desc = "POLITICS_ALG_FERHAT_ABBAS_DESC"
+			ideology = conservatism_subtype
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		
+		advisor={
+			desc = "POLITICS_ALG_FERHAT_ABBAS_DESC"
+			slot = head_of_government
+			idea_token = ALG_Ferhat_Abbas
+			ledger = civilian
+			allowed = {
+				original_tag = ALG
+			}
+			visible = {
+				NOT = {	
+					has_country_leader = {
+						character = ALG_Ferhat_Abbas
+						ruling_only = yes
+					}
+				}
+			}
+			available = {
+				has_government = conservatism
+			}
+			traits = {  }
+			cost = 100
+			ai_will_do = {
+				factor = 1.500
+			}
+		}
+	
+	}
+	
+	### Ministers ###
+	### HEAD OF GOVERNMENT ###
+	
+	### FOREIGN MINISTER ###
+	
+	###	ECONOMY MINISTER ###
+	
+	### FIELD MARSHAL ###
+	
+	### CORPS COMMANDER ###
+	
+	### ADMIRAL ###
+	
+}

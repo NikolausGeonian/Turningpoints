@@ -1,0 +1,21 @@
+state = {
+	id=893
+	name="STATE_893" #Kashkadaria
+	manpower = 1408345
+	state_category = rural
+	
+	history = {
+		owner = BUK
+		add_core_of = BUK
+		victory_points = {
+			7639 1
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}		
+	}
+	provinces={
+		756 1216 1384 1573 1632 7224 7639 9605 10205 10671 12218 12239 12250 12722
+	}
+}

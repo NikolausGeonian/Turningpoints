@@ -1,0 +1,969 @@
+﻿
+capital = 64 #Berlin
+
+#oob = "GER_1936"
+
+
+
+## 	GENERAL 
+
+set_fuel_ratio = 0.8
+set_research_slots = 4
+set_convoys = 200
+set_stability = 0.75 
+set_war_support = 0.3
+
+## 	POLITICAL FIGURE
+
+### Country Leader ###
+recruit_character = GER_Wilhelm_II
+recruit_character = GER_Wilhelm_II_social_democratism
+recruit_character = GER_Otto_Strasser
+### Corps Commander ###
+recruit_character = GER_Hans_von_Seeckt
+recruit_character = GER_Konrad_Krafft_von_Dellmensingen
+recruit_character = GER_Rupprecht_von_Bayern
+recruit_character = GER_Gerd_von_Rundstedt
+recruit_character = GER_Wilhelm_III
+recruit_character = GER_Werner_von_Blomberg
+recruit_character = GER_Werner_von_Fritsch
+recruit_character = GER_Walther_von_Brauchitsch
+recruit_character = GER_Erich_von_Manstein
+recruit_character = GER_Heinz_Guderian
+recruit_character = GER_Georg_von_Kuchler
+recruit_character = GER_Eugen_Ritter_von_Schobert
+recruit_character = GER_Wilhelm_List
+recruit_character = GER_Gunther_von_Kluge
+recruit_character = GER_Maximilian_von_Weichs
+recruit_character = GER_Johannes_Blaskowitz
+recruit_character = GER_Alexander_von_Falkenhausen
+recruit_character = GER_Wilhelm_Ritter_von_Leeb
+recruit_character = GER_Franz_Halder
+recruit_character = GER_Walter_von_Reichenau
+recruit_character = GER_Wilhelm_Keitel
+recruit_character = GER_Rudolf_Schmidt
+recruit_character = GER_Fedor_von_Bock
+recruit_character = GER_Erwin_von_Witzleben
+recruit_character = GER_Konrad_von_Bayern
+recruit_character = GER_Ludwig_Beck
+recruit_character = GER_Nikolaus_von_Falkenhorst
+recruit_character = GER_Heinrich_von_Vietinghoff
+recruit_character = GER_Friedrich_Christian_von_Sachsen
+recruit_character = GER_Friedrich_Fromm
+recruit_character = GER_Erich_Hoepner
+recruit_character = GER_Adolf_Strauss
+recruit_character = GER_Ernst_Busch
+recruit_character = GER_Prinz_Oskar
+### Admiral ###
+recruit_character = GER_Alfred_Saalwachter
+recruit_character = GER_Ludwig_Reuter
+recruit_character = GER_Erich_Raeder
+recruit_character = GER_Conrad_Albrecht
+recruit_character = GER_Wilhelm_Canaris
+recruit_character = GER_Karl_Donitz
+recruit_character = GER_Rolf_Carls
+recruit_character = GER_Max_Valentiner
+recruit_character = GER_Hubert_Schmundt
+recruit_character = GER_Ludwig_Bockholt
+recruit_character = GER_Oskar_Kummetz
+recruit_character = GER_Hermann_Boehm
+recruit_character = GER_Gunther_Lutjens
+### Ministers ###
+recruit_character = GER_Otto_Wels
+recruit_character = GER_Alfred_Hugenberg
+recruit_character = GER_Franz_von_Papen
+recruit_character = GER_Heinrich_Bruning
+recruit_character = GER_Wilhelm_Marx
+recruit_character = GER_Gustav_Bauer
+recruit_character = GER_Wilhelm_Kulz
+recruit_character = GER_Kurt_von_Schleicher
+recruit_character = GER_Karl_liebknecht
+recruit_character = GER_Otto_Ruhle
+recruit_character = GER_Ludwig_Kaas
+recruit_character = GER_Otto_Braun
+recruit_character = GER_Konrad_Adenauer
+recruit_character = GER_Friedrich_Wilhelm_von_Prittwitz_und_Gaffron
+recruit_character = GER_Joachim_von_Ribbentrop
+recruit_character = GER_Ernest_Augustus
+recruit_character = GER_Otto_Gessler
+recruit_character = GER_Karl_von_Lewinski
+recruit_character = GER_Friedrich_Werner_Graf_von_der_Schulenburg
+recruit_character = GER_Hjalmar_Schacht
+recruit_character = GER_Matthias_Erzberger
+recruit_character = GER_Lutz_Graf_Schwerin_von_Krosigk
+recruit_character = GER_Walther_Rathenau
+recruit_character = GER_Fritz_Schaffer
+recruit_character = GER_Carl_Friedrich_Goerdeler
+recruit_character = GER_Ferdinand_Porsche
+recruit_character = GER_Waldemar_Koch
+recruit_character = GER_Julius_Curtius
+recruit_character = GER_Hans_Luther
+
+## 	NATIONAL IDEA 
+
+add_ideas = {
+	generic_financial_crisis_1
+	GER_general_staff
+	GER_victors_of_greatwar
+	GER_Otto_Wels
+	GER_Otto_Braun
+	GER_Matthias_Erzberger
+	GER_Hans_von_Seeckt
+	GER_Ludwig_Reuter
+}
+
+## 	STARTING TECH
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	support_weapons = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	marines  = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	mobile_warfare = 1
+	synth_oil_experiments = 1
+	fuel_silos = 1
+	fuel_refining = 1
+}
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		early_ship_hull_light = 1
+		basic_naval_mines = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		early_ship_hull_heavy = 1
+		basic_ship_hull_heavy = 1
+		ship_hull_super_heavy = 1
+		basic_torpedo = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_secondary_battery = 1
+		improved_secondary_battery = 1
+		improved_ship_torpedo_launcher = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		smoke_generator = 1
+		basic_depth_charges = 1
+		submarine_mine_laying = 1
+		mtg_transport = 1
+	}
+	
+#	set_naval_oob = "GER_1936_naval"
+	else = {
+		set_technology = {
+			early_submarine = 1
+			basic_submarine = 1
+			early_destroyer = 1
+			basic_destroyer = 1
+			early_light_cruiser = 1
+			basic_light_cruiser = 1
+			early_heavy_cruiser = 1
+			basic_heavy_cruiser = 1
+			early_battleship = 1
+			basic_battleship = 1
+			early_battlecruiser = 1
+			transport = 1
+		}
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+		improved_light_tank_chassis = 1
+		basic_medium_tank_chassis = 1
+		basic_heavy_tank_chassis = 1
+		engine_tech_1 = 1
+	}
+	
+	else = {
+		set_technology = {
+			gwtank = 1
+			basic_light_tank = 1
+			improved_light_tank = 1
+			basic_medium_tank = 1
+			basic_heavy_tank = 1
+		}
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "By Blood Alone"
+	}
+		#set_air_oob = "GER_1936_air"
+	set_technology = {
+		aa_lmg = 1
+		aa_cannon_1 = 1
+		engines_1 = 1
+		engines_2 = 1
+		early_bombs = 1
+		aircraft_construction = 1
+		iw_small_airframe = 1
+		basic_small_airframe = 1
+		iw_medium_airframe = 1
+		basic_medium_airframe = 1
+		iw_large_airframe = 1
+	}
+	else = {
+		set_technology = {
+			early_fighter = 1
+			fighter1 = 1
+			early_bomber = 1
+			tactical_bomber1 = 1
+			strategic_bomber1 = 1
+			CAS1 = 1
+			naval_bomber1 = 1
+		}
+	}
+}
+
+
+create_faction = FACTION_NAME_GER
+add_to_faction = GER
+add_to_faction = FRA
+add_to_faction = MOR
+add_to_faction = NET
+# Starting Import #
+create_import = {
+		resource = rubber
+		factories = 1
+		exporter = DOA
+		resource = rubber
+		factories = 1
+		exporter = KAM
+		resource = oil
+		factories = 3
+		exporter = AZE
+}
+# Laws
+
+
+# Diplomacy #
+give_guarantee = BLR
+give_guarantee = UKR
+give_guarantee = NET
+give_guarantee = BAG
+diplomatic_relation = {
+	country = MLT
+	relation = docking_rights
+	active = yes
+}
+
+	set_autonomy = {
+		target = UPL
+		autonomous_state = TP_ger_autonomous_dominion
+		freedom_level = 0.8
+	}
+	
+	UPL = {
+		set_popularities = {
+			conservatism = 0
+			authoritarianism = 0
+			social_democratism = 20
+			patriotic_socialism = 0
+			corporatism = 0
+			democratic_socialism = 30
+			populism = 17
+			social_liberalism = 33
+		}		
+		set_politics = {
+			ruling_party = social_liberalism
+			last_election = "1919.1.3"
+			election_frequency = 48
+			elections_allowed = no
+		}
+	}
+	
+	set_autonomy = {
+		target = TUN
+		autonomous_state = TP_ger_autonomous_dominion
+		freedom_level = 0.8
+	}
+	
+	TUN = {
+		set_popularities = {
+			conservatism = 8
+			authoritarianism = 92
+			social_democratism = 0
+			patriotic_socialism = 0
+			corporatism = 0
+			democratic_socialism = 0
+			populism = 0
+			social_liberalism = 0
+		}	
+		set_politics = {
+			ruling_party = authoritarianism
+			last_election = "1919.1.3"
+			election_frequency = 48
+			elections_allowed = no
+		}
+	}
+
+	set_autonomy = {
+		target = UBD
+		autonomous_state = TP_ger_autonomous_dominion
+		freedom_level = 0.8
+	}
+
+	UBD = {
+		set_popularities = {
+			conservatism = 35
+			authoritarianism = 15
+			social_democratism = 24
+			patriotic_socialism = 8
+			corporatism = 0
+			democratic_socialism = 0
+			populism = 0
+			social_liberalism = 18
+		}
+		
+		set_politics = {
+			ruling_party = conservatism
+			last_election = "1934.10.3"
+			election_frequency = 48
+			elections_allowed = yes
+		}
+	}
+	
+	set_autonomy = {
+		target = DOA
+		autonomous_state = TP_ger_autonomous_colony
+		freedom_level = 0.4
+	}
+	
+	DOA = {
+		set_popularities = {
+			conservatism = 15
+			authoritarianism = 63
+			social_democratism = 0
+			patriotic_socialism = 0
+			corporatism = 22
+			democratic_socialism = 0
+			populism = 0
+			social_liberalism = 0
+		}
+		set_politics = {
+			ruling_party = authoritarianism
+			last_election = "1935.1.1"
+			election_frequency = 48
+			elections_allowed = no
+		}
+	}
+	
+	set_autonomy = {
+		target = DNG
+		autonomous_state = TP_ger_autonomous_colony
+		freedom_level = 0.4
+	}
+	DNG = {
+		set_popularities = {
+			conservatism = 25
+			authoritarianism = 75
+			social_democratism = 0
+			patriotic_socialism = 0
+			corporatism = 0
+			democratic_socialism = 0
+			populism = 0
+			social_liberalism = 0
+		}
+		set_politics = {
+			ruling_party = authoritarianism
+			last_election = "1935.1.1"
+			election_frequency = 48
+			elections_allowed = no
+		}
+	}
+	
+	set_autonomy = {
+		target = SWA
+		autonomous_state = TP_ger_autonomous_colony
+		freedom_level = 0.4
+	}
+	
+	SWA = {
+		set_politics = {
+			ruling_party = authoritarianism
+			last_election = "1936.1.1"
+			election_frequency = 48
+			elections_allowed = no
+		}		
+		set_popularities = {
+			conservatism = 0
+			authoritarianism = 100
+			social_democratism = 0
+			patriotic_socialism = 0
+			corporatism = 0
+			democratic_socialism = 0
+			populism = 0
+			social_liberalism = 0
+		}
+	}
+	
+	set_autonomy = {
+		target = KAM
+		autonomous_state = TP_ger_autonomous_colony
+		freedom_level = 0.4
+	}
+	
+	KAM = {
+		set_popularities = {
+			conservatism = 25
+			authoritarianism = 75
+			social_democratism = 0
+			patriotic_socialism = 0
+			corporatism = 0
+			democratic_socialism = 0
+			populism = 0
+			social_liberalism = 0
+		}
+		set_politics = {
+			ruling_party = authoritarianism
+			last_election = "1935.1.1"
+			election_frequency = 48
+			elections_allowed = no
+		}
+	}
+	
+	set_autonomy = {
+		target = TOG
+		autonomous_state = TP_ger_autonomous_colony
+		freedom_level = 0.4
+	}
+	
+	TOG = {
+		set_politics = {
+			ruling_party = authoritarianism
+			last_election = "1936.1.1"
+			election_frequency = 48
+			elections_allowed = no
+		}		
+		set_popularities = {
+			conservatism = 25
+			authoritarianism = 75
+			social_democratism = 0
+			patriotic_socialism = 0
+			corporatism = 0
+			democratic_socialism = 0
+			populism = 0
+			social_liberalism = 0
+		}
+	}
+# Politics #
+set_popularities = {
+	conservatism = 31
+	authoritarianism = 13
+	social_liberalism = 11
+	social_democratism = 37
+	patriotic_socialism = 0
+	democratic_socialism = 8
+	corporatism = 0
+	populism = 0
+}
+set_politics = {
+	ruling_party = social_democratism
+	last_election = "1935.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+##	PANZER
+
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	
+	### Light Tank ###
+	
+	create_equipment_variant = {
+			name = "St.Pzw. II"
+			type = light_tank_chassis_0
+			parent_version = 0
+			modules = {
+				main_armament_slot = tank_heavy_machine_gun
+				turret_type_slot = tank_light_one_man_tank_turret
+				suspension_type_slot = tank_bogie_suspension
+				armor_type_slot = tank_riveted_armor
+				engine_type_slot = tank_gasoline_engine
+				special_type_slot_1 = tank_radio_1
+				special_type_slot_2 = secondary_turret_hmg
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 2
+				tank_nsb_armor_upgrade = 2
+			}
+			obsolete = yes
+			icon = "gfx/interface/equipmentdesigner/tanks/designer/GER/ger_light_0_sturmpanzerwagen_ii.dds"
+		}
+		
+		create_equipment_variant = {
+			name = "Pz.Kpfw. I Ausf. A"
+			type = light_tank_chassis_1
+			parent_version = 0
+			modules = {
+				main_armament_slot = tank_heavy_machine_gun
+				turret_type_slot = tank_light_one_man_tank_turret
+				suspension_type_slot = tank_christie_suspension
+				armor_type_slot = tank_riveted_armor
+				engine_type_slot = tank_gasoline_engine
+				special_type_slot_1 = tank_radio_1
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 5
+				tank_nsb_armor_upgrade = 1
+			}
+			icon = "gfx/interface/equipmentdesigner/tanks/designer/GER/ger_light_1_panzerkampfwagen_i.dds"
+		}
+}
+
+
+##	NAVAL SHIPS 
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	
+	### Battleship ###
+	
+	create_equipment_variant = {
+		name = "König-Klasse"
+		type = ship_hull_heavy_1
+		name_group = GER_BB_HISTORICAL
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_2
+			fixed_ship_secondaries_slot = ship_secondaries_2
+			fixed_ship_armor_slot = ship_armor_bb_2
+			front_1_custom_slot = ship_heavy_battery_1
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
+	}
+	
+	create_equipment_variant = {
+		name = "Bayern-Klasse"
+		type = ship_hull_heavy_1
+		name_group = GER_BB_HISTORICAL
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_2
+			fixed_ship_secondaries_slot = ship_secondaries_2
+			fixed_ship_armor_slot = ship_armor_bb_1
+			front_1_custom_slot = empty
+			mid_1_custom_slot = ship_airplane_launcher_1
+			mid_2_custom_slot = ship_secondaries_1
+			rear_1_custom_slot = ship_heavy_battery_1
+		}
+		obsolete = yes
+	}
+	
+	create_equipment_variant = {
+		name = "Preußen-Klasse"
+		type = ship_hull_heavy_1
+		name_group = GER_BB_HISTORICAL
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_2
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_bb_2
+			front_1_custom_slot = ship_heavy_battery_1
+			mid_1_custom_slot = ship_secondaries_1
+			mid_2_custom_slot = ship_secondaries_1
+			rear_1_custom_slot = ship_heavy_battery_2
+		}
+		obsolete = yes
+	}
+	
+	create_equipment_variant = {
+		name = "Mecklenburg-Klasse"
+		type = ship_hull_heavy_1
+		name_group = GER_BB_HISTORICAL
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_2
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_bb_2
+			front_1_custom_slot = empty
+			mid_1_custom_slot = ship_secondaries_1
+			mid_2_custom_slot = ship_secondaries_1
+			rear_1_custom_slot = ship_heavy_battery_2
+		}
+		obsolete = yes
+	}
+	
+	create_equipment_variant = {
+		name = "Kaiser Friedrich-III.-Klasse"
+		type = ship_hull_heavy_1
+		name_group = GER_BB_HISTORICAL
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_2
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_bb_2
+			front_1_custom_slot = empty
+			mid_1_custom_slot = ship_secondaries_1
+			mid_2_custom_slot = ship_secondaries_1
+			rear_1_custom_slot = ship_heavy_battery_2
+		}
+		obsolete = yes
+	}
+	
+	create_equipment_variant = {
+		name = "Deutschland-Klasse"
+		type = ship_hull_heavy_2
+		name_group = GER_BB_HISTORICAL
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_2
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_2
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_bb_2
+			front_1_custom_slot = ship_anti_air_2
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = ship_secondaries_1
+			rear_1_custom_slot = ship_heavy_battery_2
+		}
+	}
+	
+	### Battlecruisers ###
+	
+	create_equipment_variant = {
+		name = "Derfflinger-Klasse" 
+		type = ship_hull_heavy_1
+		name_group = GER_BC_HISTORICAL
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_bc_1
+			front_1_custom_slot = empty
+			mid_1_custom_slot = ship_secondaries_1
+			mid_2_custom_slot = ship_airplane_launcher_1
+			rear_1_custom_slot = ship_heavy_battery_1
+		}
+		obsolete = yes
+	}
+	
+	create_equipment_variant = {
+		name = "Mackensen-Klasse"
+		type = ship_hull_heavy_1
+		name_group = GER_BC_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_2
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_bc_1
+			front_1_custom_slot = ship_anti_air_1
+			mid_1_custom_slot = ship_airplane_launcher_1
+			mid_2_custom_slot = ship_secondaries_1
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
+	}
+	
+	create_equipment_variant = {
+		name = "Yorck-Klasse"
+		type = ship_hull_heavy_1
+		name_group = GER_BC_HISTORICAL
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_2
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_bc_2
+			front_1_custom_slot = ship_anti_air_1
+			mid_1_custom_slot = ship_secondaries_1
+			mid_2_custom_slot = ship_airplane_launcher_1	
+			rear_1_custom_slot = ship_heavy_battery_2
+		}
+	}
+	
+	### Heavy cruiser ###
+	
+	create_equipment_variant = {
+		name = "Admiral-Scheer-Klasse"
+		type = ship_hull_cruiser_1
+		name_group = GER_CA_HISTORICAL
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			mid_2_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
+	}
+	
+	create_equipment_variant = {
+		name = "Admiral-Hipper-Klasse"
+		type = ship_hull_cruiser_1
+		name_group = GER_CA_HISTORICAL
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			mid_1_custom_slot = ship_airplane_launcher_1
+			mid_2_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_medium_battery_2
+		}
+	}
+	
+	create_equipment_variant = {
+		name = "Bremen-Klasse"
+		type = ship_hull_cruiser_panzerschiff
+		name_group = GER_CA_HISTORICAL
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_secondaries_slot = ship_secondaries_2
+			fixed_ship_armor_slot = ship_armor_cruiser_2
+			front_1_custom_slot = empty
+			mid_1_custom_slot = ship_airplane_launcher_1
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = ship_torpedo_2
+		}
+	}
+	
+	### Light cruiser ###
+	
+	create_equipment_variant = {
+		name = "Emden-Klasse"
+		type = ship_hull_cruiser_1
+		name_group = GER_CL_HISTORICAL
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			mid_1_custom_slot = ship_torpedo_1
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
+	}
+	
+	create_equipment_variant = {
+		name = "Königsberg-Klasse"
+		type = ship_hull_cruiser_1
+		name_group = GER_CL_HISTORICAL
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			mid_1_custom_slot = ship_torpedo_1
+			mid_2_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
+	}
+	
+	create_equipment_variant = {
+		name = "Leipzig-Klasse"
+		type = ship_hull_cruiser_1
+		name_group = GER_CL_HISTORICAL
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			mid_1_custom_slot = ship_torpedo_1
+			mid_2_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_light_medium_battery_1
+		}
+		obsolete = yes
+	}
+	
+	create_equipment_variant = {
+		name = "Graudenz-Klasse"
+		type = ship_hull_cruiser_1
+		name_group = GER_CL_HISTORICAL
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			mid_1_custom_slot = ship_torpedo_1
+			mid_2_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_mine_layer_1
+		}
+	}
+	
+	create_equipment_variant = {
+		name = "Aachen-Klasse"
+		type = ship_hull_cruiser_2
+		name_group = GER_CL_HISTORICAL
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_2
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			front_1_custom_slot = ship_anti_air_2
+			mid_1_custom_slot = ship_torpedo_1
+			mid_2_custom_slot = ship_airplane_launcher_1
+			rear_1_custom_slot = ship_light_medium_battery_2
+		}
+	}
+	
+	### Destroyer ###
+	
+	create_equipment_variant = {
+		name = "Zerstörer-1929-Klasse"
+		type = ship_hull_cruiser_1
+		name_group = GER_DD_HISTORICAL
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+		obsolete = yes
+	}
+	
+	create_equipment_variant = {
+		name = "Zerstörer-1932-Klasse"
+		type = ship_hull_light_1
+		name_group = GER_DD_HISTORICAL
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+		obsolete = yes
+	}
+	
+	create_equipment_variant = {
+		name = "Zerstörer-1934-Klasse"
+		type = ship_hull_light_2
+		name_group = GER_DD_HISTORICAL
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_2
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = ship_sonar_1
+			fixed_ship_engine_slot = light_ship_engine_2
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+		obsolete = yes
+	}
+	
+	create_equipment_variant = {
+		name = "Zerstörer-1936-Klasse"
+		type = ship_hull_light_2
+		name_group = GER_DD_HISTORICAL
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+			fixed_ship_radar_slot = ship_sonar_1
+			fixed_ship_engine_slot = light_ship_engine_2
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+	}
+	
+}
+
+### AIRCRAFT ###
+
+if = {
+	limit = {
+		has_dlc = "By Blood Alone"
+	}
+
+	create_equipment_variant = {
+		name = "He 51"
+		type = small_plane_airframe_0
+		modules = {
+			fixed_main_weapon_slot = light_mg_2x
+			engine_type_slot = engine_1_1x
+			special_type_slot_1 = empty
+		}
+		obsolete = yes
+		icon = "gfx/interface/equipmentdesigner/planes/designer/GER/ger_small_0_he51.dds"
+	}
+	
+}

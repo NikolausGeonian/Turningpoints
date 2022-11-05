@@ -1,0 +1,26 @@
+﻿capital = 328
+
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	
+}
+set_convoys = 5
+set_politics = {
+	ruling_party = corporatism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	corporatism = 100
+}
+create_country_leader = {
+	name = "Amakasu Masahiko"
+	
+	picture = "gfx/leaders/MAN/Portrait_Amakasu_Masahiko.dds"
+	expire = "1960.1.1"
+	ideology = tenno_subtype
+	traits = {
+	}
+}

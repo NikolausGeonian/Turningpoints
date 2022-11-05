@@ -1,0 +1,24 @@
+state = {
+	id=876
+	name="STATE_876" #Gambia
+	manpower = 287251
+	state_category = rural
+	
+	history = {
+		owner = SEN
+		add_core_of = SEN
+		victory_points = {
+			4989 3 
+		}
+		buildings = {
+			infrastructure = 2
+			4989 = {
+				naval_base = 1
+			}
+		}			
+	}
+	provinces={
+		4989 12834 13271 13272
+	}
+	local_supplies=1.0 
+}

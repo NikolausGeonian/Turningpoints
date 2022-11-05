@@ -1,0 +1,24 @@
+state = {
+	id=849
+	name="STATE_849" #Arakan
+	manpower = 1088807
+	state_category = rural
+	history = {
+		owner = BRM
+		buildings = {
+			infrastructure = 2
+		}
+		
+		add_core_of = BRM
+		
+		victory_points = {
+			1142 2 
+		}
+		
+	}
+	
+	provinces={
+		1142 12090 1014 3651 10182
+		
+	}
+}

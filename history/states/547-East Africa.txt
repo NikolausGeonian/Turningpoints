@@ -1,0 +1,30 @@
+
+state={
+	id=547
+	name="STATE_547" #Kenya
+	manpower = 3192000
+	
+	state_category = town
+
+	history={
+		owner = BEA
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			5210 = {
+				naval_base = 2
+			}
+		}
+		victory_points = {
+			1939 3
+		}
+		victory_points = {
+			5210 5
+		}
+		add_core_of = BEA
+	}
+
+	provinces={
+		1939 2066 5079 5196 5210 6020 10962 11145 13135
+	}
+}

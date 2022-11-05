@@ -1,0 +1,508 @@
+characters={
+
+	### Country Leader ###
+
+	ALB_Skenderbeu_II = {
+		name = ALB_Skenderbeu_II
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ALB/Portrait_Skenderbeu_II.dds"
+			}
+		}
+		
+		country_leader = {
+			desc = "POLITICS_ALB_SKENDERBEU_II_DESC"
+			ideology = semi_constitutional_monarchy_subtype
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		
+		country_leader = {
+			desc = "POLITICS_ALB_SKENDERBEU_II_DESC"
+			ideology = autocratic_monarchy_subtype
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		
+		country_leader = {
+			desc = "POLITICS_ALB_SKENDERBEU_II_DESC"
+			ideology = constitutional_monarchy_A_subtype
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		
+		country_leader = {
+			desc = "POLITICS_ALB_SKENDERBEU_II_DESC"
+			ideology = constitutional_monarchy_B_subtype
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	
+	}
+	
+	### Ministers ###
+	### HEAD OF GOVERNMENT ###
+	
+	ALB_Abdi_Toptani = { 
+		name = ALB_Abdi_Toptani
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/ALB/ministers/ALB_Abdi_Toptani.dds"
+				large = "gfx/leaders/ALB/Portrait_Abdi_Toptani.dds"
+			}
+		}
+		# Independent #
+		advisor={
+			desc = "POLITICS_ALB_ABDI_TOPTANI_DESC"
+			slot = head_of_government
+			idea_token = ALB_Abdi_Toptani
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = ALB
+			}
+			available = {
+				has_government = conservatism
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	ALB_Midhat_Frasheri_Bey = { 
+		name = ALB_Midhat_Frasheri_Bey
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/ALB/ministers/ALB_Midhat_Frasheri_Bey.dds"
+				large = "gfx/leaders/ALB/Portrait_Midhat_Frasheri_Bey.dds"
+			}
+		}
+		# Independent #
+		advisor={
+			desc = "POLITICS_ALB_ABDI_TOPTANI_DESC"
+			slot = head_of_government
+			idea_token = ALB_Midhat_Frasheri_Bey
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = ALB
+			}
+			available = {
+				OR = {
+					has_government = corporatism
+					has_government = populism
+					has_country_flag = ALB_balli_kombetar
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	ALB_Gjon_Markagjoni = { 
+		name = ALB_Gjon_Markagjoni
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/ALB/ministers/ALB_Gjon_Markagjoni.dds"
+				large = "gfx/leaders/ALB/Portrait_Gjon_Markagjoni.dds"
+			}
+		}
+		# Independent #
+		advisor={
+			desc = "POLITICS_ALB_GJON_MARKAGJONI_DESC"
+			slot = head_of_government
+			idea_token = ALB_Gjon_Markagjoni
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = ALB
+			}
+			available = {
+				has_government = authoritarianism
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	ALB_Bekir_Fikri_Bey = { 
+		name = ALB_Bekir_Fikri_Bey
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/ALB/ministers/ALB_Bekir_Fikri_Bey.dds"
+				large = "gfx/leaders/ALB/Portrait_Bekir_Fikri_Bey.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_ALB_BEKIR_FIKRI_BEY_DESC"
+			slot = head_of_government
+			idea_token = ALB_Bekir_Fikri_Bey
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = ALB
+			}
+			visible = {
+				is_puppet_of = OTE
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}		
+	}
+	
+	ALB_Fan_Noli = {
+		name = ALB_Fan_Noli
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/ALB/ministers/ALB_Fan_Noli.dds"
+				large = "gfx/leaders/ALB/Portrait_Fan_Noli.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_ALB_FAN_NOLI_DESC"
+			slot = head_of_government
+			idea_token = ALB_Fan_Noli
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = ALB
+			}
+			visible = {	
+				has_idea = orthodox_influence
+			}
+			available = {
+				OR = {
+					has_government = conservatism
+					has_government = social_liberalism
+				}
+			}
+			
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_ALB_FAN_NOLI_DESC"
+			slot = foreign_minister
+			idea_token = ALB_Fan_Noli_minister
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = ALB
+			}
+			visible = {	
+				NOT = { 
+					has_idea = ALB_Fan_Noli
+				}
+			}
+			available = {
+				OR = {
+					has_government = conservatism
+					has_government = social_liberalism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}
+	}
+	
+	### FOREIGN MINISTER ###
+	
+	ALB_Ekrem_Libohova = {
+		name = ALB_Ekrem_Libohova
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/ALB/ministers/ALB_Ekrem_Libohova.dds"
+				large = "gfx/leaders/ALB/Portrait_Ekrem_Libohova.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_ALB_EKREM_LIBOHOVA_DESC"
+			slot = foreign_minister
+			idea_token = ALB_Ekrem_Libohova
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = ALB
+			}
+			available = {
+				OR = {
+					has_government = conservatism
+					has_government = social_liberalism
+					has_government = social_democratism
+					has_government = authoritarianism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}
+	}
+	
+	ALB_Mehdi_Frasheri = {
+		name = ALB_Mehdi_Frasheri
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/ALB/ministers/ALB_Mehdi_Frasheri.dds"
+				large = "gfx/leaders/ALB/Portrait_Mehdi_Frasheri.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_ALB_MEHDI_FRASHERI_DESC"
+			slot = foreign_minister
+			idea_token = ALB_Mehdi_Frasheri
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = ALB
+			}
+			available = {
+				OR = {
+					has_government = conservatism
+					has_government = social_liberalism
+					has_government = social_democratism
+					has_government = authoritarianism
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}
+	}
+	
+	ALB_Mustafa_Merlika_Kruja = {
+		name = ALB_Mustafa_Merlika_Kruja
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/ALB/ministers/ALB_Mustafa_Merlika_Kruja.dds"
+				large = "gfx/leaders/ALB/Portrait_Mustafa_Merlika_Kruja.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_ALB_MUSTAFA_MERLIKA_KRUJA_DESC"
+			slot = foreign_minister
+			idea_token = ALB_Mustafa_Merlika_Kruja
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = ALB
+			}
+			available = {
+				OR = {
+					has_government = conservatism
+					has_government = corporatism
+					has_government = populism
+					has_government = authoritarianism
+					is_puppet_of = OTE
+			}
+				}
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+	}
+	
+	###	ECONOMY MINISTER ###
+	
+	ALB_Shefqet_Verlaci = {
+		name = ALB_Shefqet_Verlaci
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/ALB/ministers/ALB_Shefqet_Verlaci.dds"
+				large = "gfx/leaders/ALB/Portrait_Shefqet_Verlaci.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_ALB_Shefqet_Verlaci_DESC"
+			slot = economy_minister
+			idea_token = ALB_Shefqet_Verlaci
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = ALB
+			}
+			available = {
+				OR = {
+					has_government = conservatism
+					has_government = authoritarianism
+				}
+			}
+			
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}
+	}
+	
+	ALB_Vangjel_Turtulli = {
+		name = ALB_Vangjel_Turtulli
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/ALB/ministers/ALB_Vangjel_Turtulli.dds"
+				large = "gfx/leaders/ALB/Portrait_Vangjel_Turtulli.dds"
+			}
+		}
+		
+		advisor={
+			desc = "POLITICS_ALB_Vangjel_Turtulli_DESC"
+			slot = economy_minister
+			idea_token = ALB_Vangjel_Turtulli
+			cost = 75.000
+			removal_cost = -1
+			allowed = {
+				original_tag = ALB
+			}
+			available = {
+				OR = {
+					has_government = conservatism
+					has_government = social_liberalism
+				}
+			}
+			
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}
+	}
+	
+	### CORPS COMMANDER ###
+	
+	ALB_Prenk_Pervizi = {
+		name = ALB_Prenk_Pervizi
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/ALB/ministers/ALB_Prenk_Pervizi.dds"
+				large = "gfx/leaders/ALB/Portrait_Prenk_Pervizi.dds"
+			}
+		}
+		
+		corps_commander = {
+			desc = "GENERAL_ALB_PRENK_PERVIZI_DESC"
+			traits = {	}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	
+	ALB_Muharrem_Bajraktari = {
+		name = ALB_Muharrem_Bajraktari
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/ALB/ministers/ALB_Muharrem_Bajraktari.dds"
+				large = "gfx/leaders/ALB/Portrait_Muharrem_Bajraktari.dds"
+			}
+		}
+		corps_commander = {
+			desc = "GENERAL_ALB_MUHARREM_BAJRAKTARI_DESC"
+			traits = {	}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	
+	ALB_Fiqiri_Dine = {
+		name = ALB_Fiqiri_Dine
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/ALB/ministers/ALB_Fiqiri_Dine.dds"
+				large = "gfx/leaders/ALB/Portrait_Fiqiri_Dine.dds"
+			}
+		}
+		corps_commander = {
+			desc = "GENERAL_ALB_FIQIRI_DINE_DESC"
+			traits = {	}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	
+	### ADMIRAL ###
+	
+	ALB_Mustafa_Alibegu = {
+		name = ALB_Mustafa_Alibegu
+		portraits = {	
+			army = {
+				small = "gfx/interface/ideas/ALB/ministers/ALB_Mustafa_Alibegu.dds"
+				large = "gfx/leaders/ALB/Portrait_Mustafa_Alibegu.dds"
+			}
+		}
+		
+		advisor = {
+			desc = "ADMIRAL_ALB_MUSTAFA_ALIBEGU_DESC"
+			slot = high_command
+			idea_token = ALB_Mustafa_Alibegu
+			allowed = {
+				original_tag = ALB
+			}
+			traits = { navy_submarine_1 }
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		navy_leader = {
+			desc = "ADMIRAL_ALB_MUSTAFA_ALIBEGU_DESC"
+			traits = {  }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 2
+			maneuvering_skill = 1
+			coordination_skill = 1
+		}
+	}
+}

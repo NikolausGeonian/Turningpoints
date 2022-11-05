@@ -1,0 +1,37 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_east_asia_radio_album_art"
+		texturefile = "gfx/interface/topbar/musicplayer/east_asia_radio_album_art.dds"
+		noOfFrames = 2
+	}
+	
+	spriteType = {
+		name = "GFX_middle_east_radio_album_art"
+		texturefile = "gfx/interface/topbar/musicplayer/middle_east_radio_album_art.dds"
+		noOfFrames = 2
+	}
+	
+	spriteType = {
+		name = "GFX_imperial_europa_radio_album_art"
+		texturefile = "gfx/interface/topbar/musicplayer/imperial_europa_radio_album_art.dds"
+		noOfFrames = 2
+	}
+	
+	spriteType = {
+		name = "GFX_revolucionaria_radio_album_art"
+		texturefile = "gfx/interface/topbar/musicplayer/revolucionaria_radio_album_art.dds"
+		noOfFrames = 2
+	}
+	
+	spriteType = {
+		name = "GFX_le_flambeau_radio_album_art"
+		texturefile = "gfx/interface/topbar/musicplayer/le_flambeau_radio_album_art.dds"
+		noOfFrames = 2
+	}
+	
+	spriteType = {
+		name = "GFX_mother_russia_radio_album_art"
+		texturefile = "gfx/interface/topbar/musicplayer/mother_russia_radio_album_art.dds"
+		noOfFrames = 2
+	}
+}

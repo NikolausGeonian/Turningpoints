@@ -1,0 +1,17 @@
+state = {
+	id=881
+	name="STATE_881" #Ennedi
+	manpower = 113862
+	state_category = rural
+	
+	history = {
+		owner = LBY
+		add_core_of = LBY
+		buildings = {
+			infrastructure = 1
+		}		
+	}
+	provinces={
+	 4978 13267 13270 13283 13286 
+	}
+}
